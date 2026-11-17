@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="430" height="266" viewBox="0 0 430 266" role="img" aria-labelledby="title desc" xml:lang="ru">
+  <title id="title">Этюд 01 — мат в один ход</title>
+  <desc id="desc">Ход белых. Белая ладья на a7, белый король на g6, чёрный король на h8. Поле a1 внизу слева.</desc>
+  <style>
+    :root { --paper: #f8f1df; --ink: #213c37; --muted: #425c53; --rule: #a4b8a6; --accent: #965132; }
+    @media (prefers-color-scheme: dark) {
+      :root { --paper: #1c2d2a; --ink: #fcf2df; --muted: #bed2c7; --rule: #5d7b71; --accent: #ffbc8c; }
+    }
+    text { fill: var(--ink); font-family: system-ui, sans-serif; }
+    .coord { fill: var(--muted); font: 12px ui-monospace, monospace; text-anchor: middle; }
+    .label { fill: var(--accent); font: bold 12px ui-monospace, monospace; letter-spacing: 1px; }
+  </style>
+  <defs>
+    <pattern id="squares" width="52" height="52" patternUnits="userSpaceOnUse">
+      <rect width="52" height="52" fill="#efdfb9"/><path d="M26 0h26v26H26zM0 26h26v26H0z" fill="#7b9e8e"/>
+    </pattern>
+    <g id="king" stroke-linejoin="round" stroke-width="1.5">
+      <path d="M-1.6-11h3.2v2.5h2.5v2.8H1.6v2.2h-3.2v-2.2h-2.5v-2.8h2.5z"/>
+      <path d="M0-2.8C-8-9-12-3-7 2l2.7 3.8h8.6L7 2C12-3 8-9 0-2.8zM-5 6h10l2 3.5H-7z"/>
+    </g>
+    <path id="rook" stroke-linejoin="round" stroke-width="1.5" d="M-8-10h3v3h3v-3h4v3h3v-3h3v7L5-1l-.6 6L7 7v3H-7V7l2.6-2L-5-1l-3-2z"/>
+  </defs>
+  <rect x="1" y="1" width="428" height="264" rx="11" fill="var(--paper)" stroke="var(--rule)"/>
+  <!-- Local origin at a8; each square is 26 units. -->
+  <g transform="translate(32 24)">
+    <rect width="208" height="208" rx="2" fill="url(#squares)" stroke="var(--rule)"/>
+    <g class="coord">
+      <text x="-12" y="17">8</text><text x="-12" y="43">7</text><text x="-12" y="69">6</text><text x="-12" y="95">5</text>
+      <text x="-12" y="121">4</text><text x="-12" y="147">3</text><text x="-12" y="173">2</text><text x="-12" y="199">1</text>
+      <text x="13" y="227">a</text><text x="39" y="227">b</text><text x="65" y="227">c</text><text x="91" y="227">d</text>
+      <text x="117" y="227">e</text><text x="143" y="227">f</text><text x="169" y="227">g</text><text x="195" y="227">h</text>
+    </g>
+    <use href="#rook" x="13" y="39" fill="#fff9e9" stroke="#263a35"/>
+    <use href="#king" x="169" y="65" fill="#fff9e9" stroke="#263a35"/>
+    <use href="#king" x="195" y="13" fill="#192b2c" stroke="#fff9e9"/>
+  </g>
+  <text x="265" y="43" class="label">ЭТЮД / 01</text>
+  <text x="263" y="91" font-size="41" font-weight="750">Мат</text>
+  <text x="264" y="125" font-size="31" font-weight="650">в один</text>
+  <path d="M265 146h137" stroke="var(--rule)"/>
+  <text x="265" y="173" class="label">ХОД БЕЛЫХ</text>
+  <text x="265" y="202" font-size="16">Крg6 · Лa7</text>
+  <text x="265" y="225" font-size="14" style="fill: var(--muted)">Чёрные: Крh8</text>
+</svg>
