@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120mm" height="72mm" viewBox="0 0 240 144" role="img" aria-labelledby="t d" xml:lang="ru">
+<title id="t">Бумага с четырьмя фазами</title><desc id="d">Деталь оптической пары «Мотылёк» для печати в масштабе 100 %.</desc><defs><g id="wing"><path fill="#9bd6c0" d="M-4-3C-21-4-49-2-78 9c8 13 21 25 38 21-2 9-6 17-14 24 21-5 34-19 48-40Z"/>
+<path fill="#527d74" d="M-9 6q-20 13-44 22 25-3 41-14zm-7 8q-12 19-26 29 19-9 28-25z"/>
+<path fill="#f3cf8e" d="M-3-9c-19-14-52-43-97-49 3 22 13 39 32 51 17 10 38 12 62 17Z"/>
+<path fill="#e6ac76" d="M-100-58q24 6 43 20l-12 11q-6-14-22-16z"/>
+<path fill="#668780" d="M-96-53q24 23 73 49-53-22-73-49z"/>
+<path d="M-5 5q-31-19-59-26m51 20q-18-7-35-7m18-1-12-11" stroke="#956b50" fill="none" stroke-width="1.2"/>
+<ellipse cx="-51" cy="-23" rx="9.3" ry="7" fill="#344e50" transform="rotate(27 -51 -23)"/><ellipse cx="-50" cy="-23" rx="5" ry="3.6" fill="#fff1c0" transform="rotate(27 -50 -23)"/>
+<path d="M-74-15l3 3m-10-9 3 3m-9-11 2 3" fill="none" stroke="#fff1ce" stroke-width="2.4"/></g>
+<g id="f0"><g transform="translate(120 79)"><use href="#wing" transform="matrix(1.0 0.0 0 1 0 0)"/><g transform="scale(-1 1)"><use href="#wing" transform="matrix(1.0 0.0 0 1 0 0)"/></g></g><path d="M117 70q-7-20-17-22m23 22q7-20 17-22m-24 16-8-6m16 6 8-6" fill="none" stroke="#d9b381" stroke-width="2"/>
+<path d="M115 75q5-12 10 0 3 14-5 36-8-23-5-36Z" fill="#d59c70"/><ellipse cx="120" cy="75" rx="5.7" ry="7.1" fill="#fff0c8"/>
+<path d="M117 88h6m-5 5h4" stroke="#5d6860" stroke-width="2"/></g>
+<pattern id="p0" patternUnits="userSpaceOnUse" width="8" height="144"><rect x="0" width="2" height="144" fill="white" shape-rendering="crispEdges"/></pattern><mask id="m0" maskUnits="userSpaceOnUse" x="0" y="0" width="240" height="144"><rect width="240" height="144" fill="url(#p0)"/></mask>
+<g id="f1"><g transform="translate(120 79)"><use href="#wing" transform="matrix(0.73 0.15 0 1 0 0)"/><g transform="scale(-1 1)"><use href="#wing" transform="matrix(0.73 0.15 0 1 0 0)"/></g></g><path d="M117 70q-7-20-17-22m23 22q7-20 17-22m-24 16-8-6m16 6 8-6" fill="none" stroke="#d9b381" stroke-width="2"/>
+<path d="M115 75q5-12 10 0 3 14-5 36-8-23-5-36Z" fill="#d59c70"/><ellipse cx="120" cy="75" rx="5.7" ry="7.1" fill="#fff0c8"/>
+<path d="M117 88h6m-5 5h4" stroke="#5d6860" stroke-width="2"/></g>
+<pattern id="p1" patternUnits="userSpaceOnUse" width="8" height="144"><rect x="2" width="2" height="144" fill="white" shape-rendering="crispEdges"/></pattern><mask id="m1" maskUnits="userSpaceOnUse" x="0" y="0" width="240" height="144"><rect width="240" height="144" fill="url(#p1)"/></mask>
+<g id="f2"><g transform="translate(120 79)"><use href="#wing" transform="matrix(0.26 0.26 0 1 0 0)"/><g transform="scale(-1 1)"><use href="#wing" transform="matrix(0.26 0.26 0 1 0 0)"/></g></g><path d="M117 70q-7-20-17-22m23 22q7-20 17-22m-24 16-8-6m16 6 8-6" fill="none" stroke="#d9b381" stroke-width="2"/>
+<path d="M115 75q5-12 10 0 3 14-5 36-8-23-5-36Z" fill="#d59c70"/><ellipse cx="120" cy="75" rx="5.7" ry="7.1" fill="#fff0c8"/>
+<path d="M117 88h6m-5 5h4" stroke="#5d6860" stroke-width="2"/></g>
+<pattern id="p2" patternUnits="userSpaceOnUse" width="8" height="144"><rect x="4" width="2" height="144" fill="white" shape-rendering="crispEdges"/></pattern><mask id="m2" maskUnits="userSpaceOnUse" x="0" y="0" width="240" height="144"><rect width="240" height="144" fill="url(#p2)"/></mask>
+<g id="f3"><g transform="translate(120 79)"><use href="#wing" transform="matrix(0.67 -0.16 0 1 0 0)"/><g transform="scale(-1 1)"><use href="#wing" transform="matrix(0.67 -0.16 0 1 0 0)"/></g></g><path d="M117 70q-7-20-17-22m23 22q7-20 17-22m-24 16-8-6m16 6 8-6" fill="none" stroke="#d9b381" stroke-width="2"/>
+<path d="M115 75q5-12 10 0 3 14-5 36-8-23-5-36Z" fill="#d59c70"/><ellipse cx="120" cy="75" rx="5.7" ry="7.1" fill="#fff0c8"/>
+<path d="M117 88h6m-5 5h4" stroke="#5d6860" stroke-width="2"/></g>
+<pattern id="p3" patternUnits="userSpaceOnUse" width="8" height="144"><rect x="6" width="2" height="144" fill="white" shape-rendering="crispEdges"/></pattern><mask id="m3" maskUnits="userSpaceOnUse" x="0" y="0" width="240" height="144"><rect width="240" height="144" fill="url(#p3)"/></mask>
+<g id="paper"><rect width="240" height="144" fill="#173640"/><use href="#f0" mask="url(#m0)"/><use href="#f1" mask="url(#m1)"/><use href="#f2" mask="url(#m2)"/><use href="#f3" mask="url(#m3)"/></g></defs><use href="#paper"/></svg>

@@ -1,0 +1,146 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="638" height="232" viewBox="0 0 638 232" role="img" aria-labelledby="t d" xml:lang="ru"><title id="t">Перфолента · 16 недель LazyGit</title><desc id="d">Тёмное отверстие задаёт единицу. Дорожки сверху: 32, 16, 8, подача, 4, 2, 1. Выделены недели 7 и 15.</desc>
+<rect width="638" height="232" rx="10" fill="#172f37"/>
+<text x="15" y="28" fill="#b2d5c3" text-anchor="start" font-family="monospace" font-size="15" font-weight="bold">02 / СЧИТЫВАТЕЛЬ</text>
+<text x="623" y="28" fill="#f5d89f" text-anchor="end" font-family="monospace" font-size="14" font-weight="normal">6 БИТ</text>
+<rect x="9" y="43" width="620" height="155" rx="5" fill="#f5d89f"/>
+<path d="M44 46v149" stroke="#ba9a6f"/>
+<text x="27" y="81" fill="#1f3640" text-anchor="middle" font-family="monospace" font-size="13" font-weight="bold">32</text>
+<text x="27" y="98" fill="#1f3640" text-anchor="middle" font-family="monospace" font-size="13" font-weight="bold">16</text>
+<text x="27" y="115" fill="#1f3640" text-anchor="middle" font-family="monospace" font-size="13" font-weight="bold">8</text>
+<text x="27" y="132" fill="#1f3640" text-anchor="middle" font-family="monospace" font-size="13" font-weight="bold">·</text>
+<text x="27" y="149" fill="#1f3640" text-anchor="middle" font-family="monospace" font-size="13" font-weight="bold">4</text>
+<text x="27" y="166" fill="#1f3640" text-anchor="middle" font-family="monospace" font-size="13" font-weight="bold">2</text>
+<text x="27" y="183" fill="#1f3640" text-anchor="middle" font-family="monospace" font-size="13" font-weight="bold">1</text>
+<text x="65" y="60" fill="#1f3640" text-anchor="middle" font-family="monospace" font-size="13" font-weight="bold">01</text>
+<circle cx="65" cy="77" r="5.6" fill="none" stroke="#bc9e73" stroke-width=".8"/>
+<circle data-week="1" data-track="16" cx="65" cy="94" r="5.7" fill="#1f3640"/>
+<circle data-week="1" data-track="8" cx="65" cy="111" r="5.7" fill="#1f3640"/>
+<circle data-week="1" data-track="0" cx="65" cy="128" r="2" fill="#1f3640"/>
+<circle cx="65" cy="145" r="5.6" fill="none" stroke="#bc9e73" stroke-width=".8"/>
+<circle cx="65" cy="162" r="5.6" fill="none" stroke="#bc9e73" stroke-width=".8"/>
+<circle data-week="1" data-track="1" cx="65" cy="179" r="5.7" fill="#1f3640"/>
+<text x="101" y="60" fill="#1f3640" text-anchor="middle" font-family="monospace" font-size="13" font-weight="bold">02</text>
+<circle cx="101" cy="77" r="5.6" fill="none" stroke="#bc9e73" stroke-width=".8"/>
+<circle cx="101" cy="94" r="5.6" fill="none" stroke="#bc9e73" stroke-width=".8"/>
+<circle cx="101" cy="111" r="5.6" fill="none" stroke="#bc9e73" stroke-width=".8"/>
+<circle data-week="2" data-track="0" cx="101" cy="128" r="2" fill="#1f3640"/>
+<circle data-week="2" data-track="4" cx="101" cy="145" r="5.7" fill="#1f3640"/>
+<circle data-week="2" data-track="2" cx="101" cy="162" r="5.7" fill="#1f3640"/>
+<circle data-week="2" data-track="1" cx="101" cy="179" r="5.7" fill="#1f3640"/>
+<text x="137" y="60" fill="#1f3640" text-anchor="middle" font-family="monospace" font-size="13" font-weight="bold">03</text>
+<circle cx="137" cy="77" r="5.6" fill="none" stroke="#bc9e73" stroke-width=".8"/>
+<circle cx="137" cy="94" r="5.6" fill="none" stroke="#bc9e73" stroke-width=".8"/>
+<circle cx="137" cy="111" r="5.6" fill="none" stroke="#bc9e73" stroke-width=".8"/>
+<circle data-week="3" data-track="0" cx="137" cy="128" r="2" fill="#1f3640"/>
+<circle data-week="3" data-track="4" cx="137" cy="145" r="5.7" fill="#1f3640"/>
+<circle cx="137" cy="162" r="5.6" fill="none" stroke="#bc9e73" stroke-width=".8"/>
+<circle data-week="3" data-track="1" cx="137" cy="179" r="5.7" fill="#1f3640"/>
+<text x="173" y="60" fill="#1f3640" text-anchor="middle" font-family="monospace" font-size="13" font-weight="bold">04</text>
+<circle cx="173" cy="77" r="5.6" fill="none" stroke="#bc9e73" stroke-width=".8"/>
+<circle data-week="4" data-track="16" cx="173" cy="94" r="5.7" fill="#1f3640"/>
+<circle cx="173" cy="111" r="5.6" fill="none" stroke="#bc9e73" stroke-width=".8"/>
+<circle data-week="4" data-track="0" cx="173" cy="128" r="2" fill="#1f3640"/>
+<circle data-week="4" data-track="4" cx="173" cy="145" r="5.7" fill="#1f3640"/>
+<circle cx="173" cy="162" r="5.6" fill="none" stroke="#bc9e73" stroke-width=".8"/>
+<circle data-week="4" data-track="1" cx="173" cy="179" r="5.7" fill="#1f3640"/>
+<text x="209" y="60" fill="#1f3640" text-anchor="middle" font-family="monospace" font-size="13" font-weight="bold">05</text>
+<circle cx="209" cy="77" r="5.6" fill="none" stroke="#bc9e73" stroke-width=".8"/>
+<circle data-week="5" data-track="16" cx="209" cy="94" r="5.7" fill="#1f3640"/>
+<circle cx="209" cy="111" r="5.6" fill="none" stroke="#bc9e73" stroke-width=".8"/>
+<circle data-week="5" data-track="0" cx="209" cy="128" r="2" fill="#1f3640"/>
+<circle cx="209" cy="145" r="5.6" fill="none" stroke="#bc9e73" stroke-width=".8"/>
+<circle data-week="5" data-track="2" cx="209" cy="162" r="5.7" fill="#1f3640"/>
+<circle data-week="5" data-track="1" cx="209" cy="179" r="5.7" fill="#1f3640"/>
+<text x="245" y="60" fill="#1f3640" text-anchor="middle" font-family="monospace" font-size="13" font-weight="bold">06</text>
+<circle cx="245" cy="77" r="5.6" fill="none" stroke="#bc9e73" stroke-width=".8"/>
+<circle data-week="6" data-track="16" cx="245" cy="94" r="5.7" fill="#1f3640"/>
+<circle data-week="6" data-track="8" cx="245" cy="111" r="5.7" fill="#1f3640"/>
+<circle data-week="6" data-track="0" cx="245" cy="128" r="2" fill="#1f3640"/>
+<circle cx="245" cy="145" r="5.6" fill="none" stroke="#bc9e73" stroke-width=".8"/>
+<circle cx="245" cy="162" r="5.6" fill="none" stroke="#bc9e73" stroke-width=".8"/>
+<circle cx="245" cy="179" r="5.6" fill="none" stroke="#bc9e73" stroke-width=".8"/>
+<rect x="267" y="47" width="28" height="147" rx="10" fill="#acd0bf" stroke="#1f3640"/>
+<text x="281" y="60" fill="#1f3640" text-anchor="middle" font-family="monospace" font-size="13" font-weight="bold">07</text>
+<circle data-week="7" data-track="32" cx="281" cy="77" r="5.7" fill="#1f3640"/>
+<circle cx="281" cy="94" r="5.6" fill="none" stroke="#bc9e73" stroke-width=".8"/>
+<circle data-week="7" data-track="8" cx="281" cy="111" r="5.7" fill="#1f3640"/>
+<circle data-week="7" data-track="0" cx="281" cy="128" r="2" fill="#1f3640"/>
+<circle data-week="7" data-track="4" cx="281" cy="145" r="5.7" fill="#1f3640"/>
+<circle cx="281" cy="162" r="5.6" fill="none" stroke="#bc9e73" stroke-width=".8"/>
+<circle cx="281" cy="179" r="5.6" fill="none" stroke="#bc9e73" stroke-width=".8"/>
+<text x="317" y="60" fill="#1f3640" text-anchor="middle" font-family="monospace" font-size="13" font-weight="bold">08</text>
+<circle cx="317" cy="77" r="5.6" fill="none" stroke="#bc9e73" stroke-width=".8"/>
+<circle data-week="8" data-track="16" cx="317" cy="94" r="5.7" fill="#1f3640"/>
+<circle cx="317" cy="111" r="5.6" fill="none" stroke="#bc9e73" stroke-width=".8"/>
+<circle data-week="8" data-track="0" cx="317" cy="128" r="2" fill="#1f3640"/>
+<circle data-week="8" data-track="4" cx="317" cy="145" r="5.7" fill="#1f3640"/>
+<circle data-week="8" data-track="2" cx="317" cy="162" r="5.7" fill="#1f3640"/>
+<circle data-week="8" data-track="1" cx="317" cy="179" r="5.7" fill="#1f3640"/>
+<text x="353" y="60" fill="#1f3640" text-anchor="middle" font-family="monospace" font-size="13" font-weight="bold">09</text>
+<circle cx="353" cy="77" r="5.6" fill="none" stroke="#bc9e73" stroke-width=".8"/>
+<circle data-week="9" data-track="16" cx="353" cy="94" r="5.7" fill="#1f3640"/>
+<circle cx="353" cy="111" r="5.6" fill="none" stroke="#bc9e73" stroke-width=".8"/>
+<circle data-week="9" data-track="0" cx="353" cy="128" r="2" fill="#1f3640"/>
+<circle data-week="9" data-track="4" cx="353" cy="145" r="5.7" fill="#1f3640"/>
+<circle cx="353" cy="162" r="5.6" fill="none" stroke="#bc9e73" stroke-width=".8"/>
+<circle data-week="9" data-track="1" cx="353" cy="179" r="5.7" fill="#1f3640"/>
+<text x="389" y="60" fill="#1f3640" text-anchor="middle" font-family="monospace" font-size="13" font-weight="bold">10</text>
+<circle cx="389" cy="77" r="5.6" fill="none" stroke="#bc9e73" stroke-width=".8"/>
+<circle cx="389" cy="94" r="5.6" fill="none" stroke="#bc9e73" stroke-width=".8"/>
+<circle data-week="10" data-track="8" cx="389" cy="111" r="5.7" fill="#1f3640"/>
+<circle data-week="10" data-track="0" cx="389" cy="128" r="2" fill="#1f3640"/>
+<circle cx="389" cy="145" r="5.6" fill="none" stroke="#bc9e73" stroke-width=".8"/>
+<circle cx="389" cy="162" r="5.6" fill="none" stroke="#bc9e73" stroke-width=".8"/>
+<circle cx="389" cy="179" r="5.6" fill="none" stroke="#bc9e73" stroke-width=".8"/>
+<text x="425" y="60" fill="#1f3640" text-anchor="middle" font-family="monospace" font-size="13" font-weight="bold">11</text>
+<circle data-week="11" data-track="32" cx="425" cy="77" r="5.7" fill="#1f3640"/>
+<circle cx="425" cy="94" r="5.6" fill="none" stroke="#bc9e73" stroke-width=".8"/>
+<circle cx="425" cy="111" r="5.6" fill="none" stroke="#bc9e73" stroke-width=".8"/>
+<circle data-week="11" data-track="0" cx="425" cy="128" r="2" fill="#1f3640"/>
+<circle cx="425" cy="145" r="5.6" fill="none" stroke="#bc9e73" stroke-width=".8"/>
+<circle cx="425" cy="162" r="5.6" fill="none" stroke="#bc9e73" stroke-width=".8"/>
+<circle data-week="11" data-track="1" cx="425" cy="179" r="5.7" fill="#1f3640"/>
+<text x="461" y="60" fill="#1f3640" text-anchor="middle" font-family="monospace" font-size="13" font-weight="bold">12</text>
+<circle cx="461" cy="77" r="5.6" fill="none" stroke="#bc9e73" stroke-width=".8"/>
+<circle data-week="12" data-track="16" cx="461" cy="94" r="5.7" fill="#1f3640"/>
+<circle cx="461" cy="111" r="5.6" fill="none" stroke="#bc9e73" stroke-width=".8"/>
+<circle data-week="12" data-track="0" cx="461" cy="128" r="2" fill="#1f3640"/>
+<circle data-week="12" data-track="4" cx="461" cy="145" r="5.7" fill="#1f3640"/>
+<circle cx="461" cy="162" r="5.6" fill="none" stroke="#bc9e73" stroke-width=".8"/>
+<circle cx="461" cy="179" r="5.6" fill="none" stroke="#bc9e73" stroke-width=".8"/>
+<text x="497" y="60" fill="#1f3640" text-anchor="middle" font-family="monospace" font-size="13" font-weight="bold">13</text>
+<circle cx="497" cy="77" r="5.6" fill="none" stroke="#bc9e73" stroke-width=".8"/>
+<circle cx="497" cy="94" r="5.6" fill="none" stroke="#bc9e73" stroke-width=".8"/>
+<circle cx="497" cy="111" r="5.6" fill="none" stroke="#bc9e73" stroke-width=".8"/>
+<circle data-week="13" data-track="0" cx="497" cy="128" r="2" fill="#1f3640"/>
+<circle data-week="13" data-track="4" cx="497" cy="145" r="5.7" fill="#1f3640"/>
+<circle cx="497" cy="162" r="5.6" fill="none" stroke="#bc9e73" stroke-width=".8"/>
+<circle data-week="13" data-track="1" cx="497" cy="179" r="5.7" fill="#1f3640"/>
+<text x="533" y="60" fill="#1f3640" text-anchor="middle" font-family="monospace" font-size="13" font-weight="bold">14</text>
+<circle data-week="14" data-track="32" cx="533" cy="77" r="5.7" fill="#1f3640"/>
+<circle data-week="14" data-track="16" cx="533" cy="94" r="5.7" fill="#1f3640"/>
+<circle data-week="14" data-track="8" cx="533" cy="111" r="5.7" fill="#1f3640"/>
+<circle data-week="14" data-track="0" cx="533" cy="128" r="2" fill="#1f3640"/>
+<circle cx="533" cy="145" r="5.6" fill="none" stroke="#bc9e73" stroke-width=".8"/>
+<circle data-week="14" data-track="2" cx="533" cy="162" r="5.7" fill="#1f3640"/>
+<circle data-week="14" data-track="1" cx="533" cy="179" r="5.7" fill="#1f3640"/>
+<rect x="555" y="47" width="28" height="147" rx="10" fill="#ecb18b" stroke="#1f3640"/>
+<text x="569" y="60" fill="#1f3640" text-anchor="middle" font-family="monospace" font-size="13" font-weight="bold">15</text>
+<circle data-week="15" data-track="32" cx="569" cy="77" r="5.7" fill="#1f3640"/>
+<circle cx="569" cy="94" r="5.6" fill="none" stroke="#bc9e73" stroke-width=".8"/>
+<circle data-week="15" data-track="8" cx="569" cy="111" r="5.7" fill="#1f3640"/>
+<circle data-week="15" data-track="0" cx="569" cy="128" r="2" fill="#1f3640"/>
+<circle data-week="15" data-track="4" cx="569" cy="145" r="5.7" fill="#1f3640"/>
+<circle cx="569" cy="162" r="5.6" fill="none" stroke="#bc9e73" stroke-width=".8"/>
+<circle data-week="15" data-track="1" cx="569" cy="179" r="5.7" fill="#1f3640"/>
+<text x="605" y="60" fill="#1f3640" text-anchor="middle" font-family="monospace" font-size="13" font-weight="bold">16</text>
+<circle data-week="16" data-track="32" cx="605" cy="77" r="5.7" fill="#1f3640"/>
+<circle cx="605" cy="94" r="5.6" fill="none" stroke="#bc9e73" stroke-width=".8"/>
+<circle cx="605" cy="111" r="5.6" fill="none" stroke="#bc9e73" stroke-width=".8"/>
+<circle data-week="16" data-track="0" cx="605" cy="128" r="2" fill="#1f3640"/>
+<circle data-week="16" data-track="4" cx="605" cy="145" r="5.7" fill="#1f3640"/>
+<circle data-week="16" data-track="2" cx="605" cy="162" r="5.7" fill="#1f3640"/>
+<circle data-week="16" data-track="1" cx="605" cy="179" r="5.7" fill="#1f3640"/>
+<text x="14" y="220" fill="#b2d5c3" text-anchor="start" font-family="monospace" font-size="13" font-weight="normal">LAZYGIT / 16 НЕДЕЛЬ</text>
+<text x="624" y="220" fill="#f6b47e" text-anchor="end" font-family="monospace" font-size="13" font-weight="bold">07 ↔ 15</text>
+</svg>
