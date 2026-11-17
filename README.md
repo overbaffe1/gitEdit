@@ -14,9 +14,10 @@
 [![Шаблон профиля](https://img.shields.io/badge/Шаблон-Профиль%20портфолио-0284C7?style=for-the-badge&logo=sparkles&logoColor=white)](templates/PROFILE-README-TEMPLATE.md)
 [![Змейка коммитов](https://img.shields.io/badge/Action-Змейка%20коммитов-16A34A?style=for-the-badge&logo=githubactions&logoColor=white)](templates/profile-snake-workflow.yml)
 
-[![Auto Unpack](https://img.shields.io/github/actions/workflow/status/overbaffe1/gitEdit/unpack.yml?style=flat-square&logo=githubactions&logoColor=white&label=Auto%20Unpack)](../../actions)
-![Last Commit](https://img.shields.io/github/last-commit/overbaffe1/gitEdit?style=flat-square&color=8B5CF6&label=Last%20Commit)
-![Repo Size](https://img.shields.io/github/repo-size/overbaffe1/gitEdit?style=flat-square&color=0284C7&label=Repo%20Size)
+[![Shields.io](https://img.shields.io/badge/Powered%20by-Shields.io-0F172A?style=flat-square&logo=shieldsdotio&logoColor=white)](https://shields.io/)
+[![Simple Icons](https://img.shields.io/badge/Icons-Simple%20Icons-1E293B?style=flat-square&logo=simpleicons&logoColor=white)](https://simpleicons.org/)
+![Last Commit](https://img.shields.io/github/last-commit/overbaffe1/gitEdit?style=flat-square&color=8B5CF6&label=Updated)
+![Repo Size](https://img.shields.io/github/repo-size/overbaffe1/gitEdit?style=flat-square&color=0284C7&label=Size)
 ![Stars](https://img.shields.io/github/stars/overbaffe1/gitEdit?style=flat-square&color=EAB308)
 
 </div>
@@ -35,7 +36,6 @@
 5. [Интерактивные векторные схемы `Mermaid`](#5-интерактивные-векторные-схемы-mermaid)
 6. [Продвинутая вёрстка портфолио (сплит, темы `<picture>`, видео, `<kbd>`)](#6-продвинутая-вёрстка-портфолио-сплит-темы-picture-видео-kbd)
 7. [Секретный репозиторий профиля (`overbaffe1/overbaffe1`) + змейка коммитов](#7-секретный-репозиторий-профиля-overbaffe1overbaffe1--змейка-коммитов)
-8. [Как работает авто-распаковка `.zip` в этом репозитории](#8-как-работает-авто-распаковка-zip-в-этом-репозитории)
 
 <img src="assets/divider.svg" width="100%" alt="">
 
@@ -113,11 +113,11 @@ https://img.shields.io/badge/<ЛЕВЫЙ_ТЕКСТ>-<ПРАВЫЙ_ТЕКСТ>-<
 
 | Метрика | Живой пример | Шаблон |
 |---|---|---|
-| Статус GitHub Actions | ![CI](https://img.shields.io/github/actions/workflow/status/overbaffe1/gitEdit/unpack.yml?style=flat-square&logo=githubactions&logoColor=white&label=Actions) | `https://img.shields.io/github/actions/workflow/status/<USER>/<REPO>/<FILE>.yml?style=flat-square` |
 | Последний коммит | ![Last Commit](https://img.shields.io/github/last-commit/overbaffe1/MyWorkAiBrain?style=flat-square) | `https://img.shields.io/github/last-commit/<USER>/<REPO>?style=flat-square` |
 | Размер репо | ![Size](https://img.shields.io/github/repo-size/overbaffe1/MyWorkAiBrain?style=flat-square) | `https://img.shields.io/github/repo-size/<USER>/<REPO>?style=flat-square` |
 | Главный язык | ![Top Lang](https://img.shields.io/github/languages/top/overbaffe1/MyWorkAiBrain?style=flat-square) | `https://img.shields.io/github/languages/top/<USER>/<REPO>?style=flat-square` |
 | Звёзды | ![Stars](https://img.shields.io/github/stars/overbaffe1/MyWorkAiBrain?style=flat-square) | `https://img.shields.io/github/stars/<USER>/<REPO>?style=flat-square` |
+| Статус GitHub Actions | `build \| passing` | `https://img.shields.io/github/actions/workflow/status/<USER>/<REPO>/ci.yml?style=flat-square&logo=githubactions&logoColor=white` |
 
 <img src="assets/divider.svg" width="100%" alt="">
 
@@ -145,7 +145,7 @@ https://img.shields.io/badge/<ЛЕВЫЙ_ТЕКСТ>-<ПРАВЫЙ_ТЕКСТ>-<
 
 ## 3. Живые SVG-анимации: печатная машинка, волны и свои баннеры
 
-GitHub режет JavaScript, но **полностью разрешает CSS `@keyframes` и SMIL `<animate>` внутри `.svg`-картинок**.
+GitHub режет JavaScript, но **полностью разрешает SMIL `<animate>` / `<animateTransform>` внутри `.svg`-картинок**.
 
 ### А) Самопечатающийся текст — [Readme Typing SVG](https://readme-typing-svg.demolab.com/demo/)
 
@@ -165,7 +165,10 @@ GitHub режет JavaScript, но **полностью разрешает CSS `
 
 ### В) Профи-уровень: собственные локальные `.svg` в папке `assets/`
 
-Внешние сервисы иногда уходят в офлайн, а **локальный `.svg` внутри самого репозитория** грузится мгновенно, никогда не падает и позволяет верстать любую анимацию (посмотри исходник [`assets/banner-dark.svg`](assets/banner-dark.svg) в этом репо!).
+Внешние сервисы иногда уходят в офлайн, а **локальный `.svg` внутри самого репозитория** грузится мгновенно, никогда не падает и позволяет верстать любую анимацию (посмотри исходники [`assets/banner-dark.svg`](assets/banner-dark.svg) и [`assets/banner-light.svg`](assets/banner-light.svg) в этом репо!).
+
+> [!WARNING]
+> **Важная тонкость SVG в браузерах:** если двигаешь группу `<g transform="translate(860, 50)">`, не вешай на этот же `<g>` CSS `@keyframes { transform: translateY(...) }` — CSS перетрёт координаты `860, 50` в `0, 0`. Вкладывай внутрь дочерний `<g>` с нативным `<animateTransform attributeName="transform" type="translate" .../>`.
 
 <img src="assets/divider.svg" width="100%" alt="">
 
@@ -300,19 +303,10 @@ flowchart LR
 
 Если создать публичный репозиторий с именем **один в один как твой логин** (`overbaffe1/overbaffe1`), его `README.md` станет витриной прямо на главной странице твоего профиля **[github.com/overbaffe1](https://github.com/overbaffe1)**.
 
-Что уже заготовлено в папке [`templates/`](templates/):
+Что заготовлено в папке [`templates/`](templates/):
 1. **[`templates/PROFILE-README-TEMPLATE.md`](templates/PROFILE-README-TEMPLATE.md)** — полностью собранный шаблон главной страницы профиля (волна, печатающийся подзаголовок, кнопки соцсетей, плитка стека, витрина лучших репозиториев и адаптивный блок со змейкой).
 2. **[`templates/profile-snake-workflow.yml`](templates/profile-snake-workflow.yml)** — готовый воркфлоу GitHub Actions (`Platane/snk`), который раз в сутки сам рисует анимацию змейки, поедающей твои зелёные квадратики коммитов, сразу в двух версиях (для светлой и тёмной темы GitHub) в отдельную ветку `output`!
 3. **[`templates/PROJECT-README-TEMPLATE.md`](templates/PROJECT-README-TEMPLATE.md)** — универсальный каркас вау-ридмика для любого нового проекта в портфолио.
-
-<img src="assets/divider.svg" width="100%" alt="">
-
-## 8. Как работает авто-распаковка `.zip` в этом репозитории
-
-В этом репозитории включён воркфлоу **[`.github/workflows/unpack.yml`](.github/workflows/unpack.yml) (копия лежит в [`templates/unpack-workflow.yml`](templates/unpack-workflow.yml))**:
-* Как только ты загружаешь любой `.zip`-архив через веб-интерфейс (`Add file` → `Upload files`), GitHub Actions автоматически перехватывает пуш.
-* Распаковывает все вложенные файлы и папки в корень репозитория (даже если внутри архива была одна общая папка-обёртка).
-* Удаляет сам `.zip`-файл и коммитит чистое дерево файлов обратно в ветку!
 
 ---
 
