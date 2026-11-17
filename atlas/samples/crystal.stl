@@ -1,0 +1,58 @@
+solid field_crystal
+  facet normal 0.5906538 0.7269586 0.3502274
+    outer loop
+      vertex 3 -1 36
+      vertex 16 0 12
+      vertex 0 13 12
+    endloop
+  endfacet
+  facet normal 0.4731097 0.5822889 -0.6611405
+    outer loop
+      vertex -2 1 0
+      vertex 0 13 12
+      vertex 16 0 12
+    endloop
+  endfacet
+  facet normal -0.5568154 0.6853112 0.4693668
+    outer loop
+      vertex 3 -1 36
+      vertex 0 13 12
+      vertex -16 0 12
+    endloop
+  endfacet
+  facet normal -0.5236315 0.6444695 -0.5571976
+    outer loop
+      vertex -2 1 0
+      vertex -16 0 12
+      vertex 0 13 12
+    endloop
+  endfacet
+  facet normal -0.5713854 -0.7032436 0.4230450
+    outer loop
+      vertex 3 -1 36
+      vertex -16 0 12
+      vertex 0 -13 12
+    endloop
+  endfacet
+  facet normal -0.4923218 -0.6059346 -0.6248700
+    outer loop
+      vertex -2 1 0
+      vertex 0 -13 12
+      vertex -16 0 12
+    endloop
+  endfacet
+  facet normal 0.6024457 -0.7414717 0.2954301
+    outer loop
+      vertex 3 -1 36
+      vertex 0 -13 12
+      vertex 16 0 12
+    endloop
+  endfacet
+  facet normal 0.4435471 -0.5459041 -0.7108127
+    outer loop
+      vertex -2 1 0
+      vertex 16 0 12
+      vertex 0 -13 12
+    endloop
+  endfacet
+endsolid field_crystal

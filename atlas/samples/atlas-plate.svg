@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-labelledby="title desc" xml:lang="ru">
+  <title id="title">Полевой атлас GitHub · gitEdit</title>
+  <desc id="desc">Печатный лист с огранённым кристаллом: 6 вершин, 12 рёбер и 8 граней.</desc>
+  <defs>
+    <pattern id="grid" patternUnits="userSpaceOnUse" width="42" height="42">
+      <path d="M0 42V0h42" fill="none" stroke="#81aaa0" stroke-opacity=".32"/>
+      <circle cx="1" cy="1" r="1.5" fill="#8bb4a6"/>
+    </pattern>
+    <clipPath id="field"><path d="M823 0h457v640H729z"/></clipPath>
+    <style>
+      text { font-family: system-ui, sans-serif; fill: #203a37; }
+      .folio { font: bold 21px ui-monospace, monospace; letter-spacing: 2px; }
+      .title { font-size: 94px; font-weight: 750; letter-spacing: -5px; }
+    </style>
+  </defs>
+  <rect width="1280" height="640" fill="#fbefd6"/>
+  <g clip-path="url(#field)">
+    <rect x="725" width="555" height="640" fill="#173735"/>
+    <rect x="725" width="555" height="640" fill="url(#grid)"/>
+    <g fill="none" stroke="#a1c7b6" opacity=".7">
+      <ellipse cx="1019" cy="482" rx="157" ry="30" stroke-dasharray="4 7"/>
+      <path d="M830 485h377m-181-382v420" stroke-dasharray="5 8"/>
+      <path d="M861 79v19m-10-10h20m314 410v19m-10-10h20" stroke-width="2"/>
+    </g>
+    <!-- Front facets of the specimen, projected onto the field sheet. -->
+    <g stroke="#173735" stroke-width="3" stroke-linejoin="round">
+      <path d="m1044 114-158 149 126 45z" fill="#b7edce"/>
+      <path d="m1044 114-32 194 152-34z" fill="#77bfae"/>
+      <path d="m1044 114 120 160-66-65z" fill="#faaf78"/>
+      <path d="m886 263 126 45-24 142z" fill="#77a2a1"/>
+      <path d="m1012 308 152-34-176 176z" fill="#b3d4b9"/>
+    </g>
+    <path d="m1048 111 14-27h93" fill="none" stroke="#f5c194" stroke-width="2"/>
+    <text x="1161" y="90" style="font: 18px ui-monospace, monospace; fill: #f5c194">V</text>
+    <text x="819" y="575" class="folio" style="fill: #b7edce">ОБРАЗЕЦ / 01</text>
+  </g>
+  <rect x="62" y="62" width="15" height="15" fill="#cf6043"/>
+  <text x="94" y="77" class="folio">gitEdit / ПОЛЕВЫЕ ЛИСТЫ</text>
+  <path d="M63 107h645" stroke="#93a79b"/>
+  <text x="57" y="235" class="title">Полевой</text>
+  <text x="57" y="337" class="title">атлас GitHub</text>
+  <text x="65" y="403" font-size="32">Карты, модели и живые README</text>
+  <path d="M63 507h611" stroke="#93a79b"/>
+  <g font-size="23" font-weight="600">
+    <text x="64" y="565">6 вершин</text><text x="277" y="565">12 рёбер</text><text x="485" y="565">8 граней</text>
+  </g>
+  <g fill="#cf6043"><circle cx="241" cy="557" r="3.5"/><circle cx="452" cy="557" r="3.5"/></g>
+</svg>
