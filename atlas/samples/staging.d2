@@ -1,0 +1,25 @@
+# Build: d2 atlas/samples/staging.d2 assets/staging.svg
+vars: {
+  d2-config: {
+    sketch: true
+    pad: 18
+  }
+}
+
+direction: right
+style.fill: "#fbf2df"
+
+file: File {
+  shape: page
+  style.fill: "#d7ead7"
+}
+index: Index {
+  style.fill: "#cbdfea"
+}
+snapshot: Commit {
+  shape: hexagon
+  style.fill: "#f3cba9"
+}
+
+file -> index: add
+index -> snapshot: commit
