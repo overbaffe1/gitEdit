@@ -26,7 +26,7 @@
 | Проект | Стек | Что внутри |
 |---|---|---|
 | **[MyWorkAiBrain](https://github.com/overbaffe1/MyWorkAiBrain)** | `Python` · `Blender bpy` · `Node.js` · `OpenXML` | Конвейер генерации редактируемых `.pptx` с настоящими интерактивными 3D-моделями, скелетной glTF-анимацией и 3D Morph-переходами чисто кодом |
-| **[gitEdit](https://github.com/overbaffe1/gitEdit)** | `SVG` · `Mermaid` · `GitHub Actions` | Визуальный конструктор, шпаргалка и шаблоны вау-оформления репозиториев для портфолио с авто-распаковкой `.zip` |
+| **[gitEdit](https://github.com/overbaffe1/gitEdit)** | `SVG` · `Mermaid` · `GitHub Actions` | Визуальный конструктор, шпаргалка и шаблоны вау-оформления репозиториев для портфолио |
 
 ---
 
