@@ -2,8 +2,10 @@
 import re
 import unittest
 from collections import defaultdict
+from html import escape
 from html.parser import HTMLParser
 from pathlib import Path
+from zipfile import ZipFile
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -42,3 +44,13 @@ class CrystalViewTest(unittest.TestCase):
         headers = [(ROOT / src).read_bytes()[:24] for src in images]
         self.assertTrue(all(h.startswith(b'\x89PNG\r\n\x1a\n') for h in headers))
         self.assertEqual(len({h[16:24] for h in headers}), 1)
+
+    def test_offline_download_contains_the_actual_model(self):
+        samples = ROOT / 'atlas/samples'
+        template = (samples / 'crystal-view.html.in').read_text(encoding='utf-8')
+        solid = (samples / 'crystal.stl').read_text(encoding='ascii')
+        self.assertEqual(template.count('@@ASCII_STL@@'), 1)
+        with ZipFile(ROOT / 'assets/crystal-view.zip') as archive:
+            self.assertEqual(archive.namelist(), ['crystal.html'])
+            page = archive.read('crystal.html').decode('utf-8')
+        self.assertEqual(page, template.replace('@@ASCII_STL@@', escape(solid)))

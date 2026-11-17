@@ -1,11 +1,14 @@
 """Render aligned passes of crystal.stl, their GIF wipe, and fixed quarter-turn views.
 
-Run with Python 3, Pillow >= 10 and the DejaVu Sans fonts. --stamp prints the
-same projection in text cells for the README; no network or 3D engine needed.
+The export also packs the mesh into one offline HTML viewer. Run with Python 3,
+Pillow >= 10 and the DejaVu Sans fonts. --stamp prints the projection in text
+cells for the README; no network or 3D engine needed.
 """
 import math
 import sys
+from html import escape
 from pathlib import Path
+from zipfile import ZIP_DEFLATED, ZipFile, ZipInfo
 from PIL import Image, ImageDraw, ImageFont
 
 HERE = Path(__file__).resolve().parent
@@ -109,7 +112,20 @@ def stamp():
         print(''.join(row).rstrip())
 
 
+def pack_viewer():
+    """Bundle the same STL in one offline HTML, served as a download instead of source text."""
+    page = (HERE / 'crystal-view.html.in').read_text(encoding='utf-8')
+    solid = (HERE / 'crystal.stl').read_text(encoding='ascii')
+    if page.count('@@ASCII_STL@@') != 1:
+        raise ValueError('Expected one mesh slot in the viewer template')
+    # A fixed member date keeps the archive independent of checkout time.
+    with ZipFile(ASSETS / 'crystal-view.zip', 'w') as archive:
+        archive.writestr(ZipInfo('crystal.html'), page.replace('@@ASCII_STL@@', escape(solid)),
+                         compress_type=ZIP_DEFLATED)
+
+
 def export():
+    pack_viewer()
     wire, light = draw_pass(False), draw_pass(True)
     wire.save(ASSETS/'crystal-wire.png', optimize=True); light.save(ASSETS/'crystal-light.png',optimize=True)
     for turn in (1, 2, 3):
