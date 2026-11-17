@@ -1,11 +1,14 @@
-"""Render two aligned passes of crystal.stl, a GIF wipe, and its still poster.
+"""Render aligned passes of crystal.stl, their GIF wipe, and fixed quarter-turn views.
 
-Run with Python 3, Pillow >= 10 and the DejaVu Sans fonts. --stamp prints the
-same projection in text cells for the README; no network or 3D engine needed.
+The export also packs the mesh into one offline HTML viewer. Run with Python 3,
+Pillow >= 10 and the DejaVu Sans fonts. --stamp prints the projection in text
+cells for the README; no network or 3D engine needed.
 """
 import math
 import sys
+from html import escape
 from pathlib import Path
+from zipfile import ZIP_DEFLATED, ZipFile, ZipInfo
 from PIL import Image, ImageDraw, ImageFont
 
 HERE = Path(__file__).resolve().parent
@@ -25,8 +28,11 @@ def cross(a, b):
     return (a[1]*b[2]-a[2]*b[1], a[2]*b[0]-a[0]*b[2], a[0]*b[1]-a[1]*b[0])
 
 
-def mesh():
-    camera = unit((0.28, -1, 0.22))
+def mesh(quarter_turns=0):
+    x, y = 0.28, -1
+    for _ in range(quarter_turns):
+        x, y = -y, x
+    camera = unit((x, y, 0.22))
     right = unit(cross((0, 0, 1), camera))
     up = cross(camera, right)
     faces = []
@@ -42,7 +48,7 @@ def mesh():
     return sorted(faces, key=lambda f: sum(p[2] for p in f[1])), camera
 
 
-def draw_pass(lit):
+def draw_pass(lit, quarter_turns=0):
     paper, rule, ink = ('#152c2b', '#39514b', '#e4eddd') if lit else ('#f8f1df', '#d4cbb7', '#27454b')
     im = Image.new('RGB', (W*SS, H*SS), paper)
     d = ImageDraw.Draw(im)
@@ -59,10 +65,12 @@ def draw_pass(lit):
             d.ellipse(pts([(W/2-radius,247-radius*.12),(W/2+radius,247+radius*.12)]),outline=rule,width=1)
     for x,y in [(16,18),(W-16,18),(16,H-18),(W-16,H-18)]:
         line([(x-4,y),(x+4,y)],ink); line([(x,y-4),(x,y+4)],ink)
-    label(31,18,'GITEDIT / MESH',12,True); label(W-114,H-28,'PASS 02' if lit else 'PASS 01')
+    label(31,18,'GITEDIT / MESH',12,True)
+    pass_label = 'PASS 02' if lit else 'PASS 01'
+    label(W-114,H-28, f'{quarter_turns * 90}°' if quarter_turns else pass_label)
     if lit: label(W-100,50,'СВЕТ',23,True)
     else: label(31,50,'СЕТКА',23,True)
-    faces, camera = mesh(); light = unit((.65,-.40,.88))
+    faces, camera = mesh(quarter_turns); light = unit((.65,-.40,.88))
     for normal, tri in faces:
         poly = [p[:2] for p in tri]; visible = dot(normal,camera)>0
         if lit and visible:
@@ -104,9 +112,25 @@ def stamp():
         print(''.join(row).rstrip())
 
 
+def pack_viewer():
+    """Bundle the same STL in one offline HTML, served as a download instead of source text."""
+    page = (HERE / 'crystal-view.html.in').read_text(encoding='utf-8')
+    solid = (HERE / 'crystal.stl').read_text(encoding='ascii')
+    if page.count('@@ASCII_STL@@') != 1:
+        raise ValueError('Expected one mesh slot in the viewer template')
+    # A fixed member date keeps the archive independent of checkout time.
+    with ZipFile(ASSETS / 'crystal-view.zip', 'w') as archive:
+        archive.writestr(ZipInfo('crystal.html'), page.replace('@@ASCII_STL@@', escape(solid)),
+                         compress_type=ZIP_DEFLATED)
+
+
 def export():
+    pack_viewer()
     wire, light = draw_pass(False), draw_pass(True)
     wire.save(ASSETS/'crystal-wire.png', optimize=True); light.save(ASSETS/'crystal-light.png',optimize=True)
+    for turn in (1, 2, 3):
+        draw_pass(True, turn).save(ASSETS / f'crystal-{turn * 90:03}.png', optimize=True)
+
     def wipe(f):
         x = round(W*f); im = light.copy()
         if x: im.paste(wire.crop((0,0,x,H)), (0,0))

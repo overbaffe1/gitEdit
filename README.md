@@ -12,7 +12,7 @@
 
 <p><a href="#покрути-кристалл"><picture>
   <source media="(prefers-reduced-motion: reduce)" srcset="assets/night-shift/fold-still.png">
-  <img src="assets/night-shift/fold.gif" width="620" alt="Восемь граней кристалла разворачиваются в один лист и собираются обратно. Нажми, чтобы перейти к вращаемой модели.">
+  <img src="assets/night-shift/fold.gif" width="620" alt="Восемь граней кристалла разворачиваются в один лист и собираются обратно. Нажми, чтобы выбрать ракурс кристалла.">
 </picture></a></p>
 
 **01 / Форма.** У кристалла разрезали пять рёбер. Остальные семь работают как сгибы: зелёные грани расходятся веером, абрикосовые ложатся вдоль края. Проследи за штрихами на любой грани — бумага поворачивается, но не растягивается.
@@ -30,75 +30,37 @@
 
 ### Покрути кристалл
 
-Потяни за вершину, приблизь модель колёсиком и переключи поверхность на каркас.
+Выбери ракурс: кадр меняется только по нажатию. Для свободного вращения [открой модель в 3D](atlas/samples/crystal.stl). Если просмотрщик GitHub не отвечает, [скачай автономную модель (ZIP)](https://github.com/overbaffe1/gitEdit/raw/refs/heads/main/assets/crystal-view.zip), распакуй и открой `crystal.html` в браузере. Интернет для вращения не нужен.
 
-<!-- These fences are the viewers themselves. Keep each payload identical to its geometry file in atlas/samples/. -->
-```stl
-solid field_crystal
-  facet normal 0.5906538 0.7269586 0.3502274
-    outer loop
-      vertex 3 -1 36
-      vertex 16 0 12
-      vertex 0 13 12
-    endloop
-  endfacet
-  facet normal 0.4731097 0.5822889 -0.6611405
-    outer loop
-      vertex -2 1 0
-      vertex 0 13 12
-      vertex 16 0 12
-    endloop
-  endfacet
-  facet normal -0.5568154 0.6853112 0.4693668
-    outer loop
-      vertex 3 -1 36
-      vertex 0 13 12
-      vertex -16 0 12
-    endloop
-  endfacet
-  facet normal -0.5236315 0.6444695 -0.5571976
-    outer loop
-      vertex -2 1 0
-      vertex -16 0 12
-      vertex 0 13 12
-    endloop
-  endfacet
-  facet normal -0.5713854 -0.7032436 0.4230450
-    outer loop
-      vertex 3 -1 36
-      vertex -16 0 12
-      vertex 0 -13 12
-    endloop
-  endfacet
-  facet normal -0.4923218 -0.6059346 -0.6248700
-    outer loop
-      vertex -2 1 0
-      vertex 0 -13 12
-      vertex -16 0 12
-    endloop
-  endfacet
-  facet normal 0.6024457 -0.7414717 0.2954301
-    outer loop
-      vertex 3 -1 36
-      vertex 0 -13 12
-      vertex 16 0 12
-    endloop
-  endfacet
-  facet normal 0.4435471 -0.5459041 -0.7108127
-    outer loop
-      vertex -2 1 0
-      vertex 16 0 12
-      vertex 0 -13 12
-    endloop
-  endfacet
-endsolid field_crystal
-```
+<details name="crystal-angle" open>
+<summary>0° · Спереди</summary>
 
-Паспорт модели: $V=6$ вершин, $E=12$ рёбер, $F=8$ граней. Четыре треугольника сверху и четыре снизу: эту же сетку дальше увидишь в цвете.
+<a href="atlas/samples/crystal.stl"><img src="assets/crystal-light.png" width="432" alt="Кристалл спереди. Открыть модель для свободного вращения."></a>
 
-```math
-V - E + F = 6 - 12 + 8 = 2
-```
+</details>
+
+<details name="crystal-angle">
+<summary>90° · Справа</summary>
+
+<a href="atlas/samples/crystal.stl"><img src="assets/crystal-090.png" width="432" alt="Кристалл справа. Открыть модель для свободного вращения."></a>
+
+</details>
+
+<details name="crystal-angle">
+<summary>180° · Сзади</summary>
+
+<a href="atlas/samples/crystal.stl"><img src="assets/crystal-180.png" width="432" alt="Кристалл сзади. Открыть модель для свободного вращения."></a>
+
+</details>
+
+<details name="crystal-angle">
+<summary>270° · Слева</summary>
+
+<a href="atlas/samples/crystal.stl"><img src="assets/crystal-270.png" width="432" alt="Кристалл слева. Открыть модель для свободного вращения."></a>
+
+</details>
+
+У модели 6 вершин, 12 рёбер и 8 граней: четыре треугольника сверху и четыре снизу.
 
 ### Кейс проекта
 
@@ -1662,7 +1624,7 @@ https://github.com/user-attachments/assets/031799d1-740d-4cda-90cf-689513fa9860
 
 ### Оглавление
 
-- **Форма:** [бумажный раскрой](#бумажный-кристалл) · [вращаемая модель](#покрути-кристалл) · [кейс: сетка и свет](#кейс-проекта) · [обложка «Север» и печатные оттиски](#мастерская-оформления).
+- **Форма:** [бумажный раскрой](#бумажный-кристалл) · [ракурсы кристалла и 3D](#покрути-кристалл) · [кейс: сетка и свет](#кейс-проекта) · [обложка «Север» и печатные оттиски](#мастерская-оформления).
 - **Данные:** [перфолента](#перфолента) · [город вкладов](#город-вкладов) · [отпечаток репозитория](#отпечаток-репозитория) · [две карты](#две-карты) · [графики](#графики-из-данных).
 - **Движение:** [театр теней](#театр-теней) · [кинолента и граф веток](#кинолаборатория) · [терминал](#терминал-в-readme) · [видео с перемоткой](#видео-с-перемоткой).
 - **Своё портфолио:** [витрина шаблонов](#витрина-шаблонов) · [палитра Markdown](#палитра-markdown) · [исходники и готовые блоки](#исходники-readme).
@@ -1706,7 +1668,7 @@ https://github.com/user-attachments/assets/031799d1-740d-4cda-90cf-689513fa9860
 ### Марки вместо меню
 
 <p align="center">
-  <a href="#покрути-кристалл"><img src="assets/seal-crystal.svg" width="140" alt="Марка «Кристалл» — перейти к вращаемой модели"></a>
+  <a href="#покрути-кристалл"><img src="assets/seal-crystal.svg" width="140" alt="Марка «Кристалл» — выбрать ракурс модели"></a>
   <a href="#квартал-в-3d"><img src="assets/seal-skyline.svg" width="140" alt="Марка «Квартал» — перейти к башням по неделям"></a>
   <a href="#кинолаборатория"><img src="assets/seal-reel.svg" width="140" alt="Марка «Кинолента» — перейти к графу веток"></a>
 </p>
@@ -1953,6 +1915,12 @@ sequenceDiagram
 
 <ruby>色見本<rp> (</rp><rt>いろみほん</rt><rp>)</rp></ruby> — «образец цвета»: чтение набрано над иероглифами. Нижний и верхний индексы тоже остаются текстом: H<sub>2</sub>O и м<sup>2</sup>.
 
+Для кристалла с $V=6$ вершинами, $E=12$ рёбрами и $F=8$ гранями формула Эйлера выглядит так:
+
+```math
+V - E + F = 6 - 12 + 8 = 2
+```
+
 ```diff
 - Показать только название проекта.
 + Показать работу, а название оставить в подписи.
@@ -1970,7 +1938,7 @@ sequenceDiagram
 
 ## Где заканчивается README
 
-Кристалл и квартал можно повернуть, карты приблизить, у видео нажать Play. У GIF нет ручной перемотки, а у нашего сравнения нет перетаскиваемой ручки. Переключатель автозапуска GIF в GitHub и системное уменьшение движения — разные настройки. Если система просит меньше движения, «Север» останется неподвижным. Поиск по CSV и просмотр самого PDF работают в просмотрщиках файлов; для своего JavaScript или игры с сохранением ходов нужен другой интерфейс.
+У кристалла здесь четыре неподвижных ракурса, а свободное вращение открывается отдельно. Квартал можно повернуть прямо в README, карты — приблизить, у видео — нажать Play. У GIF нет ручной перемотки, а у нашего сравнения нет перетаскиваемой ручки. Переключатель автозапуска GIF в GitHub и системное уменьшение движения — разные настройки. Если система просит меньше движения, «Север» останется неподвижным. Поиск по CSV и просмотр самого PDF работают в просмотрщиках файлов; для своего JavaScript или игры с сохранением ходов нужен другой интерфейс.
 
 ---
 
@@ -2090,6 +2058,7 @@ python3 atlas/samples/maker-seals.py my-project my-mark.svg --label 'Мой пр
 | Город вкладов | [GIF](assets/contribution-city.gif) · [полный неподвижный кадр](assets/contribution-city.png) · [скрипт экспорта](atlas/samples/render-city.py). Кадры сняты с [оригинального SVG yoshi389111](https://github.com/yoshi389111/github-profile-3d-contrib/blob/e235d118909be71eb7edb05482a3de4e76156df3/docs/demo/profile-night-view.svg) (© SATO, Yoshiyuki, [MIT](assets/licenses/contribution-city-MIT.txt)). В оригинале `dur="3s"`, `repeatCount="1"`: при открытии файла с начала виден ещё один проход. Здесь первый кадр уже заполнен, затем идёт обратный ход и повтор роста. |
 | Змейка | [GIF](assets/snake-weeks.gif) · [PNG](assets/snake-weeks.png) · [данные за 112 дней](atlas/samples/snake-weeks.csv) · [наш отрисовщик](atlas/samples/render-calendar.py). Идея календаря — [Platane/snk](https://github.com/Platane/snk). Это собственный маршрут по **коммитам репозитория**, не копия рисунка Platane и не календарь вкладов пользователя. Даты коммитера в UTC посчитаны по [Commits API LazyGit, страницы по 100 записей](https://api.github.com/repos/jesseduffield/lazygit/commits?sha=bb64e3ccb6524368945ba0dfd3134b4189644eed&since=2025-01-06T00:00:00Z&until=2025-04-27T23:59:59Z&per_page=100). |
 | Квартал в 3D | [STL 16 недель](atlas/samples/weekly-skyline.stl) · [генератор на чистом Python](atlas/samples/weekly-skyline.py). Читает тот же CSV, печатает два треугольника на каждую сторону дома. `python atlas/samples/weekly-skyline.py --update-readme` обновляет файл и только его встроенный блок. |
+| Ракурсы кристалла | Один [STL](atlas/samples/crystal.stl), четыре статичных кадра: [0°](assets/crystal-light.png), [90°](assets/crystal-090.png), [180°](assets/crystal-180.png), [270°](assets/crystal-270.png). [Отрисовщик](atlas/samples/render-passes.py) поворачивает камеру, не меняя сетку и освещение. В README ракурсы переключают обычные `<details>`; встроенный `stl` для сравнения есть [в атласе](atlas/relief.md#кристалл). Тот же скрипт вкладывает исходный STL в [шаблон автономного просмотрщика](atlas/samples/crystal-view.html.in) и пакует один HTML в [ZIP](assets/crystal-view.zip). |
 | Сетка ↔ свет | [GIF](assets/crystal-wipe.gif) · [кадр сравнения](assets/crystal-wipe.png) · [сетка](assets/crystal-wire.png) · [свет](assets/crystal-light.png) · [отрисовщик по настоящему STL](atlas/samples/render-passes.py). Ползунок для сайта и GIF-переход для документа — два подхода у [Knight Lab](https://juxtapose.knightlab.com/) ([JuxtaposeJS](https://github.com/NUKnightLab/juxtapose)). Здесь свой GIF, без встроенного JS. |
 | Оттиск символами | Тот же `render-passes.py --stamp` печатает проекцию гранями разной плотности. Ещё один подход к графике в терминале — [Chafa](https://github.com/hpjansson/chafa); наш оттиск рассчитан из вершин, а не взят из чужого скриншота. |
 | Отпечаток репозитория | [Широкий SVG](assets/repo-fingerprint.svg) · [мобильный SVG](assets/repo-fingerprint-compact.svg) · [скрипт по `git ls-tree`](atlas/samples/repo-fingerprint.mjs). Идея упаковки файлов в круги — [эксперимент GitHub Next](https://githubnext.com/projects/repo-visualization/) и [реальный README с repo-visualizer](https://github.com/githubocto/repo-visualizer-demo). У нас статичный экспорт D3, не iframe и не запущенный Action. |
