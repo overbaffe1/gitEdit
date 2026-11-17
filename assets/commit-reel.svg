@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="452" height="184" viewBox="0 0 452 184" role="img" aria-labelledby="title desc" xml:lang="ru">
+  <title id="title">Склейка веток — кинолента коммитов</title>
+  <desc id="desc">От A расходятся две линии: B в main и C в edit. Обе приходят в коммит слияния M.</desc>
+  <style>
+    :root {
+      --stock: #403544; --hole: #f8eddb; --paper: #fff4dd; --ink: #342b37;
+      --main: #624183; --edit: #14644f; --guide: #c5b8a7;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --stock: #484455; --hole: #15151e; --paper: #20212c; --ink: #fbefd9;
+        --main: #d4b2ff; --edit: #8de6bf; --guide: #655e72;
+      }
+    }
+    text { font-family: ui-monospace, Menlo, Consolas, monospace; fill: var(--ink); }
+    .node { font-size: 15px; font-weight: bold; text-anchor: middle; fill: var(--paper); }
+    /* A single pass. Without motion support the complete graph is the base image. */
+    @media (prefers-reduced-motion: no-preference) {
+      .trace { stroke-dasharray: 1 1; animation: draw .9s ease-in-out var(--at, .15s) both; }
+      .cue { animation: appear .22s ease-out var(--at) both; }
+      @keyframes draw { from { stroke-dashoffset: 1; } to { stroke-dashoffset: 0; } }
+      @keyframes appear { from { opacity: 0; } to { opacity: 1; } }
+    }
+  </style>
+  <defs>
+    <pattern id="perforations" x="6" width="20" height="8" patternUnits="userSpaceOnUse">
+      <rect x="4" y="1" width="10" height="5.5" rx="1.5" fill="var(--hole)"/>
+    </pattern>
+    <path id="ab" pathLength="1" d="M114 86h122"/>
+    <path id="ac" pathLength="1" d="M114 86c41 0 31 46 76 46h46"/>
+    <path id="bm" pathLength="1" d="M236 86h134"/>
+    <path id="cm" pathLength="1" d="M236 132h52c46 0 41-46 82-46"/>
+  </defs>
+  <rect x="1" y="1" width="450" height="182" rx="11" fill="var(--stock)"/>
+  <rect x="10" y="8" width="432" height="8" fill="url(#perforations)"/>
+  <rect x="10" y="168" width="432" height="8" fill="url(#perforations)"/>
+  <rect x="12" y="21" width="428" height="141" rx="4" fill="var(--paper)"/>
+  <text x="26" y="49" style="font: bold 23px system-ui, sans-serif; letter-spacing: -.7px">Склейка веток</text>
+  <text x="426" y="46" font-size="12" letter-spacing="1.1" text-anchor="end">16 ММ / 01</text>
+  <path d="M26 59h400" stroke="var(--guide)"/>
+  <g font-size="19" font-weight="bold">
+    <text x="27" y="92" style="fill: var(--main)">main</text>
+    <text x="27" y="138" style="fill: var(--edit)">edit</text>
+  </g>
+  <g fill="none" stroke="var(--guide)" stroke-width="1.5">
+    <use href="#ab"/><use href="#ac"/><use href="#bm"/><use href="#cm"/>
+  </g>
+  <g fill="none" stroke-width="4" stroke-linecap="round">
+    <use class="trace" href="#ab" stroke="var(--main)"/>
+    <use class="trace" href="#ac" stroke="var(--edit)" style="--at: .55s"/>
+    <use class="trace" href="#bm" stroke="var(--main)" style="--at: 1.6s"/>
+    <use class="trace" href="#cm" stroke="var(--edit)" style="--at: 1.7s"/>
+  </g>
+  <circle cx="114" cy="86" r="12" fill="var(--main)"/>
+  <text x="114" y="91" class="node">A</text>
+  <g class="cue" style="--at: 1s">
+    <circle cx="236" cy="86" r="12" fill="var(--main)"/><text x="236" y="91" class="node">B</text>
+  </g>
+  <g class="cue" style="--at: 1.4s">
+    <circle cx="236" cy="132" r="12" fill="var(--edit)"/><text x="236" y="137" class="node">C</text>
+  </g>
+  <g class="cue" style="--at: 2.5s">
+    <rect x="357" y="73" width="26" height="26" rx="5" fill="var(--ink)"/>
+    <text x="370" y="91" class="node">M</text>
+    <path d="m393 86 4 4 8-9" fill="none" stroke="var(--edit)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

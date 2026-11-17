@@ -14,11 +14,61 @@
   <a href="templates/PROFILE-README-TEMPLATE.md"><img src="assets/cover-profile.svg" width="360" alt="Открыть шаблон профиля: работы, стек и контакты"></a>
 </p>
 
-[Как сделать такую витрину](#5-витрина-из-двух-обложек) · [Змейка коммитов для профиля](templates/profile-snake-workflow.yml)
+[Кинолаборатория](#кинолаборатория) · [Оглавление](#оглавление) · [Код витрины](#5-витрина-из-двух-обложек) · [Змейка для профиля](templates/profile-snake-workflow.yml)
 
-Нужен один элемент, а не целый шаблон? Выбери раздел ниже: рядом с примерами есть код для копирования.
+## Кинолаборатория
+
+На плёнке — короткая история двух веток. Проследи линии назад от кадра `M`: какие два коммита стали его родителями?
+
+<p align="center">
+  <img src="assets/commit-reel.svg" width="560" alt="От A расходятся линии к B в main и C в edit. Из B и C линии сходятся в M.">
+</p>
+
+<details>
+<summary><b>Монтажный лист</b> · проверить ответ и забрать киноленту</summary>
+
+Родители `M` — **`B` и `C`**. Коммит `A` есть в истории обеих веток, но он их общий предок, а не родитель `M`.
+
+Скопируй [киноленту](assets/commit-reel.svg) в папку `assets/` своего репозитория и вставь строку ниже. Это иллюстрация, а не статистика репозитория: она проигрывается один раз, а при включённом уменьшении движения сразу показывает всю схему.
+
+```markdown
+![История веток: A → B и A → C, затем слияние B и C в M](assets/commit-reel.svg)
+```
+
+Хочешь изобразить свои ветки? Вот [та же история на Mermaid](#граф-коммитов): вместо координат SVG редактируются имена веток и коммитов.
+
+</details>
+
+<details>
+<summary><b>Проявочная</b> · сравнить «Ризограф» и «Фосфор»</summary>
+
+Один хребет, два оттиска. У «Ризографа» видны точки типографского растра и чуть смещённая краска. У «Фосфора» те же вершины проступают на сетке экрана.
+
+<p align="center">
+  <img src="assets/relief-riso.svg" width="340" alt="Ризограф: тёмный горный хребет и коралловое солнце на кремовой бумаге">
+  <img src="assets/relief-phosphor.svg" width="340" alt="Фосфор: тот же хребет мятными линиями, над ним янтарный диск">
+</p>
+
+| Оттиск | Фон `--paper` | Контур `--ink` | Акцент `--spot` |
+|---|---|---|---|
+| [Ризограф](assets/relief-riso.svg) | `#FFF1D9` | `#292948` | `#EF6747` |
+| [Фосфор](assets/relief-phosphor.svg) | `#102622` | `#ADF2CB` | `#FFD182` |
+
+Чтобы превратить пару в одну заставку, скопируй оба SVG в `assets/` и вставь этот блок. На светлой теме появится бумажный оттиск, на тёмной — экранный. Цвета меняются в `:root` каждого SVG.
+
+```html
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/relief-phosphor.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/relief-riso.svg">
+  <img src="assets/relief-riso.svg" width="480" alt="Рельеф: горный хребет под низким солнцем">
+</picture>
+```
+
+</details>
 
 ## Оглавление
+
+Нужен один элемент, а не целый шаблон? Выбери раздел ниже: рядом с примерами есть код для копирования.
 
 1. [Бейджи и шилды (`Shields.io` + `Simple Icons`)](#1-бейджи-и-шилды-shieldsio--simple-icons)
 2. [Квадратные иконки стека одной строкой (`Skill Icons`)](#2-квадратные-иконки-стека-одной-строкой-skill-icons)
@@ -242,6 +292,41 @@ flowchart LR
     B -->|Ошибка| D[Фикс]
 ```
 ````
+
+### Граф коммитов
+
+Та же склейка, что в [кинолаборатории](#кинолаборатория), но без рисунка: `branch` создаёт ветку, `checkout` переключает текущую, а `merge` сливает указанную ветку в текущую.
+
+```mermaid
+gitGraph
+    commit id: "A"
+    branch edit
+    checkout main
+    commit id: "B"
+    checkout edit
+    commit id: "C"
+    checkout main
+    merge edit id: "M"
+```
+
+<details>
+<summary>Скопировать Markdown для своей истории</summary>
+
+````markdown
+```mermaid
+gitGraph
+    commit id: "A"
+    branch edit
+    checkout main
+    commit id: "B"
+    checkout edit
+    commit id: "C"
+    checkout main
+    merge edit id: "M"
+```
+````
+
+</details>
 
 <img src="assets/divider.svg" width="100%" alt="">
 

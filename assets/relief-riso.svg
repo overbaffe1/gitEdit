@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="384" height="180" viewBox="0 0 384 180" role="img" aria-labelledby="title desc" xml:lang="ru">
+  <title id="title">Рельеф — ризограф</title>
+  <desc id="desc">Горный хребет под коралловым солнцем. Две краски на кремовой бумаге, полутоновые точки и смещённый оттиск.</desc>
+  <style>
+    :root { --paper: #FFF1D9; --ink: #292948; --spot: #EF6747; }
+    .label { font: bold 12px ui-monospace, Menlo, Consolas, monospace; letter-spacing: 1.1px; fill: var(--ink); }
+  </style>
+  <defs>
+    <clipPath id="print"><rect x="16" y="34" width="352" height="92"/></clipPath>
+    <pattern id="dots" width="4" height="4" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r=".9" fill="var(--ink)"/>
+    </pattern>
+    <path id="ridge" d="m10 111 45-13 27 6 32-21 21 8 43-37 34 35 27-16 37 27 26-10 36 20 35-13v38H10z"/>
+  </defs>
+  <rect x="1" y="1" width="382" height="178" rx="7" fill="var(--paper)" stroke="var(--ink)"/>
+  <text x="16" y="23" class="label">ПОЛЕВОЙ АТЛАС</text>
+  <g fill="none" stroke="var(--ink)">
+    <circle cx="359" cy="20" r="4"/><path d="M351 20h16m-8-8v16"/>
+  </g>
+  <g clip-path="url(#print)">
+    <rect x="16" y="34" width="352" height="92" fill="var(--spot)" opacity=".12"/>
+    <circle cx="291" cy="63" r="21" fill="var(--spot)"/>
+    <circle cx="294" cy="61" r="21" fill="url(#dots)"/>
+    <path d="m12 94 37-13 35 8 36-21 26 10 26-18 42 16 41-18 37 23 30-7 49 17v39H12z" fill="var(--spot)" opacity=".6"/>
+    <use href="#ridge" fill="var(--spot)" transform="translate(3 -3)"/>
+    <use href="#ridge" fill="var(--ink)"/>
+    <g fill="var(--paper)" opacity=".78">
+      <path d="m178 54-17 34 16-12 13 14-6-17 16 7z"/>
+      <path d="m239 73-11 20 12-8 13 5z"/>
+    </g>
+    <path d="m7 123 69-11 53 10 62-22 56 13 41-7 65 18 32-4v17H7z" fill="var(--paper)"/>
+    <path d="m7 122 69-11 53 10 62-22 56 13 41-7 65 18 32-4v17H7z" fill="url(#dots)"/>
+  </g>
+  <text x="15" y="163" fill="var(--ink)" style="font: bold 34px Georgia, serif; letter-spacing: -.8px">Рельеф</text>
+  <text x="368" y="157" text-anchor="end" class="label">01 / РИЗОГРАФ</text>
+  <path d="M16 132h352" stroke="var(--ink)" stroke-opacity=".5"/>
+</svg>
