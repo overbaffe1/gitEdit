@@ -1,0 +1,9 @@
+stateDiagram-v2
+    state "Эскиз" as Draft
+    state "Цветопроба" as Proof
+    state "Тираж" as Print
+    [*] --> Draft
+    Draft --> Proof
+    Proof --> Draft: поправить цвет
+    Proof --> Print: утвердить
+    Print --> [*]

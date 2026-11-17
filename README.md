@@ -14,6 +14,8 @@
   <a href="templates/PROFILE-README-TEMPLATE.md"><img src="assets/cover-profile.svg" width="360" alt="Открыть шаблон профиля: работы, стек и контакты"></a>
 </p>
 
+**[Полевой атлас GitHub →](atlas/README.md)** · [Покрутить 3D-кристалл](atlas/samples/crystal.stl) · [Посмотреть чужие README в действии](atlas/inspiration.md)
+
 [Кинолаборатория](#кинолаборатория) · [Оглавление](#оглавление) · [Код витрины](#5-витрина-из-двух-обложек) · [Змейка для профиля](templates/profile-snake-workflow.yml)
 
 ## Кинолаборатория
@@ -192,7 +194,7 @@ https://img.shields.io/badge/<ЛЕВЫЙ_ТЕКСТ>-<ПРАВЫЙ_ТЕКСТ>-<
 
 ## 3. Живые SVG-анимации: печатная машинка, волны и свои баннеры
 
-GitHub режет JavaScript, но **полностью разрешает SMIL `<animate>` / `<animateTransform>` внутри `.svg`-картинок**.
+В этой шапке движение задано внутри SVG, а не скриптом в README. Не рассчитывай на анимацию во всех режимах: просмотр самого файла и показ его как картинки могут отличаться. Оставляй осмысленный неподвижный кадр. [О просмотре SVG на GitHub](https://docs.github.com/en/repositories/working-with-files/using-files/working-with-non-code-files#viewing-images).
 
 ### А) Самопечатающийся текст — [Readme Typing SVG](https://readme-typing-svg.demolab.com/demo/)
 
@@ -212,7 +214,7 @@ GitHub режет JavaScript, но **полностью разрешает SMIL 
 
 ### В) Профи-уровень: собственные локальные `.svg` в папке `assets/`
 
-Внешние сервисы иногда уходят в офлайн, а **локальный `.svg` внутри самого репозитория** грузится мгновенно, никогда не падает и позволяет верстать любую анимацию (посмотри исходники [`assets/banner-dark.svg`](assets/banner-dark.svg) и [`assets/banner-light.svg`](assets/banner-light.svg) в этом репо!).
+Локальный SVG не зависит от доступности стороннего генератора. Сравни две версии одной шапки: [тёмный исходник](assets/banner-dark.svg) и [светлый](assets/banner-light.svg).
 
 > [!WARNING]
 > **Важная тонкость SVG в браузерах:** если двигаешь группу `<g transform="translate(860, 50)">`, не вешай на этот же `<g>` CSS `@keyframes { transform: translateY(...) }` — CSS перетрёт координаты `860, 50` в `0, 0`. Вкладывай внутрь дочерний `<g>` с нативным `<animateTransform attributeName="transform" type="translate" .../>`.
