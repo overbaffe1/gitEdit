@@ -23,10 +23,12 @@ class Tags(HTMLParser):
 
 
 class CrystalViewTest(unittest.TestCase):
-    def test_one_screening_at_shared_permalink(self):
+    def test_one_screening_and_separate_native_file(self):
         before, after = (ROOT/'README.md').read_text(encoding='utf-8').split('\n### Покрути кристалл\n')
-        self.assertIn('href="#покрути-кристалл"', before)
         section = re.split(r'^#{1,3} ', after, maxsplit=1, flags=re.M)[0]
+        for entry in (before, section):
+            self.assertIn('](assets/crystal.stl)', entry)  # blob preview, not a raw download
+        self.assertIn('assets/crystal-view.zip)', section)
         tags = Tags(); tags.feed(section)
         for tag in ('details','iframe','model-viewer','script'):
             self.assertNotIn(tag, tags.by_tag)

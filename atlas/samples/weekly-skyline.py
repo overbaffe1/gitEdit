@@ -1,6 +1,7 @@
 """Turn the 16 calendar weeks in snake-weeks.csv into a rotatable ASCII STL.
 
-python atlas/samples/weekly-skyline.py [--update-readme]
+python atlas/samples/weekly-skyline.py
+Updates the source STL, the visitor-facing STL and its static plate, never the README.
 A unit of height is one commit. Every week is a separate closed solid;
 streets are the spaces between buildings. No network or extra packages.
 """
@@ -10,8 +11,6 @@ from datetime import date, timedelta
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-READ_ME = HERE.parents[1] / 'README.md'
-BEGIN, END = '<!-- weekly-skyline:begin -->', '<!-- weekly-skyline:end -->'
 
 
 def read_weeks():
@@ -47,14 +46,8 @@ def build(heights):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--update-readme', action='store_true')
-    options = parser.parse_args()
-    stl = build(read_weeks())
-    (HERE / 'weekly-skyline.stl').write_text(stl)
-    if options.update_readme:
-        text = READ_ME.read_text()
-        if text.count(BEGIN) != 1 or text.count(END) != 1:
-            raise ValueError('Missing or ambiguous skyline markers in README')
-        before, region = text.split(BEGIN)
-        _, after = region.split(END)
-        READ_ME.write_text(before + BEGIN + '\n\n```stl\n' + stl + '```\n\n' + END + after)
+    parser.add_argument('--update-readme', action='store_true', help='Legacy spelling; updates linked files only.')
+    parser.parse_args()
+    (HERE / 'weekly-skyline.stl').write_text(build(read_weeks()), encoding='ascii')
+    from file_plates import publish_skyline
+    publish_skyline()

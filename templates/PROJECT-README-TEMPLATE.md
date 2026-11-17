@@ -1,10 +1,11 @@
+<!-- Для своего проекта замени ссылки Demo и Issues. Скопируй PNG схемы и её .mmd; поправь оба пути относительно своего README. -->
 <div align="center">
 
 ![Header](https://capsule-render.vercel.app/api?type=waving&color=0:0F172A,55:6D28D9,100:0284C7&height=190&section=header&text=Project%20Name&fontSize=48&fontColor=FFFFFF&animation=fadeIn&desc=Короткий%20слоган%20проекта%20в%20одну%20строку&descAlignY=68&descSize=18)
 
 [![Live Demo](https://img.shields.io/badge/Live-Demo-22C55E?style=for-the-badge&logo=vercel&logoColor=white)](https://example.com)
-[![Documentation](https://img.shields.io/badge/Docs-Читать-8B5CF6?style=for-the-badge&logo=readthedocs&logoColor=white)](#быстрый-старт)
-[![Issues](https://img.shields.io/badge/Issues-Сообщить%20баг-F97316?style=for-the-badge&logo=github&logoColor=white)](../../issues)
+[![Архитектура](https://img.shields.io/badge/Схема-Архитектура-8B5CF6?style=for-the-badge)](../assets/mermaid/project-architecture.png)
+[![Issues](https://img.shields.io/badge/Issues-Сообщить%20баг-F97316?style=for-the-badge&logo=github&logoColor=white)](https://github.com/overbaffe1/gitEdit/issues)
 
 ![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=flat-square&logo=python&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
@@ -38,16 +39,9 @@
 
 ## Архитектура
 
-```mermaid
-flowchart LR
-    Client(["Клиент / UI"]) --> API["Backend API"]
-    API --> Worker["Worker / ML / Engine"]
-    API --> DB[("Database")]
-    Worker --> Storage[("Artifacts / S3")]
+<p><a href="../assets/mermaid/project-architecture.png"><img src="../assets/mermaid/project-architecture.png" width="420" alt="Клиент обращается к API; API связан с базой и обработчиком, обработчик — с хранилищем."></a></p>
 
-    classDef main fill:#1e1b4b,stroke:#8b5cf6,stroke-width:1.5px,color:#f5f3ff;
-    class Client,API,Worker,DB,Storage main;
-```
+[Редактируемый исходник схемы](../atlas/samples/project-architecture.mmd)
 
 ---
 

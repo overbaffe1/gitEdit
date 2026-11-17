@@ -1,18 +1,20 @@
 # Ночная смена
 
-**Выбери прибор:** разверни бумажный кристалл, прочти перфоленту или загляни за решётку проектора. Всё открывается прямо здесь.
+**Выбери прибор:** разверни бумажный кристалл, прочти перфоленту или загляни за решётку проектора. Листай выставку здесь; нажатие на прибор открывает его файл из `assets/`.
 
-<p align="center"><a href="#бумажный-кристалл"><img src="assets/night-shift/bench-glass.jpg" width="33%" alt="Кристалл под лампой — к сборочному столу"></a><a href="#перфолента"><img src="assets/night-shift/bench-tape.jpg" width="33%" alt="Считыватель — расшифровать перфоленту"></a><a href="#театр-теней"><img src="assets/night-shift/bench-film.jpg" width="33%" alt="Кинопроектор — в театр теней"></a></p>
+<p align="center"><a href="assets/night-shift/fold.gif"><img src="assets/night-shift/bench-glass.jpg" width="33%" alt="Кристалл под лампой — открыть анимацию сгиба"></a><a href="assets/night-shift/weeks-tape.svg"><img src="assets/night-shift/bench-tape.jpg" width="33%" alt="Считыватель — открыть лист перфоленты"></a><a href="assets/night-shift/moth-projector.svg"><img src="assets/night-shift/bench-film.jpg" width="33%" alt="Кинопроектор — открыть оптический проектор"></a></p>
 
-[01 · Кристалл](#бумажный-кристалл)　 [02 · Перфолента](#перфолента)　 [03 · Театр теней](#театр-теней)
+[01 · Кристалл](assets/night-shift/fold.gif)　 [02 · Перфолента](assets/night-shift/weeks-tape.svg)　 [03 · Театр теней](assets/night-shift/moth-projector.svg)
 
-**Ещё на выставке:** [3D-модель](#покрути-кристалл) · [город вкладов](#город-вкладов) · [обложка «Север»](#мастерская-оформления) · [оглавление](#оглавление).
+**Кристалл в 3D:** [студия «Грань» — текстуры и движение](https://rawcdn.githack.com/overbaffe1/gitEdit/7b8b2cb05c77223867c772de0d411330f1eddc9f/docs/index.html) · [синий просмотрщик GitHub — отдельный STL](assets/crystal.stl).
+
+**Ещё файлы:** [кинопетля капсулы](assets/crystal-theatre.gif) · [город вкладов](assets/contribution-city.gif) · [обложка «Север»](assets/polar-cover.svg).
 
 ## Бумажный кристалл
 
-<p><a href="#покрути-кристалл"><picture>
+<p><a href="assets/night-shift/fold.gif"><picture>
   <source media="(prefers-reduced-motion: reduce)" srcset="assets/night-shift/fold-still.png">
-  <img src="assets/night-shift/fold.gif" width="620" alt="Восемь граней кристалла разворачиваются в один лист и собираются обратно. Нажми, чтобы увидеть малахитовую капсулу в движении.">
+  <img src="assets/night-shift/fold.gif" width="620" alt="Восемь граней кристалла разворачиваются в один лист и собираются обратно. Нажми, чтобы открыть GIF целиком.">
 </picture></a></p>
 
 **01 / Форма.** У кристалла разрезали пять рёбер. Остальные семь работают как сгибы: зелёные грани расходятся веером, абрикосовые ложатся вдоль края. Проследи за штрихами на любой грани — бумага поворачивается, но не растягивается.
@@ -20,40 +22,42 @@
 <details>
 <summary><b>Разложить выкройку на столе</b></summary>
 
-<img src="assets/night-shift/crystal-net.svg" width="620" alt="Выкройка из восьми треугольников. Пунктир — сгибы, буквы A–E попарно отмечают швы; на одном краю каждой пары есть клапан.">
+<a href="assets/night-shift/crystal-net.svg"><img src="assets/night-shift/crystal-net.svg" width="620" alt="Выкройка из восьми треугольников. Пунктир — сгибы, буквы A–E попарно отмечают швы; на одном краю каждой пары есть клапан."></a>
 
 Это раскрой именно этой модели. Режь по сплошным линиям, сгибай по пунктиру; **A** соединяется с **A**, **B** с **B** и так далее. Внизу листа — линейка 30 мм для проверки масштаба при печати.
 
 </details>
 
-<a href="#перфолента"><img src="assets/night-shift/ticket-fold.svg" width="300" alt="Билет 1 из 3 — перейти к перфоленте"></a>
+<a href="assets/night-shift/weeks-tape.svg"><img src="assets/night-shift/ticket-fold.svg" width="300" alt="Билет 1 из 3 — открыть файл перфоленты"></a>
 
 ### Покрути кристалл
 
-<p><a href="https://rawcdn.githack.com/overbaffe1/gitEdit/ac0dd93aa7481a0961f366765dec9d1a766b10be/docs/index.html"><picture>
+<p><a href="https://rawcdn.githack.com/overbaffe1/gitEdit/7b8b2cb05c77223867c772de0d411330f1eddc9f/docs/index.html"><picture>
   <source media="(prefers-reduced-motion: reduce)" srcset="docs/poster.jpg">
-  <img src="assets/crystal-theatre.gif" width="704" alt="Восемь малахитовых створок расходятся, открывая янтарное ядро и две латунные орбиты, и снова смыкаются. Нажми, чтобы управлять моделью.">
+  <img src="assets/crystal-theatre.gif" width="704" alt="Восемь малахитовых створок расходятся, открывая янтарное ядро и две латунные орбиты, и снова смыкаются. Нажми, чтобы управлять моделью в студии.">
 </picture></a></p>
 
 **Малахитовая капсула.** Прожилки нанесены на те же восемь граней бумажного кристалла. За один оборот можно увидеть и камень снаружи, и гравировку на обратной стороне створок. Здесь идёт восьмисекундная кинопетля — раскрывать картинки не нужно.
 
-**[Открыть 3D-студию «Грань» →](https://rawcdn.githack.com/overbaffe1/gitEdit/ac0dd93aa7481a0961f366765dec9d1a766b10be/docs/index.html)** · **[Включить парусник из MyWorkAiBrain →](https://rawcdn.githack.com/overbaffe1/gitEdit/ac0dd93aa7481a0961f366765dec9d1a766b10be/docs/index.html?scene=ship)**
+**[Открыть 3D-студию «Грань» →](https://rawcdn.githack.com/overbaffe1/gitEdit/7b8b2cb05c77223867c772de0d411330f1eddc9f/docs/index.html)** · **[Включить парусник из MyWorkAiBrain →](https://rawcdn.githack.com/overbaffe1/gitEdit/7b8b2cb05c77223867c772de0d411330f1eddc9f/docs/index.html?scene=ship)**
 
-При первом открытии CDN может попросить подтвердить переход к странице `gitEdit`. В студии можно потянуть модель мышью или пальцем, остановить клип и передвинуть ползунок времени. У парусника проигрывается его собственная анимация парусов, волн и чайки. Можно открыть свой GLB или STL; для STL — добавить рисунок на поверхность. [Та же студия для работы без сети (ZIP)](https://github.com/overbaffe1/gitEdit/raw/refs/heads/main/assets/crystal-view.zip): распакуй и открой `crystal.html`. Паруснику при первом открытии нужен интернет или скачанный `ship.glb`.
+Без текстур и клипа: **[открыть тот же кристалл в синем просмотрщике GitHub (STL)](assets/crystal.stl)**.
+
+При первом открытии студии CDN может попросить подтвердить переход к странице `gitEdit`. В студии можно потянуть модель мышью или пальцем, остановить клип и передвинуть ползунок времени. У парусника проигрывается его собственная анимация парусов, волн и чайки. Можно открыть свой GLB или STL; для STL — добавить рисунок на поверхность. [Та же студия для работы без сети (ZIP)](https://github.com/overbaffe1/gitEdit/raw/refs/heads/main/assets/crystal-view.zip): распакуй и открой `crystal.html`. Паруснику при первом открытии нужен интернет или скачанный `ship.glb`.
 
 ### Кейс проекта
 
 **Один кристалл, два прохода.** Слева — рёбра на чертёжной сетке, справа — те же грани под цветным светом. Граница сама проходит по рисунку. Верхушка не смещается: положение камеры в обоих кадрах одинаковое.
 
-<picture>
+<p><a href="assets/crystal-wipe.gif"><picture>
   <source media="(prefers-reduced-motion: reduce)" srcset="assets/crystal-wipe.png">
   <img src="assets/crystal-wipe.gif" width="576" alt="Один ракурс кристалла: слева каркас на бумаге, справа цветные грани. Граница сравнения движется сама.">
-</picture>
+</picture></a></p>
 
 <details>
 <summary>Положить оба кадра рядом и рассмотреть без движения</summary>
 
-<img src="assets/crystal-wire.png" width="315" alt="Каркас кристалла с видимыми и скрытыми рёбрами"> <img src="assets/crystal-light.png" width="315" alt="Тот же ракурс с цветом граней и полосами отражённого света">
+<a href="assets/crystal-wire.png"><img src="assets/crystal-wire.png" width="315" alt="Каркас кристалла с видимыми и скрытыми рёбрами"></a> <a href="assets/crystal-light.png"><img src="assets/crystal-light.png" width="315" alt="Тот же ракурс с цветом граней и полосами отражённого света"></a>
 
 </details>
 
@@ -80,10 +84,10 @@
 
 ## Перфолента
 
-<picture>
+<p><a href="assets/night-shift/weeks-tape.svg"><picture>
   <source media="(max-width: 600px)" srcset="assets/night-shift/weeks-tape-compact.svg">
   <img src="assets/night-shift/weeks-tape.svg" width="638" alt="Перфолента на 16 недель. В колонках 07 и 15 пробиты 32, 8 и 4; в пятнадцатой есть ещё нижнее отверстие.">
-</picture>
+</picture></a></p>
 
 **02 / Данные.** У каждой недели свой столбец. Тёмный круг — пробитое отверстие: сложи веса напротив таких кругов. Ряд маленьких точек нужен для подачи ленты и в сумму не входит.
 
@@ -92,1390 +96,41 @@
 <details>
 <summary><b>Положить колонки рядом и прочитать код</b></summary>
 
-<img src="assets/night-shift/weeks-key.svg" width="476" alt="Расшифровка: 32 + 8 + 4 = 44; 32 + 8 + 4 + 1 = 45.">
+<a href="assets/night-shift/weeks-key.svg"><img src="assets/night-shift/weeks-key.svg" width="476" alt="Расшифровка: 32 + 8 + 4 = 44; 32 + 8 + 4 + 1 = 45."></a>
 
-**Одним отверстием в дорожке 1.** 17–23 февраля — 44 коммита, 14–20 апреля — 45. Те же шестнадцать недель ниже превращаются в [календарь](#змейка-на-календаре) и [квартал](#квартал-в-3d).
+**Одним отверстием в дорожке 1.** 17–23 февраля — 44 коммита, 14–20 апреля — 45. Те же шестнадцать недель превратились в [календарь](assets/snake-weeks.gif) и [квартал](assets/weekly-skyline.stl).
 
 </details>
 
-<a href="#театр-теней"><img src="assets/night-shift/ticket-tape.svg" width="300" alt="Билет 2 из 3 — перейти в театр теней"></a>
+<a href="assets/night-shift/moth-projector.svg"><img src="assets/night-shift/ticket-tape.svg" width="300" alt="Билет 2 из 3 — открыть файл проектора"></a>
 
 ### Приёмы из других README
 
 #### Город вкладов
 
-<picture>
+<p><a href="assets/contribution-city.gif"><picture>
   <source media="(prefers-reduced-motion: reduce)" srcset="assets/contribution-city.png">
   <img src="assets/contribution-city.gif" width="680" alt="Ночной город вкладов: синие башни растут на календарной сетке, рядом видны доли языков и виды вкладов.">
-</picture>
+</picture></a></p>
 
-Башни растут прямо здесь. Первый кадр показывает **весь город**, а движение повторяется, так что его не пропустишь при прокрутке. В режиме уменьшенного движения останется тот же ночной вид. Это календарь из демонстрации **yoshi389111** за 2021–2022 годы, не статистика этого профиля. Это иллюстрация, а не вращаемая сцена. Для вращения есть [3D-квартал чуть ниже](#квартал-в-3d).
+Башни растут прямо здесь. Первый кадр показывает **весь город**, а движение повторяется, так что его не пропустишь при прокрутке. В режиме уменьшенного движения останется тот же ночной вид. Это календарь из демонстрации **yoshi389111** за 2021–2022 годы, не статистика этого профиля. Это иллюстрация, а не вращаемая сцена. Для вращения есть [отдельный STL квартала](assets/weekly-skyline.stl).
 
 #### Змейка на календаре
 
-<picture>
+<p><a href="assets/snake-weeks.gif"><picture>
   <source media="(prefers-reduced-motion: reduce)" srcset="assets/snake-weeks.png">
   <img src="assets/snake-weeks.gif" width="552" alt="Змейка проходит по 112 клеткам календаря LazyGit. За 16 недель в снимке 398 коммитов.">
-</picture>
+</picture></a></p>
 
 Один столбец — неделя, верхняя клетка — понедельник. Змейка гасит клетки по пути; чем светлее нетронутая клетка, тем больше в тот день было коммитов. Это наш рисунок по истории **LazyGit**: 398 коммитов за 16 недель, с 6 января по 27 апреля 2025 года. Ни бот, ни вход в аккаунт для просмотра не нужны.
 
 #### Квартал в 3D
 
-Теперь потяни мышью за **настоящие башни**. Это другая модель: каждый дом — одна неделя из календаря LazyGit выше, единица высоты — один коммит. У всех 16 домов одинаковое основание. Найди самый высокий и посмотри на соседей с уровня улицы.
+Каждый дом — одна неделя из календаря LazyGit, единица высоты — один коммит. На рисунке тот же квартал, что и в STL. Найди самый высокий дом и сравни его с соседями.
 
-<!-- weekly-skyline:begin -->
+<p><a href="assets/weekly-skyline.stl"><img src="assets/weekly-skyline.svg" width="560" alt="16 домов разной высоты. Открыть квартал отдельным STL в просмотрщике GitHub."></a></p>
 
-```stl
-solid weekly_skyline
-  facet normal 0 0 -1
-    outer loop
-      vertex 0 0 0
-      vertex 0 10 0
-      vertex 10 10 0
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex 0 0 0
-      vertex 10 10 0
-      vertex 10 0 0
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 0 0 25
-      vertex 10 0 25
-      vertex 10 10 25
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 0 0 25
-      vertex 10 10 25
-      vertex 0 10 25
-    endloop
-  endfacet
-  facet normal 0 -1 0
-    outer loop
-      vertex 0 0 0
-      vertex 10 0 0
-      vertex 10 0 25
-    endloop
-  endfacet
-  facet normal 0 -1 0
-    outer loop
-      vertex 0 0 0
-      vertex 10 0 25
-      vertex 0 0 25
-    endloop
-  endfacet
-  facet normal 1 0 0
-    outer loop
-      vertex 10 0 0
-      vertex 10 10 0
-      vertex 10 10 25
-    endloop
-  endfacet
-  facet normal 1 0 0
-    outer loop
-      vertex 10 0 0
-      vertex 10 10 25
-      vertex 10 0 25
-    endloop
-  endfacet
-  facet normal 0 1 0
-    outer loop
-      vertex 10 10 0
-      vertex 0 10 0
-      vertex 0 10 25
-    endloop
-  endfacet
-  facet normal 0 1 0
-    outer loop
-      vertex 10 10 0
-      vertex 0 10 25
-      vertex 10 10 25
-    endloop
-  endfacet
-  facet normal -1 0 0
-    outer loop
-      vertex 0 10 0
-      vertex 0 0 0
-      vertex 0 0 25
-    endloop
-  endfacet
-  facet normal -1 0 0
-    outer loop
-      vertex 0 10 0
-      vertex 0 0 25
-      vertex 0 10 25
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex 14 0 0
-      vertex 14 10 0
-      vertex 24 10 0
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex 14 0 0
-      vertex 24 10 0
-      vertex 24 0 0
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 14 0 7
-      vertex 24 0 7
-      vertex 24 10 7
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 14 0 7
-      vertex 24 10 7
-      vertex 14 10 7
-    endloop
-  endfacet
-  facet normal 0 -1 0
-    outer loop
-      vertex 14 0 0
-      vertex 24 0 0
-      vertex 24 0 7
-    endloop
-  endfacet
-  facet normal 0 -1 0
-    outer loop
-      vertex 14 0 0
-      vertex 24 0 7
-      vertex 14 0 7
-    endloop
-  endfacet
-  facet normal 1 0 0
-    outer loop
-      vertex 24 0 0
-      vertex 24 10 0
-      vertex 24 10 7
-    endloop
-  endfacet
-  facet normal 1 0 0
-    outer loop
-      vertex 24 0 0
-      vertex 24 10 7
-      vertex 24 0 7
-    endloop
-  endfacet
-  facet normal 0 1 0
-    outer loop
-      vertex 24 10 0
-      vertex 14 10 0
-      vertex 14 10 7
-    endloop
-  endfacet
-  facet normal 0 1 0
-    outer loop
-      vertex 24 10 0
-      vertex 14 10 7
-      vertex 24 10 7
-    endloop
-  endfacet
-  facet normal -1 0 0
-    outer loop
-      vertex 14 10 0
-      vertex 14 0 0
-      vertex 14 0 7
-    endloop
-  endfacet
-  facet normal -1 0 0
-    outer loop
-      vertex 14 10 0
-      vertex 14 0 7
-      vertex 14 10 7
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex 28 0 0
-      vertex 28 10 0
-      vertex 38 10 0
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex 28 0 0
-      vertex 38 10 0
-      vertex 38 0 0
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 28 0 5
-      vertex 38 0 5
-      vertex 38 10 5
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 28 0 5
-      vertex 38 10 5
-      vertex 28 10 5
-    endloop
-  endfacet
-  facet normal 0 -1 0
-    outer loop
-      vertex 28 0 0
-      vertex 38 0 0
-      vertex 38 0 5
-    endloop
-  endfacet
-  facet normal 0 -1 0
-    outer loop
-      vertex 28 0 0
-      vertex 38 0 5
-      vertex 28 0 5
-    endloop
-  endfacet
-  facet normal 1 0 0
-    outer loop
-      vertex 38 0 0
-      vertex 38 10 0
-      vertex 38 10 5
-    endloop
-  endfacet
-  facet normal 1 0 0
-    outer loop
-      vertex 38 0 0
-      vertex 38 10 5
-      vertex 38 0 5
-    endloop
-  endfacet
-  facet normal 0 1 0
-    outer loop
-      vertex 38 10 0
-      vertex 28 10 0
-      vertex 28 10 5
-    endloop
-  endfacet
-  facet normal 0 1 0
-    outer loop
-      vertex 38 10 0
-      vertex 28 10 5
-      vertex 38 10 5
-    endloop
-  endfacet
-  facet normal -1 0 0
-    outer loop
-      vertex 28 10 0
-      vertex 28 0 0
-      vertex 28 0 5
-    endloop
-  endfacet
-  facet normal -1 0 0
-    outer loop
-      vertex 28 10 0
-      vertex 28 0 5
-      vertex 28 10 5
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex 42 0 0
-      vertex 42 10 0
-      vertex 52 10 0
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex 42 0 0
-      vertex 52 10 0
-      vertex 52 0 0
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 42 0 21
-      vertex 52 0 21
-      vertex 52 10 21
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 42 0 21
-      vertex 52 10 21
-      vertex 42 10 21
-    endloop
-  endfacet
-  facet normal 0 -1 0
-    outer loop
-      vertex 42 0 0
-      vertex 52 0 0
-      vertex 52 0 21
-    endloop
-  endfacet
-  facet normal 0 -1 0
-    outer loop
-      vertex 42 0 0
-      vertex 52 0 21
-      vertex 42 0 21
-    endloop
-  endfacet
-  facet normal 1 0 0
-    outer loop
-      vertex 52 0 0
-      vertex 52 10 0
-      vertex 52 10 21
-    endloop
-  endfacet
-  facet normal 1 0 0
-    outer loop
-      vertex 52 0 0
-      vertex 52 10 21
-      vertex 52 0 21
-    endloop
-  endfacet
-  facet normal 0 1 0
-    outer loop
-      vertex 52 10 0
-      vertex 42 10 0
-      vertex 42 10 21
-    endloop
-  endfacet
-  facet normal 0 1 0
-    outer loop
-      vertex 52 10 0
-      vertex 42 10 21
-      vertex 52 10 21
-    endloop
-  endfacet
-  facet normal -1 0 0
-    outer loop
-      vertex 42 10 0
-      vertex 42 0 0
-      vertex 42 0 21
-    endloop
-  endfacet
-  facet normal -1 0 0
-    outer loop
-      vertex 42 10 0
-      vertex 42 0 21
-      vertex 42 10 21
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex 0 14 0
-      vertex 0 24 0
-      vertex 10 24 0
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex 0 14 0
-      vertex 10 24 0
-      vertex 10 14 0
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 0 14 19
-      vertex 10 14 19
-      vertex 10 24 19
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 0 14 19
-      vertex 10 24 19
-      vertex 0 24 19
-    endloop
-  endfacet
-  facet normal 0 -1 0
-    outer loop
-      vertex 0 14 0
-      vertex 10 14 0
-      vertex 10 14 19
-    endloop
-  endfacet
-  facet normal 0 -1 0
-    outer loop
-      vertex 0 14 0
-      vertex 10 14 19
-      vertex 0 14 19
-    endloop
-  endfacet
-  facet normal 1 0 0
-    outer loop
-      vertex 10 14 0
-      vertex 10 24 0
-      vertex 10 24 19
-    endloop
-  endfacet
-  facet normal 1 0 0
-    outer loop
-      vertex 10 14 0
-      vertex 10 24 19
-      vertex 10 14 19
-    endloop
-  endfacet
-  facet normal 0 1 0
-    outer loop
-      vertex 10 24 0
-      vertex 0 24 0
-      vertex 0 24 19
-    endloop
-  endfacet
-  facet normal 0 1 0
-    outer loop
-      vertex 10 24 0
-      vertex 0 24 19
-      vertex 10 24 19
-    endloop
-  endfacet
-  facet normal -1 0 0
-    outer loop
-      vertex 0 24 0
-      vertex 0 14 0
-      vertex 0 14 19
-    endloop
-  endfacet
-  facet normal -1 0 0
-    outer loop
-      vertex 0 24 0
-      vertex 0 14 19
-      vertex 0 24 19
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex 14 14 0
-      vertex 14 24 0
-      vertex 24 24 0
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex 14 14 0
-      vertex 24 24 0
-      vertex 24 14 0
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 14 14 24
-      vertex 24 14 24
-      vertex 24 24 24
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 14 14 24
-      vertex 24 24 24
-      vertex 14 24 24
-    endloop
-  endfacet
-  facet normal 0 -1 0
-    outer loop
-      vertex 14 14 0
-      vertex 24 14 0
-      vertex 24 14 24
-    endloop
-  endfacet
-  facet normal 0 -1 0
-    outer loop
-      vertex 14 14 0
-      vertex 24 14 24
-      vertex 14 14 24
-    endloop
-  endfacet
-  facet normal 1 0 0
-    outer loop
-      vertex 24 14 0
-      vertex 24 24 0
-      vertex 24 24 24
-    endloop
-  endfacet
-  facet normal 1 0 0
-    outer loop
-      vertex 24 14 0
-      vertex 24 24 24
-      vertex 24 14 24
-    endloop
-  endfacet
-  facet normal 0 1 0
-    outer loop
-      vertex 24 24 0
-      vertex 14 24 0
-      vertex 14 24 24
-    endloop
-  endfacet
-  facet normal 0 1 0
-    outer loop
-      vertex 24 24 0
-      vertex 14 24 24
-      vertex 24 24 24
-    endloop
-  endfacet
-  facet normal -1 0 0
-    outer loop
-      vertex 14 24 0
-      vertex 14 14 0
-      vertex 14 14 24
-    endloop
-  endfacet
-  facet normal -1 0 0
-    outer loop
-      vertex 14 24 0
-      vertex 14 14 24
-      vertex 14 24 24
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex 28 14 0
-      vertex 28 24 0
-      vertex 38 24 0
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex 28 14 0
-      vertex 38 24 0
-      vertex 38 14 0
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 28 14 44
-      vertex 38 14 44
-      vertex 38 24 44
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 28 14 44
-      vertex 38 24 44
-      vertex 28 24 44
-    endloop
-  endfacet
-  facet normal 0 -1 0
-    outer loop
-      vertex 28 14 0
-      vertex 38 14 0
-      vertex 38 14 44
-    endloop
-  endfacet
-  facet normal 0 -1 0
-    outer loop
-      vertex 28 14 0
-      vertex 38 14 44
-      vertex 28 14 44
-    endloop
-  endfacet
-  facet normal 1 0 0
-    outer loop
-      vertex 38 14 0
-      vertex 38 24 0
-      vertex 38 24 44
-    endloop
-  endfacet
-  facet normal 1 0 0
-    outer loop
-      vertex 38 14 0
-      vertex 38 24 44
-      vertex 38 14 44
-    endloop
-  endfacet
-  facet normal 0 1 0
-    outer loop
-      vertex 38 24 0
-      vertex 28 24 0
-      vertex 28 24 44
-    endloop
-  endfacet
-  facet normal 0 1 0
-    outer loop
-      vertex 38 24 0
-      vertex 28 24 44
-      vertex 38 24 44
-    endloop
-  endfacet
-  facet normal -1 0 0
-    outer loop
-      vertex 28 24 0
-      vertex 28 14 0
-      vertex 28 14 44
-    endloop
-  endfacet
-  facet normal -1 0 0
-    outer loop
-      vertex 28 24 0
-      vertex 28 14 44
-      vertex 28 24 44
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex 42 14 0
-      vertex 42 24 0
-      vertex 52 24 0
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex 42 14 0
-      vertex 52 24 0
-      vertex 52 14 0
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 42 14 23
-      vertex 52 14 23
-      vertex 52 24 23
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 42 14 23
-      vertex 52 24 23
-      vertex 42 24 23
-    endloop
-  endfacet
-  facet normal 0 -1 0
-    outer loop
-      vertex 42 14 0
-      vertex 52 14 0
-      vertex 52 14 23
-    endloop
-  endfacet
-  facet normal 0 -1 0
-    outer loop
-      vertex 42 14 0
-      vertex 52 14 23
-      vertex 42 14 23
-    endloop
-  endfacet
-  facet normal 1 0 0
-    outer loop
-      vertex 52 14 0
-      vertex 52 24 0
-      vertex 52 24 23
-    endloop
-  endfacet
-  facet normal 1 0 0
-    outer loop
-      vertex 52 14 0
-      vertex 52 24 23
-      vertex 52 14 23
-    endloop
-  endfacet
-  facet normal 0 1 0
-    outer loop
-      vertex 52 24 0
-      vertex 42 24 0
-      vertex 42 24 23
-    endloop
-  endfacet
-  facet normal 0 1 0
-    outer loop
-      vertex 52 24 0
-      vertex 42 24 23
-      vertex 52 24 23
-    endloop
-  endfacet
-  facet normal -1 0 0
-    outer loop
-      vertex 42 24 0
-      vertex 42 14 0
-      vertex 42 14 23
-    endloop
-  endfacet
-  facet normal -1 0 0
-    outer loop
-      vertex 42 24 0
-      vertex 42 14 23
-      vertex 42 24 23
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex 0 28 0
-      vertex 0 38 0
-      vertex 10 38 0
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex 0 28 0
-      vertex 10 38 0
-      vertex 10 28 0
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 0 28 21
-      vertex 10 28 21
-      vertex 10 38 21
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 0 28 21
-      vertex 10 38 21
-      vertex 0 38 21
-    endloop
-  endfacet
-  facet normal 0 -1 0
-    outer loop
-      vertex 0 28 0
-      vertex 10 28 0
-      vertex 10 28 21
-    endloop
-  endfacet
-  facet normal 0 -1 0
-    outer loop
-      vertex 0 28 0
-      vertex 10 28 21
-      vertex 0 28 21
-    endloop
-  endfacet
-  facet normal 1 0 0
-    outer loop
-      vertex 10 28 0
-      vertex 10 38 0
-      vertex 10 38 21
-    endloop
-  endfacet
-  facet normal 1 0 0
-    outer loop
-      vertex 10 28 0
-      vertex 10 38 21
-      vertex 10 28 21
-    endloop
-  endfacet
-  facet normal 0 1 0
-    outer loop
-      vertex 10 38 0
-      vertex 0 38 0
-      vertex 0 38 21
-    endloop
-  endfacet
-  facet normal 0 1 0
-    outer loop
-      vertex 10 38 0
-      vertex 0 38 21
-      vertex 10 38 21
-    endloop
-  endfacet
-  facet normal -1 0 0
-    outer loop
-      vertex 0 38 0
-      vertex 0 28 0
-      vertex 0 28 21
-    endloop
-  endfacet
-  facet normal -1 0 0
-    outer loop
-      vertex 0 38 0
-      vertex 0 28 21
-      vertex 0 38 21
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex 14 28 0
-      vertex 14 38 0
-      vertex 24 38 0
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex 14 28 0
-      vertex 24 38 0
-      vertex 24 28 0
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 14 28 8
-      vertex 24 28 8
-      vertex 24 38 8
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 14 28 8
-      vertex 24 38 8
-      vertex 14 38 8
-    endloop
-  endfacet
-  facet normal 0 -1 0
-    outer loop
-      vertex 14 28 0
-      vertex 24 28 0
-      vertex 24 28 8
-    endloop
-  endfacet
-  facet normal 0 -1 0
-    outer loop
-      vertex 14 28 0
-      vertex 24 28 8
-      vertex 14 28 8
-    endloop
-  endfacet
-  facet normal 1 0 0
-    outer loop
-      vertex 24 28 0
-      vertex 24 38 0
-      vertex 24 38 8
-    endloop
-  endfacet
-  facet normal 1 0 0
-    outer loop
-      vertex 24 28 0
-      vertex 24 38 8
-      vertex 24 28 8
-    endloop
-  endfacet
-  facet normal 0 1 0
-    outer loop
-      vertex 24 38 0
-      vertex 14 38 0
-      vertex 14 38 8
-    endloop
-  endfacet
-  facet normal 0 1 0
-    outer loop
-      vertex 24 38 0
-      vertex 14 38 8
-      vertex 24 38 8
-    endloop
-  endfacet
-  facet normal -1 0 0
-    outer loop
-      vertex 14 38 0
-      vertex 14 28 0
-      vertex 14 28 8
-    endloop
-  endfacet
-  facet normal -1 0 0
-    outer loop
-      vertex 14 38 0
-      vertex 14 28 8
-      vertex 14 38 8
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex 28 28 0
-      vertex 28 38 0
-      vertex 38 38 0
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex 28 28 0
-      vertex 38 38 0
-      vertex 38 28 0
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 28 28 33
-      vertex 38 28 33
-      vertex 38 38 33
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 28 28 33
-      vertex 38 38 33
-      vertex 28 38 33
-    endloop
-  endfacet
-  facet normal 0 -1 0
-    outer loop
-      vertex 28 28 0
-      vertex 38 28 0
-      vertex 38 28 33
-    endloop
-  endfacet
-  facet normal 0 -1 0
-    outer loop
-      vertex 28 28 0
-      vertex 38 28 33
-      vertex 28 28 33
-    endloop
-  endfacet
-  facet normal 1 0 0
-    outer loop
-      vertex 38 28 0
-      vertex 38 38 0
-      vertex 38 38 33
-    endloop
-  endfacet
-  facet normal 1 0 0
-    outer loop
-      vertex 38 28 0
-      vertex 38 38 33
-      vertex 38 28 33
-    endloop
-  endfacet
-  facet normal 0 1 0
-    outer loop
-      vertex 38 38 0
-      vertex 28 38 0
-      vertex 28 38 33
-    endloop
-  endfacet
-  facet normal 0 1 0
-    outer loop
-      vertex 38 38 0
-      vertex 28 38 33
-      vertex 38 38 33
-    endloop
-  endfacet
-  facet normal -1 0 0
-    outer loop
-      vertex 28 38 0
-      vertex 28 28 0
-      vertex 28 28 33
-    endloop
-  endfacet
-  facet normal -1 0 0
-    outer loop
-      vertex 28 38 0
-      vertex 28 28 33
-      vertex 28 38 33
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex 42 28 0
-      vertex 42 38 0
-      vertex 52 38 0
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex 42 28 0
-      vertex 52 38 0
-      vertex 52 28 0
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 42 28 20
-      vertex 52 28 20
-      vertex 52 38 20
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 42 28 20
-      vertex 52 38 20
-      vertex 42 38 20
-    endloop
-  endfacet
-  facet normal 0 -1 0
-    outer loop
-      vertex 42 28 0
-      vertex 52 28 0
-      vertex 52 28 20
-    endloop
-  endfacet
-  facet normal 0 -1 0
-    outer loop
-      vertex 42 28 0
-      vertex 52 28 20
-      vertex 42 28 20
-    endloop
-  endfacet
-  facet normal 1 0 0
-    outer loop
-      vertex 52 28 0
-      vertex 52 38 0
-      vertex 52 38 20
-    endloop
-  endfacet
-  facet normal 1 0 0
-    outer loop
-      vertex 52 28 0
-      vertex 52 38 20
-      vertex 52 28 20
-    endloop
-  endfacet
-  facet normal 0 1 0
-    outer loop
-      vertex 52 38 0
-      vertex 42 38 0
-      vertex 42 38 20
-    endloop
-  endfacet
-  facet normal 0 1 0
-    outer loop
-      vertex 52 38 0
-      vertex 42 38 20
-      vertex 52 38 20
-    endloop
-  endfacet
-  facet normal -1 0 0
-    outer loop
-      vertex 42 38 0
-      vertex 42 28 0
-      vertex 42 28 20
-    endloop
-  endfacet
-  facet normal -1 0 0
-    outer loop
-      vertex 42 38 0
-      vertex 42 28 20
-      vertex 42 38 20
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex 0 42 0
-      vertex 0 52 0
-      vertex 10 52 0
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex 0 42 0
-      vertex 10 52 0
-      vertex 10 42 0
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 0 42 5
-      vertex 10 42 5
-      vertex 10 52 5
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 0 42 5
-      vertex 10 52 5
-      vertex 0 52 5
-    endloop
-  endfacet
-  facet normal 0 -1 0
-    outer loop
-      vertex 0 42 0
-      vertex 10 42 0
-      vertex 10 42 5
-    endloop
-  endfacet
-  facet normal 0 -1 0
-    outer loop
-      vertex 0 42 0
-      vertex 10 42 5
-      vertex 0 42 5
-    endloop
-  endfacet
-  facet normal 1 0 0
-    outer loop
-      vertex 10 42 0
-      vertex 10 52 0
-      vertex 10 52 5
-    endloop
-  endfacet
-  facet normal 1 0 0
-    outer loop
-      vertex 10 42 0
-      vertex 10 52 5
-      vertex 10 42 5
-    endloop
-  endfacet
-  facet normal 0 1 0
-    outer loop
-      vertex 10 52 0
-      vertex 0 52 0
-      vertex 0 52 5
-    endloop
-  endfacet
-  facet normal 0 1 0
-    outer loop
-      vertex 10 52 0
-      vertex 0 52 5
-      vertex 10 52 5
-    endloop
-  endfacet
-  facet normal -1 0 0
-    outer loop
-      vertex 0 52 0
-      vertex 0 42 0
-      vertex 0 42 5
-    endloop
-  endfacet
-  facet normal -1 0 0
-    outer loop
-      vertex 0 52 0
-      vertex 0 42 5
-      vertex 0 52 5
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex 14 42 0
-      vertex 14 52 0
-      vertex 24 52 0
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex 14 42 0
-      vertex 24 52 0
-      vertex 24 42 0
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 14 42 59
-      vertex 24 42 59
-      vertex 24 52 59
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 14 42 59
-      vertex 24 52 59
-      vertex 14 52 59
-    endloop
-  endfacet
-  facet normal 0 -1 0
-    outer loop
-      vertex 14 42 0
-      vertex 24 42 0
-      vertex 24 42 59
-    endloop
-  endfacet
-  facet normal 0 -1 0
-    outer loop
-      vertex 14 42 0
-      vertex 24 42 59
-      vertex 14 42 59
-    endloop
-  endfacet
-  facet normal 1 0 0
-    outer loop
-      vertex 24 42 0
-      vertex 24 52 0
-      vertex 24 52 59
-    endloop
-  endfacet
-  facet normal 1 0 0
-    outer loop
-      vertex 24 42 0
-      vertex 24 52 59
-      vertex 24 42 59
-    endloop
-  endfacet
-  facet normal 0 1 0
-    outer loop
-      vertex 24 52 0
-      vertex 14 52 0
-      vertex 14 52 59
-    endloop
-  endfacet
-  facet normal 0 1 0
-    outer loop
-      vertex 24 52 0
-      vertex 14 52 59
-      vertex 24 52 59
-    endloop
-  endfacet
-  facet normal -1 0 0
-    outer loop
-      vertex 14 52 0
-      vertex 14 42 0
-      vertex 14 42 59
-    endloop
-  endfacet
-  facet normal -1 0 0
-    outer loop
-      vertex 14 52 0
-      vertex 14 42 59
-      vertex 14 52 59
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex 28 42 0
-      vertex 28 52 0
-      vertex 38 52 0
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex 28 42 0
-      vertex 38 52 0
-      vertex 38 42 0
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 28 42 45
-      vertex 38 42 45
-      vertex 38 52 45
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 28 42 45
-      vertex 38 52 45
-      vertex 28 52 45
-    endloop
-  endfacet
-  facet normal 0 -1 0
-    outer loop
-      vertex 28 42 0
-      vertex 38 42 0
-      vertex 38 42 45
-    endloop
-  endfacet
-  facet normal 0 -1 0
-    outer loop
-      vertex 28 42 0
-      vertex 38 42 45
-      vertex 28 42 45
-    endloop
-  endfacet
-  facet normal 1 0 0
-    outer loop
-      vertex 38 42 0
-      vertex 38 52 0
-      vertex 38 52 45
-    endloop
-  endfacet
-  facet normal 1 0 0
-    outer loop
-      vertex 38 42 0
-      vertex 38 52 45
-      vertex 38 42 45
-    endloop
-  endfacet
-  facet normal 0 1 0
-    outer loop
-      vertex 38 52 0
-      vertex 28 52 0
-      vertex 28 52 45
-    endloop
-  endfacet
-  facet normal 0 1 0
-    outer loop
-      vertex 38 52 0
-      vertex 28 52 45
-      vertex 38 52 45
-    endloop
-  endfacet
-  facet normal -1 0 0
-    outer loop
-      vertex 28 52 0
-      vertex 28 42 0
-      vertex 28 42 45
-    endloop
-  endfacet
-  facet normal -1 0 0
-    outer loop
-      vertex 28 52 0
-      vertex 28 42 45
-      vertex 28 52 45
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex 42 42 0
-      vertex 42 52 0
-      vertex 52 52 0
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex 42 42 0
-      vertex 52 52 0
-      vertex 52 42 0
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 42 42 39
-      vertex 52 42 39
-      vertex 52 52 39
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 42 42 39
-      vertex 52 52 39
-      vertex 42 52 39
-    endloop
-  endfacet
-  facet normal 0 -1 0
-    outer loop
-      vertex 42 42 0
-      vertex 52 42 0
-      vertex 52 42 39
-    endloop
-  endfacet
-  facet normal 0 -1 0
-    outer loop
-      vertex 42 42 0
-      vertex 52 42 39
-      vertex 42 42 39
-    endloop
-  endfacet
-  facet normal 1 0 0
-    outer loop
-      vertex 52 42 0
-      vertex 52 52 0
-      vertex 52 52 39
-    endloop
-  endfacet
-  facet normal 1 0 0
-    outer loop
-      vertex 52 42 0
-      vertex 52 52 39
-      vertex 52 42 39
-    endloop
-  endfacet
-  facet normal 0 1 0
-    outer loop
-      vertex 52 52 0
-      vertex 42 52 0
-      vertex 42 52 39
-    endloop
-  endfacet
-  facet normal 0 1 0
-    outer loop
-      vertex 52 52 0
-      vertex 42 52 39
-      vertex 52 52 39
-    endloop
-  endfacet
-  facet normal -1 0 0
-    outer loop
-      vertex 42 52 0
-      vertex 42 42 0
-      vertex 42 42 39
-    endloop
-  endfacet
-  facet normal -1 0 0
-    outer loop
-      vertex 42 52 0
-      vertex 42 42 39
-      vertex 42 52 39
-    endloop
-  endfacet
-endsolid weekly_skyline
-```
-
-<!-- weekly-skyline:end -->
+[Повернуть квартал на GitHub (STL)](assets/weekly-skyline.stl) · [открыть рисунок (SVG)](assets/weekly-skyline.svg)
 
 <details>
 <summary>Какая неделя оказалась самой высокой?</summary>
@@ -1486,12 +141,12 @@ endsolid weekly_skyline
 
 ## Театр теней
 
-<picture>
+<p><a href="assets/night-shift/moth-projector.svg"><picture>
   <source media="(max-width: 600px) and (prefers-reduced-motion: no-preference)" srcset="assets/night-shift/moth-projector-compact.svg">
   <source media="(max-width: 600px)" srcset="assets/night-shift/moth-still-compact.svg">
   <source media="(prefers-reduced-motion: no-preference)" srcset="assets/night-shift/moth-projector.svg">
   <img src="assets/night-shift/moth-still.svg" width="636" alt="Оптический театр. В первом окне крылья видны сквозь прорези решётки, во втором — та же поза без полос.">
-</picture>
+</picture></a></p>
 
 **03 / Движение.** В первом окне мотылёк машет крыльями, хотя рисунок под решёткой неподвижен. Сдвинулась решётка — в просвет попали полоски следующей позы. Во втором окне для сравнения та же фаза целиком.
 
@@ -1502,21 +157,21 @@ endsolid weekly_skyline
 
 **Так выглядит бумага без решётки.** На ней уже напечатаны все четыре положения крыльев вперемешку.
 
-<img src="assets/night-shift/moth-paper.svg" width="360" alt="На неподвижном листе наложены широкие и узкие силуэты мотылька, каждый составлен только из своих тонких полос.">
+<a href="assets/night-shift/moth-paper.svg"><img src="assets/night-shift/moth-paper.svg" width="360" alt="На неподвижном листе наложены широкие и узкие силуэты мотылька, каждый составлен только из своих тонких полос."></a>
 
 **А это исходные позы.** Первую и третью легко различить даже без движения. Один миллиметр сдвига на печатном экземпляре меняет позу; четыре возвращают первую.
 
-<img src="assets/night-shift/moth-poses.svg" width="416" alt="Последовательно: крылья раскрыты, приподняты, почти сомкнулись и снова опускаются.">
+<a href="assets/night-shift/moth-poses.svg"><img src="assets/night-shift/moth-poses.svg" width="416" alt="Последовательно: крылья раскрыты, приподняты, почти сомкнулись и снова опускаются."></a>
 
 </details>
 
-<a href="#ночная-смена"><img src="assets/night-shift/ticket-moth.svg" width="300" alt="Билет 3 из 3 — вернуться к выбору приборов"></a>
+<a href="assets/night-shift/bench-master.jpg"><img src="assets/night-shift/ticket-moth.svg" width="300" alt="Билет 3 из 3 — открыть панораму рабочего стола"></a>
 
 ### Кинолаборатория
 
 На плёнке — история двух веток. Какие коммиты стали родителями кадра `M`?
 
-<img src="assets/commit-reel.svg" width="560" alt="От A расходятся линии к B в main и C в edit. Из B и C линии сходятся в M.">
+<a href="assets/commit-reel.svg"><img src="assets/commit-reel.svg" width="560" alt="От A расходятся линии к B в main и C в edit. Из B и C линии сходятся в M."></a>
 
 <details>
 <summary>Свериться с монтажным листом</summary>
@@ -1527,26 +182,16 @@ endsolid weekly_skyline
 
 #### Граф коммитов
 
-Та же история в нативной диаграмме GitHub. Сравни две линии с кинолентой выше.
+Та же история в готовой диаграмме Mermaid. Сравни две линии с кинолентой выше.
 
-```mermaid
-gitGraph
-    commit id: "A"
-    branch edit
-    checkout main
-    commit id: "B"
-    checkout edit
-    commit id: "C"
-    checkout main
-    merge edit id: "M"
-```
+<p><a href="assets/mermaid/commits.png"><img src="assets/mermaid/commits.png" width="368" alt="От A расходятся main и edit; B и C соединяются в M."></a></p>
 
 #### Терминал в README
 
-<picture>
+<p><a href="assets/facet-count.gif"><picture>
   <source media="(prefers-reduced-motion: reduce)" srcset="assets/facet-count.png">
   <img src="assets/facet-count.gif" width="520" alt="Терминал: git grep насчитал восемь граней в crystal.stl.">
-</picture>
+</picture></a></p>
 
 Команда ищет в STL строки `facet normal` и получает восемь граней. Это повторяющаяся запись терминала, не приглашение выполнить команду в браузере.
 
@@ -1558,7 +203,7 @@ https://github.com/user-attachments/assets/031799d1-740d-4cda-90cf-689513fa9860
 
 #### Что осталось за кадром · D2
 
-<img src="assets/staging.svg" width="600" alt="Схема от руки: git add помещает содержимое файла в индекс, git commit записывает снимок из индекса.">
+<a href="assets/staging.svg"><img src="assets/staging.svg" width="600" alt="Схема от руки: git add помещает содержимое файла в индекс, git commit записывает снимок из индекса."></a>
 
 На первом переходе выбранное содержимое попадает в индекс, на втором — в историю. Это готовый рисунок D2, а не ещё один нативный просмотрщик.
 
@@ -1566,7 +211,7 @@ https://github.com/user-attachments/assets/031799d1-740d-4cda-90cf-689513fa9860
 
 Ход белых, мат в один. Белые: король g6 и ладья a7. Чёрные: король h8.
 
-<img src="assets/mate-in-one.svg" width="430" alt="Белые Крg6 и Лa7 против чёрного Крh8; ход белых.">
+<a href="assets/mate-in-one.svg"><img src="assets/mate-in-one.svg" width="430" alt="Белые Крg6 и Лa7 против чёрного Крh8; ход белых."></a>
 
 <details>
 <summary>Проверить свой ход</summary>
@@ -1580,8 +225,8 @@ https://github.com/user-attachments/assets/031799d1-740d-4cda-90cf-689513fa9860
 Один хребет, два оттиска. У «Ризографа» краска смещена относительно точечного растра. У «Фосфора» те же вершины светятся на сетке экрана.
 
 <p align="center">
-  <img src="assets/relief-riso.svg" width="340" alt="Ризограф: хребет и коралловое солнце на кремовой бумаге">
-  <img src="assets/relief-phosphor.svg" width="340" alt="Фосфор: тот же хребет мятными линиями под янтарным диском">
+  <a href="assets/relief-riso.svg"><img src="assets/relief-riso.svg" width="340" alt="Ризограф: хребет и коралловое солнце на кремовой бумаге"></a>
+  <a href="assets/relief-phosphor.svg"><img src="assets/relief-phosphor.svg" width="340" alt="Фосфор: тот же хребет мятными линиями под янтарным диском"></a>
 </p>
 
 | Палитра | Тема | Фон | Текст | Акцент |
@@ -1595,7 +240,7 @@ https://github.com/user-attachments/assets/031799d1-740d-4cda-90cf-689513fa9860
 
 #### Печатный лист
 
-<img src="atlas/samples/social-preview.png" width="520" alt="Полевой атлас GitHub: печатный лист с огранённым кристаллом, 6 вершин, 12 рёбер, 8 граней.">
+<a href="atlas/samples/field-sheet.pdf"><img src="atlas/samples/social-preview.png" width="520" alt="Полевой атлас GitHub: печатный лист с огранённым кристаллом, 6 вершин, 12 рёбер, 8 граней."></a>
 
 Это содержимое одностраничного PDF в виде PNG. Та же картинка размером 1280 × 640 подходит для карточки ссылки на репозиторий.
 
@@ -1603,21 +248,23 @@ https://github.com/user-attachments/assets/031799d1-740d-4cda-90cf-689513fa9860
 
 ### Оглавление
 
-- **Форма:** [бумажный раскрой](#бумажный-кристалл) · [капсула и 3D-студия](#покрути-кристалл) · [кейс: сетка и свет](#кейс-проекта) · [обложка «Север» и печатные оттиски](#мастерская-оформления).
-- **Данные:** [перфолента](#перфолента) · [город вкладов](#город-вкладов) · [отпечаток репозитория](#отпечаток-репозитория) · [две карты](#две-карты) · [графики](#графики-из-данных).
-- **Движение:** [театр теней](#театр-теней) · [кинолента и граф веток](#кинолаборатория) · [терминал](#терминал-в-readme) · [видео с перемоткой](#видео-с-перемоткой).
-- **Своё портфолио:** [витрина шаблонов](#витрина-шаблонов) · [палитра Markdown](#палитра-markdown) · [исходники и готовые блоки](#исходники-readme).
+Выбери экспонат, чтобы открыть его файл.
+
+- **Форма:** [выкройка кристалла](assets/night-shift/crystal-net.svg) · [кинопетля капсулы](assets/crystal-theatre.gif) · [сетка и свет](assets/crystal-wipe.gif) · [обложка «Север»](assets/polar-cover.svg).
+- **Данные:** [перфолента](assets/night-shift/weeks-tape.svg) · [город вкладов](assets/contribution-city.gif) · [отпечаток репозитория](assets/repo-fingerprint.svg) · [маршрут](assets/survey.geojson) · [соседние листы](assets/sheets.topojson) · [размеры файлов](assets/mermaid/file-sizes.png).
+- **Движение:** [театр теней](assets/night-shift/moth-projector.svg) · [кинолента](assets/commit-reel.svg) · [терминал](assets/facet-count.gif) · [видео с перемоткой](https://github.com/user-attachments/assets/031799d1-740d-4cda-90cf-689513fa9860).
+- **Своё портфолио:** [шаблон проекта](templates/PROJECT-README-TEMPLATE.md) · [шаблон профиля](templates/PROFILE-README-TEMPLATE.md) · [палитры](atlas/samples/palettes.csv).
 
 ## Мастерская оформления
 
 ### Живой фон: где проходит край
 
-<picture>
+<p><a href="assets/polar-cover.svg"><picture>
   <source media="(max-width: 600px) and (prefers-reduced-motion: no-preference)" srcset="assets/polar-cover-compact.svg">
   <source media="(max-width: 600px)" srcset="assets/polar-cover-compact-still.svg">
   <source media="(prefers-reduced-motion: no-preference)" srcset="assets/polar-cover.svg">
   <img src="assets/polar-cover-still.svg" width="100%" alt="gitEdit — Мастерская README. Северное сияние над грядой гор; название остаётся на месте.">
-</picture>
+</picture></a></p>
 
 На обложке **«Север»** посмотри на ближний берег: он сдвигается заметнее дальнего хребта. Световая завеса плывёт чуть вверх, а луна и заголовок стоят на месте. Открывать картинку не нужно. На узком экране луна остаётся в кадре, при системном уменьшении движения браузер выбирает неподвижную обложку.
 
@@ -1626,10 +273,10 @@ https://github.com/user-attachments/assets/031799d1-740d-4cda-90cf-689513fa9860
 <details>
 <summary>Посмотреть, как выглядит фон за настоящим текстом сайта</summary>
 
-<picture>
+<p><a href="assets/polar-page.png"><picture>
   <source media="(max-width: 600px)" srcset="assets/polar-page-compact.png">
   <img src="assets/polar-page.png" width="600" alt="Снимок сайта «Север»: карточка с текстом, за ней пейзаж от края до края экрана, наверху переключатель движения.">
-</picture>
+</picture></a></p>
 
 Здесь показан **снимок**. На самой странице текст можно выделить, прокрутить до оттисков и остановить фон, не останавливая прокрутку. Для просмотра выставки покидать README не нужно.
 
@@ -1638,8 +285,8 @@ https://github.com/user-attachments/assets/031799d1-740d-4cda-90cf-689513fa9860
 ### Два оттиска одного кольца
 
 <p align="center">
-  <img src="assets/ring-pen.svg" width="340" alt="Контур: объёмное кольцо на кремовой бумаге; линии ложатся по поверхности и прячутся за ближним краем.">
-  <img src="assets/ring-screen.svg" width="340" alt="Растр: то же кольцо и отверстие, но тень на фиолетовой бумаге передана плотностью янтарных точек.">
+  <a href="assets/ring-pen.svg"><img src="assets/ring-pen.svg" width="340" alt="Контур: объёмное кольцо на кремовой бумаге; линии ложатся по поверхности и прячутся за ближним краем."></a>
+  <a href="assets/ring-screen.svg"><img src="assets/ring-screen.svg" width="340" alt="Растр: то же кольцо и отверстие, но тень на фиолетовой бумаге передана плотностью янтарных точек."></a>
 </p>
 
 Геометрия и камера одни и те же. **Перо** показывает изгиб линией; **растр** собирает свет из ячеек 4 × 4. Прищурься: отверстие видно на обеих карточках, хотя во второй нет ни одного обводящего штриха.
@@ -1647,23 +294,23 @@ https://github.com/user-attachments/assets/031799d1-740d-4cda-90cf-689513fa9860
 ### Марки вместо меню
 
 <p align="center">
-  <a href="#покрути-кристалл"><img src="assets/seal-crystal.svg" width="140" alt="Марка «Кристалл» — посмотреть механическую капсулу"></a>
-  <a href="#квартал-в-3d"><img src="assets/seal-skyline.svg" width="140" alt="Марка «Квартал» — перейти к башням по неделям"></a>
-  <a href="#кинолаборатория"><img src="assets/seal-reel.svg" width="140" alt="Марка «Кинолента» — перейти к графу веток"></a>
+  <a href="assets/crystal.stl"><img src="assets/seal-crystal.svg" width="140" alt="Марка «Кристалл» — открыть STL в просмотрщике GitHub"></a>
+  <a href="assets/weekly-skyline.stl"><img src="assets/seal-skyline.svg" width="140" alt="Марка «Квартал» — перейти к башням по неделям"></a>
+  <a href="assets/commit-reel.svg"><img src="assets/seal-reel.svg" width="140" alt="Марка «Кинолента» — перейти к графу веток"></a>
 </p>
 
-Выбери марку: каждая ведёт к своей работе **на этой странице**. Имя проекта задаёт число лепестков, поворот и краску. У «Кристалла» по окружности медленно идёт надпись, сама розетка и подпись не вращаются.
+Марки открывают три файла: кристалл и квартал в формате STL и киноленту в SVG. Имя проекта задаёт число лепестков, поворот и краску. У «Кристалла» по окружности медленно идёт надпись, сама розетка и подпись не вращаются.
 
 ### Форзац из одной плитки
 
-<img src="assets/tile-frieze.svg" width="500" alt="Полоса из девяти на четыре квадрата. В каждом две дуги. Слева вход А, справа четыре пронумерованных выхода.">
+<a href="assets/tile-frieze.svg"><img src="assets/tile-frieze.svg" width="500" alt="Полоса из девяти на четыре квадрата. В каждом две дуги. Слева вход А, справа четыре пронумерованных выхода."></a>
 
 Квадрат с двумя дугами можно оставить как есть или повернуть на четверть оборота. Получился узор для разделителя глав. **К какому номеру ведёт линия от А?**
 
 <details>
 <summary>Проявить дорожку</summary>
 
-<img src="assets/tile-route.svg" width="500" alt="На том же форзаце пунктир проходит от А к выходу 3.">
+<a href="assets/tile-route.svg"><img src="assets/tile-route.svg" width="500" alt="На том же форзаце пунктир проходит от А к выходу 3."></a>
 
 **А → 3.** Дорожка проходит 30 дуг. Плитки не поменялись: поверх тех же линий напечатан пунктир.
 
@@ -1671,32 +318,32 @@ https://github.com/user-attachments/assets/031799d1-740d-4cda-90cf-689513fa9860
 
 ## Витрина шаблонов
 
-Выбери обложку. «Чертёж» ведёт к разбору одной работы, «Созвездие» — к карточке профиля. Обе открывают раздел **на этой странице**.
+Выбери обложку. «Чертёж» ведёт к сравнению сетки и света, «Созвездие» — к печатной подписи профиля.
 
 <p align="center">
-  <a href="#кейс-проекта"><img src="assets/cover-project.svg" width="350" alt="Чертёж — перейти к сравнению сетки и света"></a>
-  <a href="#карточка-профиля"><img src="assets/cover-profile.svg" width="350" alt="Созвездие — перейти к карточке профиля и отпечатку репозитория"></a>
+  <a href="assets/crystal-wipe.gif"><img src="assets/cover-project.svg" width="350" alt="Чертёж — перейти к сравнению сетки и света"></a>
+  <a href="assets/portfolio-signature.svg"><img src="assets/cover-profile.svg" width="350" alt="Созвездие — открыть карточку профиля"></a>
 </p>
 
 ### Карточка профиля
 
-<img src="assets/portfolio-signature.svg" width="590" alt="gitEdit — Форма. Свет. Код. Печатная подпись над двухцветной волной.">
+<a href="assets/portfolio-signature.svg"><img src="assets/portfolio-signature.svg" width="590" alt="gitEdit — Форма. Свет. Код. Печатная подпись над двухцветной волной."></a>
 
 Верхняя строка задаёт тему мастерской. Ниже — не список навыков, а пример работы с данными: вот что лежит внутри одного проекта.
 
 ### Отпечаток репозитория
 
-<picture>
+<p><a href="assets/repo-fingerprint.svg"><picture>
   <source media="(max-width: 600px)" srcset="assets/repo-fingerprint-compact.svg">
   <img src="assets/repo-fingerprint.svg" width="650" alt="Отпечаток gitEdit: 34 файла. Самая крупная группа — assets, вторая — atlas; на телефоне легенда стоит под кругами.">
-</picture>
+</picture></a></p>
 
-Один круг — один файл. Площадь соответствует числу байтов, цвет и внешний контур — каталогу первого уровня. Это снимок `gitEdit` на коммите `11ea344`, **до** добавления этой карты, а не постоянно обновляемый счётчик.[^snapshot]
+Один круг — один файл. Площадь соответствует числу байтов, цвет и внешний контур — каталогу первого уровня. Это снимок `gitEdit` на [коммите `11ea344`](https://github.com/overbaffe1/gitEdit/tree/11ea34407408f20f95becf35607f6f0e3b1c6394), **до** добавления этой карты, а не постоянно обновляемый счётчик. Площади посчитаны по размерам Git-блобов до сжатия.
 
 <details>
 <summary>Что за самый большой круг с надписью SVG?</summary>
 
-Это рисунок «File → Index → Commit» из [разбора под видео](#что-осталось-за-кадром--d2). В этом срезе он занимает 77 397 байт. У соседнего GIF с записью терминала — 61 627 байт. Так по отпечатку можно найти тяжёлую иллюстрацию, не просматривая каталоги.
+Это [рисунок «File → Index → Commit»](assets/staging.svg). В этом срезе он занимает 77 397 байт. У соседнего GIF с записью терминала — 61 627 байт. Так по отпечатку можно найти тяжёлую иллюстрацию, не просматривая каталоги.
 
 </details>
 
@@ -1704,39 +351,19 @@ https://github.com/user-attachments/assets/031799d1-740d-4cda-90cf-689513fa9860
 
 ### Маршрут по точкам · GeoJSON
 
-Приблизь ломаную между A и B. Два маркера обозначают её концы, между ними ещё два отсчёта. Координаты учебные.
+Две метки обозначают концы ломаной, между ними ещё два отсчёта. Координаты учебные.
 
-```geojson
-{
-  "type": "FeatureCollection",
-  "features": [
-    {"type": "Feature", "properties": {"title": "Условная точка A"}, "geometry": {"type": "Point", "coordinates": [-19.10, 64.20]}},
-    {"type": "Feature", "properties": {"title": "Условная точка B"}, "geometry": {"type": "Point", "coordinates": [-18.86, 64.28]}},
-    {"type": "Feature", "properties": {"title": "Учебный профиль A–B", "stroke": "#7156a0"}, "geometry": {"type": "LineString", "coordinates": [[-19.10, 64.20], [-19.02, 64.26], [-18.94, 64.24], [-18.86, 64.28]]}}
-  ]
-}
-```
+<p><a href="assets/survey.geojson"><img src="assets/survey.svg" width="560" alt="Профиль от A до B через два промежуточных отсчёта. Открыть карту GeoJSON."></a></p>
+
+[Приблизить маршрут в отдельном GeoJSON](assets/survey.geojson) · [рисунок маршрута](assets/survey.svg)
 
 ### Два листа с общей границей · TopoJSON
 
-Найди стык двух участков. Для соседей он записан всего один раз: западный лист проходит границу в одну сторону, восточный — в обратную.
+На рисунке пунктиром отмечен стык участков. В TopoJSON общая дуга записана один раз: западный лист проходит её в одну сторону, восточный — в обратную.
 
-```topojson
-{
-  "type": "Topology",
-  "objects": {
-    "sheets": {"type": "GeometryCollection", "geometries": [
-      {"type": "Polygon", "properties": {"title": "Западный лист", "fill": "#9469bd"}, "arcs": [[0, 1]]},
-      {"type": "Polygon", "properties": {"title": "Восточный лист", "fill": "#38806e"}, "arcs": [[-1, 2]]}
-    ]}
-  },
-  "arcs": [
-    [[-19.0, 64.18], [-19.0, 64.30]],
-    [[-19.0, 64.30], [-19.14, 64.30], [-19.14, 64.18], [-19.0, 64.18]],
-    [[-19.0, 64.18], [-18.82, 64.18], [-18.82, 64.30], [-19.0, 64.30]]
-  ]
-}
-```
+<p><a href="assets/sheets.topojson"><img src="assets/sheets.svg" width="560" alt="Западный и восточный листы с общей границей. Открыть карту TopoJSON."></a></p>
+
+[Рассмотреть участки в отдельном TopoJSON](assets/sheets.topojson) · [рисунок границы](assets/sheets.svg)
 
 ## Графики из данных
 
@@ -1744,110 +371,47 @@ https://github.com/user-attachments/assets/031799d1-740d-4cda-90cf-689513fa9860
 
 STL кристалла занимает **1,2 КиБ**. У печатного листа три версии: SVG — **2,8 КиБ**, PDF — **41,6 КиБ**, PNG — **53,8 КиБ**. Это размеры файлов выставки.
 
-```mermaid
-xychart-beta
-    title "Размер файлов выставки"
-    x-axis [STL, SVG, PDF, PNG]
-    y-axis "КиБ" 0 --> 60
-    bar [1.2, 2.8, 41.6, 53.8]
-```
+<p><a href="assets/mermaid/file-sizes.png"><img src="assets/mermaid/file-sizes.png" width="560" alt="Размеры в КиБ: STL — 1,2, SVG — 2,8, PDF — 41,6, PNG — 53,8."></a></p>
 
 ### Куда ушли эскизы? · Диаграмма Санкея
 
 Из 12 эскизов четыре ушли в архив, восемь — на цветопробу. Из них пять отправили в печать, три — на экран. Теперь число задаёт толщину потока, а не высоту столбца.
 
-```mermaid
-sankey-beta
-
-Sketch,Proof,8
-Sketch,Archive,4
-Proof,Print,5
-Proof,Screen,3
-```
+<p><a href="assets/mermaid/sketch-flow.png"><img src="assets/mermaid/sketch-flow.png" width="520" alt="12 эскизов: 4 в архив, 8 на цветопробу; затем 5 в печать и 3 на экран."></a></p>
 
 ## Схемы Mermaid
 
+Схемы уже отрисованы: каждая открывается как отдельный PNG. Движок Mermaid при чтении страницы не запускается.
+
 **Цветопроба.** Проследи путь от эскиза до тиража. Какое решение возвращает работу на предыдущий этап?
 
-```mermaid
-stateDiagram-v2
-    state "Эскиз" as Draft
-    state "Цветопроба" as Proof
-    state "Тираж" as Print
-    [*] --> Draft
-    Draft --> Proof
-    Proof --> Draft: поправить цвет
-    Proof --> Print: утвердить
-    Print --> [*]
-```
+<p><a href="assets/mermaid/edition.png"><img src="assets/mermaid/edition.png" width="210" alt="Эскиз → цветопроба → тираж. При правке цвета стрелка возвращает к эскизу."></a></p>
 
 **Доли.** Из десяти частей макета шесть отведены бумаге, три — чернилам, одна — акценту.
 
-```mermaid
-pie showData
-    title Цветовой баланс макета
-    "Бумага" : 6
-    "Чернила" : 3
-    "Акцент" : 1
-```
+<p><a href="assets/mermaid/ink-share.png"><img src="assets/mermaid/ink-share.png" width="510" alt="В макете 60 % бумаги, 30 % чернил и 10 % акцента."></a></p>
 
 **Сроки.** Эскиз, цветопроба и печать занимают разное время; каждая работа начинается после предыдущей.
 
-```mermaid
-gantt
-    title Печать пробного тиража
-    dateFormat YYYY-MM-DD
-    axisFormat %d.%m
-    section Лист
-    Эскиз       :draw, 2026-11-17, 2d
-    Цветопроба  :proof, after draw, 1d
-    Печать      :print, after proof, 2d
-```
+<p><a href="assets/mermaid/schedule.png"><img src="assets/mermaid/schedule.png" width="650" alt="Эскиз занимает два дня, цветопроба — один, печать — ещё два."></a></p>
 
 **Архитектура.** Для презентации два пути — подготовка 3D и сборка слайдов — сходятся в одном файле.
 
-```mermaid
-flowchart LR
-    U(["👤 Запрос пользователя"]) ==> A["🤖 AI Agent"]
-    A --> B["🐍 Python / Blender bpy"]
-    A --> C["⚡ Node.js / pptxgenjs"]
-    B -->|".glb + PNG"| D["📦 JSZip / OpenXML"]
-    C -->|"Черновой .pptx"| D
-    D ==> E(["🎬 Живая 3D-презентация"])
-
-    classDef accent fill:#1e1b4b,stroke:#8b5cf6,stroke-width:2px,color:#f5f3ff;
-    classDef pipe fill:#0f172a,stroke:#38bdf8,stroke-width:1.5px,color:#e0f2fe;
-    classDef done fill:#052e16,stroke:#22c55e,stroke-width:2px,color:#dcfce7;
-    class U,A accent;
-    class B,C,D pipe;
-    class E done;
-```
+<p><a href="assets/mermaid/presentation.png"><img src="assets/mermaid/presentation.png" width="440" alt="Из запроса агент запускает Blender и сборку слайдов; GLB, PNG и черновой PPTX объединяются через OpenXML."></a></p>
 
 **Диалог сервисов.** Здесь важны не размеры и не доли, а порядок запроса, записи и ответа.
 
-```mermaid
-sequenceDiagram
-    autonumber
-    actor Client as Клиент
-    participant API as FastAPI Backend
-    participant DB as PostgreSQL
-    Client->>API: POST /api/v1/tasks
-    activate API
-    API->>DB: INSERT task
-    DB-->>API: task_id
-    API-->>Client: 201 Created (JSON)
-    deactivate API
-```
+<p><a href="assets/mermaid/task-sequence.png"><img src="assets/mermaid/task-sequence.png" width="620" alt="Клиент отправляет POST, API сохраняет задачу и возвращает созданный идентификатор."></a></p>
 
 ## Палитра Markdown
 
 ### Бейджи и иконки
 
-Пять стилей одной плашки: плоская, квадратная, крупная, объёмная и социальная. Ниже две кнопки ведут не в файлы, а к работам этой выставки.
+Пять стилей одной плашки: плоская, квадратная, крупная, объёмная и социальная. Ниже две кнопки открывают файлы работ.
 
 ![flat](https://img.shields.io/badge/Style-flat-007EC6?style=flat&logo=github&logoColor=white) ![flat-square](https://img.shields.io/badge/Style-flat--square-EA7600?style=flat-square&logo=blender&logoColor=white) ![for-the-badge](https://img.shields.io/badge/Style-for--the--badge-8B5CF6?style=for-the-badge&logo=rocket&logoColor=white) ![plastic](https://img.shields.io/badge/Style-plastic-16A34A?style=plastic&logo=nodedotjs&logoColor=white) ![social](https://img.shields.io/github/stars/overbaffe1/MyWorkAiBrain?style=social)
 
-[![Посмотреть кейс](https://img.shields.io/badge/Смотреть-Кейс-8463A2?style=for-the-badge)](#кейс-проекта) [![Посмотреть карту](https://img.shields.io/badge/Смотреть-Отпечаток-497461?style=for-the-badge)](#отпечаток-репозитория)
+[![Посмотреть кейс](https://img.shields.io/badge/Смотреть-Кейс-8463A2?style=for-the-badge)](assets/crystal-wipe.gif) [![Посмотреть карту](https://img.shields.io/badge/Смотреть-Отпечаток-497461?style=for-the-badge)](assets/repo-fingerprint.svg)
 
 **Примеры технологических меток**, не перечень зависимостей gitEdit:
 
@@ -1886,7 +450,7 @@ sequenceDiagram
 
 ### Вёрстка и текст
 
-<img align="right" width="36%" src="assets/relief-riso.svg" alt="Оттиск прижат к правому краю; абзац обтекает его слева">
+<a href="assets/relief-riso.svg"><img align="right" width="36%" src="assets/relief-riso.svg" alt="Оттиск прижат к правому краю; абзац обтекает его слева"></a>
 
 Подпись обтекает оттиск. При узком экране рисунок занимает чуть больше трети строки, а не вытесняет текст целиком.
 
@@ -1917,7 +481,7 @@ V - E + F = 6 - 12 + 8 = 2
 
 ## Где заканчивается README
 
-В README кристалл движется в записанной кинопетле. Свой JavaScript и WebGL GitHub сюда не встраивает: свободное вращение и управление клипами работают в студии по ссылке. Квартал можно повернуть прямо в README, карты — приблизить, у видео — нажать Play. У GIF нет ручной перемотки, а у нашего сравнения нет перетаскиваемой ручки. Переключатель автозапуска GIF в GitHub и системное уменьшение движения — разные настройки. Если система просит меньше движения, «Север» останется неподвижным. Поиск по CSV и просмотр самого PDF работают в просмотрщиках файлов; для своего JavaScript или игры с сохранением ходов нужен другой интерфейс.
+В README кристалл движется в записанной кинопетле. Свой JavaScript и WebGL GitHub сюда не встраивает: свободное вращение и управление клипами работают в студии по ссылке. Чтобы повернуть STL или приблизить карту, открой файл экспоната. В README остаются их рисунки; у видео по-прежнему есть кнопка Play. У GIF нет ручной перемотки, а у нашего сравнения нет перетаскиваемой ручки. Переключатель автозапуска GIF в GitHub и системное уменьшение движения — разные настройки. Если система просит меньше движения, «Север» останется неподвижным. Поиск по CSV и просмотр самого PDF работают в просмотрщиках файлов; для своего JavaScript или игры с сохранением ходов нужен другой интерфейс.
 
 ---
 
@@ -1927,12 +491,12 @@ V - E + F = 6 - 12 + 8 = 2
 
 ### Забрать «Ночную смену» целиком
 
-**[Готовый README-выставка](templates/EXHIBITION-README-TEMPLATE.md)** — стол с тремя рабочими ссылками, три кейса, билеты между ними и неподвижные варианты. Возьми каталог `assets/night-shift/` из ZIP выше. У шаблона в `templates/` ссылки начинаются с `../assets/`; когда кладёшь его в корень своего репозитория, замени этот префикс на `assets/`. Новая работа подставляется вместо экспоната, а не вместо одной общей шапки.
+**[Готовый README-выставка](templates/EXHIBITION-README-TEMPLATE.md)** — стол с тремя рабочими ссылками, три кейса, билеты со ссылками на файлы и неподвижные варианты. Возьми каталог `assets/night-shift/` из ZIP выше. У шаблона в `templates/` ссылки начинаются с `../assets/`; когда кладёшь его в корень своего репозитория, замени этот префикс на `assets/`. Новая работа подставляется вместо экспоната, а не вместо одной общей шапки.
 
 | Что переносить в своё портфолио | Мастера и материалы | Разобранный пример |
 |---|---|---|
-| **Меню-сцена.** Выбери предметы, которые рассказывают о работах. Целая треть стола — обычная ссылка на заголовок. Текстовые ссылки под столом делают то же самое. | [Цельная иллюстрация](assets/night-shift/bench-master.jpg) · [нарезка, надписи и билеты](atlas/samples/night_shift/bench.py). Иллюстрация мастерской сгенерирована для gitEdit; это воображаемый интерьер, не фотография приборов. | В портфолио-комнате **pixel** [1](https://github.com/ayush6447/pixel) предмет открывает панель веб-приложения. Здесь не нужны карта кликов, JavaScript или кликабельные элементы внутри SVG. |
-| **Объект → инструкция.** Для объёмной работы покажи способ сборки, а не только красивый ракурс. | [STL](atlas/samples/crystal.stl) · [кинопетля](assets/night-shift/fold.gif) · [два неподвижных положения](assets/night-shift/fold-still.png) · [выкройка А4](assets/night-shift/crystal-net.svg) · [разворачивание по рёбрам](atlas/samples/night_shift/crystal.py). Для печати открой скачанный SVG, выбери альбомный A4 и 100 %, проверь линейку. | **Papercraft lab** [3](https://github.com/sderosiaux/papercraft-lab) показывает переход от меша к бумаге, парные номера и клапаны. Здесь своя развёртка восьми граней, без Blender. |
+| **Меню-сцена.** Выбери предметы, которые рассказывают о работах. Целая треть стола — обычная ссылка на файл экспоната. Текстовые ссылки под столом делают то же самое. | [Цельная иллюстрация](assets/night-shift/bench-master.jpg) · [нарезка, надписи и билеты](atlas/samples/night_shift/bench.py). Иллюстрация мастерской сгенерирована для gitEdit; это воображаемый интерьер, не фотография приборов. | В портфолио-комнате **pixel** [1](https://github.com/ayush6447/pixel) предмет открывает панель веб-приложения. Здесь не нужны карта кликов, JavaScript или кликабельные элементы внутри SVG. |
+| **Объект → инструкция.** Для объёмной работы покажи способ сборки, а не только красивый ракурс. | [STL](assets/crystal.stl) · [кинопетля](assets/night-shift/fold.gif) · [два неподвижных положения](assets/night-shift/fold-still.png) · [выкройка А4](assets/night-shift/crystal-net.svg) · [разворачивание по рёбрам](atlas/samples/night_shift/crystal.py). Для печати открой скачанный SVG, выбери альбомный A4 и 100 %, проверь линейку. | **Papercraft lab** [3](https://github.com/sderosiaux/papercraft-lab) показывает переход от меша к бумаге, парные номера и клапаны. Здесь своя развёртка восьми граней, без Blender. |
 | **Данные → материальный носитель.** Вместо счётчика дай читателю расшифровать одну разницу. | [112 дней CSV](atlas/samples/snake-weeks.csv) · [лента](assets/night-shift/weeks-tape.svg) · [раскладка для телефона](assets/night-shift/weeks-tape-compact.svg) · [ключ](assets/night-shift/weeks-key.svg) · [набор ленты](atlas/samples/night_shift/tape.py). | Снимки настоящей ленты и объяснение отверстий подачи — **ICL CES** [2](https://iclces.uk/articles/reading_punched_paper_tape.html). Наши шесть весов — собственный код для чисел 0–63, не историческая лента ASCII. |
 | **Движение → оптическая игрушка.** Из четырёх силуэтов собери один полосатый отпечаток. | [Проектор](assets/night-shift/moth-projector.svg) · [стоп-кадр](assets/night-shift/moth-still.svg) · [четыре позы](assets/night-shift/moth-poses.svg) · [бумага](assets/night-shift/moth-paper.svg) и [решётка](assets/night-shift/moth-grille.svg) · [генератор](atlas/samples/night_shift/projector.py). Печатай пару **120 × 72 мм** в одном масштабе: рисунок на бумаге, решётку на прозрачной плёнке. | Для прямых полос — [animbar](https://github.com/jtojnar/animbar); у **FabObscura** [4](https://github.com/tichaesque/FabObscura) есть и криволинейные барьеры. Рисунок мотылька и разбиение на фазы здесь свои. |
 
@@ -1948,7 +512,7 @@ python3 atlas/samples/night_shift/tape.py
 python3 atlas/samples/night_shift/projector.py
 ```
 
-В сцене соседние `</a><a>` идут **без пробела**, у каждого `<img width="33%">`: так три фрагмента не распадаются на отдельные карточки. Замени картинку, адрес якоря **и** `alt` каждого прибора. Оставь смысл и подписи обычным Markdown — мелкая надпись на иллюстрации не заменяет заголовок.
+В сцене соседние `</a><a>` идут **без пробела**, у каждого `<img width="33%">`: так три фрагмента не распадаются на отдельные карточки. Замени картинку, путь к файлу **и** `alt` каждого прибора. Оставь смысл и подписи обычным Markdown — мелкая надпись на иллюстрации не заменяет заголовок.
 
 </details>
 
@@ -1961,16 +525,16 @@ python3 atlas/samples/night_shift/projector.py
 <details>
 <summary>Скопировать мини-портфолио целиком</summary>
 
-Положи изображения из архива в `assets/` рядом со своим README. Обложки здесь ведут на якоря внутри документа. Замени подписи и работы на свои.
+Положи изображения из архива в `assets/` рядом со своим README. Обложки здесь открывают файлы работ из `assets/`. Замени подписи и работы на свои.
 
 ```markdown
 # Мастерская
 
-[Кейс](#кейс) · [Профиль](#профиль)
+[Кейс](assets/crystal-wipe.gif) · [Профиль](assets/repo-fingerprint.svg)
 
 <p>
-  <a href="#кейс"><img src="assets/cover-project.svg" width="320" alt="К разбору проекта"></a>
-  <a href="#профиль"><img src="assets/cover-profile.svg" width="320" alt="К профилю"></a>
+  <a href="assets/crystal-wipe.gif"><img src="assets/cover-project.svg" width="320" alt="К разбору проекта"></a>
+  <a href="assets/repo-fingerprint.svg"><img src="assets/cover-profile.svg" width="320" alt="К профилю"></a>
 </p>
 
 ## Кейс
@@ -2036,8 +600,8 @@ python3 atlas/samples/maker-seals.py my-project my-mark.svg --label 'Мой пр
 |---|---|
 | Город вкладов | [GIF](assets/contribution-city.gif) · [полный неподвижный кадр](assets/contribution-city.png) · [скрипт экспорта](atlas/samples/render-city.py). Кадры сняты с [оригинального SVG yoshi389111](https://github.com/yoshi389111/github-profile-3d-contrib/blob/e235d118909be71eb7edb05482a3de4e76156df3/docs/demo/profile-night-view.svg) (© SATO, Yoshiyuki, [MIT](assets/licenses/contribution-city-MIT.txt)). В оригинале `dur="3s"`, `repeatCount="1"`: при открытии файла с начала виден ещё один проход. Здесь первый кадр уже заполнен, затем идёт обратный ход и повтор роста. |
 | Змейка | [GIF](assets/snake-weeks.gif) · [PNG](assets/snake-weeks.png) · [данные за 112 дней](atlas/samples/snake-weeks.csv) · [наш отрисовщик](atlas/samples/render-calendar.py). Идея календаря — [Platane/snk](https://github.com/Platane/snk). Это собственный маршрут по **коммитам репозитория**, не копия рисунка Platane и не календарь вкладов пользователя. Даты коммитера в UTC посчитаны по [Commits API LazyGit, страницы по 100 записей](https://api.github.com/repos/jesseduffield/lazygit/commits?sha=bb64e3ccb6524368945ba0dfd3134b4189644eed&since=2025-01-06T00:00:00Z&until=2025-04-27T23:59:59Z&per_page=100). |
-| Квартал в 3D | [STL 16 недель](atlas/samples/weekly-skyline.stl) · [генератор на чистом Python](atlas/samples/weekly-skyline.py). Читает тот же CSV, печатает два треугольника на каждую сторону дома. `python atlas/samples/weekly-skyline.py --update-readme` обновляет файл и только его встроенный блок. |
-| Грань · кинетический кабинет | [Кинопетля](assets/crystal-theatre.gif) · [стоп-кадр](docs/poster.jpg) · [текстурированная капсула GLB](docs/malachite.glb). [Как изготовить модель, собрать просмотрщик, записать клип и вставить его в другой README](studio/README.md). Сетка граней взята из [crystal.stl](atlas/samples/crystal.stl); UV, карты материала и анимация добавлены при сборке GLB. Обычный STL хранит геометрию, а не текстуры и клипы. [Исходный парусник](https://github.com/overbaffe1/MyWorkAiBrain/blob/4131aaf20ce8aa92066aaab203ee7a465cad6d91/presentations/cantillon/models/glb/ship.glb) загружается из MyWorkAiBrain только по выбору; это GLB со скелетом, не его одноцветный STL-слепок. |
+| Квартал в 3D | [STL 16 недель](assets/weekly-skyline.stl) · [генератор на чистом Python](atlas/samples/weekly-skyline.py). Читает тот же CSV, печатает два треугольника на каждую сторону дома. `python3 atlas/samples/weekly-skyline.py` обновляет STL и [статичный вид](assets/weekly-skyline.svg), не переписывая README. |
+| Грань · кинетический кабинет | [Кинопетля](assets/crystal-theatre.gif) · [стоп-кадр](docs/poster.jpg) · [текстурированная капсула GLB](docs/malachite.glb). [Как изготовить модель, собрать просмотрщик, записать клип и вставить его в другой README](studio/README.md). Сетка граней взята из [crystal.stl](assets/crystal.stl); UV, карты материала и анимация добавлены при сборке GLB. Обычный STL хранит геометрию, а не текстуры и клипы. [Исходный парусник](https://github.com/overbaffe1/MyWorkAiBrain/blob/4131aaf20ce8aa92066aaab203ee7a465cad6d91/presentations/cantillon/models/glb/ship.glb) загружается из MyWorkAiBrain только по выбору; это GLB со скелетом, не его одноцветный STL-слепок. |
 | Сетка ↔ свет | [GIF](assets/crystal-wipe.gif) · [кадр сравнения](assets/crystal-wipe.png) · [сетка](assets/crystal-wire.png) · [свет](assets/crystal-light.png) · [отрисовщик по настоящему STL](atlas/samples/render-passes.py). Ползунок для сайта и GIF-переход для документа — два подхода у [Knight Lab](https://juxtapose.knightlab.com/) ([JuxtaposeJS](https://github.com/NUKnightLab/juxtapose)). Здесь свой GIF, без встроенного JS. |
 | Оттиск символами | Тот же `render-passes.py --stamp` печатает проекцию гранями разной плотности. Ещё один подход к графике в терминале — [Chafa](https://github.com/hpjansson/chafa); наш оттиск рассчитан из вершин, а не взят из чужого скриншота. |
 | Отпечаток репозитория | [Широкий SVG](assets/repo-fingerprint.svg) · [мобильный SVG](assets/repo-fingerprint-compact.svg) · [скрипт по `git ls-tree`](atlas/samples/repo-fingerprint.mjs). Идея упаковки файлов в круги — [эксперимент GitHub Next](https://githubnext.com/projects/repo-visualization/) и [реальный README с repo-visualizer](https://github.com/githubocto/repo-visualizer-demo). У нас статичный экспорт D3, не iframe и не запущенный Action. |
@@ -2069,9 +633,10 @@ node atlas/samples/repo-fingerprint.mjs 11ea344
 <details>
 <summary>3D, карты, формулы и Mermaid</summary>
 
-- **STL:** вставь полный **текст** [crystal.stl](atlas/samples/crystal.stl) между строками ` ```stl ` и ` ``` `. Имя файла или двоичный STL в блоке не сработают. [Блокнот](atlas/samples/crystal.ipynb) проверяет вершины, рёбра и грани. Для объёмного календаря вместо картинки есть генератор STL [gh-skyline](https://github.com/github/gh-skyline).
-- **Карты:** точно так же вложи [данные маршрута](atlas/samples/survey.geojson) в `geojson`, [данные двух листов](atlas/samples/sheets.topojson) — в `topojson`. В координатах сначала долгота. [Документация встроенных просмотрщиков](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-diagrams).
-- **Mermaid:** возьми [схему состояний](atlas/samples/edition.mmd) или короткий пример ниже. Для графиков есть [XY](https://mermaid.js.org/syntax/xyChart.html) и [Sankey](https://mermaid.js.org/syntax/sankey.html); версия движка на GitHub может отличаться от [редактора](https://mermaid.live/).
+- **STL:** вставь полный **текст** [crystal.stl](assets/crystal.stl) между строками ` ```stl ` и ` ``` `. Имя файла или двоичный STL в блоке не сработают. [Блокнот](atlas/samples/crystal.ipynb) проверяет вершины, рёбра и грани. Для объёмного календаря вместо картинки есть генератор STL [gh-skyline](https://github.com/github/gh-skyline).
+- **Карты:** точно так же вложи [данные маршрута](assets/survey.geojson) в `geojson`, [данные двух листов](assets/sheets.topojson) — в `topojson`. В координатах сначала долгота. [Документация встроенных просмотрщиков](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-diagrams).
+- **Как сделаны картинки на витрине:** [скрипт экспорта схем](atlas/samples/render-diagrams.sh) использует Mermaid CLI 11.12.0 (`mmdc` в `PATH`), Chromium и [палитру](atlas/samples/diagram-style.json). Результат — PNG в `assets/mermaid/`. Источники: [коммиты](atlas/samples/commits.mmd), [размеры](atlas/samples/file-sizes.mmd), [потоки](atlas/samples/sketch-flow.mmd), [цветопроба](atlas/samples/edition.mmd), [доли](atlas/samples/ink-share.mmd), [сроки](atlas/samples/schedule.mmd), [презентация](atlas/samples/presentation.mmd), [диалог](atlas/samples/task-sequence.mmd). Данные карт и копии файлов для отдельных просмотрщиков обновляет [экспорт листов](atlas/samples/file_plates.py); модели и данные в `atlas/samples/` по-прежнему доступны по старым адресам.
+- **Mermaid в своём Markdown:** возьми [схему состояний](atlas/samples/edition.mmd) или короткий пример ниже. Для графиков есть [XY](https://mermaid.js.org/syntax/xyChart.html) и [Sankey](https://mermaid.js.org/syntax/sankey.html); версия движка на GitHub может отличаться от [редактора](https://mermaid.live/).
 
 ````markdown
 ```mermaid
@@ -2133,7 +698,7 @@ V-E+F = 6-12+8 = 2
 ```markdown
 ![Blender](https://img.shields.io/badge/Blender-bpy-EA7600?style=flat-square&logo=blender&logoColor=white)
 ![Telegram](https://img.shields.io/badge/Telegram-26A5E4?style=flat-square&logo=telegram&logoColor=white)
-[![К кейсу](https://img.shields.io/badge/Смотреть-Кейс-8463A2?style=for-the-badge)](#кейс-проекта)
+[![К кейсу](https://img.shields.io/badge/Смотреть-Кейс-8463A2?style=for-the-badge)](assets/crystal-wipe.gif)
 ![Обновление](https://img.shields.io/github/last-commit/overbaffe1/gitEdit?style=flat-square)
 ![Размер](https://img.shields.io/github/repo-size/overbaffe1/gitEdit?style=flat-square)
 ![Звёзды](https://img.shields.io/github/stars/overbaffe1/gitEdit?style=flat-square)
@@ -2192,5 +757,3 @@ V-E+F = 6-12+8 = 2
 </details>
 
 **Ещё примеры и первоисточники:** [атлас форматов](atlas/README.md) · [карты и STL](atlas/relief.md) · [набор текста и диаграммы](atlas/native.md) · [20 разборов других проектов](atlas/inspiration.md) · [что оформляется вне README](atlas/surfaces.md). Идея навигации обложками встречается, например, у [Ray Tracing in One Weekend](https://github.com/RayTracing/raytracing.github.io#readme).
-
-[^snapshot]: Источник отпечатка — [дерево gitEdit на 11ea344](https://github.com/overbaffe1/gitEdit/tree/11ea34407408f20f95becf35607f6f0e3b1c6394). Площади посчитаны по размерам Git-блобов, не по их сжатому размеру на диске.

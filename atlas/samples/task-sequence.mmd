@@ -1,0 +1,11 @@
+sequenceDiagram
+    autonumber
+    actor Client as Клиент
+    participant API as FastAPI Backend
+    participant DB as PostgreSQL
+    Client->>API: POST /api/v1/tasks
+    activate API
+    API->>DB: INSERT task
+    DB-->>API: task_id
+    API-->>Client: 201 Created (JSON)
+    deactivate API
