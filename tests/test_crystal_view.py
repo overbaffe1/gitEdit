@@ -1,13 +1,16 @@
-"""The shared crystal link must be useful before (or without) a 3D viewer."""
+"""Checks for the GitHub-safe screening, textured GLB and identical offline studio. No dependencies."""
+import base64
+import json
 import re
+import struct
 import unittest
 from collections import defaultdict
-from html import escape
 from html.parser import HTMLParser
 from pathlib import Path
 from zipfile import ZipFile
 
 ROOT = Path(__file__).resolve().parents[1]
+SITE = ROOT / 'docs'
 
 
 class Tags(HTMLParser):
@@ -20,37 +23,65 @@ class Tags(HTMLParser):
 
 
 class CrystalViewTest(unittest.TestCase):
-    def test_stable_landing_and_opt_in_model(self):
-        before, after = (ROOT / 'README.md').read_text(encoding='utf-8').split('\n### Покрути кристалл\n')
+    def test_one_screening_at_shared_permalink(self):
+        before, after = (ROOT/'README.md').read_text(encoding='utf-8').split('\n### Покрути кристалл\n')
         self.assertIn('href="#покрути-кристалл"', before)
         section = re.split(r'^#{1,3} ', after, maxsplit=1, flags=re.M)[0]
-        tags = Tags()
-        tags.feed(section)
+        tags = Tags(); tags.feed(section)
+        for tag in ('details','iframe','model-viewer','script'):
+            self.assertNotIn(tag, tags.by_tag)
         self.assertNotIn('```stl', section.lower())
-        self.assertNotIn('iframe', tags.by_tag)
-        self.assertIn('](atlas/samples/crystal.stl)', section)
-        self.assertTrue((ROOT / 'atlas/samples/crystal.stl').is_file())
+        link, = tags.by_tag['a']
+        player = link['href']
+        self.assertRegex(player, r'^https://(?:rawcdn\.githack\.com/overbaffe1/gitEdit/[a-f0-9]{40}/docs/index\.html|overbaffe1\.github\.io/gitEdit/)$')
+        self.assertIn(f']({player})', section)
+        self.assertIn(player+'?scene=ship', section)
+        self.assertEqual(len(tags.by_tag['img']), 1)
+        data = (ROOT/tags.by_tag['img'][0]['src']).read_bytes()
+        self.assertEqual((data[:6], struct.unpack_from('<HH',data,6)), (b'GIF89a',(704,400)))
+        self.assertIn(b'NETSCAPE2.0',data)
+        still, = tags.by_tag['source']
+        self.assertEqual(still['media'], '(prefers-reduced-motion: reduce)')
+        self.assertEqual((ROOT/still['srcset']).read_bytes()[:3], b'\xff\xd8\xff')
 
-        panels = tags.by_tag['details']
-        self.assertEqual(len(panels), 4)
-        group = panels[0].get('name')
-        self.assertTrue(group)
-        self.assertTrue(all(p.get('name') == group for p in panels))
-        self.assertEqual(['open' in p for p in panels], [True, False, False, False])
-        images = [i['src'] for i in tags.by_tag['img']]
-        self.assertEqual(len(images), len(set(images)))
-        self.assertEqual(len(images), len(panels))
-        # Matching intrinsic sizes keep the slot the same height between turns.
-        headers = [(ROOT / src).read_bytes()[:24] for src in images]
-        self.assertTrue(all(h.startswith(b'\x89PNG\r\n\x1a\n') for h in headers))
-        self.assertEqual(len({h[16:24] for h in headers}), 1)
+    def test_glb_bakes_actual_facets_material_and_loop(self):
+        raw = (SITE/'malachite.glb').read_bytes()
+        self.assertEqual(struct.unpack_from('<4sII',raw), (b'glTF',2,len(raw)))
+        length, kind = struct.unpack_from('<I4s',raw,12); self.assertEqual(kind,b'JSON')
+        doc=json.loads(raw[20:20+length]); binary=raw[28+length:]
+        def view(i):
+            v=doc['bufferViews'][i]; start=v.get('byteOffset',0)
+            return binary[start:start+v['byteLength']]
+        def rows(i):
+            a=doc['accessors'][i]; self.assertEqual(a['componentType'],5126)
+            n={'SCALAR':1,'VEC2':2,'VEC3':3,'VEC4':4}[a['type']]
+            return list(struct.iter_unpack('<'+'f'*n,view(a['bufferView'])))
+        material=doc['materials'][0]['pbrMetallicRoughness']
+        for slot in ('baseColorTexture','metallicRoughnessTexture'):
+            image=doc['images'][doc['textures'][material[slot]['index']]['source']]
+            self.assertTrue(view(image['bufferView']).startswith(b'\x89PNG\r\n\x1a\n'))
+        verts=[]
+        for line in (ROOT/'atlas/samples/crystal.stl').read_text().splitlines():
+            if line.split()[:1]==['vertex']:
+                x,y,z=map(float,line.split()[1:]);verts.append((x/18,(z-17)/18,-y/18))
+        leaves=[(i,n) for i,n in enumerate(doc['nodes']) if n['name'].startswith('Leaf_')]
+        self.assertEqual(len(leaves),8)
+        clip,=doc['animations']; self.assertEqual(clip['name'],'Размыкание')
+        for j,(i,node) in enumerate(leaves):
+            face=doc['meshes'][node['mesh']]['primitives'][0];self.assertEqual(face['material'],0)
+            self.assertEqual(len(rows(face['attributes']['TEXCOORD_0'])),3)
+            for pt,src in zip(rows(face['attributes']['POSITION']),verts[3*j:3*j+3]):
+                for p,c,s in zip(pt,node['translation'],src):self.assertAlmostEqual(c+p/(.99*.95),s,places=5)
+            c,=[c for c in clip['channels'] if c['target']=={'node':i,'path':'translation'}]
+            sampler=clip['samplers'][c['sampler']];keys=rows(sampler['output']);times=rows(sampler['input'])
+            self.assertEqual((times[0],times[-1]),((0.,),(8.,)))
+            self.assertEqual(keys[0],keys[-1]);self.assertNotEqual(keys[0],keys[len(keys)//2])
 
-    def test_offline_download_contains_the_actual_model(self):
-        samples = ROOT / 'atlas/samples'
-        template = (samples / 'crystal-view.html.in').read_text(encoding='utf-8')
-        solid = (samples / 'crystal.stl').read_text(encoding='ascii')
-        self.assertEqual(template.count('@@ASCII_STL@@'), 1)
-        with ZipFile(ROOT / 'assets/crystal-view.zip') as archive:
-            self.assertEqual(archive.namelist(), ['crystal.html'])
-            page = archive.read('crystal.html').decode('utf-8')
-        self.assertEqual(page, template.replace('@@ASCII_STL@@', escape(solid)))
+    def test_offline_studio_is_the_same_player(self):
+        with ZipFile(ROOT/'assets/crystal-view.zip') as z:
+            self.assertEqual(z.namelist(),['crystal.html']);html=z.read('crystal.html').decode()
+        encoded=re.search(r'<script id="embedded-glb"[^>]*>([^<]+)</script>',html).group(1)
+        self.assertEqual(base64.b64decode(encoded),(SITE/'malachite.glb').read_bytes())
+        self.assertIn((SITE/'stage.js').read_text().replace('</script',r'<\/script'),html)
+        self.assertIn((SITE/'studio.css').read_text(),html)
+        self.assertNotIn('<script src=',html)
