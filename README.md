@@ -1,31 +1,22 @@
-<div align="center">
-
 <picture>
+  <source media="(max-width: 600px)" srcset="assets/banner-compact.svg">
   <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/banner-light.svg">
   <img alt="gitEdit — Конструктор вау-оформления GitHub" src="assets/banner-dark.svg" width="100%">
 </picture>
 
-<br>
+# Витрина шаблонов
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1200&color=8B5CF6&center=true&vCenter=true&width=720&lines=Shields.io+Badges+%26+Simple+Icons;Skill+Icons+Grids+%26+Animated+SVGs;Interactive+Mermaid+Diagrams+%26+Alerts;Ready-to-Use+Templates+for+Portfolio)](https://github.com/overbaffe1/gitEdit)
+Выбери обложку и скопируй Markdown из открывшегося шаблона.
 
-[![Шаблон проекта](https://img.shields.io/badge/Шаблон-README%20проекта-8B5CF6?style=for-the-badge&logo=github&logoColor=white)](templates/PROJECT-README-TEMPLATE.md)
-[![Шаблон профиля](https://img.shields.io/badge/Шаблон-Профиль%20портфолио-0284C7?style=for-the-badge&logo=sparkles&logoColor=white)](templates/PROFILE-README-TEMPLATE.md)
-[![Змейка коммитов](https://img.shields.io/badge/Action-Змейка%20коммитов-16A34A?style=for-the-badge&logo=githubactions&logoColor=white)](templates/profile-snake-workflow.yml)
+<p align="center">
+  <a href="templates/PROJECT-README-TEMPLATE.md"><img src="assets/cover-project.svg" width="360" alt="Открыть шаблон проекта: демо, стек и запуск"></a>
+  <a href="templates/PROFILE-README-TEMPLATE.md"><img src="assets/cover-profile.svg" width="360" alt="Открыть шаблон профиля: работы, стек и контакты"></a>
+</p>
 
-[![Shields.io](https://img.shields.io/badge/Powered%20by-Shields.io-0F172A?style=flat-square&logo=shieldsdotio&logoColor=white)](https://shields.io/)
-[![Simple Icons](https://img.shields.io/badge/Icons-Simple%20Icons-1E293B?style=flat-square&logo=simpleicons&logoColor=white)](https://simpleicons.org/)
-![Last Commit](https://img.shields.io/github/last-commit/overbaffe1/gitEdit?style=flat-square&color=8B5CF6&label=Updated)
-![Repo Size](https://img.shields.io/github/repo-size/overbaffe1/gitEdit?style=flat-square&color=0284C7&label=Size)
-![Stars](https://img.shields.io/github/stars/overbaffe1/gitEdit?style=flat-square&color=EAB308)
+[Как сделать такую витрину](#5-витрина-из-двух-обложек) · [Змейка коммитов для профиля](templates/profile-snake-workflow.yml)
 
-</div>
-
-> [!TIP]
-> **Как пользоваться этим репозиторием:** все элементы ниже отрендерены вживую, а рядом лежит готовый код — просто нажимай кнопку копирования в правом верхнем углу нужного блока и вставляй в свой `README.md`. Готовые каркасы целиком лежат в папке **[`templates/`](templates/)**.
-
----
+Нужен один элемент, а не целый шаблон? Выбери раздел ниже: рядом с примерами есть код для копирования.
 
 ## Оглавление
 
@@ -110,6 +101,12 @@ https://img.shields.io/badge/<ЛЕВЫЙ_ТЕКСТ>-<ПРАВЫЙ_ТЕКСТ>-<
 | ![License MIT](https://img.shields.io/badge/License-MIT-22C55E?style=flat-square) | `![License MIT](https://img.shields.io/badge/License-MIT-22C55E?style=flat-square)` |
 
 ### Динамические бейджи GitHub API и GitHub Actions
+
+Строка показателей для этого репозитория:
+
+![Последнее обновление](https://img.shields.io/github/last-commit/overbaffe1/gitEdit?style=flat-square&color=8B5CF6&label=Updated)
+![Размер репозитория](https://img.shields.io/github/repo-size/overbaffe1/gitEdit?style=flat-square&color=0284C7&label=Size)
+![Звёзды](https://img.shields.io/github/stars/overbaffe1/gitEdit?style=flat-square&color=EAB308)
 
 | Метрика | Живой пример | Шаблон |
 |---|---|---|
@@ -252,10 +249,11 @@ flowchart LR
 
 ### 1) Автоматическая смена баннера под тёмную и светлую тему GitHub (`<picture>`)
 
-Именно так работает шапка вверху этой страницы — переключи тему GitHub в настройках и посмотри, как баннер поменяет палитру:
+Браузер берёт первый подходящий `<source>`. В шапке этой страницы на экранах до 600 пикселей показывается [короткая обложка](assets/banner-compact.svg) с крупным названием. На широких экранах остаётся полный баннер под цвет темы:
 
 ```html
 <picture>
+  <source media="(max-width: 600px)" srcset="assets/banner-compact.svg">
   <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/banner-light.svg">
   <img alt="Banner" src="assets/banner-dark.svg" width="100%">
@@ -297,6 +295,19 @@ flowchart LR
 
 Открой редактирование `README.md` прямо в веб-интерфейсе GitHub и **перетащи файл `.mp4` или `.mov` мышкой в текстовое поле**. GitHub загрузит ролик на свой внутренний CDN (`github.com/user-attachments/assets/...`) и вставит нативный видеоплеер со звуком и перемоткой, а сам репозиторий останется лёгким!
 
+### 5) Витрина из двух обложек
+
+В [витрине в начале страницы](#витрина-шаблонов) каждая обложка — обычная ссылка с локальным SVG внутри. Скопируй [«Чертёж»](assets/cover-project.svg) и [«Созвездие»](assets/cover-profile.svg) в папку `assets/` рядом со своим `README.md`. В `href` подставь пути к своим страницам:
+
+```html
+<p align="center">
+  <a href="templates/PROJECT-README-TEMPLATE.md"><img src="assets/cover-project.svg" width="360" alt="Открыть шаблон проекта: демо, стек и запуск"></a>
+  <a href="templates/PROFILE-README-TEMPLATE.md"><img src="assets/cover-profile.svg" width="360" alt="Открыть шаблон профиля: работы, стек и контакты"></a>
+</p>
+```
+
+Не склеивай теги `</a>` и `<a>`: пробел или перенос строки между ними позволяет обложкам встать друг под другом на узком экране. Чтобы перекрасить карточку, поменяй `--paper` (фон) и `--accent` (акцент) в её SVG. Рядом в `@media (prefers-color-scheme: dark)` лежит тёмная палитра. Если включено уменьшение движения, обе иллюстрации сразу показываются в финальном виде.
+
 <img src="assets/divider.svg" width="100%" alt="">
 
 ## 7. Секретный репозиторий профиля (`overbaffe1/overbaffe1`) + змейка коммитов
@@ -318,3 +329,5 @@ flowchart LR
 * **[readme-typing-svg.demolab.com/demo](https://readme-typing-svg.demolab.com/demo/)** — визуальный редактор печатающегося SVG-текста.
 * **[mermaid.live](https://mermaid.live/)** — песочница с предпросмотром диаграмм `Mermaid`.
 * **[ileriayo/markdown-badges](https://github.com/Ileriayo/markdown-badges)** — огромная коллекция готовых бейджей.
+
+[↑ К витрине шаблонов](#витрина-шаблонов)

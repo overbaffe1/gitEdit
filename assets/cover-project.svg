@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="180" viewBox="0 0 400 180" role="img" aria-labelledby="title desc" xml:lang="ru">
+  <title id="title">Чертёж — шаблон README проекта</title>
+  <desc id="desc">Три листа кода в изометрии. Шаблон для демо, стека и инструкций по запуску.</desc>
+  <style>
+    :root {
+      --paper: #f6f3ff; --field: #e9e2fa; --ink: #261d3c; --accent: #61419a;
+      --rule: #a69abc; --sheet: #fdfbff; --middle: #c5adf3; --base: #9b80c5;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --paper: #211b32; --field: #302642; --ink: #faf5ff; --accent: #d5baff;
+        --rule: #867697; --sheet: #e6d7ff; --middle: #b698e6; --base: #8666ac;
+      }
+    }
+    text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+    .index { font: bold 12px ui-monospace, Menlo, Consolas, monospace; letter-spacing: 1.3px; }
+    @media (prefers-reduced-motion: no-preference) {
+      .top-sheet { animation: settle 1.4s cubic-bezier(.2,.8,.3,1) both; }
+      @keyframes settle { from { transform: translateY(-12px); } to { transform: translateY(0); } }
+    }
+  </style>
+  <defs>
+    <clipPath id="frame"><rect x="3" y="3" width="394" height="174" rx="14"/></clipPath>
+    <path id="field" d="M245 0h155v180H219z"/>
+    <pattern id="grid" width="12" height="12" patternUnits="userSpaceOnUse">
+      <path d="M0 12V0h12" fill="none" stroke="var(--rule)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <g clip-path="url(#frame)">
+    <rect width="400" height="180" fill="var(--paper)"/>
+    <use href="#field" fill="var(--field)"/>
+    <use href="#field" fill="url(#grid)" opacity=".42"/>
+    <!-- Projection guides stay put while the top sheet settles into the drawing. -->
+    <g fill="none" stroke="var(--accent)">
+      <path d="M246 59v81m70-118v70m60-38v76m-70-42v68" stroke-dasharray="2 4" opacity=".6"/>
+      <path d="M375 17v10m-5-5h10m-144 132v10m-5-5h10" opacity=".75"/>
+    </g>
+    <g stroke="#503867" stroke-width="1.5" stroke-linejoin="round">
+      <path d="m246 110 70-37 60 30v5l-70 38-60-31z" fill="var(--base)"/>
+      <path d="m246 110 60 31 70-38m-70 38v5" fill="none"/>
+      <path d="m246 93 70-37 60 30v5l-70 38-60-31z" fill="var(--middle)"/>
+      <path d="m246 93 60 31 70-38m-70 38v5" fill="none"/>
+      <g class="top-sheet">
+        <path d="m246 76 70-37 60 30v5l-70 38-60-31z" fill="var(--sheet)"/>
+        <path d="m246 76 60 31 70-38m-70 38v5" fill="none"/>
+        <g transform="matrix(1 .5 -1 .53 316 39)" fill="none" stroke="#654287" stroke-linecap="round">
+          <path d="M8 13h44M9 52h39M9 59h23"/>
+          <path d="m21 23-9 8 9 8m18-16 9 8-9 8m-6-18-6 20" stroke-width="3"/>
+          <circle cx="10" cy="7" r="1.5" fill="#654287"/><circle cx="17" cy="7" r="1.5" fill="#654287"/>
+        </g>
+      </g>
+    </g>
+  </g>
+  <rect x="3.5" y="3.5" width="393" height="173" rx="13.5" fill="none" stroke="var(--rule)"/>
+  <g fill="var(--accent)">
+    <rect x="23" y="22" width="8" height="8" rx="1"/>
+    <text x="41" y="31" class="index">01 / ЧЕРТЁЖ</text>
+  </g>
+  <g fill="var(--ink)">
+    <text x="21" y="84" font-size="40" font-weight="700" letter-spacing="-1.8">Проект</text>
+    <text x="23" y="110" font-size="16">Демо, стек, запуск</text>
+  </g>
+  <path d="M23 129h171" stroke="var(--rule)" stroke-opacity=".7"/>
+  <text x="23" y="155" fill="var(--accent)" font-size="15" font-weight="600">Открыть шаблон</text>
+  <path d="M181 150h14m-6-6 6 6-6 6" fill="none" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

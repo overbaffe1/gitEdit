@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="124" viewBox="0 0 400 124" role="img" aria-labelledby="title desc" xml:lang="ru">
+  <title id="title">gitEdit — оформление GitHub</title>
+  <desc id="desc">Компактная обложка справочника по оформлению README.</desc>
+  <style>
+    :root {
+      --start: #f8faff; --end: #ece7fa; --ink: #241d3b; --accent: #5b409a;
+      --rule: #a99abb; --back: #baebda; --front: #f8f5ff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --start: #101422; --end: #252039; --ink: #faf5ff; --accent: #d2bbff;
+        --rule: #746384; --back: #25564b; --front: #3a2e52;
+      }
+    }
+    text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+  </style>
+  <defs>
+    <linearGradient id="paper" x2="1" y2="1" gradientUnits="objectBoundingBox">
+      <stop stop-color="var(--start)"/><stop offset="1" stop-color="var(--end)"/>
+    </linearGradient>
+    <pattern id="dots" width="8" height="8" patternUnits="userSpaceOnUse">
+      <circle cx="4" cy="4" r=".9" fill="var(--rule)"/>
+    </pattern>
+  </defs>
+  <rect x=".75" y=".75" width="398.5" height="122.5" rx="14" fill="url(#paper)" stroke="var(--rule)"/>
+  <path d="M20 21h16" stroke="var(--accent)" stroke-width="2"/>
+  <text x="44" y="25" fill="var(--accent)" style="font: bold 12px ui-monospace, Menlo, Consolas, monospace; letter-spacing: 1.1px">GITHUB / README KIT</text>
+  <text x="18" y="79" fill="var(--ink)" font-size="53" font-weight="750" letter-spacing="-2">gitEdit</text>
+  <text x="21" y="105" fill="var(--ink)" font-size="17">Оформление репозиториев</text>
+  <rect x="270" y="12" width="116" height="100" fill="url(#dots)"/>
+  <g stroke-linejoin="round">
+    <rect x="296" y="22" width="68" height="80" rx="6" fill="var(--back)" stroke="var(--rule)" transform="rotate(10 330 62)"/>
+    <g transform="rotate(-8 321 60)">
+      <path d="M292 19h43l16 16v59a5 5 0 0 1-5 5h-54a5 5 0 0 1-5-5V24a5 5 0 0 1 5-5z" fill="var(--front)" stroke="var(--accent)" stroke-width="1.5"/>
+      <path d="M335 19v16h16" fill="none" stroke="var(--accent)"/>
+      <g fill="none" stroke="var(--accent)" stroke-linecap="round">
+        <path d="m315 40-6 26m20-26-6 26m-17-18h28m-30 10h28" stroke-width="3.8"/>
+        <path d="M298 80h39m-39 7h26" stroke-width="1.6"/>
+      </g>
+    </g>
+  </g>
+</svg>
