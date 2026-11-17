@@ -1,1 +1,3 @@
 *.pdf binary
+*.glb binary
+docs/stage.js -diff linguist-generated=true
