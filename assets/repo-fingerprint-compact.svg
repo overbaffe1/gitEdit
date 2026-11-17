@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="344" height="600" viewBox="0 0 344 600" role="img" aria-labelledby="t d" xml:lang="ru">
+<title id="t">Отпечаток gitEdit</title><desc id="d">34 файлов · 386,9 КиБ. Каждый цветной круг — файл, площадь пропорциональна числу байтов. Контуры группируют файлы по каталогу.</desc>
+<rect x="1" y="1" width="342" height="598" rx="13" fill="#18282c" stroke="#697a73"/>
+<g font-family="system-ui, sans-serif">
+<text x="20" y="29" fill="#bfc9c5" font-size="13" font-weight="700">АРХИВ   /   11ea344</text>
+<g transform="translate(22 53)"><circle cx="81.76" cy="150.00" r="79.01" fill="#243438" stroke="#f4ac7f" stroke-width="1.4"/><g><title>assets/staging.svg · 77397 B</title><circle cx="45.08" cy="150.00" r="39.57" fill="#f4ac7f"/><text x="45.08" y="154.00" text-anchor="middle" fill="#142729" font-size="14" font-weight="700">SVG</text></g>
+<g><title>assets/facet-count.gif · 61627 B</title><circle cx="122.71" cy="150.00" r="35.31" fill="#f4ac7f"/><text x="122.71" y="154.00" text-anchor="middle" fill="#142729" font-size="14" font-weight="700">GIF</text></g>
+<g><title>assets/facet-count.png · 20359 B</title><circle cx="87.21" cy="196.32" r="20.30" fill="#f4ac7f"/><text x="87.21" y="200.32" text-anchor="middle" fill="#142729" font-size="11" font-weight="700">PNG</text></g>
+<g><title>assets/banner-dark.svg · 6311 B</title><circle cx="86.72" cy="116.22" r="11.30" fill="#f4ac7f"/></g>
+<g><title>assets/banner-light.svg · 6257 B</title><circle cx="66.56" cy="100.92" r="11.25" fill="#f4ac7f"/></g>
+<g><title>assets/commit-reel.svg · 3757 B</title><circle cx="107.03" cy="105.92" r="8.72" fill="#f4ac7f"/></g>
+<g><title>assets/cover-profile.svg · 3710 B</title><circle cx="55.70" cy="199.87" r="8.66" fill="#f4ac7f"/></g>
+<g><title>assets/cover-project.svg · 3693 B</title><circle cx="118.90" cy="196.55" r="8.64" fill="#f4ac7f"/></g>
+<g><title>assets/mate-in-one.svg · 3015 B</title><circle cx="87.37" cy="94.36" r="7.81" fill="#f4ac7f"/></g>
+<g><title>assets/relief-phosphor.svg · 2617 B</title><circle cx="45.29" cy="100.40" r="7.28" fill="#f4ac7f"/></g>
+<g><title>assets/banner-compact.svg · 2407 B</title><circle cx="103.63" cy="87.79" r="6.98" fill="#f4ac7f"/></g>
+<g><title>assets/relief-riso.svg · 2326 B</title><circle cx="125.35" cy="105.15" r="6.86" fill="#f4ac7f"/></g>
+<g><title>assets/divider.svg · 620 B</title><circle cx="41.33" cy="195.71" r="3.54" fill="#f4ac7f"/></g>
+<circle cx="230.39" cy="150.00" r="66.86" fill="#243438" stroke="#95d8b3" stroke-width="1.4"/><g><title>atlas/samples/social-preview.png · 55044 B</title><circle cx="199.66" cy="150.64" r="33.37" fill="#95d8b3"/><text x="199.66" y="154.64" text-anchor="middle" fill="#142729" font-size="14" font-weight="700">PNG</text></g>
+<g><title>atlas/samples/field-sheet.pdf · 42588 B</title><circle cx="265.14" cy="150.64" r="29.35" fill="#95d8b3"/><text x="265.14" y="154.64" text-anchor="middle" fill="#142729" font-size="14" font-weight="700">PDF</text></g>
+<g><title>atlas/surfaces.md · 11226 B</title><circle cx="235.41" cy="187.28" r="15.07" fill="#95d8b3"/></g>
+<g><title>atlas/inspiration.md · 10737 B</title><circle cx="235.39" cy="114.45" r="14.74" fill="#95d8b3"/></g>
+<g><title>atlas/native.md · 6632 B</title><circle cx="208.37" cy="103.73" r="11.58" fill="#95d8b3"/></g>
+<g><title>atlas/README.md · 6470 B</title><circle cx="207.98" cy="197.47" r="11.44" fill="#95d8b3"/></g>
+<g><title>atlas/relief.md · 5781 B</title><circle cx="262.90" cy="107.78" r="10.82" fill="#95d8b3"/></g>
+<g><title>atlas/samples/atlas-plate.svg · 2830 B</title><circle cx="260.65" cy="190.06" r="7.57" fill="#95d8b3"/></g>
+<g><title>atlas/samples/crystal.ipynb · 1594 B</title><circle cx="189.40" cy="110.12" r="5.68" fill="#95d8b3"/></g>
+<g><title>atlas/samples/crystal.stl · 1227 B</title><circle cx="190.07" cy="190.61" r="4.98" fill="#95d8b3"/></g>
+<g><title>atlas/samples/survey.geojson · 577 B</title><circle cx="224.60" cy="96.54" r="3.42" fill="#95d8b3"/></g>
+<g><title>atlas/samples/sheets.topojson · 549 B</title><circle cx="223.82" cy="204.97" r="3.33" fill="#95d8b3"/></g>
+<g><title>atlas/samples/facet-count.cast · 485 B</title><circle cx="273.10" cy="184.97" r="3.13" fill="#95d8b3"/></g>
+<g><title>atlas/samples/palettes.csv · 377 B</title><circle cx="251.82" cy="199.71" r="2.76" fill="#95d8b3"/></g>
+<g><title>atlas/samples/staging.d2 · 357 B</title><circle cx="248.93" cy="99.48" r="2.69" fill="#95d8b3"/></g>
+<g><title>atlas/samples/edition.mmd · 267 B</title><circle cx="275.28" cy="117.74" r="2.32" fill="#95d8b3"/></g>
+<circle cx="165.17" cy="232.49" r="35.54" fill="#243438" stroke="#bbb5ea" stroke-width="1.4"/><g><title>README.md · 47201 B</title><circle cx="163.28" cy="232.49" r="30.90" fill="#bbb5ea"/><text x="163.28" y="236.49" text-anchor="middle" fill="#142729" font-size="14" font-weight="700">MD</text></g>
+<g><title>.gitattributes · 13 B</title><circle cx="197.45" cy="232.49" r="0.51" fill="#bbb5ea"/></g>
+<circle cx="163.98" cy="88.30" r="21.03" fill="#243438" stroke="#f0d88f" stroke-width="1.4"/><g><title>templates/PROJECT-README-TEMPLATE.md · 4260 B</title><circle cx="154.99" cy="88.30" r="9.28" fill="#f0d88f"/></g>
+<g><title>templates/PROFILE-README-TEMPLATE.md · 2870 B</title><circle cx="174.64" cy="88.30" r="7.62" fill="#f0d88f"/></g>
+<g><title>templates/profile-snake-workflow.yml · 1026 B</title><circle cx="166.15" cy="100.58" r="4.56" fill="#f0d88f"/></g></g>
+<text x="20" y="391" fill="#f7f0df" font-size="33" font-weight="700">Отпечаток</text><text x="20" y="417" fill="#bfc9c5" font-size="16" font-weight="400">34 файлов · 386,9 КиБ</text>
+<circle cx="25" cy="444" r="5" fill="#f4ac7f"/><text x="40" y="448" fill="#f7f0df" font-size="16" font-weight="400">assets/</text><text x="189" y="448" fill="#bfc9c5" font-size="15" font-weight="400">189,5 КиБ</text>
+<circle cx="25" cy="473" r="5" fill="#95d8b3"/><text x="40" y="477" fill="#f7f0df" font-size="16" font-weight="400">atlas/</text><text x="189" y="477" fill="#bfc9c5" font-size="15" font-weight="400">143,3 КиБ</text>
+<circle cx="25" cy="502" r="5" fill="#bbb5ea"/><text x="40" y="506" fill="#f7f0df" font-size="16" font-weight="400">корень</text><text x="189" y="506" fill="#bfc9c5" font-size="15" font-weight="400">46,1 КиБ</text>
+<circle cx="25" cy="531" r="5" fill="#f0d88f"/><text x="40" y="535" fill="#f7f0df" font-size="16" font-weight="400">templates/</text><text x="189" y="535" fill="#bfc9c5" font-size="15" font-weight="400">8,0 КиБ</text>
+<path d="M20 555h299" stroke="#657872"/>
+<text x="20" y="579" fill="#bfc9c5" font-size="14" font-weight="400">1 круг = 1 файл</text></g></svg>
