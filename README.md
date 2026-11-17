@@ -1,126 +1,101 @@
-# Шпаргалка по бейджам (шильдам) для GitHub `README.md`
+<div align="center">
 
-<p align="left">
-  <a href="https://shields.io/"><img src="https://img.shields.io/badge/Powered%20by-Shields.io-000000?style=flat-square&logo=shieldsdotio&logoColor=white" alt="Shields.io"></a>
-  <a href="https://simpleicons.org/"><img src="https://img.shields.io/badge/Icons-Simple%20Icons-111111?style=flat-square&logo=simpleicons&logoColor=white" alt="Simple Icons"></a>
-  <img src="https://img.shields.io/github/last-commit/overbaffe1/gitEdit?style=flat-square&color=8A2BE2&label=Last%20Commit" alt="Last Commit">
-  <img src="https://img.shields.io/github/repo-size/overbaffe1/gitEdit?style=flat-square&color=007EC6&label=Repo%20Size" alt="Repo Size">
-</p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/banner-light.svg">
+  <img alt="gitEdit — Конструктор вау-оформления GitHub" src="assets/banner-dark.svg" width="100%">
+</picture>
 
-Красивые цветные плашки в шапке репозиториев называются **бейджи (GitHub Badges)** или **шилды (Shields)**.
+<br>
 
-Никакие картинки скачивать и коммитить в репозиторий **не нужно** — это обычные ссылки на картинки, которые бесплатный сервис **[Shields.io](https://shields.io/)** генерирует на лету в чётком векторном формате `SVG`, а иконки брендов подтягивает из каталога **[Simple Icons](https://simpleicons.org/)** (3000+ логотипов).
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1200&color=8B5CF6&center=true&vCenter=true&width=720&lines=Shields.io+Badges+%26+Simple+Icons;Skill+Icons+Grids+%26+Animated+SVGs;Interactive+Mermaid+Diagrams+%26+Alerts;Ready-to-Use+Templates+for+Portfolio)](https://github.com/overbaffe1/gitEdit)
+
+[![Шаблон проекта](https://img.shields.io/badge/Шаблон-README%20проекта-8B5CF6?style=for-the-badge&logo=github&logoColor=white)](templates/PROJECT-README-TEMPLATE.md)
+[![Шаблон профиля](https://img.shields.io/badge/Шаблон-Профиль%20портфолио-0284C7?style=for-the-badge&logo=sparkles&logoColor=white)](templates/PROFILE-README-TEMPLATE.md)
+[![Змейка коммитов](https://img.shields.io/badge/Action-Змейка%20коммитов-16A34A?style=for-the-badge&logo=githubactions&logoColor=white)](templates/profile-snake-workflow.yml)
+
+[![Auto Unpack](https://img.shields.io/github/actions/workflow/status/overbaffe1/gitEdit/unpack.yml?style=flat-square&logo=githubactions&logoColor=white&label=Auto%20Unpack)](../../actions)
+![Last Commit](https://img.shields.io/github/last-commit/overbaffe1/gitEdit?style=flat-square&color=8B5CF6&label=Last%20Commit)
+![Repo Size](https://img.shields.io/github/repo-size/overbaffe1/gitEdit?style=flat-square&color=0284C7&label=Repo%20Size)
+![Stars](https://img.shields.io/github/stars/overbaffe1/gitEdit?style=flat-square&color=EAB308)
+
+</div>
+
+> [!TIP]
+> **Как пользоваться этим репозиторием:** все элементы ниже отрендерены вживую, а рядом лежит готовый код — просто нажимай кнопку копирования в правом верхнем углу нужного блока и вставляй в свой `README.md`. Готовые каркасы целиком лежат в папке **[`templates/`](templates/)**.
 
 ---
 
-## Содержание
+## Оглавление
 
-1. [Базовый синтаксис за 10 секунд](#1-базовый-синтаксис-за-10-секунд)
-2. [Правила спецсимволов и все параметры URL](#2-правила-спецсимволов-и-все-параметры-url)
-3. [Сравнение всех 5 стилей оформления](#3-сравнение-всех-5-стилей-оформления)
-4. [Как сделать бейдж кликабельной кнопкой](#4-как-сделать-бейдж-кликабельной-кнопкой)
-5. [Готовая витрина технологий (Copy & Paste)](#5-готовая-витрина-технологий-copy--paste)
-6. [«Живые» (динамические) бейджи GitHub и GitHub Actions](#6-живые-динамические-бейджи-github-и-github-actions)
-7. [Красивое выравнивание в шапке README](#7-красивое-выравнивание-в-шапке-readme)
+1. [Бейджи и шилды (`Shields.io` + `Simple Icons`)](#1-бейджи-и-шилды-shieldsio--simple-icons)
+2. [Квадратные иконки стека одной строкой (`Skill Icons`)](#2-квадратные-иконки-стека-одной-строкой-skill-icons)
+3. [Живые SVG-анимации: печатная машинка, волны и свои баннеры](#3-живые-svg-анимации-печатная-машинка-волны-и-свои-баннеры)
+4. [Цветные инфо-блоки GitHub Alerts](#4-цветные-инфо-блоки-github-alerts)
+5. [Интерактивные векторные схемы `Mermaid`](#5-интерактивные-векторные-схемы-mermaid)
+6. [Продвинутая вёрстка портфолио (сплит, темы `<picture>`, видео, `<kbd>`)](#6-продвинутая-вёрстка-портфолио-сплит-темы-picture-видео-kbd)
+7. [Секретный репозиторий профиля (`overbaffe1/overbaffe1`) + змейка коммитов](#7-секретный-репозиторий-профиля-overbaffe1overbaffe1--змейка-коммитов)
+8. [Как работает авто-распаковка `.zip` в этом репозитории](#8-как-работает-авто-распаковка-zip-в-этом-репозитории)
 
----
+<img src="assets/divider.svg" width="100%" alt="">
 
-## 1. Базовый синтаксис за 10 секунд
+## 1. Бейджи и шилды (`Shields.io` + `Simple Icons`)
 
-Обычный статичный бейдж строится по одной формуле:
+Цветные кнопки-плашки рисует на лету бесплатный сервис **[Shields.io](https://shields.io/)** в векторном формате `SVG` (скачивать файлы в репо не нужно), а логотипы брендов берутся из каталога **[Simple Icons](https://simpleicons.org/)** (более 3000 иконок).
+
+### Формула статичного бейджа за 10 секунд
 
 ```text
 https://img.shields.io/badge/<ЛЕВЫЙ_ТЕКСТ>-<ПРАВЫЙ_ТЕКСТ>-<HEX_ЦВЕТ>?style=flat-square&logo=<ИКОНКА>&logoColor=white
 ```
 
-**Пример вживую:**
+* **Двухчастный бейдж:** ![Blender](https://img.shields.io/badge/Blender-bpy%205.x%20(headless)-EA7600?style=flat-square&logo=blender&logoColor=white)
+  ```markdown
+  ![Blender](https://img.shields.io/badge/Blender-bpy%205.x%20(headless)-EA7600?style=flat-square&logo=blender&logoColor=white)
+  ```
+* **Одночастная цветная плашка (без серой левой части):** ![Telegram](https://img.shields.io/badge/Telegram-26A5E4?style=flat-square&logo=telegram&logoColor=white)
+  ```markdown
+  ![Telegram](https://img.shields.io/badge/Telegram-26A5E4?style=flat-square&logo=telegram&logoColor=white)
+  ```
 
-![Blender](https://img.shields.io/badge/Blender-bpy%205.x%20(headless)-EA7600?style=flat-square&logo=blender&logoColor=white)
+### Таблица спецсимволов и параметров URL
 
-**Код для `README.md`:**
+| Символ в тексте | Замена в ссылке | Пример | Параметр `?` | За что отвечает |
+|---|---|---|---|---|
+| Пробел ` ` | `_` или `%20` | `AI%20Agent` → `AI Agent` | `style=` | `flat`, `flat-square`, `for-the-badge`, `plastic`, `social` |
+| Дефис `-` | `--` | `UTF--8` → `UTF-8` | `logo=` | Slug иконки с [simpleicons.org](https://simpleicons.org/) (`python`, `docker`) |
+| Подчёркивание `_` | `__` | `my__var` → `my_var` | `logoColor=` | Цвет иконки (`white`, `black`, `FFD43B`) |
+| Плюс `+` | `%2B` | `C%2B%2B` → `C++` | `labelColor=` | Цвет левой части (`1E293B`, `000000`) |
+| Процент `%` | `%25` | `100%25` → `100%` | `color=` | Переопределение цвета правой части |
+
+### Все 5 стилей лицом к лицу
+
+| Стиль | Живой рендер | Где смотрится лучше всего |
+|---|---|---|
+| `flat` | ![flat](https://img.shields.io/badge/Style-flat-007EC6?style=flat&logo=github&logoColor=white) | Универсальная классика по умолчанию |
+| `flat-square` | ![flat-square](https://img.shields.io/badge/Style-flat--square-EA7600?style=flat-square&logo=blender&logoColor=white) | Строгие инженерные проекты и компактные шапки |
+| `for-the-badge` | ![for-the-badge](https://img.shields.io/badge/Style-for--the--badge-8B5CF6?style=for-the-badge&logo=rocket&logoColor=white) | Крупные акцентные кнопки навигации («Демо», «Доки», «Скачать») |
+| `plastic` | ![plastic](https://img.shields.io/badge/Style-plastic-16A34A?style=plastic&logo=nodedotjs&logoColor=white) | Глянцевый объёмный стиль |
+| `social` | ![social](https://img.shields.io/github/stars/overbaffe1/MyWorkAiBrain?style=social) | Нативные счётчики звёзд и форков |
+
+### Кликабельные кнопки-ссылки
+
+Чтобы плашка работала как настоящая кнопка, оберни картинку в Markdown-ссылку `[![alt](картинка)](адрес)`:
+
+[![Посмотреть MyWorkAiBrain](https://img.shields.io/badge/Проект-MyWorkAiBrain-E3B663?style=for-the-badge&logo=blender&logoColor=black)](https://github.com/overbaffe1/MyWorkAiBrain)
+[![Открыть шаблон](https://img.shields.io/badge/Шаблон-Project%20README-8B5CF6?style=for-the-badge&logo=markdown&logoColor=white)](templates/PROJECT-README-TEMPLATE.md)
 
 ```markdown
-![Blender](https://img.shields.io/badge/Blender-bpy%205.x%20(headless)-EA7600?style=flat-square&logo=blender&logoColor=white)
+[![Посмотреть MyWorkAiBrain](https://img.shields.io/badge/Проект-MyWorkAiBrain-E3B663?style=for-the-badge&logo=blender&logoColor=black)](https://github.com/overbaffe1/MyWorkAiBrain)
 ```
 
-Если поставить несколько таких строк подряд (через перенос строки или пробел, **без пустой строки между ними**), GitHub сам выстроит их в аккуратную горизонтальную линию.
+### Витрина готовых бейджей технологий (Copy & Paste)
 
-### Бейдж из одной половинки (только цветная кнопка без серого ярлыка)
-
-Если левая серая часть не нужна, просто опусти `<ЛЕВЫЙ_ТЕКСТ>-`:
-
-![Telegram](https://img.shields.io/badge/Telegram-26A5E4?style=flat-square&logo=telegram&logoColor=white)
-
-```markdown
-![Telegram](https://img.shields.io/badge/Telegram-26A5E4?style=flat-square&logo=telegram&logoColor=white)
-```
-
----
-
-## 2. Правила спецсимволов и все параметры URL
-
-Так как дефис `-` и подчёркивание `_` используются самим `shields.io` как разделители, внутри текста работают простые замены:
-
-| Что нужно написать в тексте | Как писать в ссылке | Пример |
-|---|---|---|
-| Пробел ` ` | `_` или `%20` | `AI_Agent` или `AI%20Agent` → `AI Agent` |
-| Дефис `-` | Два дефиса `--` | `UTF--8` → `UTF-8` |
-| Подчёркивание `_` | Два подчёркивания `__` | `my__var` → `my_var` |
-| Плюс `+` | `%2B` | `C%2B%2B` → `C++` |
-| Процент `%` | `%25` | `100%25` → `100%` |
-| Двоеточие `:` | `%3A` (или `:`) | `am3d%3Amodel3d` → `am3d:model3d` |
-
-### Полезные параметры после знака `?` (соединяются через `&`)
-
-| Параметр | Что меняет | Примеры значений |
-|---|---|---|
-| `style=` | Форма и размер плашки | `flat`, `flat-square`, `for-the-badge`, `plastic`, `social` |
-| `logo=` | Иконка слева (slug с сайта [simpleicons.org](https://simpleicons.org/)) | `python`, `nodedotjs`, `docker`, `github`, `blender`, `telegram` |
-| `logoColor=` | Цвет иконки | `white`, `black`, `FFD43B` (HEX без `#`) |
-| `labelColor=` | Цвет фона левой половинки (по умолчанию тёмно-серый `#555`) | `1a1b27`, `000000`, `24292e` |
-| `color=` | Цвет правой половинки (переопределяет цвет у динамических бейджей) | `brightgreen`, `8A2BE2`, `EA7600` |
-
-> **Как узнать точное имя иконки и фирменный цвет?** Открой [simpleicons.org](https://simpleicons.org/), вбей название технологии (например, `Node.js`) — на карточке сразу написаны её HEX-цвет (`#5FA04E`) и slug для параметра `logo=` (`nodedotjs`).
-
----
-
-## 3. Сравнение всех 5 стилей оформления
-
-| Стиль (`?style=...`) | Живой вид | Когда лучше использовать |
-|---|---|---|
-| `flat` *(по умолчанию)* | ![flat](https://img.shields.io/badge/Style-flat-007EC6?style=flat&logo=github&logoColor=white) | Классический спокойный стиль для большинства библиотек |
-| `flat-square` | ![flat-square](https://img.shields.io/badge/Style-flat--square-EA7600?style=flat-square&logo=blender&logoColor=white) | Строгие прямые углы, отлично смотрится в технических проектах |
-| `for-the-badge` | ![for-the-badge](https://img.shields.io/badge/Style-for--the--badge-8A2BE2?style=for-the-badge&logo=rocket&logoColor=white) | Крупные акцентные кнопки (КАПСОМ) для главных ссылок: «Демо», «Документация», «Скачать» |
-| `plastic` | ![plastic](https://img.shields.io/badge/Style-plastic-339933?style=plastic&logo=nodedotjs&logoColor=white) | Лёгкий ретро-глянец с объёмом |
-| `social` | ![social](https://img.shields.io/github/stars/overbaffe1/gitEdit?style=social) | Нативный стиль счётчиков GitHub (звёзды, форки, подписчики) |
-
----
-
-## 4. Как сделать бейдж кликабельной кнопкой
-
-В Markdown картинка — это `![alt](картинка)`, а ссылка — `[текст](адрес)`. Просто оберни картинку в ссылку `[![alt](картинка)](адрес)`:
-
-[![Открыть документацию](https://img.shields.io/badge/Открыть-Документацию-8A2BE2?style=for-the-badge&logo=readthedocs&logoColor=white)](#1-базовый-синтаксис-за-10-секунд)
-[![Написать в Telegram](https://img.shields.io/badge/Telegram-Канал-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/)
-
-```markdown
-[![Открыть документацию](https://img.shields.io/badge/Открыть-Документацию-8A2BE2?style=for-the-badge&logo=readthedocs&logoColor=white)](docs/README.md)
-[![Написать в Telegram](https://img.shields.io/badge/Telegram-Канал-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/username)
-```
-
-Ссылаться можно как на внешние сайты (`https://...`), так и на файлы внутри репозитория (`AGENTS.md`, `exports/`) или якоря заголовков (`#раздел`).
-
----
-
-## 5. Готовая витрина технологий (Copy & Paste)
-
-Подборка готовых бейджей с фирменными цветами в стиле `flat-square`:
-
-| Превью | Код для копирования |
+| Превью | Готовый Markdown-код |
 |---|---|
 | ![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=flat-square&logo=python&logoColor=white) | `![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=flat-square&logo=python&logoColor=white)` |
-| ![JavaScript](https://img.shields.io/badge/JavaScript-ES2023-F7DF1E?style=flat-square&logo=javascript&logoColor=black) | `![JavaScript](https://img.shields.io/badge/JavaScript-ES2023-F7DF1E?style=flat-square&logo=javascript&logoColor=black)` |
 | ![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?style=flat-square&logo=typescript&logoColor=white) | `![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?style=flat-square&logo=typescript&logoColor=white)` |
+| ![JavaScript](https://img.shields.io/badge/JavaScript-ES2023-F7DF1E?style=flat-square&logo=javascript&logoColor=black) | `![JavaScript](https://img.shields.io/badge/JavaScript-ES2023-F7DF1E?style=flat-square&logo=javascript&logoColor=black)` |
 | ![Node.js](https://img.shields.io/badge/Node.js-20%20LTS-339933?style=flat-square&logo=nodedotjs&logoColor=white) | `![Node.js](https://img.shields.io/badge/Node.js-20%20LTS-339933?style=flat-square&logo=nodedotjs&logoColor=white)` |
 | ![React](https://img.shields.io/badge/React-19-20232A?style=flat-square&logo=react&logoColor=61DAFB) | `![React](https://img.shields.io/badge/React-19-20232A?style=flat-square&logo=react&logoColor=61DAFB)` |
 | ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white) | `![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)` |
@@ -130,59 +105,222 @@ https://img.shields.io/badge/<ЛЕВЫЙ_ТЕКСТ>-<ПРАВЫЙ_ТЕКСТ>-<
 | ![Docker](https://img.shields.io/badge/Docker-Ready-2496ED?style=flat-square&logo=docker&logoColor=white) | `![Docker](https://img.shields.io/badge/Docker-Ready-2496ED?style=flat-square&logo=docker&logoColor=white)` |
 | ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white) | `![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)` |
 | ![Blender](https://img.shields.io/badge/Blender-bpy-EA7600?style=flat-square&logo=blender&logoColor=white) | `![Blender](https://img.shields.io/badge/Blender-bpy-EA7600?style=flat-square&logo=blender&logoColor=white)` |
+| ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white) | `![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)` |
 | ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black) | `![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)` |
 | ![License MIT](https://img.shields.io/badge/License-MIT-22C55E?style=flat-square) | `![License MIT](https://img.shields.io/badge/License-MIT-22C55E?style=flat-square)` |
 
----
+### Динамические бейджи GitHub API и GitHub Actions
 
-## 6. «Живые» (динамические) бейджи GitHub и GitHub Actions
-
-Эти бейджи сами обращаются к API GitHub и показывают актуальные метрики по публичному репозиторию `<USER>/<REPO>`:
-
-| Что показывает | Живой пример | Шаблон ссылки |
+| Метрика | Живой пример | Шаблон |
 |---|---|---|
-| Дата последнего коммита | ![Last Commit](https://img.shields.io/github/last-commit/overbaffe1/MyWorkAiBrain?style=flat-square) | `https://img.shields.io/github/last-commit/<USER>/<REPO>?style=flat-square` |
-| Размер репозитория | ![Repo Size](https://img.shields.io/github/repo-size/overbaffe1/MyWorkAiBrain?style=flat-square) | `https://img.shields.io/github/repo-size/<USER>/<REPO>?style=flat-square` |
-| Звёзды репозитория | ![Stars](https://img.shields.io/github/stars/overbaffe1/MyWorkAiBrain?style=flat-square) | `https://img.shields.io/github/stars/<USER>/<REPO>?style=flat-square` |
-| Главный язык кода | ![Top Lang](https://img.shields.io/github/languages/top/overbaffe1/MyWorkAiBrain?style=flat-square) | `https://img.shields.io/github/languages/top/<USER>/<REPO>?style=flat-square` |
-| Открытые Issues | ![Issues](https://img.shields.io/github/issues/overbaffe1/MyWorkAiBrain?style=flat-square) | `https://img.shields.io/github/issues/<USER>/<REPO>?style=flat-square` |
-| Открытые Pull Requests | ![PRs](https://img.shields.io/github/issues-pr/overbaffe1/MyWorkAiBrain?style=flat-square) | `https://img.shields.io/github/issues-pr/<USER>/<REPO>?style=flat-square` |
+| Статус GitHub Actions | ![CI](https://img.shields.io/github/actions/workflow/status/overbaffe1/gitEdit/unpack.yml?style=flat-square&logo=githubactions&logoColor=white&label=Actions) | `https://img.shields.io/github/actions/workflow/status/<USER>/<REPO>/<FILE>.yml?style=flat-square` |
+| Последний коммит | ![Last Commit](https://img.shields.io/github/last-commit/overbaffe1/MyWorkAiBrain?style=flat-square) | `https://img.shields.io/github/last-commit/<USER>/<REPO>?style=flat-square` |
+| Размер репо | ![Size](https://img.shields.io/github/repo-size/overbaffe1/MyWorkAiBrain?style=flat-square) | `https://img.shields.io/github/repo-size/<USER>/<REPO>?style=flat-square` |
+| Главный язык | ![Top Lang](https://img.shields.io/github/languages/top/overbaffe1/MyWorkAiBrain?style=flat-square) | `https://img.shields.io/github/languages/top/<USER>/<REPO>?style=flat-square` |
+| Звёзды | ![Stars](https://img.shields.io/github/stars/overbaffe1/MyWorkAiBrain?style=flat-square) | `https://img.shields.io/github/stars/<USER>/<REPO>?style=flat-square` |
 
-### Бейдж статуса тестов / сборки GitHub Actions
+<img src="assets/divider.svg" width="100%" alt="">
 
-Когда в репозитории настроен воркфлоу `.github/workflows/ci.yml`, статус его последнего прогона (`passing` / `failing`) добавляется так:
+## 2. Квадратные иконки стека одной строкой (`Skill Icons`)
+
+Сервис **[skillicons.dev](https://skillicons.dev/)** собирает квадратные иконки приложений в единую плитку по списку через запятую (`&theme=dark` или `light`, `&perline=8`):
+
+**Python / AI / 3D:**
+
+![AI Stack](https://skillicons.dev/icons?i=py,pytorch,tensorflow,opencv,blender,fastapi,docker,linux&theme=dark)
 
 ```markdown
-<!-- Вариант через Shields.io (единый стиль со всеми остальными бейджами) -->
-[![CI](https://img.shields.io/github/actions/workflow/status/<USER>/<REPO>/ci.yml?branch=main&style=flat-square&logo=githubactions&logoColor=white&label=CI)](https://github.com/<USER>/<REPO>/actions)
-
-<!-- Родной бейдж самого GitHub -->
-[![CI](https://github.com/<USER>/<REPO>/actions/workflows/ci.yml/badge.svg)](https://github.com/<USER>/<REPO>/actions)
+![AI Stack](https://skillicons.dev/icons?i=py,pytorch,tensorflow,opencv,blender,fastapi,docker,linux&theme=dark)
 ```
 
----
+**Fullstack Web & DevOps:**
 
-## 7. Красивое выравнивание в шапке README
+![Web Stack](https://skillicons.dev/icons?i=ts,js,nodejs,react,nextjs,tailwind,postgres,redis,nginx,git,github,githubactions&theme=dark&perline=12)
 
-Обычный Markdown всегда прижимает бейджи к левому краю. Если хочется поставить заголовок и ряд кнопок **ровно по центру страницы**, оберни их в `<div align="center">`:
+```markdown
+![Web Stack](https://skillicons.dev/icons?i=ts,js,nodejs,react,nextjs,tailwind,postgres,redis,nginx,git,github,githubactions&theme=dark&perline=12)
+```
+
+<img src="assets/divider.svg" width="100%" alt="">
+
+## 3. Живые SVG-анимации: печатная машинка, волны и свои баннеры
+
+GitHub режет JavaScript, но **полностью разрешает CSS `@keyframes` и SMIL `<animate>` внутри `.svg`-картинок**.
+
+### А) Самопечатающийся текст — [Readme Typing SVG](https://readme-typing-svg.demolab.com/demo/)
+
+![Typing Demo](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=21&pause=1000&color=38BDF8&vCenter=true&width=640&lines=Fullstack+%26+AI+Engineer;Procedural+3D+%26+Automation;Open+Source+Portfolio)
+
+```markdown
+![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=21&pause=1000&color=38BDF8&vCenter=true&width=640&lines=Первая+строка;Вторая+строка;Третья+строка)
+```
+
+### Б) Плывущая градиентная волна — [Capsule Render](https://github.com/kyechan99/capsule-render)
+
+![Wave Demo](https://capsule-render.vercel.app/api?type=waving&color=0:0F172A,50:6D28D9,100:0284C7&height=150&section=header&text=Portfolio%20Project&fontSize=42&fontColor=FFFFFF&animation=fadeIn)
+
+```markdown
+![Header](https://capsule-render.vercel.app/api?type=waving&color=0:0F172A,50:6D28D9,100:0284C7&height=150&section=header&text=Portfolio%20Project&fontSize=42&fontColor=FFFFFF&animation=fadeIn)
+```
+
+### В) Профи-уровень: собственные локальные `.svg` в папке `assets/`
+
+Внешние сервисы иногда уходят в офлайн, а **локальный `.svg` внутри самого репозитория** грузится мгновенно, никогда не падает и позволяет верстать любую анимацию (посмотри исходник [`assets/banner-dark.svg`](assets/banner-dark.svg) в этом репо!).
+
+<img src="assets/divider.svg" width="100%" alt="">
+
+## 4. Цветные инфо-блоки GitHub Alerts
+
+Нативная замена обычным серым цитатам `>` — 5 системных плашек с иконками и цветной рамкой:
+
+> [!NOTE]
+> **Заметка (`[!NOTE]`):** Полезный контекст или справочная деталь, на которую стоит обратить внимание.
+
+> [!TIP]
+> **Совет (`[!TIP]`):** Лайфхак, ускоряющий работу — например, запуск в быстром режиме `FAST=1`.
+
+> [!IMPORTANT]
+> **Важно (`[!IMPORTANT]`):** Ключевое требование, без которого проект не запустится как задумано.
+
+> [!WARNING]
+> **Внимание (`[!WARNING]`):** Потенциальный подводный камень или ограничение совместимости.
+
+> [!CAUTION]
+> **Опасно (`[!CAUTION]`):** Действие может удалить данные или сломать сборку.
+
+```markdown
+> [!TIP]
+> Текст зелёного блока с лампочкой.
+```
+
+<img src="assets/divider.svg" width="100%" alt="">
+
+## 5. Интерактивные векторные схемы `Mermaid`
+
+Блок кода с языком `mermaid` превращается на GitHub в масштабируемую векторную диаграмму без единого графического файла:
+
+### Архитектурный пайплайн с кастомными цветами
+
+```mermaid
+flowchart LR
+    U(["👤 Запрос пользователя"]) ==> A["🤖 AI Agent"]
+    A --> B["🐍 Python / Blender bpy"]
+    A --> C["⚡ Node.js / pptxgenjs"]
+    B -->|".glb + PNG"| D["📦 JSZip / OpenXML"]
+    C -->|"Черновой .pptx"| D
+    D ==> E(["🎬 Живая 3D-презентация"])
+
+    classDef accent fill:#1e1b4b,stroke:#8b5cf6,stroke-width:2px,color:#f5f3ff;
+    classDef pipe fill:#0f172a,stroke:#38bdf8,stroke-width:1.5px,color:#e0f2fe;
+    classDef done fill:#052e16,stroke:#22c55e,stroke-width:2px,color:#dcfce7;
+    class U,A accent;
+    class B,C,D pipe;
+    class E done;
+```
+
+### Sequence-диаграмма взаимодействия сервисов
+
+```mermaid
+sequenceDiagram
+    autonumber
+    actor Client as Клиент
+    participant API as FastAPI Backend
+    participant DB as PostgreSQL
+    Client->>API: POST /api/v1/tasks
+    activate API
+    API->>DB: INSERT task
+    DB-->>API: task_id
+    API-->>Client: 201 Created (JSON)
+    deactivate API
+```
+
+````markdown
+```mermaid
+flowchart LR
+    A[Старт] --> B{Проверка}
+    B -->|OK| C[Деплой]
+    B -->|Ошибка| D[Фикс]
+```
+````
+
+<img src="assets/divider.svg" width="100%" alt="">
+
+## 6. Продвинутая вёрстка портфолио (сплит, темы `<picture>`, видео, `<kbd>`)
+
+### 1) Автоматическая смена баннера под тёмную и светлую тему GitHub (`<picture>`)
+
+Именно так работает шапка вверху этой страницы — переключи тему GitHub в настройках и посмотри, как баннер поменяет палитру:
 
 ```html
-<div align="center">
-
-# Название проекта
-
-Короткое описание в одну строку
-
-[![Docs](https://img.shields.io/badge/Docs-Read-8A2BE2?style=for-the-badge&logo=readthedocs&logoColor=white)](#)
-[![Demo](https://img.shields.io/badge/Live-Demo-22C55E?style=for-the-badge&logo=vercel&logoColor=white)](#)
-
-</div>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/banner-light.svg">
+  <img alt="Banner" src="assets/banner-dark.svg" width="100%">
+</picture>
 ```
+
+### 2) Сплит-вёрстка: текст слева + живая гифка справа
+
+```html
+<img align="right" width="44%" src="assets/demo.gif" alt="Live Demo">
+
+### Главные возможности
+* Пункт описания слева от анимации
+* Второй пункт описания
+* Третий пункт описания
+
+<br clear="right"/>
+```
+
+### 3) Спойлеры `<details>` и физические клавиши `<kbd>`
+
+Сочетания вроде <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> или <kbd>⌘ Cmd</kbd> + <kbd>K</kbd> пишутся через тег `<kbd>Ctrl</kbd>`, а большие скриншоты и логи удобно прятать под кат:
+
+<details>
+<summary><b>Нажми, чтобы развернуть пример спойлера</b></summary>
+<br>
+Сюда отлично прячутся длинные таблицы, переменные окружения <code>.env</code> или большие контакт-листы слайдов, чтобы не перегружать первый экран.
+</details>
+
+```html
+<details>
+<summary><b>Заголовок спойлера</b></summary>
+<br>
+Скрытый контент или большая картинка.
+</details>
+```
+
+### 4) Настоящий `.mp4`-видеоплеер без утяжеления git-репозитория
+
+Открой редактирование `README.md` прямо в веб-интерфейсе GitHub и **перетащи файл `.mp4` или `.mov` мышкой в текстовое поле**. GitHub загрузит ролик на свой внутренний CDN (`github.com/user-attachments/assets/...`) и вставит нативный видеоплеер со звуком и перемоткой, а сам репозиторий останется лёгким!
+
+<img src="assets/divider.svg" width="100%" alt="">
+
+## 7. Секретный репозиторий профиля (`overbaffe1/overbaffe1`) + змейка коммитов
+
+Если создать публичный репозиторий с именем **один в один как твой логин** (`overbaffe1/overbaffe1`), его `README.md` станет витриной прямо на главной странице твоего профиля **[github.com/overbaffe1](https://github.com/overbaffe1)**.
+
+Что уже заготовлено в папке [`templates/`](templates/):
+1. **[`templates/PROFILE-README-TEMPLATE.md`](templates/PROFILE-README-TEMPLATE.md)** — полностью собранный шаблон главной страницы профиля (волна, печатающийся подзаголовок, кнопки соцсетей, плитка стека, витрина лучших репозиториев и адаптивный блок со змейкой).
+2. **[`templates/profile-snake-workflow.yml`](templates/profile-snake-workflow.yml)** — готовый воркфлоу GitHub Actions (`Platane/snk`), который раз в сутки сам рисует анимацию змейки, поедающей твои зелёные квадратики коммитов, сразу в двух версиях (для светлой и тёмной темы GitHub) в отдельную ветку `output`!
+3. **[`templates/PROJECT-README-TEMPLATE.md`](templates/PROJECT-README-TEMPLATE.md)** — универсальный каркас вау-ридмика для любого нового проекта в портфолио.
+
+<img src="assets/divider.svg" width="100%" alt="">
+
+## 8. Как работает авто-распаковка `.zip` в этом репозитории
+
+В этом репозитории включён воркфлоу **[`.github/workflows/unpack.yml`](.github/workflows/unpack.yml) (копия лежит в [`templates/unpack-workflow.yml`](templates/unpack-workflow.yml))**:
+* Как только ты загружаешь любой `.zip`-архив через веб-интерфейс (`Add file` → `Upload files`), GitHub Actions автоматически перехватывает пуш.
+* Распаковывает все вложенные файлы и папки в корень репозитория (даже если внутри архива была одна общая папка-обёртка).
+* Удаляет сам `.zip`-файл и коммитит чистое дерево файлов обратно в ветку!
 
 ---
 
-## Полезные ссылки
+## Полезные конструкторы в закладки
 
-* **[shields.io](https://shields.io/)** — официальный визуальный конструктор любых статичных и динамических бейджей.
-* **[simpleicons.org](https://simpleicons.org/)** — поиск по 3000+ иконкам брендов и их точным HEX-цветам.
-* **[ileriayo/markdown-badges](https://github.com/Ileriayo/markdown-badges)** — огромная коллекция готовых бейджей под сотни языков, фреймворков и сервисов.
+* **[shields.io](https://shields.io/)** — генератор любых статичных и динамических бейджей.
+* **[simpleicons.org](https://simpleicons.org/)** — 3000+ логотипов брендов и их фирменные HEX-цвета.
+* **[skillicons.dev](https://skillicons.dev/)** — плитки квадратных иконок стека.
+* **[readme-typing-svg.demolab.com/demo](https://readme-typing-svg.demolab.com/demo/)** — визуальный редактор печатающегося SVG-текста.
+* **[mermaid.live](https://mermaid.live/)** — песочница с предпросмотром диаграмм `Mermaid`.
+* **[ileriayo/markdown-badges](https://github.com/Ileriayo/markdown-badges)** — огромная коллекция готовых бейджей.
