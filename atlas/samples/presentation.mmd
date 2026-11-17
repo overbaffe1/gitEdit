@@ -1,0 +1,14 @@
+flowchart TD
+    U(["Запрос пользователя"]) ==> A["AI Agent"]
+    A --> B["Python / Blender bpy"]
+    A --> C["Node.js / pptxgenjs"]
+    B -->|".glb + PNG"| D["JSZip / OpenXML"]
+    C -->|"Черновой .pptx"| D
+    D ==> E(["Живая 3D-презентация"])
+
+    classDef accent fill:#1e1b4b,stroke:#8b5cf6,stroke-width:2px,color:#f5f3ff;
+    classDef pipe fill:#0f172a,stroke:#38bdf8,stroke-width:1.5px,color:#e0f2fe;
+    classDef done fill:#052e16,stroke:#22c55e,stroke-width:2px,color:#dcfce7;
+    class U,A accent;
+    class B,C,D pipe;
+    class E done;

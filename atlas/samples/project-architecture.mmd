@@ -1,0 +1,8 @@
+flowchart TD
+    Client(["Клиент / UI"]) --> API["Backend API"]
+    API --> Worker["Worker / ML / Engine"]
+    API --> DB[("Database")]
+    Worker --> Storage[("Artifacts / S3")]
+
+    classDef main fill:#1e1b4b,stroke:#8b5cf6,stroke-width:1.5px,color:#f5f3ff;
+    class Client,API,Worker,DB,Storage main;

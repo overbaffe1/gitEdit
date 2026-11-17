@@ -1,0 +1,16 @@
+{
+  "theme": "base",
+  "htmlLabels": false,
+  "deterministicIds": true,
+  "deterministicIDSeed": "gitEdit",
+  "handDrawnSeed": 17,
+  "fontFamily": "DejaVu Sans, sans-serif",
+  "themeCSS": ".edgeLabel rect.background, .edgeLabel .label rect { fill: #fbf7eb !important; opacity: 1 !important; fill-opacity: 1 !important; }",
+  "themeVariables": {
+    "fontFamily": "DejaVu Sans, sans-serif", "fontSize": "16px", "background": "#fbf7eb",
+    "primaryColor": "#dbeade", "primaryTextColor": "#193731", "primaryBorderColor": "#487567",
+    "secondaryColor": "#f1d5aa", "tertiaryColor": "#e6e8e0", "lineColor": "#455a51",
+    "edgeLabelBackground": "#fbf7eb", "pie1": "#84bba0", "pie2": "#477065", "pie3": "#edb77d",
+    "xyChart": {"backgroundColor": "#fbf7eb", "plotColorPalette": "#528574"}
+  }
+}
