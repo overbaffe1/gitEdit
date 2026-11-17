@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="590" height="118" viewBox="0 0 590 118" role="img" aria-labelledby="title desc" xml:lang="ru">
+  <title id="title">gitEdit — форма, свет, код</title>
+  <desc id="desc">На тёмной полосе печатается подпись «Форма. Свет. Код.». Внизу движется бирюзовая волна. В режиме покоя видна вся строка.</desc>
+  <style>
+    @media (prefers-reduced-motion: no-preference) {
+      .mask { animation: type 7s steps(16, end) infinite; }
+      .wave { animation: drift 8s ease-in-out infinite alternate; }
+      @keyframes type { 0%, 24%, 100% { width: 415px; } 34% { width: 0; } 70% { width: 415px; } }
+      @keyframes drift { from { transform: translateX(0); } to { transform: translateX(-80px); } }
+    }
+  </style>
+  <defs><clipPath id="line"><rect class="mask" x="21" y="34" width="415" height="54"/></clipPath><clipPath id="edge"><rect width="590" height="118" rx="8"/></clipPath></defs>
+  <g clip-path="url(#edge)">
+    <rect width="590" height="118" fill="#192c34"/>
+    <text x="23" y="25" font-family="monospace" font-size="13" font-weight="bold" fill="#abdcc5" letter-spacing="2">GITEDIT / STUDIO</text>
+    <text x="20" y="75" clip-path="url(#line)" font-family="monospace" font-size="37" font-weight="bold" fill="#fff0d8">Форма. Свет. Код.</text>
+    <path class="wave" d="M0 102q42-16 84 0t84 0t84 0t84 0t84 0t84 0t84 0t84 0v30H0z" fill="#88c8b1"/>
+    <path d="M0 111q49-9 98 0t98 0t98 0t98 0t98 0t100 0v16H0z" fill="#eaa17d"/>
+    <g transform="translate(523 47)" stroke="#f9be95" fill="none"><circle r="18"/><ellipse rx="34" ry="11" transform="rotate(-27)"/><circle cx="-25" cy="11" r="3" fill="#f9be95"/></g>
+  </g>
+</svg>
