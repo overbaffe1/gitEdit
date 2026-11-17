@@ -1,15 +1,17 @@
 <picture>
-  <source media="(max-width: 600px)" srcset="assets/banner-compact.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/banner-light.svg">
-  <img alt="gitEdit — Конструктор вау-оформления GitHub" src="assets/banner-dark.svg" width="100%">
+  <source media="(max-width: 600px) and (prefers-reduced-motion: no-preference)" srcset="assets/polar-cover-compact.svg">
+  <source media="(max-width: 600px)" srcset="assets/polar-cover-compact-still.svg">
+  <source media="(prefers-reduced-motion: no-preference)" srcset="assets/polar-cover.svg">
+  <img src="assets/polar-cover-still.svg" width="100%" alt="gitEdit — Мастерская README. Северное сияние над грядой гор; название остаётся на месте.">
 </picture>
 
 # Что умеет README на GitHub
 
+**«Север»** · [Как устроен фон ↓](#мастерская-оформления)
+
 ## Покрути кристалл
 
-Потяни за вершину, приблизь её колёсиком и переключи поверхность на каркас. Это та же сетка, которую дальше увидишь в цвете: четыре верхних треугольника и четыре нижних.
+Потяни за вершину, приблизь модель колёсиком и переключи поверхность на каркас.
 
 <!-- These fences are the viewers themselves. Keep each payload identical to its geometry file in atlas/samples/. -->
 ```stl
@@ -73,7 +75,7 @@ solid field_crystal
 endsolid field_crystal
 ```
 
-Паспорт модели: $V=6$ вершин, $E=12$ рёбер, $F=8$ граней.
+Паспорт модели: $V=6$ вершин, $E=12$ рёбер, $F=8$ граней. Четыре треугольника сверху и четыре снизу: эту же сетку дальше увидишь в цвете.
 
 ```math
 V - E + F = 6 - 12 + 8 = 2
@@ -81,7 +83,61 @@ V - E + F = 6 - 12 + 8 = 2
 
 ### Оглавление
 
-[Город вкладов](#город-вкладов) · [Два маршрута для портфолио](#витрина-шаблонов) · [Карты](#две-карты) · [Графики](#графики-из-данных) · [Кинолаборатория](#кинолаборатория) · [Палитра Markdown](#палитра-markdown) · [Исходники ↓](#исходники-readme)
+[Мастерская оформления](#мастерская-оформления) · [Город вкладов](#город-вкладов) · [Два маршрута для портфолио](#витрина-шаблонов) · [Карты](#две-карты) · [Графики](#графики-из-данных) · [Кинолаборатория](#кинолаборатория) · [Палитра Markdown](#палитра-markdown) · [Исходники ↓](#исходники-readme)
+
+## Мастерская оформления
+
+### Живой фон: где проходит край
+
+На обложке **«Север»** посмотри на ближний берег: он сдвигается заметнее дальнего хребта. Световая завеса плывёт чуть вверх, а луна и заголовок стоят на месте. Открывать картинку не нужно. На узком экране луна остаётся в кадре, при системном уменьшении движения браузер выбирает неподвижную обложку.
+
+Это **фон внутри картинки**, а не подложка под Markdown. За обычные заголовки и списки GitHub свой фон поставить не даёт. Для сравнения — тот же пейзаж на отдельной HTML-странице:
+
+<details>
+<summary>Посмотреть, как выглядит фон за настоящим текстом сайта</summary>
+
+<picture>
+  <source media="(max-width: 600px)" srcset="assets/polar-page-compact.png">
+  <img src="assets/polar-page.png" width="600" alt="Снимок сайта «Север»: карточка с текстом, за ней пейзаж от края до края экрана, наверху переключатель движения.">
+</picture>
+
+Здесь показан **снимок**. На самой странице текст можно выделить, прокрутить до оттисков и остановить фон, не останавливая прокрутку. Для просмотра выставки покидать README не нужно.
+
+</details>
+
+### Два оттиска одного кольца
+
+<p align="center">
+  <img src="assets/ring-pen.svg" width="340" alt="Контур: объёмное кольцо на кремовой бумаге; линии ложатся по поверхности и прячутся за ближним краем.">
+  <img src="assets/ring-screen.svg" width="340" alt="Растр: то же кольцо и отверстие, но тень на фиолетовой бумаге передана плотностью янтарных точек.">
+</p>
+
+Геометрия и камера одни и те же. **Перо** показывает изгиб линией; **растр** собирает свет из ячеек 4 × 4. Прищурься: отверстие видно на обеих карточках, хотя во второй нет ни одного обводящего штриха.
+
+### Марки вместо меню
+
+<p align="center">
+  <a href="#покрути-кристалл"><img src="assets/seal-crystal.svg" width="140" alt="Марка «Кристалл» — перейти к вращаемой модели"></a>
+  <a href="#квартал-в-3d"><img src="assets/seal-skyline.svg" width="140" alt="Марка «Квартал» — перейти к башням по неделям"></a>
+  <a href="#кинолаборатория"><img src="assets/seal-reel.svg" width="140" alt="Марка «Кинолента» — перейти к графу веток"></a>
+</p>
+
+Выбери марку: каждая ведёт к своей работе **на этой странице**. Имя проекта задаёт число лепестков, поворот и краску. У «Кристалла» по окружности медленно идёт надпись, сама розетка и подпись не вращаются.
+
+### Форзац из одной плитки
+
+<img src="assets/tile-frieze.svg" width="500" alt="Полоса из девяти на четыре квадрата. В каждом две дуги. Слева вход А, справа четыре пронумерованных выхода.">
+
+Квадрат с двумя дугами можно оставить как есть или повернуть на четверть оборота. Получился узор для разделителя глав. **К какому номеру ведёт линия от А?**
+
+<details>
+<summary>Проявить дорожку</summary>
+
+<img src="assets/tile-route.svg" width="500" alt="На том же форзаце пунктир проходит от А к выходу 3.">
+
+**А → 3.** Дорожка проходит 30 дуг. Плитки не поменялись: поверх тех же линий напечатан пунктир.
+
+</details>
 
 ## Приёмы из других README
 
@@ -1833,7 +1889,7 @@ https://github.com/user-attachments/assets/031799d1-740d-4cda-90cf-689513fa9860
 
 ## Где заканчивается README
 
-Кристалл и квартал можно повернуть, карты приблизить, у видео нажать Play. У GIF нет ручной перемотки, а у нашего сравнения нет перетаскиваемой ручки. Если в GitHub выключен автозапуск анимаций, выбор читателя важнее оформления. Поиск по CSV и просмотр самого PDF работают в просмотрщиках файлов; для своего JavaScript или игры с сохранением ходов нужен другой интерфейс.
+Кристалл и квартал можно повернуть, карты приблизить, у видео нажать Play. У GIF нет ручной перемотки, а у нашего сравнения нет перетаскиваемой ручки. Переключатель автозапуска GIF в GitHub и системное уменьшение движения — разные настройки. Если система просит меньше движения, «Север» останется неподвижным. Поиск по CSV и просмотр самого PDF работают в просмотрщиках файлов; для своего JavaScript или игры с сохранением ходов нужен другой интерфейс.
 
 ---
 
@@ -1844,7 +1900,7 @@ https://github.com/user-attachments/assets/031799d1-740d-4cda-90cf-689513fa9860
 ### Забрать оформление
 
 - **[Шаблон проекта](templates/PROJECT-README-TEMPLATE.md)** и **[шаблон профиля](templates/PROFILE-README-TEMPLATE.md)**. README публичного репозитория `логин/логин` появляется в профиле. Сами обложки: [«Чертёж»](assets/cover-project.svg) и [«Созвездие»](assets/cover-profile.svg).
-- **Шапка:** [узкая](assets/banner-compact.svg), [светлая](assets/banner-light.svg), [тёмная](assets/banner-dark.svg), [полоса-разделитель](assets/divider.svg). **Подпись с волной и печатью:** [самодостаточный SVG](assets/portfolio-signature.svg).
+- **Предыдущая шапка:** [узкая](assets/banner-compact.svg), [светлая](assets/banner-light.svg), [тёмная](assets/banner-dark.svg), [полоса-разделитель](assets/divider.svg). **Подпись с волной и печатью:** [самодостаточный SVG](assets/portfolio-signature.svg).
 - **[Заготовка workflow для личной змейки](templates/profile-snake-workflow.yml)** рассчитана на Platane/snk и отдельную ветку с картинками. Это шаблон, а не включённая автоматизация; для просмотра выставки Actions не нужны.
 
 <details>
@@ -1875,6 +1931,47 @@ https://github.com/user-attachments/assets/031799d1-740d-4cda-90cf-689513fa9860
 
 ![Отпечаток проекта](assets/repo-fingerprint.svg)
 ```
+
+</details>
+
+### Повторить мастерскую оформления
+
+| Приём | Забрать и изменить | Откуда идея |
+|---|---|---|
+| Пейзаж за названием | «Север»: [широкая](assets/polar-cover.svg) и [узкая](assets/polar-cover-compact.svg) композиции; [широкий](assets/polar-cover-still.svg) и [узкий](assets/polar-cover-compact-still.svg) неподвижные оттиски. В [генераторе](atlas/samples/polar-press.py) поменяй короткое `NAME`, подпись `STRAP` и две палитры. | [Haikei](https://haikei.app/) раскладывает фон на волны и пики; здесь свой берег и завеса из кривых. Двигаются группы SVG, а не текст README. |
+| Фон за текстом страницы | [Сайт одним HTML-файлом](atlas/north.html) + [фоновый слой без надписи](assets/polar-plate.svg) + оба кольца из строки ниже. Снимки для README: [960 × 600](assets/polar-page.png) и [360 × 640](assets/polar-page-compact.png). | У [Vanta](https://github.com/tengbao/vanta) фон прикрепляется к элементу сайта с помощью JS. Нашему примеру хватает CSS: слой закреплён за текстом, галочка ставит на паузу только его движение. |
+| Линия и точка | [Перо](assets/ring-pen.svg) · [растр](assets/ring-screen.svg) · [генератор кольца](atlas/samples/print-ring.py). Из одной проекции берутся видимые линии поверхности и освещённость для пороговой матрицы Байера. | [Перьевой этюд Stéphane Tombeur в canvas-sketch](https://github.com/mattdesl/canvas-sketch/blob/master/examples/pen-plotter-circle-segments.js) и [виды дизеринга](https://github.com/makew0rld/dither). Оба наших оттиска — SVG без растровой подложки. |
+| Серия марок | [Кристалл](assets/seal-crystal.svg) · [квартал](assets/seal-skyline.svg) · [кинолента](assets/seal-reel.svg). [Генератор](atlas/samples/maker-seals.py) берёт байты SHA-256 имени; одинаковое имя даёт ту же форму и палитру. Это не уникальный идентификатор. | [Jdenticon](https://jdenticon.com/) строит знаки из значения. У нас своя формула розетки, а [textPath](https://developer.mozilla.org/en-US/docs/Web/SVG/Reference/Element/textPath) укладывает буквы по кольцу. |
+| Модульный форзац | [Узор](assets/tile-frieze.svg) · [проявленная дорожка](assets/tile-route.svg) · [четыре строки набора и трассировка](atlas/samples/tile-frieze.py). Цифра выбирает ориентацию плитки, не цвет. | [Truchet Tiles](https://github.com/evoluteur/truchet-tiles) показывает, как из поворотов одного квадрата получаются петли. В README вместо редактора — наш набор и второй оттиск внутри `<details>`. |
+
+<details>
+<summary>Вставить обложку, напечатать свою марку или открыть фон на весь экран</summary>
+
+Скопируй четыре файла `polar-cover*.svg` в `assets/` рядом с README. У каждого размера есть завершённый неподвижный вариант; если условия `<source>` не поддерживаются, останется обычный `<img>`. Краски дня и ночи заданы **внутри** SVG.
+
+```html
+<picture>
+  <source media="(max-width: 600px) and (prefers-reduced-motion: no-preference)" srcset="assets/polar-cover-compact.svg">
+  <source media="(max-width: 600px)" srcset="assets/polar-cover-compact-still.svg">
+  <source media="(prefers-reduced-motion: no-preference)" srcset="assets/polar-cover.svg">
+  <img src="assets/polar-cover-still.svg" width="100%" alt="gitEdit — Мастерская README. Северное сияние над грядой гор; название остаётся на месте.">
+</picture>
+```
+
+Все векторные листы этой мастерской собираются из корня репозитория на Python 3, без дополнительных пакетов, шрифтов для загрузки, токенов и Actions:
+
+```sh
+python3 atlas/samples/polar-press.py
+python3 atlas/samples/print-ring.py
+python3 atlas/samples/maker-seals.py
+python3 atlas/samples/tile-frieze.py
+# Своя марка: ключ рисунка, файл и надпись. Без --orbit буквы стоят на месте.
+python3 atlas/samples/maker-seals.py my-project my-mark.svg --label 'Мой проект' --orbit
+```
+
+**Чтобы получить фон под обычным текстом**, распакуй ZIP репозитория и открой `atlas/north.html` в браузере. Сборка или сервер не нужны. Это отдельная страница: ссылка на `.html` в списке файлов GitHub показывает **исходник**, а не действующий сайт. Для публикации подойдёт [GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages); для этого примера настройки репозитория не менялись.
+
+**Почему не `<style>` в README?** В [описании обработки GitHub Markup](https://github.com/github/markup#github-markup) есть отдельный этап очистки HTML. При проверке через GitHub `/markdown` блок `<style>` стал текстом, а у обычного `<div>` исчезли `class` и `style`. `<picture>` и условия `media` у `<source>` сохранились. Поэтому пейзаж с надписью экспортирован как картинка, а не как попытка оформить `body` страницы GitHub.
 
 </details>
 

@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Север — полевое бюро gitEdit</title>
+  <style>
+    :root { color-scheme: light dark; font: 100%/1.5 system-ui, sans-serif; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #eee4cf; color: #20383c; }
+    .folio {
+      --paper: #f4ebd8; --ink: #20383c; --mute: #415c59; --tag: #b6d1b3;
+      color: var(--ink); isolation: isolate; min-height: 100vh; min-height: 100svh;
+    }
+    @media (prefers-color-scheme: dark) {
+      .folio { --paper: #18252f; --ink: #fff0d2; --mute: #bcd0c4; --tag: #365c54; }
+    }
+    .sky { position: fixed; z-index: -1; inset: 0; overflow: hidden; background: var(--paper); pointer-events: none; }
+    .sky img { width: 100%; height: 100%; object-fit: cover; object-position: 78% center; }
+    /* No animation by default. Pausing freezes the current view rather than resetting it. */
+    @media (prefers-reduced-motion: no-preference) {
+      .sky img { animation: pan 10s ease-in-out infinite alternate; }
+      @keyframes pan { from { transform: scale(1.08) translate(-2%, .8%); } to { transform: scale(1.08) translate(2%, -.8%); } }
+      .folio:has(#pause:checked) .sky img { animation-play-state: paused; }
+    }
+    .wrap { width: min(76rem, 100%); margin-inline: auto; padding: clamp(1rem, 4vw, 3.4rem); }
+    .mast, .controls, .topline, footer { display: flex; align-items: center; justify-content: space-between; gap: .8rem; flex-wrap: wrap; }
+    .mast { background: var(--paper); border: 1px solid var(--ink); border-radius: .3rem; padding: .55rem .85rem; }
+    .tag, .switch, .index, .eyebrow, .jump, figcaption, footer { font: 600 .8rem/1.4 ui-monospace, monospace; }
+    .tag, .eyebrow, .index { letter-spacing: .09em; }
+    .logotype { display: inline-flex; align-items: center; gap: .7rem; }
+    .logotype svg { width: 1.85rem; height: 1.85rem; }
+    .controls { gap: 1rem; }
+    .switch { display: inline-flex; gap: .4rem; align-items: center; cursor: pointer; padding: .35rem 0; }
+    input { margin: 0; width: 1.1rem; height: 1.1rem; accent-color: var(--ink); }
+    :focus-visible { outline: 3px solid currentColor; outline-offset: 4px; }
+    .motion-note { display: none; font: .8rem ui-monospace, monospace; }
+    @media (prefers-reduced-motion: reduce) { .switch { display: none; } .motion-note { display: inline; } }
+    .hero { min-height: 72vh; min-height: 72svh; display: grid; align-items: center; padding-block: clamp(2rem, 6vw, 5rem); }
+    .card, .proofs { background: var(--paper); border: 1px solid var(--ink); border-radius: .3rem; }
+    .card { width: min(27rem, 100%); padding: clamp(1.2rem, 3.5vw, 2.5rem); box-shadow: .35rem .35rem 0 var(--ink); }
+    .topline { border-bottom: 1px solid var(--ink); padding-bottom: .6rem; }
+    .index { padding: .15rem .45rem; border-radius: 1rem; background: var(--tag); }
+    .eyebrow { margin: 0; color: var(--mute); }
+    h1, h2 { margin: 0; font: 700 clamp(4rem, 9vw, 7.4rem)/1.06 Georgia, 'DejaVu Serif', serif; letter-spacing: -.07em; }
+    h1 { margin-block: 1.2rem .6rem; }
+    .lede { margin: 0; max-width: 28em; font-size: clamp(1rem, 1.4vw, 1.18rem); }
+    a { color: inherit; text-underline-offset: .2em; }
+    .jump { margin-top: 1.3rem; display: inline-block; padding: .6rem .85rem; color: var(--paper); background: var(--ink); border-radius: .2rem; }
+    .proofs { padding: clamp(1.2rem, 3vw, 2.4rem); margin-block: 8vh 2rem; scroll-margin-top: 1rem; }
+    h2 { font-size: clamp(2.3rem, 4.8vw, 4rem); margin: 1rem 0 .6rem; }
+    .proofs > p { margin-top: 0; max-width: 62ch; }
+    .sheet { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(15rem, 100%), 1fr)); gap: 1.25rem; }
+    figure { margin: 0; } figure img { width: 100%; height: auto; display: block; }
+    figcaption { margin-top: .5rem; font-weight: 400; }
+    footer { padding-top: 1rem; margin-top: 1.4rem; border-top: 1px solid var(--ink); }
+    @media (max-width: 40rem) {
+      .mast { gap: .3rem .7rem; } .tag { font-size: .72rem; }
+      .hero { align-items: end; padding-top: 22vh; } .card { max-width: 24rem; }
+      .sky img { object-position: 82% center; }
+    }
+    @media print { .sky, .controls, .jump { display: none; } .hero { min-height: auto; } }
+  </style>
+</head>
+<body>
+  <main class="folio">
+    <div class="sky" aria-hidden="true"><img src="../assets/polar-plate.svg" alt=""></div>
+    <div class="wrap">
+      <header class="mast">
+        <div class="logotype">
+          <svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><circle cx="16" cy="16" r="14" stroke="currentColor"/><path d="m16 3 3.1 9.9L29 16l-9.9 3.1L16 29l-3.1-9.9L3 16l9.9-3.1Z" fill="currentColor"/></svg>
+          <span class="tag">G/E &nbsp; ПОЛЕВОЕ БЮРО</span>
+        </div>
+        <div class="controls">
+          <label class="switch"><input type="checkbox" id="pause"> Остановить фон</label>
+          <span class="motion-note">Уменьшение движения · фон неподвижен</span>
+        </div>
+      </header>
+      <section class="hero" aria-labelledby="title">
+        <div class="card">
+          <div class="topline"><span class="eyebrow">ЖУРНАЛ СВЕТА</span><span class="index">ЛИСТ 01</span></div>
+          <h1 id="title">Север</h1>
+          <p class="lede">Луна висит над грядой. За полями этой карточки медленно плывёт берег. Выдели строку мышью: это текст страницы, а не надпись на картинке.</p>
+          <a class="jump" href="#proofs">К пробным оттискам ↓</a>
+        </div>
+      </section>
+      <section class="proofs" id="proofs" aria-labelledby="proof-title">
+        <div class="topline"><span class="eyebrow">ТИРАЖНАЯ</span><span class="index">ЛИСТ 02</span></div>
+        <h2 id="proof-title">Два цвета, одна форма</h2>
+        <p>У обоих колец одна геометрия и один ракурс. В первом отверстие читается по изгибу линий, во втором — по сгущению точек.</p>
+        <div class="sheet">
+          <figure><img src="../assets/ring-pen.svg" width="384" height="302" alt="Кольцо нарисовано тонкими поперечными и продольными линиями"><figcaption>А. Перо огибает поверхность.</figcaption></figure>
+          <figure><img src="../assets/ring-screen.svg" width="384" height="302" alt="Тот же силуэт передан янтарными точками на тёмной бумаге"><figcaption>Б. Растр передаёт свет плотностью точек.</figcaption></figure>
+        </div>
+        <footer><span>G/E &nbsp; / &nbsp; 01—02</span><a href="https://github.com/overbaffe1/gitEdit#мастерская-оформления">К выставке в README ↗</a></footer>
+      </section>
+    </div>
+  </main>
+</body>
+</html>

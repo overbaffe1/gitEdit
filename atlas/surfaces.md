@@ -29,6 +29,8 @@
 | **Обсудить идею** | [GitHub Community Discussions](https://github.com/orgs/community/discussions) — разговоры и категории, а не форма внутри README. Для комментариев на собственном сайте есть [пример giscus](https://giscus.app/). |
 | **Сделать полноценный сайт** | [Тема Cayman вживую](https://pages-themes.github.io/cayman/) и [её исходники](https://github.com/pages-themes/cayman). **Pages** публикует статический сайт с HTML/CSS/JS; кнопка-ссылка в README только ведёт на него. [Как устроены Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages). |
 
+**Фон во весь экран:** у [обложки README](../README.md#мастерская-оформления) пейзаж заканчивается по краю картинки. В [нашем HTML-примере](north.html) он лежит и за выделяемым текстом, и за панелью управления. Чтобы попробовать галочку паузы, открой страницу из распакованного архива в браузере; в списке файлов GitHub это исходный код. [Кадры и рецепт](../README.md#повторить-мастерскую-оформления).
+
 ## Ещё четыре поверхности, которые легко спутать с README
 
 - **Roadmap.** Открой [публичную дорожную карту GitHub](https://github.com/orgs/github/projects/4247) и [пояснение к её полям](https://github.com/github/roadmap). Это представление **Projects**: можно показывать тот же набор задач в нескольких видах, а в README оставить вход в нужный.
