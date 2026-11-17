@@ -1,6 +1,6 @@
 # Грань · кинетический кабинет
 
-**[Открыть капсулу](https://overbaffe1.github.io/gitEdit/) · [сыграть парусник Кантильона](https://overbaffe1.github.io/gitEdit/?scene=ship)**
+**[Открыть капсулу](https://rawcdn.githack.com/overbaffe1/gitEdit/ac0dd93aa7481a0961f366765dec9d1a766b10be/docs/index.html) · [сыграть парусник Кантильона](https://rawcdn.githack.com/overbaffe1/gitEdit/ac0dd93aa7481a0961f366765dec9d1a766b10be/docs/index.html?scene=ship)**
 
 В [основном README](../README.md#покрути-кристалл) — одна кинопетля и стоп-кадр при уменьшении движения. Интерактивная часть — отдельная статическая страница с WebGL 2, не iframe в Markdown. Для работы без сайта скачай [ZIP с одним `crystal.html`](../assets/crystal-view.zip?raw=1). Капсула, проигрыватель и постер уже внутри. Модели пользователя никуда не отправляются.
 
@@ -18,16 +18,18 @@
 Например, для `MyWorkAiBrain` можно использовать этот блок **без копирования движка**. Кадр ведёт к изображённой капсуле, соседняя ссылка сразу запускает парусник. Для форка замени адреса своими.
 
 ```html
-<p><a href="https://overbaffe1.github.io/gitEdit/"><picture>
+<p><a href="https://rawcdn.githack.com/overbaffe1/gitEdit/ac0dd93aa7481a0961f366765dec9d1a766b10be/docs/index.html"><picture>
   <source media="(prefers-reduced-motion: reduce)" srcset="https://github.com/overbaffe1/gitEdit/raw/refs/heads/main/docs/poster.jpg">
   <img src="https://github.com/overbaffe1/gitEdit/raw/refs/heads/main/assets/crystal-theatre.gif" width="704" alt="Кинопетля малахитовой капсулы. Открыть 3D-студию.">
 </picture></a></p>
-<a href="https://overbaffe1.github.io/gitEdit/?scene=ship">Парусник Кантильона в 3D →</a>
+<a href="https://rawcdn.githack.com/overbaffe1/gitEdit/ac0dd93aa7481a0961f366765dec9d1a766b10be/docs/index.html?scene=ship">Парусник Кантильона в 3D →</a>
 ```
 
 ## Пересобрать
 
-`docs/` — весь сайт (ветка `main`, GitHub Pages из `/docs`). Для обычного просмотра ничего собирать не надо. Рендерер — [Three.js](https://github.com/mrdoob/three.js), [лицензия MIT](../docs/three-LICENSE.txt). Во время показа движок не загружается с CDN.
+`docs/` — весь статический сайт. Публичные ссылки в README используют [RawGitHack](https://github.com/neoascetic/rawgithack): его production-адрес с полным SHA фиксирует версию HTML, CSS, JS и GLB. При первом посещении сервис может показать страницу подтверждения. После обновления студии укажи в ссылках **новый коммит с готовой папкой `docs/`**, а не изменяемую ветку.
+
+Для собственного адреса без CDN владелец может выбрать в [Settings → Pages](https://github.com/overbaffe1/gitEdit/settings/pages) **Deploy from a branch → main → /docs** и после успешной публикации заменить ссылки адресом из настроек. Включать Pages для чтения README или для ZIP не требуется. Для обычного просмотра ничего собирать не надо. Рендерер — [Three.js](https://github.com/mrdoob/three.js), [лицензия MIT](../docs/three-LICENSE.txt). Во время показа движок не загружается с CDN.
 
 Из корня репозитория, с Python 3 + Pillow и Node.js 22+:
 

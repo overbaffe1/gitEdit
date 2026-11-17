@@ -30,16 +30,16 @@
 
 ### Покрути кристалл
 
-<p><a href="https://overbaffe1.github.io/gitEdit/"><picture>
+<p><a href="https://rawcdn.githack.com/overbaffe1/gitEdit/ac0dd93aa7481a0961f366765dec9d1a766b10be/docs/index.html"><picture>
   <source media="(prefers-reduced-motion: reduce)" srcset="docs/poster.jpg">
   <img src="assets/crystal-theatre.gif" width="704" alt="Восемь малахитовых створок расходятся, открывая янтарное ядро и две латунные орбиты, и снова смыкаются. Нажми, чтобы управлять моделью.">
 </picture></a></p>
 
 **Малахитовая капсула.** Прожилки нанесены на те же восемь граней бумажного кристалла. За один оборот можно увидеть и камень снаружи, и гравировку на обратной стороне створок. Здесь идёт восьмисекундная кинопетля — раскрывать картинки не нужно.
 
-**[Открыть 3D-студию «Грань» →](https://overbaffe1.github.io/gitEdit/)** · **[Включить парусник из MyWorkAiBrain →](https://overbaffe1.github.io/gitEdit/?scene=ship)**
+**[Открыть 3D-студию «Грань» →](https://rawcdn.githack.com/overbaffe1/gitEdit/ac0dd93aa7481a0961f366765dec9d1a766b10be/docs/index.html)** · **[Включить парусник из MyWorkAiBrain →](https://rawcdn.githack.com/overbaffe1/gitEdit/ac0dd93aa7481a0961f366765dec9d1a766b10be/docs/index.html?scene=ship)**
 
-В студии можно потянуть модель мышью или пальцем, остановить клип и передвинуть ползунок времени. У парусника проигрывается его собственная анимация парусов, волн и чайки. Можно открыть свой GLB или STL; для STL — добавить рисунок на поверхность. [Та же студия для работы без сети (ZIP)](https://github.com/overbaffe1/gitEdit/raw/refs/heads/main/assets/crystal-view.zip): распакуй и открой `crystal.html`. Паруснику при первом открытии нужен интернет или скачанный `ship.glb`.
+При первом открытии CDN может попросить подтвердить переход к странице `gitEdit`. В студии можно потянуть модель мышью или пальцем, остановить клип и передвинуть ползунок времени. У парусника проигрывается его собственная анимация парусов, волн и чайки. Можно открыть свой GLB или STL; для STL — добавить рисунок на поверхность. [Та же студия для работы без сети (ZIP)](https://github.com/overbaffe1/gitEdit/raw/refs/heads/main/assets/crystal-view.zip): распакуй и открой `crystal.html`. Паруснику при первом открытии нужен интернет или скачанный `ship.glb`.
 
 ### Кейс проекта
 

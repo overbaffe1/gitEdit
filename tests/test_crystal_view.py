@@ -11,7 +11,6 @@ from zipfile import ZipFile
 
 ROOT = Path(__file__).resolve().parents[1]
 SITE = ROOT / 'docs'
-URL = 'https://overbaffe1.github.io/gitEdit/'
 
 
 class Tags(HTMLParser):
@@ -32,8 +31,11 @@ class CrystalViewTest(unittest.TestCase):
         for tag in ('details','iframe','model-viewer','script'):
             self.assertNotIn(tag, tags.by_tag)
         self.assertNotIn('```stl', section.lower())
-        self.assertEqual([a['href'] for a in tags.by_tag['a']], [URL])
-        self.assertIn(URL+'?scene=ship', section)
+        link, = tags.by_tag['a']
+        player = link['href']
+        self.assertRegex(player, r'^https://(?:rawcdn\.githack\.com/overbaffe1/gitEdit/[a-f0-9]{40}/docs/index\.html|overbaffe1\.github\.io/gitEdit/)$')
+        self.assertIn(f']({player})', section)
+        self.assertIn(player+'?scene=ship', section)
         self.assertEqual(len(tags.by_tag['img']), 1)
         data = (ROOT/tags.by_tag['img'][0]['src']).read_bytes()
         self.assertEqual((data[:6], struct.unpack_from('<HH',data,6)), (b'GIF89a',(704,400)))
