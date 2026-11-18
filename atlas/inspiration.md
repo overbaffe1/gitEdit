@@ -4,13 +4,17 @@
 
 Сначала нажми на **результат**, потом на источник. Разница принципиальна: записанному GIF не нужен сервер при просмотре; карточка по URL зависит от сервиса; «живой» README часто просто переписывает бот. В этом атласе чужие демо открываются по ссылке; новые workflow и приложения не подключались. Ссылки сверены с проектами 17 ноября 2026 года.
 
+## Виньетка вместо ещё одного баннера
+
+В [README Catppuccin для Kitty](https://github.com/catppuccin/kitty/blob/177d447f0c3626959ef001b4605f5d844541fd63/README.md) в конце стоит [тонкая линия с силуэтом кота](https://github.com/catppuccin/catppuccin/blob/d09787dd98ca6fba08af5ef2ae94a7e09f17daca/assets/footers/gray0_ctp_on_line.svg). Это украшение страницы: ему не нужны ни надпись, ни кнопка. В gitEdit под триптихом и после печатного листа повторяется своя [виньетка с мотыльком](../assets/moth-rule.svg). Медный и мятный оттенки взяты из панорамы мастерской, а сквозь прорези в крыльях виден фон страницы.
+
 ## Первый экран без баннера: вид и код одного блока
 
 В [Best-README-Template](https://github.com/othneildrew/Best-README-Template/blob/fc444eb7b04b2e4863f6080b1507a219e95103fa/README.md) под названием стоят ссылки на документацию, демо и шаблоны Issues. Полезный приём здесь не логотип, а подписи к ссылкам: ещё до прокрутки ясно, куда каждая ведёт. У [GitHub CLI](https://github.com/cli/cli/blob/e1219499a578b69e3437adaa31cd60614e23c802/README.md) сразу после названия коротко объяснено, для чего нужен `gh`.
 
 В [каталоге gitEdit](../templates/) на один блок приходится один `.md`, а не картинка и отдельный листинг. Сравни [переключатель в вёрстке](../templates/blocks/quickstart.md) и [его исходные строки](../templates/blocks/quickstart.md?plain=1): в первом режиме можно выбрать способ, во втором — забрать обе инструкции вместе с переключателем. Параметр [`?plain=1` описан в документации GitHub](https://github.com/github/docs/blob/49a012fa50b42661a59bfcb80dad5910bced5e81/content/get-started/writing-on-github/working-with-advanced-formatting/creating-a-permanent-link-to-a-code-snippet.md). Это две страницы просмотра **одного файла**, а не вкладки, нарисованные внутри Markdown.
 
-**Как связать раскрытия.** В [README node-core-utils](https://github.com/nodejs/node-core-utils/blob/27468f5b97caa9d415f9928bbe1bdf0c463df122/README.md) две инструкции объединены общим `name`. В [сравнении ARM64 и ARM32 у Samsung](https://github.com/Samsung/escargot/blob/6a2b740857f619e6d4c6f1330dfc8fa331b71926/README.md) так же переключаются результаты для архитектур. Это [свойство самого `<details>`](https://github.com/mdn/content/blob/5d53607e3645a456fce6564424823169157b74b1/files/en-us/web/html/reference/elements/details/index.md), а не скрипт. На главной gitEdit попробуй открыть «В терминале»: раздел «В браузере» закроется, а раскрытия галереи останутся независимыми. В просмотрщике без поддержки групп оба раздела всё равно можно прочесть.
+**Как связать раскрытия.** В [README node-core-utils](https://github.com/nodejs/node-core-utils/blob/27468f5b97caa9d415f9928bbe1bdf0c463df122/README.md) две инструкции объединены общим `name`. В [сравнении ARM64 и ARM32 у Samsung](https://github.com/Samsung/escargot/blob/6a2b740857f619e6d4c6f1330dfc8fa331b71926/README.md) так же переключаются результаты для архитектур. Это [свойство самого `<details>`](https://github.com/mdn/content/blob/5d53607e3645a456fce6564424823169157b74b1/files/en-us/web/html/reference/elements/details/index.md), а не скрипт. В [шаблоне инструкций](../templates/blocks/quickstart.md) при открытии «В терминале» раздел «В браузере» закроется. В просмотрщике без поддержки групп оба раздела всё равно можно прочесть.
 
 ## Терминал и рисунок вместо скриншота
 

@@ -1,53 +1,13 @@
-<sub>МАСТЕРСКАЯ README</sub>
-
-# gitEdit
-
-Блоки для страниц проектов и профилей на GitHub. Посмотри, как выглядит блок, и скопируй его разметку в свой README.
-
-**[Каталог шаблонов](/templates/)** · [Полевой атлас](/atlas/) · [Предложить блок](https://github.com/overbaffe1/gitEdit/issues/new?template=readme-block.yml)
-
-## Как взять шапку
-
-<details name="gitedit-get-header" open>
-<summary><strong>В браузере</strong></summary>
-
-Открой [код шапки](/templates/blocks/header.md?plain=1) и нажми кнопку копирования рядом с **Raw**. Вставь разметку в свой `README.md` и замени название и ссылки.
-
-</details>
-
-<details name="gitedit-get-header">
-<summary><strong>В терминале</strong></summary>
-
-Из корня клона gitEdit выполни:
-
-```sh
-git show HEAD:templates/blocks/header.md
-```
-
-В терминале появится тот же Markdown. Команда не меняет файлы.
-
-</details>
-
-## Образцы Markdown
-
-| Блок | Режим |
-| :--- | :--- |
-| `01` **Шапка проекта**<br>Название, польза и навигация. | [Вид](templates/blocks/header.md) · [Код](templates/blocks/header.md?plain=1) |
-| `02` **Переключатель инструкций**<br>Два способа, как в примере выше. | [Вид](templates/blocks/quickstart.md) · [Код](templates/blocks/quickstart.md?plain=1) |
-| `03` **Карточка профиля**<br>Проекты и ссылки на результаты. | [Вид](templates/blocks/profile.md) · [Код](templates/blocks/profile.md?plain=1) |
-
----
-
-<details>
-<summary><b>Галерея</b> · триптих, оптические опыты, модели и карты</summary>
-
 <p align="center"><a href="assets/night-shift/fold.gif"><img src="assets/night-shift/bench-glass.jpg" width="33%" alt="Слева: бумажный кристалл под лампой — анимация сгиба"></a><a href="assets/night-shift/weeks-tape.svg"><img src="assets/night-shift/bench-tape.jpg" width="33%" alt="В центре: латунный считыватель — лист перфоленты"></a><a href="assets/night-shift/moth-projector.svg"><img src="assets/night-shift/bench-film.jpg" width="33%" alt="Справа: кинопроектор — мотылёк за решёткой"></a></p>
 
-*Триптих: три JPG встык складываются в [одну панораму](assets/night-shift/bench-master.jpg).*
+<p align="center">
+  <em>Три кадра — <a href="assets/night-shift/bench-master.jpg">одна панорама</a>.</em><br>
+  <picture><img src="assets/moth-rule.svg" width="616" alt=""></picture>
+</p>
 
 ## Зеркальный конёк
 
-<p><a href="assets/catoptric/sheet-a4.pdf"><picture>
+<p align="center"><a href="assets/catoptric/sheet-a4.pdf"><picture>
   <source media="(max-width: 540px)" srcset="assets/catoptric/mirror.png">
   <img src="assets/catoptric/proof.png" width="840" alt="На бумаге — распластанный веер с завитком у выемки. В расчётном отражении цилиндра из этих чернил собирается морской конёк. Открыть печатный лист A4.">
 </picture></a></p>
@@ -60,7 +20,7 @@ git show HEAD:templates/blocks/header.md
 
 ## Одна форма, три тени
 
-<p><a href="assets/shadow-type/git.stl"><picture>
+<p align="center"><a href="assets/shadow-type/git.stl"><picture>
   <source media="(prefers-reduced-motion: reduce)" srcset="assets/shadow-type/proof.png">
   <img src="assets/shadow-type/git.gif" width="672" alt="Одна объёмная литера поворачивается. Её силуэт спереди — G, сбоку — I, сверху — T. Открыть модель STL.">
 </picture></a></p>
@@ -71,7 +31,7 @@ git show HEAD:templates/blocks/header.md
 
 ## Медуза, записанная звуком
 
-<p><a href="assets/aurelia/swim.gif"><picture>
+<p align="center"><a href="assets/aurelia/swim.gif"><picture>
   <source media="(prefers-reduced-motion: reduce)" srcset="assets/aurelia/trace.png">
   <img src="assets/aurelia/swim.gif" width="704" alt="На экране медуза сжимает и расправляет купол. Рядом — две звуковые дорожки; метки на них задают положение светлой точки на контуре.">
 </picture></a></p>
@@ -84,11 +44,11 @@ git show HEAD:templates/blocks/header.md
 
 ## Сумеречный лист
 
-<p><a href="assets/twilight/proof.png"><img src="assets/twilight/glass.png" width="360" alt="На белом фоне из прозрачного листа проступает лисица, на тёмном — сипуха. Медные риски у глаз остаются на месте. Нажми, чтобы сравнить оба оттиска."></a></p>
+<p align="center"><a href="assets/twilight/proof.png"><img src="assets/twilight/glass.png" width="360" alt="На белом фоне из прозрачного листа проступает лисица, на тёмном — сипуха. Медные риски у глаз остаются на месте. Нажми, чтобы сравнить оба оттиска."></a></p>
 
 Кто смотрит на тебя с листа? На белой странице — **лисица**, на тёмной — **сипуха**. Посмотри на зрачки: у обоих они на одной высоте. Это один прозрачный PNG, а не две картинки, которые README подбирает по теме.
 
-<details>
+<details open>
 <summary>Подложить оба фона рядом, не меняя тему</summary>
 
 <a href="assets/twilight/proof.png"><img src="assets/twilight/proof.png" width="720" alt="Один и тот же PNG на двух подложках: слева лисица на белой бумаге с солнцем, справа сипуха на графитовой с месяцем."></a>
@@ -101,7 +61,7 @@ git show HEAD:templates/blocks/header.md
 
 ## Шрифт-кладовщик
 
-<p><a href="assets/typecase/delivery.gif"><picture>
+<p align="center"><a href="assets/typecase/delivery.gif"><picture>
   <source media="(prefers-reduced-motion: reduce)" srcset="assets/typecase/proof.png">
   <img src="assets/typecase/delivery.gif" width="720" alt="Наборный склад. Цифра 6 толкает ящик к правой стене, Backspace возвращает его, и робот обходит ящик, чтобы доставить его на ромб. Справа видна набранная строка.">
 </picture></a></p>
@@ -116,14 +76,14 @@ git show HEAD:templates/blocks/header.md
 
 **Кристалл в 3D:** [студия «Грань» — текстуры и движение](https://rawcdn.githack.com/overbaffe1/gitEdit/7b8b2cb05c77223867c772de0d411330f1eddc9f/docs/index.html) · [синий просмотрщик GitHub — отдельный STL](assets/crystal.stl).
 
-<p><a href="assets/night-shift/fold.gif"><picture>
+<p align="center"><a href="assets/night-shift/fold.gif"><picture>
   <source media="(prefers-reduced-motion: reduce)" srcset="assets/night-shift/fold-still.png">
   <img src="assets/night-shift/fold.gif" width="620" alt="Восемь граней кристалла разворачиваются в один лист и собираются обратно. Нажми, чтобы открыть GIF целиком.">
 </picture></a></p>
 
 **01 / Форма.** У кристалла разрезали пять рёбер. Остальные семь работают как сгибы: зелёные грани расходятся веером, абрикосовые ложатся вдоль края. Проследи за штрихами на любой грани — бумага поворачивается, но не растягивается.
 
-<details>
+<details open>
 <summary><b>Разложить выкройку на столе</b></summary>
 
 <a href="assets/night-shift/crystal-net.svg"><img src="assets/night-shift/crystal-net.svg" width="620" alt="Выкройка из восьми треугольников. Пунктир — сгибы, буквы A–E попарно отмечают швы; на одном краю каждой пары есть клапан."></a>
@@ -158,7 +118,7 @@ git show HEAD:templates/blocks/header.md
   <img src="assets/crystal-wipe.gif" width="576" alt="Один ракурс кристалла: слева каркас на бумаге, справа цветные грани. Граница сравнения движется сама.">
 </picture></a></p>
 
-<details>
+<details open>
 <summary>Положить оба кадра рядом и рассмотреть без движения</summary>
 
 <a href="assets/crystal-wire.png"><img src="assets/crystal-wire.png" width="315" alt="Каркас кристалла с видимыми и скрытыми рёбрами"></a> <a href="assets/crystal-light.png"><img src="assets/crystal-light.png" width="315" alt="Тот же ракурс с цветом граней и полосами отражённого света"></a>
@@ -188,7 +148,7 @@ git show HEAD:templates/blocks/header.md
 
 ## Перфолента
 
-<p><a href="assets/night-shift/weeks-tape.svg"><picture>
+<p align="center"><a href="assets/night-shift/weeks-tape.svg"><picture>
   <source media="(max-width: 600px)" srcset="assets/night-shift/weeks-tape-compact.svg">
   <img src="assets/night-shift/weeks-tape.svg" width="638" alt="Перфолента на 16 недель. В колонках 07 и 15 пробиты 32, 8 и 4; в пятнадцатой есть ещё нижнее отверстие.">
 </picture></a></p>
@@ -197,7 +157,7 @@ git show HEAD:templates/blocks/header.md
 
 Это **398 коммитов LazyGit** за 6 января — 27 апреля 2025 года, не активность автора профиля. Издалека две выделенные недели почти одинаковы. **Чем № 15 отличается от № 07?**
 
-<details>
+<details open>
 <summary><b>Положить колонки рядом и прочитать код</b></summary>
 
 <a href="assets/night-shift/weeks-key.svg"><img src="assets/night-shift/weeks-key.svg" width="476" alt="Расшифровка: 32 + 8 + 4 = 44; 32 + 8 + 4 + 1 = 45."></a>
@@ -236,7 +196,7 @@ git show HEAD:templates/blocks/header.md
 
 [Повернуть квартал на GitHub (STL)](assets/weekly-skyline.stl) · [открыть рисунок (SVG)](assets/weekly-skyline.svg)
 
-<details>
+<details open>
 <summary>Какая неделя оказалась самой высокой?</summary>
 
 **7–13 апреля: 59 коммитов.** Следующая неделя дала 45. В анимации клетки показывают отдельные дни, а в квартале хорошо видна сумма за неделю.
@@ -245,7 +205,7 @@ git show HEAD:templates/blocks/header.md
 
 ## Театр теней
 
-<p><a href="assets/night-shift/moth-projector.svg"><picture>
+<p align="center"><a href="assets/night-shift/moth-projector.svg"><picture>
   <source media="(max-width: 600px) and (prefers-reduced-motion: no-preference)" srcset="assets/night-shift/moth-projector-compact.svg">
   <source media="(max-width: 600px)" srcset="assets/night-shift/moth-still-compact.svg">
   <source media="(prefers-reduced-motion: no-preference)" srcset="assets/night-shift/moth-projector.svg">
@@ -256,7 +216,7 @@ git show HEAD:templates/blocks/header.md
 
 Одна позиция держится 1,4 секунды. Здесь решётка перемещается сама, не за курсором; при уменьшении движения остаётся неподвижная пара окон.
 
-<details>
+<details open>
 <summary><b>Снять решётку и достать четыре кадра</b></summary>
 
 **Так выглядит бумага без решётки.** На ней уже напечатаны все четыре положения крыльев вперемешку.
@@ -277,7 +237,7 @@ git show HEAD:templates/blocks/header.md
 
 <a href="assets/commit-reel.svg"><img src="assets/commit-reel.svg" width="560" alt="От A расходятся линии к B в main и C в edit. Из B и C линии сходятся в M."></a>
 
-<details>
+<details open>
 <summary>Свериться с монтажным листом</summary>
 
 **B и C.** Коммит A — их общий предок, а не родитель M.
@@ -317,7 +277,7 @@ https://github.com/user-attachments/assets/031799d1-740d-4cda-90cf-689513fa9860
 
 <a href="assets/mate-in-one.svg"><img src="assets/mate-in-one.svg" width="430" alt="Белые Крg6 и Лa7 против чёрного Крh8; ход белых."></a>
 
-<details>
+<details open>
 <summary>Проверить свой ход</summary>
 
 **Лa8#**. Ладья даёт шах по восьмой горизонтали и отрезает g8. Белый король держит g7 и h7.
@@ -348,6 +308,10 @@ https://github.com/user-attachments/assets/031799d1-740d-4cda-90cf-689513fa9860
 
 Это содержимое одностраничного PDF в виде PNG. Та же картинка размером 1280 × 640 подходит для карточки ссылки на репозиторий.
 
+<p align="center">
+  <picture><img src="assets/moth-rule.svg" width="428" alt=""></picture>
+</p>
+
 ## Что умеет README на GitHub
 
 ### Оглавление
@@ -375,7 +339,7 @@ https://github.com/user-attachments/assets/031799d1-740d-4cda-90cf-689513fa9860
 
 Это **фон внутри картинки**, а не подложка под Markdown. За обычные заголовки и списки GitHub свой фон поставить не даёт. Для сравнения — тот же пейзаж на отдельной HTML-странице:
 
-<details>
+<details open>
 <summary>Посмотреть, как выглядит фон за настоящим текстом сайта</summary>
 
 <p><a href="assets/polar-page.png"><picture>
@@ -412,7 +376,7 @@ https://github.com/user-attachments/assets/031799d1-740d-4cda-90cf-689513fa9860
 
 Квадрат с двумя дугами можно оставить как есть или повернуть на четверть оборота. Получился узор для разделителя глав. **К какому номеру ведёт линия от А?**
 
-<details>
+<details open>
 <summary>Проявить дорожку</summary>
 
 <a href="assets/tile-route.svg"><img src="assets/tile-route.svg" width="500" alt="На том же форзаце пунктир проходит от А к выходу 3."></a>
@@ -445,7 +409,7 @@ https://github.com/user-attachments/assets/031799d1-740d-4cda-90cf-689513fa9860
 
 Один круг — один файл. Площадь соответствует числу байтов, цвет и внешний контур — каталогу первого уровня. Это снимок `gitEdit` на [коммите `11ea344`](https://github.com/overbaffe1/gitEdit/tree/11ea34407408f20f95becf35607f6f0e3b1c6394), **до** добавления этой карты, а не постоянно обновляемый счётчик. Площади посчитаны по размерам Git-блобов до сжатия.
 
-<details>
+<details open>
 <summary>Что за самый большой круг с надписью SVG?</summary>
 
 Это [рисунок «File → Index → Commit»](assets/staging.svg). В этом срезе он занимает 77 397 байт. У соседнего GIF с записью терминала — 61 627 байт. Так по отпечатку можно найти тяжёлую иллюстрацию, не просматривая каталоги.
@@ -507,11 +471,6 @@ STL кристалла занимает **1,2 КиБ**. У печатного л
 **Диалог сервисов.** Здесь важны не размеры и не доли, а порядок запроса, записи и ответа.
 
 <p><a href="assets/mermaid/task-sequence.png"><img src="assets/mermaid/task-sequence.png" width="620" alt="Клиент отправляет POST, API сохраняет задачу и возвращает созданный идентификатор."></a></p>
-
-</details>
-
-<details>
-<summary><b>Шпаргалка Markdown</b> · бейджи, оповещения и вёрстка текста</summary>
 
 ## Палитра Markdown
 
@@ -582,7 +541,7 @@ V - E + F = 6 - 12 + 8 = 2
 - [x] Кейс понятен по неподвижному кадру.
 - [ ] Подставить собственную работу при копировании.
 
-<details>
+<details open>
 <summary>Проверить раскрытие с клавиатуры</summary>
 
 На заголовок можно перейти клавишей <kbd>Tab</kbd>, раскрыть или закрыть его — <kbd>Enter</kbd> или <kbd>Пробел</kbd>. Галочки выше — состояние документа, а не голосование.
@@ -593,10 +552,7 @@ V - E + F = 6 - 12 + 8 = 2
 
 В README кристалл движется в записанной кинопетле. Свой JavaScript и WebGL GitHub сюда не встраивает: свободное вращение и управление клипами работают в студии по ссылке. Чтобы повернуть STL или приблизить карту, открой файл экспоната. В README остаются их рисунки; у видео по-прежнему есть кнопка Play. У GIF нет ручной перемотки, а у нашего сравнения нет перетаскиваемой ручки. Переключатель автозапуска GIF в GitHub и системное уменьшение движения — разные настройки. Если система просит меньше движения, «Север» останется неподвижным. Поиск по CSV и просмотр самого PDF работают в просмотрщиках файлов; для своего JavaScript или игры с сохранением ходов нужен другой интерфейс.
 
-</details>
-
-<details>
-<summary><b>Исходники и рецепты</b> · как повторить примеры из галереи</summary>
+---
 
 ## Исходники README
 
@@ -613,7 +569,7 @@ V - E + F = 6 - 12 + 8 = 2
 | **Данные → материальный носитель.** Вместо счётчика дай читателю расшифровать одну разницу. | [112 дней CSV](atlas/samples/snake-weeks.csv) · [лента](assets/night-shift/weeks-tape.svg) · [раскладка для телефона](assets/night-shift/weeks-tape-compact.svg) · [ключ](assets/night-shift/weeks-key.svg) · [набор ленты](atlas/samples/night_shift/tape.py). | Снимки настоящей ленты и объяснение отверстий подачи — **ICL CES** [2](https://iclces.uk/articles/reading_punched_paper_tape.html). Наши шесть весов — собственный код для чисел 0–63, не историческая лента ASCII. |
 | **Движение → оптическая игрушка.** Из четырёх силуэтов собери один полосатый отпечаток. | [Проектор](assets/night-shift/moth-projector.svg) · [стоп-кадр](assets/night-shift/moth-still.svg) · [четыре позы](assets/night-shift/moth-poses.svg) · [бумага](assets/night-shift/moth-paper.svg) и [решётка](assets/night-shift/moth-grille.svg) · [генератор](atlas/samples/night_shift/projector.py). Печатай пару **120 × 72 мм** в одном масштабе: рисунок на бумаге, решётку на прозрачной плёнке. | Для прямых полос — [animbar](https://github.com/jtojnar/animbar); у **FabObscura** [4](https://github.com/tichaesque/FabObscura) есть и криволинейные барьеры. Рисунок мотылька и разбиение на фазы здесь свои. |
 
-<details>
+<details open>
 <summary>Пересобрать экспонаты и подставить свои работы</summary>
 
 Из корня, Python 3. Для нарезки панорамы нужен Pillow ≥ 10; для подписей в GIF со сгибами — ещё и шрифты DejaVu Sans/Mono. Лента и проектор собираются одной стандартной библиотекой. Скрипты не обращаются к сети.
@@ -639,7 +595,7 @@ python3 atlas/samples/night_shift/projector.py
 - **Предыдущая шапка:** [узкая](assets/banner-compact.svg), [светлая](assets/banner-light.svg), [тёмная](assets/banner-dark.svg), [полоса-разделитель](assets/divider.svg). **Подпись с волной и печатью:** [самодостаточный SVG](assets/portfolio-signature.svg).
 - **[Заготовка workflow для личной змейки](templates/profile-snake-workflow.yml)** рассчитана на Platane/snk и отдельную ветку с картинками. Это шаблон, а не включённая автоматизация; для просмотра выставки Actions не нужны.
 
-<details>
+<details open>
 <summary>Скопировать мини-портфолио целиком</summary>
 
 Положи изображения из архива в `assets/` рядом со своим README. Обложки здесь открывают файлы работ из `assets/`. Замени подписи и работы на свои.
@@ -680,7 +636,7 @@ python3 atlas/samples/night_shift/projector.py
 | Серия марок | [Кристалл](assets/seal-crystal.svg) · [квартал](assets/seal-skyline.svg) · [кинолента](assets/seal-reel.svg). [Генератор](atlas/samples/maker-seals.py) берёт байты SHA-256 имени; одинаковое имя даёт ту же форму и палитру. Это не уникальный идентификатор. | [Jdenticon](https://jdenticon.com/) строит знаки из значения. У нас своя формула розетки, а [textPath](https://developer.mozilla.org/en-US/docs/Web/SVG/Reference/Element/textPath) укладывает буквы по кольцу. |
 | Модульный форзац | [Узор](assets/tile-frieze.svg) · [проявленная дорожка](assets/tile-route.svg) · [четыре строки набора и трассировка](atlas/samples/tile-frieze.py). Цифра выбирает ориентацию плитки, не цвет. | [Truchet Tiles](https://github.com/evoluteur/truchet-tiles) показывает, как из поворотов одного квадрата получаются петли. В README вместо редактора — наш набор и второй оттиск внутри `<details>`. |
 
-<details>
+<details open>
 <summary>Вставить обложку, напечатать свою марку или открыть фон на весь экран</summary>
 
 Скопируй четыре файла `polar-cover*.svg` в `assets/` рядом с README. У каждого размера есть завершённый неподвижный вариант; если условия `<source>` не поддерживаются, останется обычный `<img>`. Краски дня и ночи заданы **внутри** SVG.
@@ -730,7 +686,7 @@ python3 atlas/samples/maker-seals.py my-project my-mark.svg --label 'Мой пр
 | Видео, терминал, рисунок | Вложение взято из [README LazyGit](https://github.com/jesseduffield/lazygit#readme). Наши [терминальная запись `.cast`](atlas/samples/facet-count.cast), [GIF](assets/facet-count.gif) и [PNG](assets/facet-count.png); похожие инструменты — [asciinema/agg](https://github.com/asciinema/agg) и [VHS](https://github.com/charmbracelet/vhs). Для схемы рядом — [файл D2](atlas/samples/staging.d2) и [экспорт SVG](assets/staging.svg). |
 | Кинолента, печать, шахматы | [Граф веток](assets/commit-reel.svg), [ризограф](assets/relief-riso.svg), [фосфор](assets/relief-phosphor.svg), [палитры CSV](atlas/samples/palettes.csv), [мастер печатного листа](atlas/samples/atlas-plate.svg), [PNG](atlas/samples/social-preview.png), [PDF](atlas/samples/field-sheet.pdf), [наш этюд](assets/mate-in-one.svg). У [Tim Burgan](https://github.com/timburgan/timburgan#tims-community-chess-tournament) ход делают через Issues; здесь это задача с открываемым ответом. |
 
-<details>
+<details open>
 <summary>Повторить экспорт: геометрия, календарь и карта файлов</summary>
 
 Из корня репозитория, с Python 3, Pillow и шрифтами DejaVu Sans:
@@ -752,7 +708,7 @@ node atlas/samples/repo-fingerprint.mjs 11ea344
 
 ### Рецепты GitHub Markdown
 
-<details>
+<details open>
 <summary>3D, карты, формулы и Mermaid</summary>
 
 - **STL:** вставь полный **текст** [crystal.stl](assets/crystal.stl) между строками ` ```stl ` и ` ``` `. Имя файла или двоичный STL в блоке не сработают. [Блокнот](atlas/samples/crystal.ipynb) проверяет вершины, рёбра и грани. Для объёмного календаря вместо картинки есть генератор STL [gh-skyline](https://github.com/github/gh-skyline).
@@ -777,7 +733,7 @@ V-E+F = 6-12+8 = 2
 
 </details>
 
-<details>
+<details open>
 <summary>Тема, размер экрана, уменьшение движения и видео</summary>
 
 Браузер использует первый подходящий `<source>`. Для GIF сверху нужен статичный кадр, для карты файлов — вертикальная компоновка на телефоне, для двух оттисков — выбор по теме. Вот готовый блок города:
@@ -812,7 +768,7 @@ V-E+F = 6-12+8 = 2
 
 </details>
 
-<details>
+<details open>
 <summary>Бейджи, динамические счётчики и плитка стека</summary>
 
 [Shields.io](https://shields.io/) рисует плашки, [Simple Icons](https://simpleicons.org/) даёт названия логотипов, [Skill Icons](https://github.com/tandpfun/skill-icons) собирает плитку. Стили: `flat`, `flat-square`, `for-the-badge`, `plastic`, `social`. В тексте бейджа пробел кодируется как `%20`, дефис — `--`, подчёркивание — `__`, плюс — `%2B`, процент — `%25`. `color` меняет правую часть плашки, `labelColor` — левую.
@@ -851,7 +807,7 @@ V-E+F = 6-12+8 = 2
 
 </details>
 
-<details>
+<details open>
 <summary>Колонки, загадка, клавиши, цветное оповещение и сноска</summary>
 
 ```html
@@ -879,5 +835,3 @@ V-E+F = 6-12+8 = 2
 </details>
 
 **Ещё примеры и первоисточники:** [атлас форматов](atlas/README.md) · [карты и STL](atlas/relief.md) · [набор текста и диаграммы](atlas/native.md) · [приёмы из других проектов](atlas/inspiration.md) · [что оформляется вне README](atlas/surfaces.md). Идея навигации обложками встречается, например, у [Ray Tracing in One Weekend](https://github.com/RayTracing/raytracing.github.io#readme).
-
-</details>
