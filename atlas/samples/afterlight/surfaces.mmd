@@ -1,0 +1,7 @@
+flowchart LR
+    A[Идея для README] --> B{Нужно взаимодействие?}
+    B -->|Нет| C[Markdown или SVG]
+    B -->|Поиск по данным| D[CSV / TSV по ссылке]
+    B -->|Карта или модель| E[GeoJSON / TopoJSON / STL]
+    B -->|Свой JavaScript| F[Отдельный сайт]
+    C --> G[Статичный вариант и alt]

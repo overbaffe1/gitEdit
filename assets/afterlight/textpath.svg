@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="360" viewBox="0 0 960 360" role="img" aria-labelledby="title desc">
+<title id="title">09 / ТИПОГРАФИЧЕСКАЯ ВОЛНА</title><desc id="desc">textPath: заголовок на собственной кривой Безье.</desc>
+<defs><path id="upper" d="M50 204Q260 50 480 204T910 204"/><path id="lower" d="M50 225Q260 71 480 225T910 225"/></defs><style>
+text{font-family:ui-monospace,Consolas,monospace} .moving{transform-box:view-box}
+
+@media(prefers-reduced-motion:reduce){.moving{animation:none!important}}
+</style><rect width="960" height="360" rx="20" fill="#111c2b"/>
+<text x="30" y="38" font-size="20" fill="#dce7f4" >09 / ТИПОГРАФИЧЕСКАЯ ВОЛНА</text><text x="30" y="64" font-size="12" fill="#a2b5cd" >textPath: заголовок на собственной кривой Безье.</text>
+<use href="#upper" fill="none" stroke="#31445b"/><text fill="#65e3dc" font-size="27" letter-spacing="4"><textPath href="#upper">ТЕКСТ МОЖЕТ ИДТИ НЕ ПО ПРЯМОЙ</textPath></text><text fill="#ff957d" font-size="13" letter-spacing="5"><textPath href="#lower">TYPE / ALONG / A / PATH / TYPE / ALONG / A / PATH</textPath></text><path d="M30 320H930" stroke="#31445b"/><text x="30" y="343" font-size="11" fill="#a2b5cd" >gitEdit / AFTERLIGHT     ·     SVG + CSS     ·     no scripts / no requests</text>
+</svg>
