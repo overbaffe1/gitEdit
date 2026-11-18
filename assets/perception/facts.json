@@ -1,0 +1,46 @@
+{
+  "scope": "Illustrations, not a clinical perception test",
+  "ebbinghaus": {
+    "target_radii": [
+      28,
+      28
+    ]
+  },
+  "muller-lyer": {
+    "target_x": [
+      260,
+      780
+    ],
+    "lengths": [
+      520,
+      520
+    ]
+  },
+  "cafe-wall": {
+    "rows": 7,
+    "row_pitch": 42,
+    "mortar": 3,
+    "slope": 0
+  },
+  "hering": {
+    "target_x": [
+      410,
+      630
+    ],
+    "target_y": [
+      130,
+      440
+    ]
+  },
+  "contrast": {
+    "target_fill": [
+      "#888888",
+      "#888888"
+    ]
+  },
+  "kanizsa": {
+    "paper": "#f4efe2",
+    "triangle_fill": "#f4efe2",
+    "outline_in_original": false
+  }
+}

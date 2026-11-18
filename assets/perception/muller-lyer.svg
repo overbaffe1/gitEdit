@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="520" viewBox="0 0 1040 520" role="img" aria-labelledby="title desc">
+<title id="title">02 / ДЛИНА МЕЖДУ НАКОНЕЧНИКАМИ</title><desc id="desc">Сравни только горизонтальные оранжевые отрезки.</desc>
+<defs></defs><style>text{font-family:ui-monospace,Consolas,monospace}</style>
+<rect width="1040" height="520" rx="16" fill="#f4efe2"/>
+<text x="30" y="37" font-size="22" fill="#243b53">02 / ДЛИНА МЕЖДУ НАКОНЕЧНИКАМИ</text><text x="30" y="67" font-size="14" fill="#243b53">Сравни только горизонтальные оранжевые отрезки.</text>
+<path d="M30 84H1010M30 477H1010" stroke="#c4c5b6"/>
+<g class="context"><line x1="260" y1="205" x2="312" y2="157" stroke="#243b53" stroke-width="3" /><line x1="260" y1="205" x2="312" y2="253" stroke="#243b53" stroke-width="3" /><line x1="780" y1="205" x2="728" y2="157" stroke="#243b53" stroke-width="3" /><line x1="780" y1="205" x2="728" y2="253" stroke="#243b53" stroke-width="3" /><line x1="260" y1="355" x2="208" y2="307" stroke="#243b53" stroke-width="3" /><line x1="260" y1="355" x2="208" y2="403" stroke="#243b53" stroke-width="3" /><line x1="780" y1="355" x2="832" y2="307" stroke="#243b53" stroke-width="3" /><line x1="780" y1="355" x2="832" y2="403" stroke="#243b53" stroke-width="3" /></g><line x1="260" y1="205" x2="780" y2="205" stroke="#ba4c30" stroke-width="5" data-target="equal-segment"/><line x1="260" y1="355" x2="780" y2="355" stroke="#ba4c30" stroke-width="5" data-target="equal-segment"/><text x="30" y="504" font-size="12" fill="#243b53">Сначала посмотри; клик по картинке в README откроет проверку</text>
+</svg>

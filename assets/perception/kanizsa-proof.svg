@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="520" viewBox="0 0 1040 520" role="img" aria-labelledby="title desc">
+<title id="title">06 / ТРЕУГОЛЬНИК БЕЗ КОНТУРА</title><desc id="desc">Видишь ли ты светлый треугольник поверх трёх дисков?</desc>
+<defs></defs><style>text{font-family:ui-monospace,Consolas,monospace}.context{opacity:.12}</style>
+<rect width="1040" height="520" rx="16" fill="#f4efe2"/>
+<text x="30" y="37" font-size="22" fill="#243b53">06 / ТРЕУГОЛЬНИК БЕЗ КОНТУРА</text><text x="30" y="67" font-size="14" fill="#243b53">Видишь ли ты светлый треугольник поверх трёх дисков?</text>
+<path d="M30 84H1010M30 477H1010" stroke="#c4c5b6"/>
+<circle cx="520.00000" cy="150.00000" r="58" fill="#243b53" data-target="disk"/><circle cx="350.00000" cy="400.00000" r="58" fill="#243b53" data-target="disk"/><circle cx="690.00000" cy="400.00000" r="58" fill="#243b53" data-target="disk"/><polygon points="520,150 350,400 690,400" fill="#f4efe2" data-target="paper-cutout"/><polygon points="520,150 350,400 690,400" fill="none" stroke="#177e89" stroke-width="2" stroke-dasharray="5 5"/><text x="60" y="235" font-size="17" fill="#177e89">Пунктир добавлен</text><text x="60" y="264" font-size="17" fill="#177e89">только в проверке</text><text x="700" y="235" font-size="15" fill="#177e89">Заливка треугольника</text><text x="700" y="264" font-size="15" fill="#177e89">= фон #f4efe2</text><text x="30" y="504" font-size="12" fill="#177e89">ПРОВЕРКА / бирюзовая разметка объясняет геометрию</text>
+</svg>
