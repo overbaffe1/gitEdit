@@ -1,0 +1,48 @@
+"""Стеклянная панель — бейдж-стекло с размытием, выглядит как iOS widget."""
+
+from pathlib import Path
+
+ASSETS = Path(__file__).resolve().parents[2] / "assets"
+
+SVG = """<svg xmlns="http://www.w3.org/2000/svg" width="680" height="220" viewBox="0 0 680 220" role="img">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#0f172a"/><stop offset="100%" stop-color="#1e1b4b"/></linearGradient>
+    <linearGradient id="glassStroke" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#fff" stop-opacity="0.25"/><stop offset="100%" stop-color="#fff" stop-opacity="0.05"/></linearGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="14"/></filter>
+    <clipPath id="cardClip"><rect x="20" y="20" width="640" height="180" rx="20"/></clipPath>
+  </defs>
+  <rect width="680" height="220" rx="16" fill="url(#bg)"/>
+  <!-- blurred blobs behind -->
+  <g opacity="0.9" filter="url(#blur)">
+    <circle cx="120" cy="60" r="80" fill="#7c3aed"/>
+    <circle cx="560" cy="180" r="110" fill="#06b6d4"/>
+    <circle cx="340" cy="100" r="70" fill="#db2777" opacity="0.7"/>
+  </g>
+  <!-- glass card -->
+  <g clip-path="url(#cardClip)">
+    <rect x="20" y="20" width="640" height="180" rx="20" fill="white" fill-opacity="0.08" stroke="url(#glassStroke)" stroke-width="1.2"/>
+    <rect x="20" y="20" width="640" height="180" rx="20" fill="white" fill-opacity="0.04"/>
+  </g>
+  <!-- content -->
+  <g font-family="system-ui, sans-serif">
+    <text x="48" y="58" font-size="13" font-weight="700" fill="white" letter-spacing="2.5">GITEDIT · БЮРО ФОРМЫ</text>
+    <text x="48" y="78" font-size="10" fill="white" fill-opacity="0.65">Стеклянная карточка — обычный SVG с размытыми пятнами и полупрозрачным стеклом.</text>
+    <g transform="translate(48,102)">
+      <rect width="92" height="28" rx="14" fill="white" fill-opacity="0.14" stroke="white" stroke-opacity="0.18"/>
+      <text x="46" y="18.5" text-anchor="middle" font-size="10" font-weight="600" fill="white">● LIVE</text>
+      <rect x="104" width="92" height="28" rx="14" fill="white" fill-opacity="0.14" stroke="white" stroke-opacity="0.18"/>
+      <text x="150" y="18.5" text-anchor="middle" font-size="10" font-weight="600" fill="white">◆ SVG ONLY</text>
+      <rect x="208" width="92" height="28" rx="14" fill="white" fill-opacity="0.14" stroke="white" stroke-opacity="0.18"/>
+      <text x="254" y="18.5" text-anchor="middle" font-size="10" font-weight="600" fill="white">◇ NO JS</text>
+    </g>
+    <text x="48" y="172" font-family="JetBrains Mono, monospace" font-size="9" fill="white" fill-opacity="0.55">Копируй файл · меняй текст · пятна остаются на месте · уважает тёмную тему</text>
+  </g>
+  <!-- light reflection -->
+  <path d="M22 24 C 180 22 320 28 420 40" stroke="white" stroke-opacity="0.18" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+</svg>
+"""
+
+if __name__ == "__main__":
+    out = ASSETS / "glass-panel.svg"
+    out.write_text(SVG, encoding="utf-8")
+    print(f"written {out} ({out.stat().st_size} bytes)")
