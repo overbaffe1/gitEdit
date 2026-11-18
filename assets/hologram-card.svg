@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="260" viewBox="0 0 680 260" role="img">
+  <title>Голографическая карточка</title><desc>Слева — проектор с голограммой глобуса, справа — имя и теги, всё мерцает как голограмма.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#020617"/><stop offset="100%" stop-color="#0f172a"/></linearGradient>
+    <radialGradient id="beam" cx="50%" cy="0%"><stop offset="0%" stop-color="#38bdf8" stop-opacity="0.35"/><stop offset="100%" stop-color="#0ea5e9" stop-opacity="0"/></radialGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="4"/><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="680" height="260" rx="16" fill="url(#bg)"/>
+  <!-- projector base -->
+  <g transform="translate(130,185)">
+    <ellipse cx="0" cy="24" rx="52" ry="10" fill="#0f172a" stroke="#1e293b"/>
+    <rect x="-36" y="-8" width="72" height="28" rx="6" fill="#1e293b" stroke="#334155"/>
+    <circle cx="0" cy="4" r="10" fill="#38bdf8" opacity="0.95" filter="url(#glow)">
+      <animate attributeName="opacity" values="0.95;0.6;0.95" dur="1.4s" repeatCount="indefinite"/>
+    </circle>
+    <!-- beam -->
+    <path d="M -44 -6 L -18 -110 L 18 -110 L 44 -6 Z" fill="url(#beam)" opacity="0.55"/>
+  </g>
+  <!-- hologram globe: wireframe circles -->
+  <g opacity="0.95">
+    <g transform="translate(130,90)">
+      <circle r="42" fill="none" stroke="#38bdf8" stroke-width="1.1" opacity="0.9"/>
+      <ellipse rx="42" ry="14" fill="none" stroke="#7dd3fc" stroke-width="0.9" opacity="0.75"/>
+      <ellipse rx="14" ry="42" fill="none" stroke="#7dd3fc" stroke-width="0.9" opacity="0.75"/>
+      <ellipse rx="28" ry="42" fill="none" stroke="#38bdf8" stroke-width="0.7" opacity="0.45" transform="rotate(45)"/>
+      <ellipse rx="28" ry="42" fill="none" stroke="#38bdf8" stroke-width="0.7" opacity="0.45" transform="rotate(-45)"/>
+      <!-- orbit rings -->
+      <circle r="58" fill="none" stroke="#f472b6" stroke-width="0.9" stroke-dasharray="7 7" opacity="0.9">
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="8s" repeatCount="indefinite"/>
+      </circle>
+      <circle r="66" fill="none" stroke="#a78bfa" stroke-width="0.7" stroke-dasharray="4 8" opacity="0.65">
+        <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="12s" repeatCount="indefinite"/>
+      </circle>
+      <circle r="3.5" fill="#f472b6" filter="url(#glow)"><animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="8s" repeatCount="indefinite" additive="sum"/><animateTransform attributeName="transform" type="translate" values="58,0" dur="8s" repeatCount="indefinite" additive="sum"/></circle>
+    </g>
+    <!-- scan line -->
+    <rect x="78" y="56" width="104" height="1.2" fill="#7dd3fc" opacity="0.9"><animate attributeName="y" values="48;132;48" dur="3s" repeatCount="indefinite"/></rect>
+  </g>
+  <!-- right side text with glitch -->
+  <g font-family="JetBrains Mono, monospace">
+    <text x="260" y="58" font-size="22" font-weight="800" fill="white" letter-spacing="3">OVERBAFFE1
+      <animate attributeName="opacity" values="1;0.85;1" dur="2.2s" repeatCount="indefinite"/>
+    </text>
+    <text x="260" y="82" font-size="11" fill="#7dd3fc" letter-spacing="4">CREATIVE CODER · 3D · GIT MAGIC</text>
+    <g transform="translate(260,108)">
+      <rect width="110" height="26" rx="13" fill="#0ea5e9" fill-opacity="0.15" stroke="#38bdf8" stroke-opacity="0.5"/>
+      <text x="55" y="17" text-anchor="middle" font-size="10" font-weight="700" fill="#e0f2fe">Python</text>
+      <rect x="118" width="106" height="26" rx="13" fill="#a78bfa" fill-opacity="0.15" stroke="#a78bfa" stroke-opacity="0.5"/>
+      <text x="171" y="17" text-anchor="middle" font-size="10" font-weight="700" fill="#ede9fe">Blender</text>
+      <rect x="232" width="112" height="26" rx="13" fill="#f472b6" fill-opacity="0.15" stroke="#f472b6" stroke-opacity="0.5"/>
+      <text x="288" y="17" text-anchor="middle" font-size="10" font-weight="700" fill="#fce7f3">FastAPI</text>
+    </g>
+    <g transform="translate(260,148)">
+      <rect width="136" height="26" rx="13" fill="white" fill-opacity="0.06" stroke="white" stroke-opacity="0.12"/>
+      <text x="68" y="17" text-anchor="middle" font-size="10" fill="white" fill-opacity="0.9">● HOLOGRAM ON</text>
+      <rect x="144" width="88" height="26" rx="13" fill="white" fill-opacity="0.06" stroke="white" stroke-opacity="0.12"/>
+      <text x="188" y="17" text-anchor="middle" font-size="10" fill="white">◐ GLITCH OK</text>
+    </g>
+    <text x="260" y="198" font-size="9" fill="white" fill-opacity="0.55">Чистый SVG · проектор + глобус + орбиты · без JS · уважает reduced-motion</text>
+  </g>
+  <style>@media (prefers-reduced-motion: reduce){ animate, animateTransform{ display:none; }}</style>
+</svg>
