@@ -50,6 +50,12 @@
 
 Для README не нужен ни редактор, ни встроенная 3D-сцена. В [нашей кинопетле](../assets/shadow-type/git.gif) вращается одна сетка с проекциями **G / I / T**. [Неподвижный лист](../assets/shadow-type/proof.png) показывает все три сразу, а [STL](../assets/shadow-type/git.stl) можно повернуть отдельно. Буквы нарисованы по клеткам специально для gitEdit; ни шрифт, ни сетка из чужого проекта не копировались.
 
+## Что рисуют два звуковых канала
+
+В [демо osci-render](https://github.com/jameshball/osci-render/blob/25f5938e5983af8803b5b090176bde1b7e35180e/images/blender.gif) движение из Blender выводится на осциллограф. Хорошая точка входа — [фигура Лиссажу из oscli](https://github.com/ismael-joffroy-chandoutis/oscli/blob/6f01c704550d29fece609b4041f41f27602077f1/examples/lissajous.png). В [описании oscli](https://github.com/ismael-joffroy-chandoutis/oscli/blob/6f01c704550d29fece609b4041f41f27602077f1/README.md) есть ключ к рисунку: в режиме X/Y левый канал отклоняет луч по горизонтали, правый — по вертикали. Это не спектрограмма: частоты раскладывать не надо.
+
+У [нашей аурелии](../assets/aurelia/swim.gif) нет команды «поднять перо». [Генератор сигнала](samples/aurelia/xy_signal.py) проводит луч до кончика каждого щупальца и возвращает к куполу. [Рендер](samples/aurelia/render.py) заново открывает [готовый WAV](../assets/aurelia/aurelia.wav) и строит кадр по 800 соседним стереопарам. Тот же файл можно открыть в стереоосциллографе: **X = L, Y = R**, один обход за 1/60 секунды. Или распаковать [наш осциллограф](../assets/aurelia/scope.zip?raw=true): в нём уже лежит запись. Контур, сигнал и оформление сделаны для gitEdit; чужие записи и кадры не использовались.
+
 ## Где искать дальше
 
 - [Awesome README](https://github.com/matiassingers/awesome-readme#examples) — примеры **проектов**; особенно полезно сравнивать первый экран и объяснение архитектуры.

@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="ru">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Аурелия · стереоосциллограф</title>
+<style>
+  :root { color-scheme:dark; --ink:#f7edda; --muted:#adc1c3; --rule:#425760; --mint:#9ff6d9; --amber:#ffbc80; --iris:#c2adff }
+  * { box-sizing:border-box }
+  body { margin:0; background:#101b24; color:var(--ink); font:1rem/1.55 system-ui,sans-serif }
+  main { max-width:56rem; padding:clamp(1rem,4vw,2.6rem); margin:auto }
+  header, footer, .labels { display:flex; flex-wrap:wrap; align-items:baseline; justify-content:space-between; gap:.35rem 1rem }
+  header, footer { padding-block:.65rem; border-block:1px solid var(--rule) }
+  .tag, figcaption, legend, footer { font: .8rem/1.4 ui-monospace,monospace; color:var(--muted) }
+  h1 { font:clamp(2.8rem,9vw,5rem)/1.05 Georgia,serif; margin:1.3rem 0 .35rem }
+  p { margin:.45rem 0 1.2rem }
+  .bench { display:grid; grid-template-columns:minmax(0,1.65fr) minmax(0,1fr); gap:.8rem 1.25rem; align-items:center }
+  figure { margin:0; min-width:0 }
+  figcaption { margin:.2rem 0 .45rem; letter-spacing:.06em }
+  canvas { display:block; width:100%; height:auto; border:1px solid var(--rule); border-radius:6px; background:#091b24 }
+  .channels { display:grid; gap:1.2rem }
+  #lx { color:var(--amber) } #ry { color:var(--iris) }
+  .panel { display:flex; flex-wrap:wrap; gap:1rem 2rem; align-items:end; margin-top:1.25rem }
+  fieldset { margin:0; padding:0; border:0 } legend { margin-bottom:.3rem }
+  .switch { display:inline-flex; padding:.25rem; border:1px solid var(--rule); border-radius:2rem }
+  .switch label { cursor:pointer; padding:.35rem .75rem; border-radius:inherit; color:var(--muted) }
+  .switch label:has(input:checked) { color:var(--ink); background:#294843 }
+  input { accent-color:var(--mint) } :focus-visible { outline:2px solid var(--amber); outline-offset:2px }
+  .transport { flex:1 1 17rem; min-width:0 } audio { width:100%; display:block; margin-top:.25rem }
+  #explain { margin-top:1rem } footer { margin-top:1.6rem } a { color:var(--mint); text-underline-offset:.2em }
+  @media(max-width:36rem) { .bench { grid-template-columns:1fr } .channels { grid-template-columns:1fr 1fr; gap:.6rem } }
+</style>
+<main>
+  <header class="tag"><span>gitEdit / Атлас сигнала</span><span>Запись № 01</span></header>
+  <h1>Аурелия</h1>
+  <p>В плеере это четырёхсекундная стереозапись. Здесь каждая пара отсчётов ставит точку на стекле.</p>
+  <div class="bench">
+    <figure>
+      <figcaption class="labels"><span>ЭКРАН X/Y</span><span id="counter">001 / 240</span></figcaption>
+      <canvas id="xy" width="660" height="440" role="img" aria-label="Светящийся контур медузы из стереозаписи.">Рисунок по двум каналам записи.</canvas>
+    </figure>
+    <div class="channels">
+      <figure><figcaption id="lx">X ← L</figcaption><canvas id="xwave" width="340" height="94" aria-hidden="true"></canvas></figure>
+      <figure><figcaption id="ry">Y ← R</figcaption><canvas id="ywave" width="340" height="94" aria-hidden="true"></canvas></figure>
+    </div>
+  </div>
+  <div class="panel">
+    <fieldset><legend>На входе осциллографа</legend><div class="switch">
+      <label><input type="radio" name="wiring" value="xy" checked> Стерео</label>
+      <label><input type="radio" name="wiring" value="mono"> Моно</label>
+    </div></fieldset>
+    <div class="transport"><label class="tag" for="tape">Исходный WAV · перемотка и звук</label>
+      <audio id="tape" aria-label="Запись «Аурелия», изначально без звука" controls loop muted preload="auto"></audio>
+    </div>
+  </div>
+  <p id="explain" role="status">Левый канал ведёт луч по горизонтали, правый — по вертикали.</p>
+  <footer><span>PCM 16 бит · 48 кГц · 60 обходов/с</span><a id="save" download="aurelia.wav">Сохранить стерео-WAV</a></footer>
+  <noscript>Для отрисовки отсчётов включи JavaScript в браузере. В репозитории также есть неподвижный PNG.</noscript>
+</main>
+<script type="application/octet-stream" id="recording">@@STEREO_WAV@@</script>
+<script>
+'use strict';
+const el = id => document.getElementById(id);
+const bytes = Uint8Array.from(atob(el('recording').textContent), c => c.charCodeAt(0));
+const view = new DataView(bytes.buffer);
+const tag = i => String.fromCharCode(...bytes.subarray(i, i+4));
+const u16 = i => view.getUint16(i, true), u32 = i => view.getUint32(i, true);
+let rate, offset, frames;
+if (tag(0) !== 'RIFF' || tag(8) !== 'WAVE') throw Error('Нужен файл RIFF/WAVE');
+for (let p=12; p+8<=bytes.length;) {
+  const size = u32(p+4), start = p+8;
+  if (tag(p) === 'fmt ') {
+    if (u16(start)!==1 || u16(start+2)!==2 || u16(start+14)!==16) throw Error('Нужен стерео PCM16');
+    rate = u32(start+4);
+  } else if (tag(p) === 'data') { offset = start; frames = size / 4; }
+  p = start + size + size%2;
+}
+const scan = 800, count = frames / scan;
+if (!rate || !offset || !Number.isInteger(count) || offset+frames*4>bytes.length) throw Error('Неполная запись');
+const sample = (i,k) => view.getInt16(offset + 4*i + 2*k, true);
+let peak = 1;
+for (let i=0; i<frames; i++) peak = Math.max(peak, Math.abs(sample(i,0)), Math.abs(sample(i,1)));
+const tape = el('tape');
+tape.src = el('save').href = URL.createObjectURL(new Blob([bytes], {type:'audio/wav'}));
+tape.volume = 0.35;
+
+function grid(ctx,w,h) {
+  ctx.clearRect(0,0,w,h);
+  ctx.fillStyle = '#30454d';
+  for (let y=h/2%24; y<h; y+=24) for (let x=w/2%24; x<w; x+=24) ctx.fillRect(x,y,1.5,1.5);
+  ctx.strokeStyle = '#30454d'; ctx.lineWidth=1; ctx.beginPath();
+  ctx.moveTo(0,h/2); ctx.lineTo(w,h/2); ctx.moveTo(w/2,0); ctx.lineTo(w/2,h); ctx.stroke();
+}
+function line(canvas, pairs, channel) {
+  const ctx = canvas.getContext('2d'), w = canvas.width, h = canvas.height, xy = channel === null;
+  grid(ctx,w,h);
+  const gain = .46*Math.min(w,h)/peak;
+  ctx.save(); ctx.beginPath();
+  pairs.forEach(([x,y],i) => {
+    const px = xy ? w/2 + gain*x : 6 + (w-12)*i/(scan-1);
+    const py = h/2 - gain*(xy || channel===1 ? y : x);
+    if (!i) ctx.moveTo(px,py); else ctx.lineTo(px,py);
+  });
+  ctx.lineWidth = xy ? 2.8 : 2.2; ctx.lineCap = ctx.lineJoin = 'round';
+  ctx.strokeStyle = xy ? '#9ff6d9' : channel===0 ? '#ffbc80' : '#c2adff';
+  if (xy) { ctx.shadowBlur=8; ctx.shadowColor='#65e6c4'; }
+  ctx.stroke(); ctx.restore();
+}
+let last = -1, mono = false, raf = 0;
+function paint() {
+  const n = Math.min(count-1, Math.floor(tape.currentTime*rate/scan));
+  if (n === last) return;
+  last = n;
+  const pairs = Array.from({length:scan}, (_,j) => {
+    const i=n*scan+j, x=sample(i,0), y=sample(i,1), m=(x+y)/2;
+    return mono ? [m,m] : [x,y];
+  });
+  line(el('xy'), pairs, null); line(el('xwave'), pairs, 0); line(el('ywave'), pairs, 1);
+  el('counter').textContent = `${String(n+1).padStart(3,'0')} / ${count}`;
+}
+function tick() { paint(); if (!tape.paused) raf=requestAnimationFrame(tick); }
+tape.addEventListener('play', () => { cancelAnimationFrame(raf); tick(); });
+tape.addEventListener('pause', () => { cancelAnimationFrame(raf); paint(); });
+tape.addEventListener('seeked', paint);
+document.querySelector('fieldset').addEventListener('change', e => {
+  mono = e.target.value === 'mono'; last = -1;
+  el('lx').textContent = mono ? 'X ← (L + R) / 2' : 'X ← L';
+  el('ry').textContent = mono ? 'Y ← (L + R) / 2' : 'Y ← R';
+  el('xy').setAttribute('aria-label', mono ? 'Прямая диагональ вместо медузы.' : 'Светящийся контур медузы из стереозаписи.');
+  el('explain').textContent = mono ? 'На обе оси подана полусумма каналов. Теперь X = Y: от медузы осталась диагональ. Сама запись не менялась.' : 'Левый канал ведёт луч по горизонтали, правый — по вертикали.';
+  paint();
+});
+paint();
+</script>
+</html>
