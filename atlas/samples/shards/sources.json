@@ -1,0 +1,108 @@
+[
+  {
+    "repo": "Backblaze/JavaReedSolomon",
+    "commit": "d3c481dc69471e0c47ff6f67f33d53bde941675e",
+    "readme": "README.md",
+    "url": "https://github.com/Backblaze/JavaReedSolomon/blob/d3c481dc69471e0c47ff6f67f33d53bde941675e/README.md",
+    "candidates": [
+      "src/main/java/com/backblaze/erasure/Galois.java",
+      "src/main/java/com/backblaze/erasure/Matrix.java",
+      "src/main/java/com/backblaze/erasure/ReedSolomon.java",
+      "src/test/java/com/backblaze/erasure/GaloisTest.java",
+      "src/test/java/com/backblaze/erasure/MatrixTest.java"
+    ],
+    "status": "README screening",
+    "source_file": "src/main/java/com/backblaze/erasure/ReedSolomon.java",
+    "source_url": "https://github.com/Backblaze/JavaReedSolomon/blob/d3c481dc69471e0c47ff6f67f33d53bde941675e/src/main/java/com/backblaze/erasure/ReedSolomon.java"
+  },
+  {
+    "repo": "klauspost/reedsolomon",
+    "commit": "25e5c5227103dc948f3e1888a8c9d62be1bafd1e",
+    "readme": "README.md",
+    "url": "https://github.com/klauspost/reedsolomon/blob/25e5c5227103dc948f3e1888a8c9d62be1bafd1e/README.md",
+    "candidates": [
+      "galois.go",
+      "galois_amd64.go",
+      "galois_amd64.s",
+      "galois_amd64_test.go",
+      "galois_arm64.go",
+      "galois_arm64.s",
+      "galois_arm64_test.go",
+      "galois_gen_amd64.go",
+      "galois_gen_amd64.s",
+      "galois_gen_arm64.go",
+      "galois_gen_arm64.s",
+      "galois_gen_none.go",
+      "galois_gen_nopshufb_amd64.go",
+      "galois_gen_nopshufb_amd64.s",
+      "galois_gen_switch_amd64.go",
+      "galois_gen_switch_arm64.go"
+    ],
+    "status": "README screening",
+    "source_file": "matrix.go",
+    "source_url": "https://github.com/klauspost/reedsolomon/blob/25e5c5227103dc948f3e1888a8c9d62be1bafd1e/matrix.go"
+  },
+  {
+    "repo": "tahoe-lafs/zfec",
+    "commit": "1fede6c166592c98da7f102539f94daf99db4756",
+    "readme": "README.rst",
+    "url": "https://github.com/tahoe-lafs/zfec/blob/1fede6c166592c98da7f102539f94daf99db4756/README.rst",
+    "candidates": [
+      "fec.cabal",
+      "zfec/fec.c"
+    ],
+    "status": "README screening",
+    "source_file": "zfec/fec.c",
+    "source_url": "https://github.com/tahoe-lafs/zfec/blob/1fede6c166592c98da7f102539f94daf99db4756/zfec/fec.c"
+  },
+  {
+    "repo": "tahoe-lafs/tahoe-lafs",
+    "commit": "b9f1c90e92ab94de1c9009819a71ae236cb857c0",
+    "readme": "README.rst",
+    "url": "https://github.com/tahoe-lafs/tahoe-lafs/blob/b9f1c90e92ab94de1c9009819a71ae236cb857c0/README.rst",
+    "candidates": [],
+    "status": "README screening"
+  },
+  {
+    "repo": "storj/infectious",
+    "commit": "db605e488d5401bbd90ddd8fcc5f7b38ea7e9e52",
+    "readme": "README.md",
+    "url": "https://github.com/storj/infectious/blob/db605e488d5401bbd90ddd8fcc5f7b38ea7e9e52/README.md",
+    "candidates": [],
+    "status": "README screening"
+  },
+  {
+    "repo": "rust-rse/reed-solomon-erasure",
+    "commit": "ac2b561e406fedcccd144a436580921906d3eee9",
+    "readme": "README.md",
+    "url": "https://github.com/rust-rse/reed-solomon-erasure/blob/ac2b561e406fedcccd144a436580921906d3eee9/README.md",
+    "candidates": [
+      "sage/galois_ext_test.sage",
+      "src/galois_16.rs",
+      "src/galois_8.rs",
+      "src/matrix.rs",
+      "src/tests/galois_16.rs"
+    ],
+    "status": "README screening"
+  },
+  {
+    "repo": "quiet/libcorrect",
+    "commit": "ee82e6673a806dfdf0a969b975ab36596ecc5401",
+    "readme": "README.md",
+    "url": "https://github.com/quiet/libcorrect/blob/ee82e6673a806dfdf0a969b975ab36596ecc5401/README.md",
+    "candidates": [
+      "tests/convolutional-fec.c",
+      "tests/rs_tester_fec.c",
+      "util/error-sim-fec.c"
+    ],
+    "status": "README screening"
+  },
+  {
+    "repo": "catid/leopard",
+    "commit": "910ad0a19f84d3601ac1df006f0ffdf8e2ca1f5d",
+    "readme": "README.md",
+    "url": "https://github.com/catid/leopard/blob/910ad0a19f84d3601ac1df006f0ffdf8e2ca1f5d/README.md",
+    "status": "README screening",
+    "lookup_note": "ludocode/fecleopard returned 404, not counted"
+  }
+]
