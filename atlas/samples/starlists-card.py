@@ -1,0 +1,4 @@
+from pathlib import Path
+svg='<svg xmlns="http://www.w3.org/2000/svg" width="680" height="150" viewBox="0 0 680 150" role="img">\n<title>Starlists</title><desc>starlists langs</desc>\n<rect width="680" height="150" rx="16" fill="#0f172a"/>\n<text x="20" y="28" fill="#e2e8f0" font-family="monospace" font-size="12">STARLISTS — repos &amp; langs from your star lists</text>\n<g transform="translate(20,44)">\n  <rect width="640" height="70" rx="8" fill="#020617" stroke="#1e293b"/>\n  <text x="14" y="22" fill="#e2e8f0" font-family="monospace" font-size="10">awesome-list → 12 repos · Py 40% · JS 30%</text>\n  <text x="14" y="42" fill="#7d8590" font-family="monospace" font-size="9">lowlighter/metrics plugin_starlists</text>\n</g>\n</svg>\n'
+Path(__file__).resolve().parents[2].joinpath('assets','starlists-card.svg').write_text(svg, encoding='utf-8')
+print('Wrote assets/starlists-card.svg')

@@ -1,0 +1,4 @@
+from pathlib import Path
+svg='<svg xmlns="http://www.w3.org/2000/svg" width="680" height="160" viewBox="0 0 680 160" role="img">\n<title>Stargazers worldmap</title><desc>worldmap dots</desc>\n<rect width="680" height="160" rx="16" fill="#0d1117"/>\n<text x="20" y="28" fill="#e6edf3" font-family="monospace" font-size="12">STARGAZERS — worldmap · plugin_stargazers/worldmap</text>\n<g transform="translate(20,40)">\n  <rect width="640" height="80" rx="8" fill="#161b22" stroke="#30363d"/>\n  <circle cx="60" cy="30" r="3" fill="#facc15"/><circle cx="120" cy="20" r="2" fill="#facc15"/><circle cx="200" cy="40" r="2" fill="#facc15"/>\n  <text x="14" y="66" fill="#7d8590" font-family="monospace" font-size="8">42 stars · US 12 · DE 8 · JP 5 — lowlighter/metrics plugin_stargazers</text>\n</g>\n</svg>\n'
+Path(__file__).resolve().parents[2].joinpath('assets','stargazers-map.svg').write_text(svg, encoding='utf-8')
+print('Wrote assets/stargazers-map.svg')

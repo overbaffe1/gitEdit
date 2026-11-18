@@ -1229,3 +1229,23 @@ V-E+F = 6-12+8 = 2
 </details>
 
 **Ещё примеры и первоисточники:** [атлас форматов](atlas/README.md) · [карты и STL](atlas/relief.md) · [набор текста и диаграммы](atlas/native.md) · [приёмы из других проектов](atlas/inspiration.md) · [что оформляется вне README](atlas/surfaces.md). Идея навигации обложками встречается, например, у [Ray Tracing in One Weekend](https://github.com/RayTracing/raytracing.github.io#readme).
+
+<p align="center"><a href="assets/stargazers-map.svg"><img src="assets/stargazers-map.svg" width="680" alt="Stargazers worldmap — точки по миру."></a></p>
+
+**Stargazers Worldmap** — точки `US 12 / DE 8` от `plugin_stargazers/worldmap`. [Файл](assets/stargazers-map.svg) · `python3 atlas/samples/stargazers-map.py`
+
+<p align="center"><a href="assets/starlists-card.svg"><img src="assets/starlists-card.svg" width="680" alt="Starlists — языки из стар-листов."></a></p>
+
+**Starlists** — `awesome-list 12 repos Py 40%` `plugin_starlists`. [Файл](assets/starlists-card.svg) · `python3 atlas/samples/starlists-card.py`
+
+<p align="center"><a href="assets/activity-chart.svg"><img src="assets/activity-chart.svg" width="680" alt="Activity chart — 5 событий."></a></p>
+
+**Activity Chart** — `pushed 3 commits · opened PR #24` `plugin_activity`. [Файл](assets/activity-chart.svg) · `python3 atlas/samples/activity-chart.py`
+
+<p align="center"><a href="assets/code-snippet.svg"><img src="assets/code-snippet.svg" width="680" alt="Code snippet — случайный кусок."></a></p>
+
+**Code Snippet** — `def hello(): print...` `plugin_code` random. [Файл](assets/code-snippet.svg) · `python3 atlas/samples/code-snippet.py`
+
+<p align="center"><a href="assets/skyline-vs-city.svg"><img src="assets/skyline-vs-city.svg" width="680" alt="Skyline vs City — сравнение 3D."></a></p>
+
+**Skyline vs City** — `STL printable` vs `isometric SVG`. [Файл](assets/skyline-vs-city.svg) · `python3 atlas/samples/skyline-vs-city.py`
