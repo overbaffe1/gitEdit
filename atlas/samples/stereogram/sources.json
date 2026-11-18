@@ -1,0 +1,109 @@
+{
+  "observed_on": "2026-11-18",
+  "scope": "Seven README screenings, three selected source files; no third-party application executed and no full code/security audit.",
+  "readmes": [
+    {
+      "repo": "synesthesiam/magicpy",
+      "commit": "4275577e05070137e5affce45b1c6974197264fc",
+      "readme": "README.md",
+      "url": "https://github.com/synesthesiam/magicpy/blob/4275577e05070137e5affce45b1c6974197264fc/README.md",
+      "source_candidates": [
+        "glmagic.py",
+        "magicpy.py"
+      ]
+    },
+    {
+      "repo": "jiupinjia/neural-magic-eye",
+      "commit": "ded1cd4fc2194fe031f76bc3a2c307e761f70d85",
+      "readme": "README.md",
+      "url": "https://github.com/jiupinjia/neural-magic-eye/blob/ded1cd4fc2194fe031f76bc3a2c307e761f70d85/README.md",
+      "source_candidates": [
+        "datasets.py",
+        "demo_decode_animated.py",
+        "demo_decode_image.py",
+        "networks.py",
+        "neural_decoder.py",
+        "renderer.py",
+        "stereogram.py",
+        "train_classifier.py",
+        "train_decoder.py",
+        "utils.py"
+      ]
+    },
+    {
+      "repo": "dgtized/autostereogram",
+      "commit": "ee9d9a9d0496ce2a531fd06c1da504ffcd16396a",
+      "readme": "README.markdown",
+      "url": "https://github.com/dgtized/autostereogram/blob/ee9d9a9d0496ce2a531fd06c1da504ffcd16396a/README.markdown",
+      "source_candidates": [
+        "autostereogram.js"
+      ],
+      "source_file": "autostereogram.js",
+      "source_url": "https://github.com/dgtized/autostereogram/blob/ee9d9a9d0496ce2a531fd06c1da504ffcd16396a/autostereogram.js"
+    },
+    {
+      "repo": "Atrix256/Autostereogram",
+      "commit": "f551c64b4e761d143f29a9eaf78fe7319a6e6a8a",
+      "readme": "README.md",
+      "url": "https://github.com/Atrix256/Autostereogram/blob/f551c64b4e761d143f29a9eaf78fe7319a6e6a8a/README.md",
+      "source_candidates": [
+        "main.cpp",
+        "stb/stb_image.h",
+        "stb/stb_image_write.h"
+      ]
+    },
+    {
+      "repo": "thearn/magiceye-solver",
+      "commit": "c70cc4fe709d375c07f66d23b83b529daac141e5",
+      "readme": "README.md",
+      "url": "https://github.com/thearn/magiceye-solver/blob/c70cc4fe709d375c07f66d23b83b529daac141e5/README.md",
+      "source_candidates": [
+        "app.py",
+        "magiceye_solve/__init__.py",
+        "magiceye_solve/solver.py",
+        "magiceye_solve/test/__init__.py",
+        "magiceye_solve/test/test_app.py",
+        "magiceye_solve/test/test_magiceye.py",
+        "magiceye_solve/test/test_solver_unit.py"
+      ],
+      "source_file": "magiceye_solve/solver.py",
+      "source_url": "https://github.com/thearn/magiceye-solver/blob/c70cc4fe709d375c07f66d23b83b529daac141e5/magiceye_solve/solver.py"
+    },
+    {
+      "repo": "kylemcdonald/ofxAutostereogram",
+      "commit": "d9f6b9930453f08395cada1f2da59ecee168a10a",
+      "readme": "readme",
+      "url": "https://github.com/kylemcdonald/ofxAutostereogram/blob/d9f6b9930453f08395cada1f2da59ecee168a10a/readme",
+      "source_candidates": [
+        "ofxAutostereogramExample/src/main.cpp",
+        "ofxAutostereogramExample/src/testApp.cpp",
+        "ofxAutostereogramExample/src/testApp.h",
+        "ofxAutostereogramKinectExample/src/main.cpp",
+        "ofxAutostereogramKinectExample/src/testApp.cpp",
+        "ofxAutostereogramKinectExample/src/testApp.h",
+        "src/ofxAutostereogram.h"
+      ],
+      "source_file": "src/ofxAutostereogram.h",
+      "source_url": "https://github.com/kylemcdonald/ofxAutostereogram/blob/d9f6b9930453f08395cada1f2da59ecee168a10a/src/ofxAutostereogram.h"
+    },
+    {
+      "repo": "mexomagno/stereogramaxo",
+      "commit": "e686d4f5eb229a40ec262b0fc985c8c0bfb11da5",
+      "readme": "README.md",
+      "url": "https://github.com/mexomagno/stereogramaxo/blob/e686d4f5eb229a40ec262b0fc985c8c0bfb11da5/README.md",
+      "source_candidates": [
+        "animated_sirds.py",
+        "log/__init__.py",
+        "main.py"
+      ]
+    }
+  ],
+  "unavailable": [
+    {
+      "repo": "NicoAdams/Autostereogram",
+      "operation": "README lookup",
+      "status": "HTTP 404",
+      "counted_as_reviewed": false
+    }
+  ]
+}
