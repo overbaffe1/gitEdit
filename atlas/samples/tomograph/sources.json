@@ -1,0 +1,117 @@
+[
+  {
+    "repo": "scikit-image/scikit-image",
+    "commit": "553cdafb61b54d15423ee7a25f70495a397e0f09",
+    "readme": "README.md",
+    "url": "https://github.com/scikit-image/scikit-image/blob/553cdafb61b54d15423ee7a25f70495a397e0f09/README.md",
+    "candidates": [
+      "doc/examples/transform/plot_radon_transform.py",
+      "src/_skimage2/transform/finite_radon_transform.py",
+      "src/_skimage2/transform/radon_transform.py",
+      "src/skimage/transform/_radon_transform.py",
+      "src/skimage/transform/finite_radon_transform.py",
+      "src/skimage/transform/radon_transform.py",
+      "tests/skimage/transform/test_finite_radon_transform.py",
+      "tests/skimage/transform/test_radon_transform.py",
+      "tests/skimage2/transform/test_finite_radon_transform.py",
+      "tests/skimage2/transform/test_radon_transform.py"
+    ],
+    "status": "README screening",
+    "source_file": "src/_skimage2/transform/radon_transform.py",
+    "source_url": "https://github.com/scikit-image/scikit-image/blob/553cdafb61b54d15423ee7a25f70495a397e0f09/src/_skimage2/transform/radon_transform.py",
+    "additional_source_files": [
+      {
+        "path": "src/skimage/transform/_radon_transform.py",
+        "url": "https://github.com/scikit-image/scikit-image/blob/553cdafb61b54d15423ee7a25f70495a397e0f09/src/skimage/transform/_radon_transform.py"
+      }
+    ]
+  },
+  {
+    "repo": "astra-toolbox/astra-toolbox",
+    "commit": "627d834ce2339b505d098c205f0293a401faf6b4",
+    "readme": "README.md",
+    "url": "https://github.com/astra-toolbox/astra-toolbox/blob/627d834ce2339b505d098c205f0293a401faf6b4/README.md",
+    "candidates": [
+      "samples/python/s014_FBP.py",
+      "samples/python/s022_fbp_cor.py",
+      "samples/python/s023_FBP_filters.py"
+    ],
+    "status": "README screening",
+    "source_file": "samples/python/s014_FBP.py",
+    "source_url": "https://github.com/astra-toolbox/astra-toolbox/blob/627d834ce2339b505d098c205f0293a401faf6b4/samples/python/s014_FBP.py"
+  },
+  {
+    "repo": "tomopy/tomopy",
+    "commit": "3377fed68103959e37a849309a096a9919b0bc97",
+    "readme": "README.rst",
+    "url": "https://github.com/tomopy/tomopy/blob/3377fed68103959e37a849309a096a9919b0bc97/README.rst",
+    "candidates": [],
+    "status": "README screening"
+  },
+  {
+    "repo": "odlgroup/odl",
+    "commit": "7924a883a3d241463aca8883674bac023f5941c9",
+    "readme": "README.md",
+    "url": "https://github.com/odlgroup/odl/blob/7924a883a3d241463aca8883674bac023f5941c9/README.md",
+    "candidates": [
+      "examples/pytorch_integration/2D_FBP_execution_time.py",
+      "examples/pytorch_integration/3D_FBP_execution_time.py",
+      "src/odl/applications/tomo/backends/skimage_radon.py",
+      "src/odl/contrib/tomo/examples/elekta_icon_fbp.py",
+      "src/odl/contrib/tomo/examples/elekta_xvi_fbp.py",
+      "src/odl/test/applications/tomo/operators/fbp_test.py",
+      "src/odl/test/largescale/tomo/fbp_slow_test.py"
+    ],
+    "status": "README screening"
+  },
+  {
+    "repo": "TomographicImaging/CIL",
+    "commit": "b39f95799bf1af891a896fc4be704986284b593e",
+    "readme": "README.md",
+    "url": "https://github.com/TomographicImaging/CIL/blob/b39f95799bf1af891a896fc4be704986284b593e/README.md",
+    "candidates": [
+      "Wrappers/Python/cil/plugins/astra/processors/FBP.py",
+      "Wrappers/Python/cil/plugins/astra/processors/FBP_Flexible.py",
+      "Wrappers/Python/cil/plugins/tigre/FBP.py",
+      "Wrappers/Python/cil/recon/FBP.py",
+      "Wrappers/Python/test/test_PluginsAstra_FBP.py",
+      "Wrappers/Python/test/test_PluginsTigre_FBP.py"
+    ],
+    "status": "README screening"
+  },
+  {
+    "repo": "matteo-ronchetti/torch-radon",
+    "commit": "5796b2a07e3bb0a248430e9a07fb48db5994d4ea",
+    "readme": "README.md",
+    "url": "https://github.com/matteo-ronchetti/torch-radon/blob/5796b2a07e3bb0a248430e9a07fb48db5994d4ea/README.md",
+    "candidates": [
+      "benchmarks/torch-radon/bench.py",
+      "examples/fbp.py",
+      "torch_radon/__init__.py",
+      "torch_radon/differentiable_functions.py",
+      "torch_radon/filtering.py",
+      "torch_radon/shearlet.py",
+      "torch_radon/solvers.py",
+      "torch_radon/utils.py"
+    ],
+    "status": "README screening",
+    "source_file": "torch_radon/filtering.py",
+    "source_url": "https://github.com/matteo-ronchetti/torch-radon/blob/5796b2a07e3bb0a248430e9a07fb48db5994d4ea/torch_radon/filtering.py"
+  },
+  {
+    "repo": "dkazanc/ToMoBAR",
+    "commit": "dac6ea8f59c66cd88d9a4eeccc69d6944733e821",
+    "readme": "Readme.md",
+    "url": "https://github.com/dkazanc/ToMoBAR/blob/dac6ea8f59c66cd88d9a4eeccc69d6944733e821/Readme.md",
+    "candidates": [],
+    "status": "README screening"
+  },
+  {
+    "repo": "CERN/TIGRE",
+    "commit": "f49b809ca4bcf314973aa68f6f3e830ea40e4f9e",
+    "readme": "README.md",
+    "url": "https://github.com/CERN/TIGRE/blob/f49b809ca4bcf314973aa68f6f3e830ea40e4f9e/README.md",
+    "candidates": [],
+    "status": "README screening"
+  }
+]
