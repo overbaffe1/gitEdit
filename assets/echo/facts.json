@@ -1,0 +1,29 @@
+{
+  "grid": 112,
+  "dt": 0.45,
+  "speed_cells_per_time": 1,
+  "steps_each_way": 240,
+  "CFL_2D_limit": 0.7071067811865475,
+  "boundary": "fixed nodes, u=v=0 (Dirichlet); not acoustic rigid-wall Neumann",
+  "return_uses": "only checkpoint u,v,fixed; same forward stepper, no trajectory replay",
+  "branches": {
+    "reverse": {
+      "relative_displacement_error": 1.3573360115174018e-15,
+      "relative_velocity_residual": 1.7150722895676345e-15
+    },
+    "zero": {
+      "relative_displacement_error": 0.6709428999538317,
+      "relative_velocity_residual": 0.09437907569463166
+    },
+    "keep": {
+      "relative_displacement_error": 1.3418857999076628,
+      "relative_velocity_residual": 0.1887581513892633
+    }
+  },
+  "initial_energy": 1.5562530276455264,
+  "max_relative_energy_drift": 0.006190938866508706,
+  "max_relative_modified_energy_drift": 5.749750885525024e-16,
+  "frames": 61,
+  "display": "same signed tanh(5u) map in every image; no frame normalization",
+  "limits": "ideal full-state reversal, no damping or noise; not boundary-only time reversal, water or sound simulation"
+}

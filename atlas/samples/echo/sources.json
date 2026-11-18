@@ -1,0 +1,115 @@
+[
+  {
+    "repo": "devitocodes/devito",
+    "commit": "35e25b3c59b8866733b82860ac88199cd2c3959c",
+    "readme": "README.md",
+    "url": "https://github.com/devitocodes/devito/blob/35e25b3c59b8866733b82860ac88199cd2c3959c/README.md",
+    "candidates": [
+      "benchmarks/regression/benchmarks/acoustic.py",
+      "examples/seismic/acoustic/__init__.py",
+      "examples/seismic/acoustic/acoustic_example.py",
+      "examples/seismic/acoustic/operators.py",
+      "examples/seismic/acoustic/wavesolver.py",
+      "examples/seismic/elastic/wavesolver.py",
+      "examples/seismic/self_adjoint/test_wavesolver_iso.py",
+      "examples/seismic/self_adjoint/wavesolver.py",
+      "examples/seismic/tti/wavesolver.py",
+      "examples/seismic/viscoacoustic/__init__.py",
+      "examples/seismic/viscoacoustic/operators.py",
+      "examples/seismic/viscoacoustic/viscoacoustic_example.py",
+      "examples/seismic/viscoacoustic/wavesolver.py",
+      "examples/seismic/viscoelastic/wavesolver.py",
+      "examples/timestepping/acoustic_superstep.py"
+    ],
+    "status": "README screening",
+    "source_file": "examples/seismic/acoustic/operators.py",
+    "source_url": "https://github.com/devitocodes/devito/blob/35e25b3c59b8866733b82860ac88199cd2c3959c/examples/seismic/acoustic/operators.py"
+  },
+  {
+    "repo": "ucl-bug/k-wave",
+    "commit": "94e558318b4ab7c583b63c50b7e9b574556dc159",
+    "readme": "README.md",
+    "url": "https://github.com/ucl-bug/k-wave/blob/94e558318b4ab7c583b63c50b7e9b574556dc159/README.md",
+    "candidates": [],
+    "status": "README screening"
+  },
+  {
+    "repo": "ucl-bug/jwave",
+    "commit": "d1918f4e6adbf3822108e0af8034063efed1d581",
+    "readme": "README.md",
+    "url": "https://github.com/ucl-bug/jwave/blob/d1918f4e6adbf3822108e0af8034063efed1d581/README.md",
+    "candidates": [
+      "jwave/__init__.py",
+      "jwave/acoustics/__init__.py",
+      "jwave/acoustics/conversion.py",
+      "jwave/acoustics/operators.py",
+      "jwave/acoustics/pml.py",
+      "jwave/acoustics/spectral.py",
+      "jwave/acoustics/time_harmonic.py",
+      "jwave/acoustics/time_varying.py",
+      "jwave/extras/__init__.py",
+      "jwave/extras/export.py",
+      "jwave/geometry.py",
+      "jwave/logger.py",
+      "jwave/phantoms.py",
+      "jwave/signal_processing.py",
+      "jwave/utils.py",
+      "tests/acoustics/test_simulate_wave_propagation.py",
+      "tests/test_kwave_3d_ivp.py",
+      "tests/test_kwave_convergent_born_series.py"
+    ],
+    "status": "README screening"
+  },
+  {
+    "repo": "dedalusproject/dedalus",
+    "commit": "ca3efc14e17c4e6f602d7408f34186e043d82cb3",
+    "readme": "README.md",
+    "url": "https://github.com/dedalusproject/dedalus/blob/ca3efc14e17c4e6f602d7408f34186e043d82cb3/README.md",
+    "candidates": [
+      "examples/evp_1d_waves_on_a_string/waves_on_a_string.py"
+    ],
+    "status": "README screening"
+  },
+  {
+    "repo": "zwicker-group/py-pde",
+    "commit": "6f00ad04cda2bdc9997cb537f9d7532937d596bb",
+    "readme": "README.md",
+    "url": "https://github.com/zwicker-group/py-pde/blob/6f00ad04cda2bdc9997cb537f9d7532937d596bb/README.md",
+    "status": "README screening",
+    "lookup_note": "py-pde/py-pde returned 404; not counted as a read README",
+    "source_file": "pde/pdes/wave.py",
+    "source_url": "https://github.com/zwicker-group/py-pde/blob/6f00ad04cda2bdc9997cb537f9d7532937d596bb/pde/pdes/wave.py"
+  },
+  {
+    "repo": "sachabinder/wave_equation_simulations",
+    "commit": "ebc51937f7f66e2e09094deafe53e8da07af38ad",
+    "readme": "README.md",
+    "url": "https://github.com/sachabinder/wave_equation_simulations/blob/ebc51937f7f66e2e09094deafe53e8da07af38ad/README.md",
+    "candidates": [
+      "1D_WAVE-EQ_variable-velocity.py",
+      "2D_WAVE-EQ_variable-velocity.py"
+    ],
+    "status": "README screening",
+    "source_file": "2D_WAVE-EQ_variable-velocity.py",
+    "source_url": "https://github.com/sachabinder/wave_equation_simulations/blob/ebc51937f7f66e2e09094deafe53e8da07af38ad/2D_WAVE-EQ_variable-velocity.py"
+  },
+  {
+    "repo": "LiorAvrahami/Py_Wave_Simulation",
+    "commit": "8a62b056d0530ca9eba028b2f1874c3ce5563248",
+    "readme": "README.md",
+    "url": "https://github.com/LiorAvrahami/Py_Wave_Simulation/blob/8a62b056d0530ca9eba028b2f1874c3ce5563248/README.md",
+    "candidates": [
+      "Examples/saxophone_simulation/find_standing_wave.py",
+      "Examples/saxophone_simulation/run_traveling_wave.py"
+    ],
+    "status": "README screening"
+  },
+  {
+    "repo": "rreusser/first-order-wave-equation-simulations",
+    "commit": "d7c7efd2b3ec23e618f8e60218c4becf841f7b20",
+    "readme": "README.md",
+    "url": "https://github.com/rreusser/first-order-wave-equation-simulations/blob/d7c7efd2b3ec23e618f8e60218c4becf841f7b20/README.md",
+    "candidates": [],
+    "status": "README screening"
+  }
+]
