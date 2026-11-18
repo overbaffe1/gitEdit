@@ -1,0 +1,3 @@
+from pathlib import Path
+svg='<svg xmlns="http://www.w3.org/2000/svg" width="680" height="110" viewBox="0 0 680 110" role="img"><title>Daemon 1-2</title><desc>daemon</desc><style>@media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}} @keyframes x{from{opacity:0}to{opacity:1}} .a{animation:x .8s forwards;opacity:0}</style><rect width="680" height="110" rx="16" fill="#0d1117"/><text x="20" y="28" fill="#e6edf3" font-family="monospace" font-size="11">DAEMON 1.2 — нон-стоп</text><text x="20" y="60" fill="#7d8590" font-family="monospace" font-size="9" class="a" style="animation-delay:.2s">iter 1</text></svg>'
+Path(__file__).resolve().parents[2].joinpath('assets','daemon-001-2.svg').write_text(svg, encoding='utf-8')
