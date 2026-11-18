@@ -1,0 +1,36 @@
+{
+  "scope": "One authored loop, not a universal compression benchmark",
+  "size": [
+    256,
+    192
+  ],
+  "frames": 32,
+  "frame_ms": 80,
+  "loop_ms": 2560,
+  "pillow": "13.0.0",
+  "webp_codec": "1.6.0",
+  "zlib_codec": "1.2.13",
+  "files": [
+    {
+      "file": "cube.gif",
+      "bytes": 133060,
+      "frames": 32,
+      "duration_ms": 2560,
+      "alpha": "no (matte)"
+    },
+    {
+      "file": "cube-apng.png",
+      "bytes": 295444,
+      "frames": 32,
+      "duration_ms": 2560,
+      "alpha": "yes"
+    },
+    {
+      "file": "cube.webp",
+      "bytes": 221300,
+      "frames": 32,
+      "duration_ms": 2560,
+      "alpha": "yes"
+    }
+  ]
+}

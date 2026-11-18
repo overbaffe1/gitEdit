@@ -933,6 +933,45 @@ Marching squares соединяет точки одинаковой **яркос
 
 **Перепечатать все загадки и проверки:** `python3 atlas/samples/perception/generate.py`. [Генератор](atlas/samples/perception/generate.py) · [числовые факты JSON](assets/perception/facts.json) · [разбор и рецепт переноса](atlas/perception.md). Все рисунки свои, локальные и неподвижные; никаких чужих фото, токенов и внешних серверов. Старые экспонаты ниже не изменены.
 
+## Не только GIF · три контейнера для одной петли
+
+Анимация в README не обязана быть SVG или видео. Здесь **одни и те же 32 кадра** собственного ролика сохранены как GIF, анимированный PNG и lossless WebP: куб вращается, оранжевый след идёт по орбите. Все три петли по 2,56 секунды; Python нужен только для сборки, не для просмотра.
+
+У APNG и WebP сохранены полупрозрачные края, след и тень. GIF намеренно напечатан на бумажной подложке и переведён в 256 цветов. Поэтому это **демонстрация компромиссов**, не конкурс полностью одинаковых кодирований и не обещание, что один формат всегда меньше другого. [Исследование Pillow/MDN и ограничения](atlas/motion-formats.md).
+
+<table>
+<tr><th>GIF · палитра и бумага</th><th>APNG · настоящая альфа</th><th>WebP · lossless и альфа</th></tr>
+<tr>
+<td><a href="assets/motion-formats/cube.gif"><picture><source media="(prefers-reduced-motion: reduce)" srcset="assets/motion-formats/poster-matte.png"><img src="assets/motion-formats/cube.gif" width="256" alt="Бирюзовый вращающийся куб с оранжевым следом: GIF на светлой бумажной подложке."></picture></a></td>
+<td><a href="assets/motion-formats/cube-apng.png"><picture><source media="(prefers-reduced-motion: reduce)" srcset="assets/motion-formats/poster.png"><img src="assets/motion-formats/cube-apng.png" width="256" alt="Тот же куб в анимированном PNG: прозрачный фон и полупрозрачный оранжевый след."></picture></a></td>
+<td><a href="assets/motion-formats/cube.webp"><picture><source media="(prefers-reduced-motion: reduce)" srcset="assets/motion-formats/poster.png"><img src="assets/motion-formats/cube.webp" width="256" alt="Те же 32 кадра в lossless animated WebP, с прозрачностью вокруг куба и следа."></picture></a></td>
+</tr>
+</table>
+
+### Сколько весят именно эти файлы
+
+| Файл | Байты | Кадры | Цикл | Прозрачность |
+| --- | ---: | ---: | ---: | --- |
+| [GIF](assets/motion-formats/cube.gif) | 133060 | 32 | 2560 мс | Нет, подложка |
+| [APNG](assets/motion-formats/cube-apng.png) | 295444 | 32 | 2560 мс | Полный альфа-канал |
+| [WebP lossless](assets/motion-formats/cube.webp) | 221300 | 32 | 2560 мс | Полный альфа-канал |
+
+В этой сцене GIF оказался самым компактным — зато с ограниченной палитрой и без полупрозрачности. Это измерение **одного ролика с конкретными настройками**, не общий рейтинг форматов. [CSV с размерами](assets/motion-formats/formats.csv) · [версии кодеков и параметры JSON](assets/motion-formats/formats.json).
+
+### Один блок сам выбирает способ показа
+
+<p align="center"><a href="assets/motion-formats/cube.webp"><picture><source media="(prefers-reduced-motion: reduce)" srcset="assets/motion-formats/poster.png"><source type="image/webp" srcset="assets/motion-formats/cube.webp"><img src="assets/motion-formats/cube.gif" width="512" alt="Адаптивная петля: неподвижный PNG при уменьшении движения, иначе WebP для поддерживающего браузера или GIF."></picture></a></p>
+
+Сначала проверяется **уменьшение движения**, затем поддержка WebP, а в `img` оставлен GIF. Это выбор по `media`/`type`, не универсальная защита от битой ссылки: при сетевой ошибке выбранного WebP нельзя обещать автоматический переход к GIF. Отдельной кнопки Pause внутри картинки нет. [Неподвижный прозрачный постер](assets/motion-formats/poster.png).
+
+### Весь цикл без автозапуска
+
+<p align="center"><a href="assets/motion-formats/storyboard.png"><img src="assets/motion-formats/storyboard.png" width="960" alt="Неподвижная раскадровка: восемь равномерно выбранных фаз вращения куба и движения оранжевого следа, сетка четыре на два."></a></p>
+
+Это обычный **статичный PNG**, не скрытая анимация по спрайту. Удобно для печати, ревью и тех, кому важнее увидеть фазы, чем смотреть петлю. Во всех трёх анимированных примерах выше тоже есть отдельный PNG-fallback по `prefers-reduced-motion`; прямое открытие файла анимации не отключает его кадры.
+
+**Собрать:** `python3 atlas/samples/motion_formats/generate.py` после установки [Pillow из requirements](atlas/samples/motion_formats/requirements.txt). [Генератор](atlas/samples/motion_formats/generate.py) · [разбор форматов и рецепт переноса](atlas/motion-formats.md). Чужие картинки, модели, шрифты и серверы не используются. Старые залы ниже сохранены.
+
 ## Две карты
 
 ### Маршрут по точкам · GeoJSON
