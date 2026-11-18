@@ -4,6 +4,12 @@
 
 Сначала нажми на **результат**, потом на источник. Разница принципиальна: записанному GIF не нужен сервер при просмотре; карточка по URL зависит от сервиса; «живой» README часто просто переписывает бот. В этом атласе чужие демо открываются по ссылке; новые workflow и приложения не подключались. Ссылки сверены с проектами 17 ноября 2026 года.
 
+## Краски, которые не нужно подбирать пипеткой
+
+В [README Nord](https://github.com/nordtheme/nord/blob/1cef71605416a222e57225b544540ce0fcec18d4/README.md) цвета собраны в [карточки с подписями](https://github.com/nordtheme/assets/blob/5e00ff689823cb91dd5d013bd4ebae06e79279c5/static/images/artworks/coloring/cards.svg), а для редактора лежит [палитра `.gpl`](https://github.com/nordtheme/nord/blob/1cef71605416a222e57225b544540ce0fcec18d4/src/swatches/nord.gpl). У Rosé Pine интересен другой приём: [в CSS](https://github.com/rose-pine/palette/blob/92af52b465ab6e47437aca223c9b8d3009a2023b/dist/css/rose-pine-media.css) имя краски остаётся тем же, а её значение меняется по `prefers-color-scheme`.
+
+В gitEdit [два оттиска одной пробы](../assets/inkbook/press.svg) видны одновременно: можно сравнить текст и акцент, не переключая тему. [Карточки, палитра и CSS](samples/inkbook/) берут краски из нашего [CSV](samples/palettes.csv). От Nord и Rosé Pine взяты приёмы подачи, не рисунки и не цвета.
+
 ## Виньетка вместо ещё одного баннера
 
 В [README Catppuccin для Kitty](https://github.com/catppuccin/kitty/blob/177d447f0c3626959ef001b4605f5d844541fd63/README.md) в конце стоит [тонкая линия с силуэтом кота](https://github.com/catppuccin/catppuccin/blob/d09787dd98ca6fba08af5ef2ae94a7e09f17daca/assets/footers/gray0_ctp_on_line.svg). Это украшение страницы: ему не нужны ни надпись, ни кнопка. В gitEdit под триптихом и после печатного листа повторяется своя [виньетка с мотыльком](../assets/moth-rule.svg). Медный и мятный оттенки взяты из панорамы мастерской, а сквозь прорези в крыльях виден фон страницы.

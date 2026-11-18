@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="224" height="272" viewBox="0 0 224 272" role="img" aria-labelledby="title desc" xml:lang="ru">
+  <title id="title">Ризограф / Фосфор · проба 01</title>
+  <desc id="desc">Линии оттиска. Сверху светлая бумага, снизу тёмная. Контраст текста на бумаге: 12,52:1 и 12,36:1.</desc>
+  <defs>
+    <!-- One engraved plate, pulled in two inks across the join. -->
+    <path id="stock" d="M15 3H209L220 14V129a7 7 0 0 0 0 14v115l-11 11H15L4 258V143a7 7 0 0 0 0-14V14Z"/>
+    <clipPath id="die"><use href="#stock"/></clipPath>
+    <clipPath id="light"><rect width="224" height="136"/></clipPath>
+    <clipPath id="dark"><rect y="136" width="224" height="136"/></clipPath>
+    <g id="plate">
+      <defs>
+        <clipPath id="disc"><circle cx="103" cy="139" r="50"/></clipPath>
+        <path id="wave" d="M42 0C69-19 81-20 106-2s38 19 61-2"/>
+        <g id="ruling" clip-path="url(#disc)" fill="none"><use href="#wave" transform="translate(0 48)"/>
+<use href="#wave" transform="translate(0 55)"/>
+<use href="#wave" transform="translate(0 62)"/>
+<use href="#wave" transform="translate(0 69)"/>
+<use href="#wave" transform="translate(0 76)"/>
+<use href="#wave" transform="translate(0 83)"/>
+<use href="#wave" transform="translate(0 90)"/>
+<use href="#wave" transform="translate(0 97)"/>
+<use href="#wave" transform="translate(0 104)"/>
+<use href="#wave" transform="translate(0 111)"/>
+<use href="#wave" transform="translate(0 118)"/>
+<use href="#wave" transform="translate(0 125)"/>
+<use href="#wave" transform="translate(0 132)"/>
+<use href="#wave" transform="translate(0 139)"/>
+<use href="#wave" transform="translate(0 146)"/>
+<use href="#wave" transform="translate(0 153)"/>
+<use href="#wave" transform="translate(0 160)"/>
+<use href="#wave" transform="translate(0 167)"/>
+<use href="#wave" transform="translate(0 174)"/>
+<use href="#wave" transform="translate(0 181)"/>
+<use href="#wave" transform="translate(0 188)"/>
+<use href="#wave" transform="translate(0 195)"/>
+<use href="#wave" transform="translate(0 202)"/>
+<use href="#wave" transform="translate(0 209)"/>
+<use href="#wave" transform="translate(0 216)"/>
+<use href="#wave" transform="translate(0 223)"/></g>
+        <mask id="knockout" maskUnits="userSpaceOnUse" x="45" y="78" width="132" height="116">
+          <rect x="45" y="78" width="132" height="116" fill="white"/>
+          <use href="#ruling" stroke="black" stroke-width="3.8"/>
+        </mask>
+      </defs>
+      <circle cx="120" cy="133" r="50" mask="url(#knockout)"/>
+      <use href="#ruling" stroke="currentColor" stroke-width="1.7"/>
+      <circle cx="103" cy="139" r="50" fill="none" stroke="currentColor"/>
+      <path d="M170 95h11m-5.5-5.5v11M44 173h7m-3.5-3.5v7" fill="none" stroke="currentColor"/>
+    </g>
+    <g id="rules" fill="none" stroke="currentColor">
+      <path d="M18 36H206M18 236H206" stroke-width=".8"/>
+      <path d="M18 136h15m-9-4v8m167-4h15m-6-4v8" stroke-width="1.2"/>
+    </g>
+  </defs>
+  <g clip-path="url(#die)">
+    <g clip-path="url(#light)" color="#292948" fill="#EF6747">
+      <rect width="224" height="136" fill="#FFF1D9"/>
+      <use href="#plate"/><use href="#rules"/>
+    </g>
+    <g clip-path="url(#dark)" color="#ADF2CB" fill="#FFD182">
+      <rect y="136" width="224" height="136" fill="#102622"/>
+      <use href="#plate"/><use href="#rules"/>
+    </g>
+    <g font-family="ui-monospace, monospace" font-size="12">
+      <g fill="#292948"><text x="18" y="26">01.А / СВЕТ</text><text x="206" y="26" text-anchor="end">12,52:1</text></g>
+      <g fill="#ADF2CB"><text x="18" y="256">01.Б / ТЕНЬ</text><text x="206" y="256" text-anchor="end">12,36:1</text></g>
+    </g>
+    <g font-family="Georgia, 'DejaVu Serif', serif" font-size="25">
+      <text x="17" y="66" fill="#292948">Ризограф</text>
+      <text x="17" y="226" fill="#ADF2CB">Фосфор</text>
+    </g>
+  </g>
+  <use href="#stock" fill="none" stroke="#292948" stroke-width="1.2"/>
+</svg>
