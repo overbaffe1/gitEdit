@@ -1,6 +1,6 @@
 # Склад gitEdit — полный каталог 85+ находок
 > Этот файл — автопись склада: каждая находка = один self-hosted SVG + генератор `atlas/samples/*.py` + описание откуда идея.
-> Всего SVG в `assets/`: **93** · vitrine в README: 55 блоков · генераторы: 73 Python-файлов.
+> Всего SVG в `assets/`: **93** · vitrine в README: 55 блоков · генераторы: 127 Python-файлов.
 > Все анимации — чистый SMIL/CSS, без JS, с `prefers-reduced-motion: reduce`.
 
 ## Как искать
