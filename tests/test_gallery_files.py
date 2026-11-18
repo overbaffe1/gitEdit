@@ -97,7 +97,9 @@ class GalleryFilesTest(unittest.TestCase):
                     if not u.netloc and not u.scheme:
                         self.assertFalse(u.fragment)
                         if 'assets' in Path(u.path).parts:
-                            self.assertTrue((path.parent / unquote(u.path)).is_file())
+                            # GitHub resolves a leading slash from the repository root.
+                            base = ROOT if u.path.startswith('/') else path.parent
+                            self.assertTrue((base / unquote(u.path).lstrip('/')).is_file())
                     elif u.netloc == 'github.com' and u.path.startswith('/overbaffe1/gitEdit') and (
                         u.path.rstrip('/') == '/overbaffe1/gitEdit' or u.path.lower().endswith('.md')
                     ):

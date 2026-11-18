@@ -4,6 +4,12 @@
 
 Сначала нажми на **результат**, потом на источник. Разница принципиальна: записанному GIF не нужен сервер при просмотре; карточка по URL зависит от сервиса; «живой» README часто просто переписывает бот. В этом атласе чужие демо открываются по ссылке; новые workflow и приложения не подключались. Ссылки сверены с проектами 17 ноября 2026 года.
 
+## Линейка, набранная текстом
+
+В [README spark](https://github.com/holman/spark/blob/ab88ac6f8f33698f39ece2f109b1117ef39a68eb/README.md) числовой ряд помещается в строку: каждый следующий уровень — чуть более высокий печатный знак. В [дереве каталогов Optimism](https://github.com/ethereum-optimism/optimism/blob/7047a367dc263a63828a297abd5a1302d9ea23c0/README.md#directory-structure) ветки тоже текстовые, а названия папок внутри `<pre>` остаются ссылками.
+
+В [партитуре пауз](../templates/blocks/cue-sheet.md) эти два приёма встречаются: ссылка ведёт к GIF, а ритм записи можно прочитать, не открывая её. Дорожки не растянуты до одинаковой длины: после 3,71 с у терминала уже пусто, а у кристалла справа ещё видны сгибы. В основе — задержки из трёх готовых файлов; ни внешнего сервиса, ни картинки для шкалы нет.
+
 ## Краски, которые не нужно подбирать пипеткой
 
 В [README Nord](https://github.com/nordtheme/nord/blob/1cef71605416a222e57225b544540ce0fcec18d4/README.md) цвета собраны в [карточки с подписями](https://github.com/nordtheme/assets/blob/5e00ff689823cb91dd5d013bd4ebae06e79279c5/static/images/artworks/coloring/cards.svg), а для редактора лежит [палитра `.gpl`](https://github.com/nordtheme/nord/blob/1cef71605416a222e57225b544540ce0fcec18d4/src/swatches/nord.gpl). У Rosé Pine интересен другой приём: [в CSS](https://github.com/rose-pine/palette/blob/92af52b465ab6e47437aca223c9b8d3009a2023b/dist/css/rose-pine-media.css) имя краски остаётся тем же, а её значение меняется по `prefers-color-scheme`.
