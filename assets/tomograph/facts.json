@@ -1,0 +1,41 @@
+{
+  "geometry": "synthetic 2D parallel beam; line integrals, not raw transmitted intensity",
+  "angles": 120,
+  "detectors": 256,
+  "detector_range": [
+    -1.25,
+    1.25
+  ],
+  "output_extent": [
+    -1,
+    1
+  ],
+  "csv_bytes": 342827,
+  "source": "original mechanical ellipse phantom, not medical data",
+  "filtered_nrmse": 0.1003064407613665,
+  "eight_views_nrmse": 0.5534209162763015,
+  "limited_90deg_nrmse": 0.6363212159971091,
+  "animation_views": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    8,
+    10,
+    12,
+    15,
+    20,
+    24,
+    30,
+    40,
+    60,
+    120
+  ],
+  "error_definition": "L2(reconstruction-source)/L2(source) over all 192x192 pixels before clipping/display",
+  "display_scales": {
+    "filtered": 1.5,
+    "plain": 4.5
+  },
+  "limits": "no noise, scatter, beam hardening, PSF, real scanner or diagnostic use"
+}
