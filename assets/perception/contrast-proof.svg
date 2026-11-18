@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="520" viewBox="0 0 1040 520" role="img" aria-labelledby="title desc">
+<title id="title">05 / ОДНА КРАСКА, ДВА ФОНА</title><desc id="desc">Который из двух маленьких серых прямоугольников светлее?</desc>
+<defs></defs><style>text{font-family:ui-monospace,Consolas,monospace}.context{opacity:.12}</style>
+<rect width="1040" height="520" rx="16" fill="#f4efe2"/>
+<text x="30" y="37" font-size="22" fill="#243b53">05 / ОДНА КРАСКА, ДВА ФОНА</text><text x="30" y="67" font-size="14" fill="#243b53">Который из двух маленьких серых прямоугольников светлее?</text>
+<path d="M30 84H1010M30 477H1010" stroke="#c4c5b6"/>
+<g class="context"><rect x="140" y="140" width="310" height="290" fill="#243b53"/><rect x="590" y="140" width="310" height="290" fill="#d9d4bc"/></g><rect x="250" y="235" width="90" height="100" fill="#888888" data-target="equal-gray"/><rect x="700" y="235" width="90" height="100" fill="#888888" data-target="equal-gray"/><rect x="340" y="235" width="360" height="100" fill="#888888"/><text x="360" y="200" font-size="20" fill="#177e89">Оба fill = #888888</text><line x1="250" y1="350" x2="790" y2="350" stroke="#177e89" stroke-width="2" /><text x="30" y="504" font-size="12" fill="#177e89">ПРОВЕРКА / бирюзовая разметка объясняет геометрию</text>
+</svg>
