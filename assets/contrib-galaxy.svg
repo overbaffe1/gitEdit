@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="200" viewBox="0 0 680 200" role="img">
+<title>Contribution Galaxy</title><desc>Точки-коммиты как звёзды в галактике, закручиваются.</desc>
+<rect width="680" height="200" rx="16" fill="#020617"/>
+<g transform="translate(150,100)">
+  <circle r="48" fill="none" stroke="#1e293b" stroke-dasharray="4 6"/>
+  <circle r="78" fill="none" stroke="#1e293b" stroke-dasharray="6 8"/>
+  <g id="stars">
+    <circle r="3" fill="#38bdf8"><animateTransform attributeName="transform" type="rotate" values="0;360" dur="6s" repeatCount="indefinite"/><animateTransform attributeName="transform" type="translate" values="48,0" additive="sum" dur="6s" repeatCount="indefinite"/></circle>
+    <circle r="2.5" fill="#a78bfa"><animateTransform attributeName="transform" type="rotate" values="0;360" dur="8s" repeatCount="indefinite"/><animateTransform attributeName="transform" type="translate" values="78,0" additive="sum" dur="8s" repeatCount="indefinite"/></circle>
+    <circle r="2" fill="#f472b6"><animateTransform attributeName="transform" type="rotate" values="180;540" dur="10s" repeatCount="indefinite"/><animateTransform attributeName="transform" type="translate" values="62,0" additive="sum" dur="10s" repeatCount="indefinite"/></circle>
+  </g>
+</g>
+<g font-family="system-ui, sans-serif">
+  <text x="340" y="56" font-size="16" font-weight="800" fill="white" letter-spacing="2">CONTRIB GALAXY</text>
+  <text x="340" y="76" font-size="11" fill="#a78bfa">каждый коммит = звезда · орбиты · закрутка</text>
+  <text x="340" y="100" font-size="9" fill="#94a3b8">SMIL animateTransform · 6-10s · без JS</text>
+  <rect x="340" y="118" width="110" height="24" rx="12" fill="white" fill-opacity="0.08" stroke="white" stroke-opacity="0.15"/><text x="395" y="134" text-anchor="middle" font-size="9" fill="white">◎ 847 stars</text>
+</g>
+<style>@media(prefers-reduced-motion:reduce){ animateTransform{display:none}}</style>
+</svg>

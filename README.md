@@ -556,6 +556,22 @@ https://github.com/user-attachments/assets/031799d1-740d-4cda-90cf-689513fa9860
 
 **Commit Pulse** — изометрический монолит: каждый день = столп, высота = коммиты, пульс 1-1.2с. [Файл](assets/commit-pulse.svg) · `python3 atlas/samples/commit-pulse.py` · идея из [CommitPulse](https://commitpulse.vercel.app/) + [github-city](https://github.com/Zain1024/github-city)
 
+<p align="center"><a href="assets/neon-stadium.svg"><img src="assets/neon-stadium.svg" width="680" alt="Neon Stadium — календарь как стадион с неоновой петлёй."></a></p>
+
+**Neon Stadium** — календарь как 3D-стадион, неоновая петля бежит по контуру (`stroke-dashoffset` 1с). [Файл](assets/neon-stadium.svg) · `python3 atlas/samples/neon-stadium.py` · идея [Neon Arena](https://github.com/SandeepKomal/neon-arena)
+
+<p align="center"><a href="assets/contrib-galaxy.svg"><img src="assets/contrib-galaxy.svg" width="680" alt="Contribution Galaxy — звёзды-коммиты кружатся как галактика."></a></p>
+
+**Contribution Galaxy** — каждый коммит = звезда на орбите, закрутка 6-10с. [Файл](assets/contrib-galaxy.svg) · `python3 atlas/samples/contrib-galaxy.py` · альтернатива плоскому heatmap
+
+<p align="center"><a href="assets/drago-card.svg"><img src="assets/drago-card.svg" width="680" alt="Drago — дракон эволюционирует, HUD уровня."></a></p>
+
+**Drago** — дракон-питомец `🐉` парит (1.4с), орбита 12с, полоса опыта пульсирует. [Файл](assets/drago-card.svg) · `python3 atlas/samples/drago-card.py` · идея [Drago](https://github.com/topics/drago)
+
+<p align="center"><a href="assets/typing-banner.svg"><img src="assets/typing-banner.svg" width="680" alt="Печатающий баннер — градиентный текст с мигающим курсором."></a></p>
+
+**Печатающий баннер** — градиент `7c3aed→06b6d4` + курсор `blink 0.8с`, без внешних API. [Файл](assets/typing-banner.svg) · `python3 atlas/samples/typing-banner.py` · как [readme-typing-svg](https://github.com/DenverCoder1/readme-typing-svg), но селф-хостед
+
 > Синий 3D-просмотрщик уже есть — это [кристалл в STL](assets/crystal.stl). Открой его в GitHub, он крутится прямо на странице без твоего кода. Новые штуки выше — такая же идея: открыл файл и смотри, без установок. Хочешь анимированную шапку извне — бери [волну+печаталку](templates/ANIMATED-HEADER-TEMPLATE.md).
 
 ### Склад одной строкой
