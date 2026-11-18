@@ -1,0 +1,152 @@
+[
+  {
+    "repo": "colour-science/colour",
+    "commit": "6c3daee61532ec68d3c89bd203cb99d97baadf28",
+    "readme": "README.rst",
+    "url": "https://github.com/colour-science/colour/blob/6c3daee61532ec68d3c89bd203cb99d97baadf28/README.rst",
+    "candidates": [
+      "colour/colorimetry/cmfs.py",
+      "colour/colorimetry/datasets/cmfs.py",
+      "colour/colorimetry/datasets/illuminants/__init__.py",
+      "colour/colorimetry/datasets/illuminants/chromaticity_coordinates.py",
+      "colour/colorimetry/datasets/illuminants/hunterlab.py",
+      "colour/colorimetry/datasets/illuminants/sds.py",
+      "colour/colorimetry/datasets/illuminants/sds_d_illuminant_series.py",
+      "colour/colorimetry/datasets/illuminants/tristimulus_values.py",
+      "colour/colorimetry/illuminants.py",
+      "colour/colorimetry/spectrum.py",
+      "colour/colorimetry/tests/test_illuminants.py",
+      "colour/colorimetry/tests/test_spectrum.py",
+      "colour/examples/colorimetry/examples_cmfs.py",
+      "colour/examples/colorimetry/examples_illuminants.py",
+      "colour/examples/colorimetry/examples_spectrum.py",
+      "colour/examples/io/resources/TM27 Sample Spectral Data.spdx",
+      "colour/io/tests/resources/BiSpectral.exr",
+      "colour/volume/spectrum.py",
+      "colour/volume/tests/test_spectrum.py"
+    ],
+    "status": "README screening",
+    "source_files": [
+      {
+        "path": "colour/colorimetry/datasets/cmfs.py",
+        "url": "https://github.com/colour-science/colour/blob/6c3daee61532ec68d3c89bd203cb99d97baadf28/colour/colorimetry/datasets/cmfs.py"
+      },
+      {
+        "path": "colour/colorimetry/datasets/illuminants/sds.py",
+        "url": "https://github.com/colour-science/colour/blob/6c3daee61532ec68d3c89bd203cb99d97baadf28/colour/colorimetry/datasets/illuminants/sds.py"
+      },
+      {
+        "path": "colour/adaptation/datasets/cat.py",
+        "url": "https://github.com/colour-science/colour/blob/6c3daee61532ec68d3c89bd203cb99d97baadf28/colour/adaptation/datasets/cat.py"
+      },
+      {
+        "path": "LICENSE",
+        "url": "https://github.com/colour-science/colour/blob/6c3daee61532ec68d3c89bd203cb99d97baadf28/LICENSE"
+      }
+    ],
+    "failed_lookup": "colour/adaptation/bradford.py returned 404; corrected to datasets/cat.py"
+  },
+  {
+    "repo": "ksmet1977/luxpy",
+    "commit": "9c5daf1873868950534ec29126601a36732e9107",
+    "readme": "README.md",
+    "url": "https://github.com/ksmet1977/luxpy/blob/9c5daf1873868950534ec29126601a36732e9107/README.md",
+    "candidates": [
+      "docs/build/html/_modules/luxpy/spectrum/SPD.html",
+      "docs/build/html/_modules/luxpy/spectrum/basics/illuminants.html",
+      "docs/build/html/_modules/luxpy/spectrum/basics/spectral.html",
+      "docs/build/html/_modules/luxpy/spectrum/spdx_ietm2714.html",
+      "docs/build/html/_modules/luxpy/toolboxes/hypspcim/hyperspectral_img_simulator.html",
+      "docs/build/html/_modules/luxpy/toolboxes/sherbrooke_spectral_indices/sherbrooke_spectral_indices_2013.html",
+      "docs/build/html/_modules/luxpy/toolboxes/spectral_mismatch_and_uncertainty/detector_spectral_mismatch.html",
+      "docs/build/html/_sources/spectrum.rst.txt",
+      "docs/build/html/spectrum.html",
+      "docs/source/spectrum.rst",
+      "luxpy/color/cct/robertson1968/luts/CMFs_360-830-1.pkl",
+      "luxpy/data/cmfs/ciexyz_1931_2.dat",
+      "luxpy/data/cmfs/ciexyz_1931_2_judd1951.dat",
+      "luxpy/data/cmfs/ciexyz_1931_2_juddvos1978.dat",
+      "luxpy/data/cmfs/ciexyz_1951_20_scotopic.dat",
+      "luxpy/data/cmfs/ciexyz_1964_10.dat",
+      "luxpy/data/cmfs/ciexyz_2006_10.dat",
+      "luxpy/data/cmfs/ciexyz_2006_2.dat",
+      "luxpy/data/cmfs/ciexyz_2015_10.dat",
+      "luxpy/data/cmfs/ciexyz_2015_2.dat",
+      "luxpy/data/cmfs/ciexyz_cie_std_dev_obs_f1.dat",
+      "luxpy/data/cmfs/readme.txt"
+    ],
+    "status": "README screening"
+  },
+  {
+    "repo": "kenlimmj/metamerism",
+    "commit": "3eff390f28bb7762b858c885f436eeb13eac835d",
+    "readme": "README.md",
+    "url": "https://github.com/kenlimmj/metamerism/blob/3eff390f28bb7762b858c885f436eeb13eac835d/README.md",
+    "candidates": [],
+    "status": "README screening",
+    "source_file": "src/js/MetaResponse.js",
+    "source_url": "https://github.com/kenlimmj/metamerism/blob/3eff390f28bb7762b858c885f436eeb13eac835d/src/js/MetaResponse.js"
+  },
+  {
+    "repo": "Markvanderuit/metameric_dev",
+    "commit": "df77aa0a730c02f450c52c0c027a46a062630235",
+    "readme": "README.md",
+    "url": "https://github.com/Markvanderuit/metameric_dev/blob/df77aa0a730c02f450c52c0c027a46a062630235/README.md",
+    "candidates": [
+      "include/metameric/core/detail/ext/spectrum_models.ext",
+      "include/metameric/core/spectrum.hpp",
+      "resources/shaders/include/render/load/cmfs.glsl",
+      "resources/shaders/include/render/load/illuminant.glsl",
+      "resources/shaders/include/spectrum.glsl",
+      "src/core/spectrum.cpp"
+    ],
+    "status": "README screening",
+    "source_file": "src/core/metamer.cpp",
+    "source_url": "https://github.com/Markvanderuit/metameric_dev/blob/df77aa0a730c02f450c52c0c027a46a062630235/src/core/metamer.cpp"
+  },
+  {
+    "repo": "colour-science/colour-visuals",
+    "commit": "0059dfb17ff3f90bcfed9a614e80c3eccd364e0b",
+    "readme": "README.rst",
+    "url": "https://github.com/colour-science/colour-visuals/blob/0059dfb17ff3f90bcfed9a614e80c3eccd364e0b/README.rst",
+    "candidates": [
+      "docs/_static/Plotting_VisualSpectralLocus2D.png",
+      "docs/_static/Plotting_VisualSpectralLocus3D.png"
+    ],
+    "status": "README screening"
+  },
+  {
+    "repo": "colour-science/colour-datasets",
+    "commit": "fdb4e64508e44e0cf8b016955d8bcb13638b1e35",
+    "readme": "README.rst",
+    "url": "https://github.com/colour-science/colour-datasets/blob/fdb4e64508e44e0cf8b016955d8bcb13638b1e35/README.rst",
+    "candidates": [],
+    "status": "README screening"
+  },
+  {
+    "repo": "mmp/pbrt-v4",
+    "commit": "20e41fd83789f12550e2c31b2047898c9e20e46c",
+    "readme": "README.md",
+    "url": "https://github.com/mmp/pbrt-v4/blob/20e41fd83789f12550e2c31b2047898c9e20e46c/README.md",
+    "candidates": [
+      "src/ext/skymodel/ArHosekSkyModelData_Spectral.h",
+      "src/pbrt/util/spectrum.cpp",
+      "src/pbrt/util/spectrum.h",
+      "src/pbrt/util/spectrum_test.cpp"
+    ],
+    "status": "README screening"
+  },
+  {
+    "repo": "mitsuba-renderer/mitsuba3",
+    "commit": "aa01500f57770a4ef0b067693cae08b3e8a2ac73",
+    "readme": "README.md",
+    "url": "https://github.com/mitsuba-renderer/mitsuba3/blob/aa01500f57770a4ef0b067693cae08b3e8a2ac73/README.md",
+    "candidates": [
+      "include/mitsuba/core/spectrum.h",
+      "src/core/python/spectrum_v.cpp",
+      "src/core/spectrum.cpp",
+      "src/core/tests/test_spectrum.py"
+    ],
+    "status": "README screening"
+  }
+]
