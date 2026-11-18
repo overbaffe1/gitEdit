@@ -1,0 +1,518 @@
+{
+  "start": "r00-i0",
+  "goal": "r08-i3",
+  "rooms": 9,
+  "states": [
+    {
+      "id": "r00-i0",
+      "room": 0,
+      "inventory": 0,
+      "won": false,
+      "moves": [
+        {
+          "label": "Восток",
+          "target": "r01-i0"
+        },
+        {
+          "label": "Юг",
+          "target": "r03-i0"
+        }
+      ]
+    },
+    {
+      "id": "r00-i1",
+      "room": 0,
+      "inventory": 1,
+      "won": false,
+      "moves": [
+        {
+          "label": "Восток",
+          "target": "r01-i1"
+        },
+        {
+          "label": "Юг",
+          "target": "r03-i1"
+        }
+      ]
+    },
+    {
+      "id": "r00-i2",
+      "room": 0,
+      "inventory": 2,
+      "won": false,
+      "moves": [
+        {
+          "label": "Восток",
+          "target": "r01-i2"
+        },
+        {
+          "label": "Юг",
+          "target": "r03-i2"
+        }
+      ]
+    },
+    {
+      "id": "r00-i3",
+      "room": 0,
+      "inventory": 3,
+      "won": false,
+      "moves": [
+        {
+          "label": "Восток",
+          "target": "r01-i3"
+        },
+        {
+          "label": "Юг",
+          "target": "r03-i3"
+        }
+      ]
+    },
+    {
+      "id": "r01-i0",
+      "room": 1,
+      "inventory": 0,
+      "won": false,
+      "moves": [
+        {
+          "label": "Запад",
+          "target": "r00-i0"
+        },
+        {
+          "label": "Юг",
+          "target": "r04-i0"
+        }
+      ]
+    },
+    {
+      "id": "r01-i1",
+      "room": 1,
+      "inventory": 1,
+      "won": false,
+      "moves": [
+        {
+          "label": "Запад",
+          "target": "r00-i1"
+        },
+        {
+          "label": "Юг",
+          "target": "r04-i1"
+        }
+      ]
+    },
+    {
+      "id": "r01-i2",
+      "room": 1,
+      "inventory": 2,
+      "won": false,
+      "moves": [
+        {
+          "label": "Запад",
+          "target": "r00-i2"
+        },
+        {
+          "label": "Юг",
+          "target": "r04-i2"
+        }
+      ]
+    },
+    {
+      "id": "r01-i3",
+      "room": 1,
+      "inventory": 3,
+      "won": false,
+      "moves": [
+        {
+          "label": "Запад",
+          "target": "r00-i3"
+        },
+        {
+          "label": "Юг",
+          "target": "r04-i3"
+        }
+      ]
+    },
+    {
+      "id": "r02-i2",
+      "room": 2,
+      "inventory": 2,
+      "won": false,
+      "moves": [
+        {
+          "label": "Юг",
+          "target": "r05-i2"
+        }
+      ]
+    },
+    {
+      "id": "r02-i3",
+      "room": 2,
+      "inventory": 3,
+      "won": false,
+      "moves": [
+        {
+          "label": "Юг",
+          "target": "r05-i3"
+        }
+      ]
+    },
+    {
+      "id": "r03-i0",
+      "room": 3,
+      "inventory": 0,
+      "won": false,
+      "moves": [
+        {
+          "label": "Север",
+          "target": "r00-i0"
+        },
+        {
+          "label": "Юг",
+          "target": "r06-i1"
+        }
+      ]
+    },
+    {
+      "id": "r03-i1",
+      "room": 3,
+      "inventory": 1,
+      "won": false,
+      "moves": [
+        {
+          "label": "Север",
+          "target": "r00-i1"
+        },
+        {
+          "label": "Юг",
+          "target": "r06-i1"
+        }
+      ]
+    },
+    {
+      "id": "r03-i2",
+      "room": 3,
+      "inventory": 2,
+      "won": false,
+      "moves": [
+        {
+          "label": "Север",
+          "target": "r00-i2"
+        },
+        {
+          "label": "Юг",
+          "target": "r06-i3"
+        }
+      ]
+    },
+    {
+      "id": "r03-i3",
+      "room": 3,
+      "inventory": 3,
+      "won": false,
+      "moves": [
+        {
+          "label": "Север",
+          "target": "r00-i3"
+        },
+        {
+          "label": "Юг",
+          "target": "r06-i3"
+        }
+      ]
+    },
+    {
+      "id": "r04-i0",
+      "room": 4,
+      "inventory": 0,
+      "won": false,
+      "moves": [
+        {
+          "label": "Север",
+          "target": "r01-i0"
+        },
+        {
+          "label": "Восток",
+          "target": "r05-i0"
+        }
+      ]
+    },
+    {
+      "id": "r04-i1",
+      "room": 4,
+      "inventory": 1,
+      "won": false,
+      "moves": [
+        {
+          "label": "Север",
+          "target": "r01-i1"
+        },
+        {
+          "label": "Восток",
+          "target": "r05-i1"
+        }
+      ]
+    },
+    {
+      "id": "r04-i2",
+      "room": 4,
+      "inventory": 2,
+      "won": false,
+      "moves": [
+        {
+          "label": "Север",
+          "target": "r01-i2"
+        },
+        {
+          "label": "Восток",
+          "target": "r05-i2"
+        }
+      ]
+    },
+    {
+      "id": "r04-i3",
+      "room": 4,
+      "inventory": 3,
+      "won": false,
+      "moves": [
+        {
+          "label": "Север",
+          "target": "r01-i3"
+        },
+        {
+          "label": "Восток",
+          "target": "r05-i3"
+        }
+      ]
+    },
+    {
+      "id": "r05-i0",
+      "room": 5,
+      "inventory": 0,
+      "won": false,
+      "moves": [
+        {
+          "label": "Север",
+          "target": "r02-i2"
+        },
+        {
+          "label": "Запад",
+          "target": "r04-i0"
+        },
+        {
+          "label": "Юг",
+          "target": "r08-i0"
+        }
+      ]
+    },
+    {
+      "id": "r05-i1",
+      "room": 5,
+      "inventory": 1,
+      "won": false,
+      "moves": [
+        {
+          "label": "Север",
+          "target": "r02-i3"
+        },
+        {
+          "label": "Запад",
+          "target": "r04-i1"
+        },
+        {
+          "label": "Юг",
+          "target": "r08-i1"
+        }
+      ]
+    },
+    {
+      "id": "r05-i2",
+      "room": 5,
+      "inventory": 2,
+      "won": false,
+      "moves": [
+        {
+          "label": "Север",
+          "target": "r02-i2"
+        },
+        {
+          "label": "Запад",
+          "target": "r04-i2"
+        },
+        {
+          "label": "Юг",
+          "target": "r08-i2"
+        }
+      ]
+    },
+    {
+      "id": "r05-i3",
+      "room": 5,
+      "inventory": 3,
+      "won": false,
+      "moves": [
+        {
+          "label": "Север",
+          "target": "r02-i3"
+        },
+        {
+          "label": "Запад",
+          "target": "r04-i3"
+        },
+        {
+          "label": "Юг",
+          "target": "r08-i3"
+        }
+      ]
+    },
+    {
+      "id": "r06-i1",
+      "room": 6,
+      "inventory": 1,
+      "won": false,
+      "moves": [
+        {
+          "label": "Север",
+          "target": "r03-i1"
+        },
+        {
+          "label": "Восток",
+          "target": "r07-i1"
+        }
+      ]
+    },
+    {
+      "id": "r06-i3",
+      "room": 6,
+      "inventory": 3,
+      "won": false,
+      "moves": [
+        {
+          "label": "Север",
+          "target": "r03-i3"
+        },
+        {
+          "label": "Восток",
+          "target": "r07-i3"
+        }
+      ]
+    },
+    {
+      "id": "r07-i0",
+      "room": 7,
+      "inventory": 0,
+      "won": false,
+      "moves": [
+        {
+          "label": "Запад",
+          "target": "r06-i1"
+        },
+        {
+          "label": "Восток",
+          "target": "r08-i0"
+        }
+      ]
+    },
+    {
+      "id": "r07-i1",
+      "room": 7,
+      "inventory": 1,
+      "won": false,
+      "moves": [
+        {
+          "label": "Запад",
+          "target": "r06-i1"
+        },
+        {
+          "label": "Восток",
+          "target": "r08-i1"
+        }
+      ]
+    },
+    {
+      "id": "r07-i2",
+      "room": 7,
+      "inventory": 2,
+      "won": false,
+      "moves": [
+        {
+          "label": "Запад",
+          "target": "r06-i3"
+        },
+        {
+          "label": "Восток",
+          "target": "r08-i2"
+        }
+      ]
+    },
+    {
+      "id": "r07-i3",
+      "room": 7,
+      "inventory": 3,
+      "won": false,
+      "moves": [
+        {
+          "label": "Запад",
+          "target": "r06-i3"
+        },
+        {
+          "label": "Восток",
+          "target": "r08-i3"
+        }
+      ]
+    },
+    {
+      "id": "r08-i0",
+      "room": 8,
+      "inventory": 0,
+      "won": false,
+      "moves": [
+        {
+          "label": "Север",
+          "target": "r05-i0"
+        },
+        {
+          "label": "Запад",
+          "target": "r07-i0"
+        }
+      ]
+    },
+    {
+      "id": "r08-i1",
+      "room": 8,
+      "inventory": 1,
+      "won": false,
+      "moves": [
+        {
+          "label": "Север",
+          "target": "r05-i1"
+        },
+        {
+          "label": "Запад",
+          "target": "r07-i1"
+        }
+      ]
+    },
+    {
+      "id": "r08-i2",
+      "room": 8,
+      "inventory": 2,
+      "won": false,
+      "moves": [
+        {
+          "label": "Север",
+          "target": "r05-i2"
+        },
+        {
+          "label": "Запад",
+          "target": "r07-i2"
+        }
+      ]
+    },
+    {
+      "id": "r08-i3",
+      "room": 8,
+      "inventory": 3,
+      "won": true,
+      "moves": []
+    }
+  ]
+}
