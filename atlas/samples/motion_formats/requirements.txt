@@ -1,0 +1,2 @@
+# Build and decoder checks only; viewing the README needs no Python.
+Pillow==13.0.0

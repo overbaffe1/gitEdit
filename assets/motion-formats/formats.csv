@@ -1,0 +1,4 @@
+file,bytes,frames,duration_ms,alpha
+cube.gif,133060,32,2560,no (matte)
+cube-apng.png,295444,32,2560,yes
+cube.webp,221300,32,2560,yes
