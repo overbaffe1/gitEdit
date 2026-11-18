@@ -9,6 +9,7 @@
 | **Шапка проекта**<br>Замени название, описание и ссылки. | [Вид](blocks/header.md) · [Код](blocks/header.md?plain=1) |
 | **Переключатель инструкций**<br>Подставь два способа запуска. | [Вид](blocks/quickstart.md) · [Код](blocks/quickstart.md?plain=1) |
 | **Карточка профиля**<br>Покажи две свои работы и их результаты. | [Вид](blocks/profile.md) · [Код](blocks/profile.md?plain=1) |
+| **Партитура пауз**<br>Сравни ритм нескольких GIF на одной текстовой шкале. | [Вид](blocks/cue-sheet.md) · [Код](blocks/cue-sheet.md?plain=1) |
 
 В файлах нет служебных инструкций: копируется только блок. Ссылки с начальным `/` на GitHub отсчитываются от корня репозитория. При переносе проверь эти пути и замени адрес формы Issues на свой.
 
@@ -26,6 +27,7 @@
 | Шапка проекта | [Вид](blocks/header.md) · [Код](blocks/header.md?plain=1) |
 | Переключатель инструкций | [Вид](blocks/quickstart.md) · [Код](blocks/quickstart.md?plain=1) |
 | Карточка профиля | [Вид](blocks/profile.md) · [Код](blocks/profile.md?plain=1) |
+| Партитура пауз | [Вид](blocks/cue-sheet.md) · [Код](blocks/cue-sheet.md?plain=1) |
 ```
 
 </details>
