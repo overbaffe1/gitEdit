@@ -500,6 +500,18 @@ https://github.com/user-attachments/assets/031799d1-740d-4cda-90cf-689513fa9860
 
 **Голографическая карточка** — проектор с вращающимся глобусом-паутинкой, две орбиты и бегущий сканирующий луч. Справа — имя и теги с мягким свечением. Всё — один SVG, без внешних картинок. [Файл](assets/hologram-card.svg) · пересобрать: `python3 atlas/samples/hologram-card.py`.
 
+<p align="center"><a href="assets/equalizer.svg"><img src="assets/equalizer.svg" width="680" alt="Эквалайзер — восемь столбиков танцуют с разным темпом как аудио-метр."></a></p>
+
+**Эквалайзер** — 8 столбиков с десинхронизированной анимацией, как у DJ-календаря. Каждый свой `dur` и `delay`, чистый CSS, без JS, уважает `prefers-reduced-motion`. [Файл](assets/equalizer.svg) · пересобрать: `python3 atlas/samples/equalizer.py` · идея из [eq-visualizer](https://github.com/bryanhamiltondev/eq-visualizer).
+
+<p align="center"><a href="assets/terminal-block.svg"><img src="assets/terminal-block.svg" width="680" alt="Терминал — команды whoami, cat stack.txt, ls projects печатаются одна за другой, курсор мигает."></a></p>
+
+**Терминал-блок** — окно zsh с набором команд: `whoami → cat stack.txt → ls projects`. Каждая строка появляется с задержкой, финальный курсор моргает. Чистый SMIL (`<animate>` на opacity), без внешних шрифтов. [Файл](assets/terminal-block.svg) · пересобрать: `python3 atlas/samples/terminal-block.py` · вдохновлён [terminal-typing-svg](https://github.com/VaidikV/terminal-typing-svg) и [terminal-readme](https://github.com/Grawty/terminal-readme), рисунок свой.
+
+<p align="center"><a href="assets/liquid-blob.svg"><img src="assets/liquid-blob.svg" width="680" alt="Жидкая капля — одна форма морфит между четырьмя состояниями, глаза моргают."></a></p>
+
+**Жидкая капля** — один путь морфит между 4 состояниями по `d` (SMIL), два глаза-спутника тоже танцуют. Маслянистый градиент + моргание. [Файл](assets/liquid-blob.svg) · пересобрать: `python3 atlas/samples/liquid-blob.py` · техника из [bloub](https://github.com/blackscythe123/bloub) и [SVG-Morph](https://github.com/JulianCallejas/SVG-Morph), формы свои.
+
 > Синий 3D-просмотрщик уже есть — это [кристалл в STL](assets/crystal.stl). Открой его в GitHub, он крутится прямо на странице без твоего кода. Новые штуки выше — такая же идея: открыл файл и смотри, без установок. Хочешь анимированную шапку извне — бери [волну+печаталку](templates/ANIMATED-HEADER-TEMPLATE.md).
 
 ### Склад одной строкой

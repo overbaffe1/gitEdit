@@ -1,0 +1,51 @@
+"""Терминальный блок — окно терминала с набором команд, курсор моргает."""
+from pathlib import Path
+ASSETS = Path(__file__).resolve().parents[2] / "assets"
+
+SVG = """<svg xmlns="http://www.w3.org/2000/svg" width="680" height="240" viewBox="0 0 680 240" role="img">
+<title>Терминал</title><desc>Окно терминала, команды печатаются одна за другой, курсор моргает.</desc>
+<defs>
+  <linearGradient id="winBg" x1="0" y1="0" x2="0" y2="100%"><stop offset="0%" stop-color="#1c1c1e"/><stop offset="100%" stop-color="#0d1117"/></linearGradient>
+</defs>
+<rect width="680" height="240" rx="14" fill="#020617"/>
+<!-- window -->
+<g transform="translate(16,16)">
+  <rect width="648" height="208" rx="12" fill="url(#winBg)" stroke="#1f2937" stroke-width="1.1"/>
+  <!-- header -->
+  <rect width="648" height="32" rx="12" fill="#111827"/>
+  <rect y="12" width="648" height="20" fill="#111827"/>
+  <circle cx="22" cy="16" r="6" fill="#ff5f56"/><circle cx="40" cy="16" r="6" fill="#ffbd2e"/><circle cx="58" cy="16" r="6" fill="#27c93f"/>
+  <text x="324" y="20.5" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="#9ca3af" letter-spacing="1">overbaffe1@gitEdit — zsh — 80×12</text>
+  <!-- lines -->
+  <g font-family="JetBrains Mono, monospace" font-size="12.5" fill="#e5e7eb">
+    <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.2s" begin="0.2s" fill="freeze"/>
+      <text x="18" y="58"><tspan fill="#a78bfa">overbaffe1@github</tspan><tspan fill="#6b7280">:</tspan><tspan fill="#60a5fa">~</tspan><tspan fill="#e5e7eb">$</tspan><tspan dx="8" fill="#e5e7eb">whoami</tspan></text>
+    </g>
+    <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.25s" begin="0.9s" fill="freeze"/>
+      <text x="18" y="80" fill="#9ca3af">→ Creative coder · 3D в PowerPoint · README как выставка</text>
+    </g>
+    <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.2s" begin="1.4s" fill="freeze"/>
+      <text x="18" y="108"><tspan fill="#a78bfa">overbaffe1@github</tspan><tspan fill="#6b7280">:</tspan><tspan fill="#60a5fa">~</tspan><tspan fill="#e5e7eb">$</tspan><tspan dx="8">cat stack.txt</tspan></text>
+    </g>
+    <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.25s" begin="2.0s" fill="freeze"/>
+      <text x="18" y="130"><tspan fill="#86efac">Python</tspan><tspan fill="#6b7280"> · </tspan><tspan fill="#fca5a5">Blender</tspan><tspan fill="#6b7280"> · </tspan><tspan fill="#93c5fd">FastAPI</tspan><tspan fill="#6b7280"> · </tspan><tspan fill="#fde68a">Postgres</tspan></text>
+    </g>
+    <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.2s" begin="2.5s" fill="freeze"/>
+      <text x="18" y="158"><tspan fill="#a78bfa">overbaffe1@github</tspan><tspan fill="#6b7280">:</tspan><tspan fill="#60a5fa">~</tspan><tspan fill="#e5e7eb">$</tspan><tspan dx="8">ls projects/</tspan></text>
+    </g>
+    <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.25s" begin="3.1s" fill="freeze"/>
+      <text x="18" y="180"><tspan fill="#7dd3fc">gitEdit/</tspan><tspan dx="14" fill="#c4b5fd">MyWorkAiBrain/</tspan><tspan dx="14" fill="#86efac">OMLP/</tspan><tspan dx="14" fill="#fda4af">CosmoH/</tspan></text>
+    </g>
+    <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.15s" begin="3.5s" fill="freeze"/>
+      <text x="18" y="200"><tspan fill="#a78bfa">overbaffe1@github</tspan><tspan fill="#6b7280">:</tspan><tspan fill="#60a5fa">~</tspan><tspan fill="#e5e7eb">$</tspan><tspan dx="8" fill="#e5e7eb">█</tspan><animate attributeName="opacity" values="1;0;1" dur="0.9s" repeatCount="indefinite" begin="3.8s"/></text>
+    </g>
+  </g>
+  <text x="630" y="200" font-family="system-ui, sans-serif" font-size="7.5" fill="#4b5563" text-anchor="end">SMIL · no JS · typed 3.5s</text>
+</g>
+<style>@media (prefers-reduced-motion: reduce){ g[opacity="0"]{opacity:1} animate{ display:none; } }</style>
+</svg>
+"""
+if __name__ == "__main__":
+    out = ASSETS / "terminal-block.svg"
+    out.write_text(SVG, encoding="utf-8")
+    print(f"written {out} {out.stat().st_size}")
