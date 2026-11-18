@@ -1,0 +1,23 @@
+
+from pathlib import Path
+ASSETS=Path(__file__).resolve().parents[2]/"assets"
+SVG="""<svg xmlns="http://www.w3.org/2000/svg" width="680" height="220" viewBox="0 0 680 220" role="img">
+<title>ASCII-портрет</title><desc>Монохромный ASCII-портрет печатается строка за строкой.</desc>
+<rect width="680" height="220" rx="14" fill="#0a0a0f"/>
+<g font-family="JetBrains Mono, monospace" font-size="7" fill="#a7f3d0" text-anchor="start">
+  <text x="20" y="30"> ⠀⠀⠀⣠⣤⣤⣤⣀⠀⠀⠀⠀              <tspan fill="#64748b">┌─ whoami ──────────────────┐</tspan></text>
+  <text x="20" y="42"> ⠀⠀⣰⣿⣿⣿⣿⣿⣿⣆⠀⠀⠀              <tspan fill="#e5e7eb">│ Aleksey · Creative Coder  │</tspan></text>
+  <text x="20" y="54"> ⠀⣰⣿⣿⣿⣿⣿⣿⣿⣿⡄⠀⠀              <tspan fill="#9ca3af">│ 3D в PowerPoint кодом     │</tspan></text>
+  <text x="20" y="66"> ⣰⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡄             <tspan fill="#9ca3af">│ README как выставка       │</tspan></text>
+  <text x="20" y="78"> ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿              <tspan fill="#e5e7eb">│ overbaffe1 @ github       │</tspan></text>
+  <text x="20" y="90"> ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿              <tspan fill="#64748b">└───────────────────────────┘</tspan></text>
+  <text x="20" y="108"> ⣿⣿⣿⣿⠿⠿⣿⣿⣿⣿⣿⠿              <tspan fill="#7dd3fc">  $ cat stack.txt</tspan></text>
+  <text x="20" y="120"> ⠹⣿⣿⡇⠀⣿⣿⣿⡇⠀⠀              <tspan fill="#86efac">  Python · Blender · FastAPI</tspan></text>
+  <text x="20" y="138"> ⠀⠙⠿⠇⠀⠿⠿⠃⠀⠀⠀              <tspan fill="#fca5a5">  █ █ █ █ █ █ ░ ░ ░ ░  60%</tspan></text>
+</g>
+<g font-family="system-ui, sans-serif" font-size="8" fill="#475569" text-anchor="middle"><text x="340" y="210">ASCII · SMIL typewriter · монохром · печатается 2s</text></g>
+<style>@media(prefers-reduced-motion:no-preference){ text{ animation: fade .6s both; } text:nth-child(2){animation-delay:.18s} text:nth-child(3){animation-delay:.36s} text:nth-child(4){animation-delay:.54s} text:nth-child(5){animation-delay:.72s} text:nth-child(6){animation-delay:.9s} @keyframes fade{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}} }</style>
+</svg>
+"""
+if __name__=="__main__":
+    out=ASSETS/"ascii-portrait.svg"; out.write_text(SVG,encoding="utf-8"); print(f"written {out} {out.stat().st_size}")

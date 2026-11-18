@@ -1,0 +1,36 @@
+
+from pathlib import Path
+ASSETS=Path(__file__).resolve().parents[2]/"assets"
+SVG="""<svg xmlns="http://www.w3.org/2000/svg" width="680" height="200" viewBox="0 0 680 200" role="img">
+<title>Commit Pulse — монолит</title><desc>Изометрический монолит вкладов, выше = больше коммитов.</desc>
+<rect width="680" height="200" rx="14" fill="#020617"/>
+<g transform="translate(80,30)">
+  <!-- isometric bars -->
+  <g fill="#0f3460" stroke="#1e3a5f" stroke-width="0.8">
+    <path d="M0 80 L20 68 L20 110 L0 122 Z" fill="#0f3460"/><path d="M20 68 L40 80 L40 122 L20 110 Z" fill="#132a4a"/><path d="M0 80 L20 68 L40 80 L20 92 Z" fill="#1a3a6a"/>
+  </g>
+  <g transform="translate(50,0)">
+    <path d="M0 60 L20 48 L20 110 L0 122 Z" fill="#1e4a7a"/><path d="M20 48 L40 60 L40 122 L20 110 Z" fill="#16365a"/><path d="M0 60 L20 48 L40 60 L20 72 Z" fill="#245a8a"/>
+    <animateTransform attributeName="transform" type="translate" values="50,0;50,-6;50,0" dur="1.2s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(100,-20)">
+    <path d="M0 50 L20 38 L20 110 L0 122 Z" fill="#38bdf8"/><path d="M20 38 L40 50 L40 122 L20 110 Z" fill="#0ea5e9"/><path d="M0 50 L20 38 L40 50 L20 62 Z" fill="#7dd3fc"/>
+    <animateTransform attributeName="transform" type="translate" values="100,-20;100,-26;100,-20" dur="1s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(150,10)">
+    <path d="M0 70 L20 58 L20 110 L0 122 Z" fill="#0e7490"/><path d="M20 58 L40 70 L40 122 L20 110 Z" fill="#155e75"/><path d="M0 70 L20 58 L40 70 L20 82 Z" fill="#0891b2"/>
+  </g>
+  <text x="120" y="158" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="#475569">изометрия · высота = коммиты · пульс 1s · без JS</text>
+</g>
+<g font-family="system-ui, sans-serif">
+  <text x="420" y="54" font-size="16" font-weight="800" fill="white" letter-spacing="2">COMMIT PULSE</text>
+  <text x="420" y="74" font-size="11" fill="#7dd3fc">монолит · каждый день = столп</text>
+  <text x="420" y="96" font-size="9" fill="#94a3b8">чем выше — тем больше кода</text>
+  <rect x="420" y="110" width="110" height="26" rx="13" fill="white" fill-opacity="0.08" stroke="white" stroke-opacity="0.18"/>
+  <text x="475" y="127" text-anchor="middle" font-size="10" font-weight="600" fill="white">● 1 247 commits</text>
+</g>
+<style>@media(prefers-reduced-motion:reduce){ animateTransform{display:none}}</style>
+</svg>
+"""
+if __name__=="__main__":
+    out=ASSETS/"commit-pulse.svg"; out.write_text(SVG,encoding="utf-8"); print(f"written {out} {out.stat().st_size}")

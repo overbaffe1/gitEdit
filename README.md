@@ -512,6 +512,50 @@ https://github.com/user-attachments/assets/031799d1-740d-4cda-90cf-689513fa9860
 
 **Жидкая капля** — один путь морфит между 4 состояниями по `d` (SMIL), два глаза-спутника тоже танцуют. Маслянистый градиент + моргание. [Файл](assets/liquid-blob.svg) · пересобрать: `python3 atlas/samples/liquid-blob.py` · техника из [bloub](https://github.com/blackscythe123/bloub) и [SVG-Morph](https://github.com/JulianCallejas/SVG-Morph), формы свои.
 
+<p align="center"><a href="assets/wave-divider.svg"><img src="assets/wave-divider.svg" width="680" alt="Волнистый разделитель с бегущей кометой."></a></p>
+
+**Волнистый разделитель** — волна с бегущим `stroke-dash` и кометой (`animateMotion` по пути). Ставишь между секциями вместо `<hr>`. [Файл](assets/wave-divider.svg) · `python3 atlas/samples/wave-divider.py` · 908 байт.
+
+<p align="center"><a href="assets/radar-skills.svg"><img src="assets/radar-skills.svg" width="420" alt="Радар скиллов — шестиугольник, заполнение морфит."></a></p>
+
+**Радар скиллов** — 6 осей, заливка морфит по `points` за 4с. Меняешь точки — меняешь стек. [Файл](assets/radar-skills.svg) · `python3 atlas/samples/radar-skills.py`
+
+<p align="center"><a href="assets/timeline-journey.svg"><img src="assets/timeline-journey.svg" width="680" alt="Таймлайн пути — линия зажигает вехи."></a></p>
+
+**Таймлайн пути** — линия 2.8с (`stroke-dashoffset`), точки всплывают по очереди. [Файл](assets/timeline-journey.svg) · `python3 atlas/samples/timeline-journey.py`
+
+<p align="center"><a href="assets/marquee-icons.svg"><img src="assets/marquee-icons.svg" width="680" alt="Бегущая строка иконок — 8 скиллов едут влево."></a></p>
+
+**Бегущая строка** — 8 пилюль едут влево 8с, бесшовный луп (`translate -240`). Чистый SVG. [Файл](assets/marquee-icons.svg) · `python3 atlas/samples/marquee-icons.py` · идея из [icon-marquee](https://github.com/topics/icon-marquee)
+
+<p align="center"><a href="assets/ascii-portrait.svg"><img src="assets/ascii-portrait.svg" width="680" alt="ASCII-портрет — монохромный портрет и neofetch-карточка печатаются."></a></p>
+
+**ASCII-портрет** — монохромный портрет из `⣿⣤⣿` + neofetch-карточка рядом, печатаются построчно. [Файл](assets/ascii-portrait.svg) · `python3 atlas/samples/ascii-portrait.py` · идея из [ASCII Portrait guide](https://www.avivashishta.com/blog/build-animated-github-profile-readme)
+
+<p align="center"><a href="assets/heatmap-wave.svg"><img src="assets/heatmap-wave.svg" width="680" alt="Heatmap волна — календарь проявляется по диагонали."></a></p>
+
+**Heatmap-волна** — 53 недели, клетки `10×10 rx=2`, диагональный reveal 0.3с каждая. [Файл](assets/heatmap-wave.svg) · `python3 atlas/samples/heatmap-wave.py` · цвета как у GitHub (Less→More)
+
+<p align="center"><a href="assets/spotify-card.svg"><img src="assets/spotify-card.svg" width="680" alt="Now Playing карточка — обложка, прогресс-бар и 4 столбика-эквалайзера."></a></p>
+
+**Now Playing** — карточка трека с 4 столбиками-эквалайзером (0.7-0.9с). Инлайн-обложка как в [spotify-readme-card](https://github.com/GautamVhavle/spotify-readme-card), но без бэкенда. [Файл](assets/spotify-card.svg) · `python3 atlas/samples/spotify-card.py`
+
+<p align="center"><a href="assets/waka-bar.svg"><img src="assets/waka-bar.svg" width="680" alt="Waka-полоска — языки по часам кодинга."></a></p>
+
+**Waka-полоска** — 5 языков stacked bar, 32h 14m. [Файл](assets/waka-bar.svg) · `python3 atlas/samples/waka-bar.py`
+
+<p align="center"><a href="assets/trophy-shelf.svg"><img src="assets/trophy-shelf.svg" width="680" alt="Полка трофеев — 4 карточки достижений."></a></p>
+
+**Полка трофеев** — 4 карточки: First PR, Streak 42, 100 Commits, Launch. Меняешь эмодзи/текст. [Файл](assets/trophy-shelf.svg) · `python3 atlas/samples/trophy-shelf.py` · как [github-profile-trophy](https://github.com/ryo-ma/github-profile-trophy)
+
+<p align="center"><a href="assets/neofetch-card.svg"><img src="assets/neofetch-card.svg" width="680" alt="Neofetch-карточка — ключ/значение рядом с ASCII-артом."></a></p>
+
+**Neofetch-карточка** — `OS/Host/Stack/Uptime` слева, ASCII-арт + STATS справа. [Файл](assets/neofetch-card.svg) · `python3 atlas/samples/neofetch-card.py`
+
+<p align="center"><a href="assets/commit-pulse.svg"><img src="assets/commit-pulse.svg" width="680" alt="Commit Pulse — изометрический монолит, столбики пульсируют."></a></p>
+
+**Commit Pulse** — изометрический монолит: каждый день = столп, высота = коммиты, пульс 1-1.2с. [Файл](assets/commit-pulse.svg) · `python3 atlas/samples/commit-pulse.py` · идея из [CommitPulse](https://commitpulse.vercel.app/) + [github-city](https://github.com/Zain1024/github-city)
+
 > Синий 3D-просмотрщик уже есть — это [кристалл в STL](assets/crystal.stl). Открой его в GitHub, он крутится прямо на странице без твоего кода. Новые штуки выше — такая же идея: открыл файл и смотри, без установок. Хочешь анимированную шапку извне — бери [волну+печаталку](templates/ANIMATED-HEADER-TEMPLATE.md).
 
 ### Склад одной строкой
