@@ -804,6 +804,55 @@ https://github.com/user-attachments/assets/031799d1-740d-4cda-90cf-689513fa9860
 
 **Self-hosted Stats** — `665320a` ★repos contribs, чистый `urllib` без Vercel, `GITHUB_TOKEN` optional. [Файл](assets/stats-selfhosted.svg) + [langs-selfhosted.svg](assets/langs-selfhosted.svg) · `GITHUB_TOKEN=xxx python3 atlas/samples/render-stats-cards.py` · идея [Sagargupta16/github-stats-card-action](https://github.com/Sagargupta16/github-stats-card-action) + [khoshold/simple-github-readme-stats](https://github.com/kboshold/simple-github-readme-stats)
 
+
+<p align="center"><a href="assets/hour-deep-01.svg"><img src="assets/hour-deep-01.svg" width="680" alt="Hour deep 1 — gen 1."></a></p>
+
+**Hour Deep 1** — каскад `a 0.60s` · `prefers-reduced-motion` guard. [Файл](assets/hour-deep-01.svg) · `python3 atlas/samples/hour-deep-01.py`
+
+<p align="center"><a href="assets/hour-deep-02.svg"><img src="assets/hour-deep-02.svg" width="680" alt="Hour deep 2 — gen 2."></a></p>
+
+**Hour Deep 2** — каскад `a 0.68s` · `prefers-reduced-motion` guard. [Файл](assets/hour-deep-02.svg) · `python3 atlas/samples/hour-deep-02.py`
+
+<p align="center"><a href="assets/hour-deep-03.svg"><img src="assets/hour-deep-03.svg" width="680" alt="Hour deep 3 — gen 3."></a></p>
+
+**Hour Deep 3** — каскад `a 0.76s` · `prefers-reduced-motion` guard. [Файл](assets/hour-deep-03.svg) · `python3 atlas/samples/hour-deep-03.py`
+
+<p align="center"><a href="assets/hour-deep-04.svg"><img src="assets/hour-deep-04.svg" width="680" alt="Hour deep 4 — gen 4."></a></p>
+
+**Hour Deep 4** — каскад `a 0.84s` · `prefers-reduced-motion` guard. [Файл](assets/hour-deep-04.svg) · `python3 atlas/samples/hour-deep-04.py`
+
+<p align="center"><a href="assets/hour-deep-05.svg"><img src="assets/hour-deep-05.svg" width="680" alt="Hour deep 5 — gen 5."></a></p>
+
+**Hour Deep 5** — каскад `a 0.92s` · `prefers-reduced-motion` guard. [Файл](assets/hour-deep-05.svg) · `python3 atlas/samples/hour-deep-05.py`
+
+<p align="center"><a href="assets/hour-deep-06.svg"><img src="assets/hour-deep-06.svg" width="680" alt="Hour deep 6 — gen 6."></a></p>
+
+**Hour Deep 6** — каскад `a 1.00s` · `prefers-reduced-motion` guard. [Файл](assets/hour-deep-06.svg) · `python3 atlas/samples/hour-deep-06.py`
+
+<p align="center"><a href="assets/hour-deep-07.svg"><img src="assets/hour-deep-07.svg" width="680" alt="Hour deep 7 — gen 7."></a></p>
+
+**Hour Deep 7** — каскад `a 1.08s` · `prefers-reduced-motion` guard. [Файл](assets/hour-deep-07.svg) · `python3 atlas/samples/hour-deep-07.py`
+
+<p align="center"><a href="assets/hour-deep-08.svg"><img src="assets/hour-deep-08.svg" width="680" alt="Hour deep 8 — gen 8."></a></p>
+
+**Hour Deep 8** — каскад `a 1.16s` · `prefers-reduced-motion` guard. [Файл](assets/hour-deep-08.svg) · `python3 atlas/samples/hour-deep-08.py`
+
+<p align="center"><a href="assets/hour-deep-09.svg"><img src="assets/hour-deep-09.svg" width="680" alt="Hour deep 9 — gen 9."></a></p>
+
+**Hour Deep 9** — каскад `a 1.24s` · `prefers-reduced-motion` guard. [Файл](assets/hour-deep-09.svg) · `python3 atlas/samples/hour-deep-09.py`
+
+<p align="center"><a href="assets/hour-deep-10.svg"><img src="assets/hour-deep-10.svg" width="680" alt="Hour deep 10 — gen 10."></a></p>
+
+**Hour Deep 10** — каскад `a 1.32s` · `prefers-reduced-motion` guard. [Файл](assets/hour-deep-10.svg) · `python3 atlas/samples/hour-deep-10.py`
+
+<p align="center"><a href="assets/hour-deep-11.svg"><img src="assets/hour-deep-11.svg" width="680" alt="Hour deep 11 — gen 11."></a></p>
+
+**Hour Deep 11** — каскад `a 1.40s` · `prefers-reduced-motion` guard. [Файл](assets/hour-deep-11.svg) · `python3 atlas/samples/hour-deep-11.py`
+
+<p align="center"><a href="assets/hour-deep-12.svg"><img src="assets/hour-deep-12.svg" width="680" alt="Hour deep 12 — gen 12."></a></p>
+
+**Hour Deep 12** — каскад `a 1.48s` · `prefers-reduced-motion` guard. [Файл](assets/hour-deep-12.svg) · `python3 atlas/samples/hour-deep-12.py`
+
 > Синий 3D-просмотрщик уже есть — это [кристалл в STL](assets/crystal.stl). Открой его в GitHub, он крутится прямо на странице без твоего кода. Новые штуки выше — такая же идея: открыл файл и смотри, без установок. Хочешь анимированную шапку извне — бери [волну+печаталку](templates/ANIMATED-HEADER-TEMPLATE.md).
 
 ### Склад одной строкой
