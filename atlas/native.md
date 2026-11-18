@@ -67,7 +67,7 @@ V-E+F = 6-12+8 = 2
 <details>
 <summary><b>Почему на полях нет цветных кружков рядом с HEX?</b></summary>
 
-В README `#EF6747` в обратных кавычках — текст. Автоматические образцы HEX, RGB и HSL задокументированы для Issues, PR и Discussions, не для README. Для читателя покажи отдельную [цветопробу](../assets/relief-riso.svg), а значение оставь доступным для копирования. GitHub Docs [1](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+В README `#EF6747` в обратных кавычках — текст. Автоматические образцы HEX, RGB и HSL задокументированы для Issues, PR и Discussions, не для README. Для читателя покажи отдельную [цветопробу](../assets/relief-riso.svg), а значение оставь доступным для копирования. В [картотеке](samples/inkbook/) есть те же краски для GIMP и пример строки для ревью палитры. GitHub Docs [1](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
 
 </details>
 

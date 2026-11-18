@@ -1,0 +1,40 @@
+/* gitEdit | Choose a pair with data-inkbook="press", "blueprint" or "orbit". */
+[data-inkbook="press"] {
+  --ge-paper: #FFF1D9;
+  --ge-ink: #292948;
+  --ge-accent: #EF6747;
+  --ge-link: #292948;
+}
+[data-inkbook="blueprint"] {
+  --ge-paper: #F6F3FF;
+  --ge-ink: #261D3C;
+  --ge-accent: #61419A;
+  --ge-link: #61419A;
+}
+[data-inkbook="orbit"] {
+  --ge-paper: #EEF8F3;
+  --ge-ink: #153B30;
+  --ge-accent: #18654E;
+  --ge-link: #18654E;
+}
+
+@media (prefers-color-scheme: dark) {
+  [data-inkbook="press"] {
+    --ge-paper: #102622;
+    --ge-ink: #ADF2CB;
+    --ge-accent: #FFD182;
+    --ge-link: #FFD182;
+  }
+  [data-inkbook="blueprint"] {
+    --ge-paper: #211B32;
+    --ge-ink: #FAF5FF;
+    --ge-accent: #D5BAFF;
+    --ge-link: #D5BAFF;
+  }
+  [data-inkbook="orbit"] {
+    --ge-paper: #142C27;
+    --ge-ink: #F0FCF6;
+    --ge-accent: #A0E8C9;
+    --ge-link: #A0E8C9;
+  }
+}

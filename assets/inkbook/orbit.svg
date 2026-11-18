@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="224" height="272" viewBox="0 0 224 272" role="img" aria-labelledby="title desc" xml:lang="ru">
+  <title id="title">Созвездие / Созвездие · проба 03</title>
+  <desc id="desc">Звезда и две орбиты. Сверху светлая бумага, снизу тёмная. Контраст текста на бумаге: 11,39:1 и 14,06:1.</desc>
+  <defs>
+    <!-- One engraved plate, pulled in two inks across the join. -->
+    <path id="stock" d="M15 3H209L220 14V129a7 7 0 0 0 0 14v115l-11 11H15L4 258V143a7 7 0 0 0 0-14V14Z"/>
+    <clipPath id="die"><use href="#stock"/></clipPath>
+    <clipPath id="light"><rect width="224" height="136"/></clipPath>
+    <clipPath id="dark"><rect y="136" width="224" height="136"/></clipPath>
+    <g id="plate">
+      <g fill="none" stroke="currentColor">
+        <circle cx="112" cy="136" r="48" stroke-dasharray="1 3"/><path d="M112 82v5" transform="rotate(0 112 136)"/><path d="M112 82v2" transform="rotate(15 112 136)"/><path d="M112 82v2" transform="rotate(30 112 136)"/><path d="M112 82v2" transform="rotate(45 112 136)"/><path d="M112 82v2" transform="rotate(60 112 136)"/><path d="M112 82v2" transform="rotate(75 112 136)"/><path d="M112 82v5" transform="rotate(90 112 136)"/><path d="M112 82v2" transform="rotate(105 112 136)"/><path d="M112 82v2" transform="rotate(120 112 136)"/><path d="M112 82v2" transform="rotate(135 112 136)"/><path d="M112 82v2" transform="rotate(150 112 136)"/><path d="M112 82v2" transform="rotate(165 112 136)"/><path d="M112 82v5" transform="rotate(180 112 136)"/><path d="M112 82v2" transform="rotate(195 112 136)"/><path d="M112 82v2" transform="rotate(210 112 136)"/><path d="M112 82v2" transform="rotate(225 112 136)"/><path d="M112 82v2" transform="rotate(240 112 136)"/><path d="M112 82v2" transform="rotate(255 112 136)"/><path d="M112 82v5" transform="rotate(270 112 136)"/><path d="M112 82v2" transform="rotate(285 112 136)"/><path d="M112 82v2" transform="rotate(300 112 136)"/><path d="M112 82v2" transform="rotate(315 112 136)"/><path d="M112 82v2" transform="rotate(330 112 136)"/><path d="M112 82v2" transform="rotate(345 112 136)"/>
+        <ellipse cx="112" cy="136" rx="76" ry="23" transform="rotate(-28 112 136)"/>
+        <ellipse cx="112" cy="136" rx="33" ry="53" transform="rotate(-28 112 136)"/>
+      </g>
+      <path d="M112 101C115 125 121 132 145 136C121 140 116 148 112 172C108 148 102 140 79 136C102 132 109 124 112 101Z"/>
+      <circle cx="112" cy="136" r="4.3" fill="currentColor"/>
+      <path d="m164 98 2.5 6.5 6.5 2.5-6.5 2.5-2.5 6.5-2.5-6.5-6.5-2.5 6.5-2.5Z" fill="currentColor"/>
+      <circle cx="53" cy="174" r="4"/><circle cx="65" cy="96" r="1.6" fill="currentColor"/>
+    </g>
+    <g id="rules" fill="none" stroke="currentColor">
+      <path d="M18 36H206M18 236H206" stroke-width=".8"/>
+      <path d="M18 136h15m-9-4v8m167-4h15m-6-4v8" stroke-width="1.2"/>
+    </g>
+  </defs>
+  <g clip-path="url(#die)">
+    <g clip-path="url(#light)" color="#153B30" fill="#18654E">
+      <rect width="224" height="136" fill="#EEF8F3"/>
+      <use href="#plate"/><use href="#rules"/>
+    </g>
+    <g clip-path="url(#dark)" color="#F0FCF6" fill="#A0E8C9">
+      <rect y="136" width="224" height="136" fill="#142C27"/>
+      <use href="#plate"/><use href="#rules"/>
+    </g>
+    <g font-family="ui-monospace, monospace" font-size="12">
+      <g fill="#153B30"><text x="18" y="26">03.А / СВЕТ</text><text x="206" y="26" text-anchor="end">11,39:1</text></g>
+      <g fill="#F0FCF6"><text x="18" y="256">03.Б / ТЕНЬ</text><text x="206" y="256" text-anchor="end">14,06:1</text></g>
+    </g>
+    <g font-family="Georgia, 'DejaVu Serif', serif" font-size="25">
+      <text x="17" y="66" fill="#153B30">Созвездие</text>
+      <text x="17" y="226" fill="#F0FCF6">Созвездие</text>
+    </g>
+  </g>
+  <use href="#stock" fill="none" stroke="#153B30" stroke-width="1.2"/>
+</svg>
