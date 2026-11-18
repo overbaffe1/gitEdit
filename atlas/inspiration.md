@@ -44,6 +44,12 @@
 | [Satori · редактор карточки ссылки](https://og-playground.vercel.app/) | Поменяй текст в редакторе и сравни вкладки SVG и PNG. [Satori](https://github.com/vercel/satori) преобразует разметку в SVG; для Social preview GitHub нужен уже экспортированный растр. |
 | [reveal.js · листаемая презентация](https://revealjs.com/demo/) | Нажми пробел для следующего слайда, Esc для общего плана. [Исходный HTML демо](https://github.com/hakimel/reveal.js/blob/master/demo.html) размещают на сайте, а в README дают обложку-ссылку или PDF. |
 
+## Как спрятать три буквы в одном предмете
+
+В [модели ondras/3](https://github.com/ondras/3/blob/3749f6a674fc7fdc233ff7aea082af28939f5c2b/geb.scad) три буквы выдавливаются в глубину. Пересечение объёмов даёт предмет, который читается по-разному с разных сторон. У [Shadow Cube Generator](https://github.com/flurl/shadow_cube_generator/blob/d53eff7aa7536f51309e3fe3dd8c599db09acef1/README.md) другой способ задать форму: рисуешь три вида по клеткам.
+
+Для README не нужен ни редактор, ни встроенная 3D-сцена. В [нашей кинопетле](../assets/shadow-type/git.gif) вращается одна сетка с проекциями **G / I / T**. [Неподвижный лист](../assets/shadow-type/proof.png) показывает все три сразу, а [STL](../assets/shadow-type/git.stl) можно повернуть отдельно. Буквы нарисованы по клеткам специально для gitEdit; ни шрифт, ни сетка из чужого проекта не копировались.
+
 ## Где искать дальше
 
 - [Awesome README](https://github.com/matiassingers/awesome-readme#examples) — примеры **проектов**; особенно полезно сравнивать первый экран и объяснение архитектуры.

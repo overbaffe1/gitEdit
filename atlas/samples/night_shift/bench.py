@@ -1,6 +1,6 @@
-"""Slice one continuous desk into three equally sized, linkable README images."""
+"""Cut three edge-to-edge panels from one panorama. Keep the exhibit tickets separate."""
 from pathlib import Path
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image
 
 OUT = Path(__file__).resolve().parents[3] / 'assets/night-shift'
 
@@ -23,23 +23,9 @@ if __name__ == '__main__':
     with Image.open(OUT / 'bench-master.jpg') as image:
         width = image.width // 3
         left = (image.width - 3*width) // 2
-        actions = [('glass', 'Развернуть', '#a8d9c4'), ('tape', 'Прочитать', '#f3cd99'), ('film', 'Оживить', '#efaf88')]
-        for i, (name, verb, brass) in enumerate(actions):
-            x = left + i*width
-            # No gutters: adjoining crops reconstruct the desk, not three separate posters.
-            # An integral rail makes the clickable zones recognisable before hovering.
-            rail = round(width*.138)
-            plate = Image.new('RGB', (width, image.height+rail), '#142f3a')
-            plate.paste(image.crop((x,0,x+width,image.height)), (0,0))
-            d = ImageDraw.Draw(plate); y = image.height; cy = y+rail//2
-            d.rectangle((0,y,width,y+2), fill=brass)
-            d.rectangle((0,y+3,round(width*.17),plate.height), fill=brass)
-            num = ImageFont.truetype('DejaVuSansMono-Bold.ttf', round(rail*.52))
-            label = ImageFont.truetype('DejaVuSans-Bold.ttf', round(rail*.56))
-            d.text((round(width*.085),cy),f'0{i+1}',anchor='mm',font=num,fill='#18333d')
-            d.text((round(width*.208),cy),verb,anchor='lm',font=label,fill='#fff1d9')
-            ax=round(width*.935); d.line(((ax-20,cy-11),(ax+1,cy+9),(ax+1,cy-10)),fill=brass,width=4)
-            d.line(((ax+1,cy+9),(ax-18,cy+9)),fill=brass,width=4)
-            plate.save(OUT / f'bench-{name}.jpg', quality=86, optimize=True, subsampling=2)
+        for i, name in enumerate(('glass', 'tape', 'film')):
+            x = left + i * width
+            panel = image.crop((x, 0, x + width, image.height))
+            panel.save(OUT / f'bench-{name}.jpg', quality=86, optimize=True, subsampling=2)
     for i,(name,dest,color) in enumerate(STOPS):
         (OUT / f'ticket-{name}.svg').write_text(ticket(i,dest,color),encoding='utf-8')

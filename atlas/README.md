@@ -1,6 +1,6 @@
 # Полевой атлас GitHub
 
-**Открыть экспонат:** [рабочий стол «Ночной смены»](../assets/night-shift/bench-master.jpg) · [механическая капсула](../assets/crystal-theatre.gif) · [маршрут на карте](../assets/survey.geojson) · [шахматный этюд](../assets/mate-in-one.svg). Здесь собраны исходные файлы и примеры из других проектов.
+**Открыть экспонат:** [триптих целиком](../assets/night-shift/bench-master.jpg) · [механическая капсула](../assets/crystal-theatre.gif) · [маршрут на карте](../assets/survey.geojson) · [шахматный этюд](../assets/mate-in-one.svg). Здесь собраны исходные файлы и примеры из других проектов.
 
 <a href="samples/atlas-plate.svg"><img src="samples/atlas-plate.svg" width="680" alt="Полевой атлас gitEdit. Образец № 1 — кристалл с шестью вершинами, двенадцатью рёбрами и восемью гранями."></a>
 

@@ -1,11 +1,7 @@
-<!-- Шаблон работает и здесь, в templates/. Если переносишь в корень своего репозитория, скопируй assets/night-shift/ и замени ../assets/ на assets/. Для новой работы замени изображение, подпись и путь к файлу экспоната. -->
-# Ночная смена
+<!-- Для своего README скопируй assets/night-shift/. При переносе в корень замени ../assets/ на assets/. Для триптиха нужны три изображения одинаковых пропорций, без пробелов между тегами. -->
+<p align="center"><a href="../assets/night-shift/fold.gif"><img src="../assets/night-shift/bench-glass.jpg" width="33%" alt="Слева: бумажный кристалл под лампой — анимация сгиба"></a><a href="../assets/night-shift/weeks-tape.svg"><img src="../assets/night-shift/bench-tape.jpg" width="33%" alt="В центре: латунный считыватель — лист перфоленты"></a><a href="../assets/night-shift/moth-projector.svg"><img src="../assets/night-shift/bench-film.jpg" width="33%" alt="Справа: кинопроектор — мотылёк за решёткой"></a></p>
 
-Три работы одной мастерской: форма, данные и движение. Нажми на предмет, чтобы открыть файл его работы.
-
-<p align="center"><a href="../assets/night-shift/fold.gif"><img src="../assets/night-shift/bench-glass.jpg" width="33%" alt="К первому кейсу — кристаллу"></a><a href="../assets/night-shift/weeks-tape.svg"><img src="../assets/night-shift/bench-tape.jpg" width="33%" alt="Ко второму кейсу — перфоленте"></a><a href="../assets/night-shift/moth-projector.svg"><img src="../assets/night-shift/bench-film.jpg" width="33%" alt="К третьему кейсу — проектору"></a></p>
-
-[01 · Форма](../assets/night-shift/fold.gif) · [02 · Данные](../assets/night-shift/weeks-tape.svg) · [03 · Движение](../assets/night-shift/moth-projector.svg)
+*Триптих: три JPG встык складываются в [одну панораму](../assets/night-shift/bench-master.jpg).*
 
 ## Бумажный кристалл
 
