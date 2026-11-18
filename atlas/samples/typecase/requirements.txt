@@ -1,0 +1,5 @@
+# Building the exhibits only; playing the font needs none of these packages.
+fonttools==4.68.0
+uharfbuzz==0.57.0
+freetype-py==2.5.1
+Pillow==13.0.0

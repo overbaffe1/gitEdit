@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ru">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Наборный склад · gitEdit</title>
+<style>
+  @font-face { font-family:Dock; src:url('data:font/ttf;base64,@@DOCK_TTF@@') format('truetype'); font-display:swap }
+  :root { color-scheme:light; --paper:#f6f1e3; --ink:#253d43; --rule:#a9ada0; --rust:#994426; --teal:#14695f }
+  * { box-sizing:border-box } body { margin:0; background:var(--paper); color:var(--ink); font:1rem/1.5 system-ui,sans-serif }
+  main { max-width:61rem; margin:auto; padding:clamp(.9rem,4vw,2.5rem) } header, footer, .rail, .toolbar { display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:.4rem .9rem }
+  header, footer, .rail, .tag, .receipt, .toolbar { font:.82rem/1.45 ui-monospace,monospace }
+  header { border-block:1px solid var(--rule); padding:.65rem 0 } header b { color:var(--rust) }
+  h1 { font:clamp(2.45rem,7.8vw,5rem)/1.08 Georgia,serif; margin:1.15rem 0 1.3rem } p { margin:.55rem 0 1rem }
+  .bench { display:grid; grid-template-columns:minmax(0,1.16fr) minmax(0,1fr); gap:clamp(1.1rem,4vw,2.8rem); align-items:start }
+  .case { border:1px solid var(--ink); background:#30494f; color:#f6ebd1; border-radius:7px; padding:.85rem; box-shadow:0 4px 0 #9da69a }
+  .rail { padding:0 0 .65rem; letter-spacing:.055em } .rail span { color:#f7bd86 }
+  .well { container-type:inline-size; background:#f5ebcd; border:2px solid #182f34; border-radius:3px; overflow:hidden }
+  #tape { display:block; appearance:none; width:100%; aspect-ratio:7/6; height:auto; margin:0; padding:0; border:0; border-radius:0; text-align:center; background:#f5ebcd; color:#253d43;
+    font: min(102vw,385px)/.75 Dock,monospace; font-size:113.6cqw; font-feature-settings:'calt' 1; letter-spacing:normal; caret-color:transparent }
+  #tape::placeholder { font:inherit; color:inherit; opacity:1 }
+  #raw:checked ~ .well #tape { font:clamp(1rem,7cqw,2rem)/1.3 ui-monospace,monospace; padding-inline:.5rem; caret-color:var(--ink) }
+  #raw { accent-color:#e8b683 } .raw-label { display:inline-block; margin:0 0 .55rem; cursor:pointer; font-size:.93rem }
+  .well:focus-within { outline:2px solid #f7bd86; outline-offset:2px }
+  .receipt { margin:.65rem 0 0; overflow-wrap:anywhere; color:#f4deb8 } .receipt samp { color:white }
+  .tag { color:var(--rust); letter-spacing:.06em } h2 { font:1.75rem/1.18 Georgia,serif; margin:.4rem 0 }
+  kbd { font:.88em ui-monospace,monospace; border:1px solid #bdbbaa; border-bottom-width:2px; padding:.04em .24em; border-radius:3px; white-space:nowrap }
+  .pad { display:grid; grid-template-columns:repeat(3,minmax(0,4.25rem)); gap:.38rem; margin:.7rem 0 .9rem } .pad [data-key='8'] { grid-column:2 } .pad [data-key='4'] { grid-column:1 }
+  button { appearance:none; color:var(--ink); background:#fff9e9; border:1px solid #859187; border-bottom-width:3px; border-radius:5px; font:inherit; padding:.42rem .7rem; cursor:pointer }
+  .pad button { font:bold 1.13rem/1.4 ui-monospace,monospace; padding:.42rem .2rem; white-space:nowrap; min-height:44px; color:#174d48 } button:active { background:#dedac7 } .toolbar { justify-content:flex-start }
+  .controls { display:flex; flex-wrap:wrap; align-items:flex-end; justify-content:space-between; gap:.6rem .75rem; margin-top:.65rem }
+  .controls .pad { flex:1 1 9rem; grid-template-columns:repeat(3,minmax(0,3.65rem)); margin:0 }
+  .controls .toolbar { flex-direction:column; align-items:stretch; gap:.38rem }
+  [hidden] { display:none !important } summary { cursor:pointer; color:var(--teal) } details { margin-top:1rem } details p { font-size:.94rem }
+  :focus-visible { outline:3px solid #a5572a; outline-offset:2px } footer { margin-top:1.5rem; border-top:1px solid var(--rule); padding-top:.6rem; color:#566264 }
+  @media(max-width:42rem) { .bench { grid-template-columns:1fr } .case { max-width:27rem; width:100%; margin-inline:auto } }
+</style>
+<main>
+  <header><b>gitEdit / Наборная мастерская</b><span>Шрифтовая проба № 01</span></header>
+  <h1>Наборный склад</h1>
+  <form class="bench">
+    <div class="case">
+      <div class="rail"><b>КАССА 01</b><span>TYPECASE DOCK · TTF</span></div>
+      <input id="raw" type="checkbox"><label for="raw" class="raw-label">Снять шрифт</label>
+      <div class="well"><input id="tape" type="text" inputmode="numeric" maxlength="160" spellcheck="false" autocomplete="off" dir="ltr" value="0" placeholder="0" aria-label="Строка ходов. В игровом шрифте она выглядит как комната" aria-describedby="keys"></div>
+      <div class="receipt" hidden>НАБРАНО: <samp id="copy">0</samp></div>
+      <div class="controls"><div class="pad" role="group" aria-label="Допечатать ход" hidden>
+        <button type="button" data-key="8" aria-label="8 — вверх">8 ↑</button><button type="button" data-key="4" aria-label="4 — влево">4 ←</button><button type="button" data-key="2" aria-label="2 — вниз">2 ↓</button><button type="button" data-key="6" aria-label="6 — вправо">6 →</button>
+      </div>
+      <div class="toolbar"><button type="button" id="undo" hidden>⌫ Отмена</button><button type="reset">Сначала</button></div></div>
+    </div>
+    <section><span class="tag">НАРЯД НА ДОСТАВКУ</span><h2>Ящик — на ромб</h2>
+      <p>Робот толкает ящик с крестом, но не тянет его. Печать <b>OK</b> над складом означает доставку.</p>
+      <p id="keys">Нажми на поле и набирай: <kbd>8</kbd> вверх, <kbd>4</kbd> влево, <kbd>2</kbd> вниз, <kbd>6</kbd> вправо. <kbd>Backspace</kbd> стирает ход, <kbd>0</kbd> начинает заново.</p>
+      <details><summary>Проверочный маршрут</summary><p>Вместо начального нуля вставь <code>@@SOLUTION@@</code> целиком. Затем сотри последнюю восьмёрку: ящик отъедет от причала на одну клетку.</p></details>
+      <noscript><p>Экранные клавиши выключены. Поле по-прежнему играет: введи цифры с клавиатуры.</p></noscript>
+    </section>
+  </form>
+  <footer><span>Цвет и правила — в одном шрифте.</span><span>OpenType / calt + COLR</span></footer>
+</main>
+<script>
+  // Optional keypad and plain-text receipt only. There is no board, collision test or win condition here.
+  const tape=document.getElementById('tape'), raw=document.getElementById('raw');
+  const refresh=() => { document.getElementById('copy').textContent=tape.value || '—'; };
+  function edit(s) { tape.value=s.slice(0,tape.maxLength); tape.setSelectionRange(tape.value.length,tape.value.length); refresh(); }
+  for (const b of document.querySelectorAll('[data-key]')) b.addEventListener('click', () => edit(tape.value+b.dataset.key));
+  const undo=document.getElementById('undo'); undo.addEventListener('click', () => edit(tape.value.slice(0,-1)));
+  tape.addEventListener('input', () => { const s=tape.value.replace(/[^02468]/g,''); if(s!==tape.value) edit(s); else refresh(); });
+  tape.addEventListener('keydown', e => {
+    const digit={ArrowUp:'8',ArrowLeft:'4',ArrowDown:'2',ArrowRight:'6'}[e.key];
+    if (digit && !raw.checked && !e.ctrlKey && !e.metaKey && !e.altKey && !e.shiftKey) { e.preventDefault(); edit(tape.value+digit); }
+  });
+  // In board view, clicking the room appends moves rather than setting a caret inside a hidden prefix.
+  tape.addEventListener('click', () => { if (!raw.checked) tape.setSelectionRange(tape.value.length,tape.value.length); });
+  const form=document.querySelector('form');
+  form.addEventListener('submit', e => e.preventDefault());
+  form.addEventListener('reset', () => requestAnimationFrame(refresh));
+  for (const el of [undo,document.querySelector('.pad'),document.querySelector('.receipt')]) el.hidden=false;
+</script>
+</html>

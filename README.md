@@ -43,6 +43,19 @@
 
 [Забрать прозрачный лист](assets/twilight/glass.png?raw=true) · [световой стол с ползунком (ZIP)](assets/twilight/table.zip?raw=true). Распакуй архив и открой `table.html`: границу белой бумаги можно провести прямо между глазами.
 
+## Шрифт-кладовщик
+
+<p><a href="assets/typecase/delivery.gif"><picture>
+  <source media="(prefers-reduced-motion: reduce)" srcset="assets/typecase/proof.png">
+  <img src="assets/typecase/delivery.gif" width="720" alt="Наборный склад. Цифра 6 толкает ящик к правой стене, Backspace возвращает его, и робот обходит ящик, чтобы доставить его на ромб. Справа видна набранная строка.">
+</picture></a></p>
+
+`0866` — ящик застрял у правой стены. Сотри последнюю шестёрку: получится `086`, и ящик отойдёт на клетку назад. **Это одно текстовое поле.** В шрифте *Typecase Dock* каждому положению робота и ящика соответствует свой знак. Кадры GIF отпечатаны этим шрифтом; сыграть можно в офлайн-пробнике.
+
+[Сыграть без установки шрифта (ZIP)](assets/typecase/typecase.zip?raw=true) · [забрать сам TTF](assets/typecase/dock.ttf?raw=true) · [два оттиска до и после Backspace](assets/typecase/proof.png).
+
+Распакуй ZIP и открой `dock.html`. Доведи ящик с крестом до ромба: **8** ↑, **4** ←, **2** ↓, **6** →. Поставь галочку «Снять шрифт» — вместо комнаты увидишь свой маршрут цифрами.
+
 ## Бумажный кристалл
 
 **Кристалл в 3D:** [студия «Грань» — текстуры и движение](https://rawcdn.githack.com/overbaffe1/gitEdit/7b8b2cb05c77223867c772de0d411330f1eddc9f/docs/index.html) · [синий просмотрщик GitHub — отдельный STL](assets/crystal.stl).
@@ -288,6 +301,7 @@ https://github.com/user-attachments/assets/031799d1-740d-4cda-90cf-689513fa9860
 - **Форма:** [литера G/I/T](assets/shadow-type/git.stl) · [два оттиска одного PNG](assets/twilight/proof.png) · [выкройка кристалла](assets/night-shift/crystal-net.svg) · [кинопетля капсулы](assets/crystal-theatre.gif) · [сетка и свет](assets/crystal-wipe.gif) · [обложка «Север»](assets/polar-cover.svg).
 - **Данные:** [перфолента](assets/night-shift/weeks-tape.svg) · [город вкладов](assets/contribution-city.gif) · [отпечаток репозитория](assets/repo-fingerprint.svg) · [маршрут](assets/survey.geojson) · [соседние листы](assets/sheets.topojson) · [размеры файлов](assets/mermaid/file-sizes.png).
 - **Движение:** [медуза из стереозаписи](assets/aurelia/swim.gif) · [театр теней](assets/night-shift/moth-projector.svg) · [кинолента](assets/commit-reel.svg) · [терминал](assets/facet-count.gif) · [видео с перемоткой](https://github.com/user-attachments/assets/031799d1-740d-4cda-90cf-689513fa9860).
+- **Игры:** [наборный склад (ZIP)](assets/typecase/typecase.zip?raw=true) · [шахматный этюд](assets/mate-in-one.svg).
 - **Своё портфолио:** [шаблон проекта](templates/PROJECT-README-TEMPLATE.md) · [шаблон профиля](templates/PROFILE-README-TEMPLATE.md) · [палитры](atlas/samples/palettes.csv).
 
 ## Мастерская оформления
@@ -640,6 +654,7 @@ python3 atlas/samples/maker-seals.py my-project my-mark.svg --label 'Мой пр
 | Одна форма, три тени | [Кинопетля](assets/shadow-type/git.gif) · [неподвижный лист](assets/shadow-type/proof.png) · [та же сетка в STL](assets/shadow-type/git.stl). Идея трёх проекций — [модель букв в OpenSCAD у ondras/3](https://github.com/ondras/3/blob/3749f6a674fc7fdc233ff7aea082af28939f5c2b/geb.scad). Наш [генератор](atlas/samples/shadow_type.py) оставляет в сетке 7 × 7 × 7 только ячейки, разрешённые всеми тремя силуэтами. Кадры и STL построены по одним граням. Пересборка: `python3 atlas/samples/shadow_type.py` (Python 3.10+, Pillow и шрифты DejaVu). |
 | Аурелия | [Стереозапись](assets/aurelia/aurelia.wav) · [контур и его два канала](assets/aurelia/trace.png). Приём — [осциллографический синтез у James Ball](https://github.com/jameshball/osci-render/blob/25f5938e5983af8803b5b090176bde1b7e35180e/README.md); [ещё один пример и разбор](atlas/inspiration.md). Наш [синтезатор](atlas/samples/aurelia/xy_signal.py) записывает только PCM. [Сборка GIF, PNG и осциллографа](atlas/samples/aurelia/render.py): `python3 atlas/samples/aurelia/render.py` (Python 3.10+, Pillow ≥ 10 и шрифты DejaVu). |
 | Сумеречный лист | [Прозрачный PNG](assets/twilight/glass.png) · [проба на двух фонах](assets/twilight/proof.png). Приём в действии — [демо HideImageMaker](https://github.com/wuyr/HideImageMaker/blob/9fc2d095f4c7bd1119f1be35c4080cfe03472553/preview.gif); наши [печатные формы и разбор](atlas/inspiration.md). [Пересборка](atlas/samples/twilight/print.py): `python3 atlas/samples/twilight/print.py` (Python 3.10+, Pillow и шрифты DejaVu). |
+| Наборный склад | [Как набрана игра Fontemon](https://github.com/mmulet/code-relay/blob/3a6b651445aac3b8dc6fad64b4234b6950828dbe/markdown/HowIDidIt.md) · [сборка нашего шрифта из плана комнаты](atlas/samples/typecase/README.md). |
 | Город вкладов | [GIF](assets/contribution-city.gif) · [полный неподвижный кадр](assets/contribution-city.png) · [скрипт экспорта](atlas/samples/render-city.py). Кадры сняты с [оригинального SVG yoshi389111](https://github.com/yoshi389111/github-profile-3d-contrib/blob/e235d118909be71eb7edb05482a3de4e76156df3/docs/demo/profile-night-view.svg) (© SATO, Yoshiyuki, [MIT](assets/licenses/contribution-city-MIT.txt)). В оригинале `dur="3s"`, `repeatCount="1"`: при открытии файла с начала виден ещё один проход. Здесь первый кадр уже заполнен, затем идёт обратный ход и повтор роста. |
 | Змейка | [GIF](assets/snake-weeks.gif) · [PNG](assets/snake-weeks.png) · [данные за 112 дней](atlas/samples/snake-weeks.csv) · [наш отрисовщик](atlas/samples/render-calendar.py). Идея календаря — [Platane/snk](https://github.com/Platane/snk). Это собственный маршрут по **коммитам репозитория**, не копия рисунка Platane и не календарь вкладов пользователя. Даты коммитера в UTC посчитаны по [Commits API LazyGit, страницы по 100 записей](https://api.github.com/repos/jesseduffield/lazygit/commits?sha=bb64e3ccb6524368945ba0dfd3134b4189644eed&since=2025-01-06T00:00:00Z&until=2025-04-27T23:59:59Z&per_page=100). |
 | Квартал в 3D | [STL 16 недель](assets/weekly-skyline.stl) · [генератор на чистом Python](atlas/samples/weekly-skyline.py). Читает тот же CSV, печатает два треугольника на каждую сторону дома. `python3 atlas/samples/weekly-skyline.py` обновляет STL и [статичный вид](assets/weekly-skyline.svg), не переписывая README. |
