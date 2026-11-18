@@ -1,0 +1,68 @@
+{
+  "scheme": "2-out-of-2, 2x2 pixel expansion, ordinary black-ink OR overlay",
+  "source_size": [
+    128,
+    96
+  ],
+  "sheet_size": [
+    256,
+    192
+  ],
+  "public_seed": "gitEdit / two sheets / public demonstration / 2026-11-18",
+  "security": "PUBLIC DETERMINISTIC DEMO. No confidentiality. Do not submit secrets.",
+  "patterns": [
+    [
+      1,
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      1,
+      1,
+      0
+    ],
+    [
+      0,
+      1,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      1,
+      1
+    ]
+  ],
+  "a_black_subpixels": 24576,
+  "b_black_subpixels": 24576,
+  "secret_black_pixels": 3181,
+  "recovered_errors": 0,
+  "background_black_subpixels_per_block": 2,
+  "foreground_black_subpixels_per_block": 4,
+  "printed_pattern_mm": [
+    128,
+    96
+  ],
+  "printed_subpixel_mm": 0.5,
+  "sha256": {
+    "sheet-a.png": "d8ef941034c9ccc9e3a6f47049d2c951dc3da0cdbfbf954bfc8963335c7ba87f",
+    "sheet-b.png": "d414985da6bce817fdf9dae2e05932b2b94bfe9d01b28e1d875b713ea5d0514a",
+    "stack.png": "8e118caa82c83634c0c43a8d85019ced72b6cab11e18f196ece15c4cd8a4d1a7",
+    "recovered.png": "4b6273c6b5642b9f37197e1e95e63b9017b2f9244ac1412d3f129296dea31d9d"
+  }
+}
