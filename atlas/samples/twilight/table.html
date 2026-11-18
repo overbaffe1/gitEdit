@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ru">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Сумеречный лист · gitEdit</title>
+<style>
+  :root { color-scheme:light; --paper:#f3eddf; --ink:#24332d; --copper:#814726; --rule:#b4a591; --split:50% }
+  * { box-sizing:border-box }
+  body { margin:0; background:var(--paper); color:var(--ink); font:1rem/1.5 system-ui,sans-serif }
+  main { max-width:55rem; margin:auto; padding:clamp(1rem,4vw,2.75rem) }
+  header, footer, .label { display:flex; flex-wrap:wrap; justify-content:space-between; gap:.3rem 1rem }
+  header, footer, figcaption, .tag, .label { font:.82rem/1.4 ui-monospace,monospace }
+  header, footer { border-block:1px solid var(--rule); padding-block:.65rem; color:var(--copper) }
+  h1 { font:clamp(2.4rem,7vw,4.8rem)/1.07 Georgia,serif; margin:1.25rem 0 }
+  .bench { display:grid; grid-template-columns:minmax(0,360px) minmax(0,1fr); align-items:center; gap:clamp(1rem,5vw,3rem) }
+  figure { margin:0; min-width:0 } figcaption { color:#564e43; margin-top:.4rem }
+  #mount { border:1px solid #a79780; box-shadow:0 3px 0 #d7ccba; cursor:ew-resize; touch-action:pan-y; user-select:none;
+    background:linear-gradient(90deg, #fff 0 var(--split), #0d1117 var(--split) 100%) }
+  #mount img { display:block; width:100%; height:auto; pointer-events:none }
+  section { min-width:0 } .tag { color:var(--copper); letter-spacing:.08em } h2 { font:1.65rem/1.15 Georgia,serif; margin:.5rem 0 }
+  p { margin:.55rem 0 1.2rem } .label { align-items:baseline; margin-top:1.3rem }
+  input { display:block; width:100%; margin:.5rem 0; height:2rem; accent-color:#8a512e; cursor:ew-resize }
+  .stops { display:flex; flex-wrap:wrap; gap:.4rem } button { border:1px solid var(--rule); border-radius:3px; background:#fff9ef; color:var(--ink); padding:.45rem .65rem; font:inherit; cursor:pointer }
+  button[aria-pressed=true] { background:var(--ink); color:white; border-color:var(--ink) } :focus-visible { outline:3px solid #97600d; outline-offset:3px }
+  footer { margin-top:1.3rem } a { color:var(--copper); text-underline-offset:.2em }
+  @media(max-width:42rem) { .bench { grid-template-columns:minmax(0,1fr) } figure { width:min(100%,360px); margin:auto } }
+</style>
+<main>
+  <header><span>gitEdit · Кабинет печати</span><span>Оптические пробы / 01</span></header>
+  <h1>Сумеречный лист</h1>
+  <div class="bench">
+    <figure><div id="mount"><img src="glass.png" width="720" height="856" draggable="false" alt="Один прозрачный портрет. На белой части листа видна лисица, на тёмной — сипуха; глаза на одной высоте."></div>
+      <figcaption>Медные риски отмечают линию глаз.</figcaption></figure>
+    <section aria-label="Подложка">
+      <span class="tag">ПРОБА НА ПРОСВЕТ</span><h2>Сдвинь бумагу</h2>
+      <p>Потяни край белого поля на портрете или передвинь ползунок. Двигается только подложка: над ней всё время один PNG.</p>
+      <div class="label"><label for="edge">Ширина белого поля</label><output for="edge" id="amount">50 %</output></div>
+      <input id="edge" type="range" min="0" max="100" value="50" step="1">
+      <div class="stops" role="group" aria-label="Готовые положения">
+        <button type="button" data-stop="0">Темнота</button><button type="button" data-stop="50">Пополам</button><button type="button" data-stop="100">Свет</button>
+      </div>
+      <noscript><p>Без JavaScript остаётся неподвижный разрез: слева белая, справа тёмная бумага.</p></noscript>
+    </section>
+  </div>
+  <footer><span>Бумага #ffffff / графит #0d1117</span><a href="glass.png" download="glass.png">Забрать прозрачный PNG</a></footer>
+</main>
+<script>
+  const edge = document.getElementById('edge'), mount = document.getElementById('mount');
+  const stops = document.querySelectorAll('button[data-stop]');
+  function setPaper(value) {
+    const n = Math.max(0, Math.min(100, Math.round(value)));
+    edge.value = n;
+    mount.style.setProperty('--split', `${n}%`);
+    document.getElementById('amount').value = `${n} %`;
+    edge.setAttribute('aria-valuetext', `${n} процентов белого поля`);
+    for (const b of stops) b.setAttribute('aria-pressed', Number(b.dataset.stop) === n);
+  }
+  for (const b of stops) b.addEventListener('click', () => setPaper(Number(b.dataset.stop)));
+  edge.addEventListener('input', () => setPaper(Number(edge.value)));
+  function drag(e) {
+    const box = mount.getBoundingClientRect();
+    setPaper(100 * (e.clientX - box.left - mount.clientLeft) / mount.clientWidth);
+  }
+  mount.addEventListener('pointerdown', e => {
+    if (e.button !== 0 || !e.isPrimary) return;
+    mount.setPointerCapture(e.pointerId); drag(e);
+  });
+  mount.addEventListener('pointermove', e => { if (mount.hasPointerCapture(e.pointerId)) drag(e); });
+  setPaper(Number(edge.value));
+</script>
+</html>
