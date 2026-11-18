@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Посмотреть готовые блоки
+    url: https://github.com/overbaffe1/gitEdit/tree/main/templates
+    about: Каталог шаблонов с переключением между вёрсткой и кодом. Создавать Issue не нужно.

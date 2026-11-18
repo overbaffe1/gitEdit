@@ -41,7 +41,10 @@ class GalleryFilesTest(unittest.TestCase):
             for name, dest in pictures.items():
                 with self.subTest(path=path, picture=name):
                     self.assertEqual((path.parent / cards[name]).resolve(), ART / 'night-shift' / dest)
-            top = text.split('\n## ', 1)[0]
+            # In the template this is the opening; on the home page it is the opening of the gallery.
+            lead, marker, rest = text.partition('bench-glass.jpg')
+            self.assertTrue(marker)
+            top = lead + marker + rest.split('\n## ', 1)[0]
             # A single unbroken row, not three numbered calls to action.
             row, = re.findall(r'<p align="center">([^\n]+)</p>', top)
             self.assertEqual(row.count('</a><a '), 2)
