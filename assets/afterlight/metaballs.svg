@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="360" viewBox="0 0 960 360" role="img" aria-labelledby="title desc">
+<title id="title">06 / МЕТАСФЕРЫ</title><desc id="desc">Размытие + порог альфа-канала: отдельные капли слипаются.</desc>
+<defs><filter id="goo" x="-30%" y="-80%" width="160%" height="260%" color-interpolation-filters="sRGB"><feGaussianBlur stdDeviation="10"/><feColorMatrix values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 24 -10"/></filter></defs><style>
+text{font-family:ui-monospace,Consolas,monospace} .moving{transform-box:view-box}
+@keyframes float{0%,100%{transform:translateY(-28px)}50%{transform:translateY(28px)}}
+@media(prefers-reduced-motion:reduce){.moving{animation:none!important}}
+</style><rect width="960" height="360" rx="20" fill="#111c2b"/>
+<text x="30" y="38" font-size="20" fill="#dce7f4" >06 / МЕТАСФЕРЫ</text><text x="30" y="64" font-size="12" fill="#a2b5cd" >Размытие + порог альфа-канала: отдельные капли слипаются.</text>
+<g filter="url(#goo)"><circle cx="270" cy="195" r="43" fill="#65e3dc" class="moving" style="animation:float 4.0s ease-in-out 0.0s infinite"/><circle cx="335" cy="195" r="43" fill="#65e3dc" class="moving" style="animation:float 4.3s ease-in-out -0.6s infinite"/><circle cx="400" cy="195" r="43" fill="#65e3dc" class="moving" style="animation:float 4.6s ease-in-out -1.2s infinite"/><circle cx="465" cy="195" r="43" fill="#65e3dc" class="moving" style="animation:float 4.9s ease-in-out -1.7999999999999998s infinite"/><circle cx="530" cy="195" r="43" fill="#65e3dc" class="moving" style="animation:float 5.2s ease-in-out -2.4s infinite"/><circle cx="595" cy="195" r="43" fill="#65e3dc" class="moving" style="animation:float 5.5s ease-in-out -3.0s infinite"/><circle cx="660" cy="195" r="43" fill="#65e3dc" class="moving" style="animation:float 5.8s ease-in-out -3.5999999999999996s infinite"/></g><path d="M30 320H930" stroke="#31445b"/><text x="30" y="343" font-size="11" fill="#a2b5cd" >gitEdit / AFTERLIGHT     ·     SVG + CSS     ·     no scripts / no requests</text>
+</svg>
