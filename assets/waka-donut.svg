@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="180" viewBox="0 0 680 180" role="img">
+<title>Waka donut</title><desc>wakatime donut + 32h week</desc>
+<style>@media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}} .seg{stroke-dasharray:var(--d);stroke-dashoffset:var(--d);animation:draw 1s forwards} @keyframes draw{to{stroke-dashoffset:0}}</style>
+<rect width="680" height="180" rx="16" fill="#0f172a"/>
+<text x="20" y="28" fill="#e2e8f0" font-family="monospace" font-size="12">WAKATIME DONUT — 32h 14m this week</text>
+<g transform="translate(20,40)">
+  <circle r="50" cx="50" cy="50" fill="none" stroke="#1e293b" stroke-width="16"/>
+  <circle r="50" cx="50" cy="50" fill="none" stroke="#38bdf8" stroke-width="16" class="seg" style="--d:120;transform:rotate(-90deg);transform-origin:50px 50px"/>
+  <circle r="50" cx="50" cy="50" fill="none" stroke="#22c55e" stroke-width="16" class="seg" style="--d:80;animation-delay:.3s;transform:rotate(50deg);transform-origin:50px 50px"/>
+  <text x="50" y="54" text-anchor="middle" fill="#e2e8f0" font-family="monospace" font-size="10">32h</text>
+</g>
+<g font-family="monospace" font-size="10">
+  <g transform="translate(130,50)"><rect width="12" height="12" rx="2" fill="#38bdf8"/><text x="18" y="10" fill="#e2e8f0">Python 12h</text></g>
+  <g transform="translate(130,70)"><rect width="12" height="12" rx="2" fill="#22c55e"/><text x="18" y="10" fill="#e2e8f0">TypeScript 8h</text></g>
+  <g transform="translate(130,90)"><rect width="12" height="12" rx="2" fill="#f59e0b"/><text x="18" y="10" fill="#e2e8f0">Go 6h</text></g>
+</g>
+</svg>

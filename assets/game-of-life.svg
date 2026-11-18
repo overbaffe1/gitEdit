@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="180" viewBox="0 0 680 180" role="img">
+<title>Game of Life</title><desc>conway updates on 10x10 2 frames blink</desc>
+<style>@media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}} @keyframes blink{0%,49%{opacity:1}50%,100%{opacity:.2}} .gen1{animation:blink 1.2s infinite} .gen2{animation:blink 1.2s infinite reverse}</style>
+<rect width="680" height="180" rx="16" fill="#0b1220"/>
+<text x="20" y="28" fill="#e2e8f0" font-family="monospace" font-size="12">GAME OF LIFE — on top of contribution grid</text>
+<g transform="translate(20,40)">
+  <g class="gen1"><rect x="0" y="0" width="14" height="14" rx="2" fill="#22c55e"/><rect x="16" y="0" width="14" height="14" rx="2" fill="#22c55e"/><rect x="8" y="16" width="14" height="14" rx="2" fill="#22c55e"/></g>
+  <g class="gen2" opacity="0.7"><rect x="32" y="16" width="14" height="14" rx="2" fill="#06b6d4"/><rect x="48" y="16" width="14" height="14" rx="2" fill="#06b6d4"/><rect x="40" y="32" width="14" height="14" rx="2" fill="#06b6d4"/></g>
+  <text x="80" y="14" fill="#e2e8f0" font-family="monospace" font-size="10">gen 1 → gen 2 → …</text>
+  <text x="80" y="30" fill="#94a3b8" font-family="monospace" font-size="9">B3/S23 · runs in Actions, commits SVG</text>
+</g>
+</svg>

@@ -572,6 +572,214 @@ https://github.com/user-attachments/assets/031799d1-740d-4cda-90cf-689513fa9860
 
 **Печатающий баннер** — градиент `7c3aed→06b6d4` + курсор `blink 0.8с`, без внешних API. [Файл](assets/typing-banner.svg) · `python3 atlas/samples/typing-banner.py` · как [readme-typing-svg](https://github.com/DenverCoder1/readme-typing-svg), но селф-хостед
 
+<p align="center"><a href="assets/stats-overview.svg"><img src="assets/stats-overview.svg" width="680" alt="Stats overview — 5 плиток + 53 клетки календаря."></a></p>
+
+**Stats Overview** — 5 плиток: Stars / Forks / Commits / PRs / Issues + мини-календарь 53 клетки слева→направо `fade 0.4с`. [Файл](assets/stats-overview.svg) · `python3 atlas/samples/stats-overview.py` · идея из [github-readme-stats](https://github.com/anuraghazra/github-readme-stats) + [xsrazy/github-readme-stats](https://github.com/xsrazy/github-readme-stats), но селф-хостед
+
+<p align="center"><a href="assets/streak-fire.svg"><img src="assets/streak-fire.svg" width="680" alt="Streak fire — текущий 34 и рекорд 112 с огнём."></a></p>
+
+**Streak Fire** — текущая серия 34 и рекорд 112, `🔥` пульсирует `flick 0.6с`. [Файл](assets/streak-fire.svg) · `python3 atlas/samples/streak-fire.py` · как [streak-stats](https://github.com/DenverCoder1/github-readme-streak-stats)
+
+<p align="center"><a href="assets/langs-donut.svg"><img src="assets/langs-donut.svg" width="680" alt="Top langs donut — пончик 6 языков."></a></p>
+
+**Top Langs Donut** — пончик 70px, 6 языков, сегменты проявляются `stroke-dashoffset 1.2с` по очереди. [Файл](assets/langs-donut.svg) · `python3 atlas/samples/langs-donut.py` · `layout=donut` из github-readme-stats
+
+<p align="center"><a href="assets/activity-graph.svg"><img src="assets/activity-graph.svg" width="680" alt="Activity graph — area chart 31 день."></a></p>
+
+**Activity Graph** — area chart 31 день, линия рисуется `900 dash 1.2с`, точки `fade 0.4с`. [Файл](assets/activity-graph.svg) · `python3 atlas/samples/activity-graph.py` · как [github-readme-activity-graph](https://github.com/Ashutosh00710/github-readme-activity-graph)
+
+<p align="center"><a href="assets/capsule-wave-header.svg"><img src="assets/capsule-wave-header.svg" width="680" alt="Capsule wave header — градиентная волна."></a></p>
+
+**Capsule Wave Header** — волна `M0 80 Q170 20 340 80 T680` → `Q170 120` за 3с, градиент `7c3aed→06b6d4→22c55e`. [Файл](assets/capsule-wave-header.svg) · `python3 atlas/samples/capsule-wave-header.py` · как [capsule-render](https://github.com/kyechan99/capsule-render) `type=waving`
+
+<p align="center"><a href="assets/capsule-wave-footer.svg"><img src="assets/capsule-wave-footer.svg" width="680" alt="Capsule wave footer — перевёрнутая волна."></a></p>
+
+**Capsule Wave Footer** — перевёрнутая волна для низа README, тот же 3с луп. [Файл](assets/capsule-wave-footer.svg) · `python3 atlas/samples/capsule-wave-footer.py`
+
+<p align="center"><a href="assets/chess-puzzle.svg"><img src="assets/chess-puzzle.svg" width="680" alt="Chess puzzle — мат в 1, наведение показывает Qh7."></a></p>
+
+**Chess Puzzle** — доска 8×8 из `<rect>`, `♔♕♚`, подсвечен `h7`, наведение показывает `Qh7#` со стрелкой. [Файл](assets/chess-puzzle.svg) · `python3 atlas/samples/chess-puzzle.py` · идея [timburgan/readme-chess](https://github.com/timburgan/timburgan#tims-community-chess-tournament) / [marcizhu/readme-chess](https://github.com/marcizhu/readme-chess)
+
+<p align="center"><a href="assets/pacman-board.svg"><img src="assets/pacman-board.svg" width="680" alt="Pacman board — пакман ест зелёные клетки."></a></p>
+
+**Pacman Board** — альтернатива змейке: Pacman едет `translateX 520px 4с linear`, ест 16 зелёных точек. [Файл](assets/pacman-board.svg) · `python3 atlas/samples/pacman-board.py`
+
+<p align="center"><a href="assets/tetris-stack.svg"><img src="assets/tetris-stack.svg" width="680" alt="Tetris stack — блоки падают, линия мигает."></a></p>
+
+**Tetris Stack** — тетримино падают `drop 0.8с` по очереди, заполненная линия мигает `flash 0.3с ×3`. [Файл](assets/tetris-stack.svg) · `python3 atlas/samples/tetris-stack.py` · идея [leds-play/tetris](https://github.com/ygeyzel/leds-play)
+
+<p align="center"><a href="assets/snake-mini.svg"><img src="assets/snake-mini.svg" width="680" alt="Snake mini — змейка ест вклад."></a></p>
+
+**Snake Mini** — мини-змейка `🟡` бежит `slither 3с linear`, 14 клеток вклада. [Файл](assets/snake-mini.svg) · `python3 atlas/samples/snake-mini.py` · лайт-версия [Platane/snk](https://github.com/Platane/snk)
+
+<p align="center"><a href="assets/quote-card.svg"><img src="assets/quote-card.svg" width="680" alt="Quote card — цитата с курсором."></a></p>
+
+**Quote Card** — «Code is like humor…» — Cory House, курсор `blink 0.8с`. [Файл](assets/quote-card.svg) · `python3 atlas/samples/quote-card.py` · как [github-cards.onrender.com](https://github-cards.onrender.com) + [CodeQuote](https://github.com/Itz-Anya/Code-Quote)
+
+<p align="center"><a href="assets/joke-card.svg"><img src="assets/joke-card.svg" width="680" alt="Joke card — шутка про тёмную тему."></a></p>
+
+**Joke Card** — сетап сразу, панчлайн `fade 0.5с 1.2s`. [Файл](assets/joke-card.svg) · `python3 atlas/samples/joke-card.py` · [ABSphreak/readme-jokes](https://github.com/ABSphreak/readme-jokes)
+
+<p align="center"><a href="assets/holopin-board.svg"><img src="assets/holopin-board.svg" width="680" alt="Holopin board — 6 бейджей поп-анимация."></a></p>
+
+**Holopin Board** — 6 бейджей `🏅🎖️🏆💎🚀🌟` выпрыгивают `pop 0.3с` по очереди, полка как на [holopin.io](https://holopin.io). [Файл](assets/holopin-board.svg) · `python3 atlas/samples/holopin-board.py`
+
+<p align="center"><a href="assets/profile-views.svg"><img src="assets/profile-views.svg" width="680" alt="Profile views — глаз моргает, 3.4k просмотров."></a></p>
+
+**Profile Views** — `👁️` моргает `blink 3с`, счётчик `3.4k` выезжает `tick 0.5с`. [Файл](assets/profile-views.svg) · `python3 atlas/samples/profile-views.py` · как [komarev.com/ghpvc](https://github.com/antonkomarev/github-profile-views-counter)
+
+<p align="center"><a href="assets/city-skyline.svg"><img src="assets/city-skyline.svg" width="680" alt="City skyline — изометрический город с мигающими окнами."></a></p>
+
+**City Skyline** — 12 зданий растут `grow 0.6с`, окна дышат `breathe 1.6с`. [Файл](assets/city-skyline.svg) · `python3 atlas/samples/city-skyline.py` · идея [Zain1024/github-city](https://github.com/Zain1024/github-city) + [yoshi389111/github-profile-3d-contrib](https://github.com/yoshi389111/github-profile-3d-contrib)
+
+<p align="center"><a href="assets/skyline-stl.svg"><img src="assets/skyline-stl.svg" width="680" alt="Skyline STL — плашка для 3D-печати."></a></p>
+
+**Skyline STL** — плашка `e7e5e4` с 6 столбиками `lift 0.5с`, для печати. [Файл](assets/skyline-stl.svg) · `python3 atlas/samples/skyline-stl.py` · как [github/gh-skyline](https://github.com/github/gh-skyline) `gh skyline --year 2024`
+
+<p align="center"><a href="assets/heatmap-iso.svg"><img src="assets/heatmap-iso.svg" width="680" alt="Heatmap iso — кубы логарифмической высоты."></a></p>
+
+**Heatmap Iso** — 26 кубов, высота `log(count)`, `grow 0.5с` каскадом. [Файл](assets/heatmap-iso.svg) · `python3 atlas/samples/heatmap-iso.py` · вариант [colincode0/github-readme](https://github.com/colincode0/github-readme) 3D-контрибов
+
+<p align="center"><a href="assets/skill-orbit.svg"><img src="assets/skill-orbit.svg" width="680" alt="Skill orbit — иконки на орбитах."></a></p>
+
+**Skill Orbit** — 5 иконок `⚛️🐍🐳🦀 JS` на 3 орбитах `spin 6/8/10с`. [Файл](assets/skill-orbit.svg) · `python3 atlas/samples/skill-orbit.py` · селф-хостед альтернатива [skillicons.dev](https://skillicons.dev)
+
+<p align="center"><a href="assets/badge-wall.svg"><img src="assets/badge-wall.svg" width="680" alt="Badge wall — 6 щитов shields.io."></a></p>
+
+**Badge Wall** — 6 щитов `3776AB/3178C6/000/2496ED/4169E1/EA7600`, `fade 0.3с`. [Файл](assets/badge-wall.svg) · `python3 atlas/samples/badge-wall.py` · [Shields.io](https://shields.io) + [Simple Icons](https://simpleicons.org)
+
+<p align="center"><a href="assets/contrib-flower.svg"><img src="assets/contrib-flower.svg" width="680" alt="Contribution flower — лепестки вокруг центра."></a></p>
+
+**Contribution Flower** — 6 лепестков `bloom 0.6с` по `rotate 30°`, каждый день = лепесток. [Файл](assets/contrib-flower.svg) · `python3 atlas/samples/contrib-flower.py` · полярная альтернатива сетке
+
+<p align="center"><a href="assets/presence-card.svg"><img src="assets/presence-card.svg" width="680" alt="Presence card — now playing + coding."></a></p>
+
+**Presence Card** — слева Spotify `Lo-fi beats` + эквалайзер `bar 0.8с`, справа `VS Code · Python`. [Файл](assets/presence-card.svg) · `python3 atlas/samples/presence-card.py` · как [presence-card](https://github.com/abdessattar23/presence-card)
+
+<p align="center"><a href="assets/social-preview-card.svg"><img src="assets/social-preview-card.svg" width="680" alt="Social preview card — OG 1280×640."></a></p>
+
+**Social Preview Card** — OG 1280×640 `gitEdit` + блик `shine 2с`. [Файл](assets/social-preview-card.svg) · `python3 atlas/samples/social-preview-card.py` · для `Settings → Social preview`
+
+<p align="center"><a href="assets/snake-full.svg"><img src="assets/snake-full.svg" width="680" alt="Snake full — змейка ест путь по вкладам."></a></p>
+
+**Snake Full** — путь `M9 9 L97 9`, `stroke-dash 800 3с` + `animateMotion 3с loop`, грид `16×16`. [Файл](assets/snake-full.svg) · `python3 atlas/samples/snake-full.py` · [Platane/snk](https://github.com/Platane/snk) Action → `output` ветка
+
+<p align="center"><a href="assets/game-of-life.svg"><img src="assets/game-of-life.svg" width="680" alt="Game of Life — два поколения на гриде."></a></p>
+
+**Game of Life** — поколения `gen1/gen2 blink 1.2с` на гриде вкладов, `B3/S23`. [Файл](assets/game-of-life.svg) · `python3 atlas/samples/game-of-life.py` · Conways GOL как README-игра
+
+<p align="center"><a href="assets/waka-donut.svg"><img src="assets/waka-donut.svg" width="680" alt="Waka donut — пончик 32h неделя."></a></p>
+
+**Waka Donut** — пончик `r50` `stroke 16` `draw 1с`, Python 12h / TS 8h / Go 6h. [Файл](assets/waka-donut.svg) · `python3 atlas/samples/waka-donut.py` · как [WakaTime card](https://github.com/anuraghazra/github-readme-stats) `?layout=donut`
+
+<p align="center"><a href="assets/trophies-ranked.svg"><img src="assets/trophies-ranked.svg" width="680" alt="Trophies ranked — SS S A B с свечением."></a></p>
+
+**Trophies Ranked** — 4 ранга `SS/S/A/B` `glow 1.4с`, `facc15/e5e7eb/60a5fa/a78bfa`. [Файл](assets/trophies-ranked.svg) · `python3 atlas/samples/trophies-ranked.py` · [ryo-ma/github-profile-trophy](https://github.com/ryo-ma/github-profile-trophy) пороги
+
+<p align="center"><a href="assets/metrics-plaza.svg"><img src="assets/metrics-plaza.svg" width="680" alt="Metrics plaza — isocalendar + lines."></a></p>
+
+**Metrics Plaza** — bars `grow 0.6с` + `isocalendar` `notanumber` style 1.2k lines. [Файл](assets/metrics-plaza.svg) · `python3 atlas/samples/metrics-plaza.py` · [lowlighter/metrics](https://github.com/lowlighter/metrics)
+
+<p align="center"><a href="assets/typing-themes.svg"><img src="assets/typing-themes.svg" width="680" alt="Typing themes — 3 темы радикаль токионайт дракула."></a></p>
+
+**Typing Themes** — `radical #ff6b6b / tokyonight #8be9fd / dracula #50fa7b` в одном файле, `blink 0.8с` ×3. [Файл](assets/typing-themes.svg) · `python3 atlas/samples/typing-themes.py` · [readme-typing-svg themes](https://readme-typing-svg.demolab.com/demo/)
+
+<p align="center"><a href="assets/shields-dynamic.svg"><img src="assets/shields-dynamic.svg" width="680" alt="Shields dynamic — endpoint badge."></a></p>
+
+**Shields Dynamic** — `build:passing` из `endpoint?url=https://your.api/badge.json`. [Файл](assets/shields-dynamic.svg) · `python3 atlas/samples/shields-dynamic.py` · [Shields endpoint](https://shields.io/badges/endpoint-badge)
+
+<p align="center"><a href="assets/simple-icons-wall.svg"><img src="assets/simple-icons-wall.svg" width="680" alt="Simple Icons wall — 5 бейджей."></a></p>
+
+**Simple Icons Wall** — 5 бейджей `python/ts/rust/js/blender` из 1856 иконок. [Файл](assets/simple-icons-wall.svg) · `python3 atlas/samples/simple-icons-wall.py` · [danmadeira/simple-icon-badges](https://github.com/danmadeira/simple-icon-badges)
+
+<p align="center"><a href="assets/capsule-slice.svg"><img src="assets/capsule-slice.svg" width="680" alt="Capsule slice/cylinder — два типа капсулы."></a></p>
+
+**Capsule Slice/Cylinder** — `type=slice` трапеция и `type=cylinder` пилюля, `gradient 7c3aed→ec4899`. [Файл](assets/capsule-slice.svg) · `python3 atlas/samples/capsule-slice.py` · все типы `waving/slice/cylinder/transparent/rect/soft/shark`
+
+<p align="center"><a href="assets/figlet-banner.svg"><img src="assets/figlet-banner.svg" width="680" alt="Figlet banner — ascii арт из TAAG."></a></p>
+
+**Figlet Banner** — `┌─┐┌─┐┌┬┐` TAAG figlet, `type 1.5с steps(30)`. [Файл](assets/figlet-banner.svg) · `python3 atlas/samples/figlet-banner.py` · [patorjk.com/software/taag](https://patorjk.com/software/taag)
+
+<p align="center"><a href="assets/terminal-tabs.svg"><img src="assets/terminal-tabs.svg" width="680" alt="Terminal tabs — zsh python git log."></a></p>
+
+**Terminal Tabs** — вкладки `zsh/python/git log`, каждая строка `fade 0.4с` по очереди. [Файл](assets/terminal-tabs.svg) · `python3 atlas/samples/terminal-tabs.py`
+
+<p align="center"><a href="assets/git-log-graph.svg"><img src="assets/git-log-graph.svg" width="680" alt="Git log graph — онлайны и мерджи."></a></p>
+
+**Git Log Graph** — `665320a Merge PR #24` → `79a218a` → `4a860f5`, линии `draw 1с`. [Файл](assets/git-log-graph.svg) · `python3 atlas/samples/git-log-graph.py` · `git log --graph --oneline`
+
+<p align="center"><a href="assets/contrib-painter.svg"><img src="assets/contrib-painter.svg" width="680" alt="Contrib painter — пишет GIT коммитами."></a></p>
+
+**Contrib Painter** — буква `GIT` из зелёных квадратов `pop 0.2с`, как [github-contribution-grid-snake](https://github.com/Platane/snk) только рисует текст. [Файл](assets/contrib-painter.svg) · `python3 atlas/samples/contrib-painter.py`
+
+<p align="center"><a href="assets/octocat-wave.svg"><img src="assets/octocat-wave.svg" width="680" alt="Octocat wave — осьминог машет."></a></p>
+
+**Octocat Wave** — `🐙` + `👋` `wave 0.8с rotate 14deg`. [Файл](assets/octocat-wave.svg) · `python3 atlas/samples/octocat-wave.py` · [github logо](https://github.com/logos)
+
+<p align="center"><a href="assets/profile-generator-preview.svg"><img src="assets/profile-generator-preview.svg" width="680" alt="Profile generator preview — 3 карточки."></a></p>
+
+**Profile Generator Preview** — `Hi / Stats / Snake` в одном превью, как у [rahuldkjain/gh-profile-readme-generator](https://github.com/rahuldkjain/gh-profile-readme-generator). [Файл](assets/profile-generator-preview.svg) · `python3 atlas/samples/profile-generator-preview.py`
+
+<p align="center"><a href="assets/repo-pin-cards.svg"><img src="assets/repo-pin-cards.svg" width="680" alt="Repo pin cards — два закреплённых репо."></a></p>
+
+**Repo Pin Cards** — две карточки `📦 gitEdit / MyWorkAiBrain` `lift 0.4с`. [Файл](assets/repo-pin-cards.svg) · `python3 atlas/samples/repo-pin-cards.py` · `api/pin?username=&repo=` из [github-readme-stats](https://github.com/anuraghazra/github-readme-stats)
+
+<p align="center"><a href="assets/header-suite.svg"><img src="assets/header-suite.svg" width="680" alt="Header suite — 4 типа шапок."></a></p>
+
+**Header Suite** — `waving / slice / shark / transparent` в одном ряду. [Файл](assets/header-suite.svg) · `python3 atlas/samples/header-suite.py` · [capsule-render types](https://github.com/kyechan99/capsule-render)
+
+<p align="center"><a href="assets/calendar-themes.svg"><img src="assets/calendar-themes.svg" width="680" alt="Calendar themes — github tokyonight dracula."></a></p>
+
+**Calendar Themes** — 5 уровней `ebedf0→216e39` vs `1a1b26→9ece6a` vs `282a36→ff79c6`. [Файл](assets/calendar-themes.svg) · `python3 atlas/samples/calendar-themes.py` · 100 themes gallery
+
+<p align="center"><a href="assets/leetcode-badge.svg"><img src="assets/leetcode-badge.svg" width="680" alt="LeetCode badge — 342 solved."></a></p>
+
+**LeetCode Badge** — `342 solved` EASY 180 / MEDIUM 120 `grow .6с`. [Файл](assets/leetcode-badge.svg) · `python3 atlas/samples/leetcode-badge.py` · [leetcode-stats.vercel.app](https://github.com/jeremyxu2010/leetcode-stats)
+
+<p align="center"><a href="assets/stackoverflow-flair.svg"><img src="assets/stackoverflow-flair.svg" width="680" alt="StackOverflow flair — репутация."></a></p>
+
+**StackOverflow Flair** — `3,842 rep · 12 gold` как на `users/flair`. [Файл](assets/stackoverflow-flair.svg) · `python3 atlas/samples/stackoverflow-flair.py`
+
+<p align="center"><a href="assets/social-bar.svg"><img src="assets/social-bar.svg" width="680" alt="Social bar — 4 соц-кнопки."></a></p>
+
+**Social Bar** — `in/𝕏/mail/web` `pop .3с` каскадом. [Файл](assets/social-bar.svg) · `python3 atlas/samples/social-bar.py` · shields + Simple Icons
+
+<p align="center"><a href="assets/braille-calendar.svg"><img src="assets/braille-calendar.svg" width="680" alt="Braille calendar — шрифт Брайля."></a></p>
+
+**Braille Calendar** — `⠿⠾⠽` — 2×4 точки = 1 день уровня 0-4 → Braille `U+2800-283F`. [Файл](assets/braille-calendar.svg) · `python3 atlas/samples/braille-calendar.py` · идея [Chafa](https://github.com/hpjansson/chafa) терминал-графика
+
+<p align="center"><a href="assets/charset-showcase.svg"><img src="assets/charset-showcase.svg" width="680" alt="Charset showcase — 4 набора символов."></a></p>
+
+**Charset Showcase** — `classic .:-=+*#%@ / blocks ▁▂▃█ / braille ⠿ / binary 0101`. [Файл](assets/charset-showcase.svg) · `python3 atlas/samples/charset-showcase.py` · `charset=classic|blocks|binary|dots` в ascii-profile-card
+
+<p align="center"><a href="assets/theme-showcase.svg"><img src="assets/theme-showcase.svg" width="680" alt="Theme showcase — 5 тем."></a></p>
+
+**Theme Showcase** — `github/tokyonight/dracula/catppuccin/nord` 5 плашек `fade .3с`. [Файл](assets/theme-showcase.svg) · `python3 atlas/samples/theme-showcase.py` · [themes/README.md](https://github.com/xsrazy/github-readme-stats/blob/main/themes/README.md)
+
+<p align="center"><a href="assets/punchcard.svg"><img src="assets/punchcard.svg" width="680" alt="Punchcard — коммиты по дням недели."></a></p>
+
+**Punchcard** — кружки по дням/часам, размер = коммиты, `pop .3с`. [Файл](assets/punchcard.svg) · `python3 atlas/samples/punchcard.py` · как в [github/punchcard](https://github.com/gource/punchcard) + lowlighter/metrics `isocalendar`
+
+<p align="center"><a href="assets/codewars-badge.svg"><img src="assets/codewars-badge.svg" width="680" alt="CodeWars badge — 3 kyu 2,420 honor."></a></p>
+
+**CodeWars Badge** — `⬢ 3 kyu · 2,420 honor` как на [github.r2v.ch/codewars](https://github.r2v.ch/codewars). [Файл](assets/codewars-badge.svg) · `python3 atlas/samples/codewars-badge.py`
+
+<p align="center"><a href="assets/sponsors-card.svg"><img src="assets/sponsors-card.svg" width="680" alt="Sponsors card — heart + coffee."></a></p>
+
+**Sponsors Card** — `♥ Sponsors / ☕ BMC` funding кнопки, `.github/FUNDING.yml`. [Файл](assets/sponsors-card.svg) · `python3 atlas/samples/sponsors-card.py`
+
+<p align="center"><a href="assets/metrics-calendar.svg"><img src="assets/metrics-calendar.svg" width="680" alt="Metrics calendar — half year."></a></p>
+
+**Metrics Calendar** — `half_year` 53 недели, `plugin_isocalendar` из [lowlighter/metrics](https://github.com/lowlighter/metrics). [Файл](assets/metrics-calendar.svg) · `python3 atlas/samples/metrics-calendar.py`
+
+<p align="center"><a href="assets/habits-radar.svg"><img src="assets/habits-radar.svg" width="680" alt="Habits radar — пик активности."></a></p>
+
+**Habits Radar** — `14:00` пик, радар `f05656` 5 углов. [Файл](assets/habits-radar.svg) · `python3 atlas/samples/habits-radar.py` · `plugin_habits: facts + charts`
+
+<p align="center"><a href="assets/combo-card.svg"><img src="assets/combo-card.svg" width="680" alt="Combo card — streak + trophy + langs."></a></p>
+
+**Combo Card** — 3 в 1: `STREAK 34 / TROPHY SS / LANGS Py 42%`. [Файл](assets/combo-card.svg) · `python3 atlas/samples/combo-card.py` · как [githubcard.com](https://githubcard.com) объединяет виджеты в один
+
 > Синий 3D-просмотрщик уже есть — это [кристалл в STL](assets/crystal.stl). Открой его в GitHub, он крутится прямо на странице без твоего кода. Новые штуки выше — такая же идея: открыл файл и смотри, без установок. Хочешь анимированную шапку извне — бери [волну+печаталку](templates/ANIMATED-HEADER-TEMPLATE.md).
 
 ### Склад одной строкой

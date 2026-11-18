@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="160" viewBox="0 0 680 160" role="img">
+<title>Pacman contrib</title><desc>pacman eats 10 dots across grid 1.8s loop</desc>
+<style>@media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}} @keyframes run{from{transform:translateX(0)}to{transform:translateX(520px)}} .pac{animation:run 4s linear infinite} @keyframes eat{0%,100%{opacity:1}50%{opacity:0}} .dot{} </style>
+<rect width="680" height="160" rx="16" fill="#0a0a0a"/>
+<text x="20" y="28" fill="#facc15" font-family="monospace" font-size="12">PACMAN — eats your green squares</text>
+<g transform="translate(20,50)">
+  <circle cx="12" cy="12" r="5" fill="#22c55e" opacity="0.2"/><circle cx="44" cy="12" r="5" fill="#22c55e" opacity="0.28"/><circle cx="76" cy="12" r="5" fill="#22c55e" opacity="0.36"/><circle cx="108" cy="12" r="5" fill="#22c55e" opacity="0.44"/><circle cx="140" cy="12" r="5" fill="#22c55e" opacity="0.52"/><circle cx="172" cy="12" r="5" fill="#22c55e" opacity="0.2"/><circle cx="204" cy="12" r="5" fill="#22c55e" opacity="0.28"/><circle cx="236" cy="12" r="5" fill="#22c55e" opacity="0.36"/><circle cx="268" cy="12" r="5" fill="#22c55e" opacity="0.44"/><circle cx="300" cy="12" r="5" fill="#22c55e" opacity="0.52"/><circle cx="332" cy="12" r="5" fill="#22c55e" opacity="0.2"/><circle cx="364" cy="12" r="5" fill="#22c55e" opacity="0.28"/><circle cx="396" cy="12" r="5" fill="#22c55e" opacity="0.36"/><circle cx="428" cy="12" r="5" fill="#22c55e" opacity="0.44"/><circle cx="460" cy="12" r="5" fill="#22c55e" opacity="0.52"/><circle cx="492" cy="12" r="5" fill="#22c55e" opacity="0.2"/>
+  <!-- pacman -->
+  <g class="pac">
+    <circle r="14" cx="14" cy="12" fill="#facc15"/>
+    <polygon points="14,12 26,6 26,18" fill="#0a0a0a"/>
+  </g>
+</g>
+<text x="20" y="138" fill="#a3a3a3" font-family="monospace" font-size="9">alternative to snake: pacman eats contributions row-by-row · SMIL animateMotion</text>
+</svg>

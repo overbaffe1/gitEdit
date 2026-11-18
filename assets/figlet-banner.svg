@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="130" viewBox="0 0 680 130" role="img">
+<title>Figlet banner</title><desc>ascii art figlet</desc>
+<style>@media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}} @keyframes type{from{width:0}to{width:100%}} .line{animation:type 1.5s steps(30) forwards;overflow:hidden;white-space:nowrap;width:0}</style>
+<rect width="680" height="130" rx="16" fill="#0a0a0a"/>
+<text x="20" y="28" fill="#22c55e" font-family="monospace" font-size="11">FIGLET — patorjk.com/software/taag → ascii art banner</text>
+<text x="20" y="60" fill="#e2e8f0" font-family="monospace" font-size="10">┌─┐┌─┐┌┬┐┬┬─┐      g i t E d i t</text>
+<text x="20" y="76" fill="#e2e8f0" font-family="monospace" font-size="10">└─┐├─┤││││├┬┘      склад крутого</text>
+<text x="20" y="92" fill="#e2e8f0" font-family="monospace" font-size="10">└─┘┴ ┴┴ ┴┴└─┘      в git просто</text>
+<text x="20" y="114" fill="#64748b" font-family="monospace" font-size="8">config.yml header.art → rendered into svg header + thoughts animation</text>
+</svg>

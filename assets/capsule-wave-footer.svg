@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="120" viewBox="0 0 680 120" role="img">
+<title>Capsule footer wave</title><desc>footer waving inverted</desc>
+<style>@media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}} @keyframes wave2{0%{d:path("M0 40 Q 170 90 340 40 T 680 40 L 680 0 L 0 0 Z")}50%{d:path("M0 40 Q 170 0 340 40 T 680 40 L 680 0 L 0 0 Z")}100%{d:path("M0 40 Q 170 90 340 40 T 680 40 L 680 0 L 0 0 Z")}} .w2{animation:wave2 3s infinite ease-in-out}</style>
+<rect width="680" height="120" rx="16" fill="#0b1220"/>
+<path class="w2" fill="url(#gf)" d="M0 40 Q 170 90 340 40 T 680 40 L 680 0 L 0 0 Z" transform="translate(0,80) scale(1,-1) translate(0,-120)"/>
+<defs><linearGradient id="gf" x1="0" x2="1"><stop offset="0" stop-color="#22c55e"/><stop offset="1" stop-color="#06b6d4"/></linearGradient></defs>
+<text x="340" y="70" text-anchor="middle" fill="#e2e8f0" font-family="monospace" font-size="11">footer · capsule-render type=waving color=gradient section=footer</text>
+</svg>

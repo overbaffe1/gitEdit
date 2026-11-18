@@ -85,3 +85,63 @@
 Хочешь без зависимостей — бери блоки из [templates/blocks/](../templates/blocks/) (чистый Markdown, без картинок). Хочешь вау за 30 секунд — бери отсюда.
 
 Есть свой приём? [Предложить блок](https://github.com/overbaffe1/gitEdit/issues/new?template=readme-block.yml)
+
+## 9. Счётчик просмотров
+
+```markdown
+![views](https://komarev.com/ghpvc/?username=overbaffe1&label=Profile%20views&color=0e75b6&style=flat)
+```
+[komarev.com/ghpvc](https://github.com/antonkomarev/github-profile-views-counter) — хитс-каунтер, без Actions
+
+## 10. Holopin — полка бейджей
+
+```markdown
+[![@you Holopin](https://holopin.me/overbaffe1)](https://holopin.io/@overbaffe1)
+```
+Собери на [holopin.io](https://holopin.io) → embed автоматически
+
+## 11. Цитата / шутка
+
+```markdown
+![quote](https://github-readme-quotes-bay.vercel.app/api?theme=tokyonight)
+![joke](https://readme-jokes.vercel.app/api?theme=dark)
+```
+[quotes](https://github.com/shravan20/github-readme-quotes) + [jokes](https://github.com/ABSphreak/readme-jokes)
+
+## 12. LeetCode / Codewars
+
+```markdown
+![leetcode](https://leetcode-stats.vercel.app/api?username=overbaffe1)
+![codewars](https://github.r2v.ch/codewars?user=overbaffe1)
+```
+[leetcode-stats](https://github.com/jeremyxu2010/leetcode-stats) / [codewars readme stats](https://github.com/CoderCoyAstro/CodWars-readme-stats)
+
+## 13. Spotify Now Playing
+
+```markdown
+![spotify](https://spotify-readme-card.vercel.app/api/spotify?scan=true)
+```
+Нужен OAuth → [spotify-github-profile](https://spotify-github-profile.kittinanx.com) или селф-хост [spotify-card](/assets/spotify-card.svg)
+
+## 14. Шахматы — игра прямо в README
+
+```markdown
+| Шахматы — White to move |
+|---|
+| ![board](https://raw.githubusercontent.com/marcizhu/readme-chess/master/board.svg) |
+| [Сделать ход](https://github.com/USER/USER/issues/new?title=chess%7Cmove%20e2e4&labels=chess) |
+```
+Workflow: [templates/workflows/chess.yml](../templates/workflows/chess.yml) · [marcizhu/readme-chess](https://github.com/marcizhu/readme-chess)
+
+## 15. 3 режима капсул
+
+```markdown
+![waving](https://capsule-render.vercel.app/api?type=waving&color=gradient&height=180)
+![slice](https://capsule-render.vercel.app/api?type=slice&color=gradient&height=140&text=SUP)
+![cylinder](https://capsule-render.vercel.app/api?type=cylinder&color=gradient&height=120)
+```
+Все типы: `waving / slice / cylinder / transparent / rect / soft / shark` — [capsule-render](https://github.com/kyechan99/capsule-render)
+
+---
+
+_Склад вырос с 8 до 15 строк. Хочешь сразу 100? Листай полный [warehouse.md](warehouse.md) или [витрину в README](../README.md) — там уже 70+ селф-хостед SVG._

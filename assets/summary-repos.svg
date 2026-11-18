@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="340" height="120" viewBox="0 0 340 120" role="img">
+<title>Repos per Language</title><desc>Repos per Language card</desc>
+<style>@media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}} .bar{animation:grow .5s forwards;transform:scaleX(0);transform-origin:left} @keyframes grow{to{transform:scaleX(1)}}</style>
+<rect width="340" height="120" rx="12" fill="#0d1117" stroke="#30363d"/>
+<text x="14" y="22" fill="#e6edf3" font-family="monospace" font-size="11">Repos per Language</text>
+<text x="14" y="44" fill="#7d8590" font-family="monospace" font-size="9">Py 12 · TS 8 · Go 4</text>
+<rect x="14" y="60" width="200" height="6" rx="3" fill="#21262d"/><rect x="14" y="60" width="120" height="6" rx="3" fill="#238636" class="bar"/>
+<text x="14" y="84" fill="#7d8590" font-family="monospace" font-size="8">vn7n24fzkq/github-profile-summary-cards → self-hosted</text>
+</svg>

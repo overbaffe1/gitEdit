@@ -1,0 +1,4 @@
+from pathlib import Path
+svg='<svg xmlns="http://www.w3.org/2000/svg" width="680" height="160" viewBox="0 0 680 160" role="img">\n<title>Habits radar</title><desc>habits chart</desc>\n<rect width="680" height="160" rx="16" fill="#1a1a1a"/>\n<text x="20" y="28" fill="#e6edf3" font-family="monospace" font-size="12">HABITS — commits 06h 18 commits · 14h 42 commits</text>\n<g transform="translate(20,44)">\n  <circle r="40" cx="60" cy="40" fill="none" stroke="#303030"/>\n  <polygon points="60,10 88,28 80,60 40,60 32,28" fill="#f05656" opacity="0.6"/>\n  <text x="120" y="14" fill="#b8b8b8" font-family="monospace" font-size="9">Peak: 14:00 · Active 6 days/week</text>\n  <text x="120" y="28" fill="#737373" font-family="monospace" font-size="8">lowlighter/metrics plugin_habits: facts + charts</text>\n</g>\n</svg>\n'
+Path(__file__).resolve().parents[2].joinpath('assets','habits-radar.svg').write_text(svg, encoding='utf-8')
+print('Wrote assets/habits-radar.svg')

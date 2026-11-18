@@ -1,0 +1,18 @@
+# Trophy — достижения (SS/S/A/B/C)
+name: Trophy
+on:
+  schedule: [{cron: "0 4 * * *"}]
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions: {contents: write}
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          curl "https://github-profile-trophy.vercel.app/?username=${{ github.repository_owner }}&theme=onedark&row=2&column=4" -o assets/trophy.svg
+      - run: |
+          git config user.name "github-actions[bot]"
+          git add assets/trophy.svg
+          git commit -m "chore: update trophy [skip ci]" || exit 0
+          git push

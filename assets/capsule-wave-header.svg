@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="160" viewBox="0 0 680 160" role="img">
+<title>Capsule wave header</title><desc>waving gradient header type=waving color=gradient height=160</desc>
+<style>@media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}} @keyframes wave{0%{d:path("M0 80 Q 170 20 340 80 T 680 80 L 680 160 L 0 160 Z")}50%{d:path("M0 80 Q 170 120 340 80 T 680 80 L 680 160 L 0 160 Z")}100%{d:path("M0 80 Q 170 20 340 80 T 680 80 L 680 160 L 0 160 Z")}} .wave{animation:wave 3s infinite ease-in-out}</style>
+<rect width="680" height="160" rx="16" fill="#0b1220"/>
+<path class="wave" fill="url(#gg)" d="M0 80 Q 170 20 340 80 T 680 80 L 680 160 L 0 160 Z"/>
+<defs><linearGradient id="gg" x1="0" x2="1"><stop offset="0" stop-color="#7c3aed"/><stop offset="0.5" stop-color="#06b6d4"/><stop offset="1" stop-color="#22c55e"/></linearGradient></defs>
+<text x="340" y="92" text-anchor="middle" fill="white" font-family="monospace" font-size="22" font-weight="800">gitEdit — склад крутого в git</text>
+<text x="340" y="114" text-anchor="middle" fill="#e2e8f0" font-family="monospace" font-size="11">capsule-render.vercel.app/api?type=waving&amp;color=gradient&amp;height=160</text>
+</svg>

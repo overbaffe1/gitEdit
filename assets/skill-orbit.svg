@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="180" viewBox="0 0 680 180" role="img">
+<title>Skill orbit</title><desc>orbiting icons 6s 8s 10s</desc>
+<style>@media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}} @keyframes spin{to{transform:rotate(360deg)}} .o1{animation:spin 6s linear infinite;transform-origin:340px 90px} .o2{animation:spin 8s linear infinite reverse;transform-origin:340px 90px} .o3{animation:spin 10s linear infinite;transform-origin:340px 90px}</style>
+<rect width="680" height="180" rx="16" fill="#0f172a"/>
+<text x="20" y="28" fill="#e2e8f0" font-family="monospace" font-size="12">SKILL ORBIT — self-hosted skillicons</text>
+<circle cx="340" cy="90" r="6" fill="#e2e8f0"/>
+<g class="o1"><circle cx="340" cy="36" r="14" fill="#0ea5e9"/><text x="340" y="40" text-anchor="middle" font-size="10">⚛️</text></g>
+<g class="o1"><circle cx="394" cy="90" r="14" fill="#f59e0b"/><text x="394" y="94" text-anchor="middle" font-size="10">🐍</text></g>
+<g class="o2"><circle cx="340" cy="136" r="14" fill="#22c55e"/><text x="340" y="140" text-anchor="middle" font-size="10">🐳</text></g>
+<g class="o2"><circle cx="286" cy="90" r="14" fill="#a78bfa"/><text x="286" y="94" text-anchor="middle" font-size="10">🦀</text></g>
+<g class="o3"><circle cx="370" cy="52" r="12" fill="#ec4899"/><text x="370" y="56" text-anchor="middle" font-size="9">JS</text></g>
+</svg>

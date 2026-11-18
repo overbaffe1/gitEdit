@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="140" viewBox="0 0 680 140" role="img">
+<title>Typing themes</title><desc>typing dots with 3 themes preview</desc>
+<style>@media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}} @keyframes blink{0%,49%{opacity:1}50%,100%{opacity:0}} .cur{animation:blink .8s infinite}</style>
+<rect width="680" height="140" rx="16" fill="#020617"/>
+<text x="20" y="28" fill="#94a3b8" font-family="monospace" font-size="11">TYPING-SVG — themes: radical · tokyonight · dracula</text>
+<text x="20" y="56" fill="#ff6b6b" font-family="monospace" font-size="14">Hello, I'm gitEdit</text><rect x="150" y="48" width="2" height="16" fill="#ff6b6b" class="cur"/>
+<text x="20" y="80" fill="#8be9fd" font-family="monospace" font-size="14">Склад крутого в git — копируй как есть</text><rect x="340" y="72" width="2" height="16" fill="#8be9fd" class="cur" style="animation-delay:.4s"/>
+<text x="20" y="104" fill="#50fa7b" font-family="monospace" font-size="14">Zero deps · SMIL only</text><rect x="170" y="96" width="2" height="16" fill="#50fa7b" class="cur" style="animation-delay:.8s"/>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="150" viewBox="0 0 680 150" role="img">
+<title>Streak vs trophy combo</title><desc>2 cards side by side</desc>
+<rect width="680" height="150" rx="16" fill="#0d1117"/>
+<text x="20" y="28" fill="#e6edf3" font-family="monospace" font-size="12">COMBO — streak + trophy + languages in one row</text>
+<g transform="translate(20,40)">
+  <rect width="200" height="80" rx="8" fill="#161b22" stroke="#30363d"/><text x="100" y="24" text-anchor="middle" fill="#238636" font-family="monospace" font-size="10">STREAK</text><text x="100" y="48" text-anchor="middle" fill="#e6edf3" font-family="monospace" font-size="16">34 days 🔥</text>
+  <g transform="translate(220,0)"><rect width="200" height="80" rx="8" fill="#161b22" stroke="#30363d"/><text x="100" y="24" text-anchor="middle" fill="#facc15" font-family="monospace" font-size="10">TROPHY SS</text><text x="100" y="48" text-anchor="middle" fill="#e6edf3" font-family="monospace" font-size="16">🏆 Legend</text></g>
+  <g transform="translate(440,0)"><rect width="200" height="80" rx="8" fill="#161b22" stroke="#30363d"/><text x="100" y="24" text-anchor="middle" fill="#58a6ff" font-family="monospace" font-size="10">LANGS</text><text x="100" y="48" text-anchor="middle" fill="#e6edf3" font-family="monospace" font-size="16">Py 42%</text></g>
+</g>
+</svg>

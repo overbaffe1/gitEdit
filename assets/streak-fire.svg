@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="170" viewBox="0 0 680 170" role="img">
+<title>Streak — fire</title><desc>current 34 longest 112 fire flicker 0.6s</desc>
+<style>@media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}} @keyframes flick{0%{transform:translateY(0) scale(1)}50%{transform:translateY(-2px) scale(1.04)}100%{transform:translateY(0) scale(1)}} .flame{animation:flick .6s infinite} @keyframes grow{from{width:0}to{width:100%}}</style>
+<rect width="680" height="170" rx="16" fill="#1a0a00"/>
+<text x="24" y="30" fill="#fdba74" font-family="monospace" font-size="12">STREAK STATS — keep the fire alive</text>
+<g font-family="monospace">
+  <rect x="16" y="44" width="320" height="96" rx="14" fill="#2a1500" stroke="#7c2d12"/>
+  <text x="28" y="68" fill="#fdba74" font-size="11">CURRENT STREAK</text>
+  <text x="28" y="104" fill="#fff7ed" font-size="36" font-weight="800">34</text>
+  <text x="96" y="104" fill="#fdba74" font-size="12">days</text>
+  <text class="flame" x="280" y="88" font-size="28">🔥</text>
+</g>
+<g font-family="monospace">
+  <rect x="348" y="44" width="320" height="96" rx="14" fill="#2a1500" stroke="#7c2d12"/>
+  <text x="360" y="68" fill="#fdba74" font-size="11">LONGEST STREAK</text>
+  <text x="360" y="104" fill="#fff7ed" font-size="36" font-weight="800">112</text>
+  <text x="430" y="104" fill="#fdba74" font-size="12">days</text>
+  <text x="600" y="88" font-size="22">🏆</text>
+  <text x="360" y="128" fill="#9ca3af" font-size="10">total 1.4k contributions · active 286 days</text>
+</g>
+</svg>

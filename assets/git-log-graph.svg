@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="150" viewBox="0 0 680 150" role="img">
+<title>Git log graph</title><desc>commit graph lines</desc>
+<style>@media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}} .line{stroke-dasharray:300;stroke-dashoffset:300;animation:draw 1s forwards} @keyframes draw{to{stroke-dashoffset:0}}</style>
+<rect width="680" height="150" rx="16" fill="#0f172a"/>
+<text x="20" y="28" fill="#e2e8f0" font-family="monospace" font-size="12">GIT LOG --graph --oneline</text>
+<g transform="translate(20,40)">
+  <circle r="4" cx="10" cy="10" fill="#22c55e"/><text x="24" y="14" fill="#e2e8f0" font-family="monospace" font-size="10">665320a Merge PR #24</text>
+  <circle r="4" cx="10" cy="30" fill="#38bdf8"/><text x="24" y="34" fill="#e2e8f0" font-family="monospace" font-size="10">79a218a Витрина x4 (neon/stadium)</text>
+  <circle r="4" cx="10" cy="50" fill="#a78bfa"/><text x="24" y="54" fill="#e2e8f0" font-family="monospace" font-size="10">4a860f5 Merge PR #23</text>
+  <path d="M10 14 L10 26 M10 34 L10 46" stroke="#334155" stroke-width="2" class="line"/>
+  <text x="300" y="90" fill="#64748b" font-family="monospace" font-size="9">reproduced from git log --graph · atlas/samples/commits.mmd → PNG</text>
+</g>
+</svg>

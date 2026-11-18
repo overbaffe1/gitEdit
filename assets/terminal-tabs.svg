@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="160" viewBox="0 0 680 160" role="img">
+<title>Terminal tabs</title><desc>tabs zsh + python + git</desc>
+<style>@media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}} .tab{animation:fade .4s forwards;opacity:0} @keyframes fade{to{opacity:1}} </style>
+<rect width="680" height="160" rx="16" fill="#0a0a0a"/>
+<text x="20" y="26" fill="#22c55e" font-family="monospace" font-size="11">TERMINAL TABS — zsh · python · git</text>
+<g transform="translate(20,36)">
+  <rect width="640" height="100" rx="8" fill="#1c1917" stroke="#44403c"/>
+  <g transform="translate(8,8)">
+    <rect width="60" height="18" rx="6" fill="#22c55e"/><text x="12" y="12" fill="white" font-family="monospace" font-size="8">zsh</text>
+    <rect x="68" width="60" height="18" rx="6" fill="#1e293b"/><text x="80" y="12" fill="#94a3b8" font-family="monospace" font-size="8">python</text>
+    <rect x="136" width="60" height="18" rx="6" fill="#1e293b"/><text x="148" y="12" fill="#94a3b8" font-family="monospace" font-size="8">git log</text>
+  </g>
+  <text x="12" y="50" fill="#86efac" font-family="monospace" font-size="10" class="tab" style="animation-delay:.2s">$ whoami → overbaffe1</text>
+  <text x="12" y="70" fill="#93c5fd" font-family="monospace" font-size="10" class="tab" style="animation-delay:.6s">$ cat stack.txt → py, ts, go …</text>
+  <text x="12" y="90" fill="#fde68a" font-family="monospace" font-size="10" class="tab" style="animation-delay:1s">$ git log --oneline → 665320a Merge PR #24</text>
+</g>
+</svg>

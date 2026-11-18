@@ -1,0 +1,4 @@
+from pathlib import Path
+svg='<svg xmlns="http://www.w3.org/2000/svg" width="680" height="140" viewBox="0 0 680 140" role="img">\n<title>Braille calendar</title><desc>braille 2x4 dots per day</desc>\n<rect width="680" height="140" rx="16" fill="#1a1a1a"/>\n<text x="20" y="28" fill="#e2e8f0" font-family="monospace" font-size="12">BRAILLE CALENDAR — 26 weeks as braille</text>\n<text x="20" y="56" fill="#a3a3a3" font-family="monospace" font-size="10">⠿ ⠾ ⠽ ⠷ ⠿ ⠿ ⠾ ⠿ ⠿ ⠿ ⠾ ⠿ ⠿ ⠿ ⠾ ⠿ ⠿ ⠾ ⠿ ⠿ ⠿ ⠾ ⠿ ⠿ ⠿ ⠾ </text>\n<text x="20" y="76" fill="#737373" font-family="monospace" font-size="8">2×4 dots = 1 day level 0-4 → braille U+2800-283F · Chafa idea</text>\n<text x="20" y="96" fill="#52525b" font-family="monospace" font-size="8">render-passes.py --stamp uses density ramp · this uses braille cells</text>\n</svg>\n'
+Path(__file__).resolve().parents[2].joinpath('assets','braille-calendar.svg').write_text(svg, encoding='utf-8')
+print('Wrote assets/braille-calendar.svg')

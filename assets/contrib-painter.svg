@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="160" viewBox="0 0 680 160" role="img">
+<title>Contrib painter</title><desc>paint your name with commits</desc>
+<style>@media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}} .cell{opacity:0;animation:pop .2s forwards} @keyframes pop{to{opacity:1}} </style>
+<rect width="680" height="160" rx="16" fill="#0d1117"/>
+<text x="20" y="28" fill="#e6edf3" font-family="monospace" font-size="12">CONTRIB PAINTER — write GIT with commits</text>
+<g transform="translate(20,44)">
+  <!-- G -->
+  <g>
+    <rect x="0" y="0" width="12" height="12" rx="2" fill="#161b22"/>
+    <rect x="14" y="0" width="12" height="12" rx="2" fill="#39d353" class="cell" style="animation-delay:.05s"/>
+    <rect x="28" y="0" width="12" height="12" rx="2" fill="#39d353" class="cell" style="animation-delay:.1s"/>
+    <rect x="0" y="14" width="12" height="12" rx="2" fill="#26a641" class="cell" style="animation-delay:.15s"/>
+    <rect x="0" y="28" width="12" height="12" rx="2" fill="#26a641" class="cell" style="animation-delay:.2s"/>
+    <rect x="0" y="42" width="12" height="12" rx="2" fill="#26a641" class="cell" style="animation-delay:.25s"/>
+    <rect x="14" y="42" width="12" height="12" rx="2" fill="#39d353" class="cell" style="animation-delay:.3s"/>
+    <rect x="28" y="42" width="12" height="12" rx="2" fill="#39d353" class="cell" style="animation-delay:.35s"/>
+    <rect x="28" y="28" width="12" height="12" rx="2" fill="#0e4429" class="cell" style="animation-delay:.4s"/>
+    <rect x="28" y="14" width="12" height="12" rx="2" fill="#006d32" class="cell" style="animation-delay:.45s"/>
+  </g>
+  <text x="70" y="20" fill="#e6edf3" font-family="monospace" font-size="14">GIT</text>
+  <text x="70" y="36" fill="#7d8590" font-family="monospace" font-size="9">github-contribution-grid-snake is one way · this is another: fake old commits to draw</text>
+  <text x="70" y="52" fill="#7d8590" font-family="monospace" font-size="8">tool: platane/github-contribution-graph-creator</text>
+</g>
+</svg>

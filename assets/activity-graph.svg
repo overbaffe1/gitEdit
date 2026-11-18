@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="180" viewBox="0 0 680 180" role="img">
+<title>Activity graph</title><desc>area chart 31 days line+points fade 0.6s</desc>
+<style>@media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}} .path{stroke-dasharray:900;stroke-dashoffset:900;animation:draw 1.2s forwards} @keyframes draw{to{stroke-dashoffset:0}} .dot{opacity:0;animation:fade .4s forwards} @keyframes fade{to{opacity:1}} </style>
+<rect width="680" height="180" rx="16" fill="#0f172a"/>
+<text x="20" y="28" fill="#e2e8f0" font-family="monospace" font-size="12">ACTIVITY GRAPH — last 31 days</text>
+<g transform="translate(20,40)">
+  <rect width="640" height="110" rx="10" fill="#020617" stroke="#1e293b"/>
+  <path class="path" d="M0 80 C 60 70, 120 40, 180 50 S 320 90, 400 30 S 560 20, 640 60" fill="none" stroke="#38bdf8" stroke-width="2.5"/>
+  <path d="M0 80 C 60 70, 120 40, 180 50 S 320 90, 400 30 S 560 20, 640 60 L 640 110 L 0 110 Z" fill="url(#g)" opacity="0.25"/>
+  <defs><linearGradient id="g" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#38bdf8"/><stop offset="1" stop-color="transparent"/></linearGradient></defs>
+  <g fill="#38bdf8">
+    <circle r="3" cx="80" cy="55" class="dot" style="animation-delay:.3s"/><circle r="3" cx="200" cy="48" class="dot" style="animation-delay:.5s"/>
+    <circle r="3" cx="400" cy="30" class="dot" style="animation-delay:.7s"/><circle r="3" cx="560" cy="40" class="dot" style="animation-delay:.9s"/>
+  </g>
+  <text x="0" y="130" fill="#64748b" font-family="monospace" font-size="9">Mon • 31 days • max 12 contribs</text>
+</g>
+</svg>

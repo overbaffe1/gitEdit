@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="180" viewBox="0 0 680 180" role="img">
+<title>Flower</title><desc>petals radial grow</desc>
+<style>@media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}} @keyframes bloom{from{transform:scale(0)}to{transform:scale(1)}} .petal{transform-origin:340px 92px;animation:bloom .6s forwards;transform:scale(0)}</style>
+<rect width="680" height="180" rx="16" fill="#fff7ed"/>
+<text x="20" y="28" fill="#7c2d12" font-family="monospace" font-size="12">FLOWER — each petal = one contribution day</text>
+<g>
+  <ellipse class="petal" cx="340" cy="52" rx="12" ry="26" fill="#f472b6" style="animation-delay:.0s;transform:rotate(0deg)"/>
+  <ellipse class="petal" cx="340" cy="52" rx="12" ry="26" fill="#a78bfa" style="animation-delay:.08s;transform:rotate(30deg)"/>
+  <ellipse class="petal" cx="340" cy="52" rx="12" ry="26" fill="#60a5fa" style="animation-delay:.16s;transform:rotate(60deg)"/>
+  <ellipse class="petal" cx="340" cy="52" rx="12" ry="26" fill="#34d399" style="animation-delay:.24s;transform:rotate(90deg)"/>
+  <ellipse class="petal" cx="340" cy="52" rx="12" ry="26" fill="#facc15" style="animation-delay:.32s;transform:rotate(120deg)"/>
+  <ellipse class="petal" cx="340" cy="52" rx="12" ry="26" fill="#fb7185" style="animation-delay:.40s;transform:rotate(150deg)"/>
+  <circle cx="340" cy="92" r="14" fill="#f59e0b" stroke="#7c2d12"/>
+</g>
+</svg>

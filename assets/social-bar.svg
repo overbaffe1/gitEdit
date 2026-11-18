@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="110" viewBox="0 0 680 110" role="img">
+<title>Social bar</title><desc>social icons row</desc>
+<style>@media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}} .ic{animation:pop .3s forwards;opacity:0;transform:translateY(6px)} @keyframes pop{to{opacity:1;transform:translateY(0)}}</style>
+<rect width="680" height="110" rx="16" fill="#020617"/>
+<text x="20" y="28" fill="#e2e8f0" font-family="monospace" font-size="12">SOCIAL BAR — linkedin · twitter · email · portfolio</text>
+<g transform="translate(20,40)">
+  <g class="ic" style="animation-delay:.05s"><rect width="80" height="28" rx="8" fill="#0A66C2"/><text x="40" y="18" text-anchor="middle" fill="white" font-family="monospace" font-size="10">in</text></g>
+  <g class="ic" style="animation-delay:.12s" transform="translate(88,0)"><rect width="80" height="28" rx="8" fill="#000"/><text x="40" y="18" text-anchor="middle" fill="white" font-family="monospace" font-size="10">𝕏</text></g>
+  <g class="ic" style="animation-delay:.19s" transform="translate(176,0)"><rect width="80" height="28" rx="8" fill="#EA4335"/><text x="40" y="18" text-anchor="middle" fill="white" font-family="monospace" font-size="10">mail</text></g>
+  <g class="ic" style="animation-delay:.26s" transform="translate(264,0)"><rect width="80" height="28" rx="8" fill="#22c55e"/><text x="40" y="18" text-anchor="middle" fill="white" font-family="monospace" font-size="10">web</text></g>
+  <text x="0" y="56" fill="#64748b" font-family="monospace" font-size="9">badges via shields.io + simpleIcons — link each to your profile</text>
+</g>
+</svg>

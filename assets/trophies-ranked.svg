@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="180" viewBox="0 0 680 180" role="img">
+<title>Trophies ranked SS S A B</title><desc>4 ranks with glow</desc>
+<style>@media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}} @keyframes glow{0%,100%{filter:drop-shadow(0 0 4px var(--c))}50%{filter:drop-shadow(0 0 10px var(--c))}} .t{animation:glow 1.4s infinite}</style>
+<rect width="680" height="180" rx="16" fill="#0a0a0f"/>
+<text x="20" y="28" fill="#e2e8f0" font-family="monospace" font-size="12">TROPHY RANKS — SS·S·A·B·C · github-profile-trophy</text>
+<g transform="translate(20,40)">
+  <g class="t" style="--c:#facc15"><rect width="150" height="90" rx="12" fill="#422006" stroke="#facc15"/><text x="75" y="44" text-anchor="middle" font-size="28">🏆</text><text x="75" y="64" text-anchor="middle" fill="#facc15" font-family="monospace" font-size="12">SS</text><text x="75" y="78" text-anchor="middle" fill="#fde68a" font-family="monospace" font-size="8">Legend</text></g>
+  <g class="t" style="--c:#e5e7eb;animation-delay:.2s" transform="translate(166,0)"><rect width="150" height="90" rx="12" fill="#1f2937" stroke="#e5e7eb"/><text x="75" y="44" text-anchor="middle" font-size="28">🥇</text><text x="75" y="64" text-anchor="middle" fill="#e5e7eb" font-family="monospace" font-size="12">S</text><text x="75" y="78" text-anchor="middle" fill="#9ca3af" font-family="monospace" font-size="8">Star Gazer</text></g>
+  <g class="t" style="--c:#60a5fa;animation-delay:.4s" transform="translate(332,0)"><rect width="150" height="90" rx="12" fill="#0c4a6e" stroke="#60a5fa"/><text x="75" y="44" text-anchor="middle" font-size="28">🥈</text><text x="75" y="64" text-anchor="middle" fill="#60a5fa" font-family="monospace" font-size="12">A</text><text x="75" y="78" text-anchor="middle" fill="#93c5fd" font-family="monospace" font-size="8">Pusher</text></g>
+  <g class="t" style="--c:#a78bfa;animation-delay:.6s" transform="translate(498,0)"><rect width="150" height="90" rx="12" fill="#1e1b4b" stroke="#a78bfa"/><text x="75" y="44" text-anchor="middle" font-size="28">🥉</text><text x="75" y="64" text-anchor="middle" fill="#a78bfa" font-family="monospace" font-size="12">B</text><text x="75" y="78" text-anchor="middle" fill="#c4b5fd" font-family="monospace" font-size="8">Contributor</text></g>
+</g>
+</svg>

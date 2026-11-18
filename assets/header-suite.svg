@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="130" viewBox="0 0 680 130" role="img">
+<title>Header banner suite</title><desc>4 header styles</desc>
+<rect width="680" height="130" rx="16" fill="#020617"/>
+<text x="20" y="28" fill="#e2e8f0" font-family="monospace" font-size="12">HEADER SUITE — 4 ready headers: waving / slice / shark / transparent</text>
+<g transform="translate(20,40)" font-family="monospace" font-size="10">
+  <rect width="150" height="32" rx="8" fill="#7c3aed"/><text x="75" y="20" text-anchor="middle" fill="white">waving</text>
+  <g transform="translate(160,0)"><path d="M0 0 L150 0 L130 32 L0 32 Z" fill="#06b6d4"/><text x="70" y="20" text-anchor="middle" fill="white">slice</text></g>
+  <g transform="translate(320,0)"><rect width="150" height="32" rx="16" fill="#e11d48"/><text x="75" y="20" text-anchor="middle" fill="white">shark</text></g>
+  <g transform="translate(480,0)"><rect width="150" height="32" rx="8" fill="transparent" stroke="#e2e8f0"/><text x="75" y="20" text-anchor="middle" fill="#e2e8f0">transparent</text></g>
+  <text x="0" y="64" fill="#64748b" font-size="9">capsule-render.vercel.app/api?type=waving&amp;color=gradient&amp;height=200&amp;text=Hello&amp;animation=fadeIn</text>
+</g>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="140" viewBox="0 0 680 140" role="img">
+<title>Quote card</title><desc>quote typing cursor 0.8s blink</desc>
+<style>@media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}} @keyframes blink{0%,49%{opacity:1}50%,100%{opacity:0}} .cur{animation:blink .8s infinite} @keyframes type{from{width:0}to{width:100%}} .line{overflow:hidden;white-space:nowrap;animation:type 2s steps(60) forwards}</style>
+<rect width="680" height="140" rx="16" fill="#0f172a" stroke="#1e293b"/>
+<text x="24" y="36" fill="#94a3b8" font-family="monospace" font-size="11">QUOTE — programming quote · github-cards.onrender.com</text>
+<text x="24" y="68" fill="#e2e8f0" font-family="serif" font-size="15" font-style="italic">"Code is like humor. When you have to explain it, it's bad."</text>
+<text x="24" y="90" fill="#38bdf8" font-family="monospace" font-size="11">— Cory House</text>
+<rect x="140" y="84" width="2" height="14" fill="#e2e8f0" class="cur"/>
+<text x="520" y="118" fill="#64748b" font-family="monospace" font-size="9">theme=dark · random on each request</text>
+</svg>

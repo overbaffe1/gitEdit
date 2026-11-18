@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="120" viewBox="0 0 680 120" role="img">
+<title>Profile views counter</title><desc>eye blink 3s counter</desc>
+<style>@media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}} @keyframes blink{0%,90%,100%{transform:scaleY(1)}95%{transform:scaleY(.1)}} .eye{animation:blink 3s infinite} @keyframes tick{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}} .n{animation:tick .5s forwards}</style>
+<rect width="680" height="120" rx="16" fill="#020617"/>
+<text x="20" y="28" fill="#e2e8f0" font-family="monospace" font-size="12">PROFILE VIEWS — komarev.com/ghpvc</text>
+<g transform="translate(20,40)">
+  <rect width="220" height="60" rx="12" fill="#0f172a" stroke="#1e293b"/>
+  <text x="18" y="38" font-size="28" class="eye">👁️</text>
+  <text x="64" y="38" fill="#f8fafc" font-family="monospace" font-size="22" font-weight="800" class="n">3.4k</text>
+  <text x="64" y="52" fill="#64748b" font-family="monospace" font-size="9">views</text>
+  <text x="124" y="38" fill="#22c55e" font-family="monospace" font-size="10">▲ 12 today</text>
+</g>
+<text x="260" y="62" fill="#94a3b8" font-family="monospace" font-size="10">?username=you&amp;label=Profile+views&amp;color=0e75b6&amp;style=flat</text>
+</svg>

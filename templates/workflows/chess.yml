@@ -1,0 +1,14 @@
+# Chess — игра прямо в README через Issues
+name: Chess
+on:
+  issues: {types: [opened]}
+  issue_comment: {types: [created]}
+jobs:
+  chess:
+    runs-on: ubuntu-latest
+    if: contains(github.event.issue.labels.*.name, 'chess')
+    steps:
+      - uses: actions/checkout@v4
+      - uses: marcizhu/readme-chess@master
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
