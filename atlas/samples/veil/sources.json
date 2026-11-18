@@ -1,0 +1,147 @@
+[
+  {
+    "repo": "LessonStudio/VisualCryptography",
+    "commit": "a57e63c89d915a8408d5b40f6f567ba7b8daecbc",
+    "readme": "README.md",
+    "url": "https://github.com/LessonStudio/VisualCryptography/blob/a57e63c89d915a8408d5b40f6f567ba7b8daecbc/README.md",
+    "candidates": [
+      "visual_cryptography.py"
+    ],
+    "status": "README screening",
+    "source_file": "visual_cryptography.py",
+    "source_url": "https://github.com/LessonStudio/VisualCryptography/blob/a57e63c89d915a8408d5b40f6f567ba7b8daecbc/visual_cryptography.py"
+  },
+  {
+    "repo": "srajat/Visual-Cryptography-Using-K-N-Secret-Sharing",
+    "commit": "0dc5d1279177c02846ec63b435785c31a10468bd",
+    "readme": "README.md",
+    "url": "https://github.com/srajat/Visual-Cryptography-Using-K-N-Secret-Sharing/blob/0dc5d1279177c02846ec63b435785c31a10468bd/README.md",
+    "candidates": [
+      "decryptgui.m",
+      "encryptgui.m",
+      "imageProcess.m",
+      "keyGen.m",
+      "kn_decrypt.m",
+      "kn_encrypt.m",
+      "knshare.m",
+      "pixToRGB.m",
+      "randomPlace.m",
+      "test.m"
+    ],
+    "status": "README screening"
+  },
+  {
+    "repo": "Shree987/Visual-Cryptography",
+    "commit": "58b36c0d684d473af4f81e91f48ceaca1bb776d3",
+    "readme": "README.md",
+    "url": "https://github.com/Shree987/Visual-Cryptography/blob/58b36c0d684d473af4f81e91f48ceaca1bb776d3/README.md",
+    "candidates": [
+      "AES-VC/main.py",
+      "Binary Images/BinaryMetrics.py",
+      "Binary Images/ModularArithmetic_Implementation.py",
+      "Binary Images/PixelExpansion_Implementation.py",
+      "Binary Images/XOR_Implementation.py",
+      "Colour Images/ColourMetrics.py",
+      "Colour Images/HalftoneCMYKDecomposition_Implementation.py",
+      "Colour Images/ModularArithmetic_Implementation.py",
+      "Colour Images/XOR_Implementation.py",
+      "Grayscale Images/BitLevelDecomposition_Implementation.py",
+      "Grayscale Images/GrayscaleMetrics.py",
+      "Grayscale Images/ModularArithmetic_Implementation.py",
+      "Grayscale Images/XOR_Implementation.py",
+      "utils/ncorr.py",
+      "utils/psnr.py"
+    ],
+    "status": "README screening",
+    "source_file": "Binary Images/PixelExpansion_Implementation.py",
+    "source_url": "https://github.com/Shree987/Visual-Cryptography/blob/58b36c0d684d473af4f81e91f48ceaca1bb776d3/Binary%20Images/PixelExpansion_Implementation.py"
+  },
+  {
+    "repo": "mehrdad3301/visual-cryptography",
+    "commit": "4a32e08d4b030c0394f80f4e26f478a958140a5d",
+    "readme": "README.md",
+    "url": "https://github.com/mehrdad3301/visual-cryptography/blob/4a32e08d4b030c0394f80f4e26f478a958140a5d/README.md",
+    "candidates": [],
+    "status": "README screening"
+  },
+  {
+    "repo": "rn-snehapriya/Image-Encryption-Using-AES-and-Visual-Cryptography",
+    "commit": "33ab5170277ac9b126e5ce288425e54c42fcc4fc",
+    "readme": "README.md",
+    "url": "https://github.com/rn-snehapriya/Image-Encryption-Using-AES-and-Visual-Cryptography/blob/33ab5170277ac9b126e5ce288425e54c42fcc4fc/README.md",
+    "candidates": [],
+    "status": "README screening"
+  },
+  {
+    "repo": "ryanfox/visual-cryptography",
+    "commit": "bf1289f6a3e765a326053f4f228f9b44e36c28bd",
+    "readme": "README.rst",
+    "url": "https://github.com/ryanfox/visual-cryptography/blob/bf1289f6a3e765a326053f4f228f9b44e36c28bd/README.rst",
+    "candidates": [
+      "generate.py",
+      "show.py"
+    ],
+    "status": "README screening",
+    "source_file": "generate.py",
+    "source_url": "https://github.com/ryanfox/visual-cryptography/blob/bf1289f6a3e765a326053f4f228f9b44e36c28bd/generate.py"
+  },
+  {
+    "repo": "yanbinhit/GrayscaleVisualCryptography",
+    "commit": "041d114a2dea382dc81e61e897c7e2349a603686",
+    "readme": "README.md",
+    "url": "https://github.com/yanbinhit/GrayscaleVisualCryptography/blob/041d114a2dea382dc81e61e897c7e2349a603686/README.md",
+    "candidates": [
+      "BasicVc/HalftoningED.m",
+      "BasicVc/ItoFun.m",
+      "BasicVc/ItoFunTest2.m",
+      "BasicVc/Naor22.m",
+      "BasicVc/Naor22Test.m",
+      "BasicVc/ProbYang_33.m",
+      "BasicVc/ProbYang_33Test.m",
+      "BasicVc/RandomGridChenTsao2009nn.m",
+      "BasicVc/RandomGridChenTsao2009nnTest.m",
+      "BasicVc/RandomGridKafri.m",
+      "BasicVc/RandomGridKafriTest.m",
+      "ExtendedVc/AbpSipLocatoins2outof2Random.m",
+      "ExtendedVc/AbpSipLocatoins2outof2Random2sips.m",
+      "ExtendedVc/ExtendedVcNaorShamir1994.m",
+      "ExtendedVc/FindOptimalStackBlack.m",
+      "ExtendedVc/FindOptimalStackBlackTest.m",
+      "ExtendedVc/FindOptimalStackWhite.m",
+      "ExtendedVc/FindOptimalWhiteStackTest.m",
+      "ExtendedVc/FrgvssChen2011.m",
+      "ExtendedVc/FrgvssChen2011Test.m",
+      "ExtendedVc/HalftoneVcViaErrorDiff2.m",
+      "ExtendedVc/HalftoneVcViaErrorDiff2Auth.m",
+      "ExtendedVc/HalftoneVcViaErrorDiff2Auth2sips.m",
+      "ExtendedVc/HalftoneVcViaErrorDiff2Auth2sipsBatchTest.m",
+      "ExtendedVc/HalftoneVcViaErrorDiff2_2outof2.m",
+      "ExtendedVc/HalftoningED.m",
+      "ExtendedVc/LouPixelSwap2011.m",
+      "ExtendedVc/LouPixelSwap2011Test.m",
+      "Halftone/BilevelQuantizerDemo.m",
+      "Halftone/ClusteredDotExample.m",
+      "Halftone/DispersedDotExample.m",
+      "Halftone/DisplayDitherMatrix.m",
+      "Halftone/ErrorDiffErrorImage.m",
+      "Halftone/ErrorDiffusionExample.m",
+      "Halftone/HalftoningED.m",
+      "Halftone/HalftoningEdJarvis.m",
+      "ProbRg/BlueNoiseRnbed.m",
+      "ProbRg/BlueNoiseRnbedTest.m",
+      "ProbRg/HalftoningED.m",
+      "ProbRg/RandomGridChenTsao2009nn.m",
+      "ProbRg/RandomGridChenTsao2009nnTest.m",
+      "ProbRg/RandomGridKafri.m",
+      "ProbRg/RandomGridKafriTest.m",
+      "ProbRg/RandomGridRnbed_2n.m",
+      "ProbRg/RandomGridRnbed_2nFunTest.m",
+      "RunMeFirst.m"
+    ],
+    "status": "README screening"
+  },
+  {
+    "repo": "vanithavijaykumar/Secure-Data-Sharing-using-Visual-Cryptography",
+    "status": "lookup failed, excluded"
+  }
+]
