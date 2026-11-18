@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="160" viewBox="0 0 680 160" role="img">
+<title>Calendar heatmap detailed</title><desc>calendar full history</desc>
+<rect width="680" height="160" rx="16" fill="#0f172a"/>
+<text x="20" y="28" fill="#e2e8f0" font-family="monospace" font-size="12">CALENDAR — Full history · 2008→now · lowlighter/metrics plugin_calendar</text>
+<g transform="translate(20,44)">
+  <rect width="640" height="80" rx="8" fill="#020617" stroke="#1e293b"/>
+  <g transform="translate(10,10)" font-family="monospace" font-size="8">
+    <text x="0" y="12" fill="#7d8590">2008</text><rect x="36" y="2" width="8" height="8" rx="1" fill="#0e4429"/><rect x="46" y="2" width="8" height="8" rx="1" fill="#006d32"/>
+    <text x="0" y="28" fill="#7d8590">2024</text><rect x="36" y="18" width="8" height="8" rx="1" fill="#26a641"/><rect x="46" y="18" width="8" height="8" rx="1" fill="#39d353"/>
+    <text x="0" y="44" fill="#7d8590">2025</text><rect x="36" y="34" width="8" height="8" rx="1" fill="#9be9a8"/><rect x="46" y="34" width="8" height="8" rx="1" fill="#ebedf0"/>
+  </g>
+  <text x="14" y="66" fill="#475569" font-family="monospace" font-size="7">plugin_calendar: current year | full history</text>
+</g>
+</svg>

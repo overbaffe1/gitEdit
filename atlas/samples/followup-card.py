@@ -1,0 +1,4 @@
+from pathlib import Path
+svg='<svg xmlns="http://www.w3.org/2000/svg" width="680" height="150" viewBox="0 0 680 150" role="img">\n<title>Followup</title><desc>issues PR followup</desc>\n<rect width="680" height="150" rx="16" fill="#0f172a"/>\n<text x="20" y="28" fill="#e2e8f0" font-family="monospace" font-size="12">FOLLOWUP — issues &amp; PRs created on your repos / by you</text>\n<g transform="translate(20,44)">\n  <rect width="640" height="70" rx="8" fill="#020617" stroke="#1e293b"/>\n  <text x="14" y="22" fill="#22c55e" font-family="monospace" font-size="10">● Open 12  ● Merged 34  ● Closed 8</text>\n  <text x="14" y="38" fill="#7d8590" font-family="monospace" font-size="9">lowlighter/metrics plugin_followup: indepth analysis</text>\n</g>\n</svg>\n'
+Path(__file__).resolve().parents[2].joinpath('assets','followup-card.svg').write_text(svg, encoding='utf-8')
+print('Wrote assets/followup-card.svg')

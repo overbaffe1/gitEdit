@@ -1,0 +1,4 @@
+from pathlib import Path
+svg='<svg xmlns="http://www.w3.org/2000/svg" width="680" height="150" viewBox="0 0 680 150" role="img">\n<title>Reactions</title><desc>comment reactions</desc>\n<rect width="680" height="150" rx="16" fill="#1a1a1a"/>\n<text x="20" y="28" fill="#e6edf3" font-family="monospace" font-size="12">REACTIONS — 🎉 ❤️ 🚀 👀 from your comments</text>\n<g transform="translate(20,44)">\n  <rect width="640" height="70" rx="8" fill="#0d1117" stroke="#303030"/>\n  <text x="14" y="26" fill="#e6edf3" font-family="monospace" font-size="12">🎉 42  ❤️ 128  🚀 34  👀 56  👍 89</text>\n  <text x="14" y="44" fill="#7d8590" font-family="monospace" font-size="9">lowlighter/metrics plugin_reactions · related to user / repo</text>\n</g>\n</svg>\n'
+Path(__file__).resolve().parents[2].joinpath('assets','reactions-card.svg').write_text(svg, encoding='utf-8')
+print('Wrote assets/reactions-card.svg')

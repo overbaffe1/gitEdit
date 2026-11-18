@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="180" viewBox="0 0 680 180" role="img">
+<title>Achievements</title><desc>achievements compact + detailed</desc>
+<style>@media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}} .a{opacity:0;animation:pop .4s forwards} @keyframes pop{to{opacity:1}} </style>
+<rect width="680" height="180" rx="16" fill="#0d1117"/>
+<text x="20" y="28" fill="#e6edf3" font-family="monospace" font-size="12">ACHIEVEMENTS — compact + detailed · lowlighter/metrics plugin_achievements</text>
+<g transform="translate(20,44)">
+  <g class="a" style="animation-delay:.05s"><rect width="110" height="70" rx="8" fill="#1a1a1a" stroke="#facc15"/><text x="55" y="26" text-anchor="middle" font-size="20">🏆</text><text x="55" y="46" text-anchor="middle" fill="#e6edf3" font-family="monospace" font-size="9">Arctic Code</text><text x="55" y="58" text-anchor="middle" fill="#7d8590" font-family="monospace" font-size="7">Vault</text></g>
+  <g class="a" style="animation-delay:.15s" transform="translate(122,0)"><rect width="110" height="70" rx="8" fill="#1a1a1a" stroke="#e5e7eb"/><text x="55" y="26" text-anchor="middle" font-size="20">⭐</text><text x="55" y="46" text-anchor="middle" fill="#e6edf3" font-family="monospace" font-size="9">Starstruck</text><text x="55" y="58" text-anchor="middle" fill="#7d8590" font-family="monospace" font-size="7">128 stars</text></g>
+  <g class="a" style="animation-delay:.25s" transform="translate(244,0)"><rect width="110" height="70" rx="8" fill="#1a1a1a" stroke="#60a5fa"/><text x="55" y="26" text-anchor="middle" font-size="20">💬</text><text x="55" y="46" text-anchor="middle" fill="#e6edf3" font-family="monospace" font-size="9">Quickdraw</text><text x="55" y="58" text-anchor="middle" fill="#7d8590" font-family="monospace" font-size="7">&lt;5min issue</text></g>
+  <g class="a" style="animation-delay:.35s" transform="translate(366,0)"><rect width="110" height="70" rx="8" fill="#1a1a1a" stroke="#a78bfa"/><text x="55" y="26" text-anchor="middle" font-size="20">🤝</text><text x="55" y="46" text-anchor="middle" fill="#e6edf3" font-family="monospace" font-size="9">Pair Extra</text><text x="55" y="58" text-anchor="middle" fill="#7d8590" font-family="monospace" font-size="7">Co-authored</text></g>
+</g>
+</svg>

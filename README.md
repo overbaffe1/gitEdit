@@ -780,6 +780,30 @@ https://github.com/user-attachments/assets/031799d1-740d-4cda-90cf-689513fa9860
 
 **Combo Card** — 3 в 1: `STREAK 34 / TROPHY SS / LANGS Py 42%`. [Файл](assets/combo-card.svg) · `python3 atlas/samples/combo-card.py` · как [githubcard.com](https://githubcard.com) объединяет виджеты в один
 
+<p align="center"><a href="assets/achievements-compact.svg"><img src="assets/achievements-compact.svg" width="680" alt="Achievements — 4 карточки арктик звёзды."></a></p>
+
+**Achievements** — `Arctic Code / Starstruck / Quickdraw / Pair Extra` `pop .4с`. [Файл](assets/achievements-compact.svg) · `python3 atlas/samples/achievements-compact.py` · `lowlighter/metrics plugin_achievements`
+
+<p align="center"><a href="assets/calendar-full.svg"><img src="assets/calendar-full.svg" width="680" alt="Calendar full — 2008→now."></a></p>
+
+**Calendar Full** — Full history 2008→now, 3 эпохи `ebedf0→216e39`. [Файл](assets/calendar-full.svg) · `python3 atlas/samples/calendar-full.py` · `plugin_calendar: full history`
+
+<p align="center"><a href="assets/notable-contrib.svg"><img src="assets/notable-contrib.svg" width="680" alt="Notable contributions — orgs."></a></p>
+
+**Notable** — `torvalds/linux 12 commits` `ms/vscode 42 PRs` — indepth vs recent. [Файл](assets/notable-contrib.svg) · `python3 atlas/samples/notable-contrib.py` · `plugin_notable`
+
+<p align="center"><a href="assets/followup-card.svg"><img src="assets/followup-card.svg" width="680" alt="Followup — issues PRs."></a></p>
+
+**Followup** — `Open 12 / Merged 34` issues & PR followup. [Файл](assets/followup-card.svg) · `python3 atlas/samples/followup-card.py` · `plugin_followup`
+
+<p align="center"><a href="assets/reactions-card.svg"><img src="assets/reactions-card.svg" width="680" alt="Reactions — эмодзи реакции."></a></p>
+
+**Reactions** — `🎉 42 ❤️128 🚀34` comment reactions. [Файл](assets/reactions-card.svg) · `python3 atlas/samples/reactions-card.py` · `plugin_reactions`
+
+<p align="center"><a href="assets/stats-selfhosted.svg"><img src="assets/stats-selfhosted.svg" width="680" alt="Self-hosted stats — GraphQL stdlib."></a></p>
+
+**Self-hosted Stats** — `665320a` ★repos contribs, чистый `urllib` без Vercel, `GITHUB_TOKEN` optional. [Файл](assets/stats-selfhosted.svg) + [langs-selfhosted.svg](assets/langs-selfhosted.svg) · `GITHUB_TOKEN=xxx python3 atlas/samples/render-stats-cards.py` · идея [Sagargupta16/github-stats-card-action](https://github.com/Sagargupta16/github-stats-card-action) + [khoshold/simple-github-readme-stats](https://github.com/kboshold/simple-github-readme-stats)
+
 > Синий 3D-просмотрщик уже есть — это [кристалл в STL](assets/crystal.stl). Открой его в GitHub, он крутится прямо на странице без твоего кода. Новые штуки выше — такая же идея: открыл файл и смотри, без установок. Хочешь анимированную шапку извне — бери [волну+печаталку](templates/ANIMATED-HEADER-TEMPLATE.md).
 
 ### Склад одной строкой
