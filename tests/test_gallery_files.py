@@ -37,22 +37,31 @@ def fence_languages(markdown):
 
 
 class GalleryFilesTest(unittest.TestCase):
-    def test_home_starts_with_art_and_reads_without_clicks(self):
+    def test_home_starts_with_art_and_only_recipes_start_closed(self):
         lines = [value for kind, value in markdown_parts(README.read_text()) if kind == 'line']
         self.assertTrue(lines[0].startswith('<p align="center"><a href="assets/night-shift/fold.gif">'))
+        in_recipes = False
+        recipe_groups = 0
         depth = 0
         for line in lines:
-            if line.startswith('<details'):
-                self.assertRegex(line, r'^<details\s+open\s*>$')  # no exclusive group or closed disclosure
+            if re.match(r'^#{1,3} ', line):
+                in_recipes = line == '### Рецепты GitHub Markdown'
+                if line.startswith('## ') or in_recipes:
+                    self.assertEqual(depth, 0, line)  # no gallery-wide or recipes-wide wrapper
+            elif line.startswith('<details'):
+                if in_recipes:
+                    self.assertEqual(line, '<details>')
+                    recipe_groups += 1
+                else:
+                    self.assertRegex(line, r'^<details\s+open\s*>$')
                 depth += 1
             elif line.startswith('</details>'):
                 depth -= 1
                 self.assertGreaterEqual(depth, 0)
-            elif line.startswith('## '):
-                self.assertEqual(depth, 0, line)  # no gallery-wide wrapper
         self.assertEqual(depth, 0)
+        self.assertGreater(recipe_groups, 0)
         self.assertFalse({'# gitEdit', '## Как взять шапку', '## Образцы Markdown'}.intersection(lines))
-        self.assertTrue({'## Палитра Markdown', '## Исходники README', '### Рецепты GitHub Markdown'} <= set(lines))
+        self.assertTrue({'## Палитра Markdown', '## Исходники README'} <= set(lines))
         live = '\n'.join(lines)
         self.assertNotIn('issues/new?template=readme-block.yml', live)
         self.assertNotIn('templates/blocks/header.md', live)
