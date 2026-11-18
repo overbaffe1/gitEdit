@@ -1,0 +1,22 @@
+step,operation,source_area,stack_before,stack_after,stdout,blocked_attempts
+0,push,7,[],[7],,0
+1,push,10,[7],"[7, 10]",,0
+2,multiply,1,"[7, 10]",[70],,0
+3,push,1,[70],"[70, 1]",,0
+4,add,1,"[70, 1]",[71],,0
+5,outchar,1,[71],[],G,0
+6,push,8,[],[8],G,0
+7,push,9,[8],"[8, 9]",G,0
+8,multiply,1,"[8, 9]",[72],G,0
+9,push,1,[72],"[72, 1]",G,0
+10,add,1,"[72, 1]",[73],G,0
+11,outchar,1,[73],[],GI,0
+12,push,7,[],[7],GI,0
+13,push,12,[7],"[7, 12]",GI,0
+14,multiply,1,"[7, 12]",[84],GI,0
+15,outchar,1,[84],[],GIT,0
+16,push,1,[],[1],GIT,0
+17,pointer,1,[1],[],GIT,0
+18,pop,1,[],[],GIT,0
+19,pop,1,[],[],GIT,0
+20,halt,25,[],[],GIT,8

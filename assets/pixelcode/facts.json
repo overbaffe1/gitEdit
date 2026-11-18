@@ -1,0 +1,12 @@
+{
+  "format": "Piet source, 1 pixel = 1 codel",
+  "width": 22,
+  "height": 14,
+  "output": "GIT",
+  "transitions": 20,
+  "halt_block_area": 25,
+  "halt_blocked_exits": 8,
+  "stack_at_halt": [],
+  "sha256": "44cd98ccd76fff039a5738d6b26a1614b4ebec56f3c681c605659b48b8ac4e93",
+  "runner_scope": "Only six commands used by this program; colored blocks and black. No white, input, or general Piet conformance claim."
+}

@@ -972,6 +972,23 @@ Marching squares соединяет точки одинаковой **яркос
 
 **Собрать:** `python3 atlas/samples/motion_formats/generate.py` после установки [Pillow из requirements](atlas/samples/motion_formats/requirements.txt). [Генератор](atlas/samples/motion_formats/generate.py) · [разбор форматов и рецепт переноса](atlas/motion-formats.md). Чужие картинки, модели, шрифты и серверы не используются. Старые залы ниже сохранены.
 
+## Пиксельный код · этот PNG печатает GIT
+
+<p align="center"><a href="assets/pixelcode/program-24x.png"><picture>
+  <source media="(prefers-reduced-motion: reduce)" srcset="assets/pixelcode/poster.png">
+  <img src="assets/pixelcode/execution.gif" width="960" alt="Трасса исполнения цветной Piet-программы: подсветка блока, текущая команда, стек и вывод. Цветные области вычисляют числа 71, 73, 84 и печатают GIT. Открыть увеличенный исходный PNG без подписей.">
+</picture></a></p>
+
+Не QR-код и не схема поверх исходника: **сами цветные пиксели — программа на языке Piet**. Переход цвета задаёт команду, площадь блока — число для `push`, чёрное поле — стену. Лента вычисляет `7 × 10 + 1`, `8 × 9 + 1` и `7 × 12`, затем печатает соответствующие символы: **`GIT`**.
+
+[Настоящий исходник — PNG 22 × 14](assets/pixelcode/program.png?raw=true) · [тот же код крупнее, codel = 24 px](assets/pixelcode/program-24x.png) · [трасса CSV](assets/pixelcode/trace.csv) · [без движения](assets/pixelcode/poster.png).
+
+В конце — не таймер анимации, а настоящая остановка: у квадратного блока все **восемь выходов DP/CC заблокированы**. PNG проверен и своим учебным исполнителем, и независимым интерпретатором из исследованного проекта: оба выводят `GIT` и завершаются. GIF построен по реальной трассе; обводки и подписи есть только в превью, не в исходном коде.
+
+Запустить после установки [Pillow](atlas/samples/pixelcode/requirements.txt): `python3 atlas/samples/pixelcode/runner.py assets/pixelcode/program.png`. Учебный runner поддерживает только шесть нужных здесь команд, **не весь Piet**. В GitHub картинка сама не исполняется: для запуска нужен отдельный интерпретатор. JPEG, сглаживание и произвольное изменение палитры могут сломать программу.
+
+[Восемь исследованных проектов, устройство ловушки и независимая проверка](atlas/pixelcode.md) · [генератор](atlas/samples/pixelcode/generate.py) · [исполнитель](atlas/samples/pixelcode/runner.py). Чужие программы и рисунки не переносились; код картинки и трассировка свои.
+
 ## Скрытый рельеф · объём из одной неподвижной картинки
 
 <p align="center"><a href="assets/stereogram/proof.png"><img src="assets/stereogram/stereogram.png" width="960" alt="Цветная случайно-точечная автостереограмма. В ней закодированы выпуклое кольцо и маленький спутник справа сверху. Нажми, чтобы увидеть карту глубины и независимое восстановление."></a></p>
