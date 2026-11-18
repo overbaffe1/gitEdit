@@ -31,7 +31,7 @@ def fence_languages(markdown):
 
 
 class GalleryFilesTest(unittest.TestCase):
-    def test_scene_labels_and_tickets_open_the_right_files(self):
+    def test_triptych_and_tickets_open_the_right_files(self):
         stops = ['fold.gif', 'weeks-tape.svg', 'moth-projector.svg']
         pictures = dict(zip(['bench-glass.jpg', 'bench-tape.jpg', 'bench-film.jpg'], stops))
         pictures.update({'ticket-fold.svg': stops[1], 'ticket-tape.svg': stops[2], 'ticket-moth.svg': 'bench-master.jpg'})
@@ -41,8 +41,14 @@ class GalleryFilesTest(unittest.TestCase):
             for name, dest in pictures.items():
                 with self.subTest(path=path, picture=name):
                     self.assertEqual((path.parent / cards[name]).resolve(), ART / 'night-shift' / dest)
-            labels = re.findall(r'\[0[123] · [^\]]+\]\(([^)]+)\)', text.split('\n## ', 1)[0])
-            self.assertEqual([(path.parent / u).resolve() for u in labels], [ART / 'night-shift' / f for f in stops])
+            top = text.split('\n## ', 1)[0]
+            # A single unbroken row, not three numbered calls to action.
+            row, = re.findall(r'<p align="center">([^\n]+)</p>', top)
+            self.assertEqual(row.count('</a><a '), 2)
+            self.assertEqual(row.count('width="33%"'), 3)
+            self.assertEqual(re.findall(r'bench-(glass|tape|film)\.jpg', row), ['glass', 'tape', 'film'])
+            self.assertNotRegex(top, r'Выбери прибор|# Ночная смена|\[0[123] ·')
+            self.assertIn('bench-master.jpg)', top)
 
     def test_no_authored_exhibit_links_to_readme_fragments(self):
         # Scan our authored links, including copyable snippets, not GitHub-generated

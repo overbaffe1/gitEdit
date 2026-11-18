@@ -1,16 +1,21 @@
-# Ночная смена
+<p align="center"><a href="assets/night-shift/fold.gif"><img src="assets/night-shift/bench-glass.jpg" width="33%" alt="Слева: бумажный кристалл под лампой — анимация сгиба"></a><a href="assets/night-shift/weeks-tape.svg"><img src="assets/night-shift/bench-tape.jpg" width="33%" alt="В центре: латунный считыватель — лист перфоленты"></a><a href="assets/night-shift/moth-projector.svg"><img src="assets/night-shift/bench-film.jpg" width="33%" alt="Справа: кинопроектор — мотылёк за решёткой"></a></p>
 
-**Выбери прибор:** разверни бумажный кристалл, прочти перфоленту или загляни за решётку проектора. Листай выставку здесь; нажатие на прибор открывает его файл из `assets/`.
+*Триптих: три JPG встык складываются в [одну панораму](assets/night-shift/bench-master.jpg).*
 
-<p align="center"><a href="assets/night-shift/fold.gif"><img src="assets/night-shift/bench-glass.jpg" width="33%" alt="Кристалл под лампой — открыть анимацию сгиба"></a><a href="assets/night-shift/weeks-tape.svg"><img src="assets/night-shift/bench-tape.jpg" width="33%" alt="Считыватель — открыть лист перфоленты"></a><a href="assets/night-shift/moth-projector.svg"><img src="assets/night-shift/bench-film.jpg" width="33%" alt="Кинопроектор — открыть оптический проектор"></a></p>
+## Одна форма, три тени
 
-[01 · Кристалл](assets/night-shift/fold.gif)　 [02 · Перфолента](assets/night-shift/weeks-tape.svg)　 [03 · Театр теней](assets/night-shift/moth-projector.svg)
+<p><a href="assets/shadow-type/git.stl"><picture>
+  <source media="(prefers-reduced-motion: reduce)" srcset="assets/shadow-type/proof.png">
+  <img src="assets/shadow-type/git.gif" width="672" alt="Одна объёмная литера поворачивается. Её силуэт спереди — G, сбоку — I, сверху — T. Открыть модель STL.">
+</picture></a></p>
 
-**Кристалл в 3D:** [студия «Грань» — текстуры и движение](https://rawcdn.githack.com/overbaffe1/gitEdit/7b8b2cb05c77223867c772de0d411330f1eddc9f/docs/index.html) · [синий просмотрщик GitHub — отдельный STL](assets/crystal.stl).
+Спереди видна **G**. Четверть оборота — и на её месте **I**. Сверху читается **T**. Меняется только ракурс: во всех трёх случаях это те же 114 кубиков.
 
-**Ещё файлы:** [кинопетля капсулы](assets/crystal-theatre.gif) · [город вкладов](assets/contribution-city.gif) · [обложка «Север»](assets/polar-cover.svg).
+[Повернуть фигуру самому (STL)](assets/shadow-type/git.stl) · [три проекции без движения (PNG)](assets/shadow-type/proof.png).
 
 ## Бумажный кристалл
+
+**Кристалл в 3D:** [студия «Грань» — текстуры и движение](https://rawcdn.githack.com/overbaffe1/gitEdit/7b8b2cb05c77223867c772de0d411330f1eddc9f/docs/index.html) · [синий просмотрщик GitHub — отдельный STL](assets/crystal.stl).
 
 <p><a href="assets/night-shift/fold.gif"><picture>
   <source media="(prefers-reduced-motion: reduce)" srcset="assets/night-shift/fold-still.png">
@@ -250,7 +255,7 @@ https://github.com/user-attachments/assets/031799d1-740d-4cda-90cf-689513fa9860
 
 Выбери экспонат, чтобы открыть его файл.
 
-- **Форма:** [выкройка кристалла](assets/night-shift/crystal-net.svg) · [кинопетля капсулы](assets/crystal-theatre.gif) · [сетка и свет](assets/crystal-wipe.gif) · [обложка «Север»](assets/polar-cover.svg).
+- **Форма:** [литера G/I/T](assets/shadow-type/git.stl) · [выкройка кристалла](assets/night-shift/crystal-net.svg) · [кинопетля капсулы](assets/crystal-theatre.gif) · [сетка и свет](assets/crystal-wipe.gif) · [обложка «Север»](assets/polar-cover.svg).
 - **Данные:** [перфолента](assets/night-shift/weeks-tape.svg) · [город вкладов](assets/contribution-city.gif) · [отпечаток репозитория](assets/repo-fingerprint.svg) · [маршрут](assets/survey.geojson) · [соседние листы](assets/sheets.topojson) · [размеры файлов](assets/mermaid/file-sizes.png).
 - **Движение:** [театр теней](assets/night-shift/moth-projector.svg) · [кинолента](assets/commit-reel.svg) · [терминал](assets/facet-count.gif) · [видео с перемоткой](https://github.com/user-attachments/assets/031799d1-740d-4cda-90cf-689513fa9860).
 - **Своё портфолио:** [шаблон проекта](templates/PROJECT-README-TEMPLATE.md) · [шаблон профиля](templates/PROFILE-README-TEMPLATE.md) · [палитры](atlas/samples/palettes.csv).
@@ -489,13 +494,13 @@ V - E + F = 6 - 12 + 8 = 2
 
 [Весь Markdown одним файлом (Raw)](https://github.com/overbaffe1/gitEdit/raw/refs/heads/main/README.md) · [Код с номерами строк](https://github.com/overbaffe1/gitEdit/blob/main/README.md?plain=1) · [Скачать README со всеми картинками (ZIP)](https://github.com/overbaffe1/gitEdit/archive/refs/heads/main.zip)
 
-### Забрать «Ночную смену» целиком
+### Собрать триптих из трёх кадров
 
-**[Готовый README-выставка](templates/EXHIBITION-README-TEMPLATE.md)** — стол с тремя рабочими ссылками, три кейса, билеты со ссылками на файлы и неподвижные варианты. Возьми каталог `assets/night-shift/` из ZIP выше. У шаблона в `templates/` ссылки начинаются с `../assets/`; когда кладёшь его в корень своего репозитория, замени этот префикс на `assets/`. Новая работа подставляется вместо экспоната, а не вместо одной общей шапки.
+**[Шаблон с триптихом](templates/EXHIBITION-README-TEMPLATE.md)** начинается с трёх соседних JPG. Ниже — три работы и их файлы. Возьми каталог `assets/night-shift/` из ZIP выше. У шаблона в `templates/` ссылки начинаются с `../assets/`; когда кладёшь его в корень своего репозитория, замени этот префикс на `assets/`.
 
 | Что переносить в своё портфолио | Мастера и материалы | Разобранный пример |
 |---|---|---|
-| **Меню-сцена.** Выбери предметы, которые рассказывают о работах. Целая треть стола — обычная ссылка на файл экспоната. Текстовые ссылки под столом делают то же самое. | [Цельная иллюстрация](assets/night-shift/bench-master.jpg) · [нарезка, надписи и билеты](atlas/samples/night_shift/bench.py). Иллюстрация мастерской сгенерирована для gitEdit; это воображаемый интерьер, не фотография приборов. | В портфолио-комнате **pixel** [1](https://github.com/ayush6447/pixel) предмет открывает панель веб-приложения. Здесь не нужны карта кликов, JavaScript или кликабельные элементы внутри SVG. |
+| **Три кадра встык.** У фрагментов общая высота и одна линия стола: даже на узком экране они читаются как одна иллюстрация. | [Цельная иллюстрация](assets/night-shift/bench-master.jpg) · [нарезка и билеты](atlas/samples/night_shift/bench.py). Иллюстрация мастерской сгенерирована для gitEdit; это воображаемый интерьер, не фотография приборов. | В портфолио-комнате **pixel** [1](https://github.com/ayush6447/pixel) предмет открывает панель веб-приложения. Здесь не нужны карта кликов, JavaScript или кликабельные элементы внутри SVG. |
 | **Объект → инструкция.** Для объёмной работы покажи способ сборки, а не только красивый ракурс. | [STL](assets/crystal.stl) · [кинопетля](assets/night-shift/fold.gif) · [два неподвижных положения](assets/night-shift/fold-still.png) · [выкройка А4](assets/night-shift/crystal-net.svg) · [разворачивание по рёбрам](atlas/samples/night_shift/crystal.py). Для печати открой скачанный SVG, выбери альбомный A4 и 100 %, проверь линейку. | **Papercraft lab** [3](https://github.com/sderosiaux/papercraft-lab) показывает переход от меша к бумаге, парные номера и клапаны. Здесь своя развёртка восьми граней, без Blender. |
 | **Данные → материальный носитель.** Вместо счётчика дай читателю расшифровать одну разницу. | [112 дней CSV](atlas/samples/snake-weeks.csv) · [лента](assets/night-shift/weeks-tape.svg) · [раскладка для телефона](assets/night-shift/weeks-tape-compact.svg) · [ключ](assets/night-shift/weeks-key.svg) · [набор ленты](atlas/samples/night_shift/tape.py). | Снимки настоящей ленты и объяснение отверстий подачи — **ICL CES** [2](https://iclces.uk/articles/reading_punched_paper_tape.html). Наши шесть весов — собственный код для чисел 0–63, не историческая лента ASCII. |
 | **Движение → оптическая игрушка.** Из четырёх силуэтов собери один полосатый отпечаток. | [Проектор](assets/night-shift/moth-projector.svg) · [стоп-кадр](assets/night-shift/moth-still.svg) · [четыре позы](assets/night-shift/moth-poses.svg) · [бумага](assets/night-shift/moth-paper.svg) и [решётка](assets/night-shift/moth-grille.svg) · [генератор](atlas/samples/night_shift/projector.py). Печатай пару **120 × 72 мм** в одном масштабе: рисунок на бумаге, решётку на прозрачной плёнке. | Для прямых полос — [animbar](https://github.com/jtojnar/animbar); у **FabObscura** [4](https://github.com/tichaesque/FabObscura) есть и криволинейные барьеры. Рисунок мотылька и разбиение на фазы здесь свои. |
@@ -503,7 +508,7 @@ V - E + F = 6 - 12 + 8 = 2
 <details>
 <summary>Пересобрать экспонаты и подставить свои работы</summary>
 
-Из корня, Python 3. Для панорамы и GIF нужны Pillow ≥ 10 и шрифты DejaVu Sans/Mono; лента и проектор собираются одной стандартной библиотекой. Скрипты не обращаются к сети.
+Из корня, Python 3. Для нарезки панорамы нужен Pillow ≥ 10; для подписей в GIF со сгибами — ещё и шрифты DejaVu Sans/Mono. Лента и проектор собираются одной стандартной библиотекой. Скрипты не обращаются к сети.
 
 ```sh
 python3 atlas/samples/night_shift/bench.py
@@ -512,7 +517,11 @@ python3 atlas/samples/night_shift/tape.py
 python3 atlas/samples/night_shift/projector.py
 ```
 
-В сцене соседние `</a><a>` идут **без пробела**, у каждого `<img width="33%">`: так три фрагмента не распадаются на отдельные карточки. Замени картинку, путь к файлу **и** `alt` каждого прибора. Оставь смысл и подписи обычным Markdown — мелкая надпись на иллюстрации не заменяет заголовок.
+Для такой склейки возьми три фото одинаковых пропорций. Выставь горизонт на одной высоте, а теги `</a><a>` поставь подряд **без пробела**. У каждого изображения в шаблоне ширина `33%`: три кадра умещаются в строку и на телефоне. Для варианта без ссылок достаточно одной строки:
+
+```html
+<p align="center"><img src="assets/night-shift/bench-glass.jpg" width="33%" alt="Лампа"><img src="assets/night-shift/bench-tape.jpg" width="33%" alt="Считыватель"><img src="assets/night-shift/bench-film.jpg" width="33%" alt="Проектор"></p>
+```
 
 </details>
 
@@ -598,6 +607,7 @@ python3 atlas/samples/maker-seals.py my-project my-mark.svg --label 'Мой пр
 
 | Экспонат | Готовый файл и воспроизводимый исходник |
 |---|---|
+| Одна форма, три тени | [Кинопетля](assets/shadow-type/git.gif) · [неподвижный лист](assets/shadow-type/proof.png) · [та же сетка в STL](assets/shadow-type/git.stl). Идея трёх проекций — [модель букв в OpenSCAD у ondras/3](https://github.com/ondras/3/blob/3749f6a674fc7fdc233ff7aea082af28939f5c2b/geb.scad). Наш [генератор](atlas/samples/shadow_type.py) оставляет в сетке 7 × 7 × 7 только ячейки, разрешённые всеми тремя силуэтами. Кадры и STL построены по одним граням. Пересборка: `python3 atlas/samples/shadow_type.py` (Python 3.10+, Pillow и шрифты DejaVu). |
 | Город вкладов | [GIF](assets/contribution-city.gif) · [полный неподвижный кадр](assets/contribution-city.png) · [скрипт экспорта](atlas/samples/render-city.py). Кадры сняты с [оригинального SVG yoshi389111](https://github.com/yoshi389111/github-profile-3d-contrib/blob/e235d118909be71eb7edb05482a3de4e76156df3/docs/demo/profile-night-view.svg) (© SATO, Yoshiyuki, [MIT](assets/licenses/contribution-city-MIT.txt)). В оригинале `dur="3s"`, `repeatCount="1"`: при открытии файла с начала виден ещё один проход. Здесь первый кадр уже заполнен, затем идёт обратный ход и повтор роста. |
 | Змейка | [GIF](assets/snake-weeks.gif) · [PNG](assets/snake-weeks.png) · [данные за 112 дней](atlas/samples/snake-weeks.csv) · [наш отрисовщик](atlas/samples/render-calendar.py). Идея календаря — [Platane/snk](https://github.com/Platane/snk). Это собственный маршрут по **коммитам репозитория**, не копия рисунка Platane и не календарь вкладов пользователя. Даты коммитера в UTC посчитаны по [Commits API LazyGit, страницы по 100 записей](https://api.github.com/repos/jesseduffield/lazygit/commits?sha=bb64e3ccb6524368945ba0dfd3134b4189644eed&since=2025-01-06T00:00:00Z&until=2025-04-27T23:59:59Z&per_page=100). |
 | Квартал в 3D | [STL 16 недель](assets/weekly-skyline.stl) · [генератор на чистом Python](atlas/samples/weekly-skyline.py). Читает тот же CSV, печатает два треугольника на каждую сторону дома. `python3 atlas/samples/weekly-skyline.py` обновляет STL и [статичный вид](assets/weekly-skyline.svg), не переписывая README. |
@@ -756,4 +766,4 @@ V-E+F = 6-12+8 = 2
 
 </details>
 
-**Ещё примеры и первоисточники:** [атлас форматов](atlas/README.md) · [карты и STL](atlas/relief.md) · [набор текста и диаграммы](atlas/native.md) · [20 разборов других проектов](atlas/inspiration.md) · [что оформляется вне README](atlas/surfaces.md). Идея навигации обложками встречается, например, у [Ray Tracing in One Weekend](https://github.com/RayTracing/raytracing.github.io#readme).
+**Ещё примеры и первоисточники:** [атлас форматов](atlas/README.md) · [карты и STL](atlas/relief.md) · [набор текста и диаграммы](atlas/native.md) · [приёмы из других проектов](atlas/inspiration.md) · [что оформляется вне README](atlas/surfaces.md). Идея навигации обложками встречается, например, у [Ray Tracing in One Weekend](https://github.com/RayTracing/raytracing.github.io#readme).
