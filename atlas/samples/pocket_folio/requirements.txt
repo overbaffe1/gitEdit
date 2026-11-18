@@ -1,0 +1,4 @@
+# Only the A4 printer needs these packages. --markdown uses the standard library.
+reportlab==5.1.0
+PyMuPDF==2.1
+Pillow==13.0.0
