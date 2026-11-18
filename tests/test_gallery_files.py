@@ -16,8 +16,8 @@ TEMPLATE = ROOT / 'templates/EXHIBITION-README-TEMPLATE.md'
 DOCS = [README, *(ROOT / 'atlas').glob('*.md'), *(ROOT / 'templates').glob('*.md'), ROOT / 'studio/README.md']
 
 
-def fence_languages(markdown):
-    # A triple-backtick Mermaid example INSIDE ````markdown is plain text.
+def markdown_parts(markdown):
+    # Emit live lines and fence languages, not copyable HTML/Mermaid inside ````markdown.
     delimiter = ''
     for line in markdown.splitlines():
         fence = re.fullmatch(r' {0,3}(`{3,}|~{3,})(.*)', line)
@@ -25,12 +25,38 @@ def fence_languages(markdown):
             mark, info = fence.groups()
             if not delimiter:
                 delimiter = mark
-                yield info.strip().lower()
+                yield 'fence', info.strip().lower()
             elif mark.startswith(delimiter) and not info.strip():
                 delimiter = ''
+        elif not delimiter:
+            yield 'line', line
+
+
+def fence_languages(markdown):
+    return (value for kind, value in markdown_parts(markdown) if kind == 'fence')
 
 
 class GalleryFilesTest(unittest.TestCase):
+    def test_home_starts_with_art_and_reads_without_clicks(self):
+        lines = [value for kind, value in markdown_parts(README.read_text()) if kind == 'line']
+        self.assertTrue(lines[0].startswith('<p align="center"><a href="assets/night-shift/fold.gif">'))
+        depth = 0
+        for line in lines:
+            if line.startswith('<details'):
+                self.assertRegex(line, r'^<details\s+open\s*>$')  # no exclusive group or closed disclosure
+                depth += 1
+            elif line.startswith('</details>'):
+                depth -= 1
+                self.assertGreaterEqual(depth, 0)
+            elif line.startswith('## '):
+                self.assertEqual(depth, 0, line)  # no gallery-wide wrapper
+        self.assertEqual(depth, 0)
+        self.assertFalse({'# gitEdit', '## Как взять шапку', '## Образцы Markdown'}.intersection(lines))
+        self.assertTrue({'## Палитра Markdown', '## Исходники README', '### Рецепты GitHub Markdown'} <= set(lines))
+        live = '\n'.join(lines)
+        self.assertNotIn('issues/new?template=readme-block.yml', live)
+        self.assertNotIn('templates/blocks/header.md', live)
+
     def test_triptych_and_tickets_open_the_right_files(self):
         stops = ['fold.gif', 'weeks-tape.svg', 'moth-projector.svg']
         pictures = dict(zip(['bench-glass.jpg', 'bench-tape.jpg', 'bench-film.jpg'], stops))
@@ -41,17 +67,15 @@ class GalleryFilesTest(unittest.TestCase):
             for name, dest in pictures.items():
                 with self.subTest(path=path, picture=name):
                     self.assertEqual((path.parent / cards[name]).resolve(), ART / 'night-shift' / dest)
-            # In the template this is the opening; on the home page it is the opening of the gallery.
-            lead, marker, rest = text.partition('bench-glass.jpg')
-            self.assertTrue(marker)
-            top = lead + marker + rest.split('\n## ', 1)[0]
+            top = text.split('\n## ', 1)[0]
             # A single unbroken row, not three numbered calls to action.
             row, = re.findall(r'<p align="center">([^\n]+)</p>', top)
             self.assertEqual(row.count('</a><a '), 2)
             self.assertEqual(row.count('width="33%"'), 3)
             self.assertEqual(re.findall(r'bench-(glass|tape|film)\.jpg', row), ['glass', 'tape', 'film'])
             self.assertNotRegex(top, r'Выбери прибор|# Ночная смена|\[0[123] ·')
-            self.assertIn('bench-master.jpg)', top)
+            links = re.findall(r'(?:href="|\]\()([^"\s)]+)', top)
+            self.assertIn(ART / 'night-shift/bench-master.jpg', {(path.parent / href).resolve() for href in links})
 
     def test_no_authored_exhibit_links_to_readme_fragments(self):
         # Scan our authored links, including copyable snippets, not GitHub-generated

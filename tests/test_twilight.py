@@ -28,7 +28,7 @@ class TwilightTest(unittest.TestCase):
             self.assertEqual(html, (SOURCE / 'table.html').read_text('utf-8'))
             self.assertEqual(re.findall(r'<img src="([^"]+)"', html), ['glass.png'])
         doc = (ROOT / 'README.md').read_text('utf-8').split('## Сумеречный лист\n')[1].split('\n## ')[0]
-        before, inside = doc.split('<details>')
+        before, inside = re.split(r'\n<details\b[^>]*>\n', doc, maxsplit=1)
         self.assertNotRegex(before, r'<picture|<source|srcset=')
         self.assertIn('<a href="assets/twilight/proof.png"><img src="assets/twilight/glass.png"', before)
         self.assertIn('src="assets/twilight/proof.png"', inside)

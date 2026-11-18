@@ -11,7 +11,6 @@ except ImportError:
     yaml = None
 
 ROOT = Path(__file__).resolve().parents[1]
-HOME = ROOT / 'README.md'
 CATALOG = ROOT / 'templates/README.md'
 BLOCKS = CATALOG.parent / 'blocks'
 FORMS = ROOT / '.github/ISSUE_TEMPLATE'
@@ -19,28 +18,21 @@ PAIR = re.compile(r'\[Вид\]\(([^)]+)\) · \[Код\]\(([^)]+)\)')
 
 
 class ReadmeKit(unittest.TestCase):
-    def test_one_file_per_block_in_both_catalogues(self):
+    def test_one_file_per_block_in_template_catalogue(self):
         expected = set(BLOCKS.glob('*.md'))
         self.assertTrue(expected)
-        for page in (HOME, CATALOG):
-            # Only the live menu, not the copyable example inside a disclosure.
-            menu = page.read_text().partition('<details>')[0]
-            seen = []
-            for view, code in PAIR.findall(menu):
-                a, b = urlsplit(view), urlsplit(code)
-                self.assertFalse(a.scheme or a.netloc or a.query or a.fragment)
-                self.assertEqual(code, view + '?plain=1')
-                self.assertEqual(parse_qs(b.query), {'plain': ['1']})
-                seen.append((page.parent / a.path).resolve())
-            self.assertCountEqual(seen, expected)
+        # Only the live menu, not the copyable example inside a disclosure.
+        menu = CATALOG.read_text().partition('<details>')[0]
+        seen = []
+        for view, code in PAIR.findall(menu):
+            a, b = urlsplit(view), urlsplit(code)
+            self.assertFalse(a.scheme or a.netloc or a.query or a.fragment)
+            self.assertEqual(code, view + '?plain=1')
+            self.assertEqual(parse_qs(b.query), {'plain': ['1']})
+            seen.append((CATALOG.parent / a.path).resolve())
+        self.assertCountEqual(seen, expected)
 
-    def test_header_is_in_use_and_gallery_starts_closed(self):
-        home = HOME.read_text()
-        self.assertTrue(home.startswith((BLOCKS / 'header.md').read_text()))
-        front, opening, archive = home.partition('<details>')
-        self.assertTrue(opening)
-        self.assertNotRegex(front, r'<(?:img|picture)\b|!\[')
-        self.assertLess(archive.index('assets/night-shift/bench-glass.jpg'), archive.index('</details>'))
+    def test_portable_blocks_have_no_image_dependency(self):
         for file in BLOCKS.glob('*.md'):
             text = file.read_text()
             self.assertNotRegex(text, r'<(?:img|picture|iframe|script|style)\b|!\[')
@@ -50,7 +42,6 @@ class ReadmeKit(unittest.TestCase):
 
     def test_instruction_panels_share_one_group_and_one_default(self):
         block = (BLOCKS / 'quickstart.md').read_text()
-        self.assertIn(block, HOME.read_text().partition('<summary><b>Галерея</b>')[0])
         groups = re.findall(r'^<details name="([^"]+)"( open)?>$', block, re.MULTILINE)
         self.assertEqual(len(groups), 2)
         self.assertEqual(groups[0][0], groups[1][0])
@@ -59,7 +50,7 @@ class ReadmeKit(unittest.TestCase):
         self.assertIn('git show HEAD:templates/blocks/header.md', block)
 
     def test_proposal_opens_a_form_without_submitting_anything(self):
-        for page in (HOME, CATALOG, BLOCKS / 'header.md'):
+        for page in (CATALOG, BLOCKS / 'header.md'):
             links = re.findall(
                 r'\]\((https://github\.com/overbaffe1/gitEdit/issues/new\?[^)]+)\)', page.read_text()
             )
