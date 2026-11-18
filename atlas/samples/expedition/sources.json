@@ -1,0 +1,78 @@
+{
+  "observed_on": "2026-11-18",
+  "lookup_attempts": 106,
+  "successful_readme_responses": 103,
+  "unique_canonical_repositories": 102,
+  "source_repositories": 8,
+  "source_files": [
+    {
+      "repo": "JonathanGin52/JonathanGin52",
+      "path": ".github/workflows/connect4.yml",
+      "commit": "bb82f42d06527c85b74a653e0e725ee2796781d6",
+      "url": "https://github.com/JonathanGin52/JonathanGin52/blob/bb82f42d06527c85b74a653e0e725ee2796781d6/.github/workflows/connect4.yml",
+      "bytes": 1064
+    },
+    {
+      "repo": "marcizhu/marcizhu",
+      "path": ".github/workflows/Chess.yml",
+      "commit": "97ccad3137335a8f2cc1eb7a6d9a63d2fc019d8f",
+      "url": "https://github.com/marcizhu/marcizhu/blob/97ccad3137335a8f2cc1eb7a6d9a63d2fc019d8f/.github/workflows/Chess.yml",
+      "bytes": 1646
+    },
+    {
+      "repo": "monex00/nagare",
+      "path": "nagare/flow.py",
+      "commit": "81c2a2fd96852b25bc705c2b39730d096ed27fd3",
+      "url": "https://github.com/monex00/nagare/blob/81c2a2fd96852b25bc705c2b39730d096ed27fd3/nagare/flow.py",
+      "bytes": 6345
+    },
+    {
+      "repo": "monex00/nagare",
+      "path": "nagare/render.py",
+      "commit": "81c2a2fd96852b25bc705c2b39730d096ed27fd3",
+      "url": "https://github.com/monex00/nagare/blob/81c2a2fd96852b25bc705c2b39730d096ed27fd3/nagare/render.py",
+      "bytes": 11439
+    },
+    {
+      "repo": "kailashsr38/ascii-magic-art",
+      "path": "lib/scene.js",
+      "commit": "b324cb0c60b38cadbf02659b1d3d9d6af2d0a4e1",
+      "url": "https://github.com/kailashsr38/ascii-magic-art/blob/b324cb0c60b38cadbf02659b1d3d9d6af2d0a4e1/lib/scene.js",
+      "bytes": 26024
+    },
+    {
+      "repo": "simonw/simonw",
+      "path": ".github/workflows/build.yml",
+      "commit": "8d7c1d9424824e2a1f5e887461f8a45603f19b37",
+      "url": "https://github.com/simonw/simonw/blob/8d7c1d9424824e2a1f5e887461f8a45603f19b37/.github/workflows/build.yml",
+      "bytes": 1169
+    },
+    {
+      "repo": "kylepls/kylepls",
+      "path": "generate.ipynb",
+      "commit": "cc1957e070cce27abda9c1cee04e53b8bb338e02",
+      "url": "https://github.com/kylepls/kylepls/blob/cc1957e070cce27abda9c1cee04e53b8bb338e02/generate.ipynb",
+      "bytes": 15299
+    },
+    {
+      "repo": "vaaski/vaaski",
+      "path": "space-logo.svg",
+      "commit": "4ea027a21cbfcaf8b450aff7c2db42a2155954b3",
+      "url": "https://github.com/vaaski/vaaski/blob/4ea027a21cbfcaf8b450aff7c2db42a2155954b3/space-logo.svg",
+      "bytes": 13970
+    },
+    {
+      "repo": "clementwzk/Readme-2048",
+      "path": "main.py",
+      "commit": "9d1ee02226b6e7c6b44f71f14525319f643c4db0",
+      "url": "https://github.com/clementwzk/Readme-2048/blob/9d1ee02226b6e7c6b44f71f14525319f643c4db0/main.py",
+      "bytes": 13956
+    }
+  ],
+  "method": "README structure and selected excerpts screened, not a full code/security audit. Markers are syntactic observations, not proof of functionality. Repository aliases deduplicated by returned canonical HTML URL.",
+  "failed_lookups": [
+    "lucthienphong1120/awesome-github-profile",
+    "marketplace/actions/chess",
+    "mxcl/Chai"
+  ]
+}
