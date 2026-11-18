@@ -1,0 +1,6 @@
+# Build (the offline viewer needs only a browser):
+numpy==2.4.6
+Pillow==13.0.0
+reportlab==5.1.0
+# Independent PDF reader for the print-scale test only:
+PyMuPDF==2.1

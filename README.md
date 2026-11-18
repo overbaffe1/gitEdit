@@ -2,6 +2,19 @@
 
 *Триптих: три JPG встык складываются в [одну панораму](assets/night-shift/bench-master.jpg).*
 
+## Зеркальный конёк
+
+<p><a href="assets/catoptric/sheet-a4.pdf"><picture>
+  <source media="(max-width: 540px)" srcset="assets/catoptric/mirror.png">
+  <img src="assets/catoptric/proof.png" width="840" alt="На бумаге — распластанный веер с завитком у выемки. В расчётном отражении цилиндра из этих чернил собирается морской конёк. Открыть печатный лист A4.">
+</picture></a></p>
+
+На листе медная отметка вытянута в овал. В цилиндрическом зеркале она становится круглой, хвост сворачивается спиралью, а надпись **HIPPOCAMPUS** снова читается слева направо. Это зеркальная анаморфоза: вид в зеркале рассчитан по готовому отпечатку, а не по картинке конька.
+
+[Лист A4 для печати (PDF)](assets/catoptric/sheet-a4.pdf?raw=true) · [оба вида рядом (PNG)](assets/catoptric/proof.png) · [проследить луч без настоящего зеркала (ZIP)](assets/catoptric/bench.zip?raw=true).
+
+На столе: печатай в масштабе **100 %** и поставь на круг гладкий зеркальный цилиндр **Ø 50 мм** высотой от 80 мм. Глаз — со стороны стрелки, в 28 см от оси по столу и в 24 см над листом. Без печати: распакуй ZIP, открой `mirror.html` и коснись глаза конька — второй прицел найдёт его на бумаге.
+
 ## Одна форма, три тени
 
 <p><a href="assets/shadow-type/git.stl"><picture>
@@ -298,7 +311,7 @@ https://github.com/user-attachments/assets/031799d1-740d-4cda-90cf-689513fa9860
 
 Выбери экспонат, чтобы открыть его файл.
 
-- **Форма:** [литера G/I/T](assets/shadow-type/git.stl) · [два оттиска одного PNG](assets/twilight/proof.png) · [выкройка кристалла](assets/night-shift/crystal-net.svg) · [кинопетля капсулы](assets/crystal-theatre.gif) · [сетка и свет](assets/crystal-wipe.gif) · [обложка «Север»](assets/polar-cover.svg).
+- **Форма:** [конёк для цилиндрического зеркала](assets/catoptric/sheet-a4.pdf) · [литера G/I/T](assets/shadow-type/git.stl) · [два оттиска одного PNG](assets/twilight/proof.png) · [выкройка кристалла](assets/night-shift/crystal-net.svg) · [кинопетля капсулы](assets/crystal-theatre.gif) · [сетка и свет](assets/crystal-wipe.gif) · [обложка «Север»](assets/polar-cover.svg).
 - **Данные:** [перфолента](assets/night-shift/weeks-tape.svg) · [город вкладов](assets/contribution-city.gif) · [отпечаток репозитория](assets/repo-fingerprint.svg) · [маршрут](assets/survey.geojson) · [соседние листы](assets/sheets.topojson) · [размеры файлов](assets/mermaid/file-sizes.png).
 - **Движение:** [медуза из стереозаписи](assets/aurelia/swim.gif) · [театр теней](assets/night-shift/moth-projector.svg) · [кинолента](assets/commit-reel.svg) · [терминал](assets/facet-count.gif) · [видео с перемоткой](https://github.com/user-attachments/assets/031799d1-740d-4cda-90cf-689513fa9860).
 - **Игры:** [наборный склад (ZIP)](assets/typecase/typecase.zip?raw=true) · [шахматный этюд](assets/mate-in-one.svg).
@@ -651,6 +664,7 @@ python3 atlas/samples/maker-seals.py my-project my-mark.svg --label 'Мой пр
 
 | Экспонат | Готовый файл и воспроизводимый исходник |
 |---|---|
+| Зеркальный конёк | [Опыт FeichenFD с цилиндрическим зеркалом](https://github.com/FeichenFD/cylindricalmirror/blob/e64bd8cf896f9e0e85fdb997b331ab9c9aae168e/README.md) · [как рассчитан наш лист и где поставить зеркало](atlas/samples/catoptric/README.md). |
 | Одна форма, три тени | [Кинопетля](assets/shadow-type/git.gif) · [неподвижный лист](assets/shadow-type/proof.png) · [та же сетка в STL](assets/shadow-type/git.stl). Идея трёх проекций — [модель букв в OpenSCAD у ondras/3](https://github.com/ondras/3/blob/3749f6a674fc7fdc233ff7aea082af28939f5c2b/geb.scad). Наш [генератор](atlas/samples/shadow_type.py) оставляет в сетке 7 × 7 × 7 только ячейки, разрешённые всеми тремя силуэтами. Кадры и STL построены по одним граням. Пересборка: `python3 atlas/samples/shadow_type.py` (Python 3.10+, Pillow и шрифты DejaVu). |
 | Аурелия | [Стереозапись](assets/aurelia/aurelia.wav) · [контур и его два канала](assets/aurelia/trace.png). Приём — [осциллографический синтез у James Ball](https://github.com/jameshball/osci-render/blob/25f5938e5983af8803b5b090176bde1b7e35180e/README.md); [ещё один пример и разбор](atlas/inspiration.md). Наш [синтезатор](atlas/samples/aurelia/xy_signal.py) записывает только PCM. [Сборка GIF, PNG и осциллографа](atlas/samples/aurelia/render.py): `python3 atlas/samples/aurelia/render.py` (Python 3.10+, Pillow ≥ 10 и шрифты DejaVu). |
 | Сумеречный лист | [Прозрачный PNG](assets/twilight/glass.png) · [проба на двух фонах](assets/twilight/proof.png). Приём в действии — [демо HideImageMaker](https://github.com/wuyr/HideImageMaker/blob/9fc2d095f4c7bd1119f1be35c4080cfe03472553/preview.gif); наши [печатные формы и разбор](atlas/inspiration.md). [Пересборка](atlas/samples/twilight/print.py): `python3 atlas/samples/twilight/print.py` (Python 3.10+, Pillow и шрифты DejaVu). |

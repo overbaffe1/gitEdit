@@ -72,6 +72,12 @@
 
 [Запись](../assets/typecase/delivery.gif) отпечатана с готового TTF через HarfBuzz и FreeType. В [офлайн-пробнике](../assets/typecase/typecase.zip?raw=true) экранные кнопки только правят строку; с выключенным JavaScript можно по-прежнему набирать ходы в самом поле. Для игры в своём редакторе нужен набор с контекстными подстановками, а не вывод независимых символов по клеткам терминала. Чужие шрифты, уровни и спрайты не копировались.
 
+## Рисунок, который читается в цилиндре
+
+В [опыте FeichenFD](https://github.com/FeichenFD/cylindricalmirror/blob/e64bd8cf896f9e0e85fdb997b331ab9c9aae168e/README.md) показаны исходник, [деформированный лист A4](https://github.com/FeichenFD/cylindricalmirror/blob/e64bd8cf896f9e0e85fdb997b331ab9c9aae168e/images/test_1024_anamorph.png) и [расчётный вид в зеркале](https://github.com/FeichenFD/cylindricalmirror/blob/e64bd8cf896f9e0e85fdb997b331ab9c9aae168e/images/test_1024_anamorph_preview.png). Второй полезный разбор — [проекция в CylindricAnamorphosis](https://github.com/FDaCostaB/CylindricAnamorphosis/blob/c3d40ec9167dbd827e8f32cc9cad88e81af1cd0c/projection.c): найти пересечение с цилиндром, отразить направление относительно нормали, дойти до бумаги. Простая полярная развёртка — другой приём: сам [AnamorphMeIJ](https://github.com/phillipkent/AnamorphMeIJ/blob/cd5e6764432352d8980e496fd10fdbf44872dc65/README.md) называет её приближением.
+
+В [нашем листе](../assets/catoptric/sheet-a4.pdf) учтена перспектива **одной заданной точки наблюдения**. Для каждой точки бумаги [печатник](samples/catoptric/print.py) ищет, куда на стенку зеркала попадёт луч. Для [проверки](../assets/catoptric/proof.png) расчёт идёт в обратную сторону: из глаза через цилиндр — к пикселю уже отпечатанного листа. [Оптический стол](../assets/catoptric/bench.zip?raw=true) знает только этот лист. Если сдвинуть глаз, конёк искривится, хотя краска не сдвинулась ни на миллиметр. [Гравюра](samples/catoptric/engraving.png) сгенерирована специально для этого опыта и оформлена как натурная карточка; ни чужие изображения, ни код проекции в репозиторий не переносились.
+
 ## Где искать дальше
 
 - [Awesome README](https://github.com/matiassingers/awesome-readme#examples) — примеры **проектов**; особенно полезно сравнивать первый экран и объяснение архитектуры.

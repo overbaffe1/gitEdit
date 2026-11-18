@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ru">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Зеркальный конёк · Оптический кабинет</title>
+<style>
+  :root{color-scheme:light;--ink:#24494d;--rust:#934328;--rule:#a6ada0;--paper:#faf6e9}*{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--ink);font:1rem/1.48 system-ui,sans-serif} main{max-width:66rem;margin:auto;padding:clamp(.85rem,3.5vw,2.5rem)}
+  header,footer,.label,.strip,output{font:.84rem/1.45 ui-monospace,monospace}header,footer,.label,.tools,.strip{display:flex;align-items:center;justify-content:space-between;gap:.45rem 1rem;flex-wrap:wrap}
+  header,footer{border-block:1px solid var(--rule);padding:.6rem 0}header b,.label b{color:var(--rust)}h1{font:clamp(2.3rem,6vw,4.6rem)/1.06 Georgia,serif;margin:1rem 0 .25rem}
+  .intro{margin:.5rem 0 1.1rem;max-width:65ch}.station{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(.85rem,3vw,1.8rem);align-items:start}
+  figure{margin:0}.label{padding:.4rem .08rem}.glass,.page{position:relative;isolation:isolate;border:1px solid var(--ink);overflow:hidden}.glass{background:#405658}.page{background:white}
+  canvas,img{display:block;width:100%;height:auto}canvas{touch-action:pan-y;cursor:crosshair}canvas:focus-visible{outline-offset:-4px} .page img{aspect-ratio:297/210}
+  .mark{position:absolute;z-index:1;transform:translate(-50%,-50%);width:1.2rem;height:1.2rem;border:2px solid #963c17;border-radius:50%;box-shadow:inset 0 0 0 1.5px white,0 0 0 1.5px white;pointer-events:none}.mark:after{content:'';position:absolute;inset:calc(50% - 1.5px);background:#512a19;border-radius:50%}
+  .strip{background:#e9e3cf;padding:.4rem .65rem;min-height:2.15rem}.strip strong{font-weight:600}h2{font:1.5rem/1.2 Georgia,serif;margin:1rem 0 .45rem}p{margin:.45rem 0 .85rem}
+  .tools{margin-top:.55rem;justify-content:start}input[type=range]{flex:1 1 8rem;min-width:0;accent-color:var(--rust);height:2rem}button{font:inherit;color:var(--ink);background:#fffdf5;border:1px solid var(--rule);border-bottom-width:2px;border-radius:3px;min-height:2.5rem;cursor:pointer;padding:.25rem .6rem}
+  :focus-visible{outline:3px solid #99462c;outline-offset:2px}a{color:#14665f;text-underline-offset:.18em}[hidden]{display:none!important}footer{margin-top:1.2rem}small{font-size:.84rem}
+  @media(max-width:42rem){.station{grid-template-columns:1fr}.intro{margin-bottom:.5rem}.glass{max-width:28rem}.label{justify-content:start}.tools{gap:.27rem .5rem}footer{align-items:start}}
+</style>
+<main>
+<header><b>gitEdit / Оптический кабинет</b><span>Опыт I · отражение</span></header>
+<h1>Зеркальный конёк</h1>
+<p class="intro">На листе — веер чернил. В зеркале — конёк с закрученным хвостом. Коснись его глаза или медной точки: второй прицел укажет место на бумаге, откуда пришёл луч.</p>
+<div class="station">
+ <figure><figcaption class="label"><b>01 / ЗЕРКАЛО</b><span>расчётный вид</span></figcaption>
+  <div class="glass"><canvas id="view" width="510" height="502" tabindex="0" aria-label="Отражение конька. Стрелки перемещают прицел, Home возвращает медную точку." aria-describedby="pickHelp">Для расчётного вида нужен Canvas. Лист для печати доступен ниже.</canvas><i class="mark" id="eyeMark" hidden aria-hidden="true"></i></div>
+  <div class="tools"><label for="yaw">Ракурс</label><input type="range" id="yaw" min="-32" max="32" value="0" step="1" disabled><output for="yaw" id="degrees">0°</output><button id="reset" type="button" disabled>На метку</button></div>
+ </figure>
+ <section><figure><figcaption class="label"><b>02 / ЛИСТ</b><span>вид сверху</span></figcaption>
+  <div class="page"><img id="sheet" src="data:image/png;base64,@@SHEET@@" width="2376" height="1680" alt="Растянутый полукруг с хвостом у выемки, меткой для цилиндра и линейкой 50 мм."><i class="mark" id="paperMark" hidden aria-hidden="true"></i></div>
+  <div class="strip"><strong>Точка на бумаге</strong><output id="spot" aria-live="polite">Загружается лист…</output></div>
+ </figure><h2>Одна точка, два вида</h2>
+ <p id="pickHelp">Сдвинь ползунок: лист останется на месте, а отражение уйдёт вбок. Кнопка «На метку» вернёт исходный ракурс. С клавиатуры: выбери зеркало клавишей Tab и передвигай прицел стрелками.</p>
+ <p><a href="sheet-a4.pdf" download>Лист A4 для печати (PDF)</a> · 100 %, без подгонки. Поставь на круг гладкий зеркальный цилиндр Ø 50 мм высотой от 80 мм. Смотри со стороны стрелки: глаз в 28 см от оси по столу и в 24 см над ним.</p>
+ </section>
+</div>
+<noscript><p>Вычисление отражения выключено. Для физического опыта JavaScript не нужен: скачай лист A4 и собери зеркало по метке.</p></noscript>
+<footer><span>Угол падения равен углу отражения</span><span>Ø 50 мм · A4</span></footer>
+</main>
+<script>
+'use strict';
+// Rays in mm. The only sampled picture is the printable, distorted sheet above.
+const $=s=>document.getElementById(s), view=$('view'), ctx=view.getContext('2d',{alpha:false});
+const W=view.width,H=view.height,R=25,TOP=80,D=280,E=240,AIM=44,axis=[148.5,57];
+const focal=Math.hypot(D-R,E-AIM),c=(D-R)/focal,s=(E-AIM)/focal;
+const bounds=[-55.5,55.5,-48,61.4], uv=(x,y)=>[bounds[0]+x*(bounds[1]-bounds[0]),bounds[3]-y*(bounds[3]-bounds[2])];
+let px,sw,sh,ready=false,pending=false,angle=0,pick=[14.77,20.48];
+const n=W*H,xx=new Float32Array(n),yy=new Float32Array(n),gain=new Float32Array(n),add=new Float32Array(n),kind=new Uint8Array(n);
+function trace(u,v){
+ const dx=u,dy=D-R+v*s,dz=AIM-E+v*c,a=dx*dx+dy*dy,b=-D*dy,disc=b*b-a*(D*D-R*R);
+ const t=(-b-Math.sqrt(Math.max(0,disc)))/a,mx=t*dx,my=-D+t*dy,z=E+t*dz,nx=mx/R,ny=my/R;
+ const tc=(TOP-E)/dz,cx=tc*dx,cy=-D+tc*dy,cr=Math.hypot(cx,cy);
+ if(cr<=R){const ph=Math.atan2(cy,cx);let val=147+30*Math.sin(2*ph+.6)+12*Math.cos(4*ph)+4*Math.cos(cr*8);
+   if(cr>R-.45)val=198;else if(cr>R-1.25&&cr<=R-.8)val=112;return [2,0,0,0,val];}
+ if(disc>=0&&t>0&&z>=0&&z<=TOP){const k=2*(dx*nx+dy*ny),q=-z/dz;
+   const silver=Math.exp(-(((nx+.87)/.12)**2))+.65*Math.exp(-(((nx-.94)/.05)**2));
+   if(z>TOP-1||z<.55)return [3,0,0,0,93+95*silver+26*Math.cos(nx*14)];
+   return [1,mx+q*(dx-k*nx),my+q*(dy-k*ny),.98-.12*Math.min(1,Math.abs(nx)**4),36*silver];}
+ const k=-E/dz,x=k*dx,y=-D+k*dy;return [0,x,y,1-.18*Math.exp(-Math.max(0,Math.hypot(x,y)-R)/6),0];
+}
+function mark(el,x,y){el.style.left=`${100*x}%`;el.style.top=`${100*y}%`;el.hidden=false;}
+function where(){const [u,v]=pick,[mode,x,y]=trace(u,v),a=angle*Math.PI/180;
+ mark($('eyeMark'),(u-bounds[0])/(bounds[1]-bounds[0]),(bounds[3]-v)/(bounds[3]-bounds[2]));
+ const l=axis[0]+Math.cos(a)*x-Math.sin(a)*y, t=axis[1]-Math.sin(a)*x-Math.cos(a)*y;
+ if(mode!==1||l<0||l>297||t<0||t>210){$('paperMark').hidden=true;$('spot').textContent='Выбери участок отражения';return;}
+ mark($('paperMark'),l/297,t/210);$('spot').textContent=`${Math.round(l)} мм слева · ${Math.round(t)} мм сверху`;
+}
+function render(){pending=false;const a=angle*Math.PI/180,ca=Math.cos(a),sa=Math.sin(a),im=ctx.createImageData(W,H),data=im.data;
+ for(let i=0;i<n;i++){const j=4*i,mode=kind[i],lit=gain[i],plus=add[i];data[j+3]=255;
+   if(mode>1){data[j]=plus+(mode===2?-8:0);data[j+1]=data[j+2]=plus+(mode===2?3:8);continue;}
+   const x=ca*xx[i]-sa*yy[i],y=sa*xx[i]+ca*yy[i],left=axis[0]+x,top=axis[1]-y;
+   if(left<0||left>297||top<0||top>210){const g=1.9*Math.sin(y*.57+x*.052)+Math.sin(y*1.7+x*.02)+1.3*Math.cos(x*.03);
+      data[j]=(57+g)*lit+plus;data[j+1]=data[j+2]=(78+g)*lit+plus;continue;}
+   const fx=Math.max(0,Math.min(sw-1,left*sw/297-.5)),fy=Math.max(0,Math.min(sh-1,top*sh/210-.5));
+   const ix=Math.floor(fx),iy=Math.floor(fy),p=4*(iy*sw+ix),q=p+(ix<sw-1?4:0),off=iy<sh-1?4*sw:0,ax=fx-ix,ay=fy-iy;
+   for(let k=0;k<3;k++)data[j+k]=lit*((px[p+k]*(1-ax)+px[q+k]*ax)*(1-ay)+(px[p+off+k]*(1-ax)+px[q+off+k]*ax)*ay)+plus;
+ }ctx.putImageData(im,0,0);where();}
+function turn(){if(!ready)return;angle=Number($('yaw').value);$('degrees').textContent=`${angle>0?'+':''}${angle}°`;if(!pending){pending=true;requestAnimationFrame(render);}}
+function reset(){pick=[14.77,20.48];$('yaw').value=0;turn();}
+$('reset').addEventListener('click',reset);$('yaw').addEventListener('input',turn);
+view.addEventListener('pointerdown',ev=>{if(!ready)return;const box=view.getBoundingClientRect();pick=uv((ev.clientX-box.left)/box.width,(ev.clientY-box.top)/box.height);where();});
+view.addEventListener('keydown',ev=>{if(!ready)return;if(ev.key==='Home'){ev.preventDefault();reset();return;}
+ const step={ArrowUp:[0,1],ArrowDown:[0,-1],ArrowLeft:[-1,0],ArrowRight:[1,0]}[ev.key];if(!step)return;ev.preventDefault();pick=[Math.min(bounds[1],Math.max(bounds[0],pick[0]+step[0])),Math.min(bounds[3],Math.max(bounds[2],pick[1]+step[1]))];where();});
+(async()=>{const tex=$('sheet');await tex.decode();sw=tex.naturalWidth;sh=tex.naturalHeight;
+ const temp=document.createElement('canvas');temp.width=sw;temp.height=sh;const g=temp.getContext('2d');g.drawImage(tex,0,0);px=g.getImageData(0,0,sw,sh).data;
+ for(let y=0,i=0;y<H;y++)for(let x=0;x<W;x++,i++){const [u,v]=uv((x+.5)/W,(y+.5)/H),r=trace(u,v);kind[i]=r[0];xx[i]=r[1];yy[i]=r[2];gain[i]=r[3];add[i]=r[4];}
+ ready=true;$('yaw').disabled=$('reset').disabled=false;render();})().catch(()=>{$('spot').textContent='Не удалось прочитать лист. Открой PDF ниже.';});
+</script>
+</html>
