@@ -1,0 +1,33 @@
+name: Предложить блок оформления
+description: Идея для README проекта, профиля или другой страницы GitHub.
+title: 'Блок: '
+body:
+  - type: dropdown
+    id: surface
+    attributes:
+      label: Где пригодится блок?
+      options:
+        - README проекта
+        - README профиля
+        - Другая страница GitHub
+    validations:
+      required: true
+  - type: textarea
+    id: purpose
+    attributes:
+      label: Что изменится для читателя?
+      placeholder: Например, основная команда видна сразу, а варианты для других систем раскрываются по нажатию.
+    validations:
+      required: true
+  - type: textarea
+    id: markup
+    attributes:
+      label: Образец Markdown
+      description: Если есть заготовка, вставь саму разметку без внешнего блока кода.
+      render: markdown
+  - type: input
+    id: example
+    attributes:
+      label: Где посмотреть результат?
+      description: Необязательная ссылка на открытый README, файл или обсуждение.
+      placeholder: https://github.com/…

@@ -1,3 +1,46 @@
+<sub>МАСТЕРСКАЯ README</sub>
+
+# gitEdit
+
+Блоки для страниц проектов и профилей на GitHub. Посмотри, как выглядит блок, и скопируй его разметку в свой README.
+
+**[Каталог шаблонов](/templates/)** · [Полевой атлас](/atlas/) · [Предложить блок](https://github.com/overbaffe1/gitEdit/issues/new?template=readme-block.yml)
+
+## Как взять шапку
+
+<details name="gitedit-get-header" open>
+<summary><strong>В браузере</strong></summary>
+
+Открой [код шапки](/templates/blocks/header.md?plain=1) и нажми кнопку копирования рядом с **Raw**. Вставь разметку в свой `README.md` и замени название и ссылки.
+
+</details>
+
+<details name="gitedit-get-header">
+<summary><strong>В терминале</strong></summary>
+
+Из корня клона gitEdit выполни:
+
+```sh
+git show HEAD:templates/blocks/header.md
+```
+
+В терминале появится тот же Markdown. Команда не меняет файлы.
+
+</details>
+
+## Образцы Markdown
+
+| Блок | Режим |
+| :--- | :--- |
+| `01` **Шапка проекта**<br>Название, польза и навигация. | [Вид](templates/blocks/header.md) · [Код](templates/blocks/header.md?plain=1) |
+| `02` **Переключатель инструкций**<br>Два способа, как в примере выше. | [Вид](templates/blocks/quickstart.md) · [Код](templates/blocks/quickstart.md?plain=1) |
+| `03` **Карточка профиля**<br>Проекты и ссылки на результаты. | [Вид](templates/blocks/profile.md) · [Код](templates/blocks/profile.md?plain=1) |
+
+---
+
+<details>
+<summary><b>Галерея</b> · триптих, оптические опыты, модели и карты</summary>
+
 <p align="center"><a href="assets/night-shift/fold.gif"><img src="assets/night-shift/bench-glass.jpg" width="33%" alt="Слева: бумажный кристалл под лампой — анимация сгиба"></a><a href="assets/night-shift/weeks-tape.svg"><img src="assets/night-shift/bench-tape.jpg" width="33%" alt="В центре: латунный считыватель — лист перфоленты"></a><a href="assets/night-shift/moth-projector.svg"><img src="assets/night-shift/bench-film.jpg" width="33%" alt="Справа: кинопроектор — мотылёк за решёткой"></a></p>
 
 *Триптих: три JPG встык складываются в [одну панораму](assets/night-shift/bench-master.jpg).*
@@ -465,6 +508,11 @@ STL кристалла занимает **1,2 КиБ**. У печатного л
 
 <p><a href="assets/mermaid/task-sequence.png"><img src="assets/mermaid/task-sequence.png" width="620" alt="Клиент отправляет POST, API сохраняет задачу и возвращает созданный идентификатор."></a></p>
 
+</details>
+
+<details>
+<summary><b>Шпаргалка Markdown</b> · бейджи, оповещения и вёрстка текста</summary>
+
 ## Палитра Markdown
 
 ### Бейджи и иконки
@@ -545,7 +593,10 @@ V - E + F = 6 - 12 + 8 = 2
 
 В README кристалл движется в записанной кинопетле. Свой JavaScript и WebGL GitHub сюда не встраивает: свободное вращение и управление клипами работают в студии по ссылке. Чтобы повернуть STL или приблизить карту, открой файл экспоната. В README остаются их рисунки; у видео по-прежнему есть кнопка Play. У GIF нет ручной перемотки, а у нашего сравнения нет перетаскиваемой ручки. Переключатель автозапуска GIF в GitHub и системное уменьшение движения — разные настройки. Если система просит меньше движения, «Север» останется неподвижным. Поиск по CSV и просмотр самого PDF работают в просмотрщиках файлов; для своего JavaScript или игры с сохранением ходов нужен другой интерфейс.
 
----
+</details>
+
+<details>
+<summary><b>Исходники и рецепты</b> · как повторить примеры из галереи</summary>
 
 ## Исходники README
 
@@ -828,3 +879,5 @@ V-E+F = 6-12+8 = 2
 </details>
 
 **Ещё примеры и первоисточники:** [атлас форматов](atlas/README.md) · [карты и STL](atlas/relief.md) · [набор текста и диаграммы](atlas/native.md) · [приёмы из других проектов](atlas/inspiration.md) · [что оформляется вне README](atlas/surfaces.md). Идея навигации обложками встречается, например, у [Ray Tracing in One Weekend](https://github.com/RayTracing/raytracing.github.io#readme).
+
+</details>

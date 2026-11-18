@@ -2,7 +2,7 @@
 
 # Оформление за пределами README
 
-Иногда правильное место для элемента — не шапка репозитория. Ниже у каждого приёма есть пример или экран из документации и место, в котором его настраивают. Это обзор: настройки gitEdit не менялись.
+Иногда правильное место для элемента — не шапка репозитория. Ниже у каждого приёма есть пример или экран из документации и место, в котором его настраивают. Большинство примеров ниже — из других проектов. Одну поверхность можно попробовать здесь: [предложить блок оформления](https://github.com/overbaffe1/gitEdit/issues/new?template=readme-block.yml) открывает настоящую форму GitHub Issues.
 
 ## Профиль, организация, репозиторий
 
@@ -28,6 +28,8 @@
 | **Вынести справочник** | [Wiki проекта Jupyter](https://github.com/jupyter/jupyter/wiki) — отдельные страницы и навигация. Из README оставь вход в справочник. [Про Wiki и доступность](https://docs.github.com/en/communities/documenting-your-project-with-wikis/about-wikis). |
 | **Обсудить идею** | [GitHub Community Discussions](https://github.com/orgs/community/discussions) — разговоры и категории, а не форма внутри README. Для комментариев на собственном сайте есть [пример giscus](https://giscus.app/). |
 | **Сделать полноценный сайт** | [Тема Cayman вживую](https://pages-themes.github.io/cayman/) и [её исходники](https://github.com/pages-themes/cayman). **Pages** публикует статический сайт с HTML/CSS/JS; кнопка-ссылка в README только ведёт на него. [Как устроены Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages). |
+
+У [формы gitEdit](../.github/ISSUE_TEMPLATE/readme-block.yml?plain=1) два обязательных поля: где разместить блок и какую задачу он решает. Ссылку и сам Markdown можно добавить по желанию. У поля с разметкой стоит `render: markdown`: после отправки GitHub поместит ответ в блок кода, сохранив теги как текст. Для сравнения — [форма редакции GitHub Docs](https://github.com/github/docs/blob/49a012fa50b42661a59bfcb80dad5910bced5e81/.github/ISSUE_TEMPLATE/improve-existing-docs.yaml). Читать исходник можно без входа; создать Issue — из аккаунта GitHub.
 
 **Фон во весь экран:** у [обложки README](../assets/polar-cover.svg) пейзаж заканчивается по краю картинки. В [нашем HTML-примере](north.html) он лежит и за выделяемым текстом, и за панелью управления. Чтобы попробовать галочку паузы, открой страницу из распакованного архива в браузере; в списке файлов GitHub это исходный код. [Снимок страницы](../assets/polar-page.png) · [генератор обложки](samples/polar-press.py).
 
