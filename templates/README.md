@@ -10,6 +10,7 @@
 | **Переключатель инструкций**<br>Подставь два способа запуска. | [Вид](blocks/quickstart.md) · [Код](blocks/quickstart.md?plain=1) |
 | **Карточка профиля**<br>Покажи две свои работы и их результаты. | [Вид](blocks/profile.md) · [Код](blocks/profile.md?plain=1) |
 | **Партитура пауз**<br>Сравни ритм нескольких GIF на одной текстовой шкале. | [Вид](blocks/cue-sheet.md) · [Код](blocks/cue-sheet.md?plain=1) |
+| **Портфолио в трёх числах**<br>Поставь на поле число со ссылкой на работу, рядом — короткий разбор. | [Вид](blocks/pocket-folio.md) · [Код](blocks/pocket-folio.md?plain=1) |
 
 В файлах нет служебных инструкций: копируется только блок. Ссылки с начальным `/` на GitHub отсчитываются от корня репозитория. При переносе проверь эти пути и замени адрес формы Issues на свой.
 
@@ -28,6 +29,7 @@
 | Переключатель инструкций | [Вид](blocks/quickstart.md) · [Код](blocks/quickstart.md?plain=1) |
 | Карточка профиля | [Вид](blocks/profile.md) · [Код](blocks/profile.md?plain=1) |
 | Партитура пауз | [Вид](blocks/cue-sheet.md) · [Код](blocks/cue-sheet.md?plain=1) |
+| Портфолио в трёх числах | [Вид](blocks/pocket-folio.md) · [Код](blocks/pocket-folio.md?plain=1) |
 ```
 
 </details>

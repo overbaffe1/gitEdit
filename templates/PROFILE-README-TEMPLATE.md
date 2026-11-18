@@ -28,6 +28,8 @@
 | **[MyWorkAiBrain](https://github.com/overbaffe1/MyWorkAiBrain)** | `Python` · `Blender bpy` · `Node.js` · `OpenXML` | Конвейер генерации редактируемых `.pptx` с настоящими интерактивными 3D-моделями, скелетной glTF-анимацией и 3D Morph-переходами чисто кодом |
 | **[gitEdit](https://github.com/overbaffe1/gitEdit)** | `SVG` · `Mermaid` · `GitHub Actions` | Визуальный конструктор, шпаргалка и шаблоны вау-оформления репозиториев для портфолио |
 
+Альтернатива списку по стеку — [«Три числа»](https://github.com/overbaffe1/gitEdit/blob/main/templates/blocks/pocket-folio.md): число на полях ведёт прямо к результату работы. [Разметка для профиля](https://github.com/overbaffe1/gitEdit/blob/main/templates/blocks/pocket-folio.md?plain=1).
+
 ---
 
 ## Активность коммитов
