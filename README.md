@@ -708,7 +708,7 @@ node atlas/samples/repo-fingerprint.mjs 11ea344
 
 ### Рецепты GitHub Markdown
 
-<details open>
+<details>
 <summary>3D, карты, формулы и Mermaid</summary>
 
 - **STL:** вставь полный **текст** [crystal.stl](assets/crystal.stl) между строками ` ```stl ` и ` ``` `. Имя файла или двоичный STL в блоке не сработают. [Блокнот](atlas/samples/crystal.ipynb) проверяет вершины, рёбра и грани. Для объёмного календаря вместо картинки есть генератор STL [gh-skyline](https://github.com/github/gh-skyline).
@@ -733,7 +733,7 @@ V-E+F = 6-12+8 = 2
 
 </details>
 
-<details open>
+<details>
 <summary>Тема, размер экрана, уменьшение движения и видео</summary>
 
 Браузер использует первый подходящий `<source>`. Для GIF сверху нужен статичный кадр, для карты файлов — вертикальная компоновка на телефоне, для двух оттисков — выбор по теме. Вот готовый блок города:
@@ -768,7 +768,7 @@ V-E+F = 6-12+8 = 2
 
 </details>
 
-<details open>
+<details>
 <summary>Бейджи, динамические счётчики и плитка стека</summary>
 
 [Shields.io](https://shields.io/) рисует плашки, [Simple Icons](https://simpleicons.org/) даёт названия логотипов, [Skill Icons](https://github.com/tandpfun/skill-icons) собирает плитку. Стили: `flat`, `flat-square`, `for-the-badge`, `plastic`, `social`. В тексте бейджа пробел кодируется как `%20`, дефис — `--`, подчёркивание — `__`, плюс — `%2B`, процент — `%25`. `color` меняет правую часть плашки, `labelColor` — левую.
@@ -807,7 +807,7 @@ V-E+F = 6-12+8 = 2
 
 </details>
 
-<details open>
+<details>
 <summary>Колонки, загадка, клавиши, цветное оповещение и сноска</summary>
 
 ```html
