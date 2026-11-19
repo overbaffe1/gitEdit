@@ -1,0 +1,7 @@
+id	category	format	try	path
+01	3d	STL	rotate zoom wireframe	orbit.stl
+02	map	GeoJSON	pan zoom	survey.geojson
+03	map	TopoJSON	pan zoom	sheets.topojson
+04	diagram	Mermaid	read generated diagram	flow.mmd
+05	image-diff	PNG	open linked commit; swipe onion skin	revision.png
+06	notebook	IPYNB	read saved output; no execution	mesh.ipynb
