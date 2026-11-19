@@ -1,0 +1,50 @@
+[
+  {
+    "repo": "terkelg/awesome-creative-coding",
+    "commit": "9643124b4a883e20dfb1b79df69505418728dbeb",
+    "url": "https://github.com/terkelg/awesome-creative-coding/blob/9643124b4a883e20dfb1b79df69505418728dbeb/readme.md",
+    "scope": "Opening README: cover and extensive categorized index; no external image/library fetched."
+  },
+  {
+    "repo": "bradtraversy/50projects50days",
+    "commit": "c92b0bc3a87fc95d44b89552b7b6a2eeb36ca481",
+    "url": "https://github.com/bradtraversy/50projects50days/blob/c92b0bc3a87fc95d44b89552b7b6a2eeb36ca481/README.md",
+    "scope": "Opening README table separates project source and live demo; live demos not run."
+  },
+  {
+    "repo": "sindresorhus/awesome",
+    "commit": "bc98e517ddca672f55f9857d714fc3ea3c3540b2",
+    "url": "https://github.com/sindresorhus/awesome/blob/bc98e517ddca672f55f9857d714fc3ea3c3540b2/readme.md",
+    "scope": "Opening README logo and sponsor block; no sponsor assets or artwork copied."
+  },
+  {
+    "repo": "sindresorhus/awesome-electron",
+    "commit": "8a8126103752fe4e47cc0aa36711286e58ba7864",
+    "url": "https://github.com/sindresorhus/awesome-electron/blob/8a8126103752fe4e47cc0aa36711286e58ba7864/readme.md",
+    "scope": "Opening README index and app categories; listed apps not audited."
+  },
+  {
+    "repo": "kognise/water.css",
+    "commit": "d950cbc9f8607521587fae1aa523f85e25f8396f",
+    "url": "https://github.com/kognise/water.css/blob/d950cbc9f8607521587fae1aa523f85e25f8396f/README.md",
+    "scope": "Opening README describes classless CSS for websites; not installable CSS for GitHub README."
+  },
+  {
+    "repo": "picocss/pico",
+    "commit": "a07563ddc856e6ed31a740e33b0397814227d469",
+    "url": "https://github.com/picocss/pico/blob/a07563ddc856e6ed31a740e33b0397814227d469/README.md",
+    "scope": "Opening README theme-aware picture; maintenance notice read. CSS framework not used."
+  },
+  {
+    "repo": "microsoft/fluentui-emoji",
+    "commit": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+    "url": "https://github.com/microsoft/fluentui-emoji/blob/1ffb34c752ecf5d402f04cfb4b392c77f57c54bc/README.md",
+    "scope": "README uses a collection banner; banner not downloaded and emoji artwork not copied."
+  },
+  {
+    "repo": "catppuccin/catppuccin",
+    "commit": "d09787dd98ca6fba08af5ef2ae94a7e09f17daca",
+    "url": "https://github.com/catppuccin/catppuccin/blob/d09787dd98ca6fba08af5ef2ae94a7e09f17daca/README.md",
+    "scope": "Opening README picture sources and selected palette-table markup; images/icons not copied, not a full project audit."
+  }
+]
