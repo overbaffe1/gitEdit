@@ -1,0 +1,92 @@
+[
+  {
+    "repo": "libreamartists/gsa",
+    "commit": "f6f263ec62e716d2ad5d4aa30349d00a890f4f12",
+    "readme": "README.md",
+    "url": "https://github.com/libreamartists/gsa/blob/f6f263ec62e716d2ad5d4aa30349d00a890f4f12/README.md",
+    "status": "README screening",
+    "candidates": []
+  },
+  {
+    "repo": "Salihbasic/PMFStableMarriage",
+    "commit": "e179ad8f4eb6ae32434a27f03636e9accff20306",
+    "readme": "README.md",
+    "url": "https://github.com/Salihbasic/PMFStableMarriage/blob/e179ad8f4eb6ae32434a27f03636e9accff20306/README.md",
+    "status": "README screening",
+    "candidates": [
+      "src/pmfstablemarriage/__init__.py",
+      "src/pmfstablemarriage/marriages.py"
+    ],
+    "source_file": "src/pmfstablemarriage/marriages.py",
+    "source_url": "https://github.com/Salihbasic/PMFStableMarriage/blob/e179ad8f4eb6ae32434a27f03636e9accff20306/src/pmfstablemarriage/marriages.py"
+  },
+  {
+    "repo": "TarangKha/TK_Gale-Shapley",
+    "commit": "dc81b6dea32db46fc96601d4dfe8e4c1217f1109",
+    "readme": "README.md",
+    "url": "https://github.com/TarangKha/TK_Gale-Shapley/blob/dc81b6dea32db46fc96601d4dfe8e4c1217f1109/README.md",
+    "status": "README screening",
+    "candidates": [
+      "MyCode/Program1.java",
+      "StarterCode/AbstractProgram1.java",
+      "StarterCode/Driver.java",
+      "StarterCode/Matching.java",
+      "StarterCode/Permutation.java",
+      "StarterCode/Program1.java"
+    ]
+  },
+  {
+    "repo": "matthewmorales/gale_shapley",
+    "commit": "c7a9ee01b10fb0c50f32988c72b4785102643b8b",
+    "readme": "README.md",
+    "url": "https://github.com/matthewmorales/gale_shapley/blob/c7a9ee01b10fb0c50f32988c72b4785102643b8b/README.md",
+    "status": "README screening",
+    "candidates": [
+      "gale_shapley.py",
+      "list_gen.py"
+    ]
+  },
+  {
+    "repo": "Epsian/TAMatch",
+    "commit": "da05d77ff49d4f885dfe0e78ba9cb700886acaf7",
+    "readme": "Readme.md",
+    "url": "https://github.com/Epsian/TAMatch/blob/da05d77ff49d4f885dfe0e78ba9cb700886acaf7/Readme.md",
+    "status": "README screening",
+    "candidates": []
+  },
+  {
+    "repo": "jj-moore/stablemarriage",
+    "error": "Command '['gh', 'api', 'repos/jj-moore/stablemarriage/readme?ref=e88100d95878365e7f7639f51c728bcfbcd7cffc']' returned non-zero exit status 1."
+  },
+  {
+    "repo": "Lancelotl/Gale-Shapley",
+    "commit": "9e29e46e943f23e9e8e027425601629dc48bc1f2",
+    "readme": "README.md",
+    "url": "https://github.com/Lancelotl/Gale-Shapley/blob/9e29e46e943f23e9e8e027425601629dc48bc1f2/README.md",
+    "status": "README screening",
+    "candidates": [
+      "stable_matching.py"
+    ],
+    "source_file": "stable_matching.py",
+    "source_url": "https://github.com/Lancelotl/Gale-Shapley/blob/9e29e46e943f23e9e8e027425601629dc48bc1f2/stable_matching.py"
+  },
+  {
+    "repo": "ZMalick/Stable-Marriage-Algorithm",
+    "commit": "6dfc7e17dea20152044cdcd76657ffbd7801800e",
+    "readme": "README.md",
+    "url": "https://github.com/ZMalick/Stable-Marriage-Algorithm/blob/6dfc7e17dea20152044cdcd76657ffbd7801800e/README.md",
+    "status": "README screening",
+    "candidates": [
+      "Main.cpp"
+    ],
+    "source_file": "Main.cpp",
+    "source_url": "https://github.com/ZMalick/Stable-Marriage-Algorithm/blob/6dfc7e17dea20152044cdcd76657ffbd7801800e/Main.cpp"
+  },
+  {
+    "repo": "jtilly/matchingR",
+    "commit": "fcb7947d50924435ec6df842e16e6414e268e385",
+    "readme": "README.md",
+    "url": "https://github.com/jtilly/matchingR/blob/fcb7947d50924435ec6df842e16e6414e268e385/README.md",
+    "status": "README screening"
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "assignments_checked": 40320,
+  "stable_count": 5,
+  "changed_pairs": 7,
+  "A_proposer_optimal": true,
+  "B_proposer_optimal": true,
+  "A_rank_sum_when_A_proposes": 15,
+  "A_rank_sum_when_B_proposes": 35,
+  "B_rank_sum_when_A_proposes": 34,
+  "B_rank_sum_when_B_proposes": 11
+}
