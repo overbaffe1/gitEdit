@@ -1,0 +1,49 @@
+[
+  {
+    "repo": "ehart-altair/SimpsonsParadox",
+    "commit": "ab976cf926eeeeb0563acf1ad98658322e8f1905",
+    "url": "https://github.com/ehart-altair/SimpsonsParadox/blob/ab976cf926eeeeb0563acf1ad98658322e8f1905/README.md",
+    "scope": "README regression detector, preprocessing/binning and thresholds; no model/code execution."
+  },
+  {
+    "repo": "flyaflya/simpsonParadox",
+    "commit": "413fc11a232ff83ce7942f85f71e28541ebcfde3",
+    "url": "https://github.com/flyaflya/simpsonParadox/blob/413fc11a232ff83ce7942f85f71e28541ebcfde3/README.md",
+    "scope": "README tutorial with penguin regression plots; only text/code snippets read, plotted data and historical admissions claims not verified."
+  },
+  {
+    "repo": "ninoch/Trend-Simpsons-Paradox",
+    "commit": "a810f9ed79027ac55bace5a552b5853dbc1268b4",
+    "url": "https://github.com/ninoch/Trend-Simpsons-Paradox/blob/a810f9ed79027ac55bace5a552b5853dbc1268b4/README.md",
+    "scope": "README behavioral-data discovery, bins, logistic models, significance tests; no dataset/paper/code audit."
+  },
+  {
+    "repo": "ijmbarr/simpsons-paradox",
+    "commit": "a4f15d548a580a0696ef180f72eb44bc80f4be60",
+    "url": "https://github.com/ijmbarr/simpsons-paradox/blob/a4f15d548a580a0696ef180f72eb44bc80f4be60/README.md",
+    "scope": "README points to a notebook/blog; external page and notebook not inspected."
+  },
+  {
+    "repo": "CamDavidsonPilon/simpsons-paradox",
+    "error": "Command '['gh', 'api', 'repos/CamDavidsonPilon/simpsons-paradox/readme?ref=fef8279481551d5897cd78fed44fb67eb509726d']' returned non-zero exit status 1.",
+    "scope": "README request failed; not counted as read."
+  },
+  {
+    "repo": "alipay/Learning-to-Discover-Various-Simpson-Paradoxes",
+    "commit": "b7682cf3813ba98170dda529e0f33996aeb2c518",
+    "url": "https://github.com/alipay/Learning-to-Discover-Various-Simpson-Paradoxes/blob/b7682cf3813ba98170dda529e0f33996aeb2c518/README.md",
+    "scope": "README SimNet discovery and datasets/dependencies; no neural network or paper evaluated."
+  },
+  {
+    "repo": "AlabhyaMe/SimpsonsParadox",
+    "commit": "cc1d2d61ed1d69b1956229026bf622db9b8294c8",
+    "url": "https://github.com/AlabhyaMe/SimpsonsParadox/blob/cc1d2d61ed1d69b1956229026bf622db9b8294c8/README.md",
+    "scope": "README warns about differing random seeds in R/Python; own fixture deterministic."
+  },
+  {
+    "repo": "sientifiko/simpson_paradox",
+    "commit": "2f5158a76b6f340260aa5864e5adca31f84c508a",
+    "url": "https://github.com/sientifiko/simpson_paradox/blob/2f5158a76b6f340260aa5864e5adca31f84c508a/README.md",
+    "scope": "Short Spanish README references discrimination case-study article; article not fetched."
+  }
+]
