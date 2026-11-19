@@ -1,0 +1,58 @@
+{
+  "checked": 2048,
+  "codewords": 16,
+  "minimum_distance": 3,
+  "recovered": 128,
+  "single_errors_corrected": 112,
+  "double_errors_detected_but_miscorrected": 336,
+  "byWeight": [
+    {
+      "weight": 0,
+      "cases": 16,
+      "recovered": 16,
+      "zero_syndrome": 16
+    },
+    {
+      "weight": 1,
+      "cases": 112,
+      "recovered": 112,
+      "zero_syndrome": 0
+    },
+    {
+      "weight": 2,
+      "cases": 336,
+      "recovered": 0,
+      "zero_syndrome": 0
+    },
+    {
+      "weight": 3,
+      "cases": 560,
+      "recovered": 0,
+      "zero_syndrome": 112
+    },
+    {
+      "weight": 4,
+      "cases": 560,
+      "recovered": 0,
+      "zero_syndrome": 112
+    },
+    {
+      "weight": 5,
+      "cases": 336,
+      "recovered": 0,
+      "zero_syndrome": 0
+    },
+    {
+      "weight": 6,
+      "cases": 112,
+      "recovered": 0,
+      "zero_syndrome": 0
+    },
+    {
+      "weight": 7,
+      "cases": 16,
+      "recovered": 0,
+      "zero_syndrome": 16
+    }
+  ]
+}

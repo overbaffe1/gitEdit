@@ -1,0 +1,49 @@
+[
+  {
+    "repo": "hmolavi/hamming74",
+    "commit": "be08bb83313f4828c131d66cfa157f989129614e",
+    "url": "https://github.com/hmolavi/hamming74/blob/be08bb83313f4828c131d66cfa157f989129614e/README.md",
+    "scope": "README: single-error C library, 4-bit groups and usage; not source or API-size audit."
+  },
+  {
+    "repo": "freecores/hamming",
+    "error": "Command '['gh', 'api', 'repos/freecores/hamming/readme?ref=2d8e63d07593d996f02dcfbf62757ced9476eb91']' returned non-zero exit status 1.",
+    "scope": "README request failed, not counted as read."
+  },
+  {
+    "repo": "tiennguyenhai19/ESP32-Communication-System",
+    "commit": "b65e9626b327da196f924b2b7636ae8a1c75a13b",
+    "url": "https://github.com/tiennguyenhai19/ESP32-Communication-System/blob/b65e9626b327da196f924b2b7636ae8a1c75a13b/README.md",
+    "scope": "README: three ESP32 pipeline, simulated BSC noise, CRC and explicit multi-error limits. Hardware not tested."
+  },
+  {
+    "repo": "neurlang/hamming",
+    "commit": "f1a1906449ab239797753c979219f03af2dccb71",
+    "url": "https://github.com/neurlang/hamming/blob/f1a1906449ab239797753c979219f03af2dccb71/README.md",
+    "scope": "README: extended (8,4) SECDED; extra parity bit must not be conflated with ordinary (7,4)."
+  },
+  {
+    "repo": "gizak/hammingcode",
+    "commit": "16c72fef0a178c11127096a07254b16935e4bb3f",
+    "url": "https://github.com/gizak/hammingcode/blob/16c72fef0a178c11127096a07254b16935e4bb3f/README.md",
+    "scope": "Sparse README pointing to documentation; no algorithm audit."
+  },
+  {
+    "repo": "33tm/Hamming",
+    "commit": "19e9a80e7dbebda5a25d51aa0e19f876f8bdad27",
+    "url": "https://github.com/33tm/Hamming/blob/19e9a80e7dbebda5a25d51aa0e19f876f8bdad27/README.md",
+    "scope": "README is only a short slogan; no correctness evidence."
+  },
+  {
+    "repo": "RobertBoettcherSF/Ada-Hamming-7-4",
+    "commit": "6fc1d72ec7dd8eaa56dd1087c113dced18d01db7",
+    "url": "https://github.com/RobertBoettcherSF/Ada-Hamming-7-4/blob/6fc1d72ec7dd8eaa56dd1087c113dced18d01db7/README.md",
+    "scope": "README: systematic and interleaved variants and claims about tests; tests/code not executed or audited."
+  },
+  {
+    "repo": "ringhiera/Hamming_7_4",
+    "commit": "fd6cab7cca358a66ab7676ec95eea45756bebbd7",
+    "url": "https://github.com/ringhiera/Hamming_7_4/blob/fd6cab7cca358a66ab7676ec95eea45756bebbd7/README.md",
+    "scope": "Sparse README title and description only; no implementation claims inferred."
+  }
+]
