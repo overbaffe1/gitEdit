@@ -1,0 +1,66 @@
+{
+  "clean": {
+    "truth": {
+      "x": 9,
+      "y": 12
+    },
+    "observed_hex": "bf0318755",
+    "actual_flips": 0,
+    "decoded": {
+      "accepted": true,
+      "position": {
+        "x": 9,
+        "y": 12,
+        "distance": 0
+      },
+      "candidate_count": 1
+    }
+  },
+  "three-flips": {
+    "truth": {
+      "x": 9,
+      "y": 12
+    },
+    "observed_hex": "3f0398751",
+    "actual_flips": 3,
+    "decoded": {
+      "accepted": true,
+      "position": {
+        "x": 9,
+        "y": 12,
+        "distance": 3
+      },
+      "candidate_count": 1
+    }
+  },
+  "four-flips-wrong": {
+    "truth": {
+      "x": 9,
+      "y": 12
+    },
+    "observed_hex": "bf03187f9",
+    "actual_flips": 4,
+    "decoded": {
+      "accepted": true,
+      "position": {
+        "x": 11,
+        "y": 4,
+        "distance": 3
+      },
+      "candidate_count": 1
+    }
+  },
+  "zero-rejected": {
+    "truth": {
+      "x": 9,
+      "y": 12
+    },
+    "observed_hex": "000000000",
+    "actual_flips": 18,
+    "decoded": {
+      "accepted": false,
+      "position": null,
+      "candidate_count": 0
+    }
+  }
+}
