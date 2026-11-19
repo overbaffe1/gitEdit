@@ -1,0 +1,110 @@
+{
+  "grid": [
+    141,
+    113
+  ],
+  "triangles": 31360,
+  "domain": [
+    -3.5,
+    3.5,
+    -2.8,
+    2.8
+  ],
+  "section_y": 0,
+  "section_samples": 141,
+  "units": "arbitrary; no CRS or real-world location",
+  "algorithm": "marching triangles; fixed diagonal a-d; linear interpolation on edges",
+  "levels": [
+    {
+      "value": 0.06,
+      "closed_chains": 1,
+      "vertices": 692
+    },
+    {
+      "value": 0.12,
+      "closed_chains": 1,
+      "vertices": 628
+    },
+    {
+      "value": 0.18,
+      "closed_chains": 1,
+      "vertices": 586
+    },
+    {
+      "value": 0.24,
+      "closed_chains": 1,
+      "vertices": 550
+    },
+    {
+      "value": 0.3,
+      "closed_chains": 1,
+      "vertices": 520
+    },
+    {
+      "value": 0.36,
+      "closed_chains": 1,
+      "vertices": 496
+    },
+    {
+      "value": 0.42,
+      "closed_chains": 1,
+      "vertices": 470
+    },
+    {
+      "value": 0.48,
+      "closed_chains": 1,
+      "vertices": 448
+    },
+    {
+      "value": 0.54,
+      "closed_chains": 1,
+      "vertices": 428
+    },
+    {
+      "value": 0.6,
+      "closed_chains": 1,
+      "vertices": 410
+    },
+    {
+      "value": 0.66,
+      "closed_chains": 1,
+      "vertices": 386
+    },
+    {
+      "value": 0.72,
+      "closed_chains": 1,
+      "vertices": 364
+    },
+    {
+      "value": 0.78,
+      "closed_chains": 2,
+      "vertices": 340
+    },
+    {
+      "value": 0.84,
+      "closed_chains": 2,
+      "vertices": 268
+    },
+    {
+      "value": 0.9,
+      "closed_chains": 2,
+      "vertices": 198
+    },
+    {
+      "value": 0.96,
+      "closed_chains": 1,
+      "vertices": 128
+    },
+    {
+      "value": 1.02,
+      "closed_chains": 1,
+      "vertices": 98
+    },
+    {
+      "value": 1.08,
+      "closed_chains": 1,
+      "vertices": 56
+    }
+  ],
+  "section_note": "Samples of the same grid row. Separate screen scales along x and z."
+}
