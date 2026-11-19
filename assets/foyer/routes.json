@@ -1,0 +1,26 @@
+[
+  {
+    "id": "look",
+    "number": "01",
+    "title": "СМОТРЕТЬ",
+    "subtitle": "Свет врёт. Глаз достраивает.",
+    "description": "Стереограммы, скрытые слои и смена точки зрения.",
+    "target": "atlas/foyer-look.md"
+  },
+  {
+    "id": "make",
+    "number": "02",
+    "title": "СОБИРАТЬ",
+    "subtitle": "С экрана — на стол.",
+    "description": "Бумага, сгибы, вырезы и настоящие детали.",
+    "target": "atlas/foyer-make.md"
+  },
+  {
+    "id": "prove",
+    "number": "03",
+    "title": "ПРОВЕРЯТЬ",
+    "subtitle": "Красиво — ещё не значит верно.",
+    "description": "Монеты, коды и фокусы с проверяемым ответом.",
+    "target": "atlas/foyer-prove.md"
+  }
+]
