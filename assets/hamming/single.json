@@ -1,0 +1,9 @@
+{
+  "format": "hamming74-v1",
+  "data": "1011",
+  "sent": "0110011",
+  "received": "0110111",
+  "syndrome": 5,
+  "candidate": "0110011",
+  "candidate_data": "1011"
+}
