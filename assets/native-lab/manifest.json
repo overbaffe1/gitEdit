@@ -1,0 +1,19 @@
+{
+  "catalog.csv": "3514997daaa1b8d49b1db5266b6ea340b8714fe6ba6e91b1037c9ecb50fafa7b",
+  "catalog.tsv": "d16bea0419f11fef7f69427183a12c5fe98a5e75811bf70bc360e34a9a21e47b",
+  "clusters.geojson": "6ced4743b064a87a2e3446aa9c6f5ef8e7d0a8f7f2ad3ce096c8d948abd11bbd",
+  "flow.mmd": "bfa04bd86382e58e3365d8784da07cf9fab4afc5438312d4583b8b272b083557",
+  "git.mmd": "b74c1218d6d16d5acd3836f50dd9b89cfcdb6ed85ed4388c550b94afbec901b4",
+  "mesh.ipynb": "dc765c8733d1253c1200d71e5cf8bf8e603f22e45d809517a44c0657a58a210c",
+  "notes.adoc": "a2282a91108f84790244d84922cf662ea2f8c7196b1e28cf4db3ceacc44f3266",
+  "notes.org": "129d55ba7204e49c4d9f2d5d0d936b62cf65ea7e20e1ff8345c01535accf90fc",
+  "notes.rst": "96b6e902716724735dd00f007a8f231bc2a6c9b8284b9798cbd4b24da4e8eca8",
+  "orbit.stl": "96059b1ee66f3c89648d3322f534e040aadeb871341d309d0f735cea9d454efc",
+  "pie.mmd": "cb21db03ddfd00046dda2006c0c0c1843c41fb38c205c173f2f9e0471ff262c7",
+  "revision.png": "6f86045b2b0ff0ce08cbfa5fb68f60ad23d51e4d3067f5858e3087f51894c6ee",
+  "sequence.mmd": "990045680a705dfdaa89eba76b595cb58085c7422eceb9b36b5573c9edbee1a5",
+  "sheets.topojson": "f04c3a36fffa01039ab77cdee7796990f729305be2fafa3aa0d94f658baaedb6",
+  "states.mmd": "256814d0b82b799212bba76cba89837357809684a93bdc5bb34a12a490daeb2e",
+  "survey.geojson": "22ad4991c6a9d5333fa181e949ddd4a828b58226225d69c58ad681640ab5491e",
+  "version.mmd": "96bac4de3ce48eccdafa38eb18e0581fe70d26b8d8d5a74ca8af79c77658dcde"
+}

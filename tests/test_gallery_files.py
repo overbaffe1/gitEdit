@@ -105,11 +105,21 @@ class GalleryFilesTest(unittest.TestCase):
                     ):
                         self.assertFalse(u.fragment)
 
-    def test_diagrams_are_images_not_enrichments(self):
-        for path in DOCS:
-            self.assertNotIn('mermaid', set(fence_languages(path.read_text(encoding='utf-8'))), path)
+    def test_legacy_diagrams_stay_images_native_lab_is_explicit(self):
+        # The user explicitly requested real native GitHub renderers. Permit them
+        # only inside the new generated lab; keep the previous exhibits intact.
         main = README.read_text(encoding='utf-8')
-        self.assertFalse({'stl', 'geojson', 'topojson'} & set(fence_languages(main)))
+        block = (SAMPLES / 'native_lab/readme-block.md').read_text(encoding='utf-8')
+        self.assertEqual(main.count(block), 1)
+        self.assertEqual(list(fence_languages(block)).count('mermaid'), 5)
+        self.assertTrue({'stl', 'geojson', 'topojson'} <= set(fence_languages(block)))
+        for path in DOCS:
+            text = path.read_text(encoding='utf-8')
+            if path == README:
+                text = text.replace(block, '', 1)
+            self.assertNotIn('mermaid', set(fence_languages(text)), path)
+        legacy = main.replace(block, '', 1)
+        self.assertFalse({'stl', 'geojson', 'topojson'} & set(fence_languages(legacy)))
         diagrams = re.findall(r'<a href="(assets/mermaid/[^\"]+)"><img src="([^\"]+)"[^>]+alt="([^\"]+)"', main)
         self.assertEqual(len({href for href, _, _ in diagrams}), 8)
         for href, src, alt in diagrams:

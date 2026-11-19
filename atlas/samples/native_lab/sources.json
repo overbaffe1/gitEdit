@@ -1,0 +1,58 @@
+[
+  {
+    "repo": "github/docs",
+    "commit": "16d03ddd1bd51eab7407b4ba632200618e6655c2",
+    "path": "content/get-started/writing-on-github/working-with-advanced-formatting/creating-diagrams.md",
+    "url": "https://github.com/github/docs/blob/16d03ddd1bd51eab7407b4ba632200618e6655c2/content/get-started/writing-on-github/working-with-advanced-formatting/creating-diagrams.md",
+    "scope": "Изучены относящиеся к стенду разделы документа; это не браузерная проверка интерфейса github.com."
+  },
+  {
+    "repo": "github/docs",
+    "commit": "16d03ddd1bd51eab7407b4ba632200618e6655c2",
+    "path": "content/repositories/working-with-files/using-files/working-with-non-code-files.md",
+    "url": "https://github.com/github/docs/blob/16d03ddd1bd51eab7407b4ba632200618e6655c2/content/repositories/working-with-files/using-files/working-with-non-code-files.md",
+    "scope": "Изучены относящиеся к стенду разделы документа; это не браузерная проверка интерфейса github.com."
+  },
+  {
+    "repo": "github/docs",
+    "commit": "16d03ddd1bd51eab7407b4ba632200618e6655c2",
+    "path": "content/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax.md",
+    "url": "https://github.com/github/docs/blob/16d03ddd1bd51eab7407b4ba632200618e6655c2/content/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax.md",
+    "scope": "Изучены относящиеся к стенду разделы документа; это не браузерная проверка интерфейса github.com."
+  },
+  {
+    "repo": "github/docs",
+    "commit": "16d03ddd1bd51eab7407b4ba632200618e6655c2",
+    "path": "content/get-started/writing-on-github/working-with-advanced-formatting/organizing-information-with-collapsed-sections.md",
+    "url": "https://github.com/github/docs/blob/16d03ddd1bd51eab7407b4ba632200618e6655c2/content/get-started/writing-on-github/working-with-advanced-formatting/organizing-information-with-collapsed-sections.md",
+    "scope": "Изучены относящиеся к стенду разделы документа; это не браузерная проверка интерфейса github.com."
+  },
+  {
+    "repo": "github/docs",
+    "commit": "16d03ddd1bd51eab7407b4ba632200618e6655c2",
+    "path": "content/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions.md",
+    "url": "https://github.com/github/docs/blob/16d03ddd1bd51eab7407b4ba632200618e6655c2/content/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions.md",
+    "scope": "Изучены относящиеся к стенду разделы документа; это не браузерная проверка интерфейса github.com."
+  },
+  {
+    "repo": "github/docs",
+    "commit": "16d03ddd1bd51eab7407b4ba632200618e6655c2",
+    "path": "content/get-started/writing-on-github/working-with-advanced-formatting/attaching-files.md",
+    "url": "https://github.com/github/docs/blob/16d03ddd1bd51eab7407b4ba632200618e6655c2/content/get-started/writing-on-github/working-with-advanced-formatting/attaching-files.md",
+    "scope": "Изучены относящиеся к стенду разделы документа; это не браузерная проверка интерфейса github.com."
+  },
+  {
+    "repo": "github/docs",
+    "commit": "16d03ddd1bd51eab7407b4ba632200618e6655c2",
+    "path": "content/github-cli/github-cli/attaching-files-with-github-cli.md",
+    "url": "https://github.com/github/docs/blob/16d03ddd1bd51eab7407b4ba632200618e6655c2/content/github-cli/github-cli/attaching-files-with-github-cli.md",
+    "scope": "Изучены относящиеся к стенду разделы документа; это не браузерная проверка интерфейса github.com."
+  },
+  {
+    "repo": "github/markup",
+    "commit": "8ea04e1d97aac7007563e4d31edd42fb376cf620",
+    "path": "README.md",
+    "url": "https://github.com/github/markup/blob/8ea04e1d97aac7007563e4d31edd42fb376cf620/README.md",
+    "scope": "Прочитано начало README о pipeline и sanitization; код sanitizer не исследовался."
+  }
+]

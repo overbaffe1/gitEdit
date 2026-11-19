@@ -1,0 +1,9 @@
+sequenceDiagram
+    actor Reader as Читатель
+    participant GH as GitHub
+    participant File as Файл репозитория
+    Reader->>GH: Открывает файл
+    GH->>File: Читает поддерживаемый формат
+    File-->>GH: Данные
+    GH-->>Reader: Нативный просмотрщик
+    Note over Reader,GH: Не запуск произвольного кода

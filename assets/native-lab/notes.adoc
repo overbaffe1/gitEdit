@@ -1,0 +1,8 @@
+= Native GitHub renderer: AsciiDoc
+
+This page is rendered from *AsciiDoc*, not Markdown.
+
+|===
+|Format |Execution
+|AsciiDoc |No custom JavaScript
+|===
