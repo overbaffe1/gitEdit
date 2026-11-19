@@ -1,0 +1,33 @@
+{
+  "duration_seconds": 16,
+  "separated_until_percent": 8,
+  "aligned_from_percent": 32,
+  "aligned_through_percent": 85,
+  "aligned_hold_seconds": 8.48,
+  "initial_offsets": {
+    "one": [
+      -28,
+      12
+    ],
+    "two": [
+      24,
+      -18
+    ],
+    "three": [
+      9,
+      19
+    ]
+  },
+  "motion": "translation only; no opacity or flashing; captions fixed",
+  "print": "A4 portrait, static",
+  "compositions": {
+    "desktop": [
+      1440,
+      900
+    ],
+    "mobile": [
+      720,
+      1000
+    ]
+  }
+}

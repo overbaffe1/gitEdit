@@ -1,0 +1,50 @@
+[
+  {
+    "repo": "danba340/svg-animation-readme-example",
+    "commit": "08348498d0aa211167c21da65b6bc1028dff2d14",
+    "url": "https://github.com/danba340/svg-animation-readme-example/blob/08348498d0aa211167c21da65b6bc1028dff2d14/README.md",
+    "scope": "README embeds original and animated kitty SVG; SVG artwork not fetched, attribution note read."
+  },
+  {
+    "repo": "kyechan99/capsule-render",
+    "commit": "050f139e07d2c85ddcdcf8897d38fdd1c62897b8",
+    "url": "https://github.com/kyechan99/capsule-render/blob/050f139e07d2c85ddcdcf8897d38fdd1c62897b8/README.md",
+    "scope": "Opening README parameters/animation and explicit best-effort service caveat; service not called."
+  },
+  {
+    "repo": "DenverCoder1/readme-typing-svg",
+    "commit": "3e71757096cc8a43bba8aa0da8ada29e0948b3d4",
+    "url": "https://github.com/DenverCoder1/readme-typing-svg/blob/3e71757096cc8a43bba8aa0da8ada29e0948b3d4/README.md",
+    "scope": "Opening README typing SVG service and examples; repeated screening, no full profile-gallery audit."
+  },
+  {
+    "repo": "Platane/snk",
+    "commit": "a041d6c27ba561a39f5be9c26a784812765e434b",
+    "url": "https://github.com/Platane/snk/blob/a041d6c27ba561a39f5be9c26a784812765e434b/README.md",
+    "scope": "README workflow-generated snake and SVG/GIF outputs; no workflow enabled or third-party contribution data copied."
+  },
+  {
+    "repo": "andreasbm/readme",
+    "commit": "628d1231dfd27d1f340232b45bd9bb0289e30f99",
+    "url": "https://github.com/andreasbm/readme/blob/628d1231dfd27d1f340232b45bd9bb0289e30f99/README.md",
+    "scope": "Opening README generator/customization description; no generator run or template copied."
+  },
+  {
+    "repo": "svgdotjs/svg.js",
+    "commit": "4b8809b1554c44a84f8992cdbda60480336cc040",
+    "url": "https://github.com/svgdotjs/svg.js/blob/4b8809b1554c44a84f8992cdbda60480336cc040/README.md",
+    "scope": "README JS library API/documentation; not runnable inside GitHub README, library not installed."
+  },
+  {
+    "repo": "svg/svgo",
+    "commit": "31194fb4b3b592d7a65956f8f3b343b9fd6b80a6",
+    "url": "https://github.com/svg/svgo/blob/31194fb4b3b592d7a65956f8f3b343b9fd6b80a6/README.md",
+    "scope": "README optimizer/plugin IDs and style options; optimizer not run, own animation IDs preserved."
+  },
+  {
+    "repo": "marcbruederlin/particles.js",
+    "commit": "2cb1852c0a276cd694e0d03e810904dfd8bfac03",
+    "url": "https://github.com/marcbruederlin/particles.js/blob/2cb1852c0a276cd694e0d03e810904dfd8bfac03/README.md",
+    "scope": "README requires JS canvas/background CSS; deliberate non-example for native README, scripts not executed."
+  }
+]
