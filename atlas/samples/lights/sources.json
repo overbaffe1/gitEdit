@@ -1,0 +1,157 @@
+[
+  {
+    "repo": "pmneila/Lights-Out",
+    "commit": "54c771acf64dae3e69261b194628485a79294161",
+    "readme": "README.rst",
+    "url": "https://github.com/pmneila/Lights-Out/blob/54c771acf64dae3e69261b194628485a79294161/README.rst",
+    "status": "README screening",
+    "candidates": [
+      "lightsout.py",
+      "lightsoutgui.py"
+    ],
+    "source_file": "lightsout.py",
+    "source_url": "https://github.com/pmneila/Lights-Out/blob/54c771acf64dae3e69261b194628485a79294161/lightsout.py"
+  },
+  {
+    "repo": "LyricalMaestro/LightsOutSolver",
+    "commit": "1c7fcef7afbb343050207a9f7f607728805a67c6",
+    "readme": "README.md",
+    "url": "https://github.com/LyricalMaestro/LightsOutSolver/blob/1c7fcef7afbb343050207a9f7f607728805a67c6/README.md",
+    "status": "README screening",
+    "candidates": [
+      "src/com/lyricaloriginal/lightsoutsolver/LightsOutMatrixGenerator.java",
+      "src/com/lyricaloriginal/lightsoutsolver/Main.java",
+      "src/com/lyricaloriginal/lightsoutsolver/RightsOutSolver.java",
+      "src/com/lyricaloriginal/lightsoutsolver/Size3RightsoutSolver.java",
+      "src/com/lyricaloriginal/lightsoutsolver/Size4RightsoutSolver.java",
+      "src/com/lyricaloriginal/lightsoutsolver/SizeNRightsoutSolver.java",
+      "src/com/lyricaloriginal/lightsoutsolver/VectorSetGenerator.java",
+      "test/com/lyricaloriginal/lightsoutsolver/LightsOutMatrixGeneratorTest.java",
+      "test/com/lyricaloriginal/lightsoutsolver/VectorSetGeneraorTest.java"
+    ],
+    "source_file": "src/com/lyricaloriginal/lightsoutsolver/LightsOutMatrixGenerator.java",
+    "source_url": "https://github.com/LyricalMaestro/LightsOutSolver/blob/1c7fcef7afbb343050207a9f7f607728805a67c6/src/com/lyricaloriginal/lightsoutsolver/LightsOutMatrixGenerator.java"
+  },
+  {
+    "repo": "axpokl/LightsOut",
+    "commit": "bd0d6ab526414008b8770179c7dcf1c69748a56b",
+    "readme": "README.md",
+    "url": "https://github.com/axpokl/LightsOut/blob/bd0d6ab526414008b8770179c7dcf1c69748a56b/README.md",
+    "status": "README screening",
+    "candidates": [
+      "ManimGL/lights_out_gl_from_png.py",
+      "ManimGL/lights_out_gl_from_png_ - \u526f\u672c (10).py",
+      "ManimGL/lights_out_gl_from_png_ - \u526f\u672c (11).py",
+      "ManimGL/lights_out_gl_from_png_ - \u526f\u672c (12).py",
+      "ManimGL/lights_out_gl_from_png_ - \u526f\u672c (13).py",
+      "ManimGL/lights_out_gl_from_png_ - \u526f\u672c (14).py",
+      "ManimGL/lights_out_gl_from_png_ - \u526f\u672c (15).py",
+      "ManimGL/lights_out_gl_from_png_ - \u526f\u672c (16).py",
+      "ManimGL/lights_out_gl_from_png_ - \u526f\u672c (17).py",
+      "ManimGL/lights_out_gl_from_png_ - \u526f\u672c (18).py",
+      "ManimGL/lights_out_gl_from_png_ - \u526f\u672c (19).py",
+      "ManimGL/lights_out_gl_from_png_ - \u526f\u672c (2).py",
+      "ManimGL/lights_out_gl_from_png_ - \u526f\u672c (20).py",
+      "ManimGL/lights_out_gl_from_png_ - \u526f\u672c (21).py",
+      "ManimGL/lights_out_gl_from_png_ - \u526f\u672c (22).py",
+      "ManimGL/lights_out_gl_from_png_ - \u526f\u672c (23).py",
+      "ManimGL/lights_out_gl_from_png_ - \u526f\u672c (24).py",
+      "ManimGL/lights_out_gl_from_png_ - \u526f\u672c (25).py",
+      "ManimGL/lights_out_gl_from_png_ - \u526f\u672c (26).py",
+      "ManimGL/lights_out_gl_from_png_ - \u526f\u672c (27).py",
+      "ManimGL/lights_out_gl_from_png_ - \u526f\u672c (28).py",
+      "ManimGL/lights_out_gl_from_png_ - \u526f\u672c (29).py",
+      "ManimGL/lights_out_gl_from_png_ - \u526f\u672c (3).py",
+      "ManimGL/lights_out_gl_from_png_ - \u526f\u672c (30).py",
+      "ManimGL/lights_out_gl_from_png_ - \u526f\u672c (31).py"
+    ]
+  },
+  {
+    "repo": "mightymercado/Very-Fast-Lights-Out-Solver",
+    "commit": "00c2c98bf1b1dd9bc3a849f82da7715781b743fd",
+    "readme": "README.md",
+    "url": "https://github.com/mightymercado/Very-Fast-Lights-Out-Solver/blob/00c2c98bf1b1dd9bc3a849f82da7715781b743fd/README.md",
+    "status": "README screening",
+    "candidates": [
+      "solver.c"
+    ]
+  },
+  {
+    "repo": "Abtinz/Lights-Out-Solver",
+    "commit": "d777bece6bb44eaef9799bb23422559bb09d8dec",
+    "readme": "README.md",
+    "url": "https://github.com/Abtinz/Lights-Out-Solver/blob/d777bece6bb44eaef9799bb23422559bb09d8dec/README.md",
+    "status": "README screening",
+    "candidates": []
+  },
+  {
+    "repo": "paskal98/lightsoutSolver",
+    "commit": "e66e01835560a1bac1ae26703d6eb06485c9d6b7",
+    "readme": "README.md",
+    "url": "https://github.com/paskal98/lightsoutSolver/blob/e66e01835560a1bac1ae26703d6eb06485c9d6b7/README.md",
+    "status": "README screening",
+    "candidates": [
+      "board.py",
+      "button.py",
+      "event_bus.py",
+      "main.py",
+      "main/__init__.py",
+      "main/algorithmus/A_start/__init__.py",
+      "main/algorithmus/A_start/a_star.py",
+      "main/algorithmus/__init__.py",
+      "main/algorithmus/bfs/__init__.py",
+      "main/algorithmus/bfs/bfs.py",
+      "main/algorithmus/dfs/__init__.py",
+      "main/algorithmus/dfs/dfs.py",
+      "main/algorithmus/greedy/__init__.py",
+      "main/algorithmus/greedy/greedy.py",
+      "main/algorithmus/heuristic/__init__.py",
+      "main/algorithmus/heuristic/gaus.py",
+      "main/utils/__init__.py",
+      "main/utils/combinator/__init__.py",
+      "main/utils/combinator/combination_generator.py",
+      "main/utils/toggle/__init__.py",
+      "main/utils/toggle/toggle.py",
+      "test/test_gaus_elimination.py",
+      "test/test_toggle_3x2.py",
+      "test/test_toggle_5x5.py"
+    ]
+  },
+  {
+    "repo": "florian-mollin/lights-out-solver",
+    "commit": "6d8a5f03bf16973e7d8e57fe1ddbfb0f76394e2f",
+    "readme": "README.md",
+    "url": "https://github.com/florian-mollin/lights-out-solver/blob/6d8a5f03bf16973e7d8e57fe1ddbfb0f76394e2f/README.md",
+    "status": "README screening",
+    "candidates": [
+      "LightsOutSolver/src/main/java/com/mollin/lightsoutsolver/core/base/GridInterface.java",
+      "LightsOutSolver/src/main/java/com/mollin/lightsoutsolver/core/base/PatternInterface.java",
+      "LightsOutSolver/src/main/java/com/mollin/lightsoutsolver/core/solver/Equation.java",
+      "LightsOutSolver/src/main/java/com/mollin/lightsoutsolver/core/solver/Examples.java",
+      "LightsOutSolver/src/main/java/com/mollin/lightsoutsolver/core/solver/Solver.java",
+      "LightsOutSolver/src/main/java/com/mollin/lightsoutsolver/core/solver/solution/Solution.java",
+      "LightsOutSolver/src/main/java/com/mollin/lightsoutsolver/core/solver/solution/Solutions.java",
+      "LightsOutSolver/src/main/java/com/mollin/lightsoutsolver/core/utils/Coord.java",
+      "LightsOutSolver/src/main/java/com/mollin/lightsoutsolver/core/utils/GridUtils.java",
+      "LightsOutSolver/src/main/java/com/mollin/lightsoutsolver/core/utils/PatternUtils.java",
+      "LightsOutSolver/src/test/java/com/mollin/lizzle/core/solver/SolverTest.java"
+    ]
+  },
+  {
+    "repo": "bobpace/lights-out-solver",
+    "commit": "5101895c733064eed1cc4d3b28b252b6c6e3cbb6",
+    "readme": "README.md",
+    "url": "https://github.com/bobpace/lights-out-solver/blob/5101895c733064eed1cc4d3b28b252b6c6e3cbb6/README.md",
+    "status": "README screening",
+    "candidates": [
+      "es6-jsx.js",
+      "game-logic.js",
+      "stub.js",
+      "test/mocha/game-logic-tests.js",
+      "webpack-dev-server.js",
+      "webpack.config.js"
+    ],
+    "source_file": "game-logic.js",
+    "source_url": "https://github.com/bobpace/lights-out-solver/blob/5101895c733064eed1cc4d3b28b252b6c6e3cbb6/game-logic.js"
+  }
+]
