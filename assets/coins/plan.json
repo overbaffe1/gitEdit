@@ -1,0 +1,265 @@
+{
+  "format": "twelve-coins-v1",
+  "rows": [
+    [
+      0,
+      0,
+      0,
+      0,
+      -1,
+      -1,
+      -1,
+      1,
+      1,
+      1,
+      -1,
+      1
+    ],
+    [
+      0,
+      -1,
+      -1,
+      -1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      1,
+      -1,
+      1
+    ],
+    [
+      -1,
+      1,
+      0,
+      -1,
+      0,
+      -1,
+      1,
+      0,
+      1,
+      -1,
+      0,
+      1
+    ]
+  ],
+  "cases": [
+    {
+      "coin": 1,
+      "kind": "heavy",
+      "outcomes": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "coin": 1,
+      "kind": "light",
+      "outcomes": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "coin": 2,
+      "kind": "heavy",
+      "outcomes": [
+        0,
+        -1,
+        1
+      ]
+    },
+    {
+      "coin": 2,
+      "kind": "light",
+      "outcomes": [
+        0,
+        1,
+        -1
+      ]
+    },
+    {
+      "coin": 3,
+      "kind": "heavy",
+      "outcomes": [
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "coin": 3,
+      "kind": "light",
+      "outcomes": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "coin": 4,
+      "kind": "heavy",
+      "outcomes": [
+        0,
+        -1,
+        -1
+      ]
+    },
+    {
+      "coin": 4,
+      "kind": "light",
+      "outcomes": [
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "coin": 5,
+      "kind": "heavy",
+      "outcomes": [
+        -1,
+        1,
+        0
+      ]
+    },
+    {
+      "coin": 5,
+      "kind": "light",
+      "outcomes": [
+        1,
+        -1,
+        0
+      ]
+    },
+    {
+      "coin": 6,
+      "kind": "heavy",
+      "outcomes": [
+        -1,
+        1,
+        -1
+      ]
+    },
+    {
+      "coin": 6,
+      "kind": "light",
+      "outcomes": [
+        1,
+        -1,
+        1
+      ]
+    },
+    {
+      "coin": 7,
+      "kind": "heavy",
+      "outcomes": [
+        -1,
+        0,
+        1
+      ]
+    },
+    {
+      "coin": 7,
+      "kind": "light",
+      "outcomes": [
+        1,
+        0,
+        -1
+      ]
+    },
+    {
+      "coin": 8,
+      "kind": "heavy",
+      "outcomes": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "coin": 8,
+      "kind": "light",
+      "outcomes": [
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "coin": 9,
+      "kind": "heavy",
+      "outcomes": [
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "coin": 9,
+      "kind": "light",
+      "outcomes": [
+        -1,
+        0,
+        -1
+      ]
+    },
+    {
+      "coin": 10,
+      "kind": "heavy",
+      "outcomes": [
+        1,
+        1,
+        -1
+      ]
+    },
+    {
+      "coin": 10,
+      "kind": "light",
+      "outcomes": [
+        -1,
+        -1,
+        1
+      ]
+    },
+    {
+      "coin": 11,
+      "kind": "heavy",
+      "outcomes": [
+        -1,
+        -1,
+        0
+      ]
+    },
+    {
+      "coin": 11,
+      "kind": "light",
+      "outcomes": [
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "coin": 12,
+      "kind": "heavy",
+      "outcomes": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "coin": 12,
+      "kind": "light",
+      "outcomes": [
+        -1,
+        -1,
+        -1
+      ]
+    }
+  ]
+}

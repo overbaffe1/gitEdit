@@ -1,0 +1,42 @@
+{
+  "verified": true,
+  "cases_checked": 24,
+  "mass_comparisons": 72,
+  "distinct_traces": 24,
+  "pan_sizes": [
+    [
+      4,
+      4,
+      4
+    ],
+    [
+      4,
+      4,
+      4
+    ],
+    [
+      4,
+      4,
+      4
+    ]
+  ],
+  "unused_traces": [
+    [
+      -1,
+      1,
+      1
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      -1,
+      -1
+    ]
+  ],
+  "two_weighings_outcomes": 9,
+  "hypotheses": 24
+}

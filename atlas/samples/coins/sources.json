@@ -1,0 +1,58 @@
+[
+  {
+    "repo": "succinction/12CoinsPuzzle",
+    "commit": "09fa4a71aeda7a9231ecac1299131d5ec0455b27",
+    "url": "https://github.com/succinction/12CoinsPuzzle/blob/09fa4a71aeda7a9231ecac1299131d5ec0455b27/README.md",
+    "scope": "README title/year only, no algorithm evidence."
+  },
+  {
+    "repo": "NinaZumel/DysonsAlgorithm",
+    "commit": "0a852b87520e1376355bbd29209e8dbc51f5781a",
+    "url": "https://github.com/NinaZumel/DysonsAlgorithm/blob/0a852b87520e1376355bbd29209e8dbc51f5781a/README.md",
+    "scope": "README links Dyson generalized algorithm and papers/blog; links not followed, no theorem attributed as audited."
+  },
+  {
+    "repo": "markfields/TwelveCoins",
+    "error": "Command '['gh', 'api', 'repos/markfields/TwelveCoins/readme?ref=d8d33cfe572816559b4469b966c5569def872d1f']' returned non-zero exit status 1.",
+    "scope": "README request failed, not counted as read."
+  },
+  {
+    "repo": "NatalieWeaver/twelve-coins",
+    "commit": "4fac0ed6d07627b351668afbbec24009c225c721",
+    "url": "https://github.com/NatalieWeaver/twelve-coins/blob/4fac0ed6d07627b351668afbbec24009c225c721/README.md",
+    "scope": "README full adaptive 4-v-4 solution: balanced and unbalanced branches; our plan is nonadaptive, not copied."
+  },
+  {
+    "repo": "succinction/TWELVE_COINS",
+    "error": "Command '['gh', 'api', 'repos/succinction/TWELVE_COINS/readme?ref=4e0da87a111d4666484e11b1b7234b401c12b7dc']' returned non-zero exit status 1.",
+    "scope": "README request failed, not counted as read."
+  },
+  {
+    "repo": "Professor-Raptor/twelve-coins",
+    "commit": "47029b76f8601ebb30ed46708a8f6d5568439b64",
+    "url": "https://github.com/Professor-Raptor/twelve-coins/blob/47029b76f8601ebb30ed46708a8f6d5568439b64/README.md",
+    "scope": "README CLI game, per-case play versus strategy validation distinction. No executable/script run or screenshot copied."
+  },
+  {
+    "repo": "mikemeier/twelve-coins-riddle",
+    "error": "Command '['gh', 'api', 'repos/mikemeier/twelve-coins-riddle/readme?ref=6cce171ba6adace7d85b768bf16361821612f97b']' returned non-zero exit status 1.",
+    "scope": "README request failed, not counted as read."
+  },
+  {
+    "repo": "marcosfede/quantum-counterfeit-coin-algorithm",
+    "commit": "68e2d78db060300628f94053187b41ce6e35948c",
+    "url": "https://github.com/marcosfede/quantum-counterfeit-coin-algorithm/blob/68e2d78db060300628f94053187b41ce6e35948c/README.md",
+    "scope": "README quantum problem/QISKit PDF pointer; different oracle/model, PDF not inspected."
+  },
+  {
+    "repo": "mrigankpawagi/OpenDayMath_BalancesProblem",
+    "error": "Command '['gh', 'api', 'repos/mrigankpawagi/OpenDayMath_BalancesProblem/readme?ref=5fabcbe688939e7b2b325bad42661debdf900c55']' returned non-zero exit status 1.",
+    "scope": "README request failed, not counted as read."
+  },
+  {
+    "repo": "CarlosNZ/counterfeit-coin-puzzle",
+    "commit": "311d1e310f2775d1c8972066d85a8721df896934",
+    "url": "https://github.com/CarlosNZ/counterfeit-coin-puzzle/blob/311d1e310f2775d1c8972066d85a8721df896934/README.md",
+    "scope": "README simulation and PDF/full-output links; these not opened; our 24-case audit independent."
+  }
+]
