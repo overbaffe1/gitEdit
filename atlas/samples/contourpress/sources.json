@@ -1,0 +1,38 @@
+[
+  {
+    "repo": "d3/d3-contour",
+    "commit": "6e2fa9cd2eaa064ac44a671961d4a375373e5469",
+    "url": "https://github.com/d3/d3-contour/blob/6e2fa9cd2eaa064ac44a671961d4a375373e5469/README.md",
+    "scope": "Начало корневого README, до 2300 символов. Не открывались картинки, исходники и связанные документы; программы не запускались."
+  },
+  {
+    "repo": "contourpy/contourpy",
+    "commit": "bb1e62df32d10d6bb5f27f3f6fb0426ada612f50",
+    "url": "https://github.com/contourpy/contourpy/blob/bb1e62df32d10d6bb5f27f3f6fb0426ada612f50/README.md",
+    "scope": "Начало корневого README, до 2300 символов. Не открывались картинки, исходники и связанные документы; программы не запускались."
+  },
+  {
+    "repo": "scikit-image/scikit-image",
+    "commit": "553cdafb61b54d15423ee7a25f70495a397e0f09",
+    "url": "https://github.com/scikit-image/scikit-image/blob/553cdafb61b54d15423ee7a25f70495a397e0f09/README.md",
+    "scope": "Начало корневого README, до 2300 символов. Не открывались картинки, исходники и связанные документы; программы не запускались."
+  },
+  {
+    "repo": "OSGeo/gdal",
+    "commit": "8a556e7b81aab50ec6612b47499ffbe942aa3a71",
+    "url": "https://github.com/OSGeo/gdal/blob/8a556e7b81aab50ec6612b47499ffbe942aa3a71/README.md",
+    "scope": "Начало корневого README, до 2300 символов. Не открывались картинки, исходники и связанные документы; программы не запускались."
+  },
+  {
+    "repo": "QGIS/QGIS",
+    "commit": "a785b09fafeffd0a8a05a21fee5099952ed3e3dc",
+    "url": "https://github.com/qgis/QGIS/blob/a785b09fafeffd0a8a05a21fee5099952ed3e3dc/README.md",
+    "scope": "Начало корневого README, до 2300 символов. Не открывались картинки, исходники и связанные документы; программы не запускались."
+  },
+  {
+    "repo": "mapbox/earcut",
+    "commit": "934e54d8bed85387330b7acaa5d2f5ba30a460a3",
+    "url": "https://github.com/mapbox/earcut/blob/934e54d8bed85387330b7acaa5d2f5ba30a460a3/README.md",
+    "scope": "Начало корневого README, до 2300 символов. Не открывались картинки, исходники и связанные документы; программы не запускались."
+  }
+]
