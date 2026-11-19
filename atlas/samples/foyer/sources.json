@@ -1,0 +1,80 @@
+[
+  {
+    "repo": "charmbracelet/gum",
+    "commit": "879f048103adf0214b85943b52d8d65b08d772c5",
+    "url": "https://github.com/charmbracelet/gum/blob/879f048103adf0214b85943b52d8d65b08d772c5/README.md",
+    "scope": "Opening README markup: large subject image, demo and tutorial. Remote imagery not downloaded."
+  },
+  {
+    "repo": "charmbracelet/glow",
+    "commit": "8b0600fa445535b9c53194c0d4f7fe3cf700ef3e",
+    "url": "https://github.com/charmbracelet/glow/blob/8b0600fa445535b9c53194c0d4f7fe3cf700ef3e/README.md",
+    "scope": "Opening README markup: logo/demo and clear promise; remote GIF not viewed."
+  },
+  {
+    "repo": "typst/typst",
+    "commit": "a6dcd82927b2a44bb089bc9151e29566e84e7d5a",
+    "url": "https://github.com/typst/typst/blob/a6dcd82927b2a44bb089bc9151e29566e84e7d5a/README.md",
+    "scope": "Opening README and Example section: one large image as demonstration. Image not fetched."
+  },
+  {
+    "repo": "niri-wm/niri",
+    "commit": "a855fd519f7341d378577da6a7b2763baeb70f79",
+    "url": "https://github.com/niri-wm/niri/blob/a855fd519f7341d378577da6a7b2763baeb70f79/README.md",
+    "scope": "Opening README: central identity and short three-way navigation above screenshot. Screenshot not inspected."
+  },
+  {
+    "repo": "jesseduffield/lazygit",
+    "commit": "54cc6af1d77b5a6cec3dc9ad0b203afdb4ad3451",
+    "url": "https://github.com/jesseduffield/lazygit/blob/54cc6af1d77b5a6cec3dc9ad0b203afdb4ad3451/README.md",
+    "scope": "Opening README: sponsor and demo weight. No video or executable run."
+  },
+  {
+    "repo": "daytonaio/daytona",
+    "commit": "ec4c21b2d597091ac09ecc278f3bcc172575a987",
+    "url": "https://github.com/daytonaio/daytona/blob/ec4c21b2d597091ac09ecc278f3bcc172575a987/README.md",
+    "scope": "Opening README: explicit theme-specific picture sources; maintenance warning read. No product recommendation."
+  },
+  {
+    "repo": "DenverCoder1/readme-typing-svg",
+    "commit": "3e71757096cc8a43bba8aa0da8ada29e0948b3d4",
+    "url": "https://github.com/DenverCoder1/readme-typing-svg/blob/3e71757096cc8a43bba8aa0da8ada29e0948b3d4/README.md",
+    "scope": "Opening README: service-generated animated typography and setup. Service not called."
+  },
+  {
+    "repo": "antonkomarev/github-profile-views-counter",
+    "commit": "605c409deff5ac602ef3582bfc8a593426e5e511",
+    "url": "https://github.com/antonkomarev/github-profile-views-counter/blob/605c409deff5ac602ef3582bfc8a593426e5e511/README.md",
+    "scope": "Opening README: external view counter and explicit caveat about faked counts. Service not called."
+  },
+  {
+    "repo": "abhisheknaiidu/awesome-github-profile-readme",
+    "commit": "a2f2de46099a6d503d9240d8f90b4f504755b27f",
+    "url": "https://github.com/abhisheknaiidu/awesome-github-profile-readme/blob/a2f2de46099a6d503d9240d8f90b4f504755b27f/README.md",
+    "scope": "Contents/Minimalistic group: directory screening, not inspection of every listed profile."
+  },
+  {
+    "repo": "github/docs",
+    "commit": "977869c2ab54b6f151bef052611fbdb5a73c212f",
+    "url": "https://github.com/github/docs/blob/977869c2ab54b6f151bef052611fbdb5a73c212f/README.md",
+    "scope": "README Quick links by contributor type. Not treated as picture-support documentation."
+  },
+  {
+    "repo": "caneco/caneco",
+    "commit": "7a04ae9f0ac8f7d1d693471feffbc8dd5e44e937",
+    "url": "https://github.com/caneco/caneco/blob/7a04ae9f0ac8f7d1d693471feffbc8dd5e44e937/README.md",
+    "scope": "Full short profile README: concise text hierarchy; no image required."
+  },
+  {
+    "repo": "moertel/moertel",
+    "commit": "a269439de1397025de1ea1763ef839b3218783cc",
+    "url": "https://github.com/moertel/moertel/blob/a269439de1397025de1ea1763ef839b3218783cc/README.md",
+    "scope": "Profile README markup: grouped badges, two roles. External art gallery not visited."
+  },
+  {
+    "repo": "maximousblk/maximousblk",
+    "commit": "06f4f0396be6780403560c15450d484edd790971",
+    "url": "https://github.com/maximousblk/maximousblk/blob/06f4f0396be6780403560c15450d484edd790971/README.md",
+    "scope": "Opening profile blocks: named link groups and generated recent-activity markers. Actions not audited."
+  }
+]
