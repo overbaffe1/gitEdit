@@ -1,0 +1,48 @@
+[
+  {
+    "repo": "viraxor/gray-code-spwn",
+    "commit": "0c11de26bb2e76acf4c58b7793996b4781895450",
+    "url": "https://github.com/viraxor/gray-code-spwn/blob/0c11de26bb2e76acf4c58b7793996b4781895450/README.md",
+    "scope": "README short SPWN encoder description; linked bit library not inspected."
+  },
+  {
+    "repo": "thundergnat/Gray-Code-RBC",
+    "commit": "db086fe0dd58cc5b855d8c90d16facde11e86baf",
+    "url": "https://github.com/thundergnat/Gray-Code-RBC/blob/db086fe0dd58cc5b855d8c90d16facde11e86baf/README.md",
+    "scope": "README reflected code encode/decode table and API; no implementation or arbitrary-integer guarantee audit."
+  },
+  {
+    "repo": "clvLabs/gray-code-generator",
+    "commit": "33519fd85bc11bfc251a85290e845de718e513a6",
+    "url": "https://github.com/clvLabs/gray-code-generator/blob/33519fd85bc11bfc251a85290e845de718e513a6/README.md",
+    "scope": "README radial SVG encoder, dimensions/gaps/units; figures/code not inspected. Own disk uses explicit mm, not copied unit examples."
+  },
+  {
+    "repo": "Sompong6814/gray-code-encoder",
+    "commit": "e51d67442d9b125b85a10720fe45197b392e3a63",
+    "url": "https://github.com/Sompong6814/gray-code-encoder/blob/e51d67442d9b125b85a10720fe45197b392e3a63/README.md",
+    "scope": "README BigInt encoder warns about JS width; later buffer/performance paragraphs appear unrelated. No source audit, constrain own code to six bits."
+  },
+  {
+    "repo": "surayamubarak/gray-code-encoder-verilog",
+    "commit": "bec168f0f26bea7fffbbd6b14b38e7758101b4c0",
+    "url": "https://github.com/surayamubarak/gray-code-encoder-verilog/blob/bec168f0f26bea7fffbbd6b14b38e7758101b4c0/README.md",
+    "scope": "README title only, no algorithm evidence."
+  },
+  {
+    "repo": "lonebyna220-wq/gray-code-encoder-verilog",
+    "commit": "19b9337acb8f113ddf97a6be4cf5a940a010187e",
+    "url": "https://github.com/lonebyna220-wq/gray-code-encoder-verilog/blob/19b9337acb8f113ddf97a6be4cf5a940a010187e/README.md",
+    "scope": "README four-bit Verilog expression and claimed 16 test cases; hardware/testbench not run or audited."
+  },
+  {
+    "repo": "a8kj7sea/GrayEncoder",
+    "error": "Command '['gh', 'api', 'repos/a8kj7sea/GrayEncoder/readme?ref=4438573882f3b7505c96d55f6fb5f4e454737c2f']' returned non-zero exit status 1.",
+    "scope": "README request failed, not counted as read."
+  },
+  {
+    "repo": "lonebyna220-wq/Gray-Code-Encoder-Design-and-Verification-",
+    "error": "Command '['gh', 'api', 'repos/lonebyna220-wq/Gray-Code-Encoder-Design-and-Verification-/readme?ref=2728d720b3aff10aeb9f97bff6cfee5d69b8d30d']' returned non-zero exit status 1.",
+    "scope": "README request failed, not counted as read."
+  }
+]
