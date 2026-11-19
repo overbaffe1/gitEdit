@@ -1,0 +1,50 @@
+[
+  {
+    "repo": "maplibre/maplibre-gl-js",
+    "commit": "8a0091c64a25265a5c3883aeedcea96687c00d52",
+    "url": "https://github.com/maplibre/maplibre-gl-js/blob/8a0091c64a25265a5c3883aeedcea96687c00d52/README.md",
+    "scope": "Прочитан корневой README; изображения, демо, исходный код и документация по ссылкам не проверялись."
+  },
+  {
+    "repo": "Leaflet/Leaflet",
+    "commit": "fe183c8cad5192f410df4d090e0870ae05eb6cfd",
+    "url": "https://github.com/Leaflet/Leaflet/blob/fe183c8cad5192f410df4d090e0870ae05eb6cfd/README.md",
+    "scope": "Прочитан корневой README; изображения, демо, исходный код и документация по ссылкам не проверялись."
+  },
+  {
+    "repo": "d3/d3-geo",
+    "commit": "bcfc112de60605429a9e9397109ae4de5b0674fa",
+    "url": "https://github.com/d3/d3-geo/blob/bcfc112de60605429a9e9397109ae4de5b0674fa/README.md",
+    "scope": "Прочитан корневой README; изображения, демо, исходный код и документация по ссылкам не проверялись."
+  },
+  {
+    "repo": "visgl/deck.gl",
+    "commit": "0a2e2f895663bcdeb858de2255cdb92bac18ce64",
+    "url": "https://github.com/visgl/deck.gl/blob/0a2e2f895663bcdeb858de2255cdb92bac18ce64/README.md",
+    "scope": "Прочитан корневой README; изображения, демо, исходный код и документация по ссылкам не проверялись."
+  },
+  {
+    "repo": "OpenRailwayMap/OpenRailwayMap",
+    "commit": "3d36317b80cf4bd909090fd106b9a0903dab1150",
+    "url": "https://github.com/OpenRailwayMap/OpenRailwayMap/blob/3d36317b80cf4bd909090fd106b9a0903dab1150/README.md",
+    "scope": "Прочитан корневой README; изображения, демо, исходный код и документация по ссылкам не проверялись."
+  },
+  {
+    "repo": "juliuste/transit-map",
+    "commit": "68856e217c6d2af432612d3795ebe3963992a229",
+    "url": "https://github.com/juliuste/transit-map/blob/68856e217c6d2af432612d3795ebe3963992a229/readme.md",
+    "scope": "Прочитан корневой README; изображения, демо, исходный код и документация по ссылкам не проверялись."
+  },
+  {
+    "repo": "gephi/gephi",
+    "commit": "e2ecd451c9b7e4564e87a2a30bebf9bb0e94e089",
+    "url": "https://github.com/gephi/gephi/blob/e2ecd451c9b7e4564e87a2a30bebf9bb0e94e089/README.md",
+    "scope": "Прочитан корневой README; изображения, демо, исходный код и документация по ссылкам не проверялись."
+  },
+  {
+    "repo": "cytoscape/cytoscape.js",
+    "commit": "b768734100fa49d24f5652361e4f2f3bdbcbce86",
+    "url": "https://github.com/cytoscape/cytoscape.js/blob/b768734100fa49d24f5652361e4f2f3bdbcbce86/README.md",
+    "scope": "Прочитан корневой README; изображения, демо, исходный код и документация по ссылкам не проверялись."
+  }
+]
