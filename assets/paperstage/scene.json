@@ -1,0 +1,41 @@
+{
+  "frames": [
+    {
+      "id": 1,
+      "color": "#f7e7bb",
+      "dx": 0,
+      "dy": 0
+    },
+    {
+      "id": 2,
+      "color": "#e8af8a",
+      "dx": 32,
+      "dy": -24
+    },
+    {
+      "id": 3,
+      "color": "#ce7665",
+      "dx": 64,
+      "dy": -48
+    },
+    {
+      "id": 4,
+      "color": "#6a929a",
+      "dx": 96,
+      "dy": -72
+    },
+    {
+      "id": 5,
+      "color": "#3d657e",
+      "dx": 128,
+      "dy": -96
+    }
+  ],
+  "back": {
+    "id": 6,
+    "color": "#213f59"
+  },
+  "outer_path": "M-240 620V240A240 240 0 0 1 240 240V620Z",
+  "hole_path": "M-170 620V240A170 170 0 0 1 170 240V620Z",
+  "scope": "Screen-space illustration only; not a 3D mesh, physical shadow model or cutting template."
+}

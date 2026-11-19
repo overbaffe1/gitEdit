@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="1680" viewBox="0 0 720 1680" role="img" aria-labelledby="title desc">
+<title id="title">Сцена по слоям</title><desc id="desc">Те же пять арочных рам и шестой сплошной задник показаны отдельно. Это объяснение композиции, не выкройка и не инструкция по изготовлению.</desc>
+<rect width="720" height="1680" fill="#eee7e2"/>
+<text x="36" y="64" fill="#263b49" font-family="DejaVu Sans,Arial,sans-serif" font-size="36" font-weight="700">СЦЕНА ПО СЛОЯМ</text>
+<text x="36" y="108" fill="#263b49" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" >Один контур. Пять цветов. Шестой лист — задник.</text>
+<g data-layer="1" transform="translate(190 160) scale(0.52)"><path d="M-240 620V240A240 240 0 0 1 240 240V620ZM-170 620V240A170 170 0 0 1 170 240V620Z" fill="#f7e7bb" fill-rule="evenodd"/></g>
+<text x="80" y="525" fill="#263b49" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" >01 / Рама</text>
+<g data-layer="2" transform="translate(520 160) scale(0.52)"><path d="M-240 620V240A240 240 0 0 1 240 240V620ZM-170 620V240A170 170 0 0 1 170 240V620Z" fill="#e8af8a" fill-rule="evenodd"/></g>
+<text x="410" y="525" fill="#263b49" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" >02 / Рама</text>
+<g data-layer="3" transform="translate(190 640) scale(0.52)"><path d="M-240 620V240A240 240 0 0 1 240 240V620ZM-170 620V240A170 170 0 0 1 170 240V620Z" fill="#ce7665" fill-rule="evenodd"/></g>
+<text x="80" y="1005" fill="#263b49" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" >03 / Рама</text>
+<g data-layer="4" transform="translate(520 640) scale(0.52)"><path d="M-240 620V240A240 240 0 0 1 240 240V620ZM-170 620V240A170 170 0 0 1 170 240V620Z" fill="#6a929a" fill-rule="evenodd"/></g>
+<text x="410" y="1005" fill="#263b49" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" >04 / Рама</text>
+<g data-layer="5" transform="translate(190 1120) scale(0.52)"><path d="M-240 620V240A240 240 0 0 1 240 240V620ZM-170 620V240A170 170 0 0 1 170 240V620Z" fill="#3d657e" fill-rule="evenodd"/></g>
+<text x="80" y="1485" fill="#263b49" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" >05 / Рама</text>
+<g data-layer="6" transform="translate(520 1120) scale(0.52)"><path d="M-240 620V240A240 240 0 0 1 240 240V620Z" fill="#213f59"/><circle cx="-70" cy="330" r="73" fill="#ed9a56"/><circle cx="-93" cy="309" r="6" fill="#f7c58a"/></g>
+<text x="410" y="1485" fill="#263b49" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" >06 / Задник</text>
+<text x="36" y="1634" fill="#263b49" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" >Разбор иллюстрации, не шаблон для резки.</text>
+</svg>
