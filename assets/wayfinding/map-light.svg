@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1020" viewBox="0 0 1440 1020" role="img" aria-labelledby="title desc">
+<title id="title">Карта ночного бюро</title>
+<desc id="desc">Три независимых маршрута, девять экспонатов. A: гравюра, розетки, нитяная луна. B: стереограмма, бумажный кристалл, материальная проба. C: пара Туси, ночной тираж, код Грея. Ссылки находятся под картой.</desc>
+<rect width="1440" height="1020" fill="#f3eddf"/>
+<path d="M40 280L40 930" stroke="#dad5c8" stroke-width="1" fill="none"/>
+<path d="M80 280L80 930" stroke="#dad5c8" stroke-width="1" fill="none"/>
+<path d="M120 280L120 930" stroke="#dad5c8" stroke-width="1" fill="none"/>
+<path d="M160 280L160 930" stroke="#dad5c8" stroke-width="1" fill="none"/>
+<path d="M200 280L200 930" stroke="#dad5c8" stroke-width="1" fill="none"/>
+<path d="M240 280L240 930" stroke="#dad5c8" stroke-width="1" fill="none"/>
+<path d="M280 280L280 930" stroke="#dad5c8" stroke-width="1" fill="none"/>
+<path d="M320 280L320 930" stroke="#dad5c8" stroke-width="1" fill="none"/>
+<path d="M360 280L360 930" stroke="#dad5c8" stroke-width="1" fill="none"/>
+<path d="M400 280L400 930" stroke="#dad5c8" stroke-width="1" fill="none"/>
+<path d="M440 280L440 930" stroke="#dad5c8" stroke-width="1" fill="none"/>
+<path d="M480 280L480 930" stroke="#dad5c8" stroke-width="1" fill="none"/>
+<path d="M520 280L520 930" stroke="#dad5c8" stroke-width="1" fill="none"/>
+<path d="M560 280L560 930" stroke="#dad5c8" stroke-width="1" fill="none"/>
+<path d="M600 280L600 930" stroke="#dad5c8" stroke-width="1" fill="none"/>
+<path d="M640 280L640 930" stroke="#dad5c8" stroke-width="1" fill="none"/>
+<path d="M680 280L680 930" stroke="#dad5c8" stroke-width="1" fill="none"/>
+<path d="M720 280L720 930" stroke="#dad5c8" stroke-width="1" fill="none"/>
+<path d="M760 280L760 930" stroke="#dad5c8" stroke-width="1" fill="none"/>
+<path d="M800 280L800 930" stroke="#dad5c8" stroke-width="1" fill="none"/>
+<path d="M840 280L840 930" stroke="#dad5c8" stroke-width="1" fill="none"/>
+<path d="M880 280L880 930" stroke="#dad5c8" stroke-width="1" fill="none"/>
+<path d="M920 280L920 930" stroke="#dad5c8" stroke-width="1" fill="none"/>
+<path d="M960 280L960 930" stroke="#dad5c8" stroke-width="1" fill="none"/>
+<path d="M1000 280L1000 930" stroke="#dad5c8" stroke-width="1" fill="none"/>
+<path d="M1040 280L1040 930" stroke="#dad5c8" stroke-width="1" fill="none"/>
+<path d="M1080 280L1080 930" stroke="#dad5c8" stroke-width="1" fill="none"/>
+<path d="M1120 280L1120 930" stroke="#dad5c8" stroke-width="1" fill="none"/>
+<path d="M1160 280L1160 930" stroke="#dad5c8" stroke-width="1" fill="none"/>
+<path d="M1200 280L1200 930" stroke="#dad5c8" stroke-width="1" fill="none"/>
+<path d="M1240 280L1240 930" stroke="#dad5c8" stroke-width="1" fill="none"/>
+<path d="M1280 280L1280 930" stroke="#dad5c8" stroke-width="1" fill="none"/>
+<path d="M1320 280L1320 930" stroke="#dad5c8" stroke-width="1" fill="none"/>
+<path d="M1360 280L1360 930" stroke="#dad5c8" stroke-width="1" fill="none"/>
+<path d="M1400 280L1400 930" stroke="#dad5c8" stroke-width="1" fill="none"/>
+<path d="M40 280L1400 280" stroke="#dad5c8" stroke-width="1" fill="none"/>
+<path d="M40 320L1400 320" stroke="#dad5c8" stroke-width="1" fill="none"/>
+<path d="M40 360L1400 360" stroke="#dad5c8" stroke-width="1" fill="none"/>
+<path d="M40 400L1400 400" stroke="#dad5c8" stroke-width="1" fill="none"/>
+<path d="M40 440L1400 440" stroke="#dad5c8" stroke-width="1" fill="none"/>
+<path d="M40 480L1400 480" stroke="#dad5c8" stroke-width="1" fill="none"/>
+<path d="M40 520L1400 520" stroke="#dad5c8" stroke-width="1" fill="none"/>
+<path d="M40 560L1400 560" stroke="#dad5c8" stroke-width="1" fill="none"/>
+<path d="M40 600L1400 600" stroke="#dad5c8" stroke-width="1" fill="none"/>
+<path d="M40 640L1400 640" stroke="#dad5c8" stroke-width="1" fill="none"/>
+<path d="M40 680L1400 680" stroke="#dad5c8" stroke-width="1" fill="none"/>
+<path d="M40 720L1400 720" stroke="#dad5c8" stroke-width="1" fill="none"/>
+<path d="M40 760L1400 760" stroke="#dad5c8" stroke-width="1" fill="none"/>
+<path d="M40 800L1400 800" stroke="#dad5c8" stroke-width="1" fill="none"/>
+<path d="M40 840L1400 840" stroke="#dad5c8" stroke-width="1" fill="none"/>
+<path d="M40 880L1400 880" stroke="#dad5c8" stroke-width="1" fill="none"/>
+<path d="M40 920L1400 920" stroke="#dad5c8" stroke-width="1" fill="none"/>
+<text x="40" y="56" fill="#52626a" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" font-weight="400">БЮРО / ПУТЕВОДИТЕЛЬ</text>
+<text x="1280" y="56" fill="#52626a" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" font-weight="400">ЛИСТ 04</text>
+<path d="M40 78L1400 78" stroke="#162c3b" stroke-width="1" fill="none"/>
+<text x="40" y="157" fill="#162c3b" font-family="DejaVu Sans,Arial,sans-serif" font-size="88" font-weight="700">КАРТА</text>
+<text x="40" y="237" fill="#162c3b" font-family="DejaVu Sans,Arial,sans-serif" font-size="88" font-weight="700">НОЧНОГО БЮРО</text>
+<text x="48" y="345" fill="#ec7654" font-family="DejaVu Sans,Arial,sans-serif" font-size="48" font-weight="700">A</text>
+<text x="48" y="375" fill="#52626a" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" font-weight="400">Линия света</text>
+<path d="M260 390H600L680 310H1330" stroke="#ec7654" stroke-width="12" stroke-linejoin="round" stroke-linecap="round" fill="none"/>
+<circle cx="340" cy="390" r="17" fill="#f3eddf" stroke="#162c3b" stroke-width="3"/>
+<text x="325" y="443" fill="#52626a" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" font-weight="400">01</text>
+<text x="245" y="478" fill="#162c3b" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="700">Гравюра</text>
+<circle cx="820" cy="310" r="17" fill="#f3eddf" stroke="#162c3b" stroke-width="3"/>
+<text x="805" y="363" fill="#52626a" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" font-weight="400">02</text>
+<text x="725" y="398" fill="#162c3b" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="700">Розетки</text>
+<circle cx="1160" cy="310" r="17" fill="#f3eddf" stroke="#162c3b" stroke-width="3"/>
+<text x="1145" y="363" fill="#52626a" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" font-weight="400">03</text>
+<text x="1065" y="398" fill="#162c3b" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="700">Нитяная луна</text>
+<text x="48" y="545" fill="#5689c4" font-family="DejaVu Sans,Arial,sans-serif" font-size="48" font-weight="700">B</text>
+<text x="48" y="575" fill="#52626a" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" font-weight="400">Линия объёма</text>
+<path d="M260 590H600L680 510H1330" stroke="#5689c4" stroke-width="12" stroke-linejoin="round" stroke-linecap="round" fill="none"/>
+<circle cx="340" cy="590" r="17" fill="#f3eddf" stroke="#162c3b" stroke-width="3"/>
+<text x="325" y="643" fill="#52626a" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" font-weight="400">04</text>
+<text x="245" y="678" fill="#162c3b" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="700">Стереограмма</text>
+<circle cx="820" cy="510" r="17" fill="#f3eddf" stroke="#162c3b" stroke-width="3"/>
+<text x="805" y="563" fill="#52626a" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" font-weight="400">05</text>
+<text x="725" y="598" fill="#162c3b" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="700">Бумажный кристалл</text>
+<circle cx="1160" cy="510" r="17" fill="#f3eddf" stroke="#162c3b" stroke-width="3"/>
+<text x="1145" y="563" fill="#52626a" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" font-weight="400">06</text>
+<text x="1065" y="598" fill="#162c3b" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="700">Материальная проба</text>
+<text x="48" y="745" fill="#b49b56" font-family="DejaVu Sans,Arial,sans-serif" font-size="48" font-weight="700">C</text>
+<text x="48" y="775" fill="#52626a" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" font-weight="400">Линия движения</text>
+<path d="M260 790H600L680 710H1330" stroke="#b49b56" stroke-width="12" stroke-linejoin="round" stroke-linecap="round" fill="none"/>
+<circle cx="340" cy="790" r="17" fill="#f3eddf" stroke="#162c3b" stroke-width="3"/>
+<text x="325" y="843" fill="#52626a" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" font-weight="400">07</text>
+<text x="245" y="878" fill="#162c3b" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="700">Пара Туси</text>
+<circle cx="820" cy="710" r="17" fill="#f3eddf" stroke="#162c3b" stroke-width="3"/>
+<text x="805" y="763" fill="#52626a" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" font-weight="400">08</text>
+<text x="725" y="798" fill="#162c3b" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="700">Ночной тираж</text>
+<circle cx="1160" cy="710" r="17" fill="#f3eddf" stroke="#162c3b" stroke-width="3"/>
+<text x="1145" y="763" fill="#52626a" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" font-weight="400">09</text>
+<text x="1065" y="798" fill="#162c3b" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="700">Код Грея</text>
+<path d="M40 916L1400 916" stroke="#162c3b" stroke-width="1" fill="none"/>
+<text x="40" y="956" fill="#162c3b" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" font-weight="700">03 МАРШРУТА / 09 ОСТАНОВОК</text>
+<text x="40" y="990" fill="#52626a" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="400">Не география. Порядок просмотра — на твой выбор.</text>
+</svg>
