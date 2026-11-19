@@ -1,0 +1,36 @@
+{
+  "pairs_checked": 2016,
+  "tileable": 1024,
+  "impossible": 992,
+  "domino_placements_checked": 31744,
+  "cycle": {
+    "cycle_verified": true,
+    "cells_visited_once": 64,
+    "adjacent_edges_including_closure": 64
+  },
+  "possible": {
+    "certificate_verified": true,
+    "tileable": true,
+    "dominoes": 31,
+    "cells_covered_once": 62,
+    "remaining_colors": [
+      31,
+      31
+    ]
+  },
+  "impossible_example": {
+    "certificate_verified": true,
+    "tileable": false,
+    "dominoes": 0,
+    "cells_covered_once": 0,
+    "remaining_colors": [
+      30,
+      32
+    ],
+    "colour_obstruction": 2
+  },
+  "chain_lengths_example": [
+    50,
+    12
+  ]
+}

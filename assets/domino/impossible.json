@@ -1,0 +1,13 @@
+{
+  "format": "two-holes-8x8-v1",
+  "holes": [
+    0,
+    63
+  ],
+  "tileable": false,
+  "remaining_colors": [
+    30,
+    32
+  ],
+  "dominoes": []
+}
