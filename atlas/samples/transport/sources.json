@@ -1,0 +1,106 @@
+[
+  {
+    "repo": "PythonOT/POT",
+    "commit": "700fc194e7b62c4ba3f917e747974eb7b511a5c5",
+    "readme": "README.md",
+    "url": "https://github.com/PythonOT/POT/blob/700fc194e7b62c4ba3f917e747974eb7b511a5c5/README.md",
+    "candidates": [
+      "ot/lp/_network_simplex.py"
+    ],
+    "tree_truncated": false,
+    "status": "README screening",
+    "source_file": "ot/lp/_network_simplex.py",
+    "source_url": "https://github.com/PythonOT/POT/blob/700fc194e7b62c4ba3f917e747974eb7b511a5c5/ot/lp/_network_simplex.py"
+  },
+  {
+    "repo": "scipy/scipy",
+    "commit": "cb78cffebeda622447bf19776883b9d5454b31da",
+    "readme": "README.rst",
+    "url": "https://github.com/scipy/scipy/blob/cb78cffebeda622447bf19776883b9d5454b31da/README.rst",
+    "candidates": [
+      "scipy/optimize/rectangular_lsap/rectangular_lsap.cpp"
+    ],
+    "tree_truncated": false,
+    "status": "README screening"
+  },
+  {
+    "repo": "benchaplin/hungarian-algorithm",
+    "commit": "da3c92072b3744f589515dd517f4382288d5c6cf",
+    "readme": "README.md",
+    "url": "https://github.com/benchaplin/hungarian-algorithm/blob/da3c92072b3744f589515dd517f4382288d5c6cf/README.md",
+    "candidates": [
+      "build/lib/hungarian_algorithm/__init__.py",
+      "build/lib/hungarian_algorithm/algorithm.py",
+      "build/lib/hungarian_algorithm/tests/__init__.py",
+      "build/lib/hungarian_algorithm/tests/test_algorithm.py",
+      "build/lib/hungarian_algorithm/tests/test_graph.py",
+      "hungarian_algorithm/__init__.py",
+      "hungarian_algorithm/algorithm.py",
+      "hungarian_algorithm/tests/__init__.py",
+      "hungarian_algorithm/tests/test_algorithm.py",
+      "hungarian_algorithm/tests/test_graph.py"
+    ],
+    "tree_truncated": false,
+    "status": "README screening"
+  },
+  {
+    "repo": "bmc/munkres",
+    "commit": "67bb7f0afba90e46025e4acaccd0f26781682b76",
+    "readme": "README.md",
+    "url": "https://github.com/bmc/munkres/blob/67bb7f0afba90e46025e4acaccd0f26781682b76/README.md",
+    "candidates": [
+      "munkres.py",
+      "test/test_munkres.py"
+    ],
+    "tree_truncated": false,
+    "status": "README screening",
+    "source_file": "munkres.py",
+    "source_url": "https://github.com/bmc/munkres/blob/67bb7f0afba90e46025e4acaccd0f26781682b76/munkres.py"
+  },
+  {
+    "repo": "JuliaOptimalTransport/OptimalTransport.jl",
+    "commit": "7c0a19624ee24a416f375c81ca7aa4d8fb622de7",
+    "readme": "README.md",
+    "url": "https://github.com/JuliaOptimalTransport/OptimalTransport.jl/blob/7c0a19624ee24a416f375c81ca7aa4d8fb622de7/README.md",
+    "candidates": [],
+    "tree_truncated": false,
+    "status": "README screening"
+  },
+  {
+    "repo": "jeanfeydy/geomloss",
+    "commit": "00e493f36bd6cc8471526e59afc07193a1926e47",
+    "readme": "README.md",
+    "url": "https://github.com/jeanfeydy/geomloss/blob/00e493f36bd6cc8471526e59afc07193a1926e47/README.md",
+    "candidates": [],
+    "tree_truncated": false,
+    "status": "README screening"
+  },
+  {
+    "repo": "networkx/networkx",
+    "commit": "f9bd47b526e2d99aa61d8d3150f8f745ebb2044a",
+    "readme": "README.rst",
+    "url": "https://github.com/networkx/networkx/blob/f9bd47b526e2d99aa61d8d3150f8f745ebb2044a/README.rst",
+    "candidates": [],
+    "tree_truncated": false,
+    "status": "README screening"
+  },
+  {
+    "repo": "google/or-tools",
+    "commit": "4948b99ec504389d5119b3bb364a96f02b70f100",
+    "readme": "README.md",
+    "url": "https://github.com/google/or-tools/blob/4948b99ec504389d5119b3bb364a96f02b70f100/README.md",
+    "candidates": [
+      "examples/notebook/graph/assignment_linear_sum_assignment.ipynb",
+      "ortools/algorithms/hungarian.cc",
+      "ortools/algorithms/hungarian.h",
+      "ortools/algorithms/hungarian_test.cc",
+      "ortools/graph/python/linear_sum_assignment.cc",
+      "ortools/graph/samples/assignment_linear_sum_assignment.cc",
+      "ortools/graph/samples/assignment_linear_sum_assignment.py"
+    ],
+    "tree_truncated": false,
+    "status": "README screening",
+    "source_file": "ortools/graph/samples/assignment_linear_sum_assignment.py",
+    "source_url": "https://github.com/google/or-tools/blob/4948b99ec504389d5119b3bb364a96f02b70f100/ortools/graph/samples/assignment_linear_sum_assignment.py"
+  }
+]
