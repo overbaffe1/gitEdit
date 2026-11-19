@@ -1,0 +1,13 @@
+{
+  "particles": 64,
+  "bijection": true,
+  "dual_feasible": true,
+  "constraints_checked": 4096,
+  "matched_edges_tight": true,
+  "primal_cost": 47854,
+  "dual_lower_bound": 47854,
+  "gap": 0,
+  "optimal_proved": true,
+  "greedy_cost": 62850,
+  "greedy_excess_percent": 31.34
+}
