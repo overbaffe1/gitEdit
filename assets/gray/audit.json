@@ -1,0 +1,19 @@
+{
+  "verified": true,
+  "positions": 64,
+  "cyclic_transitions": 64,
+  "binary_bit_changes": 126,
+  "gray_bit_changes": 64,
+  "binary_mixed_readings": 448,
+  "gray_mixed_readings": 128,
+  "binary_nonendpoint_readings": 320,
+  "gray_nonendpoint_readings": 0,
+  "binary_change_histogram": {
+    "1": 32,
+    "2": 16,
+    "3": 8,
+    "4": 4,
+    "5": 2,
+    "6": 2
+  }
+}
