@@ -1,0 +1,51 @@
+[
+  {
+    "coins_each_pan": 0,
+    "unbalanced_hypotheses": 0,
+    "balanced_hypotheses": 26,
+    "remaining_outcomes_per_branch": 9,
+    "both_branches_fit": false
+  },
+  {
+    "coins_each_pan": 1,
+    "unbalanced_hypotheses": 2,
+    "balanced_hypotheses": 22,
+    "remaining_outcomes_per_branch": 9,
+    "both_branches_fit": false
+  },
+  {
+    "coins_each_pan": 2,
+    "unbalanced_hypotheses": 4,
+    "balanced_hypotheses": 18,
+    "remaining_outcomes_per_branch": 9,
+    "both_branches_fit": false
+  },
+  {
+    "coins_each_pan": 3,
+    "unbalanced_hypotheses": 6,
+    "balanced_hypotheses": 14,
+    "remaining_outcomes_per_branch": 9,
+    "both_branches_fit": false
+  },
+  {
+    "coins_each_pan": 4,
+    "unbalanced_hypotheses": 8,
+    "balanced_hypotheses": 10,
+    "remaining_outcomes_per_branch": 9,
+    "both_branches_fit": false
+  },
+  {
+    "coins_each_pan": 5,
+    "unbalanced_hypotheses": 10,
+    "balanced_hypotheses": 6,
+    "remaining_outcomes_per_branch": 9,
+    "both_branches_fit": false
+  },
+  {
+    "coins_each_pan": 6,
+    "unbalanced_hypotheses": 12,
+    "balanced_hypotheses": 2,
+    "remaining_outcomes_per_branch": 9,
+    "both_branches_fit": false
+  }
+]
