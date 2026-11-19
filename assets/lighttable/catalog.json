@@ -1,0 +1,170 @@
+[
+  {
+    "id": "engraving",
+    "title": "Штриховая гравюра",
+    "label": "ГРАВЮРА",
+    "subtitle": "Один рисунок. Другой язык печати.",
+    "source": "assets/printroom/hatch.svg",
+    "crop": [
+      0.03,
+      0.17,
+      0.61,
+      0.92
+    ],
+    "target": "atlas/printroom.md",
+    "angle": -1.4,
+    "number": 1,
+    "source_sha256": "479e6008ca16bcae7044bf7ae54350342ba1fb093f528e5b62051916d7b9fd78",
+    "raster_crop_px": [
+      47,
+      143,
+      952,
+      773
+    ],
+    "preview_size": [
+      1000,
+      800
+    ],
+    "modification": "read-only crop, uniformly resized to fit; PNG palette quantized to 256 colours without dithering; no artwork grain or colour grading"
+  },
+  {
+    "id": "rosette",
+    "title": "Гильоширные розетки",
+    "label": "РОЗЕТКИ",
+    "subtitle": "Линия вместо готовой текстуры.",
+    "source": "assets/afterlight/guilloche.svg",
+    "crop": [
+      0.06,
+      0.22,
+      0.94,
+      0.9
+    ],
+    "target": "atlas/afterlight.md",
+    "angle": 1.1,
+    "number": 2,
+    "source_sha256": "6031f67c79bd3e2dea34eadb95e91ec3be76c9372ff25717178afb9a0553269d",
+    "raster_crop_px": [
+      86,
+      119,
+      1354,
+      486
+    ],
+    "preview_size": [
+      1000,
+      800
+    ],
+    "modification": "read-only crop, uniformly resized to fit; PNG palette quantized to 256 colours without dithering; no artwork grain or colour grading"
+  },
+  {
+    "id": "moon",
+    "title": "Нитяная луна",
+    "label": "НИТЯНАЯ ЛУНА",
+    "subtitle": "Изображение становится маршрутом.",
+    "source": "assets/threadmoon/moon.png",
+    "crop": [
+      0.06,
+      0.1,
+      0.94,
+      0.94
+    ],
+    "target": "atlas/threadmoon.md",
+    "angle": 0.8,
+    "number": 3,
+    "source_sha256": "bd79335a6f8a1f6b4a215718bc7e4fd8f13c3fab3f53468d1dbaa8ca1a53454c",
+    "raster_crop_px": [
+      46,
+      77,
+      722,
+      722
+    ],
+    "preview_size": [
+      1000,
+      800
+    ],
+    "modification": "read-only crop, uniformly resized to fit; PNG palette quantized to 256 colours without dithering; no artwork grain or colour grading"
+  },
+  {
+    "id": "depth",
+    "title": "Скрытая глубина",
+    "label": "ГЛУБИНА",
+    "subtitle": "Узор, в котором спрятан рельеф.",
+    "source": "assets/stereogram/stereogram.png",
+    "crop": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "target": "atlas/stereogram.md",
+    "angle": -1,
+    "number": 4,
+    "source_sha256": "d2846a38bad3b0aaee315cb2ccb9471a5176dffefada83acf06b97db07e92f4e",
+    "raster_crop_px": [
+      0,
+      0,
+      960,
+      480
+    ],
+    "preview_size": [
+      1000,
+      800
+    ],
+    "modification": "read-only crop, uniformly resized to fit; PNG palette quantized to 256 colours without dithering; no artwork grain or colour grading"
+  },
+  {
+    "id": "fold",
+    "title": "Бумажный кристалл",
+    "label": "КРИСТАЛЛ",
+    "subtitle": "Из плоского листа — восемь граней.",
+    "source": "assets/night-shift/fold-still.png",
+    "crop": [
+      0.02,
+      0.15,
+      0.98,
+      0.96
+    ],
+    "target": "atlas/relief.md",
+    "angle": -0.7,
+    "number": 5,
+    "source_sha256": "9959399faf1681d41c0e092c710376dc7203543e85fff700e673a1d05de784da",
+    "raster_crop_px": [
+      12,
+      40,
+      608,
+      257
+    ],
+    "preview_size": [
+      1000,
+      800
+    ],
+    "modification": "read-only crop, uniformly resized to fit; PNG palette quantized to 256 colours without dithering; no artwork grain or colour grading"
+  },
+  {
+    "id": "rolling",
+    "title": "Пара Туси",
+    "label": "КАЧЕНИЕ",
+    "subtitle": "Два круга рисуют прямую.",
+    "source": "assets/rolling/tusi-still.svg",
+    "crop": [
+      0.08,
+      0.22,
+      0.62,
+      0.9
+    ],
+    "target": "atlas/rolling.md",
+    "angle": 1.3,
+    "number": 6,
+    "source_sha256": "e0021293ce8a06f1c7d90366634202c409479c9a575e4e9f65990e05d7a45ebf",
+    "raster_crop_px": [
+      125,
+      178,
+      967,
+      729
+    ],
+    "preview_size": [
+      1000,
+      800
+    ],
+    "modification": "read-only crop, uniformly resized to fit; PNG palette quantized to 256 colours without dithering; no artwork grain or colour grading"
+  }
+]
