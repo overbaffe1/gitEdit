@@ -1,0 +1,11 @@
+{
+  "board": 18299344,
+  "solvable": false,
+  "syndrome": [
+    0,
+    1
+  ],
+  "candidates": [],
+  "chosen": null,
+  "minimum": null
+}

@@ -1,0 +1,13 @@
+{
+  "rank": 23,
+  "nullity": 2,
+  "operations_replayed": 202,
+  "solvable_boards": 8388608,
+  "all_boards": 33554432,
+  "press_sets_per_solvable_board": 4,
+  "invariant_effects_checked": 50,
+  "matrix_certificate_verified": true,
+  "board_witness_verified": true,
+  "solvable": true,
+  "minimum": 9
+}
