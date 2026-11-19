@@ -1,0 +1,129 @@
+{
+  "scenarios_verified": 169,
+  "cuts_enumerated": 10816,
+  "presets": {
+    "baseline": {
+      "feasible_flow": true,
+      "flow_value": 12,
+      "cut_capacity": 12,
+      "gap": 0,
+      "maximum_proved": true,
+      "edges_checked": 12,
+      "internal_balances_checked": 6,
+      "cuts_enumerated": 64,
+      "minimum_cut_capacity": 12,
+      "all_minimum_cuts": [
+        [
+          0
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      ],
+      "exhaustive_agrees": true
+    },
+    "inlet": {
+      "feasible_flow": true,
+      "flow_value": 12,
+      "cut_capacity": 12,
+      "gap": 0,
+      "maximum_proved": true,
+      "edges_checked": 12,
+      "internal_balances_checked": 6,
+      "cuts_enumerated": 64,
+      "minimum_cut_capacity": 12,
+      "all_minimum_cuts": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      ],
+      "exhaustive_agrees": true
+    },
+    "outlet": {
+      "feasible_flow": true,
+      "flow_value": 12,
+      "cut_capacity": 12,
+      "gap": 0,
+      "maximum_proved": true,
+      "edges_checked": 12,
+      "internal_balances_checked": 6,
+      "cuts_enumerated": 64,
+      "minimum_cut_capacity": 12,
+      "all_minimum_cuts": [
+        [
+          0
+        ]
+      ],
+      "exhaustive_agrees": true
+    },
+    "both": {
+      "feasible_flow": true,
+      "flow_value": 14,
+      "cut_capacity": 14,
+      "gap": 0,
+      "maximum_proved": true,
+      "edges_checked": 12,
+      "internal_balances_checked": 6,
+      "cuts_enumerated": 64,
+      "minimum_cut_capacity": 14,
+      "all_minimum_cuts": [
+        [
+          0
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          6
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      ],
+      "exhaustive_agrees": true
+    },
+    "wide": {
+      "feasible_flow": true,
+      "flow_value": 14,
+      "cut_capacity": 14,
+      "gap": 0,
+      "maximum_proved": true,
+      "edges_checked": 12,
+      "internal_balances_checked": 6,
+      "cuts_enumerated": 64,
+      "minimum_cut_capacity": 14,
+      "all_minimum_cuts": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          6
+        ]
+      ],
+      "exhaustive_agrees": true
+    }
+  },
+  "largest_flow_on_grid": 14
+}
