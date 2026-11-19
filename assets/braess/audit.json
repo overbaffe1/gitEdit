@@ -1,0 +1,45 @@
+{
+  "model": "nonatomic Wardrop; fixed directed network",
+  "scenarios_verified": 182,
+  "closed": {
+    "equilibrium_verified": true,
+    "demand_conserved": true,
+    "wardrop": true,
+    "claimed_costs_match": true,
+    "link_loads": {
+      "SA": "2000",
+      "AT": "2000",
+      "SB": "2000",
+      "BT": "2000"
+    },
+    "route_times": {
+      "SAT": "65",
+      "SBT": "65"
+    },
+    "minimum_time": "65",
+    "mean_used_time": "65"
+  },
+  "open": {
+    "equilibrium_verified": true,
+    "demand_conserved": true,
+    "wardrop": true,
+    "claimed_costs_match": true,
+    "link_loads": {
+      "SA": "4000",
+      "AT": "0",
+      "SB": "0",
+      "BT": "4000",
+      "AB": "4000"
+    },
+    "route_times": {
+      "SAT": "85",
+      "SBT": "85",
+      "SABT": "80"
+    },
+    "minimum_time": "80",
+    "mean_used_time": "80"
+  },
+  "delay_minutes": "15",
+  "time_ratio": "16/13",
+  "harmful_demand_interval": "3000 < Q < 9000"
+}
