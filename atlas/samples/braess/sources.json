@@ -1,0 +1,139 @@
+[
+  {
+    "repo": "Simoniuss/Braess-Paradox-Framework",
+    "commit": "e02c567c7c5c7fa854b705de791ac852b88bc87c",
+    "readme": "README.md",
+    "url": "https://github.com/Simoniuss/Braess-Paradox-Framework/blob/e02c567c7c5c7fa854b705de791ac852b88bc87c/README.md",
+    "status": "README screening",
+    "candidates": [
+      "src/preprocess_utils.py",
+      "src/result_utils.py",
+      "src/utils.py",
+      "sumo_simulation_scripts/run_sumo.py",
+      "sumo_simulation_scripts/sim_utils_sumo.py"
+    ]
+  },
+  {
+    "repo": "MatheusAraripe/Braess_Paradox",
+    "commit": "dc1a2aa1430eb9df5c28d7e290735ee53a2cb395",
+    "readme": "README.md",
+    "url": "https://github.com/MatheusAraripe/Braess_Paradox/blob/dc1a2aa1430eb9df5c28d7e290735ee53a2cb395/README.md",
+    "status": "README screening",
+    "candidates": [
+      "braess_paradox.py"
+    ],
+    "source_file": "braess_paradox.py",
+    "source_url": "https://github.com/MatheusAraripe/Braess_Paradox/blob/dc1a2aa1430eb9df5c28d7e290735ee53a2cb395/braess_paradox.py"
+  },
+  {
+    "repo": "dwego/Braess-calculator-tcc",
+    "commit": "aaa1c54c98f1b145d84bab6cc372806052cf185d",
+    "readme": "README.md",
+    "url": "https://github.com/dwego/Braess-calculator-tcc/blob/aaa1c54c98f1b145d84bab6cc372806052cf185d/README.md",
+    "status": "README screening",
+    "candidates": [
+      "braess/__init__.py",
+      "braess/assignment.py",
+      "braess/costs.py",
+      "braess/experiment_config.py",
+      "braess/experiment_maps.py",
+      "braess/experiment_progress.py",
+      "braess/experiments.py",
+      "braess/frank_wolfe.py",
+      "braess/maps/analysis.py",
+      "braess/maps/config.py",
+      "braess/maps/graph_builder.py",
+      "braess/maps/main.py",
+      "braess/maps/schema_inspector.py",
+      "braess/maps/types_osm.py",
+      "braess/maps/utils.py",
+      "braess/metrics.py",
+      "braess/models.py",
+      "braess/outputs.py",
+      "braess/point_resolution.py",
+      "braess/point_resolution_plots.py",
+      "braess/point_resolution_workflow.py",
+      "braess/removal.py",
+      "braess/routing.py",
+      "braess/saturation.py",
+      "braess/synthetic.py"
+    ],
+    "source_file": "braess/costs.py",
+    "source_url": "https://github.com/dwego/Braess-calculator-tcc/blob/aaa1c54c98f1b145d84bab6cc372806052cf185d/braess/costs.py"
+  },
+  {
+    "repo": "JulianLopezB/Braess-Paradox-MARL",
+    "commit": "ec90ba525dc73d854f72de636e517f567df80795",
+    "readme": "readme.md",
+    "url": "https://github.com/JulianLopezB/Braess-Paradox-MARL/blob/ec90ba525dc73d854f72de636e517f567df80795/readme.md",
+    "status": "README screening",
+    "candidates": [
+      "Agents/__init__.py",
+      "Agents/agents_backup.py",
+      "Agents/dqn_agent.py",
+      "Agents/minimax_q_agent.py",
+      "Agents/nash_q_agent.py",
+      "Agents/q_agent.py",
+      "Agents/sighted_q_agent.py",
+      "Environments/__init__.py",
+      "Environments/basic.py",
+      "visualization_tools.py"
+    ]
+  },
+  {
+    "repo": "skakim/BraessParadox",
+    "commit": "6a2d2718adde36debcf905d049c1d8a8a6f9c4da",
+    "readme": "README.md",
+    "url": "https://github.com/skakim/BraessParadox/blob/6a2d2718adde36debcf905d049c1d8a8a6f9c4da/README.md",
+    "status": "README screening",
+    "candidates": [
+      "Agent.py",
+      "kspmaster/KSP.py",
+      "kspmaster/__init__.py",
+      "kspmaster/ksp_calling_example.py",
+      "main.py",
+      "network-files-master/tools/convert_bargera.py",
+      "network-files-master/tools/python_example.py",
+      "network-files-master/tools/validator.py",
+      "py_expression_eval/__init__.py",
+      "py_expression_eval/tests.py"
+    ]
+  },
+  {
+    "repo": "anton-0/BraessParadox",
+    "commit": "d8b33ec2b19d71c56dd539399c2bc2aec4988f20",
+    "readme": "README.md",
+    "url": "https://github.com/anton-0/BraessParadox/blob/d8b33ec2b19d71c56dd539399c2bc2aec4988f20/README.md",
+    "status": "README screening",
+    "candidates": [
+      "src/Car.java",
+      "src/Highway.java",
+      "src/LocalRoad.java",
+      "src/Main.java",
+      "src/Road.java"
+    ],
+    "source_file": "src/LocalRoad.java",
+    "source_url": "https://github.com/anton-0/BraessParadox/blob/d8b33ec2b19d71c56dd539399c2bc2aec4988f20/src/LocalRoad.java"
+  },
+  {
+    "repo": "redwon007/BraessParadox",
+    "commit": "d872a5d99bbfb1a3c191d1fd7b6c34837aa98230",
+    "readme": "README.md",
+    "url": "https://github.com/redwon007/BraessParadox/blob/d872a5d99bbfb1a3c191d1fd7b6c34837aa98230/README.md",
+    "status": "README screening",
+    "candidates": [
+      "codeAvcGraph.py"
+    ]
+  },
+  {
+    "repo": "swierk434/BraessParadox",
+    "error": "Command '['gh', 'api', 'repos/swierk434/BraessParadox/readme?ref=0c9b6d979fcb77b76fbdfbf567e813cd474f7554']' returned non-zero exit status 1."
+  },
+  {
+    "repo": "mxhit-j/BraessParadox",
+    "commit": "263e433bcb245cf64503534935378710319f8a4d",
+    "readme": "README.md",
+    "url": "https://github.com/mxhit-j/BraessParadox/blob/263e433bcb245cf64503534935378710319f8a4d/README.md",
+    "status": "README screening"
+  }
+]

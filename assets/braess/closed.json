@@ -1,0 +1,14 @@
+{
+  "model": "braess-45-x100-directed-v1",
+  "demand": 4000,
+  "open": false,
+  "flows": {
+    "SAT": "2000",
+    "SBT": "2000"
+  },
+  "route_times": {
+    "SAT": "65",
+    "SBT": "65"
+  },
+  "time": "65"
+}
