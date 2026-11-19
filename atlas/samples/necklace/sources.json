@@ -1,0 +1,49 @@
+[
+  {
+    "repo": "gkaguirrelab/DeBruijn",
+    "commit": "2022bbb4056138c8b3092bb64b8f570eeb92cf71",
+    "url": "https://github.com/gkaguirrelab/DeBruijn/blob/2022bbb4056138c8b3092bb64b8f570eeb92cf71/README.md",
+    "scope": "README: counterbalanced stimuli and distinction between cyclic and linear presentation. No neuroscience claims tested."
+  },
+  {
+    "repo": "nullze/OOK_Audio",
+    "commit": "58438e5bbb06d0931119a59a7ced1819da59a067",
+    "url": "https://github.com/nullze/OOK_Audio/blob/58438e5bbb06d0931119a59a7ced1819da59a067/README.md",
+    "scope": "README: WAV generator for HackRF; screening only, no radio/audio use or code execution."
+  },
+  {
+    "repo": "gmarcais/minimizers",
+    "error": "Command '['gh', 'api', 'repos/gmarcais/minimizers/readme?ref=c44485ef0bc31aeb404c4ae92c0c4498415914d6']' returned non-zero exit status 1.",
+    "scope": "README request failed; not counted as read."
+  },
+  {
+    "repo": "imaami/dbs26",
+    "commit": "88e8050cec33f6004eac8854fd70a53e0c03ae73",
+    "url": "https://github.com/imaami/dbs26/blob/88e8050cec33f6004eac8854fd70a53e0c03ae73/README.md",
+    "scope": "README: enumerates all B(2,6), raw binary representation and storage. We generate just one B(2,5), not all cycles."
+  },
+  {
+    "repo": "alexbowe/debdec",
+    "commit": "45d31d688a84d5352e0c3ddb5d77ceadb21108ef",
+    "url": "https://github.com/alexbowe/debdec/blob/45d31d688a84d5352e0c3ddb5d77ceadb21108ef/README.md",
+    "scope": "README: specialized efficient decoding, binary/quaternary examples and TODO tests. We use a tiny explicit lookup table instead."
+  },
+  {
+    "repo": "emteeoh/deBruijn-Sequences",
+    "commit": "86768cd3021911e20028f25e38ebab41bdaf1dd3",
+    "url": "https://github.com/emteeoh/deBruijn-Sequences/blob/86768cd3021911e20028f25e38ebab41bdaf1dd3/README.md",
+    "scope": "README: cyclic rotations, generator/decoder limitations and punctured variants. We only use a full unpunctured binary cycle."
+  },
+  {
+    "repo": "jgeisler0303/deBruijnDecode",
+    "commit": "45ff559ed70421d82a51ae233d14be30e67b552e",
+    "url": "https://github.com/jgeisler0303/deBruijnDecode/blob/45ff559ed70421d82a51ae233d14be30e67b552e/README.md",
+    "scope": "README: JavaScript generator/decoder and embedded-controller goal. No implementation or hardware audit."
+  },
+  {
+    "repo": "lucaparmigiani/rnd_dbseq",
+    "commit": "ef74162f7ac3fd82f67efb908362fcfc4a548d31",
+    "url": "https://github.com/lucaparmigiani/rnd_dbseq/blob/ef74162f7ac3fd82f67efb908362fcfc4a548d31/README.md",
+    "scope": "README: random BWT-based construction for binary/general alphabets. Our deterministic Euler traversal does not claim random sampling."
+  }
+]
