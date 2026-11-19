@@ -1,0 +1,21 @@
+{
+  "vertices": 4480,
+  "faces": 8960,
+  "edges": 13440,
+  "edge_incidence_values": [
+    2
+  ],
+  "euler_characteristic": 0,
+  "finite_coordinates": true,
+  "max_unit_normal_error": 0.0,
+  "mask_pixels": 339922,
+  "geometry_mask_sha256": "b1694d7df80917d0bd0b3dbd4a4cc392f2388a5304fa324308d1281a8349cb7c",
+  "image_size": [
+    1100,
+    1000
+  ],
+  "shared_camera": true,
+  "shared_visibility_buffer": true,
+  "mesh_units": "arbitrary; not a print scale",
+  "shading": "illustrative analytic studio, not measured/physical BRDF"
+}
