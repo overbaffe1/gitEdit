@@ -1,0 +1,121 @@
+[
+  {
+    "repo": "andreyrisukhin/nontransitive-dice",
+    "commit": "7433f8a44c0750f36ae84bc16d3775dc86dc5c2e",
+    "readme": "README.md",
+    "url": "https://github.com/andreyrisukhin/nontransitive-dice/blob/7433f8a44c0750f36ae84bc16d3775dc86dc5c2e/README.md",
+    "status": "README read",
+    "candidates": []
+  },
+  {
+    "repo": "mpaulweeks/nontransitive-dice-sim",
+    "commit": "7d18e536962b195b0ac08db49af71c1261c6e8c4",
+    "readme": "README.md",
+    "url": "https://github.com/mpaulweeks/nontransitive-dice-sim/blob/7d18e536962b195b0ac08db49af71c1261c6e8c4/README.md",
+    "status": "README read",
+    "candidates": [
+      "react-app/src/Manager.js",
+      "react-app/src/View.js",
+      "react-app/src/index.js"
+    ]
+  },
+  {
+    "repo": "BartMassey/nontransitive-dice",
+    "commit": "3b888b1319967b7c21ff3dc69c1758c905c14ecb",
+    "readme": "README.md",
+    "url": "https://github.com/BartMassey/nontransitive-dice/blob/3b888b1319967b7c21ff3dc69c1758c905c14ecb/README.md",
+    "status": "README read",
+    "candidates": [
+      "dice.hs"
+    ],
+    "source_file": "dice.hs",
+    "source_url": "https://github.com/BartMassey/nontransitive-dice/blob/3b888b1319967b7c21ff3dc69c1758c905c14ecb/dice.hs"
+  },
+  {
+    "repo": "SteefCoder/nontransitive-dice",
+    "commit": "a35e9a9b65b3116de5a1e50c2b4d13cbb568f231",
+    "readme": "README.md",
+    "url": "https://github.com/SteefCoder/nontransitive-dice/blob/a35e9a9b65b3116de5a1e50c2b4d13cbb568f231/README.md",
+    "status": "README read",
+    "candidates": [
+      "diceset.py",
+      "ilp_solver/core/__init__.py",
+      "ilp_solver/core/core.py",
+      "ilp_solver/core/types.py",
+      "ilp_solver/example/__init__.py",
+      "ilp_solver/example/d6.py",
+      "ilp_solver/solvers/__init__.py",
+      "ilp_solver/solvers/general.py",
+      "n-player/__init__.py",
+      "n-player/angel_davis.py",
+      "n-player/bb_direct.py",
+      "n-player/bednay_bozoki.py",
+      "n-player/fas_anneal/paley.py",
+      "n-player/helpers.py",
+      "n-player/sat_solver.py",
+      "n-player/verify.py"
+    ]
+  },
+  {
+    "repo": "michaelpatrickpurcell/balanced-nontransitive-dice",
+    "commit": "d4d6e4cfc282d65edd10e9ff0219615c5ac2b77b",
+    "readme": "README.md",
+    "url": "https://github.com/michaelpatrickpurcell/balanced-nontransitive-dice/blob/d4d6e4cfc282d65edd10e9ff0219615c5ac2b77b/README.md",
+    "status": "README read",
+    "candidates": [
+      "best_of_three.py",
+      "clauses.py",
+      "exhaustive_search.py",
+      "go_first.py",
+      "incremental_oskar.py",
+      "oskar_five.py",
+      "oskar_four.py",
+      "oskar_row_sums.py",
+      "oskar_three.py",
+      "petersen_graph_dice.py",
+      "sat_search_max_min.py",
+      "sat_search_single.py",
+      "utils.py"
+    ],
+    "source_file": "utils.py",
+    "source_url": "https://github.com/michaelpatrickpurcell/balanced-nontransitive-dice/blob/d4d6e4cfc282d65edd10e9ff0219615c5ac2b77b/utils.py"
+  },
+  {
+    "repo": "davidchall/nontransitive-dice",
+    "commit": "af4113b05783e9b4f9e819b3b4dd2503836825e0",
+    "readme": "README.md",
+    "url": "https://github.com/davidchall/nontransitive-dice/blob/af4113b05783e9b4f9e819b3b4dd2503836825e0/README.md",
+    "status": "README read",
+    "candidates": [
+      "ntdice/__init__.py",
+      "setup.py",
+      "testing/test_efron.py"
+    ],
+    "source_file": "ntdice/__init__.py",
+    "source_url": "https://github.com/davidchall/nontransitive-dice/blob/af4113b05783e9b4f9e819b3b4dd2503836825e0/ntdice/__init__.py"
+  },
+  {
+    "repo": "rbrincke/nontransitive-dice",
+    "commit": "fc5aa0365d91ce360bf6e9c7589e3f5fc6bc8a82",
+    "readme": "README.md",
+    "url": "https://github.com/rbrincke/nontransitive-dice/blob/fc5aa0365d91ce360bf6e9c7589e3f5fc6bc8a82/README.md",
+    "status": "README read",
+    "candidates": []
+  },
+  {
+    "repo": "Juke02/Nontransitive-Dice",
+    "commit": "005decea15821ce84b02604ab435c5e1003cef65",
+    "readme": "README.md",
+    "url": "https://github.com/Juke02/Nontransitive-Dice/blob/005decea15821ce84b02604ab435c5e1003cef65/README.md",
+    "status": "README read",
+    "candidates": [
+      "src/App.js",
+      "src/App.test.js",
+      "src/EditableBox.js",
+      "src/Grid.js",
+      "src/index.js",
+      "src/reportWebVitals.js",
+      "src/setupTests.js"
+    ]
+  }
+]
