@@ -1,0 +1,21 @@
+{
+  "construction": "12-bit maximal sequence, recurrence taps [0,1,4,6], initial state 1, period 4095; CRT index=(2080*x+2016*y) mod 4095",
+  "width": 63,
+  "height": 65,
+  "window4_unique": 4095,
+  "window6_unique": 4095,
+  "minimum_pair_distance_6x6": 7,
+  "guaranteed_correctable_flips": 3,
+  "example_four_error_partner": {
+    "x": 11,
+    "y": 4
+  },
+  "example_four_error_bit_positions_lsb_first": [
+    2,
+    3,
+    5,
+    7
+  ],
+  "frames": 21,
+  "limits": "known scale, grid alignment and orientation; binary flips only; toroidal synthetic crop; no camera, physical print/read, homography or rotation handling"
+}

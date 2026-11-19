@@ -1,0 +1,29 @@
+{
+  "positions": 4095,
+  "window4_unique": 4095,
+  "window4_pair_distance": 1,
+  "window6_unique": 4095,
+  "zero_in_window6": false,
+  "extended_rank_gf2": 12,
+  "extended_code_size": 4096,
+  "extended_code_is_linear": true,
+  "minimum_nonzero_weight": 7,
+  "certified_pair_distance": 7,
+  "guaranteed_correctable_flips": 3,
+  "gf2_basis_hex": [
+    "800802b28",
+    "040044651",
+    "0c00c8ce3",
+    "1c01d0986",
+    "3c03e034c",
+    "7c07c16d8",
+    "0200aca1e",
+    "00111947c",
+    "0032338f9",
+    "0074261b2",
+    "00f80d325",
+    "01f05b60a"
+  ],
+  "minimum_weight_word_hex": "b02800802",
+  "method": "all windows from published CSV; GF(2) rank + cardinality establishes linear space after adding zero; minimum nonzero weight establishes pair distance"
+}
