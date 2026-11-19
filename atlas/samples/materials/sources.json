@@ -1,0 +1,50 @@
+[
+  {
+    "repo": "mrdoob/three.js",
+    "commit": "90eacd8194ac7ada3c5228197de2862c91df8bfa",
+    "url": "https://github.com/mrdoob/three.js/blob/90eacd8194ac7ada3c5228197de2862c91df8bfa/README.md",
+    "scope": "Opening README: JS/WebGL/WebGPU scene in a webpage; own README uses pre-rendered files, no three.js installed."
+  },
+  {
+    "repo": "blender/blender",
+    "commit": "611d97903ad34434934f4cb1e586155c03eddd66",
+    "url": "https://github.com/blender/blender/blob/611d97903ad34434934f4cb1e586155c03eddd66/.github/README.md",
+    "scope": "Short README points to full 3D pipeline and external screenshot; screenshot not fetched, Blender not run."
+  },
+  {
+    "repo": "mikedh/trimesh",
+    "commit": "7fe4ac4405ba5af02756c2db729da6822510304c",
+    "url": "https://github.com/mikedh/trimesh/blob/7fe4ac4405ba5af02756c2db729da6822510304c/README.md",
+    "scope": "Opening README watertight triangle meshes, formats and quick-start; no library execution, own mesh topology checked independently."
+  },
+  {
+    "repo": "isl-org/Open3D",
+    "commit": "2ce4f7e0270a53694e2be651496313256e453c89",
+    "url": "https://github.com/isl-org/Open3D/blob/2ce4f7e0270a53694e2be651496313256e453c89/README.md",
+    "scope": "Opening README processing/viewer surfaces; no point clouds, assets or APIs copied."
+  },
+  {
+    "repo": "pmndrs/drei",
+    "commit": "bf6f4addf47467d3885de272d94ca5127f6ef68f",
+    "url": "https://github.com/pmndrs/drei/blob/bf6f4addf47467d3885de272d94ca5127f6ef68f/README.md",
+    "scope": "Opening README React-three-fiber helpers/examples; these require app runtime, not portable README widgets."
+  },
+  {
+    "repo": "google/model-viewer",
+    "commit": "5cc277a497f6e13fc75ff4821da73164a12570c9",
+    "url": "https://github.com/google/model-viewer/blob/5cc277a497f6e13fc75ff4821da73164a12570c9/README.md",
+    "scope": "Root README project map for web component, effects, assets and fidelity tools. Subproject READMEs/components not audited or installed."
+  },
+  {
+    "repo": "mmp/pbrt-v4",
+    "commit": "20e41fd83789f12550e2c31b2047898c9e20e46c",
+    "url": "https://github.com/mmp/pbrt-v4/blob/20e41fd83789f12550e2c31b2047898c9e20e46c/README.md",
+    "scope": "Opening README features/teaser: true physical rendering has explicit models; no PBRT renderer/book/scene audited. Own lighting deliberately illustrative."
+  },
+  {
+    "repo": "fogleman/primitive",
+    "commit": "0373c216458be1c4b40655b796a3aefedf8b7d23",
+    "url": "https://github.com/fogleman/primitive/blob/0373c216458be1c4b40655b796a3aefedf8b7d23/README.md",
+    "scope": "README one subject shown under different primitives/iterations; comparison principle only, external source images not fetched."
+  }
+]
