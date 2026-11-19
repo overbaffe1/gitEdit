@@ -1,0 +1,50 @@
+[
+  {
+    "repo": "jdan/isomer",
+    "commit": "b9d0bf672d2a6cac17960fe7637a6828be8ee6bc",
+    "url": "https://github.com/jdan/isomer/blob/b9d0bf672d2a6cac17960fe7637a6828be8ee6bc/README.md",
+    "scope": "Прочитано начало корневого README, до 2600 символов. Изображения, ссылки, демо и исходники не открывались."
+  },
+  {
+    "repo": "metafizzy/zdog",
+    "commit": "dde8684be686bc6d3cbedb6be49875c0a03a14c0",
+    "url": "https://github.com/metafizzy/zdog/blob/dde8684be686bc6d3cbedb6be49875c0a03a14c0/README.md",
+    "scope": "Прочитано начало корневого README, до 2600 символов. Изображения, ссылки, демо и исходники не открывались."
+  },
+  {
+    "repo": "svgdotjs/svg.js",
+    "commit": "4b8809b1554c44a84f8992cdbda60480336cc040",
+    "url": "https://github.com/svgdotjs/svg.js/blob/4b8809b1554c44a84f8992cdbda60480336cc040/README.md",
+    "scope": "Прочитано начало корневого README, до 2600 символов. Изображения, ссылки, демо и исходники не открывались."
+  },
+  {
+    "repo": "rough-stuff/rough",
+    "commit": "56a2762171b1294d643501e8d14f120db6b27bd7",
+    "url": "https://github.com/rough-stuff/rough/blob/56a2762171b1294d643501e8d14f120db6b27bd7/README.md",
+    "scope": "Прочитано начало корневого README, до 2600 символов. Изображения, ссылки, демо и исходники не открывались."
+  },
+  {
+    "repo": "rough-stuff/rough-notation",
+    "commit": "668ba82ac89c903d6f59c9351b9b85855da9882c",
+    "url": "https://github.com/rough-stuff/rough-notation/blob/668ba82ac89c903d6f59c9351b9b85855da9882c/README.md",
+    "scope": "Прочитано начало корневого README, до 2600 символов. Изображения, ссылки, демо и исходники не открывались."
+  },
+  {
+    "repo": "facebook/yoga",
+    "commit": "cac7b345c06804703dc6868f740f04ad8a863f27",
+    "url": "https://github.com/react/yoga/blob/cac7b345c06804703dc6868f740f04ad8a863f27/README.md",
+    "scope": "Прочитано начало корневого README, до 2600 символов. Изображения, ссылки, демо и исходники не открывались."
+  },
+  {
+    "repo": "excalidraw/excalidraw",
+    "commit": "2c3dcc06ec807e81ab9437eceb1a8f7a3c590743",
+    "url": "https://github.com/excalidraw/excalidraw/blob/2c3dcc06ec807e81ab9437eceb1a8f7a3c590743/README.md",
+    "scope": "Прочитано начало корневого README, до 2600 символов. Изображения, ссылки, демо и исходники не открывались."
+  },
+  {
+    "repo": "tldraw/tldraw",
+    "commit": "e242d25a658942d32396cfaa2256f2352cffb937",
+    "url": "https://github.com/tldraw/tldraw/blob/e242d25a658942d32396cfaa2256f2352cffb937/README.md",
+    "scope": "Прочитано начало корневого README, до 2600 символов. Изображения, ссылки, демо и исходники не открывались."
+  }
+]
