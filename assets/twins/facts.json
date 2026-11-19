@@ -1,0 +1,35 @@
+{
+  "pair": "classic 4x4 rook and Shrikhande graphs; independently constructed from definitions, not a new discovery",
+  "vertices_each": 16,
+  "edges_each": 48,
+  "adjacency_spectrum": {
+    "6": 1,
+    "2": 6,
+    "-2": 9
+  },
+  "laplacian_spectrum": {
+    "0": 1,
+    "4": 6,
+    "8": 9
+  },
+  "exact_common_identity": "A^2 = 4I + 2J",
+  "four_cliques": [
+    8,
+    0
+  ],
+  "same_exact_adjacency_polynomial": true,
+  "same_exact_laplacian_polynomial": true,
+  "trace_at_0_25": [
+    4.425294196158167,
+    4.425294196158167,
+    4.54965334806492
+  ],
+  "deleted_edge": [
+    0,
+    1
+  ],
+  "deleted_edge_identity": false,
+  "frames": 32,
+  "heat_solver": "uniformization, 97 terms (k=0..96), max time 2, max degree 6",
+  "limits": "finite simple unit-weight graphs, not geometric drums; same spectrum does not imply same labelled heat kernel"
+}

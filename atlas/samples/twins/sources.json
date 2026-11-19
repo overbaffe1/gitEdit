@@ -1,0 +1,91 @@
+[
+  {
+    "repo": "networkx/networkx",
+    "commit": "f9bd47b526e2d99aa61d8d3150f8f745ebb2044a",
+    "readme": "README.rst",
+    "url": "https://github.com/networkx/networkx/blob/f9bd47b526e2d99aa61d8d3150f8f745ebb2044a/README.rst",
+    "candidates": [
+      "networkx/linalg/spectrum.py",
+      "networkx/linalg/tests/test_spectrum.py"
+    ],
+    "tree_truncated": false,
+    "status": "README screening",
+    "source_file": "networkx/linalg/spectrum.py",
+    "source_url": "https://github.com/networkx/networkx/blob/f9bd47b526e2d99aa61d8d3150f8f745ebb2044a/networkx/linalg/spectrum.py"
+  },
+  {
+    "repo": "igraph/python-igraph",
+    "commit": "1fff57221429057f8f253c5cd86b892c52e437db",
+    "readme": "README.md",
+    "url": "https://github.com/igraph/python-igraph/blob/1fff57221429057f8f253c5cd86b892c52e437db/README.md",
+    "candidates": [],
+    "tree_truncated": false,
+    "status": "README screening"
+  },
+  {
+    "repo": "networkit/networkit",
+    "commit": "6005c8f4292a69a53c9217293a661d4908f505a3",
+    "readme": "README.md",
+    "url": "https://github.com/networkit/networkit/blob/6005c8f4292a69a53c9217293a661d4908f505a3/README.md",
+    "candidates": [],
+    "tree_truncated": false,
+    "status": "README screening"
+  },
+  {
+    "repo": "sagemath/sage",
+    "commit": "8de8dad7bcb38e1baa43508cbe944bf04a2d0401",
+    "readme": "README.md",
+    "url": "https://github.com/sagemath/sage/blob/8de8dad7bcb38e1baa43508cbe944bf04a2d0401/README.md",
+    "candidates": [
+      "src/sage/graphs/generators/smallgraphs.py"
+    ],
+    "tree_truncated": false,
+    "status": "README screening",
+    "source_file": "src/sage/graphs/generators/smallgraphs.py",
+    "source_url": "https://github.com/sagemath/sage/blob/8de8dad7bcb38e1baa43508cbe944bf04a2d0401/src/sage/graphs/generators/smallgraphs.py"
+  },
+  {
+    "repo": "JuliaGraphs/Graphs.jl",
+    "commit": "dffc7a640133850569647851b4533a56fc7d40c8",
+    "readme": "README.md",
+    "url": "https://github.com/JuliaGraphs/Graphs.jl/blob/dffc7a640133850569647851b4533a56fc7d40c8/README.md",
+    "candidates": [],
+    "tree_truncated": false,
+    "status": "README screening"
+  },
+  {
+    "repo": "epfl-lts2/pygsp",
+    "commit": "4716b12c470c579e3f477f2d1c1d99752c73252d",
+    "readme": "README.rst",
+    "url": "https://github.com/epfl-lts2/pygsp/blob/4716b12c470c579e3f477f2d1c1d99752c73252d/README.rst",
+    "candidates": [
+      "pygsp/filters/heat.py"
+    ],
+    "tree_truncated": false,
+    "status": "README screening",
+    "source_file": "pygsp/filters/heat.py",
+    "source_url": "https://github.com/epfl-lts2/pygsp/blob/4716b12c470c579e3f477f2d1c1d99752c73252d/pygsp/filters/heat.py"
+  },
+  {
+    "repo": "scipy/scipy",
+    "commit": "cb78cffebeda622447bf19776883b9d5454b31da",
+    "readme": "README.rst",
+    "url": "https://github.com/scipy/scipy/blob/cb78cffebeda622447bf19776883b9d5454b31da/README.rst",
+    "candidates": [
+      "doc/source/tutorial/examples/signal_SpectralAnalysis_SampledContinuousSpectrum.py",
+      "scipy/sparse/linalg/_expm_multiply.py",
+      "scipy/sparse/linalg/tests/test_expm_multiply.py"
+    ],
+    "tree_truncated": false,
+    "status": "README screening"
+  },
+  {
+    "repo": "Telijas/cospectralGraphs",
+    "commit": "9e13235fc3134b082d0eb37d5a7754f588ac04ba",
+    "readme": "README.md",
+    "url": "https://github.com/Telijas/cospectralGraphs/blob/9e13235fc3134b082d0eb37d5a7754f588ac04ba/README.md",
+    "candidates": [],
+    "tree_truncated": false,
+    "status": "README screening"
+  }
+]
