@@ -1,0 +1,58 @@
+[
+  {
+    "repo": "processing/p5.js",
+    "commit": "717aceec39150a698c71e51b26b9864a6243e38f",
+    "url": "https://github.com/processing/p5.js/blob/717aceec39150a698c71e51b26b9864a6243e38f/README.md",
+    "scope": "Прочитано начало корневого README, до 3700 символов; ссылки и изображения не открывались.",
+    "observation": "Короткое представление библиотеки и ссылки на примеры; используем самостоятельный статичный рисунок, не canvas runtime."
+  },
+  {
+    "repo": "paperjs/paper.js",
+    "commit": "0d1446a1bb040e3c87533b28bcc384d87663587b",
+    "url": "https://github.com/paperjs/paper.js/blob/0d1446a1bb040e3c87533b28bcc384d87663587b/README.md",
+    "scope": "Прочитано начало корневого README, до 3700 символов; ссылки и изображения не открывались.",
+    "observation": "Начало README показывает установку, canvas setup и onFrame; здесь нет runtime Paper.js и анимации."
+  },
+  {
+    "repo": "abey79/vsketch",
+    "commit": "ce988f48e7fa4d3c636c08c81bda5773771ae244",
+    "url": "https://github.com/abey79/vsketch/blob/ce988f48e7fa4d3c636c08c81bda5773771ae244/README.md",
+    "scope": "Прочитано начало корневого README, до 3700 символов; ссылки и изображения не открывались.",
+    "observation": "Generative art toolkit и отдельные примеры; наша геометрия собственная, toolkit не запускался."
+  },
+  {
+    "repo": "abey79/vpype",
+    "commit": "ae607c19f9ddac3343f3c22f2d71ba7578029f55",
+    "url": "https://github.com/abey79/vpype/blob/ae607c19f9ddac3343f3c22f2d71ba7578029f55/README.md",
+    "scope": "Прочитано начало корневого README, до 3700 символов; ссылки и изображения не открывались.",
+    "observation": "Pipeline для pen plotters; наша имитация отпечатка не является заданием плоттеру."
+  },
+  {
+    "repo": "fogleman/gg",
+    "commit": "8febc0f526adecda6f8ae80f3869b7cd77e52984",
+    "url": "https://github.com/fogleman/gg/blob/8febc0f526adecda6f8ae80f3869b7cd77e52984/README.md",
+    "scope": "Прочитано начало корневого README, до 3700 символов; ссылки и изображения не открывались.",
+    "observation": "2D rendering в Go и примеры; используем стандартную библиотеку Python и SVG без Go."
+  },
+  {
+    "repo": "svg/svgo",
+    "commit": "31194fb4b3b592d7a65956f8f3b343b9fd6b80a6",
+    "url": "https://github.com/svg/svgo/blob/31194fb4b3b592d7a65956f8f3b343b9fd6b80a6/README.md",
+    "scope": "Прочитано начало корневого README, до 3700 символов; ссылки и изображения не открывались.",
+    "observation": "Оптимизатор SVG; не подключён, валидируем XML и отсутствие внешних ресурсов своими тестами."
+  },
+  {
+    "repo": "linebender/resvg",
+    "commit": "433d0213a98d611793d105e08e141325e13720e3",
+    "url": "https://github.com/linebender/resvg/blob/433d0213a98d611793d105e08e141325e13720e3/README.md",
+    "scope": "Прочитано начало корневого README, до 3700 символов; ссылки и изображения не открывались.",
+    "observation": "SVG rendering с ограниченной областью поддержки; не предполагаем, что SVG равен браузерному приложению."
+  },
+  {
+    "repo": "mozman/svgwrite",
+    "commit": "cd10a7ed1982de77ba85ff4556e154187d7f14bc",
+    "url": "https://github.com/mozman/svgwrite/blob/cd10a7ed1982de77ba85ff4556e154187d7f14bc/README.rst",
+    "scope": "Прочитано начало корневого README, до 3700 символов; ссылки и изображения не открывались.",
+    "observation": "Создание SVG через Python и статус maintenance; файл строится стандартной библиотекой без svgwrite."
+  }
+]
