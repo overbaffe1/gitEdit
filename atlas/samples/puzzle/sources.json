@@ -1,0 +1,132 @@
+[
+  {
+    "repo": "JaneHJY/8_puzzle",
+    "commit": "c64beabcc908ec07c817d6a4704de14ffb7e2642",
+    "readme": "README.txt",
+    "url": "https://github.com/JaneHJY/8_puzzle/blob/c64beabcc908ec07c817d6a4704de14ffb7e2642/README.txt",
+    "status": "README screening",
+    "candidates": [
+      "8_puzzle.py"
+    ]
+  },
+  {
+    "repo": "dgurkaynak/8-puzzle-solver",
+    "commit": "d7d428665e29f51899e3700448f938f60da56700",
+    "readme": "README.md",
+    "url": "https://github.com/dgurkaynak/8-puzzle-solver/blob/d7d428665e29f51899e3700448f938f60da56700/README.md",
+    "status": "README screening",
+    "candidates": [
+      "gulpfile.js",
+      "src/js/app.js",
+      "src/js/board.js",
+      "src/js/game.js",
+      "src/js/node.js",
+      "src/js/olay.js",
+      "src/js/search.js",
+      "src/js/utils.js",
+      "src/js/visualization.js"
+    ],
+    "source_file": "src/js/board.js",
+    "source_url": "https://github.com/dgurkaynak/8-puzzle-solver/blob/d7d428665e29f51899e3700448f938f60da56700/src/js/board.js"
+  },
+  {
+    "repo": "speix/8-puzzle-solver",
+    "commit": "36b10ff3eab68d26d29f9a4c38db497a899e1eca",
+    "readme": "README.md",
+    "url": "https://github.com/speix/8-puzzle-solver/blob/36b10ff3eab68d26d29f9a4c38db497a899e1eca/README.md",
+    "status": "README screening",
+    "candidates": [
+      "driver.py",
+      "state.py"
+    ]
+  },
+  {
+    "repo": "abpaudel/8-puzzle",
+    "commit": "649a1cc2557a51587d20edb9e48c5e708796f5dc",
+    "readme": "README.md",
+    "url": "https://github.com/abpaudel/8-puzzle/blob/649a1cc2557a51587d20edb9e48c5e708796f5dc/README.md",
+    "status": "README screening",
+    "candidates": [
+      "astar.py",
+      "bfs.py",
+      "board.py",
+      "dfs.py",
+      "iddfs.py",
+      "main.py",
+      "solver.py"
+    ],
+    "source_file": "board.py",
+    "source_url": "https://github.com/abpaudel/8-puzzle/blob/649a1cc2557a51587d20edb9e48c5e708796f5dc/board.py"
+  },
+  {
+    "repo": "ani94/8-puzzle-solver-cpp",
+    "commit": "4fec2fd55c98df62f7888b11eeac36ca3361fb41",
+    "readme": "README.md",
+    "url": "https://github.com/ani94/8-puzzle-solver-cpp/blob/4fec2fd55c98df62f7888b11eeac36ca3361fb41/README.md",
+    "status": "README screening",
+    "candidates": [
+      "8puzzle.cpp"
+    ]
+  },
+  {
+    "repo": "C-Collamar/8-Puzzle-Solver",
+    "commit": "2dc5af2c020d8016748b18de5d9b5d9c35ee89d8",
+    "readme": "README.md",
+    "url": "https://github.com/C-Collamar/8-Puzzle-Solver/blob/2dc5af2c020d8016748b18de5d9b5d9c35ee89d8/README.md",
+    "status": "README screening",
+    "candidates": []
+  },
+  {
+    "repo": "AlexP11223/EightPuzzleSolver",
+    "commit": "57bc1d5c4a7f49cae074eef18b559426de225dfa",
+    "readme": "README.md",
+    "url": "https://github.com/AlexP11223/EightPuzzleSolver/blob/57bc1d5c4a7f49cae074eef18b559426de225dfa/README.md",
+    "status": "README screening",
+    "candidates": [
+      "EightPuzzleSolver.Tests/EightPuzzle/BoardTests.cs",
+      "EightPuzzleSolver.Tests/EightPuzzle/ManhattanHeuristicFunctionTests.cs",
+      "EightPuzzleSolver.Tests/EightPuzzle/MoveDirectionTests.cs",
+      "EightPuzzleSolver.Tests/EightPuzzle/PositionTests.cs",
+      "EightPuzzleSolver.Tests/EightPuzzle/SearchTests.cs",
+      "EightPuzzleSolver.Tests/Properties/AssemblyInfo.cs",
+      "EightPuzzleSolver.Tests/Search/AStarSearchTests.cs",
+      "EightPuzzleSolver.Tests/Search/DepthLimitedSearchTests.cs",
+      "EightPuzzleSolver.Tests/Search/DummyHeuristicFunction.cs",
+      "EightPuzzleSolver.Tests/Search/DummyProblem.cs",
+      "EightPuzzleSolver.Tests/Search/DummyProblemState.cs",
+      "EightPuzzleSolver.Tests/Search/IterativeDeepeningSearchTests.cs",
+      "EightPuzzleSolver.Tests/Search/NodeTests.cs",
+      "EightPuzzleSolver/EightPuzzle/Board.cs",
+      "EightPuzzleSolver/EightPuzzle/EightPuzzleProblem.cs",
+      "EightPuzzleSolver/EightPuzzle/EightPuzzleState.cs",
+      "EightPuzzleSolver/EightPuzzle/ManhattanHeuristicFunction.cs",
+      "EightPuzzleSolver/EightPuzzle/MoveDirection.cs",
+      "EightPuzzleSolver/EightPuzzle/Position.cs",
+      "EightPuzzleSolver/Helpers/StaticRandom.cs",
+      "EightPuzzleSolver/Properties/AssemblyInfo.cs",
+      "EightPuzzleSolver/Search/Algorithms/AStarSearch.cs",
+      "EightPuzzleSolver/Search/Algorithms/DepthLimitedSearch.cs",
+      "EightPuzzleSolver/Search/Algorithms/IterativeDeepeningSearch.cs",
+      "EightPuzzleSolver/Search/Algorithms/RecursiveBestFirstSearch.cs",
+      "EightPuzzleSolver/Search/IHeuristicFunction.cs",
+      "EightPuzzleSolver/Search/IProblemState.cs",
+      "EightPuzzleSolver/Search/ISearch.cs",
+      "EightPuzzleSolver/Search/NoHeuristicFunction.cs",
+      "EightPuzzleSolver/Search/Node.cs"
+    ],
+    "source_file": "EightPuzzleSolver/EightPuzzle/ManhattanHeuristicFunction.cs",
+    "source_url": "https://github.com/AlexP11223/EightPuzzleSolver/blob/57bc1d5c4a7f49cae074eef18b559426de225dfa/EightPuzzleSolver/EightPuzzle/ManhattanHeuristicFunction.cs"
+  },
+  {
+    "repo": "hrshtpurohit/8-puzzle-solver",
+    "commit": "e65089742267d27b06273765a002c3fba6a1beed",
+    "readme": "README.md",
+    "url": "https://github.com/hrshtpurohit/8-puzzle-solver/blob/e65089742267d27b06273765a002c3fba6a1beed/README.md",
+    "status": "README screening",
+    "candidates": [
+      "astar solver.py",
+      "bfs solver.py",
+      "dfs solver.py"
+    ]
+  }
+]
