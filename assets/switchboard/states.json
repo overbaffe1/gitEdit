@@ -1,0 +1,398 @@
+[
+  {
+    "id": "wide-ink-brief",
+    "state": {
+      "layout": "wide",
+      "palette": "ink",
+      "detail": "brief"
+    },
+    "page": "atlas/switchboard/states/wide-ink-brief.md",
+    "image": "assets/switchboard/wide-ink.svg",
+    "snippet": "assets/switchboard/snippets/wide-ink-brief.txt",
+    "transitions": [
+      {
+        "axis": "layout",
+        "value": "stack",
+        "target": "stack-ink-brief"
+      },
+      {
+        "axis": "palette",
+        "value": "coral",
+        "target": "wide-coral-brief"
+      },
+      {
+        "axis": "palette",
+        "value": "forest",
+        "target": "wide-forest-brief"
+      },
+      {
+        "axis": "detail",
+        "value": "full",
+        "target": "wide-ink-full"
+      }
+    ]
+  },
+  {
+    "id": "wide-ink-full",
+    "state": {
+      "layout": "wide",
+      "palette": "ink",
+      "detail": "full"
+    },
+    "page": "atlas/switchboard/states/wide-ink-full.md",
+    "image": "assets/switchboard/wide-ink.svg",
+    "snippet": "assets/switchboard/snippets/wide-ink-full.txt",
+    "transitions": [
+      {
+        "axis": "layout",
+        "value": "stack",
+        "target": "stack-ink-full"
+      },
+      {
+        "axis": "palette",
+        "value": "coral",
+        "target": "wide-coral-full"
+      },
+      {
+        "axis": "palette",
+        "value": "forest",
+        "target": "wide-forest-full"
+      },
+      {
+        "axis": "detail",
+        "value": "brief",
+        "target": "wide-ink-brief"
+      }
+    ]
+  },
+  {
+    "id": "wide-coral-brief",
+    "state": {
+      "layout": "wide",
+      "palette": "coral",
+      "detail": "brief"
+    },
+    "page": "atlas/switchboard/states/wide-coral-brief.md",
+    "image": "assets/switchboard/wide-coral.svg",
+    "snippet": "assets/switchboard/snippets/wide-coral-brief.txt",
+    "transitions": [
+      {
+        "axis": "layout",
+        "value": "stack",
+        "target": "stack-coral-brief"
+      },
+      {
+        "axis": "palette",
+        "value": "ink",
+        "target": "wide-ink-brief"
+      },
+      {
+        "axis": "palette",
+        "value": "forest",
+        "target": "wide-forest-brief"
+      },
+      {
+        "axis": "detail",
+        "value": "full",
+        "target": "wide-coral-full"
+      }
+    ]
+  },
+  {
+    "id": "wide-coral-full",
+    "state": {
+      "layout": "wide",
+      "palette": "coral",
+      "detail": "full"
+    },
+    "page": "atlas/switchboard/states/wide-coral-full.md",
+    "image": "assets/switchboard/wide-coral.svg",
+    "snippet": "assets/switchboard/snippets/wide-coral-full.txt",
+    "transitions": [
+      {
+        "axis": "layout",
+        "value": "stack",
+        "target": "stack-coral-full"
+      },
+      {
+        "axis": "palette",
+        "value": "ink",
+        "target": "wide-ink-full"
+      },
+      {
+        "axis": "palette",
+        "value": "forest",
+        "target": "wide-forest-full"
+      },
+      {
+        "axis": "detail",
+        "value": "brief",
+        "target": "wide-coral-brief"
+      }
+    ]
+  },
+  {
+    "id": "wide-forest-brief",
+    "state": {
+      "layout": "wide",
+      "palette": "forest",
+      "detail": "brief"
+    },
+    "page": "atlas/switchboard/states/wide-forest-brief.md",
+    "image": "assets/switchboard/wide-forest.svg",
+    "snippet": "assets/switchboard/snippets/wide-forest-brief.txt",
+    "transitions": [
+      {
+        "axis": "layout",
+        "value": "stack",
+        "target": "stack-forest-brief"
+      },
+      {
+        "axis": "palette",
+        "value": "ink",
+        "target": "wide-ink-brief"
+      },
+      {
+        "axis": "palette",
+        "value": "coral",
+        "target": "wide-coral-brief"
+      },
+      {
+        "axis": "detail",
+        "value": "full",
+        "target": "wide-forest-full"
+      }
+    ]
+  },
+  {
+    "id": "wide-forest-full",
+    "state": {
+      "layout": "wide",
+      "palette": "forest",
+      "detail": "full"
+    },
+    "page": "atlas/switchboard/states/wide-forest-full.md",
+    "image": "assets/switchboard/wide-forest.svg",
+    "snippet": "assets/switchboard/snippets/wide-forest-full.txt",
+    "transitions": [
+      {
+        "axis": "layout",
+        "value": "stack",
+        "target": "stack-forest-full"
+      },
+      {
+        "axis": "palette",
+        "value": "ink",
+        "target": "wide-ink-full"
+      },
+      {
+        "axis": "palette",
+        "value": "coral",
+        "target": "wide-coral-full"
+      },
+      {
+        "axis": "detail",
+        "value": "brief",
+        "target": "wide-forest-brief"
+      }
+    ]
+  },
+  {
+    "id": "stack-ink-brief",
+    "state": {
+      "layout": "stack",
+      "palette": "ink",
+      "detail": "brief"
+    },
+    "page": "atlas/switchboard/states/stack-ink-brief.md",
+    "image": "assets/switchboard/stack-ink.svg",
+    "snippet": "assets/switchboard/snippets/stack-ink-brief.txt",
+    "transitions": [
+      {
+        "axis": "layout",
+        "value": "wide",
+        "target": "wide-ink-brief"
+      },
+      {
+        "axis": "palette",
+        "value": "coral",
+        "target": "stack-coral-brief"
+      },
+      {
+        "axis": "palette",
+        "value": "forest",
+        "target": "stack-forest-brief"
+      },
+      {
+        "axis": "detail",
+        "value": "full",
+        "target": "stack-ink-full"
+      }
+    ]
+  },
+  {
+    "id": "stack-ink-full",
+    "state": {
+      "layout": "stack",
+      "palette": "ink",
+      "detail": "full"
+    },
+    "page": "atlas/switchboard/states/stack-ink-full.md",
+    "image": "assets/switchboard/stack-ink.svg",
+    "snippet": "assets/switchboard/snippets/stack-ink-full.txt",
+    "transitions": [
+      {
+        "axis": "layout",
+        "value": "wide",
+        "target": "wide-ink-full"
+      },
+      {
+        "axis": "palette",
+        "value": "coral",
+        "target": "stack-coral-full"
+      },
+      {
+        "axis": "palette",
+        "value": "forest",
+        "target": "stack-forest-full"
+      },
+      {
+        "axis": "detail",
+        "value": "brief",
+        "target": "stack-ink-brief"
+      }
+    ]
+  },
+  {
+    "id": "stack-coral-brief",
+    "state": {
+      "layout": "stack",
+      "palette": "coral",
+      "detail": "brief"
+    },
+    "page": "atlas/switchboard/states/stack-coral-brief.md",
+    "image": "assets/switchboard/stack-coral.svg",
+    "snippet": "assets/switchboard/snippets/stack-coral-brief.txt",
+    "transitions": [
+      {
+        "axis": "layout",
+        "value": "wide",
+        "target": "wide-coral-brief"
+      },
+      {
+        "axis": "palette",
+        "value": "ink",
+        "target": "stack-ink-brief"
+      },
+      {
+        "axis": "palette",
+        "value": "forest",
+        "target": "stack-forest-brief"
+      },
+      {
+        "axis": "detail",
+        "value": "full",
+        "target": "stack-coral-full"
+      }
+    ]
+  },
+  {
+    "id": "stack-coral-full",
+    "state": {
+      "layout": "stack",
+      "palette": "coral",
+      "detail": "full"
+    },
+    "page": "atlas/switchboard/states/stack-coral-full.md",
+    "image": "assets/switchboard/stack-coral.svg",
+    "snippet": "assets/switchboard/snippets/stack-coral-full.txt",
+    "transitions": [
+      {
+        "axis": "layout",
+        "value": "wide",
+        "target": "wide-coral-full"
+      },
+      {
+        "axis": "palette",
+        "value": "ink",
+        "target": "stack-ink-full"
+      },
+      {
+        "axis": "palette",
+        "value": "forest",
+        "target": "stack-forest-full"
+      },
+      {
+        "axis": "detail",
+        "value": "brief",
+        "target": "stack-coral-brief"
+      }
+    ]
+  },
+  {
+    "id": "stack-forest-brief",
+    "state": {
+      "layout": "stack",
+      "palette": "forest",
+      "detail": "brief"
+    },
+    "page": "atlas/switchboard/states/stack-forest-brief.md",
+    "image": "assets/switchboard/stack-forest.svg",
+    "snippet": "assets/switchboard/snippets/stack-forest-brief.txt",
+    "transitions": [
+      {
+        "axis": "layout",
+        "value": "wide",
+        "target": "wide-forest-brief"
+      },
+      {
+        "axis": "palette",
+        "value": "ink",
+        "target": "stack-ink-brief"
+      },
+      {
+        "axis": "palette",
+        "value": "coral",
+        "target": "stack-coral-brief"
+      },
+      {
+        "axis": "detail",
+        "value": "full",
+        "target": "stack-forest-full"
+      }
+    ]
+  },
+  {
+    "id": "stack-forest-full",
+    "state": {
+      "layout": "stack",
+      "palette": "forest",
+      "detail": "full"
+    },
+    "page": "atlas/switchboard/states/stack-forest-full.md",
+    "image": "assets/switchboard/stack-forest.svg",
+    "snippet": "assets/switchboard/snippets/stack-forest-full.txt",
+    "transitions": [
+      {
+        "axis": "layout",
+        "value": "wide",
+        "target": "wide-forest-full"
+      },
+      {
+        "axis": "palette",
+        "value": "ink",
+        "target": "stack-ink-full"
+      },
+      {
+        "axis": "palette",
+        "value": "coral",
+        "target": "stack-coral-full"
+      },
+      {
+        "axis": "detail",
+        "value": "brief",
+        "target": "stack-forest-brief"
+      }
+    ]
+  }
+]
