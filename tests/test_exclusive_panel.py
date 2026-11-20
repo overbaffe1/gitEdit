@@ -51,7 +51,8 @@ class ExclusivePanelTest(unittest.TestCase):
   if subprocess.run(['git','cat-file','-e',ref],cwd=ROOT,stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL).returncode:self.skipTest('Fetch base history '+ref)
   block=(SRC/'readme-block.md').read_bytes();now=(ROOT/'README.md').read_bytes();self.assertEqual(now.count(block),1)
   quest=(ROOT/'atlas/samples/fragment_quest/readme-block.md').read_bytes();self.assertEqual(now.count(quest),1)
-  self.assertEqual(now.replace(quest,b'',1).replace(block,b'',1),subprocess.check_output(['git','show',ref+':README.md'],cwd=ROOT))
+  solid=(ROOT/'atlas/samples/dual_solid/readme-block.md').read_bytes();self.assertEqual(now.count(solid),1)
+  self.assertEqual(now.replace(solid,b'',1).replace(quest,b'',1).replace(block,b'',1),subprocess.check_output(['git','show',ref+':README.md'],cwd=ROOT))
   self.assertEqual(subprocess.check_output(['git','diff',ref,'--','.github/workflows'],cwd=ROOT),b'')
  def test_regeneration_does_not_edit_readme_or_existing_media(self):
   files=[SRC/'readme-block.md',ART/'manifest.json',ART/'panel.txt',ROOT/'README.md',ROOT/'assets/motion-formats/cube.gif',ROOT/'assets/motion-formats/poster.png'];before={p:p.read_bytes() for p in files}
