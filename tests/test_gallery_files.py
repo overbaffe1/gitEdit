@@ -37,13 +37,24 @@ def fence_languages(markdown):
 
 
 class GalleryFilesTest(unittest.TestCase):
-    def test_home_starts_with_art_and_only_recipes_start_closed(self):
+    def test_home_starts_with_art_and_only_recipes_or_exclusive_panel_start_closed(self):
+        # Only the explicitly bounded named-accordion demo may start closed outside recipes.
         lines = [value for kind, value in markdown_parts(README.read_text()) if kind == 'line']
         self.assertTrue(lines[0].startswith('<p align="center"><a href="assets/night-shift/fold.gif">'))
         in_recipes = False
         recipe_groups = 0
+        exclusive_groups = 0
+        in_exclusive = False
         depth = 0
         for line in lines:
+            if line == '<!-- exclusive-panel:start -->':
+                self.assertFalse(in_exclusive)
+                self.assertEqual(depth, 0)
+                in_exclusive = True
+            elif line == '<!-- exclusive-panel:end -->':
+                self.assertTrue(in_exclusive)
+                self.assertEqual(depth, 0)
+                in_exclusive = False
             if re.match(r'^#{1,3} ', line):
                 in_recipes = line == '### Рецепты GitHub Markdown'
                 if line.startswith('## ') or in_recipes:
@@ -52,6 +63,9 @@ class GalleryFilesTest(unittest.TestCase):
                 if in_recipes:
                     self.assertEqual(line, '<details>')
                     recipe_groups += 1
+                elif in_exclusive:
+                    self.assertEqual(line, '<details name="gitedit-motion-desk-v1"' + (' open>' if exclusive_groups == 0 else '>'))
+                    exclusive_groups += 1
                 else:
                     self.assertRegex(line, r'^<details\s+open\s*>$')
                 depth += 1
@@ -60,6 +74,8 @@ class GalleryFilesTest(unittest.TestCase):
                 self.assertGreaterEqual(depth, 0)
         self.assertEqual(depth, 0)
         self.assertGreater(recipe_groups, 0)
+        self.assertEqual(exclusive_groups, 3)
+        self.assertFalse(in_exclusive)
         self.assertFalse({'# gitEdit', '## Как взять шапку', '## Образцы Markdown'}.intersection(lines))
         self.assertTrue({'## Палитра Markdown', '## Исходники README'} <= set(lines))
         live = '\n'.join(lines)

@@ -78,7 +78,7 @@ class NativeLabTest(unittest.TestCase):
   b=(SRC/'readme-block.md').read_bytes();now=(ROOT/'README.md').read_bytes();self.assertEqual(now.count(b),1)
   # Each later generated block has its own byte-preservation test.
   legacy=now
-  for name in ('github_controls','browser_desk','actions_lab','switchboard'):
+  for name in ('github_controls','browser_desk','actions_lab','switchboard','exclusive_panel'):
    addition=(ROOT/f'atlas/samples/{name}/readme-block.md').read_bytes()
    self.assertEqual(legacy.count(addition),1);legacy=legacy.replace(addition,b'',1)
   self.assertEqual(legacy.replace(b,b'',1),old)
