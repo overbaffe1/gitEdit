@@ -59,9 +59,11 @@ class GitHubControlsTest(unittest.TestCase):
   base=json.loads((SRC/'config.json').read_text())['base_commit'];b=(SRC/'readme-block.md').read_bytes();now=(ROOT/'README.md').read_bytes();self.assertEqual(now.count(b),1)
   self.require_history(base)
   old=subprocess.check_output(['git','show',base+':README.md'],cwd=ROOT)
-  later=(ROOT/'atlas/samples/browser_desk/readme-block.md').read_bytes();self.assertEqual(now.count(later),1)
-  browser=(ROOT/'atlas/samples/browser_desk/readme-block.md').read_bytes();self.assertEqual(now.count(browser),1)
-  self.assertEqual(now.replace(browser,b'',1).replace(later,b'',1).replace(b,b'',1),old)
+  legacy=now
+  for name in ('browser_desk','actions_lab'):
+   addition=(ROOT/f'atlas/samples/{name}/readme-block.md').read_bytes()
+   self.assertEqual(legacy.count(addition),1);legacy=legacy.replace(addition,b'',1)
+  self.assertEqual(legacy.replace(b,b'',1),old)
   for path in ['.github/ISSUE_TEMPLATE/config.yml','.github/ISSUE_TEMPLATE/readme-block.yml']:
    self.assertEqual((ROOT/path).read_bytes(),subprocess.check_output(['git','show',base+':'+path],cwd=ROOT))
  def test_entry_points_and_boundaries_in_readme(self):

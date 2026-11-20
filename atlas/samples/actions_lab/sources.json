@@ -1,0 +1,37 @@
+[
+  {
+    "repo": "github/docs",
+    "commit": "16d03ddd1bd51eab7407b4ba632200618e6655c2",
+    "path": "content/actions/how-tos/manage-workflow-runs/manually-run-a-workflow.md",
+    "url": "https://github.com/github/docs/blob/16d03ddd1bd51eab7407b4ba632200618e6655c2/content/actions/how-tos/manage-workflow-runs/manually-run-a-workflow.md",
+    "scope": "Прочитаны относящиеся к dispatch, summaries, artifacts, inputs и permissions разделы; не тест облачного запуска."
+  },
+  {
+    "repo": "github/docs",
+    "commit": "16d03ddd1bd51eab7407b4ba632200618e6655c2",
+    "path": "content/actions/reference/workflows-and-actions/workflow-commands.md",
+    "url": "https://github.com/github/docs/blob/16d03ddd1bd51eab7407b4ba632200618e6655c2/content/actions/reference/workflows-and-actions/workflow-commands.md",
+    "scope": "Прочитаны относящиеся к dispatch, summaries, artifacts, inputs и permissions разделы; не тест облачного запуска."
+  },
+  {
+    "repo": "github/docs",
+    "commit": "16d03ddd1bd51eab7407b4ba632200618e6655c2",
+    "path": "content/actions/reference/workflows-and-actions/workflow-syntax.md",
+    "url": "https://github.com/github/docs/blob/16d03ddd1bd51eab7407b4ba632200618e6655c2/content/actions/reference/workflows-and-actions/workflow-syntax.md",
+    "scope": "Прочитаны относящиеся к dispatch, summaries, artifacts, inputs и permissions разделы; не тест облачного запуска."
+  },
+  {
+    "repo": "github/docs",
+    "commit": "16d03ddd1bd51eab7407b4ba632200618e6655c2",
+    "path": "content/actions/concepts/workflows-and-actions/workflow-artifacts.md",
+    "url": "https://github.com/github/docs/blob/16d03ddd1bd51eab7407b4ba632200618e6655c2/content/actions/concepts/workflows-and-actions/workflow-artifacts.md",
+    "scope": "Прочитаны относящиеся к dispatch, summaries, artifacts, inputs и permissions разделы; не тест облачного запуска."
+  },
+  {
+    "repo": "github/docs",
+    "commit": "16d03ddd1bd51eab7407b4ba632200618e6655c2",
+    "path": "content/actions/how-tos/manage-workflow-runs/download-workflow-artifacts.md",
+    "url": "https://github.com/github/docs/blob/16d03ddd1bd51eab7407b4ba632200618e6655c2/content/actions/how-tos/manage-workflow-runs/download-workflow-artifacts.md",
+    "scope": "Прочитаны относящиеся к dispatch, summaries, artifacts, inputs и permissions разделы; не тест облачного запуска."
+  }
+]

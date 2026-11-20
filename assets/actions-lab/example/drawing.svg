@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="520" viewBox="0 0 640 520" role="img" aria-labelledby="title desc">
+<title id="title">Native Actions experiment</title>
+<desc id="desc">24 points; orbit; night. Deterministic generated output, not a cloud-run screenshot.</desc>
+<rect width="640" height="520" fill="#142d38"/>
+<circle cx="525.000000" cy="260.000000" r="3" fill="#d6edab"/>
+<circle cx="518.014794" cy="313.057904" r="4" fill="#d6edab"/>
+<circle cx="497.535208" cy="362.500000" r="5" fill="#d6edab"/>
+<circle cx="464.956890" cy="404.956890" r="3" fill="#d6edab"/>
+<circle cx="422.500000" cy="437.535208" r="4" fill="#d6edab"/>
+<circle cx="373.057904" cy="458.014794" r="5" fill="#d6edab"/>
+<circle cx="320.000000" cy="465.000000" r="3" fill="#d6edab"/>
+<circle cx="266.942096" cy="458.014794" r="4" fill="#d6edab"/>
+<circle cx="217.500000" cy="437.535208" r="5" fill="#d6edab"/>
+<circle cx="175.043110" cy="404.956890" r="3" fill="#d6edab"/>
+<circle cx="142.464792" cy="362.500000" r="4" fill="#d6edab"/>
+<circle cx="121.985206" cy="313.057904" r="5" fill="#d6edab"/>
+<circle cx="115.000000" cy="260.000000" r="3" fill="#d6edab"/>
+<circle cx="121.985206" cy="206.942096" r="4" fill="#d6edab"/>
+<circle cx="142.464792" cy="157.500000" r="5" fill="#d6edab"/>
+<circle cx="175.043110" cy="115.043110" r="3" fill="#d6edab"/>
+<circle cx="217.500000" cy="82.464792" r="4" fill="#d6edab"/>
+<circle cx="266.942096" cy="61.985206" r="5" fill="#d6edab"/>
+<circle cx="320.000000" cy="55.000000" r="3" fill="#d6edab"/>
+<circle cx="373.057904" cy="61.985206" r="4" fill="#d6edab"/>
+<circle cx="422.500000" cy="82.464792" r="5" fill="#d6edab"/>
+<circle cx="464.956890" cy="115.043110" r="3" fill="#d6edab"/>
+<circle cx="497.535208" cy="157.500000" r="4" fill="#d6edab"/>
+<circle cx="518.014794" cy="206.942096" r="5" fill="#d6edab"/>
+</svg>
