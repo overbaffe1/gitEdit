@@ -72,7 +72,8 @@ class SwitchboardTest(unittest.TestCase):
   panel=(ROOT/'atlas/samples/exclusive_panel/readme-block.md').read_bytes();self.assertEqual(now.count(panel),1)
   quest=(ROOT/'atlas/samples/fragment_quest/readme-block.md').read_bytes();self.assertEqual(now.count(quest),1)
   solid=(ROOT/'atlas/samples/dual_solid/readme-block.md').read_bytes();self.assertEqual(now.count(solid),1)
-  old=subprocess.check_output(['git','show',ref+':README.md'],cwd=ROOT);self.assertEqual(now.replace(solid,b'',1).replace(quest,b'',1).replace(panel,b'',1).replace(b,b'',1),old)
+  scan=(ROOT/'atlas/samples/resize_scan/readme-block.md').read_bytes();self.assertEqual(now.count(scan),1)
+  old=subprocess.check_output(['git','show',ref+':README.md'],cwd=ROOT);self.assertEqual(now.replace(scan,b'',1).replace(solid,b'',1).replace(quest,b'',1).replace(panel,b'',1).replace(b,b'',1),old)
   workflow='.github/workflows/native-lab.yml';self.assertEqual((ROOT/workflow).read_bytes(),subprocess.check_output(['git','show',ref+':'+workflow],cwd=ROOT))
  def test_regeneration_is_deterministic_and_read_only_readme(self):
   files=[*PAGES.glob('*.md'),*ART.glob('*.svg'),*(ART/'snippets').glob('*.txt'),ART/'states.json',ART/'manifest.json',SRC/'readme-block.md',ROOT/'README.md'];before={p:p.read_bytes() for p in files}

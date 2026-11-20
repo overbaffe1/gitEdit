@@ -63,6 +63,7 @@ class DualSolidTest(unittest.TestCase):
  def test_entire_previous_readme_and_workflows_preserved(self):
   ref=json.loads((SRC/'config.json').read_text())['base_commit']
   if subprocess.run(['git','cat-file','-e',ref],cwd=ROOT,stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL).returncode:self.skipTest('Fetch pinned base '+ref)
-  block=(SRC/'readme-block.md').read_bytes();now=(ROOT/'README.md').read_bytes();self.assertEqual(now.count(block),1);self.assertEqual(now.replace(block,b'',1),subprocess.check_output(['git','show',ref+':README.md'],cwd=ROOT));self.assertEqual(subprocess.check_output(['git','diff',ref,'--','.github/workflows'],cwd=ROOT),b'')
+  scan=(ROOT/'atlas/samples/resize_scan/readme-block.md').read_bytes();now=(ROOT/'README.md').read_bytes();self.assertEqual(now.count(scan),1)
+  block=(SRC/'readme-block.md').read_bytes();self.assertEqual(now.count(block),1);self.assertEqual(now.replace(scan,b'',1).replace(block,b'',1),subprocess.check_output(['git','show',ref+':README.md'],cwd=ROOT));self.assertEqual(subprocess.check_output(['git','diff',ref,'--','.github/workflows'],cwd=ROOT),b'')
  def test_deterministic_regeneration_leaves_root_readme(self):
   files=[*ART.iterdir(),PLAY,SRC/'readme-block.md',ROOT/'README.md'];before={p:p.read_bytes() for p in files};subprocess.run([sys.executable,str(SRC/'generate.py')],check=True,cwd=ROOT);self.assertEqual(before,{p:p.read_bytes() for p in files})
