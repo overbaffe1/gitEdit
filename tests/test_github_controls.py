@@ -60,7 +60,7 @@ class GitHubControlsTest(unittest.TestCase):
   self.require_history(base)
   old=subprocess.check_output(['git','show',base+':README.md'],cwd=ROOT)
   legacy=now
-  for name in ('browser_desk','actions_lab','switchboard','exclusive_panel','fragment_quest'):
+  for name in ('browser_desk','actions_lab','switchboard','exclusive_panel','fragment_quest','dual_solid'):
    addition=(ROOT/f'atlas/samples/{name}/readme-block.md').read_bytes()
    self.assertEqual(legacy.count(addition),1);legacy=legacy.replace(addition,b'',1)
   self.assertEqual(legacy.replace(b,b'',1),old)

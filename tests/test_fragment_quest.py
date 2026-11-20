@@ -62,7 +62,8 @@ class FragmentQuestTest(unittest.TestCase):
   ref=json.loads((SRC/'config.json').read_text())['base_commit']
   if subprocess.run(['git','cat-file','-e',ref],cwd=ROOT,stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL).returncode:self.skipTest('Fetch base history '+ref)
   block=(SRC/'readme-block.md').read_bytes();now=(ROOT/'README.md').read_bytes();self.assertEqual(now.count(block),1)
-  self.assertEqual(now.replace(block,b'',1),subprocess.check_output(['git','show',ref+':README.md'],cwd=ROOT));self.assertEqual(subprocess.check_output(['git','diff',ref,'--','.github/workflows'],cwd=ROOT),b'')
+  solid=(ROOT/'atlas/samples/dual_solid/readme-block.md').read_bytes();self.assertEqual(now.count(solid),1)
+  self.assertEqual(now.replace(solid,b'',1).replace(block,b'',1),subprocess.check_output(['git','show',ref+':README.md'],cwd=ROOT));self.assertEqual(subprocess.check_output(['git','diff',ref,'--','.github/workflows'],cwd=ROOT),b'')
  def test_generator_deterministic_readme_not_edited(self):
   files=[PLAY,ART/'graph.json',ART/'play.txt',ART/'manifest.json',SRC/'readme-block.md',ROOT/'README.md'];before={p:p.read_bytes() for p in files}
   subprocess.run([sys.executable,str(SRC/'generate.py')],check=True,cwd=ROOT);self.assertEqual(before,{p:p.read_bytes() for p in files})
