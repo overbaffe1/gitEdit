@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="480" viewBox="0 0 720 480" role="img" aria-labelledby="title desc">
+<title id="title">Шаблон обложки проекта</title><desc id="desc">Собственный SVG: название проекта и простая геометрия. Цвет и раскладка выбраны на Markdown-странице.</desc>
+<rect width="720" height="480" rx="16" fill="#f1e9d9"/>
+<path d="M32 40H688" stroke="#263e66"/>
+<text x="40" y="84" fill="#263e66" font-family="DejaVu Sans,Arial,sans-serif" font-size="18">BUILD / SHARE / EXPLAIN</text>
+<text x="40" y="168" fill="#263e66" font-family="DejaVu Sans,Arial,sans-serif" font-size="60" font-weight="700">НАЗВАНИЕ</text>
+<text x="40" y="235" fill="#263e66" font-family="DejaVu Sans,Arial,sans-serif" font-size="60" font-weight="700">ПРОЕКТА</text>
+<circle cx="530" cy="360" r="47" fill="none" stroke="#263e66" stroke-width="3"/>
+<path d="M460 415L530 295L600 415Z" fill="none" stroke="#263e66" stroke-width="3"/>
+</svg>

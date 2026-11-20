@@ -45,7 +45,8 @@ class BrowserDeskTest(unittest.TestCase):
   ref=json.loads((SRC/'config.json').read_text())['base_commit'];self.require_history(ref);old=subprocess.check_output(['git','show',ref+':README.md'],cwd=ROOT)
   now=(ROOT/'README.md').read_bytes();b=(SRC/'readme-block.md').read_bytes();self.assertEqual(now.count(b),1)
   later=(ROOT/'atlas/samples/actions_lab/readme-block.md').read_bytes();self.assertEqual(now.count(later),1)
-  self.assertEqual(now.replace(later,b'',1).replace(b,b'',1),old)
+  switch=(ROOT/'atlas/samples/switchboard/readme-block.md').read_bytes();self.assertEqual(now.count(switch),1)
+  self.assertEqual(now.replace(switch,b'',1).replace(later,b'',1).replace(b,b'',1),old)
   self.assertLess(now.index(b),now.index(b'<!-- github-controls:start -->'))
  def test_primary_sources_and_honest_boundaries(self):
   records=json.loads((SRC/'sources.json').read_text());self.assertEqual(len(records),6)

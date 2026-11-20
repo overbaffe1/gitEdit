@@ -1,0 +1,38 @@
+[
+  {
+    "repo": "FVTC/choose-your-adventure",
+    "commit": "37339decb0f21b8d08fd2acffd38399987eeed39",
+    "url": "https://github.com/FVTC/choose-your-adventure/blob/37339decb0f21b8d08fd2acffd38399987eeed39/README.md",
+    "scope": "Начало README до 2500 символов. Ссылки, изображения и код не запускались/не исследовались."
+  },
+  {
+    "repo": "Srinivasa314/markdown-adventure",
+    "commit": "eefd73ac79dd64705334a612343056e01cae1032",
+    "url": "https://github.com/Srinivasa314/markdown-adventure/blob/eefd73ac79dd64705334a612343056e01cae1032/README.md",
+    "scope": "Начало README до 2500 символов. Ссылки, изображения и код не запускались/не исследовались."
+  },
+  {
+    "repo": "marcizhu/readme-chess",
+    "commit": "067f3784d73ec3ae40bce881b9de4c400f15db5b",
+    "url": "https://github.com/marcizhu/readme-chess/blob/067f3784d73ec3ae40bce881b9de4c400f15db5b/README.md",
+    "scope": "Начало README до 2500 символов. Ссылки, изображения и код не запускались/не исследовались."
+  },
+  {
+    "repo": "rahuldkjain/github-profile-readme-generator",
+    "commit": "5ae90bfcbd7ab2f69809b094601f7975c32ae077",
+    "url": "https://github.com/rahuldkjain/github-profile-readme-generator/blob/5ae90bfcbd7ab2f69809b094601f7975c32ae077/README.md",
+    "scope": "Начало README до 2500 символов. Ссылки, изображения и код не запускались/не исследовались."
+  },
+  {
+    "repo": "github/docs",
+    "commit": "16d03ddd1bd51eab7407b4ba632200618e6655c2",
+    "url": "https://github.com/github/docs/blob/16d03ddd1bd51eab7407b4ba632200618e6655c2/content/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax.md",
+    "scope": "Разделы relative links, images, code blocks и file references, относящиеся к стенду."
+  },
+  {
+    "repo": "github/docs",
+    "commit": "16d03ddd1bd51eab7407b4ba632200618e6655c2",
+    "url": "https://github.com/github/docs/blob/16d03ddd1bd51eab7407b4ba632200618e6655c2/content/repositories/working-with-files/using-files/getting-permanent-links-to-files.md",
+    "scope": "Разделы relative links, images, code blocks и file references, относящиеся к стенду."
+  }
+]
