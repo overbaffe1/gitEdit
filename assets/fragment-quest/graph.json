@@ -1,0 +1,107 @@
+[
+  {
+    "id": "dock",
+    "title": "00 / Приёмная",
+    "target_id": "user-content-fq-scene-dock",
+    "transitions": [
+      {
+        "target": "lens",
+        "label": "Взять линзу"
+      },
+      {
+        "target": "radio",
+        "label": "Надеть наушники"
+      }
+    ]
+  },
+  {
+    "id": "lens",
+    "title": "01 / Оптика",
+    "target_id": "user-content-fq-scene-lens",
+    "transitions": [
+      {
+        "target": "radio",
+        "label": "Послушать эфир"
+      },
+      {
+        "target": "echo",
+        "label": "Сразу нажать передачу"
+      }
+    ]
+  },
+  {
+    "id": "radio",
+    "title": "02 / Приёмник",
+    "target_id": "user-content-fq-scene-radio",
+    "transitions": [
+      {
+        "target": "quiet",
+        "label": "Выбрать тихий канал"
+      },
+      {
+        "target": "loud",
+        "label": "Включить усилитель"
+      }
+    ]
+  },
+  {
+    "id": "quiet",
+    "title": "03 / Тихий канал",
+    "target_id": "user-content-fq-scene-quiet",
+    "transitions": [
+      {
+        "target": "rescue",
+        "label": "Передать «ИРИС»"
+      },
+      {
+        "target": "echo",
+        "label": "Передать «АТЛАС»"
+      }
+    ]
+  },
+  {
+    "id": "loud",
+    "title": "04 / Усилитель",
+    "target_id": "user-content-fq-scene-loud",
+    "transitions": [
+      {
+        "target": "radio",
+        "label": "Вернуться к приёмнику"
+      },
+      {
+        "target": "dock",
+        "label": "Начать заново"
+      }
+    ]
+  },
+  {
+    "id": "echo",
+    "title": "05 / Эхо",
+    "target_id": "user-content-fq-scene-echo",
+    "transitions": [
+      {
+        "target": "dock",
+        "label": "Сбросить маршрут"
+      },
+      {
+        "target": "radio",
+        "label": "Вернуться к приёмнику"
+      }
+    ]
+  },
+  {
+    "id": "rescue",
+    "title": "06 / Маяк найден",
+    "target_id": "user-content-fq-scene-rescue",
+    "transitions": [
+      {
+        "target": "dock",
+        "label": "Сыграть ещё раз"
+      },
+      {
+        "target": "lens",
+        "label": "Посмотреть первую подсказку"
+      }
+    ]
+  }
+]
