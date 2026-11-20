@@ -15,6 +15,9 @@ from PIL import Image
 ROOT=Path(__file__).resolve().parents[1];ART=ROOT/'assets/native-lab';SRC=ROOT/'atlas/samples/native_lab'
 spec=importlib.util.spec_from_file_location('native_lab',SRC/'generate.py');g=importlib.util.module_from_spec(spec);spec.loader.exec_module(g)
 class NativeLabTest(unittest.TestCase):
+ def require_history(self,ref):
+  if subprocess.run(['git','cat-file','-e',ref],cwd=ROOT,stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL).returncode:
+   self.skipTest(f'Historical object unavailable in shallow clone: {ref}; fetch the pinned commit with --depth=2')
  def test_mesh_topology_and_components(self):
   vs,fs=g.mesh();self.assertEqual(len(vs),78);self.assertEqual(len(fs),152)
   edges=collections.Counter(tuple(sorted((a,b))) for f in fs for a,b in zip(f,f[1:]+f[:1]))
@@ -64,13 +67,19 @@ class NativeLabTest(unittest.TestCase):
   for ext in ['rst','adoc','org']:self.assertGreater((ART/('notes.'+ext)).stat().st_size,80)
  def test_real_history_backed_image_diff(self):
   cfg=json.loads((SRC/'config.json').read_text());sha=cfg['image_diff_commit'];self.assertRegex(sha,r'^[a-f0-9]{40}$')
+  self.require_history(sha+'^')
   def image(ref):return Image.open(io.BytesIO(subprocess.check_output(['git','show',ref+':assets/native-lab/revision.png'],cwd=ROOT))).convert('RGB')
   old,new=image(sha+'^'),image(sha)
   self.assertEqual(old.size,new.size);self.assertNotEqual(old.tobytes(),new.tobytes());self.assertEqual(new.tobytes(),Image.open(ART/'revision.png').convert('RGB').tobytes())
   self.assertIn('/commit/'+sha,(SRC/'readme-block.md').read_text())
  def test_entire_original_readme_preserved(self):
-  cfg=json.loads((SRC/'config.json').read_text());old=subprocess.check_output(['git','show',cfg['base_commit']+':README.md'],cwd=ROOT)
-  b=(SRC/'readme-block.md').read_bytes();now=(ROOT/'README.md').read_bytes();self.assertEqual(now.count(b),1);self.assertEqual(now.replace(b,b'',1),old)
+  cfg=json.loads((SRC/'config.json').read_text());self.require_history(cfg['base_commit'])
+  old=subprocess.check_output(['git','show',cfg['base_commit']+':README.md'],cwd=ROOT)
+  b=(SRC/'readme-block.md').read_bytes();now=(ROOT/'README.md').read_bytes();self.assertEqual(now.count(b),1)
+  # Explicit later addition, tested independently against its own full base README.
+  later=(ROOT/'atlas/samples/github_controls/readme-block.md').read_bytes()
+  self.assertEqual(now.count(later),1)
+  self.assertEqual(now.replace(later,b'',1).replace(b,b'',1),old)
   self.assertLess(now.index(b),now.index('## Бюро странных вещей'.encode()))
  def test_manifest_and_primary_sources(self):
   m=json.loads((ART/'manifest.json').read_text());self.assertEqual(set(m),{p.name for p in ART.iterdir() if p.name!='manifest.json'})
