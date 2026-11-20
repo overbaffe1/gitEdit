@@ -1,0 +1,61 @@
+name: Native lab — ручной опыт
+
+# No push, PR, schedule or chained-run trigger. Only an explicit human/API dispatch.
+"on":
+  workflow_dispatch:
+    inputs:
+      motif:
+        description: 'Расположение точек'
+        type: choice
+        options: [orbit, spiral]
+        default: orbit
+        required: true
+      count:
+        description: 'Число точек: целое от 12 до 96'
+        type: number
+        default: 24
+        required: true
+      palette:
+        description: 'Палитра файла SVG'
+        type: choice
+        options: [night, paper]
+        default: night
+        required: true
+      include_csv:
+        description: 'Добавить координаты CSV в artifact'
+        type: boolean
+        default: true
+        required: true
+
+permissions:
+  contents: read
+
+jobs:
+  experiment:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - name: Read repository without persisted credentials
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
+        with:
+          persist-credentials: false
+      - name: Generate files and native job summary
+        env:
+          LAB_MOTIF: ${{ inputs.motif }}
+          LAB_COUNT: ${{ inputs.count }}
+          LAB_PALETTE: ${{ inputs.palette }}
+          LAB_INCLUDE_CSV: ${{ inputs.include_csv }}
+          LAB_OUTPUT: ${{ runner.temp }}/native-lab-result
+        run: python3 atlas/samples/actions_lab/run.py
+      - name: Publish short-lived downloadable artifact
+        id: artifact
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: native-lab-result
+          path: ${{ runner.temp }}/native-lab-result/
+          retention-days: 3
+          if-no-files-found: error
+      - name: Link the real artifact in the run summary
+        env:
+          ARTIFACT_URL: ${{ steps.artifact.outputs.artifact-url }}
+        run: printf '\n[Скачать настоящий artifact](%s) — для загрузки нужен вход и доступ к репозиторию.\n' "$ARTIFACT_URL" >> "$GITHUB_STEP_SUMMARY"

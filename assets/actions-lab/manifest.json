@@ -1,0 +1,8 @@
+{
+  ".github/workflows/native-lab.yml": "0cae99fd65c078a2c5a06f33909c9f99fdab870b24539e69473f2b1a09890c5c",
+  "atlas/samples/actions_lab/run.py": "7110f19ce08c1fdd45e0fe8affe359ab0f0645eaf06c2c478c1b01634d20d714",
+  "assets/actions-lab/example/coordinates.csv": "ae18bdca8aee123cce6d344cb9e547b488275feccab147514d95736fb2e89cf8",
+  "assets/actions-lab/example/drawing.svg": "9a7c2daed462c120d234f2b15ffbb76079e8613f3eb1afd91a511ea8e0e3a1c5",
+  "assets/actions-lab/example/result.json": "972f7f9bbd28b848f861f6155e0c0bc3ffc6e732ac6eb22796fae8a947145b98",
+  "assets/actions-lab/example/summary.md": "559cc16dfb7dce89eb5404ae560a8216a5d571f7868b11708858f259e044e4d2"
+}

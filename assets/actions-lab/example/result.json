@@ -1,0 +1,20 @@
+{
+  "parameters": {
+    "motif": "orbit",
+    "count": 24,
+    "palette": "night",
+    "include_csv": true
+  },
+  "points": 24,
+  "bounds": [
+    115.0,
+    55.0,
+    525.0,
+    465.0
+  ],
+  "sha256": {
+    "drawing.svg": "9a7c2daed462c120d234f2b15ffbb76079e8613f3eb1afd91a511ea8e0e3a1c5",
+    "coordinates.csv": "ae18bdca8aee123cce6d344cb9e547b488275feccab147514d95736fb2e89cf8"
+  },
+  "scope": "Deterministic output. No claim that this was executed by GitHub Actions."
+}
