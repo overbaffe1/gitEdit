@@ -1,0 +1,49 @@
+[
+  {
+    "path": "atlas/samples/native_lab/generate.py",
+    "symbol": "mesh",
+    "label": "Геометрия вращаемого STL",
+    "commit": "fa5c788fcb2acffe988eb821642a6e8033fd366d",
+    "sha256": "cc9500b53500cdf121ab7fe961c862f6f400bce92c04320fdcafe991b2a033fb",
+    "start": 45,
+    "end": 59,
+    "direct_calls_in_same_file": [
+      64
+    ],
+    "source": "https://github.com/overbaffe1/gitEdit/blob/main/atlas/samples/native_lab/generate.py",
+    "permalink": "https://github.com/overbaffe1/gitEdit/blob/fa5c788fcb2acffe988eb821642a6e8033fd366d/atlas/samples/native_lab/generate.py#L45-L59",
+    "blame": "https://github.com/overbaffe1/gitEdit/blame/fa5c788fcb2acffe988eb821642a6e8033fd366d/atlas/samples/native_lab/generate.py"
+  },
+  {
+    "path": "atlas/samples/contourpress/generate.py",
+    "symbol": "contours",
+    "label": "Как сшиваются линии рельефа",
+    "commit": "fa5c788fcb2acffe988eb821642a6e8033fd366d",
+    "sha256": "833ddfe3beb7f57a26bfe48a9b8dd8ed69020f75e139865cab4e959f4aa22b34",
+    "start": 25,
+    "end": 47,
+    "direct_calls_in_same_file": [
+      60,
+      111,
+      111
+    ],
+    "source": "https://github.com/overbaffe1/gitEdit/blob/main/atlas/samples/contourpress/generate.py",
+    "permalink": "https://github.com/overbaffe1/gitEdit/blob/fa5c788fcb2acffe988eb821642a6e8033fd366d/atlas/samples/contourpress/generate.py#L25-L47",
+    "blame": "https://github.com/overbaffe1/gitEdit/blame/fa5c788fcb2acffe988eb821642a6e8033fd366d/atlas/samples/contourpress/generate.py"
+  },
+  {
+    "path": "atlas/samples/github_controls/generate.py",
+    "symbol": "links",
+    "label": "Как устроены ссылки на форму",
+    "commit": "fa5c788fcb2acffe988eb821642a6e8033fd366d",
+    "sha256": "d9d2147c66ae4bd9a4628cf286b88d7f68ec79a391aebaa589a47b525d8d3245",
+    "start": 7,
+    "end": 11,
+    "direct_calls_in_same_file": [
+      13
+    ],
+    "source": "https://github.com/overbaffe1/gitEdit/blob/main/atlas/samples/github_controls/generate.py",
+    "permalink": "https://github.com/overbaffe1/gitEdit/blob/fa5c788fcb2acffe988eb821642a6e8033fd366d/atlas/samples/github_controls/generate.py#L7-L11",
+    "blame": "https://github.com/overbaffe1/gitEdit/blame/fa5c788fcb2acffe988eb821642a6e8033fd366d/atlas/samples/github_controls/generate.py"
+  }
+]

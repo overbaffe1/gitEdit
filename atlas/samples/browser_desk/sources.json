@@ -1,0 +1,44 @@
+[
+  {
+    "repo": "github/docs",
+    "commit": "16d03ddd1bd51eab7407b4ba632200618e6655c2",
+    "path": "content/codespaces/the-githubdev-web-based-editor.md",
+    "url": "https://github.com/github/docs/blob/16d03ddd1bd51eab7407b4ba632200618e6655c2/content/codespaces/the-githubdev-web-based-editor.md",
+    "scope": "Изучены относящиеся к стенду разделы; не авторизованная браузерная проверка."
+  },
+  {
+    "repo": "github/docs",
+    "commit": "16d03ddd1bd51eab7407b4ba632200618e6655c2",
+    "path": "content/repositories/working-with-files/using-files/navigating-code-on-github.md",
+    "url": "https://github.com/github/docs/blob/16d03ddd1bd51eab7407b4ba632200618e6655c2/content/repositories/working-with-files/using-files/navigating-code-on-github.md",
+    "scope": "Изучены относящиеся к стенду разделы; не авторизованная браузерная проверка."
+  },
+  {
+    "repo": "github/docs",
+    "commit": "16d03ddd1bd51eab7407b4ba632200618e6655c2",
+    "path": "content/repositories/working-with-files/using-files/getting-permanent-links-to-files.md",
+    "url": "https://github.com/github/docs/blob/16d03ddd1bd51eab7407b4ba632200618e6655c2/content/repositories/working-with-files/using-files/getting-permanent-links-to-files.md",
+    "scope": "Изучены относящиеся к стенду разделы; не авторизованная браузерная проверка."
+  },
+  {
+    "repo": "github/docs",
+    "commit": "16d03ddd1bd51eab7407b4ba632200618e6655c2",
+    "path": "content/get-started/accessibility/keyboard-shortcuts.md",
+    "url": "https://github.com/github/docs/blob/16d03ddd1bd51eab7407b4ba632200618e6655c2/content/get-started/accessibility/keyboard-shortcuts.md",
+    "scope": "Изучены относящиеся к стенду разделы; не авторизованная браузерная проверка."
+  },
+  {
+    "repo": "github/docs",
+    "commit": "16d03ddd1bd51eab7407b4ba632200618e6655c2",
+    "path": "content/repositories/working-with-files/using-files/viewing-and-understanding-files.md",
+    "url": "https://github.com/github/docs/blob/16d03ddd1bd51eab7407b4ba632200618e6655c2/content/repositories/working-with-files/using-files/viewing-and-understanding-files.md",
+    "scope": "Изучен раздел Blame и режимы файла; не браузерная проверка."
+  },
+  {
+    "repo": "github/docs",
+    "commit": "16d03ddd1bd51eab7407b4ba632200618e6655c2",
+    "path": "data/reusables/search/code-nav-supported-languages.md",
+    "url": "https://github.com/github/docs/blob/16d03ddd1bd51eab7407b4ba632200618e6655c2/data/reusables/search/code-nav-supported-languages.md",
+    "scope": "Проверен список поддерживаемых языков; Python присутствует."
+  }
+]

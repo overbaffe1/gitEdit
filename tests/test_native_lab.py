@@ -79,7 +79,11 @@ class NativeLabTest(unittest.TestCase):
   # Explicit later addition, tested independently against its own full base README.
   later=(ROOT/'atlas/samples/github_controls/readme-block.md').read_bytes()
   self.assertEqual(now.count(later),1)
-  self.assertEqual(now.replace(later,b'',1).replace(b,b'',1),old)
+  desk=(ROOT/'atlas/samples/browser_desk/readme-block.md').read_bytes()
+  self.assertEqual(now.count(desk),1)
+  browser=(ROOT/'atlas/samples/browser_desk/readme-block.md').read_bytes()
+  self.assertEqual(now.count(browser),1)
+  self.assertEqual(now.replace(browser,b'',1).replace(desk,b'',1).replace(later,b'',1).replace(b,b'',1),old)
   self.assertLess(now.index(b),now.index('## Бюро странных вещей'.encode()))
  def test_manifest_and_primary_sources(self):
   m=json.loads((ART/'manifest.json').read_text());self.assertEqual(set(m),{p.name for p in ART.iterdir() if p.name!='manifest.json'})
