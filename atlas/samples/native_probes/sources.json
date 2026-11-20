@@ -1,0 +1,26 @@
+[
+  {
+    "repo": "mdn/content",
+    "commit": "6d8a46dd0cd65ede8afb18ad951567fe810d1995",
+    "path": "files/en-us/web/api/window/find/index.md",
+    "url": "https://github.com/mdn/content/blob/6d8a46dd0cd65ede8afb18ad951567fe810d1995/files/en-us/web/api/window/find/index.md"
+  },
+  {
+    "repo": "mdn/content",
+    "commit": "6d8a46dd0cd65ede8afb18ad951567fe810d1995",
+    "path": "files/en-us/web/api/datatransfer/setdragimage/index.md",
+    "url": "https://github.com/mdn/content/blob/6d8a46dd0cd65ede8afb18ad951567fe810d1995/files/en-us/web/api/datatransfer/setdragimage/index.md"
+  },
+  {
+    "repo": "web-platform-tests/wpt",
+    "commit": "0eefed92899544e837b8263db492a6235fa858a1",
+    "path": "html/semantics/interactive-elements/the-details-element/auto-expand-window-find-crash.html",
+    "url": "https://github.com/web-platform-tests/wpt/blob/0eefed92899544e837b8263db492a6235fa858a1/html/semantics/interactive-elements/the-details-element/auto-expand-window-find-crash.html"
+  },
+  {
+    "repo": "web-platform-tests/wpt",
+    "commit": "0eefed92899544e837b8263db492a6235fa858a1",
+    "path": "html/semantics/interactive-elements/the-details-element/details-findstring-crash.html",
+    "url": "https://github.com/web-platform-tests/wpt/blob/0eefed92899544e837b8263db492a6235fa858a1/html/semantics/interactive-elements/the-details-element/details-findstring-crash.html"
+  }
+]
