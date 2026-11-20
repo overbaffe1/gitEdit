@@ -1,0 +1,30 @@
+[
+  {
+    "repo": "github/docs",
+    "commit": "16d03ddd1bd51eab7407b4ba632200618e6655c2",
+    "path": "content/communities/using-templates-to-encourage-useful-issues-and-pull-requests/syntax-for-issue-forms.md",
+    "url": "https://github.com/github/docs/blob/16d03ddd1bd51eab7407b4ba632200618e6655c2/content/communities/using-templates-to-encourage-useful-issues-and-pull-requests/syntax-for-issue-forms.md",
+    "scope": "Изучены разделы, относящиеся к форме и rich diff; не проверка UI github.com в браузере."
+  },
+  {
+    "repo": "github/docs",
+    "commit": "16d03ddd1bd51eab7407b4ba632200618e6655c2",
+    "path": "content/communities/using-templates-to-encourage-useful-issues-and-pull-requests/syntax-for-githubs-form-schema.md",
+    "url": "https://github.com/github/docs/blob/16d03ddd1bd51eab7407b4ba632200618e6655c2/content/communities/using-templates-to-encourage-useful-issues-and-pull-requests/syntax-for-githubs-form-schema.md",
+    "scope": "Изучены разделы, относящиеся к форме и rich diff; не проверка UI github.com в браузере."
+  },
+  {
+    "repo": "github/docs",
+    "commit": "16d03ddd1bd51eab7407b4ba632200618e6655c2",
+    "path": "content/communities/using-templates-to-encourage-useful-issues-and-pull-requests/common-validation-errors-when-creating-issue-forms.md",
+    "url": "https://github.com/github/docs/blob/16d03ddd1bd51eab7407b4ba632200618e6655c2/content/communities/using-templates-to-encourage-useful-issues-and-pull-requests/common-validation-errors-when-creating-issue-forms.md",
+    "scope": "Изучены разделы, относящиеся к форме и rich diff; не проверка UI github.com в браузере."
+  },
+  {
+    "repo": "github/docs",
+    "commit": "16d03ddd1bd51eab7407b4ba632200618e6655c2",
+    "path": "content/repositories/working-with-files/using-files/working-with-non-code-files.md",
+    "url": "https://github.com/github/docs/blob/16d03ddd1bd51eab7407b4ba632200618e6655c2/content/repositories/working-with-files/using-files/working-with-non-code-files.md",
+    "scope": "Изучены разделы, относящиеся к форме и rich diff; не проверка UI github.com в браузере."
+  }
+]
