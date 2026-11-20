@@ -46,7 +46,8 @@ class BrowserDeskTest(unittest.TestCase):
   now=(ROOT/'README.md').read_bytes();b=(SRC/'readme-block.md').read_bytes();self.assertEqual(now.count(b),1)
   later=(ROOT/'atlas/samples/actions_lab/readme-block.md').read_bytes();self.assertEqual(now.count(later),1)
   switch=(ROOT/'atlas/samples/switchboard/readme-block.md').read_bytes();self.assertEqual(now.count(switch),1)
-  self.assertEqual(now.replace(switch,b'',1).replace(later,b'',1).replace(b,b'',1),old)
+  panel=(ROOT/'atlas/samples/exclusive_panel/readme-block.md').read_bytes();self.assertEqual(now.count(panel),1)
+  self.assertEqual(now.replace(panel,b'',1).replace(switch,b'',1).replace(later,b'',1).replace(b,b'',1),old)
   self.assertLess(now.index(b),now.index(b'<!-- github-controls:start -->'))
  def test_primary_sources_and_honest_boundaries(self):
   records=json.loads((SRC/'sources.json').read_text());self.assertEqual(len(records),6)

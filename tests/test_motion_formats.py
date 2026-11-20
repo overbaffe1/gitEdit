@@ -105,7 +105,11 @@ class MotionFormatsTest(unittest.TestCase):
             self.assertIn(f'| {a["bytes"]} | 32 | 2560 мс |',readme)
         self.assertEqual(readme.count('src="assets/motion-formats/cube-apng.png"'),1)
         self.assertIn('<source type="image/webp" srcset="assets/motion-formats/cube.webp">',readme)
-        self.assertEqual(readme.count('media="(prefers-reduced-motion: reduce)" srcset="assets/motion-formats/'),4)
+        # The named accordion reuses this demo with its own reduced-motion source.
+        panel=(ROOT/'atlas/samples/exclusive_panel/readme-block.md').read_text()
+        self.assertEqual(readme.count(panel),1)
+        original=readme.replace(panel,'',1)
+        self.assertEqual(original.count('media="(prefers-reduced-motion: reduce)" srcset="assets/motion-formats/'),4)
 
     def test_clean_reprint_preserves_readme(self):
         before=(ROOT/'README.md').read_bytes()

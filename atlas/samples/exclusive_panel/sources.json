@@ -1,0 +1,38 @@
+[
+  {
+    "repo": "mdn/content",
+    "commit": "6d8a46dd0cd65ede8afb18ad951567fe810d1995",
+    "path": "files/en-us/web/html/reference/elements/details/index.md",
+    "url": "https://github.com/mdn/content/blob/6d8a46dd0cd65ede8afb18ad951567fe810d1995/files/en-us/web/html/reference/elements/details/index.md"
+  },
+  {
+    "repo": "mdn/browser-compat-data",
+    "commit": "589202441f4933f6497dae12438e7033fe27d14e",
+    "path": "html/elements/details.json",
+    "url": "https://github.com/mdn/browser-compat-data/blob/589202441f4933f6497dae12438e7033fe27d14e/html/elements/details.json"
+  },
+  {
+    "repo": "github/markup",
+    "commit": "8ea04e1d97aac7007563e4d31edd42fb376cf620",
+    "path": "README.md",
+    "url": "https://github.com/github/markup/blob/8ea04e1d97aac7007563e4d31edd42fb376cf620/README.md"
+  },
+  {
+    "repo": "github/docs",
+    "commit": "16d03ddd1bd51eab7407b4ba632200618e6655c2",
+    "path": "content/repositories/working-with-files/using-files/working-with-non-code-files.md",
+    "url": "https://github.com/github/docs/blob/16d03ddd1bd51eab7407b4ba632200618e6655c2/content/repositories/working-with-files/using-files/working-with-non-code-files.md"
+  },
+  {
+    "repo": "mapbox/simplestyle-spec",
+    "commit": "ffd2596a77374ab0c1f16b21c5511144f797960b",
+    "path": "1.1.0/README.md",
+    "url": "https://github.com/mapbox/simplestyle-spec/blob/ffd2596a77374ab0c1f16b21c5511144f797960b/1.1.0/README.md"
+  },
+  {
+    "repo": "benbalter/dc-wifi-social",
+    "commit": "039e94d28a90040c92dec98ec02ef49a8806c817",
+    "path": "bars.geojson",
+    "url": "https://github.com/benbalter/dc-wifi-social/blob/039e94d28a90040c92dec98ec02ef49a8806c817/bars.geojson"
+  }
+]
