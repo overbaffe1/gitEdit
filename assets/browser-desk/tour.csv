@@ -1,0 +1,4 @@
+symbol,path,start,end,direct_calls_in_same_file,permalink
+mesh,atlas/samples/native_lab/generate.py,45,59,1,https://github.com/overbaffe1/gitEdit/blob/fa5c788fcb2acffe988eb821642a6e8033fd366d/atlas/samples/native_lab/generate.py#L45-L59
+contours,atlas/samples/contourpress/generate.py,25,47,3,https://github.com/overbaffe1/gitEdit/blob/fa5c788fcb2acffe988eb821642a6e8033fd366d/atlas/samples/contourpress/generate.py#L25-L47
+links,atlas/samples/github_controls/generate.py,7,11,1,https://github.com/overbaffe1/gitEdit/blob/fa5c788fcb2acffe988eb821642a6e8033fd366d/atlas/samples/github_controls/generate.py#L7-L11
