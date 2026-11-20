@@ -1,0 +1,15 @@
+<picture>
+  <source media="(max-width: 599px)" srcset="assets/resize-scan/slice-00.svg">
+  <source media="(max-width: 679px)" srcset="assets/resize-scan/slice-01.svg">
+  <source media="(max-width: 759px)" srcset="assets/resize-scan/slice-02.svg">
+  <source media="(max-width: 839px)" srcset="assets/resize-scan/slice-03.svg">
+  <source media="(max-width: 919px)" srcset="assets/resize-scan/slice-04.svg">
+  <source media="(max-width: 999px)" srcset="assets/resize-scan/slice-05.svg">
+  <source media="(max-width: 1079px)" srcset="assets/resize-scan/slice-06.svg">
+  <source media="(max-width: 1159px)" srcset="assets/resize-scan/slice-07.svg">
+  <source media="(max-width: 1239px)" srcset="assets/resize-scan/slice-08.svg">
+  <source media="(max-width: 1319px)" srcset="assets/resize-scan/slice-09.svg">
+  <source media="(max-width: 1399px)" srcset="assets/resize-scan/slice-10.svg">
+  <source media="(max-width: 1479px)" srcset="assets/resize-scan/slice-11.svg">
+  <img src="assets/resize-scan/slice-12.svg" width="840" alt="Синтетическое сечение цилиндра с движущимся по глубине отверстием. Ширина окна выбирает один из 13 кадров; все кадры доступны отдельно в инструкции.">
+</picture>

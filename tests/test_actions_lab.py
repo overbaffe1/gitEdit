@@ -74,7 +74,8 @@ class ActionsLabTest(unittest.TestCase):
   panel=(ROOT/'atlas/samples/exclusive_panel/readme-block.md').read_bytes();self.assertEqual(now.count(panel),1)
   quest=(ROOT/'atlas/samples/fragment_quest/readme-block.md').read_bytes();self.assertEqual(now.count(quest),1)
   solid=(ROOT/'atlas/samples/dual_solid/readme-block.md').read_bytes();self.assertEqual(now.count(solid),1)
-  self.assertEqual(now.replace(solid,b'',1).replace(quest,b'',1).replace(panel,b'',1).replace(later,b'',1).replace(b,b'',1),old)
+  scan=(ROOT/'atlas/samples/resize_scan/readme-block.md').read_bytes();self.assertEqual(now.count(scan),1)
+  self.assertEqual(now.replace(scan,b'',1).replace(solid,b'',1).replace(quest,b'',1).replace(panel,b'',1).replace(later,b'',1).replace(b,b'',1),old)
  def test_no_fake_success_or_inline_runner_claim(self):
   b=(SRC/'readme-block.md').read_text();doc=(ROOT/'atlas/actions-lab.md').read_text();self.assertIn('не запускался',b);self.assertIn('квоты',b);self.assertIn('права записи',b);self.assertIn('не исполняется внутри README',b)
   self.assertNotIn('/actions/runs/',b);self.assertNotIn('badge.svg',b);self.assertNotRegex(b,r'<(?:iframe|script|input|form)\b')
