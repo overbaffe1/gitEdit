@@ -1,0 +1,50 @@
+[
+  {
+    "repo": "web-platform-tests/wpt",
+    "commit": "e8ca145562683547fb32faa7cfa9feb4cc99054b",
+    "path": "html/semantics/interactive-elements/the-details-element/auto-expand-details-element-fragment.html",
+    "url": "https://github.com/web-platform-tests/wpt/blob/e8ca145562683547fb32faa7cfa9feb4cc99054b/html/semantics/interactive-elements/the-details-element/auto-expand-details-element-fragment.html"
+  },
+  {
+    "repo": "web-platform-tests/wpt",
+    "commit": "e8ca145562683547fb32faa7cfa9feb4cc99054b",
+    "path": "html/semantics/interactive-elements/the-details-element/name-attribute.html",
+    "url": "https://github.com/web-platform-tests/wpt/blob/e8ca145562683547fb32faa7cfa9feb4cc99054b/html/semantics/interactive-elements/the-details-element/name-attribute.html"
+  },
+  {
+    "repo": "mdn/content",
+    "commit": "6d8a46dd0cd65ede8afb18ad951567fe810d1995",
+    "path": "files/en-us/web/html/reference/elements/details/index.md",
+    "url": "https://github.com/mdn/content/blob/6d8a46dd0cd65ede8afb18ad951567fe810d1995/files/en-us/web/html/reference/elements/details/index.md"
+  },
+  {
+    "repo": "github/markup",
+    "commit": "8ea04e1d97aac7007563e4d31edd42fb376cf620",
+    "path": "README.md",
+    "url": "https://github.com/github/markup/blob/8ea04e1d97aac7007563e4d31edd42fb376cf620/README.md"
+  },
+  {
+    "repo": "LiamSwayne/The-README-Game",
+    "commit": "72555740257de84164a679797f83b90558940be8",
+    "path": "README.md",
+    "url": "https://github.com/LiamSwayne/The-README-Game/blob/72555740257de84164a679797f83b90558940be8/README.md"
+  },
+  {
+    "repo": "bloedboemmel/readme-connect4",
+    "commit": "0c20ea1ca22e4c6b8a0b4d43102d760ce40bd67b",
+    "path": "README.md",
+    "url": "https://github.com/bloedboemmel/readme-connect4/blob/0c20ea1ca22e4c6b8a0b4d43102d760ce40bd67b/README.md"
+  },
+  {
+    "repo": "7csc/github-readme-3d-canvas",
+    "commit": "6750e7631415b2ee89335d72c03d2ddd75be588e",
+    "path": "README.md",
+    "url": "https://github.com/7csc/github-readme-3d-canvas/blob/6750e7631415b2ee89335d72c03d2ddd75be588e/README.md"
+  },
+  {
+    "repo": "nirholas/readme-3d",
+    "commit": "277e9c586ca13385863cc8c6bc97d09d905100cf",
+    "path": "README.md",
+    "url": "https://github.com/nirholas/readme-3d/blob/277e9c586ca13385863cc8c6bc97d09d905100cf/README.md"
+  }
+]
